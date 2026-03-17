@@ -1,0 +1,56 @@
+# =========================
+# SYSTEMOWE
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# FRONTEND (Node.js / React / Vite)
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# =========================
+# BACKEND (.NET / C#)
+# =========================
+# Foldery kompilacji
+backend/**/bin/
+backend/**/obj/
+backend/**/out/
+
+# Pliki środowiska IDE (Visual Studio / Rider / VS Code)
+backend/.vs/
+backend/.idea/
+backend/**/*.user
+backend/**/*.suo
+backend/**/*.sln.docstates
+backend/.vscode/*
+!backend/.vscode/settings.json
+!backend/.vscode/tasks.json
+!backend/.vscode/launch.json
+
+# Pliki konfiguracyjne z sekretami
+backend/**/appsettings.Development.json
+backend/**/appsettings.Production.json
+
+# =========================
+# INFRASTRUKTURA (Terraform)
+# =========================
+infrastructure/.terraform/
+infrastructure/*.tfstate
+infrastructure/*.tfstate.*
+infrastructure/crash.log
+infrastructure/*.tfvars
+infrastructure/*.tfvars.json
+infrastructure/override.tf
+infrastructure/override.tf.json
+infrastructure/*_override.tf
+infrastructure/*_override.tf.json
