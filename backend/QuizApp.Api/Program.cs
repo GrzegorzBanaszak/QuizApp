@@ -1,43 +1,68 @@
-var builder = WebApplication.CreateBuilder(args);
+using QuizApp.Api.Hubs;
+using QuizApp.Api.Services;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+var builder = WebApplication.CreateBuilder(args);
+//Rejestracja usług
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<GameManager>();
+
+builder.Services.AddHttpClient<IAiQuestionGenerator, GeminiAiService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:5173", "http://quiz.lan")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Konfiguracja potoku żądań HTTP (Middleware)
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+// AKTYWUJEMY CORS (musi być przed mapowaniem endpointów/hubów)
+app.UseCors("AllowFrontend");
 
-app.MapGet("/", () => "Hello World!");
+app.UseAuthorization();
 
-app.MapGet("/weatherforecast", () =>
+app.MapControllers();
+
+// MAPUJEMY NASZEGO HUBA NA KONKRETNY ADRES URL
+app.MapHub<GameHub>("/gameHub");
+app.MapGet("/health", () => true);
+
+// --- TYMCZASOWY ENDPOINT DO TESTOWANIA AI W SWAGGERZE ---
+app.MapGet("/api/test-ai/{topic}", async (string topic, QuizApp.Api.Services.IAiQuestionGenerator aiService) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
+    try
+    {
+        // Generujemy tylko 3 pytania dla szybszego testu
+        var questions = await aiService.GenerateQuestionsAsync(topic, 3);
+        return Results.Ok(questions);
+    }
+    catch (Exception ex)
+    {
+        return Results.Problem(detail: ex.Message, title: "Błąd podczas łączenia z AI");
+    }
 })
-.WithName("GetWeatherForecast");
+.WithName("TestAiGeneration")
+.WithOpenApi();
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+
