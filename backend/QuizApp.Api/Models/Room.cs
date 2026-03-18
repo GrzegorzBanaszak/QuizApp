@@ -11,6 +11,13 @@ public class Room
 
     // ConcurrentDictionary jest bezpieczny w środowisku wielowątkowym (jakim jest serwer webowy)
     public ConcurrentDictionary<string, Player> Players { get; set; } = new();
+
+    // NOWE POLA DO ETAPU 3:
+    public List<string> AvailableTopics { get; set; } = new(); // Tematy do wyboru w danej rundzie
+    public ConcurrentDictionary<string, string> PlayerVotes { get; set; } = new(); // Kto (ConnectionId) -> na co zagłosował
+    public string? SelectedTopic { get; set; } // Zwycięski temat
+    public List<Question> CurrentQuestions { get; set; } = new(); // Wygenerowane pytania
+    public int CurrentQuestionIndex { get; set; } = 0; // Które pytanie z rzędu aktualnie gramy
 }
 
 

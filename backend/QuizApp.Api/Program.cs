@@ -9,6 +9,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<GameManager>();
+
+builder.Services.AddScoped<IAiQuestionGenerator, MockAiService>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>

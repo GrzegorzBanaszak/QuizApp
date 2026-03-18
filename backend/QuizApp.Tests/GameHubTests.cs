@@ -14,7 +14,11 @@ public class GameHubTests
     {
         // Arrange
         var gameManager = new GameManager();
-        var hub = new GameHub(gameManager);
+        var mockAiService = new Mock<IAiQuestionGenerator>();
+        mockAiService
+            .Setup(ai => ai.GenerateQuestionsAsync(It.IsAny<string>(), It.IsAny<int>()))
+            .ReturnsAsync(new List<Question> { new Question { Text = "Testowe pytanie?" } });
+        var hub = new GameHub(gameManager, mockAiService.Object);
 
         // 1. Mockowanie kontekstu (symulujemy ConnectionId)
         var mockContext = new Mock<HubCallerContext>();
@@ -64,7 +68,13 @@ public class GameHubTests
     {
         // 1. ARRANGE - Przygotowanie środowiska i mocków
         var gameManager = new GameManager();
-        var hub = new GameHub(gameManager);
+
+        var mockAiService = new Mock<IAiQuestionGenerator>();
+        mockAiService
+            .Setup(ai => ai.GenerateQuestionsAsync(It.IsAny<string>(), It.IsAny<int>()))
+            .ReturnsAsync(new List<Question> { new Question { Text = "Testowe pytanie?" } });
+
+        var hub = new GameHub(gameManager, mockAiService.Object);
 
         // Mockowanie obiektów SignalR
         var mockClients = new Mock<IHubCallerClients>();

@@ -7,13 +7,13 @@ namespace QuizApp.Api.Hubs;
 public class GameHub : Hub
 {
     private readonly GameManager _gameManager;
-
-
+    private readonly IAiQuestionGenerator _aiService;
 
     // Wstrzykiwanie zależności (Dependency Injection)
-    public GameHub(GameManager gameManager)
+    public GameHub(GameManager gameManager, IAiQuestionGenerator aiService)
     {
         _gameManager = gameManager;
+        _aiService = aiService;
     }
 
     // 1. Tworzenie nowego pokoju
@@ -104,26 +104,81 @@ public class GameHub : Hub
     // 6. Host klika "Start" i rozpoczyna grę
     public async Task StartGame(string roomId)
     {
-        if (_gameManager.Rooms.TryGetValue(roomId, out var room))
+        if (_gameManager.Rooms.TryGetValue(roomId, out var room) && room.HostConnectionId == Context.ConnectionId)
         {
-            // Tylko host może wystartować grę
-            if (room.HostConnectionId == Context.ConnectionId)
+            bool canStart = room.Players.Count >= 2 && room.Players.Values.All(p => p.IsReady);
+            if (canStart)
             {
-                // Upewniamy się jeszcze raz, że wszyscy są gotowi
-                bool canStart = room.Players.Count >= 2 && room.Players.Values.All(p => p.IsReady);
+                room.Status = RoomStatus.Playing;
+                await BroadcastRoomsList();
+                await Clients.Group(roomId).SendAsync("GameStarted");
 
-                if (canStart)
-                {
-                    room.Status = RoomStatus.Playing; // Zmieniamy status pokoju
-
-                    // Odświeżamy listę pokoi w głównym lobby (żeby inni widzieli, że w tym pokoju gra już trwa)
-                    await BroadcastRoomsList();
-
-                    // EMITUJEMY START GRY DO WSZYSTKICH W POKOJU
-                    await Clients.Group(roomId).SendAsync("GameStarted");
-                }
+                // Od razu po starcie gry, inicjujemy pierwszą rundę głosowania
+                await StartVotingRound(roomId);
             }
         }
+    }
+
+    // Pomocnicza metoda generująca tematy i wysyłająca je graczom
+    private async Task StartVotingRound(string roomId)
+    {
+        if (_gameManager.Rooms.TryGetValue(roomId, out var room))
+        {
+            // Przykładowa pula tematów (później można ją losować lub pobierać z bazy)
+            var allTopics = new List<string> { "Historia", "Geografia", "Programowanie", "Kino", "Gry Komputerowe", "Zwierzęta" };
+
+            // Losujemy 3 losowe tematy z puli, które nie były jeszcze grane
+            var random = new Random();
+            room.AvailableTopics = allTopics.OrderBy(x => random.Next()).Take(3).ToList();
+            room.PlayerVotes.Clear(); // Czyścimy głosy przed nową rundą
+
+            // Wysyłamy do graczy listę tematów, na które mogą głosować
+            await Clients.Group(roomId).SendAsync("ReceiveVotingTopics", room.AvailableTopics);
+        }
+    }
+
+    // Gracz przesyła swój głos na dany temat
+    public async Task SubmitVote(string roomId, string topic)
+    {
+        if (_gameManager.Rooms.TryGetValue(roomId, out var room))
+        {
+            // Rejestrujemy głos gracza
+            room.PlayerVotes.TryAdd(Context.ConnectionId, topic);
+
+            // Powiadamiamy (opcjonalnie), że ktoś oddał głos, żeby na frontendzie zaktualizować licznik oddanych głosów
+            await Clients.Group(roomId).SendAsync("PlayerVoted", Context.ConnectionId);
+
+            // Sprawdzamy, czy wszyscy już zagłosowali
+            if (room.PlayerVotes.Count == room.Players.Count)
+            {
+                await ProcessVotingResults(roomId, room);
+            }
+        }
+    }
+
+    // Obliczanie wyników i generowanie pytań
+    private async Task ProcessVotingResults(string roomId, Room room)
+    {
+        // Zliczamy głosy: Grupujemy po nazwie tematu, sortujemy malejąco po ilości i bierzemy pierwszy
+        var winningTopic = room.PlayerVotes.Values
+            .GroupBy(v => v)
+            .OrderByDescending(g => g.Count())
+            .First().Key;
+
+        room.SelectedTopic = winningTopic;
+
+        // Informujemy front-end: "Głosowanie zakończone, wygrał temat X! AI myśli..."
+        await Clients.Group(roomId).SendAsync("VotingFinished", winningTopic);
+
+        // Wywołujemy nasz serwis AI do wygenerowania 6 pytań!
+        // Uwaga: To zajmie kilka sekund (w Mocku mamy 3 sekundy opóźnienia)
+        room.CurrentQuestions = await _aiService.GenerateQuestionsAsync(winningTopic, 6);
+        room.CurrentQuestionIndex = 0;
+
+        // Pytania gotowe! Informujemy front-end, że za moment startujemy z pierwszym pytaniem.
+        await Clients.Group(roomId).SendAsync("QuestionsGenerated");
+
+        // (W następnym kroku zrobimy logikę wypychania pierwszego pytania)
     }
     // Pomocnicza metoda do rozsyłania listy pokoi do wszystkich
     private async Task BroadcastRoomsList()
