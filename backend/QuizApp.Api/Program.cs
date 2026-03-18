@@ -10,7 +10,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<GameManager>();
 
-builder.Services.AddScoped<IAiQuestionGenerator, MockAiService>();
+builder.Services.AddHttpClient<IAiQuestionGenerator, GeminiAiService>();
 
 builder.Services.AddCors(options =>
 {
@@ -45,6 +45,23 @@ app.MapControllers();
 // MAPUJEMY NASZEGO HUBA NA KONKRETNY ADRES URL
 app.MapHub<GameHub>("/gameHub");
 app.MapGet("/health", () => true);
+
+// --- TYMCZASOWY ENDPOINT DO TESTOWANIA AI W SWAGGERZE ---
+app.MapGet("/api/test-ai/{topic}", async (string topic, QuizApp.Api.Services.IAiQuestionGenerator aiService) =>
+{
+    try
+    {
+        // Generujemy tylko 3 pytania dla szybszego testu
+        var questions = await aiService.GenerateQuestionsAsync(topic, 3);
+        return Results.Ok(questions);
+    }
+    catch (Exception ex)
+    {
+        return Results.Problem(detail: ex.Message, title: "Błąd podczas łączenia z AI");
+    }
+})
+.WithName("TestAiGeneration")
+.WithOpenApi();
 
 app.Run();
 
