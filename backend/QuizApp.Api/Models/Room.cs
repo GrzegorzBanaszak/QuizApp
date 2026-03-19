@@ -18,6 +18,14 @@ public class Room
     public string? SelectedTopic { get; set; } // Zwycięski temat
     public List<Question> CurrentQuestions { get; set; } = new(); // Wygenerowane pytania
     public int CurrentQuestionIndex { get; set; } = 0; // Które pytanie z rzędu aktualnie gramy
+
+    // NOWE POLA DO ROZGRYWKI:
+    public DateTime CurrentQuestionStartTime { get; set; }
+    public bool IsQuestionActive { get; set; } = false;
+
+    // Zapisuje: ConnectionId -> Czas odpowiedzi (w milisekundach od startu) i wybrany indeks
+    public ConcurrentDictionary<string, (long ResponseTimeMs, int AnswerIndex)> CurrentAnswers { get; set; } = new();
+    public List<string> PlayedTopics { get; set; } = new();
 }
 
 
