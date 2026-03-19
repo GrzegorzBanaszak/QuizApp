@@ -3,12 +3,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Users, Plus, Gamepad2, User } from "lucide-react";
 import { useGameStore } from "../store/gameStore";
-import { useGameSignalR } from "../hooks/useGameSignalR";
 
-export const Menu = () => {
-  // Pobieramy metody z naszego hooka SignalR
-  const { createRoom, joinRoom } = useGameSignalR();
+type MenuProps = {
+  createRoom: (playerName: string, avatarUrl: string) => Promise<void>;
+  joinRoom: (
+    roomId: string,
+    playerName: string,
+    avatarUrl: string,
+  ) => Promise<void>;
+};
 
+export const Menu = ({ createRoom, joinRoom }: MenuProps) => {
   // Pobieramy listę pokoi ze store'a
   const roomsList = useGameStore((state) => state.roomsList);
 
@@ -27,10 +32,7 @@ export const Menu = () => {
 
   const handleCreateRoom = async () => {
     if (!playerName) return alert("Podaj nazwę gracza!");
-    await createRoom();
-    // Uwaga: w backendzie CreateRoom nie dołącza automatycznie gracza do pokoju.
-    // W prawdziwej aplikacji powinieneś nasłuchiwać na 'RoomCreated', pobrać ID i wywołać joinRoom.
-    // Zrobimy to w App.tsx lub hooku w następnych krokach.
+    await createRoom(playerName, avatarUrl);
   };
 
   const handleJoinRoom = async (roomId: string) => {

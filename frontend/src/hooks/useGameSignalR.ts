@@ -1,11 +1,124 @@
-// src/hooks/useGameSignalR.ts
 import { useEffect, useState } from "react";
 import * as signalR from "@microsoft/signalr";
 import { useGameStore } from "../store/gameStore";
 import type { Player, Room, QuestionDto } from "../types";
 
-// Zmień port na ten, na którym działa Twoje API lokalnie
 const HUB_URL = "http://localhost:5211/gamehub";
+
+let sharedConnection: signalR.HubConnection | null = null;
+let sharedStartPromise: Promise<void> | null = null;
+let listenersRegistered = false;
+
+const getConnection = () => {
+  if (!sharedConnection) {
+    sharedConnection = new signalR.HubConnectionBuilder()
+      .withUrl(HUB_URL)
+      .withAutomaticReconnect()
+      .build();
+  }
+
+  return sharedConnection;
+};
+
+const registerListeners = (connection: signalR.HubConnection) => {
+  if (listenersRegistered) return;
+  listenersRegistered = true;
+
+  connection.on("RoomCreated", (roomId: string) => {
+    console.log("Stworzono pokój:", roomId);
+    const store = useGameStore.getState();
+    if (!store.currentRoom) {
+      store.setCurrentRoom({ roomId } as Room);
+    }
+  });
+
+  connection.on("ReceiveRoomsList", (rooms: Room[]) => {
+    useGameStore.getState().setRoomsList(rooms);
+  });
+
+  connection.on("PlayerJoined", (player: Player) => {
+    console.log("Dołączył gracz:", player.name);
+  });
+
+  connection.on("UpdatePlayersList", (players: Player[]) => {
+    useGameStore.getState().updatePlayersList(players);
+  });
+
+  connection.on("NumberOfTopicsChanged", (numberOfTopics: number) => {
+    useGameStore.getState().setRoomNumberOfTopics(numberOfTopics);
+  });
+
+  connection.on(
+    "PlayerReadyStatusChanged",
+    (connectionId: string, isReady: boolean) => {
+      useGameStore.getState().updatePlayerReadyStatus(connectionId, isReady);
+    },
+  );
+
+  connection.on("CanStartGame", (canStart: boolean) => {
+    useGameStore.getState().setCanStartGame(canStart);
+  });
+
+  connection.on("GameStarted", () => {
+    console.log("Gra się rozpoczęła!");
+  });
+
+  connection.on("ReceiveVotingTopics", (topics: string[]) => {
+    useGameStore.getState().setVotingTopics(topics);
+  });
+
+  connection.on("VotingFinished", (winningTopic: string) => {
+    useGameStore.getState().setWinningTopic(winningTopic);
+  });
+
+  connection.on("QuestionsGenerated", () => {
+    useGameStore.getState().setQuestionsGenerating(false);
+    console.log("Pytania wygenerowane przez AI!");
+  });
+
+  connection.on("ReceiveQuestion", (question: QuestionDto) => {
+    useGameStore.getState().setCurrentQuestion(question);
+  });
+
+  connection.on("QuestionResults", (results: any) => {
+    useGameStore.getState().setQuestionResult(results);
+  });
+
+  connection.on("RoundEnded", (summary: any) => {
+    useGameStore.getState().setRoundEnded(summary);
+  });
+
+  connection.on("GameOver", (leaderboard: any) => {
+    useGameStore.getState().setGameOver(leaderboard);
+  });
+
+  connection.on("Error", (errorMessage: string) => {
+    const store = useGameStore.getState();
+    store.setError(errorMessage);
+    setTimeout(() => store.setError(null), 3000);
+  });
+};
+
+const startConnection = async () => {
+  const connection = getConnection();
+
+  if (connection.state === signalR.HubConnectionState.Connected) {
+    return;
+  }
+
+  if (!sharedStartPromise) {
+    sharedStartPromise = connection.start().finally(() => {
+      sharedStartPromise = null;
+    });
+  }
+
+  await sharedStartPromise;
+  const store = useGameStore.getState();
+  if (connection.connectionId) {
+    store.setConnectionId(connection.connectionId);
+  }
+  await connection.invoke("GetAvailableRooms");
+};
 
 export const useGameSignalR = () => {
   const [connection, setConnection] = useState<signalR.HubConnection | null>(
@@ -13,122 +126,32 @@ export const useGameSignalR = () => {
   );
   const [isConnected, setIsConnected] = useState(false);
 
-  // Wyciągamy akcje z naszego store'a
-  const store = useGameStore();
-
   useEffect(() => {
-    // Inicjalizacja połączenia
-    const newConnection = new signalR.HubConnectionBuilder()
-      .withUrl(HUB_URL)
-      .withAutomaticReconnect() // Automatycznie ponawia przy zerwaniu
-      .build();
+    const currentConnection = getConnection();
+    setConnection(currentConnection);
+    registerListeners(currentConnection);
 
-    setConnection(newConnection);
-  }, []);
-
-  useEffect(() => {
-    if (!connection) return;
-
-    // --- REJESTRACJA NASŁUCHIWACZY (Zdarzenia z serwera) ---
-
-    connection.on("RoomCreated", (roomId: string) => {
-      console.log("Stworzono pokój:", roomId);
-      // Host zazwyczaj musi teraz wywołać joinRoom z tym ID
-    });
-
-    connection.on("ReceiveRoomsList", (rooms: Room[]) => {
-      store.setRoomsList(rooms);
-    });
-
-    connection.on("PlayerJoined", (player: Player) => {
-      console.log("Dołączył gracz:", player.name);
-    });
-
-    connection.on("UpdatePlayersList", (players: Player[]) => {
-      store.updatePlayersList(players);
-    });
-
-    connection.on("NumberOfTopicsChanged", (numberOfTopics: number) => {
-      store.setRoomNumberOfTopics(numberOfTopics);
-    });
-
-    connection.on(
-      "PlayerReadyStatusChanged",
-      (connectionId: string, isReady: boolean) => {
-        store.updatePlayerReadyStatus(connectionId, isReady);
-      },
-    );
-
-    connection.on("CanStartGame", (canStart: boolean) => {
-      store.setCanStartGame(canStart);
-    });
-
-    connection.on("GameStarted", () => {
-      console.log("Gra się rozpoczęła!");
-    });
-
-    connection.on("ReceiveVotingTopics", (topics: string[]) => {
-      store.setVotingTopics(topics);
-    });
-
-    connection.on("VotingFinished", (winningTopic: string) => {
-      store.setWinningTopic(winningTopic);
-    });
-
-    connection.on("QuestionsGenerated", () => {
-      store.setQuestionsGenerating(false);
-      console.log("Pytania wygenerowane przez AI!");
-    });
-
-    connection.on("ReceiveQuestion", (question: QuestionDto) => {
-      store.setCurrentQuestion(question);
-    });
-
-    connection.on("QuestionResults", (results: any) => {
-      store.setQuestionResult(results);
-    });
-
-    connection.on("RoundEnded", (summary: any) => {
-      store.setRoundEnded(summary);
-    });
-
-    connection.on("GameOver", (leaderboard: any) => {
-      store.setGameOver(leaderboard);
-    });
-
-    connection.on("Error", (errorMessage: string) => {
-      store.setError(errorMessage);
-      setTimeout(() => store.setError(null), 3000); // Czyścimy błąd po 3s
-    });
-
-    // --- URUCHOMIENIE POŁĄCZENIA ---
-    const startConnection = async () => {
+    const connect = async () => {
       try {
-        await connection.start();
+        await startConnection();
         setIsConnected(true);
-        if (connection.connectionId) {
-          store.setConnectionId(connection.connectionId);
-        }
-        // Po udanym połączeniu od razu pobieramy listę pokoi
-        await connection.invoke("GetAvailableRooms");
       } catch (err) {
         console.error("Błąd połączenia SignalR:", err);
-        setTimeout(startConnection, 5000); // Ponowna próba po 5 sekundach
+        setTimeout(connect, 5000);
       }
     };
 
-    startConnection();
+    connect();
+  }, []);
 
-    // Cleanup przy odmontowaniu
-    return () => {
-      connection.stop();
-    };
-  }, [connection]);
+  const invoke = async (method: string, ...args: unknown[]) => {
+    const conn = connection ?? sharedConnection;
+    if (!conn) return;
+    await conn.invoke(method, ...args);
+  };
 
-  // --- METODY DO WYSYŁANIA ŻĄDAŃ NA SERWER ---
-
-  const createRoom = async () => {
-    await connection?.invoke("CreateRoom");
+  const createRoom = async (playerName: string, avatarUrl: string) => {
+    await invoke("CreateRoom", playerName, avatarUrl);
   };
 
   const joinRoom = async (
@@ -136,38 +159,36 @@ export const useGameSignalR = () => {
     playerName: string,
     avatarUrl: string,
   ) => {
-    await connection?.invoke("JoinRoom", roomId, playerName, avatarUrl);
-    // Opcjonalnie: ustawiamy w store "currentRoom" prowizorycznie,
-    // czekając na pełne dane z UpdatePlayersList
-    store.setCurrentRoom({ roomId } as Room);
+    await invoke("JoinRoom", roomId, playerName, avatarUrl);
+    useGameStore.getState().setCurrentRoom({ roomId } as Room);
   };
 
   const setNumberOfTopics = async (roomId: string, num: number) => {
-    await connection?.invoke("SetNumberOfTopics", roomId, num);
+    await invoke("SetNumberOfTopics", roomId, num);
   };
 
   const setReadyStatus = async (roomId: string, isReady: boolean) => {
-    await connection?.invoke("SetReadyStatus", roomId, isReady);
+    await invoke("SetReadyStatus", roomId, isReady);
   };
 
   const startGame = async (roomId: string) => {
-    await connection?.invoke("StartGame", roomId);
+    await invoke("StartGame", roomId);
   };
 
   const submitVote = async (roomId: string, topic: string) => {
-    await connection?.invoke("SubmitVote", roomId, topic);
+    await invoke("SubmitVote", roomId, topic);
   };
 
   const submitAnswer = async (roomId: string, answerIndex: number) => {
-    await connection?.invoke("SubmitAnswer", roomId, answerIndex);
+    await invoke("SubmitAnswer", roomId, answerIndex);
   };
 
   const startNextQuestion = async (roomId: string) => {
-    await connection?.invoke("StartNextQuestion", roomId);
+    await invoke("StartNextQuestion", roomId);
   };
 
   const startNextRoundVoting = async (roomId: string) => {
-    await connection?.invoke("StartNextRoundVoting", roomId);
+    await invoke("StartNextRoundVoting", roomId);
   };
 
   return {
