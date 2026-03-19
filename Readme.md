@@ -55,3 +55,11 @@ flowchart TD
     CzyKoniecGry -- Tak --> TabelaKoncowa[Wyświetlenie końcowej tabeli wyników]
     TabelaKoncowa --> PowrotLobby([Powrót do Lobby])
 ```
+
+## Awatary
+
+Backend udostępnia statyczne pliki z katalogu `backend/QuizApp.Api/wwwroot`.
+
+- wrzucaj zdjęcia do `backend/QuizApp.Api/wwwroot/avatars`
+- frontend pobiera je pod adresem `https://<adres-backendu>/avatars/nazwa-pliku.png`
+- lokalnie najczęściej będzie to `https://localhost:<port>/avatars/nazwa-pliku.png`
