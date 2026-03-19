@@ -38,6 +38,8 @@ app.UseHttpsRedirection();
 // AKTYWUJEMY CORS (musi być przed mapowaniem endpointów/hubów)
 app.UseCors("AllowFrontend");
 
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
 app.MapControllers();

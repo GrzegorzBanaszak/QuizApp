@@ -24,6 +24,8 @@ public class GameHub : Hub<IGameClient>
         // Zwracamy Hostowi informację, jaki ma kod pokoju
         await Clients.Caller.RoomCreated(roomId);
 
+        await JoinRoom(roomId, string.Empty, string.Empty);
+
         // Aktualizujemy wszystkim klientom listę dostępnych pokoi
         await BroadcastRoomsList();
     }
