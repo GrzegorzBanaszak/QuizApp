@@ -71,7 +71,7 @@ export const Menu = ({ createRoom, joinRoom }: MenuProps) => {
           <User className="text-indigo-400" /> Twój Profil
         </h2>
 
-        <div className="flex items-center gap-4 mb-4">
+        <div className="flex flex-col items-center gap-4 mb-4">
           <motion.img
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
