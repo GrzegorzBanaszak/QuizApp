@@ -139,13 +139,10 @@ public class GameHub : Hub<IGameClient>
         {
             if (_gameManager.TryPrepareNextQuestion(room, out var questionDto) && questionDto != null)
             {
+                CancelQuestionTimer(room);
                 await Clients.Group(roomId).ReceiveQuestion(questionDto);
-
-                _ = Task.Run(async () =>
-                {
-                    await Task.Delay(TimeSpan.FromSeconds(31));
-                    await EndQuestion(roomId);
-                });
+                room.QuestionTimerCancellation = new CancellationTokenSource();
+                _ = RunQuestionTimer(roomId, questionDto.QuestionNumber, questionDto.TimeLimitSeconds, room.QuestionTimerCancellation.Token);
             }
             else
             {
@@ -176,11 +173,45 @@ public class GameHub : Hub<IGameClient>
     {
         if (_gameManager.TryGetRoom(roomId, out var room))
         {
+            CancelQuestionTimer(room);
+
             if (_gameManager.TryFinalizeQuestion(room, out var results) && results != null)
             {
                 await Clients.Group(roomId).QuestionResults(results);
             }
         }
+    }
+
+    private async Task RunQuestionTimer(string roomId, int questionNumber, int timeLimitSeconds, CancellationToken cancellationToken)
+    {
+        try
+        {
+            await Task.Delay(TimeSpan.FromSeconds(timeLimitSeconds), cancellationToken);
+        }
+        catch (TaskCanceledException)
+        {
+            return;
+        }
+
+        if (!_gameManager.TryGetRoom(roomId, out var room))
+        {
+            return;
+        }
+
+        if (!room.IsQuestionActive || room.CurrentQuestionIndex + 1 != questionNumber)
+        {
+            return;
+        }
+
+        await Clients.Group(roomId).QuestionTimeExpired();
+        await EndQuestion(roomId);
+    }
+
+    private static void CancelQuestionTimer(Room room)
+    {
+        room.QuestionTimerCancellation?.Cancel();
+        room.QuestionTimerCancellation?.Dispose();
+        room.QuestionTimerCancellation = null;
     }
 
     private async Task EndRound(string roomId)

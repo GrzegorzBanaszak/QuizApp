@@ -5,11 +5,14 @@ import { Menu } from "./pages/Menu.tsx";
 import { Lobby } from "./pages/Lobby.tsx";
 import { RoomStatus } from "./types/index.ts";
 import { Voting } from "./pages/Voting.tsx";
+import { Game } from "./pages/Game.tsx";
+import { RoundSummary } from "./pages/RoundSummary.tsx";
 
 function App() {
   const { isConnected, createRoom, joinRoom } = useGameSignalR();
   const currentRoom = useGameStore((state) => state.currentRoom);
   const currentQuestion = useGameStore((state) => state.currentQuestion);
+  const roundSummary = useGameStore((state) => state.roundSummary);
   const error = useGameStore((state) => state.error);
 
   useEffect(() => {
@@ -39,21 +42,15 @@ function App() {
     currentView = <Lobby />;
   } else if (currentRoom.status === RoomStatus.Playing) {
     // Playing
-    // Jeśli nie ma jeszcze pytania, to znaczy, że jesteśmy w fazie głosowania/generowania
-    if (!currentQuestion) {
+    // Jeśli runda się skończyła (mamy summary), ale status gry to wciąż Playing (gramy w kolejną rundę/temat)
+    if (roundSummary) {
+      currentView = currentView = <RoundSummary />; // Zrobimy w następnym kroku
+    } else if (!currentQuestion) {
       currentView = <Voting />;
     } else {
-      // Jeśli mamy pytanie, pokazujemy ekran gry (zrobimy w następnym kroku!)
-      currentView = (
-        <div className="p-10 text-center">
-          <h2 className="text-3xl text-indigo-400 font-bold">
-            Nadchodzi pytanie!
-          </h2>
-          <p className="text-slate-400">Pytanie: {currentQuestion.text}</p>
-        </div>
-      );
+      currentView = <Game />; // <--- Wpinamy nasz nowy widok gry
     }
-  } else if (currentRoom.status === 2) {
+  } else if (currentRoom.status === RoomStatus.Finished) {
     // Finished
     currentView = (
       <div className="p-10 text-center text-2xl text-green-500">
@@ -61,7 +58,6 @@ function App() {
       </div>
     );
   }
-
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-indigo-500/30 flex justify-center pt-10">
       {currentView}

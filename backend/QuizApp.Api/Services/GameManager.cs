@@ -192,6 +192,7 @@ public class GameManager
         room.CurrentAnswers.Clear();
         room.IsQuestionActive = true;
         room.CurrentQuestionStartTime = DateTime.UtcNow;
+        room.CurrentQuestionEndTime = room.CurrentQuestionStartTime.AddSeconds(30);
 
         questionDto = new QuestionDto
         {
@@ -199,7 +200,10 @@ public class GameManager
             Options = question.Options,
             QuestionNumber = room.CurrentQuestionIndex + 1,
             TotalQuestions = room.CurrentQuestions.Count,
-            TimeLimitSeconds = 30
+            TimeLimitSeconds = 30,
+            StartedAtUtc = room.CurrentQuestionStartTime,
+            EndsAtUtc = room.CurrentQuestionEndTime,
+            ServerNowUtc = DateTime.UtcNow
         };
 
         return true;

@@ -18,6 +18,7 @@ public interface IGameClient
     Task VotingFinished(string winningTopic);
     Task QuestionsGenerated();
     Task ReceiveQuestion(QuestionDto question);
+    Task QuestionTimeExpired();
     Task PlayerAnswered(string connectionId);
     Task QuestionResults(object results);
     Task RoundEnded(object roundSummary);

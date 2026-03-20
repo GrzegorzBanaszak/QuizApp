@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using System.Threading;
 
 namespace QuizApp.Api.Models;
 
@@ -21,7 +22,9 @@ public class Room
 
     // NOWE POLA DO ROZGRYWKI:
     public DateTime CurrentQuestionStartTime { get; set; }
+    public DateTime CurrentQuestionEndTime { get; set; }
     public bool IsQuestionActive { get; set; } = false;
+    public CancellationTokenSource? QuestionTimerCancellation { get; set; }
 
     // Zapisuje: ConnectionId -> Czas odpowiedzi (w milisekundach od startu) i wybrany indeks
     public ConcurrentDictionary<string, (long ResponseTimeMs, int AnswerIndex)> CurrentAnswers { get; set; } = new();
