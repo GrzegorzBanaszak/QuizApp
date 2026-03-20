@@ -71,7 +71,21 @@ const registerListeners = (connection: signalR.HubConnection) => {
   });
 
   connection.on("ReceiveRoomsList", (rooms: Room[]) => {
-    useGameStore.getState().setRoomsList(rooms);
+    const store = useGameStore.getState();
+    store.setRoomsList(rooms);
+
+    if (store.currentRoom) {
+      const updatedRoom = rooms.find(
+        (room) => room.roomId === store.currentRoom?.roomId,
+      );
+
+      if (updatedRoom) {
+        store.setCurrentRoom({
+          ...store.currentRoom,
+          ...updatedRoom,
+        });
+      }
+    }
   });
 
   connection.on("PlayerJoined", (player: Player) => {
@@ -108,6 +122,14 @@ const registerListeners = (connection: signalR.HubConnection) => {
 
   connection.on("GameStarted", () => {
     console.log("Game started!");
+    const store = useGameStore.getState();
+
+    if (store.currentRoom) {
+      store.setCurrentRoom({
+        ...store.currentRoom,
+        status: RoomStatus.Playing,
+      });
+    }
   });
 
   connection.on("ReceiveVotingTopics", (topics: string[]) => {

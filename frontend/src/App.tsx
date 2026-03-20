@@ -4,10 +4,12 @@ import { useGameStore } from "./store/gameStore";
 import { Menu } from "./pages/Menu.tsx";
 import { Lobby } from "./pages/Lobby.tsx";
 import { RoomStatus } from "./types/index.ts";
+import { Voting } from "./pages/Voting.tsx";
 
 function App() {
   const { isConnected, createRoom, joinRoom } = useGameSignalR();
   const currentRoom = useGameStore((state) => state.currentRoom);
+  const currentQuestion = useGameStore((state) => state.currentQuestion);
   const error = useGameStore((state) => state.error);
 
   useEffect(() => {
@@ -28,26 +30,41 @@ function App() {
       </div>
     );
   }
+  let currentView;
+
+  if (!currentRoom) {
+    currentView = <Menu createRoom={createRoom} joinRoom={joinRoom} />;
+  } else if (currentRoom.status === RoomStatus.WaitingForPlayers) {
+    // WaitingForPlayers
+    currentView = <Lobby />;
+  } else if (currentRoom.status === RoomStatus.Playing) {
+    // Playing
+    // Jeśli nie ma jeszcze pytania, to znaczy, że jesteśmy w fazie głosowania/generowania
+    if (!currentQuestion) {
+      currentView = <Voting />;
+    } else {
+      // Jeśli mamy pytanie, pokazujemy ekran gry (zrobimy w następnym kroku!)
+      currentView = (
+        <div className="p-10 text-center">
+          <h2 className="text-3xl text-indigo-400 font-bold">
+            Nadchodzi pytanie!
+          </h2>
+          <p className="text-slate-400">Pytanie: {currentQuestion.text}</p>
+        </div>
+      );
+    }
+  } else if (currentRoom.status === 2) {
+    // Finished
+    currentView = (
+      <div className="p-10 text-center text-2xl text-green-500">
+        Koniec Gry! Podium wkrótce...
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-indigo-500/30 flex justify-center pt-10">
-      {!currentRoom && <Menu createRoom={createRoom} joinRoom={joinRoom} />}
-
-      {/* Jeśli jesteśmy w pokoju i gra się jeszcze nie zaczęła (status 0) */}
-      {currentRoom && currentRoom.status === RoomStatus.WaitingForPlayers && (
-        <Lobby />
-      )}
-
-      {/* Placeholder na czas samej gry (status 1) */}
-      {currentRoom && currentRoom.status === 1 && (
-        <div className="text-center p-10">
-          <h2 className="text-4xl text-purple-400 font-bold mb-4 animate-bounce">
-            Gra rozpoczęta!
-          </h2>
-          <p className="text-slate-400">Trwa ładowanie panelu głosowania...</p>
-          {/* Tu niedługo wstawimy komponent z głosowaniem / pytaniami */}
-        </div>
-      )}
+      {currentView}
     </div>
   );
 }
