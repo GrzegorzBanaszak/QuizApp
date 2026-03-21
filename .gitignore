@@ -45,8 +45,11 @@ backend/**/appsettings.Production.json
 # INFRASTRUKTURA (Terraform)
 # =========================
 infrastructure/.terraform/
+infrastructure/**/.terraform/
 infrastructure/*.tfstate
 infrastructure/*.tfstate.*
+infrastructure/**/*.tfstate
+infrastructure/**/*.tfstate.*
 infrastructure/crash.log
 infrastructure/**/*.tfvars
 infrastructure/**/*.tfvars.json
