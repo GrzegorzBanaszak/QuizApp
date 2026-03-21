@@ -48,8 +48,8 @@ infrastructure/.terraform/
 infrastructure/*.tfstate
 infrastructure/*.tfstate.*
 infrastructure/crash.log
-infrastructure/*.tfvars
-infrastructure/*.tfvars.json
+infrastructure/**/*.tfvars
+infrastructure/**/*.tfvars.json
 infrastructure/override.tf
 infrastructure/override.tf.json
 infrastructure/*_override.tf

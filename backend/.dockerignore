@@ -1,0 +1,23 @@
+# Foldery z artefaktami kompilacji (to one ważą najwięcej)
+bin/
+obj/
+
+# Pliki publikacji
+publish/
+out/
+
+# Pliki konfiguracyjne użytkownika i logi
+.vs/
+.vscode/
+*.user
+*.suo
+appsettings.Development.json
+
+# Docker i Git
+.git/
+.gitignore
+Dockerfile
+.dockerignore
+
+# Inne
+node_modules/

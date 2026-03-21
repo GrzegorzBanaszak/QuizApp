@@ -106,3 +106,8 @@ Folder `infrastructure/` zawiera konfiguracje Terraform dla kontenerow Docker. W
 
 - wrzucaj pliki do `backend/QuizApp.Api/wwwroot/avatars`
 - frontend pobiera je pod adresem `http(s)://<adres-backendu>/avatars/nazwa-pliku.png`
+
+## Do zrobienia
+
+- Integracja z redis
+- Strona głowna przedstawiająca zasady gry i rozgrywkę
