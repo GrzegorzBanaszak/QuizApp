@@ -5,6 +5,18 @@ import { Timer, CheckCircle2, XCircle, ArrowRight, Trophy } from "lucide-react";
 import { useGameStore } from "../store/gameStore";
 import { useGameSignalR } from "../hooks/useGameSignalR";
 
+type QuestionPlayerResultPayload = {
+  pointsEarned?: number;
+  PointsEarned?: number;
+  totalScore?: number;
+  TotalScore?: number;
+};
+
+type QuestionResultsPayload = {
+  playerResults?: Record<string, QuestionPlayerResultPayload>;
+  PlayerResults?: Record<string, QuestionPlayerResultPayload>;
+};
+
 export const Game = () => {
   const { submitAnswer, startNextQuestion } = useGameSignalR();
   const questionActivatedAtRef = useRef(0);
@@ -19,6 +31,14 @@ export const Game = () => {
   const correctOptionIndex =
     lastQuestionResult?.correctOptionIndex ??
     lastQuestionResult?.correctAnswerIndex;
+  const questionResults =
+    (lastQuestionResult as QuestionResultsPayload | null)?.playerResults ??
+    (lastQuestionResult as QuestionResultsPayload | null)?.PlayerResults;
+  const currentPlayerResult = questionResults?.[connectionId ?? ""];
+  const pointsEarned =
+    currentPlayerResult?.pointsEarned ??
+    currentPlayerResult?.PointsEarned ??
+    0;
 
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [hasTimedOut, setHasTimedOut] = useState(false);
@@ -332,7 +352,7 @@ export const Game = () => {
                 className={`text-2xl font-black ${selectedAnswer === correctOptionIndex ? "text-emerald-400" : "text-red-400"}`}
               >
                 {selectedAnswer === correctOptionIndex
-                  ? "Świetnie! +10 pkt"
+                  ? `Świetnie! +${pointsEarned} pkt`
                   : "Niestety, zła odpowiedź!"}
               </h3>
 

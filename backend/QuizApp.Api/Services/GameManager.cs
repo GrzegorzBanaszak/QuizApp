@@ -5,6 +5,10 @@ namespace QuizApp.Api.Services;
 
 public class GameManager
 {
+    private const int MaxPointsPerQuestion = 400;
+    private const int MinPointsPerQuestion = 100;
+    private const int SpeedPenaltyDivisorMs = 25;
+
     private static readonly string[] TopicPool =
     {
         "Historia",
@@ -264,8 +268,8 @@ public class GameManager
 
                 if (isCorrect)
                 {
-                    var speedPenalty = (int)(answer.ResponseTimeMs / 10);
-                    pointsEarned = Math.Max(100, 1000 - speedPenalty);
+                    var speedPenalty = (int)(answer.ResponseTimeMs / SpeedPenaltyDivisorMs);
+                    pointsEarned = Math.Max(MinPointsPerQuestion, MaxPointsPerQuestion - speedPenalty);
                     player.Score += pointsEarned;
                 }
             }
