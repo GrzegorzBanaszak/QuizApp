@@ -2,20 +2,24 @@
 FROM node:24-alpine AS build
 WORKDIR /app
 
-# Kopiujemy package.json i instalujemy zależności
+# Vite wstrzykuje VITE_* do bundle podczas builda, wiec backend musi byc znany tutaj.
+ARG VITE_SIGNALR_URL=http://api.quiz.lan/gameHub
+ENV VITE_SIGNALR_URL=${VITE_SIGNALR_URL}
+
+# Kopiujemy package.json i instalujemy zaleznosci
 COPY package*.json ./
 RUN npm install
 
-# Kopiujemy resztę plików i budujemy wersję produkcyjną
+# Kopiujemy reszte plikow i budujemy wersje produkcyjna
 COPY . .
 RUN npm run build
 
-# Etap 2: Serwowanie plików przez Nginx
+# Etap 2: Serwowanie plikow przez Nginx
 FROM nginx:alpine AS final
 # Kopiujemy zbudowane pliki z folderu dist do Nginxa
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Dodajemy prostą konfigurację Nginxa wspierającą React Router (odświeżanie strony nie wyrzuci błędu 404)
+# Dodajemy prosta konfiguracje Nginxa wspierajaca React Router (odswiezenie strony nie wyrzuci bledu 404)
 RUN echo 'server { \
     listen 80; \
     location / { \

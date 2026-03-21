@@ -8,6 +8,16 @@ export default defineConfig(() => {
 
   return {
     plugins: [react(), ...(isTestRun ? [] : [tailwindcss()])],
+    server: {
+      host: "0.0.0.0",
+      proxy: {
+        "/gameHub": {
+          target: process.env.VITE_BACKEND_URL ?? "http://localhost:5211",
+          ws: true,
+          changeOrigin: true,
+        },
+      },
+    },
     test: {
       environment: "jsdom",
       globals: true,

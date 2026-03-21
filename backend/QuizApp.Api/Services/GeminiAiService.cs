@@ -13,8 +13,8 @@ public class GeminiAiService : IAiQuestionGenerator
     public GeminiAiService(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
-        _apiKey = configuration["Gemini:ApiKey"] ?? throw new ArgumentNullException("Brak klucza Gemini w appsettings.json");
-        _modelName = configuration["Gemini:Model"] ?? "gemini-2.5-flash";
+        _apiKey = GetRequiredConfigValue(configuration, "Gemini:ApiKey", "Gemini__ApiKey", "GEMINI_API_KEY");
+        _modelName = GetOptionalConfigValue(configuration, "Gemini:Model", "Gemini__Model", "GEMINI_MODEL") ?? "gemini-2.5-flash";
     }
 
     public async Task<List<Question>> GenerateQuestionsAsync(string topic, int count = 6)
@@ -115,6 +115,35 @@ Example item:
   ""Options"": [""Option A"", ""Option B"", ""Option C"", ""Option D""],
   ""CorrectOptionIndex"": 0
 }}";
+    }
+
+    private static string GetRequiredConfigValue(IConfiguration configuration, params string[] keys)
+    {
+        foreach (var key in keys)
+        {
+            var value = configuration[key];
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+                return value;
+            }
+        }
+
+        throw new InvalidOperationException(
+            $"Brak konfiguracji Gemini. Ustaw jedną z nazw: {string.Join(", ", keys)}.");
+    }
+
+    private static string? GetOptionalConfigValue(IConfiguration configuration, params string[] keys)
+    {
+        foreach (var key in keys)
+        {
+            var value = configuration[key];
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+                return value;
+            }
+        }
+
+        return null;
     }
 
     private List<Question> GetFallbackQuestions(string topic, int count)

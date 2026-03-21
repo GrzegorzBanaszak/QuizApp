@@ -13,3 +13,15 @@ variable "pihole_password" {
   type        = string
   sensitive   = true # Terraform ukryje to hasło w logach konsoli
 }
+
+variable "gemini_api_key" {
+  description = "Klucz API Gemini przekazywany do kontenera backendu"
+  type        = string
+  sensitive   = true
+}
+
+variable "gemini_model" {
+  description = "Nazwa modelu Gemini używanego do generowania pytań"
+  type        = string
+  default     = "gemini-2.5-flash"
+}

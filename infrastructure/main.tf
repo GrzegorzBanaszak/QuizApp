@@ -126,7 +126,9 @@ resource "docker_container" "backend" {
   restart = "unless-stopped"
 
   env = [
-    "Redis__ConnectionString=quiz-redis:6379"
+    "Redis__ConnectionString=quiz-redis:6379",
+    "Gemini__ApiKey=${var.gemini_api_key}",
+    "Gemini__Model=${var.gemini_model}"
   ]
 
   networks_advanced {
