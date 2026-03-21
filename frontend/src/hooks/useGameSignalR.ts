@@ -4,7 +4,7 @@ import { useGameStore } from "../store/gameStore";
 import { RoomStatus } from "../types";
 import type { Player, Room, QuestionDto } from "../types";
 
-const HUB_URL = import.meta.env.VITE_SIGNALR_URL ?? "http://localhost:5211/gameHub";
+const HUB_URL = import.meta.env.VITE_SIGNALR_URL ?? "/gameHub";
 
 let sharedConnection: signalR.HubConnection | null = null;
 let sharedStartPromise: Promise<void> | null = null;

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
-import { Trophy, Medal, Home, RotateCcw } from "lucide-react";
+import { Trophy, Home } from "lucide-react";
 import { useGameSignalR } from "../hooks/useGameSignalR";
 import { useGameStore } from "../store/gameStore";
 import type { Player } from "../types";
