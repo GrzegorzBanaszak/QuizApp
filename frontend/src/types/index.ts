@@ -37,11 +37,15 @@ export interface QuestionDto {
   questionNumber: number;
   totalQuestions: number;
   timeLimitSeconds: number;
+  startedAtUtc: string;
+  endsAtUtc: string;
+  serverNowUtc: string;
 }
 
 // Dodatkowe typy pomocnicze dla wyników
 export interface QuestionResult {
-  correctAnswerIndex: number;
+  correctOptionIndex: number;
+  correctAnswerIndex?: number;
   playerScores: Record<string, number>;
   // W zależności od tego co dokładnie wysyłasz w "object results" w GameHub
 }

@@ -1,6 +1,7 @@
 // src/store/gameStore.ts
 import { create } from "zustand";
 import type { Player, Room, QuestionDto } from "../types";
+import { RoomStatus } from "../types";
 
 interface GameState {
   // --- DANE (STAN) ---
@@ -13,6 +14,7 @@ interface GameState {
   winningTopic: string | null; // Zwycięski temat
   isGeneratingQuestions: boolean; // Flaga dla ekranu ładowania (AI generuje pytania)
   currentQuestion: QuestionDto | null; // Obecne pytanie
+  isQuestionTimeExpired: boolean;
 
   // Runda / Zakończenie
   lastQuestionResult: any | null; // Wyniki ostatniego pytania (podświetlenie kto zgadł)
@@ -36,6 +38,7 @@ interface GameState {
   setWinningTopic: (topic: string) => void;
   setQuestionsGenerating: (isGenerating: boolean) => void;
   setCurrentQuestion: (question: QuestionDto) => void;
+  setQuestionTimeExpired: (isExpired: boolean) => void;
   setQuestionResult: (result: any) => void;
   setRoundEnded: (summary: any) => void;
   setGameOver: (leaderboard: any) => void;
@@ -54,6 +57,7 @@ export const useGameStore = create<GameState>((set) => ({
   winningTopic: null,
   isGeneratingQuestions: false,
   currentQuestion: null,
+  isQuestionTimeExpired: false,
   lastQuestionResult: null,
   roundSummary: null,
   finalLeaderboard: null,
@@ -114,7 +118,15 @@ export const useGameStore = create<GameState>((set) => ({
     }),
 
   setVotingTopics: (topics) =>
-    set({ votingTopics: topics, winningTopic: null }),
+    set({
+      votingTopics: topics,
+      winningTopic: null,
+      isGeneratingQuestions: false,
+      currentQuestion: null,
+      isQuestionTimeExpired: false,
+      lastQuestionResult: null,
+      roundSummary: null,
+    }),
 
   setWinningTopic: (topic) =>
     set({ winningTopic: topic, isGeneratingQuestions: true }),
@@ -126,8 +138,13 @@ export const useGameStore = create<GameState>((set) => ({
     set({
       currentQuestion: question,
       isGeneratingQuestions: false,
+      isQuestionTimeExpired: false,
       lastQuestionResult: null, // Resetujemy wynik z poprzedniego pytania
+      roundSummary: null,
     }),
+
+  setQuestionTimeExpired: (isExpired) =>
+    set({ isQuestionTimeExpired: isExpired }),
 
   setQuestionResult: (result) => set({ lastQuestionResult: result }),
 
@@ -135,17 +152,27 @@ export const useGameStore = create<GameState>((set) => ({
     set({ roundSummary: summary, currentQuestion: null }),
 
   setGameOver: (leaderboard) =>
-    set({ finalLeaderboard: leaderboard, currentRoom: null }),
+    set((state) => ({
+      finalLeaderboard: leaderboard,
+      currentRoom: state.currentRoom
+        ? {
+            ...state.currentRoom,
+            status: RoomStatus.Finished,
+          }
+        : state.currentRoom,
+    })),
 
   setError: (error) => set({ error }),
 
   resetGame: () =>
     set({
       currentRoom: null,
+      roomsList: [],
       votingTopics: [],
       winningTopic: null,
       isGeneratingQuestions: false,
       currentQuestion: null,
+      isQuestionTimeExpired: false,
       lastQuestionResult: null,
       roundSummary: null,
       finalLeaderboard: null,

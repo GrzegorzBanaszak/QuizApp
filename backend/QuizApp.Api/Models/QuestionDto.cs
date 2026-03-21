@@ -8,4 +8,7 @@ public class QuestionDto
     public int QuestionNumber { get; set; } // np. 1 (dla informacji "Pytanie 1/6")
     public int TotalQuestions { get; set; }
     public int TimeLimitSeconds { get; set; } = 20; // Czas na odpowiedź
+    public DateTime StartedAtUtc { get; set; }
+    public DateTime EndsAtUtc { get; set; }
+    public DateTime ServerNowUtc { get; set; }
 }
