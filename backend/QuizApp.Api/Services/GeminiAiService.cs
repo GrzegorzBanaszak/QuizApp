@@ -22,23 +22,19 @@ public class GeminiAiService : IAiQuestionGenerator
         try
         {
             var url = $"https://generativelanguage.googleapis.com/v1beta/models/{_modelName}:generateContent";
-
-            var prompt = $@"
-Jesteś generatorem pytań do quizu. Wygeneruj {count} pytań na temat: '{topic}'.
-Zwróć wynik TYLKO i WYŁĄCZNIE jako czystą tablicę JSON, bez żadnego formatowania Markdown, bez bloków ```json.
-Struktura pojedynczego obiektu w tablicy musi wyglądać dokładnie tak:
-{{
-  ""Text"": ""Treść pytania?"",
-  ""Options"": [""Odp A"", ""Odp B"", ""Odp C"", ""Odp D""],
-  ""CorrectOptionIndex"": 0
-}}
-Upewnij się, że CorrectOptionIndex to liczba od 0 do 3 wskazująca na poprawną odpowiedź w tablicy Options. Odpowiedzi powinny być sensowne, a pytania nie za trudne.";
+            var prompt = BuildPrompt(topic, count);
 
             var requestBody = new
             {
                 contents = new[]
                 {
                     new { parts = new[] { new { text = prompt } } }
+                },
+                generationConfig = new
+                {
+                    temperature = 0.9,
+                    topP = 0.95,
+                    topK = 40
                 }
             };
 
@@ -86,6 +82,33 @@ Upewnij się, że CorrectOptionIndex to liczba od 0 do 3 wskazująca na poprawn�
             Console.WriteLine($"Błąd podczas łączenia z Gemini API: {ex.Message}");
             return GetFallbackQuestions(topic, count);
         }
+    }
+
+    private static string BuildPrompt(string topic, int count)
+    {
+        return $@"
+You are a quiz question generator.
+Generate exactly {count} questions about: ""{topic}"".
+
+Requirements:
+- Return ONLY a raw JSON array, no Markdown, no comments, no code fences.
+- Use Polish language only for every question, answer option, and scenario text.
+- Every item must contain exactly these fields: Text, Options, CorrectOptionIndex.
+- Options must contain exactly 4 answers.
+- CorrectOptionIndex must be an integer from 0 to 3.
+- Make the questions diverse in style: definition, comparison, example, application, fact recognition, short scenario.
+- Do not repeat the same wording pattern or start two questions with the same opening.
+- If the topic is broad, spread the questions across different subtopics instead of using one narrow angle.
+- Keep distractors plausible and similar in length so the answer is not obvious by formatting alone.
+- Avoid questions that are too hard, but do not make them trivial or repetitive.
+- Do not use options like ""all of the above"" or ""none of the above"".
+
+Example item:
+{{
+  ""Text"": ""Sample question?"",
+  ""Options"": [""Option A"", ""Option B"", ""Option C"", ""Option D""],
+  ""CorrectOptionIndex"": 0
+}}";
     }
 
     private List<Question> GetFallbackQuestions(string topic, int count)
