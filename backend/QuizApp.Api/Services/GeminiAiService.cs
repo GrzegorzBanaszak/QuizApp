@@ -101,6 +101,12 @@ Requirements:
 - If the topic is broad, spread the questions across different subtopics instead of using one narrow angle.
 - Keep distractors plausible and similar in length so the answer is not obvious by formatting alone.
 - Avoid questions that are too hard, but do not make them trivial or repetitive.
+- Control difficulty distribution:
+  - For 6 questions, make exactly 3 easy, 2 medium, and 1 medium-hard.
+  - If the requested count is different from 6, keep the same approximate ratio: 50% easy, 33% medium, 17% medium-hard.
+  - Easy questions should ask about basic facts or simple recognition.
+  - Medium questions should require a bit of comparison, reasoning, or recall.
+  - Medium-hard questions should require combining two facts or making a short inference, but still remain fair.
 - Do not use options like ""all of the above"" or ""none of the above"".
 
 Example item:
