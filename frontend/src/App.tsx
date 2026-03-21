@@ -7,12 +7,14 @@ import { RoomStatus } from "./types/index.ts";
 import { Voting } from "./pages/Voting.tsx";
 import { Game } from "./pages/Game.tsx";
 import { RoundSummary } from "./pages/RoundSummary.tsx";
+import { GameOver } from "./pages/GameOver.tsx";
 
 function App() {
   const { isConnected, createRoom, joinRoom } = useGameSignalR();
   const currentRoom = useGameStore((state) => state.currentRoom);
   const currentQuestion = useGameStore((state) => state.currentQuestion);
   const roundSummary = useGameStore((state) => state.roundSummary);
+  const finalLeaderboard = useGameStore((state) => state.finalLeaderboard);
   const error = useGameStore((state) => state.error);
 
   useEffect(() => {
@@ -35,7 +37,9 @@ function App() {
   }
   let currentView;
 
-  if (!currentRoom) {
+  if (finalLeaderboard) {
+    currentView = <GameOver />;
+  } else if (!currentRoom) {
     currentView = <Menu createRoom={createRoom} joinRoom={joinRoom} />;
   } else if (currentRoom.status === RoomStatus.WaitingForPlayers) {
     // WaitingForPlayers
@@ -52,11 +56,7 @@ function App() {
     }
   } else if (currentRoom.status === RoomStatus.Finished) {
     // Finished
-    currentView = (
-      <div className="p-10 text-center text-2xl text-green-500">
-        Koniec Gry! Podium wkrótce...
-      </div>
-    );
+    currentView = <GameOver />;
   }
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-indigo-500/30 flex justify-center pt-10">

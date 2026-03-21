@@ -320,6 +320,10 @@ export const useGameSignalR = () => {
     await invoke("StartNextRoundVoting", roomId);
   };
 
+  const refreshAvailableRooms = async () => {
+    await invoke("GetAvailableRooms");
+  };
+
   return {
     isConnected,
     createRoom,
@@ -331,5 +335,6 @@ export const useGameSignalR = () => {
     submitAnswer,
     startNextQuestion,
     startNextRoundVoting,
+    refreshAvailableRooms,
   };
 };

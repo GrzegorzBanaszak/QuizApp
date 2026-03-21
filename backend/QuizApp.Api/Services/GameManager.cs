@@ -21,7 +21,8 @@ public class GameManager
 
     public ConcurrentDictionary<string, Room> Rooms { get; } = new();
 
-    public IEnumerable<Room> GetRooms() => Rooms.Values;
+    public IEnumerable<Room> GetRooms() =>
+        Rooms.Values.Where(room => room.Status == RoomStatus.WaitingForPlayers);
 
     public bool TryGetRoom(string roomId, out Room room)
     {

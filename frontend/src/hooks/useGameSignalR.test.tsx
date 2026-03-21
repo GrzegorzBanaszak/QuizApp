@@ -436,4 +436,49 @@ describe("useGameSignalR", () => {
     expect(useGameStore.getState().roundSummary).toEqual(summary);
     expect(useGameStore.getState().currentQuestion).toBeNull();
   });
+
+  it("stores the final leaderboard and marks the room as finished when GameOver arrives", async () => {
+    renderHook(() => useGameSignalR());
+
+    await waitFor(() => {
+      expect(fakeConnection.start).toHaveBeenCalled();
+    });
+
+    useGameStore.setState({
+      connectionId: "test-connection-id",
+      roomsList: [],
+      currentRoom: {
+        roomId: "ROOM7",
+        hostConnectionId: "test-connection-id",
+        numberOfTopics: 3,
+        status: RoomStatus.Playing,
+        players: {},
+        availableTopics: [],
+        playerVotes: {},
+        selectedTopic: null,
+        currentQuestionIndex: 0,
+        playedTopics: [],
+      },
+      votingTopics: [],
+      winningTopic: null,
+      isGeneratingQuestions: false,
+      currentQuestion: null,
+      isQuestionTimeExpired: false,
+      lastQuestionResult: null,
+      roundSummary: null,
+      finalLeaderboard: null,
+      error: null,
+      canStartGame: false,
+    });
+
+    const leaderboard = [
+      { connectionId: "player-1", name: "Anna", score: 10 },
+      { connectionId: "player-2", name: "Bartek", score: 7 },
+    ];
+
+    emit("GameOver", leaderboard);
+
+    expect(useGameStore.getState().finalLeaderboard).toEqual(leaderboard);
+    expect(useGameStore.getState().currentRoom?.status).toBe(RoomStatus.Finished);
+  });
 });

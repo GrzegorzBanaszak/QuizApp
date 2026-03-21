@@ -170,9 +170,9 @@ export const Lobby = () => {
                   onChange={handleTopicsChange}
                   className="w-full bg-slate-900 border border-slate-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-indigo-500"
                 >
-                  <option value={3}>3 tematy</option>
-                  <option value={5}>5 tematów</option>
-                  <option value={7}>7 tematów</option>
+                  <option value={1}>1 rozgrywki</option>
+                  <option value={3}>3 rozgrywek</option>
+                  <option value={5}>5 rozgrywek</option>
                 </select>
               </div>
 

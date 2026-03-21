@@ -1,6 +1,7 @@
 // src/store/gameStore.ts
 import { create } from "zustand";
 import type { Player, Room, QuestionDto } from "../types";
+import { RoomStatus } from "../types";
 
 interface GameState {
   // --- DANE (STAN) ---
@@ -151,13 +152,22 @@ export const useGameStore = create<GameState>((set) => ({
     set({ roundSummary: summary, currentQuestion: null }),
 
   setGameOver: (leaderboard) =>
-    set({ finalLeaderboard: leaderboard, currentRoom: null }),
+    set((state) => ({
+      finalLeaderboard: leaderboard,
+      currentRoom: state.currentRoom
+        ? {
+            ...state.currentRoom,
+            status: RoomStatus.Finished,
+          }
+        : state.currentRoom,
+    })),
 
   setError: (error) => set({ error }),
 
   resetGame: () =>
     set({
       currentRoom: null,
+      roomsList: [],
       votingTopics: [],
       winningTopic: null,
       isGeneratingQuestions: false,

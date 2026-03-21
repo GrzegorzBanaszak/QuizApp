@@ -10,6 +10,23 @@ namespace QuizApp.Tests;
 public class GameHubTests
 {
     [Fact]
+    public void GetRooms_Should_Return_Only_WaitingForPlayers_Rooms()
+    {
+        var gameManager = new GameManager();
+
+        var waitingRoom = gameManager.CreateRoom("host-1", "Host1", "a.png");
+        var playingRoom = gameManager.CreateRoom("host-2", "Host2", "b.png");
+        playingRoom.Status = RoomStatus.Playing;
+        var finishedRoom = gameManager.CreateRoom("host-3", "Host3", "c.png");
+        finishedRoom.Status = RoomStatus.Finished;
+
+        var rooms = gameManager.GetRooms().ToList();
+
+        Assert.Single(rooms);
+        Assert.Equal(waitingRoom.RoomId, rooms[0].RoomId);
+    }
+
+    [Fact]
     public async Task CreateRoom_Should_CallRoomCreated_And_BroadcastRoomsList()
     {
         // Arrange
