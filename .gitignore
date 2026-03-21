@@ -46,14 +46,23 @@ backend/**/appsettings.Production.json
 # =========================
 infrastructure/.terraform/
 infrastructure/**/.terraform/
+infrastructure/**/.terraform.tfstate.lock.info
 infrastructure/*.tfstate
 infrastructure/*.tfstate.*
 infrastructure/**/*.tfstate
 infrastructure/**/*.tfstate.*
+infrastructure/**/*.tfplan
+infrastructure/**/*.tfplan.*
 infrastructure/crash.log
+infrastructure/**/crash.log
+infrastructure/**/crash.*.log
 infrastructure/**/*.tfvars
 infrastructure/**/*.tfvars.json
 infrastructure/override.tf
 infrastructure/override.tf.json
 infrastructure/*_override.tf
 infrastructure/*_override.tf.json
+infrastructure/**/override.tf
+infrastructure/**/override.tf.json
+infrastructure/**/*_override.tf
+infrastructure/**/*_override.tf.json
