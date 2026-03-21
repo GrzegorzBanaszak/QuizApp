@@ -1,65 +1,108 @@
 # 🎮 QuizApp Multiplayer
 
-Aplikacja do quizów wieloosobowych w czasie rzeczywistym. Gracze mogą dołączać do pokoi, wybierać kategorie i rywalizować ze sobą, odpowiadając na generowane pytania.
+QuizApp to multiplayerowa aplikacja do quizow w czasie rzeczywistym. Gracze moga tworzyc lub dolaczac do pokoi, wybierac avatary, glosowac na temat rundy i odpowiadac na pytania generowane przez AI.
 
-## 🛠️ Stos Technologiczny
+## ✨ Co jest w projekcie
 
-- **Frontend:** React, Vite, TypeScript, Zustand, React Router
-- **Backend:** .NET 9 Web API, SignalR (Real-time komunikacja)
-- **Baza Danych / Cache:** Redis (Backplane dla SignalR, stan gry)
-- **Infrastruktura:** Proxmox (Ubuntu Server), Docker, Terraform
-- **AI:** OpenAI API / Lokalny LLM (Ollama) do generowania pytań
+- 🏠 lobby z lista dostepnych pokoi
+- 🔑 tworzenie i dolaczanie do pokoju po kodzie
+- 🧑‍🚀 wybor avatara i nazwy gracza
+- ✅ status gotowosci graczy i start gry przez hosta
+- 🗳️ glosowanie na temat rundy
+- 🤖 generowanie pytan przez Gemini
+- ⏱️ pytania na czas z punktacja zalezna od szybkosci odpowiedzi
+- 📊 podsumowanie rundy i koncowa tabela wynikow
+- 🎉 ekran koncowy z rankingiem i konfetti
 
-## 📁 Struktura Projektu
+## 🛠️ Stack
 
-- `/backend` - Kod źródłowy API w .NET oraz Huby SignalR.
-- `/frontend` - Aplikacja kliencka w React/Vite.
-- `/infrastructure` - Skrypty Terraform do wdrażania na serwer Proxmox.
+- Frontend: React 19, Vite, TypeScript, Zustand, React Router, SignalR, Framer Motion, Tailwind CSS 4
+- Backend: .NET 9 Web API, SignalR
+- AI: Gemini API przez `GeminiAiService`
+- Testy frontendowe: Vitest
+- Testy backendowe: xUnit
+- Infrastruktura: Docker i Terraform
 
-## Diagram rozgrywki
+## 📁 Struktura repozytorium
 
-```mermaid
-flowchart TD
-    Start([Start Aplikacji]) --> Lobby[Wyświetlenie listy pokoi]
-    Lobby --> WyborPokoju[Wybór pokoju z listy lub stworzenie nowego]
-    WyborPokoju --> TworzeniePostaci[Tworzenie postaci: wpisanie nicku i wybór zdjęcia]
-    TworzeniePostaci --> Poczekalnia[Poczekalnia / Pokój gry]
+- `backend/` - API w .NET, hub SignalR, modele i serwisy
+- `frontend/` - aplikacja kliencka w React/Vite
+- `infrastructure/` - konfiguracja Terraform dla kontenerow Docker
 
-    Poczekalnia --> HostAkcja{Host wybiera liczbę tematów}
-    HostAkcja --> WszyscyGotowi{Czy wszyscy kliknęli START?}
+## 🧭 Jak to dziala
 
-    WszyscyGotowi -- Nie --> Oczekiwanie[Oczekiwanie na graczy]
-    Oczekiwanie --> WszyscyGotowi
+1. Gracz wchodzi do menu i tworzy pokoj albo dolacza do istniejacego kodem.
+2. Host ustawia liczbe tematow rundy, a gracze oznaczaja sie jako gotowi.
+3. Po starcie gry pokoj przechodzi do glosowania na temat.
+4. Po wygranym glosowaniu backend pobiera 6 pytan z Gemini.
+5. Pytania sa wysylane po kolei przez SignalR, a punkty sa przyznawane za poprawna i szybka odpowiedz.
+6. Po zakonczeniu puli pytan pokazywane jest podsumowanie rundy.
+7. Po rozegraniu wszystkich tematow aplikacja pokazuje finalny ranking.
 
-    WszyscyGotowi -- Tak --> GlosowanieNaTemat[Ekran głosowania na pierwszą/kolejną tematykę]
+## ⚙️ Backend
 
-    GlosowanieNaTemat --> GlosowanieAkcja[Gracze oddają głosy]
-    GlosowanieAkcja --> WyborTematu[Wyłonienie zwycięskiego tematu]
+- 📡 Hub SignalR jest pod `POST/WS` na `/gameHub`
+- ❤️ Endpoint zdrowia jest dostepny pod `/health`
+- 🖼️ Statyczne avatary sa serwowane z `backend/QuizApp.Api/wwwroot/avatars`
+- 🧠 Stan gry jest aktualnie trzymany w pamieci przez `GameManager`
+- 🔌 W projekcie jest dodana integracja z `Microsoft.AspNetCore.SignalR.StackExchangeRedis`, ale obecna konfiguracja `Program.cs` nie podpina Redis jako backplane
+- 🛟 AI ma fallback, wiec przy braku odpowiedzi z Gemini backend moze zwrocic awaryjne pytania
 
-    WyborTematu --> GeneracjaAI[AI generuje 6-8 pytań z 4 wariantami odpowiedzi]
+## 🎨 Frontend
 
-    GeneracjaAI --> PokazPytanie[Wyświetlenie pytania]
-    PokazPytanie --> Odpowiedzi[Gracze odpowiadają na czas]
-    Odpowiedzi --> PrzyznaniePunktow[Przyznanie punktów: najszybsza poprawna = najwięcej pkt]
+- Domyslny adres huba to `http://localhost:5211/gameHub`
+- Mozna go nadpisac przez `VITE_SIGNALR_URL`
+- Widoki w aplikacji:
+  - `Menu`
+  - `Lobby`
+  - `Voting`
+  - `Game`
+  - `RoundSummary`
+  - `GameOver`
 
-    PrzyznaniePunktow --> CzyWiecejPytan{Czy są jeszcze pytania w tym temacie?}
-    CzyWiecejPytan -- Tak --> PokazPytanie
+## 🚀 Uruchomienie lokalne
 
-    CzyWiecejPytan -- Nie --> PodsumowanieKategorii[Plansza podsumowująca wyniki z danej kategorii]
+### 🧩 Backend
 
-    PodsumowanieKategorii --> CzyKoniecGry{Czy to była ostatnia kategoria/runda?}
-
-    CzyKoniecGry -- Nie --> UsunTemat[Usunięcie wykorzystanego tematu z puli]
-    UsunTemat --> GlosowanieNaTemat
-
-    CzyKoniecGry -- Tak --> TabelaKoncowa[Wyświetlenie końcowej tabeli wyników]
-    TabelaKoncowa --> PowrotLobby([Powrót do Lobby])
+```powershell
+dotnet run --project backend/QuizApp.Api
 ```
 
-## Awatary
+Domyslny profil HTTP nasluchuje na `http://localhost:5211`, a HTTPS na `https://localhost:7183`.
 
-Backend udostępnia statyczne pliki z katalogu `backend/QuizApp.Api/wwwroot`.
+### 🌐 Frontend
 
-- wrzucaj zdjęcia do `backend/QuizApp.Api/wwwroot/avatars`
-- frontend pobiera je pod adresem `https://<adres-backendu>/avatars/nazwa-pliku.png`
-- lokalnie najczęściej będzie to `https://localhost:<port>/avatars/nazwa-pliku.png`
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend domyslnie startuje na `http://localhost:5173`.
+
+## 🤖 Konfiguracja AI
+
+W pliku `backend/QuizApp.Api/appsettings.json` lub przez user secrets ustaw:
+
+```json
+{
+  "Gemini": {
+    "ApiKey": "twoj-klucz",
+    "Model": "gemini-2.5-flash"
+  }
+}
+```
+
+## 🏗️ Infrastruktura
+
+Folder `infrastructure/` zawiera konfiguracje Terraform dla kontenerow Docker. W obecnym stanie obejmuje m.in. Redis, Nginx Proxy Manager i Pi-hole oraz placeholdery dla kontenerow aplikacji.
+
+## 🧪 Testy
+
+- Backend: `dotnet test backend/QuizApp.sln`
+- Frontend: `cd frontend && npm test`
+
+## 🖼️ Avatary
+
+- wrzucaj pliki do `backend/QuizApp.Api/wwwroot/avatars`
+- frontend pobiera je pod adresem `http(s)://<adres-backendu>/avatars/nazwa-pliku.png`
