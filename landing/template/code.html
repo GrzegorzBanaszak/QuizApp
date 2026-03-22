@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>QuizVolt – Najlepsza gra quizowa nowej generacji!</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#ffb2b9",
+                        "on-error": "#490013",
+                        "on-tertiary-container": "#005359",
+                        "error": "#ff6e84",
+                        "error-dim": "#d73357",
+                        "on-surface": "#e5e3ff",
+                        "surface-container-lowest": "#000000",
+                        "outline": "#74738d",
+                        "primary": "#e08dff",
+                        "primary-container": "#d978ff",
+                        "inverse-on-surface": "#53536b",
+                        "surface-tint": "#e08dff",
+                        "on-primary-container": "#3d0055",
+                        "surface-container-highest": "#232341",
+                        "secondary-dim": "#e10080",
+                        "primary-fixed-dim": "#d160ff",
+                        "on-tertiary-fixed-variant": "#005e64",
+                        "surface-bright": "#29294a",
+                        "on-secondary-fixed": "#6b003a",
+                        "on-primary-fixed-variant": "#4c0068",
+                        "surface-container-high": "#1d1d39",
+                        "surface-container": "#171730",
+                        "tertiary": "#8ff5ff",
+                        "secondary-container": "#b90068",
+                        "tertiary-fixed": "#00eefc",
+                        "on-background": "#e5e3ff",
+                        "on-surface-variant": "#aaa8c4",
+                        "surface-dim": "#0c0c21",
+                        "primary-fixed": "#d978ff",
+                        "tertiary-dim": "#00deec",
+                        "background": "#0c0c21",
+                        "on-secondary": "#460024",
+                        "tertiary-fixed-dim": "#00deec",
+                        "on-secondary-container": "#fff5f6",
+                        "error-container": "#a70138",
+                        "primary-dim": "#bc00fb",
+                        "inverse-primary": "#9a00cf",
+                        "on-primary-fixed": "#000000",
+                        "inverse-surface": "#fcf8ff",
+                        "secondary": "#ff68a7",
+                        "surface": "#0c0c21",
+                        "on-tertiary": "#005d63",
+                        "on-secondary-fixed-variant": "#9f0059",
+                        "outline-variant": "#46465e",
+                        "secondary-fixed": "#ffc1d4",
+                        "on-tertiary-fixed": "#003f43",
+                        "on-primary": "#4f006c",
+                        "surface-container-low": "#111128",
+                        "surface-variant": "#232341",
+                        "secondary-fixed-dim": "#ffacc8",
+                        "tertiary-container": "#00eefc"
+                    },
+                    fontFamily: {
+                        "headline": ["Spline Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0c0c21;
+            color: #e5e3ff;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(35, 35, 65, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 20px rgba(224, 141, 255, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #e08dff 0%, #ff68a7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary/30 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 dark:bg-[#0c0c21]/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(224,141,255,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto font-['Spline_Sans'] tracking-tight">
+<div class="text-2xl font-black italic tracking-tighter text-[#e08dff]">QuizVolt</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#aaa8c4] hover:text-[#e5e3ff] transition-colors hover:scale-105 transition-all duration-300" href="#">Singleplayer</a>
+<a class="text-[#aaa8c4] hover:text-[#e5e3ff] transition-colors hover:scale-105 transition-all duration-300" href="#">Multiplayer</a>
+<a class="text-[#aaa8c4] hover:text-[#e5e3ff] transition-colors hover:scale-105 transition-all duration-300" href="#">Party Mode</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold active:scale-95 transition-transform hover:scale-105 transition-all duration-300">Play Now</button>
+</div>
+</div>
+<div class="bg-gradient-to-r from-transparent via-[#e08dff]/10 to-transparent h-[1px] absolute bottom-0 w-full"></div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-20 px-6 overflow-hidden min-h-screen flex items-center">
+<!-- Abstract Background Glows -->
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/10 rounded-full blur-[120px]"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border border-primary/20">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-tertiary text-xs font-bold tracking-widest uppercase">Nowa Era Quizów</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline font-black leading-[1.1] tracking-tighter">
+                    QuizVolt – <span class="text-gradient">Najlepsza gra quizowa</span> nowej generacji!
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl font-body leading-relaxed">
+                    Poczuj elektryzujące emocje w najbardziej dynamicznym quizie społecznościowym. Rywalizuj, twórz i wygrywaj w świecie neonowej wiedzy.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-black text-lg shadow-[0_0_30px_rgba(224,141,255,0.4)] hover:scale-105 active:scale-95 transition-all">
+                        Zacznij grać
+                    </button>
+<button class="bg-surface-bright border border-primary/20 text-on-surface px-10 py-4 rounded-full font-bold text-lg hover:bg-surface-variant transition-all">
+                        Dowiedz się więcej
+                    </button>
+</div>
+<div class="flex items-center gap-6 pt-8">
+<div class="flex -space-x-3">
+<img alt="Gracz 1" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="Close up portrait of a young male gamer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHngyJjojxNPRnhUkovepJUq91opHHqRf5VWEdwMOVb12sToVvOMy4sk9adyMuiASb0Qch0xXMt5AEG9b4ytgxiQFKzWYHUo3PdX41aIioVf683uGcJb7wsN3TlPyt4wdQaJgw9-G5ESZoPT-Tsan3hSHlp9EcYgEXph9L90y6PcM4OoPiGatncifDC7VKLK1t7BWrcMjXk1UKMaNXCrxuHXLzEeV0Xo1tSNPtN7WFZ-nydl2M9NWdI4a_lG1vfsoZwQxmya8P_th3"/>
+<img alt="Gracz 2" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="Portrait of a smiling young woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQGvTNKHL4S9033yiH-yooghGRz0RqunRV1McBpkazn5LrZxq31POqANUH5M_qFABwgiuDZBj9uxqLPwuOV6qcBXBECKKg_frMJ55RHQAAeKYhFCV5lCWPN8e1_-NwV6SyL--BXY5sAjgV2GyuobJ-sd_irp2b97oD_HY3gWYORhqUwX4UwAxbSNwRhQHpUrKxfLPRRr2NhBjsc4Sx1uLSEmYbGKQv-PVDgjTaaTQbW8DpddR_e4gSzjir04NDBE75EEc_xXK6h52W"/>
+<img alt="Gracz 3" class="w-10 h-10 rounded-full border-2 border-surface" data-alt="Portrait of a man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuLjYdCmsfDqKyeG9O2cMh-TbRFIV_byFxpPnH8R3bdAFA7qOJw6pojRUWAxLwF9XUGNu1tVCIm7Zh88DPU_r-v1po5ZqfvwtdKunN9y9Hty2-kCy7ru2EILO3_DnpKf6wuNwWOu7QZBqwv3UkQQRZqfQR4cm-Pvo4xQfaeUfe5p5rNrugDcMMrHqpIkx2cwboeZZ_illtScfPziLFRdunuAJdZTodWOr6AnZNYjfB9W6THL7VaRTOOKBKesXdBYRh177J33cSGtWk"/>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">Dołącz do <span class="text-tertiary font-bold">+50,000</span> graczy online</p>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative bg-surface-container rounded-lg overflow-hidden aspect-video shadow-2xl">
+<img alt="QuizVolt Gameplay" class="w-full h-full object-cover opacity-80" data-alt="Futuristic neon gaming interface with quiz questions and scores" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7BBZYI5MtO9EZRa4IGVzKWumPZk62EVLrMxTTKQ_YSkMYR1bFHnSIqzNSVsmX7-U9wLQ4dos-oSwXlUsV8S1jUU9cy-044fUE0NfZ3pYVS_Jc6VkjPtA4ALDi0Zrt9gLxyIhunkCf2GRgBWcMJqAcy6EugiB-JfWjYuQTgdALno30iUEuT3tkEzHjRwyE8PFPaxzD83pFzXR61GPSUba9D9RtKhhwnp8qAwkDF8YAtQMJNQoP8v8ezEyiqPmlb1tZmxOl1RyZhtRW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-md flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<span class="font-bold text-on-surface tracking-tight">Zobacz trailer QuizVolt</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Singleplayer -->
+<section class="py-32 px-6 bg-surface-container-low/30">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container p-6 rounded-lg space-y-4 border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+<h4 class="font-bold text-on-surface">AI Real-Time</h4>
+<p class="text-sm text-on-surface-variant">Pytania generowane przez AI w czasie rzeczywistym.</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-lg space-y-4 mt-8">
+<span class="material-symbols-outlined text-tertiary text-3xl">trending_up</span>
+<h4 class="font-bold text-on-surface">Top 100</h4>
+<p class="text-sm text-on-surface-variant">Wspinaj się do elitarnego grona najlepszych na świecie.</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-lg space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl">tune</span>
+<h4 class="font-bold text-on-surface">Poziomy Trudności</h4>
+<p class="text-sm text-on-surface-variant">Od amatora po arcymistrza wiedzy.</p>
+</div>
+<div class="bg-surface-container p-6 rounded-lg space-y-4 mt-8 border-l-4 border-tertiary">
+<span class="material-symbols-outlined text-tertiary text-3xl">workspace_premium</span>
+<h4 class="font-bold text-on-surface">Nagrody</h4>
+<p class="text-sm text-on-surface-variant">Unikalne skiny i odznaki dla mistrzów solo.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-8 order-1 lg:order-2">
+<h2 class="text-4xl md:text-6xl font-headline font-black tracking-tighter">Graj Solo, Rywalizuj z <span class="text-tertiary">Całym Światem</span></h2>
+<p class="text-on-surface-variant text-lg font-body max-w-2xl leading-relaxed">
+                        Nasze algorytmy dbają o to, abyś nigdy nie usłyszał tego samego pytania dwa razy. Wyzwania dopasowują się do Twojego poziomu, oferując dynamiczną rozgrywkę, która trenuje Twój mózg.
+                    </p>
+<div class="bg-surface-container-highest p-8 rounded-lg relative overflow-hidden group">
+<div class="flex items-center justify-between relative z-10">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-black text-on-primary">#1</div>
+<div>
+<div class="font-bold text-on-surface">Aktualny Lider</div>
+<div class="text-sm text-on-surface-variant">Gracz: Neon_Wiz</div>
+</div>
+</div>
+<div class="text-right">
+<div class="text-2xl font-black text-primary">12,450 PKT</div>
+<div class="text-xs text-tertiary uppercase tracking-widest font-bold">Tryb Legendarny</div>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Multiplayer & Party Mode -->
+<section class="py-32 px-6 relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_rgba(255,104,167,0.05)_0%,_transparent_70%)]"></div>
+<div class="max-w-7xl mx-auto text-center space-y-12 relative z-10">
+<div class="space-y-4">
+<h2 class="text-4xl md:text-6xl font-headline font-black tracking-tighter">Impreza w Twoim <span class="text-gradient">Salonie!</span></h2>
+<p class="text-on-surface-variant text-lg font-body max-w-3xl mx-auto">
+                    Zapomnij o nudnych planszówkach. Przekształć dowolny ekran w centrum rozrywki, a swój telefon w potężny kontroler.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Party Card -->
+<div class="glass-panel p-10 rounded-lg text-left border border-white/5 space-y-6 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-16 h-16 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<h3 class="text-3xl font-bold text-on-surface">Tryb Party</h3>
+<p class="text-on-surface-variant">Uruchom grę w przeglądarce na TV, a goście dołączą skanując kod QR. Telefon staje się Twoim panelem odpowiedzi, wibracje i dźwięki prosto w dłoni!</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span> Do 50 graczy jednocześnie
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span> Nie wymaga instalacji aplikacji
+                        </li>
+</ul>
+</div>
+<!-- Online Multiplayer Card -->
+<div class="bg-surface-container-highest p-10 rounded-lg text-left space-y-6 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-16 h-16 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<h3 class="text-3xl font-bold text-on-surface">Multiplayer Online</h3>
+<p class="text-on-surface-variant">Rywalizuj z przyjaciółmi lub losowymi przeciwnikami w szybkich bitwach 1vs1 lub turniejach dla 8 osób. Szybkie lobby, zero lagów.</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex-1 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary to-primary w-[75%]"></div>
+</div>
+<span class="text-xs font-bold text-tertiary">3,421 aktywnych bitew</span>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<img alt="Gamers playing" class="w-full max-w-4xl mx-auto rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Friends laughing and looking at their phones during a party" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP4Q_XOeTR0t0OopdgsEuWkCophBL_EDLUCmVTS9VlX7O-4Dwh4Vl4SgWvC5S9zOdkQyOlWvi5514meYSCcrr42ok3S-PnTDHqdndJzh20unJ3lFdMb0_fquElo1hFmceY4h5o4nQFiSwwf9Nv7OMTsnMa0PosF4CuACNs2K8Effvj2yDy-TjurUGNaBpMloo5uApsV4HsrfohTtwo5ml5O8Y-Jp2kwFd4Sn3ZSxvbDOkjtdNdRsZZSwJpFJ79ii36lA_inmnxkqdb"/>
+</div>
+</div>
+</section>
+<!-- Section 3: How it Works -->
+<section class="py-32 px-6 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-center text-4xl font-headline font-black mb-20 tracking-tight">Zacznij w <span class="text-primary">3 prostych krokach</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Step 1 -->
+<div class="relative group text-center space-y-6">
+<div class="w-24 h-24 mx-auto rounded-full bg-surface-container flex items-center justify-center relative z-10 border-2 border-primary/20 group-hover:border-primary transition-colors">
+<span class="text-4xl font-black text-primary">01</span>
+</div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold">Wybierz Tryb</h4>
+<p class="text-on-surface-variant text-sm">Graj solo lub stwórz pokój dla znajomych jednym kliknięciem.</p>
+</div>
+<!-- Connector line hidden on mobile -->
+<div class="hidden md:block absolute top-12 left-[calc(50%+4rem)] w-[calc(100%-8rem)] h-[2px] bg-gradient-to-r from-primary/30 to-transparent"></div>
+</div>
+<!-- Step 2 -->
+<div class="relative group text-center space-y-6">
+<div class="w-24 h-24 mx-auto rounded-full bg-surface-container flex items-center justify-center relative z-10 border-2 border-secondary/20 group-hover:border-secondary transition-colors">
+<span class="text-4xl font-black text-secondary">02</span>
+</div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold">Połącz Urządzenia</h4>
+<p class="text-on-surface-variant text-sm">Zeskanuj QR kod lub wpisz PIN pokoju. Każdy jest w grze!</p>
+</div>
+<!-- Connector line -->
+<div class="hidden md:block absolute top-12 left-[calc(50%+4rem)] w-[calc(100%-8rem)] h-[2px] bg-gradient-to-r from-secondary/30 to-transparent"></div>
+</div>
+<!-- Step 3 -->
+<div class="relative group text-center space-y-6">
+<div class="w-24 h-24 mx-auto rounded-full bg-surface-container flex items-center justify-center relative z-10 border-2 border-tertiary/20 group-hover:border-tertiary transition-colors">
+<span class="text-4xl font-black text-tertiary">03</span>
+</div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold">Zdominuj Ranking</h4>
+<p class="text-on-surface-variant text-sm">Odpowiadaj szybko i celnie, by zgarnąć koronę zwycięzcy.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#000000] dark:bg-[#000000] w-full pt-20 pb-10 font-['Be_Vietnam_Pro'] text-sm">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 border-t border-[#e08dff]/5 max-w-7xl mx-auto pt-10">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-bold text-[#e08dff]">QuizVolt</div>
+<p class="text-[#8ff5ff] dark:text-[#8ff5ff] text-center md:text-left">© 2024 QuizVolt. The Electric Social Experience.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mt-10 md:mt-0">
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Discord</a>
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Twitter</a>
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Contact Us</a>
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-10 text-center md:text-left">
+<div class="inline-flex gap-4">
+<span class="px-3 py-1 bg-surface-container rounded-md text-[10px] uppercase tracking-widest text-on-surface-variant border border-outline-variant/20">v2.0.4-NEON</span>
+<span class="px-3 py-1 bg-surface-container rounded-md text-[10px] uppercase tracking-widest text-on-surface-variant border border-outline-variant/20">EU Server Status: Online</span>
+</div>
+</div>
+</footer>
+</body></html>
