@@ -1,7 +1,19 @@
 using QuizApp.Api.Hubs;
 using QuizApp.Api.Services;
+using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
+var allowedOrigins = new[]
+{
+    "http://localhost:5173",
+    "http://quiz.lan",
+    "http://192.168.1.245:5173",
+    "http://gbanaszak.pl",
+    "https://gbanaszak.pl",
+    "http://www.gbanaszak.pl",
+    "https://www.gbanaszak.pl"
+};
+
 //Rejestracja usług
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -17,11 +29,24 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy
-            .WithOrigins("http://localhost:5173", "http://quiz.lan", "http://192.168.1.245:5173")
+            .WithOrigins(allowedOrigins)
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
     });
+});
+
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+    options.ForwardedHeaders =
+        ForwardedHeaders.XForwardedFor |
+        ForwardedHeaders.XForwardedProto |
+        ForwardedHeaders.XForwardedHost;
+
+    // Reverse proxy jest poza kontenerem aplikacji, więc nie ograniczamy się
+    // do lokalnych adresów proxy.
+    options.KnownNetworks.Clear();
+    options.KnownProxies.Clear();
 });
 
 var app = builder.Build();
@@ -33,6 +58,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseForwardedHeaders();
 app.UseHttpsRedirection();
 
 // AKTYWUJEMY CORS (musi być przed mapowaniem endpointów/hubów)
