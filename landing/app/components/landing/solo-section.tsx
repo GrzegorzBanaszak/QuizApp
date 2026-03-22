@@ -41,19 +41,23 @@ export function SoloSection() {
     <section id="solo" className="bg-surface-container-low/30 px-6 py-32">
       <div className="section-shell grid items-center gap-12 lg:grid-cols-12">
         <div className="order-2 lg:order-1 lg:col-span-5">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {featureCards.map((card) => (
               <article
                 key={card.title}
                 className={[
                   "rounded-[2rem] p-6",
-                  card.raised ? "mt-8 bg-surface-container-high" : "bg-surface-container",
+                  card.raised
+                    ? "mt-8 bg-surface-container-high"
+                    : "bg-surface-container",
                   card.accent ? `border-l-4 ${card.accent}` : "",
                 ].join(" ")}
               >
                 <div className="space-y-4">
                   <Icon name={card.icon} className={`h-8 w-8 ${card.color}`} />
-                  <h3 className="text-lg font-bold text-on-surface">{card.title}</h3>
+                  <h3 className="text-lg font-bold text-on-surface">
+                    {card.title}
+                  </h3>
                   <p className="text-sm leading-relaxed text-on-surface-variant">
                     {card.description}
                   </p>
@@ -77,7 +81,9 @@ export function SoloSection() {
                   #1
                 </div>
                 <div>
-                  <div className="font-bold text-on-surface">Aktualny Lider</div>
+                  <div className="font-bold text-on-surface">
+                    Aktualny Lider
+                  </div>
                   <div className="text-sm text-on-surface-variant">
                     Gracz: Neon_Wiz
                   </div>
@@ -85,7 +91,9 @@ export function SoloSection() {
               </div>
 
               <div className="text-left md:text-right">
-                <div className="text-2xl font-black text-primary">12,450 PKT</div>
+                <div className="text-2xl font-black text-primary">
+                  12,450 PKT
+                </div>
                 <div className="text-xs font-bold uppercase tracking-[0.24em] text-tertiary">
                   Tryb Legendarny
                 </div>
