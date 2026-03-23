@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#aaa8c4",
+              "on-secondary-fixed-variant": "#9f0059",
+              "surface-container-highest": "#232341",
+              "primary": "#e08dff",
+              "surface-dim": "#0c0c21",
+              "inverse-surface": "#fcf8ff",
+              "error": "#ff6e84",
+              "surface-bright": "#29294a",
+              "tertiary-fixed-dim": "#00deec",
+              "secondary": "#ff68a7",
+              "error-container": "#a70138",
+              "on-tertiary": "#005d63",
+              "on-secondary-fixed": "#6b003a",
+              "tertiary-dim": "#00deec",
+              "on-secondary": "#460024",
+              "surface-tint": "#e08dff",
+              "secondary-fixed-dim": "#ffacc8",
+              "primary-dim": "#bc00fb",
+              "on-tertiary-fixed-variant": "#005e64",
+              "outline": "#74738d",
+              "on-tertiary-container": "#005359",
+              "on-primary-fixed": "#000000",
+              "error-dim": "#d73357",
+              "inverse-primary": "#9a00cf",
+              "surface-container-lowest": "#000000",
+              "on-error-container": "#ffb2b9",
+              "surface-container-high": "#1d1d39",
+              "primary-fixed": "#d978ff",
+              "primary-container": "#d978ff",
+              "secondary-container": "#b90068",
+              "on-background": "#e5e3ff",
+              "surface-variant": "#232341",
+              "primary-fixed-dim": "#d160ff",
+              "on-primary-fixed-variant": "#4c0068",
+              "on-primary-container": "#3d0055",
+              "surface": "#0c0c21",
+              "secondary-fixed": "#ffc1d4",
+              "on-error": "#490013",
+              "on-primary": "#4f006c",
+              "tertiary-fixed": "#00eefc",
+              "outline-variant": "#46465e",
+              "surface-container": "#171730",
+              "on-secondary-container": "#fff5f6",
+              "tertiary-container": "#00eefc",
+              "inverse-on-surface": "#53536b",
+              "surface-container-low": "#111128",
+              "on-surface": "#e5e3ff",
+              "on-tertiary-fixed": "#003f43",
+              "tertiary": "#8ff5ff",
+              "secondary-dim": "#e10080",
+              "background": "#0c0c21"
+            },
+            fontFamily: {
+              "headline": ["Spline Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0c0c21;
+            color: #e5e3ff;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(41, 41, 74, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 20px rgba(224, 141, 255, 0.3);
+        }
+        .neon-glow-secondary {
+            box-shadow: 0 0 20px rgba(255, 104, 167, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-[#0c0c21]/60 backdrop-blur-xl z-50 shadow-[0_10px_30px_rgba(224,141,255,0.1)]">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-black italic tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#e08dff] to-[#ff68a7] font-headline">QuizVolt</span>
+<nav class="hidden md:flex items-center gap-8 font-headline text-sm uppercase tracking-widest">
+<a class="text-[#aaa8c4] hover:text-[#e5e3ff] transition-colors" href="#">Singleplayer</a>
+<a class="text-[#e08dff] border-b-2 border-[#e08dff] pb-1" href="#">Multiplayer</a>
+<a class="text-[#aaa8c4] hover:text-[#e5e3ff] transition-colors" href="#">Party Mode</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#aaa8c4] hover:bg-[#29294a]/50 transition-all duration-300 rounded-full scale-95 active:scale-90">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-[#aaa8c4] hover:bg-[#29294a]/50 transition-all duration-300 rounded-full scale-95 active:scale-90">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+<div class="absolute bottom-0 left-0 w-full bg-gradient-to-b from-[#171730] to-transparent h-px"></div>
+</header>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto space-y-20">
+<!-- Hero Section -->
+<section class="relative">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary/20 rounded-full blur-[100px]"></div>
+<div class="relative flex flex-col items-center text-center space-y-6">
+<span class="px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/30 text-tertiary text-xs font-bold tracking-[0.2em] uppercase">Ecosystem Społecznościowy</span>
+<h1 class="text-5xl md:text-7xl font-black font-headline tracking-tight max-w-4xl leading-[1.1]">
+                    Multiplayer - <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto]">Razem Raźniej, Razem Mocniej</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl font-body">
+                    Zmierz się z graczami z całego świata lub zaproś przyjaciół do prywatnej rozgrywki. Czas udowodnić, kto posiada największą wiedzę w uniwersum QuizVolt.
+                </p>
+</div>
+</section>
+<!-- Szybka Gra CTA -->
+<section class="flex justify-center">
+<button class="group relative px-10 py-5 bg-gradient-to-r from-primary to-primary-container rounded-full text-on-primary font-bold text-xl shadow-2xl hover:scale-105 transition-all duration-300 active:scale-95 flex items-center gap-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                Szybka Gra
+                <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity"></div>
+</button>
+</section>
+<!-- Tryby Gry Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+<!-- Klasyczny Quiz -->
+<div class="group relative bg-surface-container rounded-lg p-10 border border-outline-variant/10 hover:border-primary/40 transition-all duration-500 overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">groups</span>
+</div>
+<div class="relative z-10 flex flex-col h-full space-y-6">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<h3 class="text-3xl font-bold font-headline text-on-surface">Klasyczny Quiz</h3>
+<p class="text-on-surface-variant leading-relaxed flex-grow">
+                        Zbierz znajomych w prywatnym lobby. Odpowiadajcie na te same pytania i sprawdźcie, kto z Was jest mistrzem wiedzy. Do 8 graczy jednocześnie.
+                    </p>
+<button class="w-fit px-8 py-3 rounded-full bg-surface-bright text-primary border border-primary/20 hover:bg-primary hover:text-on-primary transition-all font-bold">
+                        Stwórz Lobby
+                    </button>
+</div>
+</div>
+<!-- Tryb Turniejowy -->
+<div class="group relative bg-surface-container rounded-lg p-10 border border-outline-variant/10 hover:border-secondary/40 transition-all duration-500 overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">emoji_events</span>
+</div>
+<div class="relative z-10 flex flex-col h-full space-y-6">
+<div class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-4xl">emoji_events</span>
+</div>
+<h3 class="text-3xl font-bold font-headline text-on-surface">Tryb Turniejowy</h3>
+<p class="text-on-surface-variant leading-relaxed flex-grow">
+                        Wejdź na arenę międzynarodową. System eliminacji, drabinka turniejowa i walka o prestiżowe trofea. Codzienne turnieje o godzinie 20:00.
+                    </p>
+<button class="w-fit px-8 py-3 rounded-full bg-surface-bright text-secondary border border-secondary/20 hover:bg-secondary hover:text-on-primary transition-all font-bold">
+                        Zapisz się do Areny
+                    </button>
+</div>
+</div>
+</section>
+<!-- Social & Tournaments Bento -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Aktywne Turnieje -->
+<div class="md:col-span-2 glass-panel rounded-lg p-8 border border-outline-variant/10 space-y-6">
+<div class="flex justify-between items-center">
+<h4 class="text-xl font-bold font-headline flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">stadium</span>
+                        Aktywne Turnieje
+                    </h4>
+<span class="text-tertiary text-xs font-bold bg-tertiary/10 px-3 py-1 rounded-full border border-tertiary/20">LIVE</span>
+</div>
+<div class="space-y-3">
+<!-- Turniej 1 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-high rounded-lg hover:bg-surface-bright transition-all group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/40 bg-black">
+<img alt="Tournament Icon" class="w-full h-full object-cover" data-alt="vibrant abstract icon for a digital trivia tournament with neon sparks and geometric shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABUccmL9qKaaBK6SChA3WnvXR-cd-xi7iWfKBP8HOSUnBxQYvb8IKJvPuSfqLSkIXI6vCnrzJqL1DSAY3MmXPy5mdDEzENJ54QK5zIs4LM4E19u4h7-IiaBQt96RTOdXyrfBDyViHghmppgAFhQBHF_XS3lLElkOL3CvH_q5Ny7kP76oYyBNcEjxwd3ilXkxvwlIaN6Wu6WNC2ydSVNHXPGPZAFe7RrS6PGW1dQcGfE-HA_kq-2uu_XcZX8TRWzXQ1yQRI7Hp72xHL"/>
+</div>
+<div>
+<p class="font-bold text-on-surface group-hover:text-primary transition-colors">Wielka Bitwa Historyczna</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Nagroda: 5000 XP + Unikalny Avatar</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-sm font-mono text-tertiary">Start za 12:45</p>
+<p class="text-[10px] text-on-surface-variant">142 Graczy zapisanych</p>
+</div>
+</div>
+<!-- Turniej 2 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-high rounded-lg hover:bg-surface-bright transition-all group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary/40 bg-black">
+<img alt="Tournament Icon" class="w-full h-full object-cover" data-alt="minimalist trophy icon with glowing pink edges on a dark futuristic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbwGrGoo_70uxMtC_Bszev9jqt6cXBz1vDgyet7_h6vVwG5-g3OzFCxmrx7Xbmzpm7dvZmSAZ_ZaRE5Rlx81NIYTei51HZYRStPa7QbXwBfm5YzJqcK3I_BUcpc879JRyU_kJgZmerL5dEz4ch1FvLcl0v48eGDnkN_TzDybxJvRajWbST8X-N8uJ4Ko-8QhSslQgN1aXBcRtjuOr__4aL5BryM5y64agCjr44gqUlJ4FLmb6gnCC_yfWmQIEWA5zLByUagQYazAhV"/>
+</div>
+<div>
+<p class="font-bold text-on-surface group-hover:text-secondary transition-colors">Sprint Naukowy: Biologia</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Nagroda: Tytuł "Geniusza Natury"</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-sm font-mono text-tertiary">W trakcie (Runda 2/5)</p>
+<p class="text-[10px] text-on-surface-variant">45 Graczy zostało</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Znajomi Online -->
+<div class="glass-panel rounded-lg p-8 border border-outline-variant/10 space-y-6">
+<h4 class="text-xl font-bold font-headline flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">person_check</span>
+                    Online (4)
+                </h4>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Avatar" class="w-10 h-10 rounded-full border border-outline-variant/30" data-alt="profile portrait of a young gamer with purple neon lighting reflecting on their face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBg43W1nGnkpAc5JUGpt_MU42IbFHBLePxWqF0WXPVeb0TD9fzNYUT1KXpRrDbcyQywewrZ1GAZzFZJuTDUe6wTjbji9r-89v1XuBrvHZdE-mENhJ-CZNmgHMDtqWwbceDCH4VfbNnANMZ0A4GxyEAGGFC6ZHSBMHeqJlwACyYudRXq9IvqnXtI9V1J88AXwm91KOBI9ImSLYwiR16Ed1SyD0fIisFOLPOmfEGcw82eLIP2ZSedGbOJB-O208Dp146bRk2Yk5e62yd"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-surface-container"></div>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-bold text-on-surface">PixelWiz</p>
+<p class="text-[10px] text-tertiary uppercase font-medium">W Menu</p>
+</div>
+<button class="text-primary hover:bg-primary/10 p-1.5 rounded-md transition-all">
+<span class="material-symbols-outlined text-sm">mail</span>
+</button>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Avatar" class="w-10 h-10 rounded-full border border-outline-variant/30" data-alt="stylized 3D avatar of a woman with high-tech glasses and glowing cyan accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMxrSGZVabB36Gzf0DZAXoT495og20F2WXWF32sb-279qhAKjAObqVdZSpsyaj2MrJL0SX7TYd8DeNGak7ekbCWZAMj-5lcurnQg_w_AWlFvmiDCQvvwU91_k1gNiQAs6EoMl0NvFEs0wbTx3z2rqEul2scHrojlEwh0OaHipDfD3HAdSHPUKX6ZCC8FMD99faWkvOKzYie4XHYwRROrKIIjASAM7KsSoHfFECkJUl_qlXbzOl6RyMrKfAja59gT_Hr_XtaWi9cL0f"/>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-bold text-on-surface">QuantumQueen</p>
+<p class="text-[10px] text-secondary uppercase font-medium">W Grze (Klasyczny)</p>
+</div>
+<button class="text-on-surface-variant/50 cursor-not-allowed p-1.5 rounded-md">
+<span class="material-symbols-outlined text-sm">login</span>
+</button>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Avatar" class="w-10 h-10 rounded-full border border-outline-variant/30" data-alt="portrait of a man in a dark hoodie with a soft neon pink glow in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj597AOXpQDJEcXJ38z6AomW3WHbrfv-e7OS_JyIvaRhGQQ2cT5TlSGXQYMLG-lUDlZPtbbZ7SdKPyBY7kRpa-FRmN2PhtxH0t9wK_EO_FUE7IkivBrtZedQ6-WBNwdJjKUiJTmpZqEI3Ai18Fw3FDzvh-hUueOoFh0a_rRwbKg6h4OJvlK7bQuJ55PwouoJk3l9qtd8tkq-win1NK2Z_RHsanQYPj69tGICrp936E1iE6fEms-n40DBKMTzIff-pueEfrRK-qI-Uu"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-surface-container"></div>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-bold text-on-surface">NeonNinja</p>
+<p class="text-[10px] text-tertiary uppercase font-medium">Wolny</p>
+</div>
+<button class="text-primary hover:bg-primary/10 p-1.5 rounded-md transition-all">
+<span class="material-symbols-outlined text-sm">add_box</span>
+</button>
+</div>
+</div>
+<button class="w-full py-2 text-xs font-bold uppercase tracking-widest text-on-surface-variant border-t border-outline-variant/10 pt-4 hover:text-on-surface transition-colors">
+                    Zobacz całą listę
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#000000] full-width py-12 border-t border-outline-variant/5">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-bold text-[#e5e3ff]">QuizVolt</span>
+<p class="font-['Spline_Sans'] text-sm uppercase tracking-widest text-[#aaa8c4]">© 2024 QuizVolt. Wszystkie prawa zastrzeżone.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-8">
+<a class="font-['Spline_Sans'] text-sm uppercase tracking-widest text-[#aaa8c4] hover:text-[#8ff5ff] hover:underline transition-all opacity-80 hover:opacity-100" href="#">Discord</a>
+<a class="font-['Spline_Sans'] text-sm uppercase tracking-widest text-[#aaa8c4] hover:text-[#8ff5ff] hover:underline transition-all opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="font-['Spline_Sans'] text-sm uppercase tracking-widest text-[#aaa8c4] hover:text-[#8ff5ff] hover:underline transition-all opacity-80 hover:opacity-100" href="#">Instagram</a>
+<a class="font-['Spline_Sans'] text-sm uppercase tracking-widest text-[#aaa8c4] hover:text-[#8ff5ff] hover:underline transition-all opacity-80 hover:opacity-100" href="#">Facebook</a>
+<a class="font-['Spline_Sans'] text-sm uppercase tracking-widest text-[#aaa8c4] hover:text-[#8ff5ff] hover:underline transition-all opacity-80 hover:opacity-100" href="#">Regulamin</a>
+</nav>
+</div>
+</footer>
+</body></html>
