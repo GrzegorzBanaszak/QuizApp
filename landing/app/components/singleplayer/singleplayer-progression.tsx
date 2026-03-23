@@ -3,20 +3,22 @@ const progressionItems = [
     title: "Osiagniecia",
     description: "Zdobadz 50 unikalnych odznak za specjalne wyzwania i serie zwyciestw.",
     accent: "border-primary text-primary bg-primary/10",
+    icon: "military_tech",
   },
   {
     title: "Ekskluzywne Skiny",
     description:
       "Odblokuj awatary i efekty wizualne po ukonczeniu trudniejszych kategorii.",
     accent: "border-secondary text-secondary bg-secondary/10",
+    icon: "person_celebrate",
   },
 ];
 
 const rewards = [
-  { title: "Lowca Piorunow", tone: "from-primary to-secondary", text: "text-primary" },
-  { title: "Neonowy Mistrz", tone: "from-tertiary to-primary", text: "text-tertiary" },
-  { title: "???", tone: "from-surface-bright to-surface-bright", text: "text-on-surface-variant" },
-  { title: "Cyber-Skin #04", tone: "from-secondary to-primary", text: "text-secondary" },
+  { title: "Lowca Piorunow", tone: "from-primary to-secondary", text: "text-primary", icon: "bolt" },
+  { title: "Neonowy Mistrz", tone: "from-tertiary to-primary", text: "text-tertiary", icon: "auto_awesome" },
+  { title: "???", tone: "from-surface-bright to-surface-bright", text: "text-on-surface-variant", icon: "lock" },
+  { title: "Cyber-Skin #04", tone: "from-secondary to-primary", text: "text-secondary", icon: "style" },
 ];
 
 export function SingleplayerProgression() {
@@ -47,7 +49,9 @@ export function SingleplayerProgression() {
                     <div
                       className={`rounded-2xl border-l-4 p-3 ${item.accent}`}
                     >
-                      *
+                      <span className="material-symbols-outlined">
+                        {item.icon}
+                      </span>
                     </div>
                     <div>
                       <h3 className="font-bold text-on-surface">{item.title}</h3>
@@ -75,7 +79,19 @@ export function SingleplayerProgression() {
               <div
                 className={`mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br ${reward.tone} text-xl font-black text-on-primary shadow-[0_0_20px_rgba(224,141,255,0.25)]`}
               >
-                {index < 2 ? "!" : index === 2 ? "?" : "S"}
+                <span
+                  className="material-symbols-outlined"
+                  style={
+                    reward.icon === "lock"
+                      ? {
+                          fontVariationSettings:
+                            '"FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24',
+                        }
+                      : undefined
+                  }
+                >
+                  {reward.icon}
+                </span>
               </div>
               <p className={`font-headline font-bold ${reward.text}`}>
                 {reward.title}

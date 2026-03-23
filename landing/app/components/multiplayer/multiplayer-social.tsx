@@ -57,7 +57,9 @@ export function MultiplayerSocial() {
       <article className="glass-panel space-y-6 rounded-[2rem] border border-outline-variant/10 p-8 md:col-span-2">
         <div className="flex items-center justify-between">
           <h2 className="flex items-center gap-2 font-headline text-xl font-bold">
-            <span className="text-tertiary">#</span>
+            <span className="material-symbols-outlined text-tertiary">
+              stadium
+            </span>
             Aktywne Turnieje
           </h2>
           <span className="rounded-full border border-tertiary/20 bg-tertiary/10 px-3 py-1 text-xs font-bold text-tertiary">
@@ -108,7 +110,10 @@ export function MultiplayerSocial() {
       </article>
 
       <article className="glass-panel space-y-6 rounded-[2rem] border border-outline-variant/10 p-8">
-        <h2 className="font-headline text-xl font-bold text-on-surface">
+        <h2 className="flex items-center gap-2 font-headline text-xl font-bold text-on-surface">
+          <span className="material-symbols-outlined text-primary">
+            person_check
+          </span>
           Online (4)
         </h2>
 
@@ -136,11 +141,13 @@ export function MultiplayerSocial() {
               <button
                 className={`rounded-md p-1.5 transition-all ${friend.active ? "text-primary hover:bg-primary/10" : "cursor-not-allowed text-on-surface-variant/50"}`}
               >
-                {friend.action === "mail"
-                  ? "@"
-                  : friend.action === "login"
-                    ? ">"
-                    : "+"}
+                <span className="material-symbols-outlined text-sm">
+                  {friend.action === "mail"
+                    ? "mail"
+                    : friend.action === "login"
+                      ? "login"
+                      : "add_box"}
+                </span>
               </button>
             </div>
           ))}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#53536b",
+              "surface": "#0c0c21",
+              "on-error": "#490013",
+              "error-container": "#a70138",
+              "surface-bright": "#29294a",
+              "surface-container-low": "#111128",
+              "primary-fixed": "#d978ff",
+              "inverse-surface": "#fcf8ff",
+              "surface-tint": "#e08dff",
+              "secondary-fixed": "#ffc1d4",
+              "on-primary-container": "#3d0055",
+              "tertiary-dim": "#00deec",
+              "error-dim": "#d73357",
+              "surface-container-lowest": "#000000",
+              "tertiary": "#8ff5ff",
+              "error": "#ff6e84",
+              "on-secondary": "#460024",
+              "secondary": "#ff68a7",
+              "primary-container": "#d978ff",
+              "on-tertiary-fixed": "#003f43",
+              "surface-container-highest": "#232341",
+              "on-surface-variant": "#aaa8c4",
+              "tertiary-fixed": "#00eefc",
+              "on-tertiary-container": "#005359",
+              "on-primary-fixed": "#000000",
+              "secondary-dim": "#e10080",
+              "surface-container-high": "#1d1d39",
+              "surface-dim": "#0c0c21",
+              "surface-container": "#171730",
+              "on-tertiary": "#005d63",
+              "on-surface": "#e5e3ff",
+              "on-secondary-container": "#fff5f6",
+              "background": "#0c0c21",
+              "secondary-container": "#b90068",
+              "primary-dim": "#bc00fb",
+              "secondary-fixed-dim": "#ffacc8",
+              "on-error-container": "#ffb2b9",
+              "inverse-primary": "#9a00cf",
+              "primary-fixed-dim": "#d160ff",
+              "on-tertiary-fixed-variant": "#005e64",
+              "on-secondary-fixed": "#6b003a",
+              "outline-variant": "#46465e",
+              "tertiary-fixed-dim": "#00deec",
+              "primary": "#e08dff",
+              "tertiary-container": "#00eefc",
+              "on-primary-fixed-variant": "#4c0068",
+              "on-primary": "#4f006c",
+              "outline": "#74738d",
+              "on-secondary-fixed-variant": "#9f0059",
+              "on-background": "#e5e3ff",
+              "surface-variant": "#232341"
+            },
+            fontFamily: {
+              "headline": ["Spline Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-panel {
+        background: rgba(23, 23, 48, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .neon-glow-primary {
+        box-shadow: 0 0 40px rgba(224, 141, 255, 0.15);
+      }
+      .text-glow {
+        text-shadow: 0 0 15px rgba(224, 141, 255, 0.5);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="bg-[#0c0c21]/80 backdrop-blur-xl flex justify-between items-center w-full px-6 py-4 sticky top-0 z-50 shadow-[0_0_40px_rgba(224,141,255,0.08)]">
+<div class="flex items-center gap-8">
+<span class="font-headline text-2xl font-black tracking-tighter italic text-transparent bg-clip-text bg-gradient-to-r from-[#e08dff] to-[#ff68a7]">QuizVolt</span>
+<nav class="hidden md:flex gap-6">
+<a class="font-headline tracking-tight text-[#e08dff] font-bold hover:text-[#ff68a7] transition-colors duration-300" href="#">Party Mode</a>
+<a class="font-headline tracking-tight text-[#aaa8c4] hover:text-[#ff68a7] transition-colors duration-300" href="#">Graj</a>
+<a class="font-headline tracking-tight text-[#aaa8c4] hover:text-[#ff68a7] transition-colors duration-300" href="#">Sklep</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#aaa8c4] hover:text-[#ff68a7] transition-colors duration-300 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</button>
+<button class="p-2 text-[#aaa8c4] hover:text-[#ff68a7] transition-colors duration-300 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant/30 flex items-center justify-center overflow-hidden">
+<img alt="User avatar" class="w-full h-full object-cover" data-alt="Stylized user profile avatar illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4bt_l_ZmAx80OJEQdGJ_3ZluR4T3ooovVwAEmAXJ4udv5iXmpYESkYMeWbPZcSViIfbwPRQaimNMqkepA452EA1gVk4dMZ5_-okdLHK5qoEUAUqKdsS4Asna3X-fd_Bnu_tZ1B4D2RTN9T8YAWIfFqG726lwz18IZ6MdNgfAM2_fJ3XAS7C8Y6x5XvAn0KGt9TY9JaAcpTH2njq9dslg1SEjNpLJuT5_CCGLpA0GmcDuQ6HHC2E61d3eaKXcIp54zYFWLci3MLe_s"/>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full bg-gradient-to-b from-[#171730] to-transparent h-px"></div>
+</header>
+<div class="flex min-h-screen justify-center">
+<!-- Main Content Canvas -->
+<main class="flex-1 min-w-0 pb-24 md:pb-12">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-20 pb-32 px-6 md:px-12 border-b border-outline-variant/10">
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px]"></div>
+<div class="max-w-6xl mx-auto relative z-10 flex flex-col items-center text-center">
+<div class="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-primary/20">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="text-xs font-bold text-tertiary uppercase tracking-tighter">New: Party Mode 2.0</span>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl font-black text-on-surface tracking-tight mb-6 leading-tight">
+                        Impreza w <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary text-glow">Twoim Salonie!</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
+                        Zamień swój telewizor w centrum rozrywki, a telefon w kontroler. Quizy jeszcze nigdy nie były tak dynamiczne.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-10 py-5 bg-gradient-to-r from-primary to-secondary text-on-primary font-headline text-lg font-extrabold rounded-full shadow-[0_0_30px_rgba(224,141,255,0.4)] active:scale-95 transition-all">
+                            Stwórz Pokój
+                        </button>
+<button class="px-10 py-5 bg-surface-bright/50 backdrop-blur-md border border-outline-variant text-on-surface font-headline text-lg font-bold rounded-full hover:bg-surface-bright transition-all">
+                            Dołącz do gry
+                        </button>
+</div>
+</div>
+</section>
+<!-- How It Works (Bento Grid) -->
+<section class="py-24 px-6 md:px-12 max-w-6xl mx-auto">
+<h2 class="font-headline text-3xl font-bold mb-16 flex items-center gap-4">
+<span class="text-primary material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+                    Jak to działa?
+                </h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[450px]">
+<!-- Step 1 -->
+<div class="md:col-span-5 glass-panel rounded-lg p-10 flex flex-col justify-between border border-outline-variant/20 hover:border-primary/40 transition-colors group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-highest flex items-center justify-center mb-8 border border-outline-variant/30 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="desktop_windows">desktop_windows</span>
+</div>
+<div>
+<span class="text-tertiary font-bold text-sm uppercase tracking-widest mb-2 block">Krok 1</span>
+<h3 class="font-headline text-3xl font-bold mb-4">Otwórz przeglądarkę na TV</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                Wejdź na tv.quizvolt.pl na dowolnym urządzeniu z dużym ekranem – Twoim smart TV, laptopie lub konsoli.
+                            </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="md:col-span-7 bg-surface-container rounded-lg p-10 flex flex-col justify-between border border-outline-variant/10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-48 h-48 bg-secondary/10 rounded-full blur-3xl -mr-12 -mt-12"></div>
+<div class="w-16 h-16 rounded-2xl bg-surface-container-highest flex items-center justify-center mb-8 border border-outline-variant/30 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="qr_code_2">qr_code_2</span>
+</div>
+<div>
+<span class="text-tertiary font-bold text-sm uppercase tracking-widest mb-2 block">Krok 2</span>
+<h3 class="font-headline text-3xl font-bold mb-4">Zeskanuj kod QR telefonem</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                                Nie potrzebujesz żadnej aplikacji. Po prostu otwórz aparat w telefonie, zeskanuj kod z TV i wybierz swój nick oraz awatara.
+                            </p>
+</div>
+<div class="absolute bottom-0 right-0 p-8 hidden md:block opacity-20 group-hover:opacity-100 transition-opacity">
+<div class="w-32 h-32 border-2 border-dashed border-secondary/50 rounded-xl flex items-center justify-center p-2">
+<div class="w-full h-full bg-on-surface/5 rounded-lg"></div>
+</div>
+</div>
+</div>
+<!-- Step 3 (Full width below) -->
+<div class="md:col-span-12 glass-panel rounded-lg p-8 flex flex-col md:flex-row items-center gap-10 border border-outline-variant/20">
+<div class="w-16 h-16 md:w-24 md:h-24 shrink-0 rounded-full bg-gradient-to-tr from-tertiary to-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl" data-icon="sports_esports" style="font-variation-settings: 'FILL' 1;">sports_esports</span>
+</div>
+<div class="text-center md:text-left">
+<span class="text-tertiary font-bold text-sm uppercase tracking-widest mb-1 block">Krok 3</span>
+<h3 class="font-headline text-2xl font-bold mb-2">Graj i rywalizuj</h3>
+<p class="text-on-surface-variant">Telefon staje się Twoim unikalnym kontrolerem z przyciskami, suwakami i specjalnymi mocami sabotażu!</p>
+</div>
+<div class="ml-auto hidden md:flex gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/20"></div>
+<div class="w-8 h-8 rounded-full bg-secondary/20"></div>
+<div class="w-8 h-8 rounded-full bg-tertiary/20"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gameplay Features -->
+<section class="py-24 bg-surface-container-lowest/50">
+<div class="max-w-6xl mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl font-black mb-4 tracking-tight">Mieszanka Quizu i Turnieju</h2>
+<p class="text-on-surface-variant text-lg">To nie jest zwykłe odpowiadanie na pytania. To walka o przetrwanie w cyfrowym ringu.</p>
+</div>
+<div class="px-6 py-3 bg-surface-container-high rounded-full border border-outline-variant text-tertiary font-bold text-sm">
+                            TRYB TURNIEJOWY: AKTYWNY
+                        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Feature 1 -->
+<div class="p-8 rounded-lg bg-surface-container-high border border-outline-variant/20 hover:scale-[1.02] transition-transform">
+<div class="flex items-start gap-6">
+<div class="p-4 rounded-2xl bg-error/10 text-error">
+<span class="material-symbols-outlined text-4xl" data-icon="ac_unit">ac_unit</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold mb-3">Przeszkadzaj Innym</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                                        Zdobądź power-upy i zamroź ekran przeciwnika, ukryj jego odpowiedzi pod warstwą "lodu" lub zamień jego przyciski miejscami w najmniej odpowiednim momencie.
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="p-8 rounded-lg bg-surface-container-high border border-outline-variant/20 hover:scale-[1.02] transition-transform">
+<div class="flex items-start gap-6">
+<div class="p-4 rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold mb-3">Dynamiczne Tempo</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                                        Pytania zmieniają się w rytm muzyki. Im szybciej odpowiesz, tym więcej punktów i szans na ataki specjalne otrzymasz.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#0c0c21]/90 backdrop-blur-2xl border-t border-[#1d1d39] shadow-[0_-10px_30px_rgba(0,0,0,0.5)] rounded-t-[2rem]">
+<div class="flex flex-col items-center justify-center text-[#aaa8c4] p-3 hover:text-[#8ff5ff] active:scale-90 transition-all cubic-bezier(0.34,1.56,0.64,1)">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-['Spline_Sans'] text-[10px] uppercase tracking-widest">Graj</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-tr from-[#e08dff] to-[#ff68a7] text-[#4f006c] rounded-full p-3 mb-2 scale-110 shadow-[0_0_20px_rgba(224,141,255,0.4)] active:scale-90 transition-all cubic-bezier(0.34,1.56,0.64,1)">
+<span class="material-symbols-outlined" data-icon="qr_code_scanner" style="font-variation-settings: 'FILL' 1;">qr_code_scanner</span>
+<span class="font-['Spline_Sans'] text-[10px] uppercase tracking-widest font-bold">Pokoje</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#aaa8c4] p-3 hover:text-[#8ff5ff] active:scale-90 transition-all cubic-bezier(0.34,1.56,0.64,1)">
+<span class="material-symbols-outlined" data-icon="local_fire_department">local_fire_department</span>
+<span class="font-['Spline_Sans'] text-[10px] uppercase tracking-widest">Sklep</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#aaa8c4] p-3 hover:text-[#8ff5ff] active:scale-90 transition-all cubic-bezier(0.34,1.56,0.64,1)">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Spline_Sans'] text-[10px] uppercase tracking-widest">Profil</span>
+</div>
+</nav>
+</body></html>

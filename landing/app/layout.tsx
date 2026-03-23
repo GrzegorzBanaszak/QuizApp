@@ -29,7 +29,13 @@ export default function RootLayout({
       lang="pl"
       className={`${splineSans.variable} ${beVietnamPro.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@100..700,0..1,-50..200,20..48"
+        />
+        {children}
+      </body>
     </html>
   );
 }

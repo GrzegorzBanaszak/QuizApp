@@ -92,7 +92,10 @@ export function SingleplayerLeaderboard() {
           href="http://localhost:5173"
           className="inline-flex items-center gap-2 font-bold text-tertiary hover:underline"
         >
-          Zobacz Pelny Ranking <span aria-hidden="true">[]</span>
+          Zobacz Pelny Ranking
+          <span className="material-symbols-outlined" aria-hidden="true">
+            open_in_new
+          </span>
         </a>
       </div>
     </section>

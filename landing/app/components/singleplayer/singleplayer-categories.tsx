@@ -52,7 +52,10 @@ export function SingleplayerCategories() {
     <section id="kategorie" className="section-shell px-6 py-20">
       <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div>
-          <h2 className="font-headline text-3xl font-black text-on-surface">
+          <h2 className="flex items-center gap-3 font-headline text-3xl font-black text-on-surface">
+            <span className="material-symbols-outlined text-primary">
+              category
+            </span>
             Kategorie Quizow
           </h2>
           <p className="mt-2 text-on-surface-variant">
@@ -60,9 +63,9 @@ export function SingleplayerCategories() {
           </p>
         </div>
 
-        <div className="rounded-full bg-surface-container-high p-3 text-on-surface-variant">
-          18+
-        </div>
+        <button className="rounded-full bg-surface-container-high p-3 text-on-surface-variant transition-colors hover:text-primary">
+          <span className="material-symbols-outlined">tune</span>
+        </button>
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:h-[600px] md:grid-cols-4 md:grid-rows-2">
@@ -98,7 +101,10 @@ export function SingleplayerCategories() {
                 href="http://localhost:5173"
                 className="mt-6 inline-flex items-center gap-2 font-bold text-primary group-hover:gap-4"
               >
-                Graj Teraz <span aria-hidden="true">-&gt;</span>
+                Graj Teraz
+                <span className="material-symbols-outlined" aria-hidden="true">
+                  arrow_forward
+                </span>
               </a>
             </div>
           </article>

@@ -11,7 +11,7 @@ const modes = [
     title: "Tryb Turniejowy",
     description:
       "Wejdz na arene miedzynarodowa. System eliminacji, drabinka turniejowa i walka o prestizowe trofea. Codzienne turnieje o godzinie 20:00.",
-    icon: "trophy",
+    icon: "emoji_events",
     accent: "secondary",
     buttonLabel: "Zapisz sie do Areny",
   },
@@ -29,16 +29,16 @@ export function MultiplayerModes() {
             className={`group relative overflow-hidden rounded-[2rem] border border-outline-variant/10 bg-surface-container p-10 transition-all duration-500 ${isPrimary ? "hover:border-primary/40" : "hover:border-secondary/40"}`}
           >
             <div className="absolute right-0 top-0 p-8 opacity-10 transition-opacity group-hover:opacity-20">
-              <div className="text-[120px] font-black text-on-surface">
-                {mode.icon === "groups" ? "OO" : "C"}
-              </div>
+              <span className="material-symbols-outlined text-[120px] text-on-surface">
+                {mode.icon}
+              </span>
             </div>
 
             <div className="relative z-10 flex h-full flex-col space-y-6">
               <div
                 className={`mb-2 flex h-16 w-16 items-center justify-center rounded-2xl text-4xl ${isPrimary ? "bg-primary/10 text-primary" : "bg-secondary/10 text-secondary"}`}
               >
-                {mode.icon === "groups" ? "O" : "C"}
+                <span className="material-symbols-outlined">{mode.icon}</span>
               </div>
 
               <h3 className="font-headline text-3xl font-bold text-on-surface">
