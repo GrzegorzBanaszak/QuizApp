@@ -1,11 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Spline+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:FILL@0..1&display=swap");
 @import "tailwindcss";
 
-/* Tutaj ewentualnie dodasz własne zmienne CSS w przyszłości */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: light dark;
+  color-scheme: dark;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
 }
 
 body {
-  @apply bg-slate-900 text-slate-100 min-h-screen; /* Domyślny, ładny ciemny motyw dla aplikacji quizowej */
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(224, 141, 255, 0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255, 104, 167, 0.12), transparent 30%),
+    #0c0c21;
+  color: #e5e3ff;
+}
+
+.font-headline {
+  font-family: "Spline Sans", sans-serif;
+}
+
+.glass-panel {
+  background: rgba(35, 35, 65, 0.42);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 24px 80px rgba(5, 8, 22, 0.45);
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 24px rgba(224, 141, 255, 0.28);
+}
+
+.mode-card {
+  border: 1px solid rgba(116, 115, 141, 0.18);
+  transition:
+    transform 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.mode-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(41, 41, 74, 0.82);
+  border-color: rgba(224, 141, 255, 0.28);
+  box-shadow: 0 0 40px rgba(224, 141, 255, 0.16);
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined", sans-serif;
+  font-style: normal;
+  line-height: 1;
 }

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#53536b",
+              "tertiary-fixed": "#00eefc",
+              "tertiary-dim": "#00deec",
+              "surface-container-high": "#1d1d39",
+              "on-error": "#490013",
+              "primary-dim": "#bc00fb",
+              "on-error-container": "#ffb2b9",
+              "on-surface-variant": "#aaa8c4",
+              "tertiary-fixed-dim": "#00deec",
+              "surface-container-highest": "#232341",
+              "surface-container-lowest": "#000000",
+              "outline-variant": "#46465e",
+              "on-primary-fixed-variant": "#4c0068",
+              "on-background": "#e5e3ff",
+              "on-primary-fixed": "#000000",
+              "tertiary": "#8ff5ff",
+              "surface": "#0c0c21",
+              "primary-container": "#d978ff",
+              "surface-container-low": "#111128",
+              "secondary-fixed-dim": "#ffacc8",
+              "surface-tint": "#e08dff",
+              "secondary": "#ff68a7",
+              "on-secondary-fixed-variant": "#9f0059",
+              "on-tertiary-fixed": "#003f43",
+              "surface-variant": "#232341",
+              "error-container": "#a70138",
+              "on-tertiary-fixed-variant": "#005e64",
+              "primary-fixed": "#d978ff",
+              "on-tertiary": "#005d63",
+              "inverse-primary": "#9a00cf",
+              "on-secondary-fixed": "#6b003a",
+              "secondary-fixed": "#ffc1d4",
+              "background": "#0c0c21",
+              "on-surface": "#e5e3ff",
+              "secondary-dim": "#e10080",
+              "on-secondary": "#460024",
+              "surface-dim": "#0c0c21",
+              "secondary-container": "#b90068",
+              "primary-fixed-dim": "#d160ff",
+              "tertiary-container": "#00eefc",
+              "surface-container": "#171730",
+              "outline": "#74738d",
+              "primary": "#e08dff",
+              "on-primary": "#4f006c",
+              "on-primary-container": "#3d0055",
+              "surface-bright": "#29294a",
+              "on-tertiary-container": "#005359",
+              "inverse-surface": "#fcf8ff",
+              "on-secondary-container": "#fff5f6",
+              "error-dim": "#d73357",
+              "error": "#ff6e84"
+            },
+            fontFamily: {
+              "headline": ["Spline Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(224, 141, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body overflow-x-hidden selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 dark:bg-[#0c0c21]/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(224,141,255,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black italic tracking-tighter text-[#e08dff] font-headline">QuizVolt</div>
+<div class="hidden md:flex gap-8 items-center font-['Spline_Sans'] tracking-tight">
+<a class="text-[#e08dff] font-bold border-b-2 border-[#e08dff] pb-1" href="#">Tryb Jednoosobowy</a>
+<a class="text-[#aaa8c4] hover:text-[#e5e3ff] transition-colors hover:scale-105 hover:text-[#ff68a7] transition-all duration-300" href="#">Multiplayer</a>
+<a class="text-[#aaa8c4] hover:text-[#e5e3ff] transition-colors hover:scale-105 hover:text-[#ff68a7] transition-all duration-300" href="#">Tryb Imprezy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold px-6 py-2 rounded-full active:scale-95 transition-transform">
+                    Graj Teraz
+                </button>
+</div>
+</div>
+<div class="absolute bottom-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#e08dff]/20 to-transparent"></div>
+</nav>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section: The Electric Social -->
+<section class="relative px-6 py-20 lg:py-32 overflow-hidden flex flex-col items-center justify-center text-center">
+<!-- Decorative Light Leaks -->
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute top-1/2 -right-24 w-80 h-80 bg-secondary/15 rounded-full blur-[100px]"></div>
+<div class="relative z-10 max-w-4xl mx-auto">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] uppercase bg-surface-container-highest text-tertiary border border-tertiary/20 rounded-md">
+                    Tryb Solo
+                </span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black font-headline tracking-tighter text-on-surface mb-8">
+                    Tryb Singleplayer - <span class="bg-gradient-to-br from-primary via-secondary to-tertiary bg-clip-text text-transparent">Twoja Droga</span> do Mistrzostwa
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Trenuj umysł, odblokowuj legendarne skórki i wspinaj się na szczyt rankingu w najbardziej elektryzującym wyzwaniu dla jednego gracza.
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="group relative bg-primary text-on-primary px-10 py-4 rounded-full font-bold text-lg overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(224,141,255,0.4)]">
+<span class="relative z-10">Zacznij Wyzwanie</span>
+<div class="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+<button class="px-10 py-4 rounded-full font-bold text-lg bg-surface-bright border border-primary/20 hover:border-primary/50 text-on-surface transition-all">
+                        Zobacz Samouczek
+                    </button>
+</div>
+</div>
+</section>
+<!-- Categories Grid: Bento Style -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="text-3xl font-black font-headline text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="category">category</span>
+                        Kategorie Quizów
+                    </h2>
+<p class="text-on-surface-variant mt-2">Wybierz swoją specjalizację i zbieraj punkty doświadczenia.</p>
+</div>
+<div class="flex gap-2">
+<button class="bg-surface-container-high p-3 rounded-full hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
+<!-- Popkultura Card (Large) -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-lg bg-surface-container p-8 flex flex-col justify-end border border-outline-variant/10">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-80 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Vibrant pop culture neon stage with colorful lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfkCPs_txh7k_sK6CAtNYFGwLm3aPs5HUdS2zvczxCJwGXmC5YSKuLFNW9GfypZNPFUJP8UcB3PSr_wUUzfB2D020UvXMu8xK04CtRB_MepAXwQKFp-v0HnO5rrAYZ6N786VwAlijQVbBe4VfYADrc9h3oH0qiY-eV8gDLbJy3kluJneszCpiI6K7AWQztEeO37gU6dh6A9nV_r53hL3weN3xZdNubMx6_7iXwGyHV7I-43Xg-SUy8BBNgjt4VypLrqZzg_FqyGbOU"/>
+<div class="relative z-20">
+<span class="px-3 py-1 bg-primary/20 text-primary text-xs font-bold rounded-md border border-primary/30">Średni</span>
+<h3 class="text-4xl font-black font-headline mt-4 mb-2">Popkultura</h3>
+<p class="text-on-surface-variant text-sm mb-6 max-w-md">Najnowsze trendy, filmy i muzyka, która kształtuje nasz świat.</p>
+<button class="flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all">
+                            Graj Teraz <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Nauka Card -->
+<div class="relative group overflow-hidden rounded-lg bg-surface-container p-6 flex flex-col justify-end border border-outline-variant/10">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-70 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Digital abstract science visualization of atoms and networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnkpGtKupDLVug2GPvu06unJ7tAQEGOHlwpKZBZC2_oNHF-bspE3wLJ5l6i_fUCP1AmamWRSBq92QqwmhhF2644T4yx2vst_riBn42mIMwazXihX5lMdTgiryrT1_a3DkZYj0BGOEpAKQkhITJqo29Q4gJwwXNZWN76vRzfNN9I4gvt9xfw-pwzDSVwv2nSETZ9qXYmGD2Ap9ITReZzu78a7vdzZOGaJ-R1T6cMz-xjQ2NcULK1dT9q88Kw6pGyKrRPlj4KUBaLAaS"/>
+<div class="relative z-20">
+<span class="px-2 py-0.5 bg-tertiary/20 text-tertiary text-[10px] font-bold rounded-md border border-tertiary/30">Trudny</span>
+<h3 class="text-xl font-bold font-headline mt-2">Nauka</h3>
+</div>
+</div>
+<!-- Gry Card -->
+<div class="relative group overflow-hidden rounded-lg bg-surface-container p-6 flex flex-col justify-end border border-outline-variant/10">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-70 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Neon gaming setup with mechanical keyboard and purple lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBonCS6X-WLJfhqa5s6zzatnl6lo2Q7PKAMNBuSL1zugH2XKZMjKqw5lKgHNTET2rrti2ee7Py22clsJKUbHXc0dQlehXcQl7zy_RPRrdM15FKnIU7-Lb4I2fUojWjZShXr12ZMdtC4ewjwdrEyNN2ISrZHBorS4q8nnfnyjzD0L8-buQ_djhty51mODzSxdyUpf0_Gns67Vy9PoY6C_RQiKryRDEXeq0KS5cW7V4y-e0jgMUdJwCZEdrzD7jD9KHYXDvMJw5kK3VdI"/>
+<div class="relative z-20">
+<span class="px-2 py-0.5 bg-secondary/20 text-secondary text-[10px] font-bold rounded-md border border-secondary/30">Łatwy</span>
+<h3 class="text-xl font-bold font-headline mt-2">Gry</h3>
+</div>
+</div>
+<!-- Historia Card (Horizontal) -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-lg bg-surface-container p-8 flex flex-col justify-end border border-outline-variant/10">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-60 transition-all" data-alt="Classic stone architecture with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvy6SY8YeV7WJYWsPMtEIXamLk9Hcy_dYNFVIUwVKZEXLtfJfnSyCJXr2kYu0lbDxFEn-8KVRDS5Onvrp7YGZ2N9A2E7uA6Ul96X5nzo7zSIHh4WDIp9vEBYs80FEprptbL2sih1LR9hG0QeYqtftnb6mdAnCBsGuLrInNNuYJc4TDYsU-hJgFSFaAicj0CdGtaE8fpDntOFGpUAOUu-4qovlRHK2INj7nsFhMmFl_xyWxvTqFQNE84nITQm7FMFWUR0lIOlnZceKC"/>
+<div class="relative z-20">
+<span class="px-2 py-0.5 bg-primary/20 text-primary text-[10px] font-bold rounded-md border border-primary/30">Średni</span>
+<h3 class="text-2xl font-black font-headline mt-2">Historia</h3>
+<p class="text-on-surface-variant text-xs mt-1">Podróżuj w czasie i sprawdź swoją wiedzę o minionych wiekach.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Progression System: Kinetic Layering -->
+<section class="bg-surface-container-low py-24 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row gap-20 items-center">
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-tertiary/20 blur-[60px]"></div>
+<div class="relative z-10 space-y-8">
+<div>
+<h2 class="text-4xl font-black font-headline text-on-surface mb-6">System Progresji</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">Twoja determinacja zasługuje na nagrodę. Zbieraj punkty w kategoriach, aby odblokować unikalną zawartość.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-5 p-6 rounded-lg bg-surface-container-high border-l-4 border-primary">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Osiągnięcia</h4>
+<p class="text-sm text-on-surface-variant">Zdobądź 50 unikalnych odznak za specjalne wyzwania.</p>
+</div>
+</div>
+<div class="flex items-start gap-5 p-6 rounded-lg bg-surface-container-high border-l-4 border-secondary">
+<div class="bg-secondary/10 p-3 rounded-lg text-secondary">
+<span class="material-symbols-outlined" data-icon="person_celebrate">person_celebrate</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Ekskluzywne Skiny</h4>
+<p class="text-sm text-on-surface-variant">Zmień wygląd swojego awatara po ukończeniu kategorii "Trudnej".</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<!-- Achievement Cards -->
+<div class="p-6 rounded-lg bg-surface-container flex flex-col items-center justify-center text-center space-y-4 border border-outline-variant/10 shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+<div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-[0_0_20px_rgba(224,141,255,0.4)]">
+<span class="material-symbols-outlined text-on-primary text-3xl" data-icon="bolt">bolt</span>
+</div>
+<p class="font-headline font-bold text-primary">Łowca Piorunów</p>
+</div>
+<div class="mt-8 p-6 rounded-lg bg-surface-container flex flex-col items-center justify-center text-center space-y-4 border border-outline-variant/10 shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+<div class="w-16 h-16 rounded-full bg-gradient-to-br from-tertiary to-primary flex items-center justify-center shadow-[0_0_20px_rgba(143,245,255,0.4)]">
+<span class="material-symbols-outlined text-on-tertiary text-3xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<p class="font-headline font-bold text-tertiary">Neonowy Mistrz</p>
+</div>
+<div class="-mt-4 p-6 rounded-lg bg-surface-container flex flex-col items-center justify-center text-center space-y-4 border border-outline-variant/10 shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+<div class="w-16 h-16 rounded-full bg-surface-bright flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="lock" data-weight="fill">lock</span>
+</div>
+<p class="font-headline font-bold text-on-surface-variant">???</p>
+</div>
+<div class="p-6 rounded-lg bg-surface-container flex flex-col items-center justify-center text-center space-y-4 border border-outline-variant/10 shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+<div class="w-16 h-16 rounded-full bg-surface-bright flex items-center justify-center border border-secondary/20">
+<img class="w-full h-full object-cover rounded-full" data-alt="Stylized futuristic neon character avatar profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmffX-E1xrhKU-0Al9POD1DnGlTAaMicwybD9AzWRRbqn70uo8BTrNjn9h72ziWEhL3bryezDvkkC66GiHAHyKwmRfOXuldiwYtO4LTjpEXRwCNBJaE2OJfjNh9Cm1z250lqEE6vWdREWdripa9MUJzT7E4Up3_Hqa0xVx323DAuRnKSU8tKYe1exRrhZjKRiem0SI1GRF8XU_lSXxpKBdRKSX9o2gnG15dUy7QFAujdLPi7U1rKpVLLPKCu2PzsoQhjqKNhErzPe0"/>
+</div>
+<p class="font-headline font-bold text-secondary">Cyber-Skin #04</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Competitive Edge: High-Tech Leaderboard -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-black font-headline text-on-surface mb-4">Top 10 - Tryb Legendarny</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+</div>
+<div class="bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant/10 shadow-2xl">
+<!-- Header -->
+<div class="grid grid-cols-12 gap-4 px-8 py-5 bg-surface-container-highest/50 font-bold text-on-surface-variant text-sm tracking-wider uppercase">
+<div class="col-span-1">#</div>
+<div class="col-span-6">Gracz</div>
+<div class="col-span-3 text-right">Wynik</div>
+<div class="col-span-2 text-right">Czas</div>
+</div>
+<!-- Leaderboard Rows -->
+<div class="divide-y divide-outline-variant/10">
+<!-- Current User / Highlighted Rank 1 -->
+<div class="grid grid-cols-12 gap-4 px-8 py-6 items-center bg-primary/5 border-l-4 border-primary">
+<div class="col-span-1 text-2xl font-black text-primary italic">01</div>
+<div class="col-span-6 flex items-center gap-4">
+<div class="relative">
+<img class="w-12 h-12 rounded-full border-2 border-primary" data-alt="Professional gamer avatar with blue neon accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSVY0vfmZ9dIQNppie5SU8ujYaQB5cg2Fx8cVoU_iKZomNbzFAtVMqvvOuYjfBJ_650iKhB5Kdu5OeNqnfFlKPSNHo4-7JijhNVUUQ3_rJ0RXUaFM98jgZOXpEettwTX3ixWylWHDs3_lhlSPkAf7FpoydhFNtEHQW49OEqt8QpC-kQ3oyWhSjQFaWJ0BP_dfSEPnyZQa2TVar-mK7bzpsRb5RcDa_6wXgL2GZeg1xoSbFU_lUmUWZoZOpJbgs8HBY9tuWSffCZcmx"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary p-0.5 rounded-full"><span class="material-symbols-outlined text-xs" data-icon="verified" data-weight="fill">verified</span></div>
+</div>
+<span class="font-bold text-lg">Volt_Master_99</span>
+</div>
+<div class="col-span-3 text-right text-primary font-black text-xl">12,450</div>
+<div class="col-span-2 text-right text-on-surface-variant font-mono">03:14s</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 gap-4 px-8 py-6 items-center hover:bg-surface-bright transition-colors">
+<div class="col-span-1 text-xl font-bold text-on-surface-variant">02</div>
+<div class="col-span-6 flex items-center gap-4">
+<img class="w-12 h-12 rounded-full border border-outline-variant" data-alt="User avatar with purple lighting effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkWOhYzyTkih9falkKymTRmk8zoK7GjhK2Gs6TaBAafDFPCGSL7SGG4iQoGYvtLWNwBn_XHJ6i0bkk7dtSf9aD3N1ZXOMXR30MFpC4UTdqwGgFhz8UgKLXenFKEVS0QlTLef4l9Xoly3YR6Dpl4XLg-5f1SskIfmuXFPIoucfWg32FRt6DHN5JLMf4c383bQhELRl391YdRCDj-DMqjwEdF9-2L_0TV9IdwyjYMezMo7D0KxZ4u7rX99TBwBtX4bKlN3v50E1HrThy"/>
+<span class="font-bold">NeonNinja</span>
+</div>
+<div class="col-span-3 text-right font-bold">11,920</div>
+<div class="col-span-2 text-right text-on-surface-variant font-mono">03:45s</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 gap-4 px-8 py-6 items-center hover:bg-surface-bright transition-colors">
+<div class="col-span-1 text-xl font-bold text-on-surface-variant">03</div>
+<div class="col-span-6 flex items-center gap-4">
+<img class="w-12 h-12 rounded-full border border-outline-variant" data-alt="Tech-inspired female gamer profile photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3IhBqVj8uQWH3HFIvq6GiZ71u-sz2Z0Km8LdD3roQQj7jFlxatiKLiZmuc_sUasoVCOTIqgKg_a7JE2va9Yd8Qfwn8U5EnpyHe-yjR4E9EX0y6dJRSsPJGLhxy-xqpP44kvFadkW-7Tp5DdrCiHDJrvVVJt6LZNwx4760-d5LijJ-4jOM0PvB-BcwdiDgGI7cWnXGA8kg2LxCoLeWrcgHQqAQ8Hve6UlFqlbJn--3neL-803WNnzlFge7FN9NhA9E9W1ErNTgKD8z"/>
+<span class="font-bold">CyberQueen_X</span>
+</div>
+<div class="col-span-3 text-right font-bold">11,400</div>
+<div class="col-span-2 text-right text-on-surface-variant font-mono">03:52s</div>
+</div>
+<!-- Row 4-10 (Simplified for UI display) -->
+<div class="px-8 py-4 bg-surface-container-lowest/20 text-center text-on-surface-variant text-sm italic">
+                        ... and 7 other legends
+                    </div>
+</div>
+</div>
+<div class="mt-8 text-center">
+<button class="text-tertiary font-bold hover:underline flex items-center gap-2 mx-auto">
+                    Zobacz Pełny Ranking <span class="material-symbols-outlined" data-icon="open_in_new">open_in_new</span>
+</button>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-5xl mx-auto px-8 mb-24">
+<div class="bg-gradient-to-br from-primary-container to-secondary rounded-lg p-1">
+<div class="bg-surface rounded-lg px-10 py-16 flex flex-col items-center text-center">
+<h3 class="text-4xl font-black font-headline mb-6">Gotowy na wyzwanie życia?</h3>
+<p class="text-on-surface-variant max-w-xl mb-10">Zagraj w trybie jednoosobowym i udowodnij swoją wiedzę. Ranking resetuje się w każdy poniedziałek o 00:00!</p>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform active:scale-95 shadow-[0_15px_40px_-10px_rgba(224,141,255,0.6)]">
+                        ZAGRAJ TERAZ ZA DARMO
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-[#000000] dark:bg-[#000000] font-['Be_Vietnam_Pro'] text-sm">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 border-t border-[#e08dff]/5">
+<div class="text-lg font-bold text-[#e08dff] py-10">QuizVolt</div>
+<div class="flex gap-8 mb-8 md:mb-0">
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Discord</a>
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Twitter</a>
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Kontakt</a>
+<a class="text-[#aaa8c4] hover:text-[#8ff5ff] transition-colors" href="#">Polityka Prywatności</a>
+</div>
+<div class="text-[#aaa8c4] text-center md:text-right py-10 opacity-80">
+                © 2024 QuizVolt. Elektryzujące Doświadczenie Społecznościowe.
+            </div>
+</div>
+</footer>
+</body></html>
