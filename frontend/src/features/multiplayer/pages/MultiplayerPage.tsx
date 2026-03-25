@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import { LegacyMultiplayerApp } from "../../../legacy/LegacyMultiplayerApp";
 
 export const MultiplayerPage = () => {
   return (

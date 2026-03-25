@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NeonPulse - Wynik Poziomu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#1d1d39",
+                        "on-primary-fixed-variant": "#4c0068",
+                        "on-primary-fixed": "#000000",
+                        "on-surface-variant": "#aaa8c4",
+                        "surface-container-low": "#111128",
+                        "surface-container-highest": "#232341",
+                        "primary-fixed-dim": "#d160ff",
+                        "outline-variant": "#46465e",
+                        "on-surface": "#e5e3ff",
+                        "surface-bright": "#29294a",
+                        "secondary-container": "#b90068",
+                        "on-primary-container": "#3d0055",
+                        "error-dim": "#d73357",
+                        "outline": "#74738d",
+                        "surface-tint": "#e08dff",
+                        "primary-container": "#d978ff",
+                        "tertiary-fixed": "#00eefc",
+                        "surface-dim": "#0c0c21",
+                        "tertiary-fixed-dim": "#00deec",
+                        "on-error": "#490013",
+                        "on-tertiary-fixed-variant": "#005e64",
+                        "on-secondary-fixed": "#6b003a",
+                        "surface-container": "#171730",
+                        "tertiary-container": "#00eefc",
+                        "on-error-container": "#ffb2b9",
+                        "primary-fixed": "#d978ff",
+                        "on-secondary-container": "#fff5f6",
+                        "error": "#ff6e84",
+                        "surface-container-lowest": "#000000",
+                        "error-container": "#a70138",
+                        "secondary-fixed": "#ffc1d4",
+                        "secondary": "#ff68a7",
+                        "on-secondary": "#460024",
+                        "on-tertiary-container": "#005359",
+                        "inverse-primary": "#9a00cf",
+                        "surface": "#0c0c21",
+                        "on-tertiary-fixed": "#003f43",
+                        "primary": "#e08dff",
+                        "on-background": "#e5e3ff",
+                        "inverse-surface": "#fcf8ff",
+                        "tertiary": "#8ff5ff",
+                        "tertiary-dim": "#00deec",
+                        "primary-dim": "#bc00fb",
+                        "background": "#0c0c21",
+                        "surface-variant": "#232341",
+                        "on-primary": "#4f006c",
+                        "secondary-dim": "#e10080",
+                        "inverse-on-surface": "#53536b",
+                        "secondary-fixed-dim": "#ffacc8",
+                        "on-tertiary": "#005d63",
+                        "on-secondary-fixed-variant": "#9f0059"
+                    },
+                    fontFamily: {
+                        "headline": ["Spline Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .rank-glow {
+            text-shadow: 0 0 20px rgba(224, 141, 255, 0.8), 0 0 40px rgba(255, 104, 167, 0.6);
+        }
+        .glass-panel {
+            background: rgba(23, 23, 48, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen pb-24 md:pb-12">
+<main class="pt-12 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+<!-- Hero Rank Section: Asymmetric & Kinetic -->
+<section class="lg:col-span-7 flex flex-col justify-center items-start space-y-8">
+<div class="relative w-full">
+<!-- Background Glow Decor -->
+<div class="absolute -top-20 -left-20 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center md:items-end gap-6 md:gap-12">
+<div class="relative group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-30 blur-3xl group-hover:opacity-50 transition-opacity"></div>
+<h1 class="text-[12rem] md:text-[16rem] font-black italic font-headline leading-none rank-glow text-transparent bg-clip-text bg-gradient-to-b from-on-surface to-primary">S</h1>
+</div>
+<div class="flex flex-col mb-4">
+<span class="text-tertiary font-headline font-bold tracking-[0.3em] uppercase text-sm mb-2">Poziom ukończony</span>
+<h2 class="text-4xl md:text-6xl font-black font-headline tracking-tighter text-on-surface">LEGENDA PULSU</h2>
+<p class="text-on-surface-variant mt-2 max-w-sm">Perfekcyjna synchronizacja. Twoje reakcje przekroczyły granice systemu.</p>
+</div>
+</div>
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-2 gap-4 w-full">
+<div class="bg-surface-container p-6 rounded-lg border-l-4 border-primary">
+<span class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Wynik końcowy</span>
+<div class="text-3xl font-black font-headline text-on-surface mt-1">1,450 <span class="text-sm text-primary">pts</span></div>
+</div>
+<div class="bg-surface-container p-6 rounded-lg border-l-4 border-outline">
+<span class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Czas</span>
+<div class="text-3xl font-black font-headline text-on-surface mt-1">02:45</div>
+</div>
+</div>
+<!-- Rewards Section -->
+<div class="w-full bg-surface-container-high rounded-lg p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 blur-3xl"></div>
+<h3 class="text-xl font-bold font-headline mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">redeem</span>
+                    Odblokowane nagrody
+                </h3>
+<div class="flex flex-wrap gap-6">
+<!-- Reward Card -->
+<div class="flex items-center gap-4 bg-surface-bright/50 p-3 pr-6 rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors cursor-default">
+<div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-on-primary">military_tech</span>
+</div>
+<div>
+<div class="text-sm font-bold text-on-surface">Neonowy Łowca</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-wider">Unikalna odznaka</div>
+</div>
+</div>
+<!-- Skin Reward -->
+<div class="flex items-center gap-4 bg-surface-bright/50 p-3 pr-6 rounded-full border border-outline-variant/30 hover:border-secondary/50 transition-colors cursor-default">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary">
+<img alt="Character Skin" class="w-full h-full object-cover" data-alt="vibrant pink and purple glowing cybernetic mask against a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC19Mi3AxM0_vfmRozg7JngSI55EuJ8zkblJVBDV8yndn0Kf5uF-1YsYQTvYgFs4iYtgR7mZNuIKLRKKvGib1sWoUyEY98Y4GDCi1JEPrvaznt-ZwNMNUwQloT92v4pyVoRG-Tbv5_-ay1T62FX9VhWYZNMRJ_mYnVnq0chVlTbAffdmlvRnJO7dUbEt2-pzSzasPSqlcBL25g_LOr9vX7e-OYm_RX09nGqZfdqa7qocLxUYcViBlAdvzfRR7n0UlGy-NpJ18B4w9R5"/>
+</div>
+<div>
+<div class="text-sm font-bold text-on-surface">Cyber-Widmo</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-wider">Nowy skin</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons (Main Navigation) -->
+<div class="flex flex-col sm:flex-row gap-4 w-full pt-4">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-full shadow-[0_10px_30px_rgba(224,141,255,0.3)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_arrow</span>
+                    Graj ponownie
+                </button>
+<button class="px-8 py-4 bg-surface-bright text-on-surface font-bold rounded-full border border-primary/20 hover:bg-surface-variant active:scale-95 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">map</span>
+                    Powrót do wyboru poziomu
+                </button>
+</div>
+</section>
+<!-- Sidebar: Legendary Leaderboard -->
+<aside class="lg:col-span-5 space-y-6">
+<div class="bg-surface-container rounded-lg p-6 border-t-2 border-tertiary">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h3 class="text-xl font-black font-headline tracking-tight text-on-surface uppercase">Leaderboard</h3>
+<p class="text-xs text-tertiary font-bold tracking-widest uppercase">Trudność: Legendary</p>
+</div>
+<span class="material-symbols-outlined text-tertiary/50">leaderboard</span>
+</div>
+<div class="space-y-2">
+<!-- Top 3 -->
+<div class="flex items-center gap-4 p-4 bg-surface-bright rounded-lg border-l-4 border-tertiary shadow-lg shadow-black/20">
+<span class="text-2xl font-black font-headline text-tertiary w-6 italic">1</span>
+<div class="w-10 h-10 rounded-full border-2 border-tertiary overflow-hidden">
+<img alt="Rank 1" class="w-full h-full object-cover" data-alt="minimalist digital avatar of a futuristic human with blue glowing eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGxkMVzt64zvkVigQeuSF_hfjS4w_uE9nzoIVJucaPiLl1e0HvQPdV7ZBI_ReRNJqurN3VyrZrhccpD1jwhlqYPD4hDILYJLRny5Ps2Z_ANUPSnhGL5UCL-sN68dsraBAfbE1xhSy2T2VdF9KStUocSq6xCeDolOXnZtgCdUkp1zABh7FYPXj4fCNdS7R5kkHz7KrRrCAMNyzYRQnDT5Ht00WopvzQtUUAljYx5XQrY8PY9xtlcX-RQ_2WvXyXXHEjqVsWUlnVrTfY"/>
+</div>
+<div class="flex-1">
+<div class="font-bold text-on-surface">Xenon_Pulse</div>
+<div class="text-[10px] text-on-surface-variant uppercase font-bold">Legendary Master</div>
+</div>
+<div class="text-xl font-black font-headline text-on-surface">1,890</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-surface-container-high rounded-lg hover:bg-surface-bright transition-colors group">
+<span class="text-xl font-black font-headline text-on-surface-variant w-6 italic group-hover:text-primary transition-colors">2</span>
+<div class="w-10 h-10 rounded-full border border-outline-variant overflow-hidden">
+<img alt="Rank 2" class="w-full h-full object-cover" data-alt="stylized 3D character head with futuristic headset and magenta lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFxttumq_1lcFVOh6kWc1_k0Pt7DHaFSV-XoHvVKKI49vEzyu3OcnIt9rErIjEWlC0LKJCuxSVcI4tEC5a1pu-Qh104eStkprVCvliRy8NKDz5nlOU36phz-05DYbkTRiFbu5Rg5bBWvEyxu8CA_hsiDhG10qEW20Di-HQD0hwX54IBcL1TvVJ_l-ZhM3O9lQLSaGov9_7U3SiTJALAca3-I47wSC5jVEohi6RXRkUu2Y_zT6-szjYxOu6PZGdjJ1uOBD0jBG8-z1j"/>
+</div>
+<div class="flex-1 font-bold text-on-surface">NeonGhost</div>
+<div class="text-xl font-black font-headline text-on-surface">1,725</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-surface-container-high rounded-lg hover:bg-surface-bright transition-colors group">
+<span class="text-xl font-black font-headline text-on-surface-variant w-6 italic group-hover:text-primary transition-colors">3</span>
+<div class="w-10 h-10 rounded-full border border-outline-variant overflow-hidden">
+<img alt="Rank 3" class="w-full h-full object-cover" data-alt="abstract profile silhouette with flowing digital neon data streams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8ihJLfLTfYza7-svP2wjIaDAKU5WdZwXTOxlvrtdaBBW-Kdb2S9AllNZJgSIrbnFCUPmXrgtYEPcuz2VhtyU5-_PbULizIb7SL6E_Dtwth6nzDaS0JLXhH5l94oi3BZQjH0Vm1PnZC-b0MW1mHDAPSuTC4shbkPfOCjvw86CFwvngjSac8VE1s34b3qP_Rjb0Oi8nHoahJ-EZxGuoC_olY8kqr8i-sEmBbdBAx0DRhpKLpCwbfagawRjhA3RL7OWDQw7YZUX18yoF"/>
+</div>
+<div class="flex-1 font-bold text-on-surface">VoidWalker</div>
+<div class="text-xl font-black font-headline text-on-surface">1,680</div>
+</div>
+<!-- Current Player Highlight -->
+<div class="flex items-center gap-4 p-4 bg-primary/10 rounded-lg border border-primary/30 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent"></div>
+<span class="text-xl font-black font-headline text-primary w-6 italic z-10">8</span>
+<div class="w-10 h-10 rounded-full border-2 border-primary overflow-hidden z-10">
+<img alt="Current User" class="w-full h-full object-cover" data-alt="close-up portrait of a futuristic gamer with neon face paint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsILEPQ0_h5LlGyJfrSqsbwnSPuru19-BWCepJGgyDirebEqOnm4SGVRKxYziz5feWeABemMSQrUoqPpjHuplT7cGsGzY1Zlvw5kWTeE2zYFepPjSbGfjO2FwcUUTz9xQCirg54yb-Bj8CZkfCmW4vaPMW3qCVilcjBPkUFwIOUFbqlf4VgM9emubnqoR69PijjiHaeKP8QHK62si-IxXkUasSu1YubTGsokRImEMD24HyCI5cxuiEoMlIRxMyHl22JmvkwTcICYoa"/>
+</div>
+<div class="flex-1 font-bold text-primary z-10">Ty (You)</div>
+<div class="text-xl font-black font-headline text-on-surface z-10">1,450</div>
+</div>
+<!-- Rest of Top 10 simplified -->
+<div class="pt-4 space-y-1 opacity-60">
+<div class="flex justify-between items-center px-4 py-2 text-sm border-b border-outline-variant/10">
+<span class="flex items-center gap-4"><span class="w-6 italic font-headline">9</span> PixelPunk</span>
+<span class="font-bold">1,390</span>
+</div>
+<div class="flex justify-between items-center px-4 py-2 text-sm border-b border-outline-variant/10">
+<span class="flex items-center gap-4"><span class="w-6 italic font-headline">10</span> CyberRay</span>
+<span class="font-bold">1,310</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-3 text-tertiary font-bold text-sm uppercase tracking-widest hover:underline transition-all">
+                    Zobacz pełny ranking
+                </button>
+</div>
+</aside>
+</main>
+<footer class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-[#0c0c21]/90 backdrop-blur-2xl border-t border-[#8ff5ff]/10 rounded-t-[2.5rem] shadow-[0_-10px_40px_rgba(0,0,0,0.8)]">
+<div class="flex flex-col items-center justify-center text-[#aaa8c4] p-3 hover:text-[#8ff5ff] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">bolt</span>
+<span class="text-[11px] font-bold uppercase tracking-widest font-headline">Battle</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e08dff] to-[#ff68a7] text-[#4f006c] rounded-full p-3 shadow-[0_0_15px_rgba(224,141,255,0.5)] active:scale-90 duration-200">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="text-[11px] font-bold uppercase tracking-widest font-headline">Trophy</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#aaa8c4] p-3 hover:text-[#8ff5ff] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[11px] font-bold uppercase tracking-widest font-headline">Skins</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#aaa8c4] p-3 hover:text-[#8ff5ff] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[11px] font-bold uppercase tracking-widest font-headline">Profile</span>
+</div>
+</footer>
+</body></html>
