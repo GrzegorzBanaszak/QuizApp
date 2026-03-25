@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-container": "#00eefc",
+                        "secondary-container": "#b90068",
+                        "on-background": "#e5e3ff",
+                        "primary-fixed": "#d978ff",
+                        "error-container": "#a70138",
+                        "surface-bright": "#29294a",
+                        "primary-container": "#d978ff",
+                        "surface-container-lowest": "#000000",
+                        "tertiary-fixed": "#00eefc",
+                        "on-error-container": "#ffb2b9",
+                        "outline": "#74738d",
+                        "on-primary-fixed-variant": "#4c0068",
+                        "on-secondary": "#460024",
+                        "error-dim": "#d73357",
+                        "inverse-primary": "#9a00cf",
+                        "tertiary": "#8ff5ff",
+                        "on-primary-container": "#3d0055",
+                        "on-primary-fixed": "#000000",
+                        "on-primary": "#4f006c",
+                        "error": "#ff6e84",
+                        "tertiary-dim": "#00deec",
+                        "on-secondary-container": "#fff5f6",
+                        "surface-container-highest": "#232341",
+                        "on-tertiary": "#005d63",
+                        "on-surface-variant": "#aaa8c4",
+                        "tertiary-fixed-dim": "#00deec",
+                        "secondary-dim": "#e10080",
+                        "outline-variant": "#46465e",
+                        "secondary-fixed-dim": "#ffacc8",
+                        "on-tertiary-container": "#005359",
+                        "surface-tint": "#e08dff",
+                        "on-error": "#490013",
+                        "primary-fixed-dim": "#d160ff",
+                        "on-secondary-fixed": "#6b003a",
+                        "inverse-surface": "#fcf8ff",
+                        "secondary": "#ff68a7",
+                        "inverse-on-surface": "#53536b",
+                        "on-tertiary-fixed": "#003f43",
+                        "surface-variant": "#232341",
+                        "on-surface": "#e5e3ff",
+                        "surface-container-high": "#1d1d39",
+                        "background": "#0c0c21",
+                        "surface-container": "#171730",
+                        "primary": "#e08dff",
+                        "primary-dim": "#bc00fb",
+                        "secondary-fixed": "#ffc1d4",
+                        "surface-container-low": "#111128",
+                        "surface": "#0c0c21",
+                        "on-secondary-fixed-variant": "#9f0059",
+                        "surface-dim": "#0c0c21"
+                    },
+                    fontFamily: {
+                        "headline": ["Spline Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neon-glow-primary {
+            text-shadow: 0 0 10px rgba(224, 141, 255, 0.8), 0 0 20px rgba(224, 141, 255, 0.4);
+        }
+        .neon-glow-secondary {
+            text-shadow: 0 0 10px rgba(255, 104, 167, 0.8), 0 0 20px rgba(255, 104, 167, 0.4);
+        }
+        .glass-panel {
+            background: rgba(23, 23, 48, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden p-6 md:p-12 lg:p-20">
+<!-- Header / Back Navigation -->
+<header class="mb-12 flex items-center justify-between">
+<button class="group flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">arrow_back</span>
+<span class="font-medium text-lg">Powrót do kategorii</span>
+</button>
+<div class="hidden md:block">
+<p class="text-tertiary font-label text-sm uppercase tracking-widest">Singleplayer Mode</p>
+</div>
+</header>
+<!-- Player Profile Section -->
+<section class="mb-16 flex flex-col items-center md:flex-row md:items-end gap-8">
+<div class="relative">
+<div class="h-32 w-32 rounded-full border-4 border-primary p-1 shadow-[0_0_25px_rgba(224,141,255,0.3)]">
+<img alt="NeonNinja Avatar" class="h-full w-full rounded-full object-cover" data-alt="Futuristic cyberpunk ninja portrait with glowing purple visor and neon pink accents, digital art style, high contrast dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKikT8gt69oyPM0sOM6l9t6axz597o7jvDyKG5ZhlgljX5hrLrLQH4__0hQil765waVsEMDyIwAR2KdAc0VqOuWoTYCw2ZFAfSsi3vBwV7LR61iw8QlBl4H8FS8X-6YxDtOmTpH0JAXRaD28xAWjr3ZEUQAljLUtKkj-yW9eQssIqjG05KbOUcMRPAV5KVTN41YgosMLcceP3ASjyt7dQi6J_0x6L85p_ElJbaBAYEV9S8cfy8YD4MvTHa2w0nuFAMtRHxSBd7Vqme"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">
+                    Level 42
+                </div>
+</div>
+<div class="text-center md:text-left">
+<h1 class="font-headline text-5xl md:text-6xl font-bold tracking-tight text-white mb-2">NeonNinja</h1>
+<p class="text-on-surface-variant text-lg">Twój postęp w kategorii: <span class="text-tertiary font-bold">Wiedza Ogólna</span></p>
+</div>
+</section>
+<!-- Main Content: Difficulty Levels -->
+<main class="mx-auto w-full max-w-4xl space-y-6">
+<!-- Easy (Łatwy) -->
+<div class="group relative flex items-center justify-between rounded-lg bg-surface-container p-6 shadow-xl transition-all hover:bg-surface-bright">
+<div class="flex items-center gap-6">
+<div class="flex h-20 w-20 items-center justify-center rounded-xl bg-surface-container-highest">
+<span class="font-headline text-5xl font-black text-primary neon-glow-primary">S</span>
+</div>
+<div>
+<h2 class="font-headline text-2xl font-bold text-white">Easy (Łatwy)</h2>
+<div class="mt-1 flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium uppercase tracking-wide">Status: Zaliczony</span>
+</div>
+</div>
+</div>
+<button class="rounded-full bg-surface-variant px-6 py-2 text-sm font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-all">Graj ponownie</button>
+</div>
+<!-- Medium (Średni) -->
+<div class="group relative flex items-center justify-between rounded-lg bg-surface-container p-6 shadow-xl transition-all hover:bg-surface-bright">
+<div class="flex items-center gap-6">
+<div class="flex h-20 w-20 items-center justify-center rounded-xl bg-surface-container-highest">
+<span class="font-headline text-5xl font-black text-secondary neon-glow-secondary">A</span>
+</div>
+<div>
+<h2 class="font-headline text-2xl font-bold text-white">Medium (Średni)</h2>
+<div class="mt-1 flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium uppercase tracking-wide">Status: Zaliczony</span>
+</div>
+</div>
+</div>
+<button class="rounded-full bg-surface-variant px-6 py-2 text-sm font-bold text-on-surface hover:bg-primary hover:text-on-primary transition-all">Graj ponownie</button>
+</div>
+<!-- Hard (Trudny) - Highlighted -->
+<div class="group relative flex items-center justify-between rounded-lg bg-gradient-to-r from-primary to-secondary p-[2px] shadow-[0_0_30px_rgba(224,141,255,0.2)]">
+<div class="flex w-full items-center justify-between rounded-lg bg-surface-container-high p-6 transition-all group-hover:bg-surface-bright">
+<div class="flex items-center gap-6">
+<div class="flex h-20 w-20 items-center justify-center rounded-xl bg-surface-container-highest border border-primary/30">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<h2 class="font-headline text-2xl font-bold text-white">Hard (Trudny)</h2>
+<div class="mt-1 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm">stars</span>
+<span class="text-sm font-bold uppercase tracking-wide">Status: Dostępny</span>
+</div>
+</div>
+</div>
+<button class="rounded-full bg-primary px-8 py-3 text-lg font-black text-on-primary shadow-lg shadow-primary/40 hover:scale-105 active:scale-95 transition-transform">ROZPOCZNIJ</button>
+</div>
+</div>
+<!-- Expert (Ekspert) - Locked -->
+<div class="group relative flex items-center justify-between rounded-lg bg-surface-container-low p-6 opacity-60">
+<div class="flex items-center gap-6">
+<div class="flex h-20 w-20 items-center justify-center rounded-xl bg-surface-container-lowest border border-outline-variant/30">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">lock</span>
+</div>
+<div>
+<h2 class="font-headline text-2xl font-bold text-on-surface-variant">Expert (Ekspert)</h2>
+<div class="mt-1 flex items-center gap-2 text-outline">
+<span class="text-sm font-medium uppercase tracking-wide">Status: Zablokowany</span>
+</div>
+</div>
+</div>
+<div class="text-outline-variant italic text-sm pr-4">Ukończ Hard, aby odblokować</div>
+</div>
+<!-- Legendary (Legendarny) - Locked -->
+<div class="group relative flex items-center justify-between rounded-lg bg-surface-container-low p-6 opacity-60">
+<div class="flex items-center gap-6">
+<div class="flex h-20 w-20 items-center justify-center rounded-xl bg-surface-container-lowest border border-outline-variant/30">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">lock</span>
+</div>
+<div>
+<h2 class="font-headline text-2xl font-bold text-on-surface-variant">Legendary (Legendarny)</h2>
+<div class="mt-1 flex items-center gap-2 text-outline">
+<span class="text-sm font-medium uppercase tracking-wide">Status: Zablokowany</span>
+</div>
+</div>
+</div>
+<div class="text-outline-variant italic text-sm pr-4">Wymagany Level 50</div>
+</div>
+</main>
+<!-- Bottom Section: Exit Action -->
+<footer class="mt-16 flex justify-center pb-20">
+<button class="group flex items-center gap-4 rounded-full border border-outline-variant px-10 py-4 font-bold text-on-surface-variant hover:border-secondary hover:text-secondary transition-all">
+<span class="material-symbols-outlined">home</span>
+                Powrót do menu głównego
+            </button>
+</footer>
+<!-- Decorative Light Leaks -->
+<div class="pointer-events-none absolute top-[-10%] right-[-5%] h-[500px] w-[500px] rounded-full bg-primary/10 blur-[120px]"></div>
+<div class="pointer-events-none absolute bottom-[-10%] left-[-5%] h-[500px] w-[500px] rounded-full bg-secondary/10 blur-[120px]"></div>
+</div>
+</body></html>
