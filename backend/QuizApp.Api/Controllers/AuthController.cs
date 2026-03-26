@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Google.Apis.Auth;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using QuizApp.Api.Dto;
@@ -17,6 +18,42 @@ public class AuthController : ControllerBase
     public AuthController(IConfiguration configuration)
     {
         _configuration = configuration;
+    }
+
+    [HttpPost("google")]
+    public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequest request)
+    {
+        if (string.IsNullOrWhiteSpace(request.IdToken))
+        {
+            return BadRequest(new { message = "id_token is required." });
+        }
+
+        try
+        {
+            var payload = await GoogleJsonWebSignature.ValidateAsync(request.IdToken);
+
+            var user = new User
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = payload.Name ?? payload.Email ?? "Google user",
+                Email = payload.Email,
+                ExternalId = payload.Subject,
+                AvatarUrl = payload.Picture,
+                Provider = AuthProvider.Google
+            };
+
+            var token = GenerateJwtToken(user);
+
+            return Ok(new
+            {
+                token,
+                userId = user.Id
+            });
+        }
+        catch (InvalidJwtException)
+        {
+            return Unauthorized(new { message = "Invalid Google token." });
+        }
     }
 
     [HttpPost("guest")]
@@ -59,5 +96,4 @@ public class AuthController : ControllerBase
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 }
-
 
