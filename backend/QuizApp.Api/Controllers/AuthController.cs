@@ -2,6 +2,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Google.Apis.Auth;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using QuizApp.Api.Dto;
@@ -14,10 +15,56 @@ namespace QuizApp.Api.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IConfiguration _configuration;
+    private readonly IHttpClientFactory _httpClientFactory;
 
-    public AuthController(IConfiguration configuration)
+    public AuthController(IConfiguration configuration, IHttpClientFactory httpClientFactory)
     {
         _configuration = configuration;
+        _httpClientFactory = httpClientFactory;
+    }
+
+    [HttpPost("facebook")]
+    public async Task<IActionResult> FacebookLogin([FromBody] FacebookLoginRequest request)
+    {
+        if (string.IsNullOrWhiteSpace(request.AccessToken))
+        {
+            return BadRequest(new { message = "access_token is required." });
+        }
+
+        var httpClient = _httpClientFactory.CreateClient();
+        var url = $"https://graph.facebook.com/me?fields=id,name,email,picture&access_token={Uri.EscapeDataString(request.AccessToken)}";
+
+        using var response = await httpClient.GetAsync(url);
+        if (!response.IsSuccessStatusCode)
+        {
+            return Unauthorized(new { message = "Invalid Facebook token." });
+        }
+
+        var facebookProfile = await JsonSerializer.DeserializeAsync<FacebookProfileResponse>(
+            await response.Content.ReadAsStreamAsync());
+
+        if (facebookProfile is null || string.IsNullOrWhiteSpace(facebookProfile.Id))
+        {
+            return Unauthorized(new { message = "Invalid Facebook profile response." });
+        }
+
+        var user = new User
+        {
+            Id = Guid.NewGuid().ToString(),
+            Name = facebookProfile.Name,
+            Email = facebookProfile.Email,
+            ExternalId = facebookProfile.Id,
+            AvatarUrl = facebookProfile.Picture?.Data?.Url,
+            Provider = AuthProvider.Facebook
+        };
+
+        var token = GenerateJwtToken(user);
+
+        return Ok(new
+        {
+            token,
+            userId = user.Id
+        });
     }
 
     [HttpPost("google")]
@@ -96,4 +143,3 @@ public class AuthController : ControllerBase
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 }
-
