@@ -77,7 +77,13 @@ public class AuthController : ControllerBase
 
         try
         {
-            var payload = await GoogleJsonWebSignature.ValidateAsync(request.IdToken);
+            var googleClientId = _configuration["Google:ClientId"] ?? throw new InvalidOperationException("Missing Google:ClientId configuration value.");
+            var validationSettings = new GoogleJsonWebSignature.ValidationSettings
+            {
+                Audience = new[] { googleClientId }
+            };
+
+            var payload = await GoogleJsonWebSignature.ValidateAsync(request.IdToken, validationSettings);
 
             var user = new User
             {
