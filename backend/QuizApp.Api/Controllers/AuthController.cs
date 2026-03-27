@@ -1,13 +1,7 @@
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-using AutoMapper;
 using Google.Apis.Auth;
-using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using QuizApp.Api.Dto;
-using QuizApp.Api.Models;
+using QuizApp.Api.Services;
 
 namespace QuizApp.Api.Controllers;
 
@@ -15,96 +9,25 @@ namespace QuizApp.Api.Controllers;
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly IConfiguration _configuration;
-    private readonly IHttpClientFactory _httpClientFactory;
-    private readonly IMapper _mapper;
+    private readonly IAuthService _authService;
 
-    public AuthController(IConfiguration configuration, IHttpClientFactory httpClientFactory, IMapper mapper)
+    public AuthController(IAuthService authService)
     {
-        _configuration = configuration;
-        _httpClientFactory = httpClientFactory;
-        _mapper = mapper;
+        _authService = authService;
     }
 
-    [HttpPost("facebook")]
-    public async Task<IActionResult> FacebookLogin([FromBody] FacebookLoginRequest request)
+    [HttpPost("verify-google")]
+    public async Task<IActionResult> VerifyGoogle([FromBody] GoogleTokenRequest request)
     {
-        if (string.IsNullOrWhiteSpace(request.AccessToken))
+        if (string.IsNullOrWhiteSpace(request.Token))
         {
-            return BadRequest(new { message = "access_token is required." });
-        }
-
-        var httpClient = _httpClientFactory.CreateClient();
-        var url = $"https://graph.facebook.com/me?fields=id,name,email,picture&access_token={Uri.EscapeDataString(request.AccessToken)}";
-
-        using var response = await httpClient.GetAsync(url);
-        if (!response.IsSuccessStatusCode)
-        {
-            return Unauthorized(new { message = "Invalid Facebook token." });
-        }
-
-        var facebookProfile = await JsonSerializer.DeserializeAsync<FacebookProfileResponse>(
-            await response.Content.ReadAsStreamAsync());
-
-        if (facebookProfile is null || string.IsNullOrWhiteSpace(facebookProfile.Id))
-        {
-            return Unauthorized(new { message = "Invalid Facebook profile response." });
-        }
-
-        var user = new User
-        {
-            Username = facebookProfile.Name ?? "Facebook user",
-            AvatarUrl = facebookProfile.Picture?.Data?.Url ?? string.Empty,
-            Role = "User",
-            FacebookId = facebookProfile.Id,
-            LastLoginAt = DateTime.UtcNow
-        };
-
-        var token = GenerateJwtToken(user);
-
-        return Ok(new
-        {
-            token,
-            userId = user.Id,
-            profile = _mapper.Map<UserProfileDto>(user)
-        });
-    }
-
-    [HttpPost("google")]
-    public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequest request)
-    {
-        if (string.IsNullOrWhiteSpace(request.IdToken))
-        {
-            return BadRequest(new { message = "id_token is required." });
+            return BadRequest(new { message = "token is required." });
         }
 
         try
         {
-            var googleClientId = _configuration["Google:ClientId"] ?? throw new InvalidOperationException("Missing Google:ClientId configuration value.");
-            var validationSettings = new GoogleJsonWebSignature.ValidationSettings
-            {
-                Audience = new[] { googleClientId }
-            };
-
-            var payload = await GoogleJsonWebSignature.ValidateAsync(request.IdToken, validationSettings);
-
-            var user = new User
-            {
-                Username = payload.Name ?? payload.Email ?? "Google user",
-                AvatarUrl = payload.Picture ?? string.Empty,
-                Role = "User",
-                GoogleId = payload.Subject,
-                LastLoginAt = DateTime.UtcNow
-            };
-
-            var token = GenerateJwtToken(user);
-
-            return Ok(new
-            {
-                token,
-                userId = user.Id,
-                profile = _mapper.Map<UserProfileDto>(user)
-            });
+            var profile = await _authService.VerifyGoogleAsync(request.Token);
+            return Ok(profile);
         }
         catch (InvalidJwtException)
         {
@@ -112,46 +35,79 @@ public class AuthController : ControllerBase
         }
     }
 
-    [HttpPost("guest")]
-    public IActionResult GuestLogin([FromBody] GuestLoginRequest request)
+    [HttpPost("verify-facebook")]
+    public async Task<IActionResult> VerifyFacebook([FromBody] FacebookTokenRequest request)
     {
-        var user = new User
+        if (string.IsNullOrWhiteSpace(request.Token))
         {
-            Username = string.IsNullOrWhiteSpace(request.Name) ? "Guest" : request.Name,
-            AvatarUrl = string.Empty,
-            Role = "Guest",
-            LastLoginAt = DateTime.UtcNow
-        };
+            return BadRequest(new { message = "token is required." });
+        }
 
-        var token = GenerateJwtToken(user);
-
-        return Ok(new
+        try
         {
-            token,
-            userId = user.Id,
-            profile = _mapper.Map<UserProfileDto>(user)
-        });
+            var profile = await _authService.VerifyFacebookAsync(request.Token);
+            return Ok(profile);
+        }
+        catch (UnauthorizedAccessException)
+        {
+            return Unauthorized(new { message = "Invalid Facebook token." });
+        }
     }
 
-    private string GenerateJwtToken(User user)
+    [HttpPost("google")]
+    public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequest request)
     {
-        var jwtKey = _configuration["Jwt:Key"] ?? throw new InvalidOperationException("Missing Jwt:Key configuration value.");
-        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
-        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-        var expires = DateTime.UtcNow.AddHours(24);
-
-        var claims = new[]
+        if (string.IsNullOrWhiteSpace(request.ProviderToken))
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new Claim(ClaimTypes.Name, user.Username),
-            new Claim(ClaimTypes.Role, user.Role)
-        };
+            return BadRequest(new { message = "providerToken is required." });
+        }
 
-        var token = new JwtSecurityToken(
-            claims: claims,
-            expires: expires,
-            signingCredentials: credentials);
+        try
+        {
+            return Ok(await _authService.LoginWithGoogleAsync(request));
+        }
+        catch (InvalidJwtException)
+        {
+            return Unauthorized(new { message = "Invalid Google token." });
+        }
+        catch (UsernameTakenException ex)
+        {
+            return Conflict(new { message = ex.Message });
+        }
+    }
 
-        return new JwtSecurityTokenHandler().WriteToken(token);
+    [HttpPost("facebook")]
+    public async Task<IActionResult> FacebookLogin([FromBody] FacebookLoginRequest request)
+    {
+        if (string.IsNullOrWhiteSpace(request.ProviderToken))
+        {
+            return BadRequest(new { message = "providerToken is required." });
+        }
+
+        try
+        {
+            return Ok(await _authService.LoginWithFacebookAsync(request));
+        }
+        catch (UnauthorizedAccessException)
+        {
+            return Unauthorized(new { message = "Invalid Facebook token." });
+        }
+        catch (UsernameTakenException ex)
+        {
+            return Conflict(new { message = ex.Message });
+        }
+    }
+
+    [HttpPost("guest")]
+    public async Task<IActionResult> GuestLogin([FromBody] GuestLoginRequest request)
+    {
+        try
+        {
+            return Ok(await _authService.LoginAsGuestAsync(request));
+        }
+        catch (UsernameTakenException ex)
+        {
+            return Conflict(new { message = ex.Message });
+        }
     }
 }

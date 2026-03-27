@@ -61,6 +61,8 @@ builder.Services
 
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<GameManager>();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddHttpClient<IAiQuestionGenerator, GeminiAiService>();
 
