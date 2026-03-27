@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using AutoMapper;
 using Google.Apis.Auth;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
@@ -16,11 +17,13 @@ public class AuthController : ControllerBase
 {
     private readonly IConfiguration _configuration;
     private readonly IHttpClientFactory _httpClientFactory;
+    private readonly IMapper _mapper;
 
-    public AuthController(IConfiguration configuration, IHttpClientFactory httpClientFactory)
+    public AuthController(IConfiguration configuration, IHttpClientFactory httpClientFactory, IMapper mapper)
     {
         _configuration = configuration;
         _httpClientFactory = httpClientFactory;
+        _mapper = mapper;
     }
 
     [HttpPost("facebook")]
@@ -50,12 +53,11 @@ public class AuthController : ControllerBase
 
         var user = new User
         {
-            Id = Guid.NewGuid().ToString(),
-            Name = facebookProfile.Name,
-            Email = facebookProfile.Email,
-            ExternalId = facebookProfile.Id,
-            AvatarUrl = facebookProfile.Picture?.Data?.Url,
-            Provider = AuthProvider.Facebook
+            Username = facebookProfile.Name ?? "Facebook user",
+            AvatarUrl = facebookProfile.Picture?.Data?.Url ?? string.Empty,
+            Role = "User",
+            FacebookId = facebookProfile.Id,
+            LastLoginAt = DateTime.UtcNow
         };
 
         var token = GenerateJwtToken(user);
@@ -63,7 +65,8 @@ public class AuthController : ControllerBase
         return Ok(new
         {
             token,
-            userId = user.Id
+            userId = user.Id,
+            profile = _mapper.Map<UserProfileDto>(user)
         });
     }
 
@@ -87,12 +90,11 @@ public class AuthController : ControllerBase
 
             var user = new User
             {
-                Id = Guid.NewGuid().ToString(),
-                Name = payload.Name ?? payload.Email ?? "Google user",
-                Email = payload.Email,
-                ExternalId = payload.Subject,
-                AvatarUrl = payload.Picture,
-                Provider = AuthProvider.Google
+                Username = payload.Name ?? payload.Email ?? "Google user",
+                AvatarUrl = payload.Picture ?? string.Empty,
+                Role = "User",
+                GoogleId = payload.Subject,
+                LastLoginAt = DateTime.UtcNow
             };
 
             var token = GenerateJwtToken(user);
@@ -100,7 +102,8 @@ public class AuthController : ControllerBase
             return Ok(new
             {
                 token,
-                userId = user.Id
+                userId = user.Id,
+                profile = _mapper.Map<UserProfileDto>(user)
             });
         }
         catch (InvalidJwtException)
@@ -114,9 +117,10 @@ public class AuthController : ControllerBase
     {
         var user = new User
         {
-            Id = Guid.NewGuid().ToString(),
-            Name = request.Name,
-            Provider = AuthProvider.Guest
+            Username = string.IsNullOrWhiteSpace(request.Name) ? "Guest" : request.Name,
+            AvatarUrl = string.Empty,
+            Role = "Guest",
+            LastLoginAt = DateTime.UtcNow
         };
 
         var token = GenerateJwtToken(user);
@@ -124,7 +128,8 @@ public class AuthController : ControllerBase
         return Ok(new
         {
             token,
-            userId = user.Id
+            userId = user.Id,
+            profile = _mapper.Map<UserProfileDto>(user)
         });
     }
 
@@ -137,8 +142,9 @@ public class AuthController : ControllerBase
 
         var claims = new[]
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id),
-            new Claim(ClaimTypes.Name, user.Name)
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name, user.Username),
+            new Claim(ClaimTypes.Role, user.Role)
         };
 
         var token = new JwtSecurityToken(

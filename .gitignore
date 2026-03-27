@@ -66,3 +66,5 @@ infrastructure/**/override.tf
 infrastructure/**/override.tf.json
 infrastructure/**/*_override.tf
 infrastructure/**/*_override.tf.json
+
+.env

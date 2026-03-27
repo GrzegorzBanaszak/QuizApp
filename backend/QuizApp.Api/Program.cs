@@ -1,7 +1,11 @@
+using AutoMapper;
 using QuizApp.Api.Hubs;
+using QuizApp.Api.Data;
 using QuizApp.Api.Services;
+using QuizApp.Api.Profiles;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -20,6 +24,21 @@ var allowedOrigins = new[]
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<IMapper>(_ =>
+{
+    var configuration = new MapperConfiguration(cfg =>
+    {
+        cfg.AddProfile<UserProfile>();
+    });
+
+    return configuration.CreateMapper();
+});
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Missing ConnectionStrings:DefaultConnection configuration value.");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("Missing Jwt:Key configuration value.");
 
