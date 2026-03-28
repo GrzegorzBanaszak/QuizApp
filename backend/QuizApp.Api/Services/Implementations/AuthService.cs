@@ -4,12 +4,15 @@ using Microsoft.EntityFrameworkCore;
 using QuizApp.Api.Data;
 using QuizApp.Api.Dto;
 using QuizApp.Api.Models;
+using QuizApp.Api.Services.Abstractions;
 using System.Text.Json;
 
-namespace QuizApp.Api.Services;
+namespace QuizApp.Api.Services.Implementations;
 
 public sealed class AuthService : IAuthService
 {
+    private const string GoogleProvider = "Google";
+    private const string FacebookProvider = "Facebook";
     private readonly IConfiguration _configuration;
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly IMapper _mapper;
@@ -30,24 +33,30 @@ public sealed class AuthService : IAuthService
         _jwtTokenService = jwtTokenService;
     }
 
-    public Task<SocialProfileResponse> VerifyGoogleAsync(string token)
+    public async Task<ISocialAuthResult> VerifyGoogleAsync(string token)
     {
-        return ValidateGoogleTokenAsync(token);
+        var socialProfile = await ValidateGoogleTokenAsync(token);
+        return await VerifyExistingUserAsync(
+            socialProfile,
+            user => user.GoogleId == socialProfile.GoogleId);
     }
 
-    public Task<SocialProfileResponse> VerifyFacebookAsync(string token)
+    public async Task<ISocialAuthResult> VerifyFacebookAsync(string token)
     {
-        return ValidateFacebookTokenAsync(token);
+        var socialProfile = await ValidateFacebookTokenAsync(token);
+        return await VerifyExistingUserAsync(
+            socialProfile,
+            user => user.FacebookId == socialProfile.FacebookId);
     }
 
-    public async Task<AuthResponse> LoginWithGoogleAsync(GoogleLoginRequest request)
+    public async Task<AuthResponse> RegisterSocialAsync(RegisterSocialRequest request)
     {
-        var socialProfile = await ValidateGoogleTokenAsync(request.ProviderToken);
+        var (provider, socialProfile) = await ValidateSocialTokenAsync(request.Provider, request.ProviderToken);
         var username = ResolveUsername(request.CustomUsername, socialProfile.Name);
         var avatarUrl = ResolveAvatarUrl(request.CustomAvatarUrl, socialProfile.AvatarUrl);
+        var now = DateTime.UtcNow;
 
-        var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.GoogleId == socialProfile.GoogleId);
-        await EnsureUsernameAvailableAsync(username, user?.Id);
+        var user = await FindUserByProviderIdAsync(provider, socialProfile);
 
         if (user is null)
         {
@@ -56,56 +65,22 @@ public sealed class AuthService : IAuthService
                 Username = username,
                 AvatarUrl = avatarUrl,
                 Role = "User",
-                GoogleId = socialProfile.GoogleId,
-                LastLoginAt = DateTime.UtcNow
+                GoogleId = provider == GoogleProvider ? socialProfile.GoogleId : null,
+                FacebookId = provider == FacebookProvider ? socialProfile.FacebookId : null,
+                LastLoginAt = now
             };
 
+            await EnsureUsernameAvailableAsync(username);
             _dbContext.Users.Add(user);
         }
         else
         {
-            user.Username = username;
-            user.AvatarUrl = avatarUrl;
-            user.LastLoginAt = DateTime.UtcNow;
+            user.LastLoginAt = now;
         }
 
         await _dbContext.SaveChangesAsync();
 
-        return CreateAuthResponse(user);
-    }
-
-    public async Task<AuthResponse> LoginWithFacebookAsync(FacebookLoginRequest request)
-    {
-        var socialProfile = await ValidateFacebookTokenAsync(request.ProviderToken);
-        var username = ResolveUsername(request.CustomUsername, socialProfile.Name);
-        var avatarUrl = ResolveAvatarUrl(request.CustomAvatarUrl, socialProfile.AvatarUrl);
-
-        var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.FacebookId == socialProfile.FacebookId);
-        await EnsureUsernameAvailableAsync(username, user?.Id);
-
-        if (user is null)
-        {
-            user = new User
-            {
-                Username = username,
-                AvatarUrl = avatarUrl,
-                Role = "User",
-                FacebookId = socialProfile.FacebookId,
-                LastLoginAt = DateTime.UtcNow
-            };
-
-            _dbContext.Users.Add(user);
-        }
-        else
-        {
-            user.Username = username;
-            user.AvatarUrl = avatarUrl;
-            user.LastLoginAt = DateTime.UtcNow;
-        }
-
-        await _dbContext.SaveChangesAsync();
-
-        return CreateAuthResponse(user);
+        return CreateAuthResponse(user, isNewUser: false);
     }
 
     public async Task<AuthResponse> LoginAsGuestAsync(GuestLoginRequest request)
@@ -124,7 +99,7 @@ public sealed class AuthService : IAuthService
         _dbContext.Users.Add(user);
         await _dbContext.SaveChangesAsync();
 
-        return CreateAuthResponse(user);
+        return CreateAuthResponse(user, isNewUser: false);
     }
 
     private async Task<SocialProfileResponse> ValidateGoogleTokenAsync(string token)
@@ -141,6 +116,7 @@ public sealed class AuthService : IAuthService
 
         return new SocialProfileResponse
         {
+            IsNewUser = true,
             GoogleId = payload.Subject,
             Name = payload.Name ?? payload.Email ?? "Google user",
             FirstName = payload.GivenName,
@@ -171,11 +147,50 @@ public sealed class AuthService : IAuthService
 
         return new SocialProfileResponse
         {
+            IsNewUser = true,
             FacebookId = facebookProfile.Id,
             Name = string.IsNullOrWhiteSpace(facebookProfile.Name) ? "Facebook user" : facebookProfile.Name,
             FirstName = facebookProfile.FirstName,
             LastName = facebookProfile.LastName,
             AvatarUrl = facebookProfile.Picture?.Data?.Url ?? string.Empty
+        };
+    }
+
+    private async Task<ISocialAuthResult> VerifyExistingUserAsync(
+        SocialProfileResponse socialProfile,
+        System.Linq.Expressions.Expression<Func<User, bool>> predicate)
+    {
+        var user = await _dbContext.Users.SingleOrDefaultAsync(predicate);
+        if (user is null)
+        {
+            return socialProfile;
+        }
+
+        user.LastLoginAt = DateTime.UtcNow;
+        await _dbContext.SaveChangesAsync();
+
+        return CreateAuthResponse(user, isNewUser: false);
+    }
+
+    private async Task<(string Provider, SocialProfileResponse Profile)> ValidateSocialTokenAsync(string provider, string providerToken)
+    {
+        var normalizedProvider = NormalizeProvider(provider);
+
+        return normalizedProvider switch
+        {
+            GoogleProvider => (normalizedProvider, await ValidateGoogleTokenAsync(providerToken)),
+            FacebookProvider => (normalizedProvider, await ValidateFacebookTokenAsync(providerToken)),
+            _ => throw new ArgumentOutOfRangeException(nameof(provider), "Unsupported provider.")
+        };
+    }
+
+    private async Task<User?> FindUserByProviderIdAsync(string provider, SocialProfileResponse socialProfile)
+    {
+        return provider switch
+        {
+            GoogleProvider => await _dbContext.Users.SingleOrDefaultAsync(u => u.GoogleId == socialProfile.GoogleId),
+            FacebookProvider => await _dbContext.Users.SingleOrDefaultAsync(u => u.FacebookId == socialProfile.FacebookId),
+            _ => throw new ArgumentOutOfRangeException(nameof(provider), "Unsupported provider.")
         };
     }
 
@@ -188,14 +203,30 @@ public sealed class AuthService : IAuthService
         }
     }
 
-    private AuthResponse CreateAuthResponse(User user)
+    private AuthResponse CreateAuthResponse(User user, bool isNewUser)
     {
         return new AuthResponse
         {
+            IsNewUser = isNewUser,
             Token = _jwtTokenService.GenerateToken(user),
             UserId = user.Id,
             Profile = _mapper.Map<UserProfileDto>(user)
         };
+    }
+
+    private static string NormalizeProvider(string provider)
+    {
+        if (string.Equals(provider, GoogleProvider, StringComparison.OrdinalIgnoreCase))
+        {
+            return GoogleProvider;
+        }
+
+        if (string.Equals(provider, FacebookProvider, StringComparison.OrdinalIgnoreCase))
+        {
+            return FacebookProvider;
+        }
+
+        throw new ArgumentOutOfRangeException(nameof(provider), "Unsupported provider.");
     }
 
     private static string ResolveUsername(string? customUsername, string fallbackName)

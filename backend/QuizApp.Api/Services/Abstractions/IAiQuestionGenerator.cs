@@ -1,6 +1,6 @@
 using QuizApp.Api.Models;
 
-namespace QuizApp.Api.Services;
+namespace QuizApp.Api.Services.Abstractions;
 
 public interface IAiQuestionGenerator
 {

@@ -1,6 +1,7 @@
 using QuizApp.Api.Models;
+using QuizApp.Api.Services.Abstractions;
 
-namespace QuizApp.Api.Services;
+namespace QuizApp.Api.Services.Implementations;
 
 public class MockAiService : IAiQuestionGenerator
 {

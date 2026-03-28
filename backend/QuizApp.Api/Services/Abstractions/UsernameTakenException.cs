@@ -1,4 +1,4 @@
-namespace QuizApp.Api.Services;
+namespace QuizApp.Api.Services.Abstractions;
 
 public sealed class UsernameTakenException : Exception
 {

@@ -1,7 +1,7 @@
 using System.Collections.Concurrent;
 using QuizApp.Api.Models;
 
-namespace QuizApp.Api.Services;
+namespace QuizApp.Api.Services.Implementations;
 
 public class GameManager
 {

@@ -3,8 +3,9 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using QuizApp.Api.Models;
+using QuizApp.Api.Services.Abstractions;
 
-namespace QuizApp.Api.Services;
+namespace QuizApp.Api.Services.Implementations;
 
 public sealed class JwtTokenService : IJwtTokenService
 {

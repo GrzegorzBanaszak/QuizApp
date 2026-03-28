@@ -1,7 +1,8 @@
 using AutoMapper;
 using QuizApp.Api.Hubs;
 using QuizApp.Api.Data;
-using QuizApp.Api.Services;
+using QuizApp.Api.Services.Abstractions;
+using QuizApp.Api.Services.Implementations;
 using QuizApp.Api.Profiles;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -112,7 +113,7 @@ app.MapControllers();
 app.MapHub<GameHub>("/gameHub");
 app.MapGet("/health", () => true);
 
-app.MapGet("/api/test-ai/{topic}", async (string topic, QuizApp.Api.Services.IAiQuestionGenerator aiService) =>
+app.MapGet("/api/test-ai/{topic}", async (string topic, IAiQuestionGenerator aiService) =>
 {
     try
     {

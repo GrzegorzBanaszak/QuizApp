@@ -1,8 +1,9 @@
 using System.Text;
 using System.Text.Json;
 using QuizApp.Api.Models;
+using QuizApp.Api.Services.Abstractions;
 
-namespace QuizApp.Api.Services;
+namespace QuizApp.Api.Services.Implementations;
 
 public class GeminiAiService : IAiQuestionGenerator
 {

@@ -1,7 +1,7 @@
 using Google.Apis.Auth;
 using Microsoft.AspNetCore.Mvc;
 using QuizApp.Api.Dto;
-using QuizApp.Api.Services;
+using QuizApp.Api.Services.Abstractions;
 
 namespace QuizApp.Api.Controllers;
 
@@ -26,8 +26,7 @@ public class AuthController : ControllerBase
 
         try
         {
-            var profile = await _authService.VerifyGoogleAsync(request.Token);
-            return Ok(profile);
+            return Ok(await _authService.VerifyGoogleAsync(request.Token));
         }
         catch (InvalidJwtException)
         {
@@ -45,8 +44,7 @@ public class AuthController : ControllerBase
 
         try
         {
-            var profile = await _authService.VerifyFacebookAsync(request.Token);
-            return Ok(profile);
+            return Ok(await _authService.VerifyFacebookAsync(request.Token));
         }
         catch (UnauthorizedAccessException)
         {
@@ -54,43 +52,34 @@ public class AuthController : ControllerBase
         }
     }
 
-    [HttpPost("google")]
-    public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequest request)
+    [HttpPost("register-social")]
+    public async Task<IActionResult> RegisterSocial([FromBody] RegisterSocialRequest request)
     {
         if (string.IsNullOrWhiteSpace(request.ProviderToken))
         {
             return BadRequest(new { message = "providerToken is required." });
         }
 
+        if (string.IsNullOrWhiteSpace(request.Provider))
+        {
+            return BadRequest(new { message = "provider is required." });
+        }
+
         try
         {
-            return Ok(await _authService.LoginWithGoogleAsync(request));
+            return Ok(await _authService.RegisterSocialAsync(request));
         }
         catch (InvalidJwtException)
         {
             return Unauthorized(new { message = "Invalid Google token." });
         }
-        catch (UsernameTakenException ex)
-        {
-            return Conflict(new { message = ex.Message });
-        }
-    }
-
-    [HttpPost("facebook")]
-    public async Task<IActionResult> FacebookLogin([FromBody] FacebookLoginRequest request)
-    {
-        if (string.IsNullOrWhiteSpace(request.ProviderToken))
-        {
-            return BadRequest(new { message = "providerToken is required." });
-        }
-
-        try
-        {
-            return Ok(await _authService.LoginWithFacebookAsync(request));
-        }
         catch (UnauthorizedAccessException)
         {
             return Unauthorized(new { message = "Invalid Facebook token." });
+        }
+        catch (ArgumentOutOfRangeException ex)
+        {
+            return BadRequest(new { message = ex.Message });
         }
         catch (UsernameTakenException ex)
         {
