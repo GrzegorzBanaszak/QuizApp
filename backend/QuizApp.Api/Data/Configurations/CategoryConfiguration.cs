@@ -24,5 +24,10 @@ public sealed class CategoryConfiguration : IEntityTypeConfiguration<Category>
             .WithOne(l => l.Category)
             .HasForeignKey(l => l.CategoryId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        entity.HasMany(c => c.Questions)
+            .WithOne(q => q.Category)
+            .HasForeignKey(q => q.CategoryId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

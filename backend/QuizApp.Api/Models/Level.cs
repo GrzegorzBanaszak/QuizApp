@@ -6,6 +6,6 @@ public class Level
     public int CategoryId { get; set; }
     public Category Category { get; set; } = null!;
     public string Name { get; set; } = string.Empty;
-    public string Difficulty { get; set; } = string.Empty;
     public int Order { get; set; }
+    public ICollection<LevelQuestionDistribution> QuestionDistributions { get; set; } = new List<LevelQuestionDistribution>();
 }

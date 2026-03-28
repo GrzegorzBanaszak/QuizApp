@@ -37,9 +37,14 @@ public sealed class SingleplayerController : ControllerBase
     }
 
     [HttpGet("levels/{levelId}/questions")]
-    public async Task<ActionResult<IEnumerable<SingleplayerQuestionDto>>> GetQuestionsForLevel(int levelId)
+    public async Task<ActionResult<SingleplayerGameDto>> GetQuestionsForLevel(int levelId)
     {
-        return Ok(await _singleplayerService.GetQuestionsForLevelAsync(levelId));
+        if (!TryGetUserId(out var userId))
+        {
+            return Unauthorized();
+        }
+
+        return Ok(await _singleplayerService.GetQuestionsForLevelAsync(levelId, userId));
     }
 
     [HttpPost("levels/{levelId}/submit")]
@@ -57,8 +62,7 @@ public sealed class SingleplayerController : ControllerBase
             return Unauthorized();
         }
 
-        var normalizedRequest = request with { LevelId = levelId };
-        var result = await _singleplayerService.SubmitGameAsync(userId, normalizedRequest);
+        var result = await _singleplayerService.SubmitGameAsync(userId, levelId, request);
 
         return Ok(result);
     }

@@ -6,4 +6,5 @@ public class Category
     public string Name { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
     public ICollection<Level> Levels { get; set; } = new List<Level>();
+    public ICollection<SingleplayerQuestion> Questions { get; set; } = new List<SingleplayerQuestion>();
 }

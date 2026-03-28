@@ -16,11 +16,12 @@ public sealed class LevelConfiguration : IEntityTypeConfiguration<Level>
             .IsRequired()
             .HasMaxLength(200);
 
-        entity.Property(l => l.Difficulty)
-            .IsRequired()
-            .HasMaxLength(50);
-
         entity.Property(l => l.Order)
             .IsRequired();
+
+        entity.HasMany(l => l.QuestionDistributions)
+            .WithOne(d => d.Level)
+            .HasForeignKey(d => d.LevelId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

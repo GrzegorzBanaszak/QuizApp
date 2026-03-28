@@ -16,6 +16,11 @@ public sealed class SingleplayerQuestionConfiguration : IEntityTypeConfiguration
             .IsRequired()
             .HasMaxLength(1000);
 
+        entity.Property(q => q.Difficulty)
+            .IsRequired()
+            .HasConversion<string>()
+            .HasMaxLength(20);
+
         entity.Property(q => q.CorrectAnswerId)
             .IsRequired()
             .HasMaxLength(100);
@@ -25,9 +30,9 @@ public sealed class SingleplayerQuestionConfiguration : IEntityTypeConfiguration
             .HasForeignKey(a => a.QuestionId)
             .OnDelete(DeleteBehavior.Cascade);
 
-        entity.HasOne(q => q.Level)
-            .WithMany()
-            .HasForeignKey(q => q.LevelId)
+        entity.HasOne(q => q.Category)
+            .WithMany(c => c.Questions)
+            .HasForeignKey(q => q.CategoryId)
             .OnDelete(DeleteBehavior.Cascade);
     }
 }
