@@ -31,7 +31,7 @@ public sealed class SingleplayerResultConfiguration : IEntityTypeConfiguration<S
         entity.HasOne(r => r.User)
             .WithMany()
             .HasForeignKey(r => r.UserId)
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.NoAction);
 
         entity.HasOne(r => r.GameSession)
             .WithMany()

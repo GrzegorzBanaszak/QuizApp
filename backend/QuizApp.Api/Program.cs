@@ -56,6 +56,7 @@ builder.Services.AddSingleton<IMapper>(_ =>
     var configuration = new MapperConfiguration(cfg =>
     {
         cfg.AddProfile<UserProfile>();
+        cfg.AddProfile<SingleplayerProfile>();
     });
 
     return configuration.CreateMapper();

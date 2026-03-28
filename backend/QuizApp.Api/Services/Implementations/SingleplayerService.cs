@@ -3,25 +3,29 @@ using QuizApp.Api.Data;
 using QuizApp.Api.Dto.Singleplayer;
 using QuizApp.Api.Models;
 using QuizApp.Api.Services.Abstractions;
+using AutoMapper;
 
 namespace QuizApp.Api.Services.Implementations;
 
 public sealed class SingleplayerService : ISingleplayerService
 {
     private readonly AppDbContext _context;
+    private readonly IMapper _mapper;
 
-    public SingleplayerService(AppDbContext context)
+    public SingleplayerService(AppDbContext context, IMapper mapper)
     {
         _context = context;
+        _mapper = mapper;
     }
 
     public async Task<IEnumerable<CategoryDto>> GetCategoriesAsync()
     {
-        return await _context.Categories
+        var categories = await _context.Categories
             .AsNoTracking()
             .OrderBy(category => category.Name)
-            .Select(category => new CategoryDto(category.Id, category.Name, category.Description))
             .ToListAsync();
+
+        return _mapper.Map<List<CategoryDto>>(categories);
     }
 
     public async Task<IEnumerable<LevelDto>> GetLevelsByCategoryAsync(int categoryId, Guid userId)
@@ -48,20 +52,17 @@ public sealed class SingleplayerService : ISingleplayerService
 
         var unlockedThreshold = highestUnlockedOrder == 0 ? 1 : highestUnlockedOrder + 1;
 
-        return levels.Select(level => new LevelDto
+        var mappedLevels = _mapper.Map<List<LevelDto>>(levels);
+
+        for (var index = 0; index < mappedLevels.Count; index++)
         {
-            Id = level.Id,
-            CategoryId = level.CategoryId,
-            Name = level.Name,
-            QuestionDistributions = level.QuestionDistributions
-                .OrderBy(distribution => distribution.Difficulty)
-                .Select(distribution => new LevelQuestionDistributionDto(
-                    distribution.Difficulty.ToString(),
-                    distribution.Count))
-                .ToList(),
-            TotalQuestionCount = level.QuestionDistributions.Sum(distribution => distribution.Count),
-            IsUnlocked = level.Order <= unlockedThreshold
-        });
+            mappedLevels[index] = mappedLevels[index] with
+            {
+                IsUnlocked = levels[index].Order <= unlockedThreshold
+            };
+        }
+
+        return mappedLevels;
     }
 
     public async Task<SingleplayerGameDto> GetQuestionsForLevelAsync(int levelId, Guid userId)
@@ -97,7 +98,7 @@ public sealed class SingleplayerService : ISingleplayerService
         return new SingleplayerGameDto(
             session.Id,
             level.Id,
-            questions.Select(MapQuestionToDto).ToList());
+            _mapper.Map<List<SingleplayerQuestionDto>>(questions));
     }
 
     public async Task<SingleplayerResultSummaryDto> SubmitGameAsync(Guid userId, int levelId, SingleplayerSubmitRequestDto request)
@@ -223,17 +224,6 @@ public sealed class SingleplayerService : ISingleplayerService
             .OrderBy(_ => Random.Shared.Next())
             .Take(count)
             .ToList();
-    }
-
-    private static SingleplayerQuestionDto MapQuestionToDto(SingleplayerQuestion question)
-    {
-        return new SingleplayerQuestionDto(
-            question.Id,
-            question.Text,
-            question.Answers
-                .OrderBy(answer => answer.Id)
-                .Select(answer => new SingleplayerAnswerDto(answer.Id, answer.Text))
-                .ToList());
     }
 
     private static int CalculateScore(int correctAnswersCount, int totalQuestions)
