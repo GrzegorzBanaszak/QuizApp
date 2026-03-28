@@ -60,9 +60,9 @@ public class AuthController : ControllerBase
             return BadRequest(new { message = "providerToken is required." });
         }
 
-        if (string.IsNullOrWhiteSpace(request.Provider))
+        if (request.Provider is not QuizApp.Api.Models.AuthProvider.Google and not QuizApp.Api.Models.AuthProvider.Facebook)
         {
-            return BadRequest(new { message = "provider is required." });
+            return BadRequest(new { message = "provider must be Google or Facebook." });
         }
 
         try

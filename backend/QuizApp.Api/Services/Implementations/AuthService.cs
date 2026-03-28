@@ -11,8 +11,6 @@ namespace QuizApp.Api.Services.Implementations;
 
 public sealed class AuthService : IAuthService
 {
-    private const string GoogleProvider = "Google";
-    private const string FacebookProvider = "Facebook";
     private readonly IConfiguration _configuration;
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly IMapper _mapper;
@@ -65,8 +63,8 @@ public sealed class AuthService : IAuthService
                 Username = username,
                 AvatarUrl = avatarUrl,
                 Role = "User",
-                GoogleId = provider == GoogleProvider ? socialProfile.GoogleId : null,
-                FacebookId = provider == FacebookProvider ? socialProfile.FacebookId : null,
+                GoogleId = provider == AuthProvider.Google ? socialProfile.GoogleId : null,
+                FacebookId = provider == AuthProvider.Facebook ? socialProfile.FacebookId : null,
                 LastLoginAt = now
             };
 
@@ -172,24 +170,22 @@ public sealed class AuthService : IAuthService
         return CreateAuthResponse(user, isNewUser: false);
     }
 
-    private async Task<(string Provider, SocialProfileResponse Profile)> ValidateSocialTokenAsync(string provider, string providerToken)
+    private async Task<(AuthProvider Provider, SocialProfileResponse Profile)> ValidateSocialTokenAsync(AuthProvider provider, string providerToken)
     {
-        var normalizedProvider = NormalizeProvider(provider);
-
-        return normalizedProvider switch
+        return provider switch
         {
-            GoogleProvider => (normalizedProvider, await ValidateGoogleTokenAsync(providerToken)),
-            FacebookProvider => (normalizedProvider, await ValidateFacebookTokenAsync(providerToken)),
+            AuthProvider.Google => (provider, await ValidateGoogleTokenAsync(providerToken)),
+            AuthProvider.Facebook => (provider, await ValidateFacebookTokenAsync(providerToken)),
             _ => throw new ArgumentOutOfRangeException(nameof(provider), "Unsupported provider.")
         };
     }
 
-    private async Task<User?> FindUserByProviderIdAsync(string provider, SocialProfileResponse socialProfile)
+    private async Task<User?> FindUserByProviderIdAsync(AuthProvider provider, SocialProfileResponse socialProfile)
     {
         return provider switch
         {
-            GoogleProvider => await _dbContext.Users.SingleOrDefaultAsync(u => u.GoogleId == socialProfile.GoogleId),
-            FacebookProvider => await _dbContext.Users.SingleOrDefaultAsync(u => u.FacebookId == socialProfile.FacebookId),
+            AuthProvider.Google => await _dbContext.Users.SingleOrDefaultAsync(u => u.GoogleId == socialProfile.GoogleId),
+            AuthProvider.Facebook => await _dbContext.Users.SingleOrDefaultAsync(u => u.FacebookId == socialProfile.FacebookId),
             _ => throw new ArgumentOutOfRangeException(nameof(provider), "Unsupported provider.")
         };
     }
@@ -212,21 +208,6 @@ public sealed class AuthService : IAuthService
             UserId = user.Id,
             Profile = _mapper.Map<UserProfileDto>(user)
         };
-    }
-
-    private static string NormalizeProvider(string provider)
-    {
-        if (string.Equals(provider, GoogleProvider, StringComparison.OrdinalIgnoreCase))
-        {
-            return GoogleProvider;
-        }
-
-        if (string.Equals(provider, FacebookProvider, StringComparison.OrdinalIgnoreCase))
-        {
-            return FacebookProvider;
-        }
-
-        throw new ArgumentOutOfRangeException(nameof(provider), "Unsupported provider.");
     }
 
     private static string ResolveUsername(string? customUsername, string fallbackName)
