@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QuizApp.Api.Data;
 
@@ -11,9 +12,11 @@ using QuizApp.Api.Data;
 namespace QuizApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260328165215_SingleplayerQuestions")]
+    partial class SingleplayerQuestions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,6 +59,11 @@ namespace QuizApp.Api.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Difficulty")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -69,33 +77,6 @@ namespace QuizApp.Api.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Levels", (string)null);
-                });
-
-            modelBuilder.Entity("QuizApp.Api.Models.LevelQuestionDistribution", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Difficulty")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<int>("LevelId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("LevelId", "Difficulty")
-                        .IsUnique();
-
-                    b.ToTable("LevelQuestionDistributions", (string)null);
                 });
 
             modelBuilder.Entity("QuizApp.Api.Models.SingleplayerAnswer", b =>
@@ -119,59 +100,6 @@ namespace QuizApp.Api.Migrations
                     b.ToTable("SingleplayerAnswers", (string)null);
                 });
 
-            modelBuilder.Entity("QuizApp.Api.Models.SingleplayerGameSession", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("LevelId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("StartedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("LevelId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("SingleplayerGameSessions", (string)null);
-                });
-
-            modelBuilder.Entity("QuizApp.Api.Models.SingleplayerGameSessionQuestion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<Guid>("GameSessionId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("QuestionId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("QuestionOrder")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("QuestionId");
-
-                    b.HasIndex("GameSessionId", "QuestionOrder")
-                        .IsUnique();
-
-                    b.ToTable("SingleplayerGameSessionQuestions", (string)null);
-                });
-
             modelBuilder.Entity("QuizApp.Api.Models.SingleplayerQuestion", b =>
                 {
                     b.Property<int>("Id")
@@ -180,18 +108,13 @@ namespace QuizApp.Api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
                     b.Property<string>("CorrectAnswerId")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Difficulty")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.Property<int>("LevelId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Text")
                         .IsRequired()
@@ -200,7 +123,7 @@ namespace QuizApp.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("LevelId");
 
                     b.ToTable("SingleplayerQuestions", (string)null);
                 });
@@ -217,9 +140,6 @@ namespace QuizApp.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasDefaultValue(0);
-
-                    b.Property<Guid>("GameSessionId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("LevelId")
                         .HasColumnType("int");
@@ -243,8 +163,6 @@ namespace QuizApp.Api.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("GameSessionId");
 
                     b.HasIndex("LevelId");
 
@@ -328,17 +246,6 @@ namespace QuizApp.Api.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("QuizApp.Api.Models.LevelQuestionDistribution", b =>
-                {
-                    b.HasOne("QuizApp.Api.Models.Level", "Level")
-                        .WithMany("QuestionDistributions")
-                        .HasForeignKey("LevelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Level");
-                });
-
             modelBuilder.Entity("QuizApp.Api.Models.SingleplayerAnswer", b =>
                 {
                     b.HasOne("QuizApp.Api.Models.SingleplayerQuestion", "Question")
@@ -350,63 +257,19 @@ namespace QuizApp.Api.Migrations
                     b.Navigation("Question");
                 });
 
-            modelBuilder.Entity("QuizApp.Api.Models.SingleplayerGameSession", b =>
+            modelBuilder.Entity("QuizApp.Api.Models.SingleplayerQuestion", b =>
                 {
                     b.HasOne("QuizApp.Api.Models.Level", "Level")
                         .WithMany()
                         .HasForeignKey("LevelId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("QuizApp.Api.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Level");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("QuizApp.Api.Models.SingleplayerGameSessionQuestion", b =>
-                {
-                    b.HasOne("QuizApp.Api.Models.SingleplayerGameSession", "GameSession")
-                        .WithMany("Questions")
-                        .HasForeignKey("GameSessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("QuizApp.Api.Models.SingleplayerQuestion", "Question")
-                        .WithMany()
-                        .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("GameSession");
-
-                    b.Navigation("Question");
-                });
-
-            modelBuilder.Entity("QuizApp.Api.Models.SingleplayerQuestion", b =>
-                {
-                    b.HasOne("QuizApp.Api.Models.Category", "Category")
-                        .WithMany("Questions")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("QuizApp.Api.Models.SingleplayerResult", b =>
                 {
-                    b.HasOne("QuizApp.Api.Models.SingleplayerGameSession", "GameSession")
-                        .WithMany()
-                        .HasForeignKey("GameSessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("QuizApp.Api.Models.Level", "Level")
                         .WithMany()
                         .HasForeignKey("LevelId")
@@ -416,10 +279,8 @@ namespace QuizApp.Api.Migrations
                     b.HasOne("QuizApp.Api.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("GameSession");
 
                     b.Navigation("Level");
 
@@ -429,18 +290,6 @@ namespace QuizApp.Api.Migrations
             modelBuilder.Entity("QuizApp.Api.Models.Category", b =>
                 {
                     b.Navigation("Levels");
-
-                    b.Navigation("Questions");
-                });
-
-            modelBuilder.Entity("QuizApp.Api.Models.Level", b =>
-                {
-                    b.Navigation("QuestionDistributions");
-                });
-
-            modelBuilder.Entity("QuizApp.Api.Models.SingleplayerGameSession", b =>
-                {
-                    b.Navigation("Questions");
                 });
 
             modelBuilder.Entity("QuizApp.Api.Models.SingleplayerQuestion", b =>

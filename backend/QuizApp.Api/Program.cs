@@ -1,5 +1,4 @@
 using AutoMapper;
-using QuizApp.Api.Hubs;
 using QuizApp.Api.Data;
 using QuizApp.Api.Services.Abstractions;
 using QuizApp.Api.Services.Implementations;
@@ -57,6 +56,7 @@ builder.Services.AddSingleton<IMapper>(_ =>
     var configuration = new MapperConfiguration(cfg =>
     {
         cfg.AddProfile<UserProfile>();
+        cfg.AddProfile<SingleplayerProfile>();
     });
 
     return configuration.CreateMapper();
@@ -88,11 +88,11 @@ builder.Services
     });
 
 builder.Services.AddSignalR();
-builder.Services.AddSingleton<GameManager>();
+builder.Services.AddHttpClient();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ISingleplayerService, SingleplayerService>();
 
-builder.Services.AddHttpClient<IAiQuestionGenerator, GeminiAiService>();
 
 builder.Services.AddCors(options =>
 {
@@ -137,22 +137,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapHub<GameHub>("/gameHub");
 app.MapGet("/health", () => true);
 
-app.MapGet("/api/test-ai/{topic}", async (string topic, IAiQuestionGenerator aiService) =>
-{
-    try
-    {
-        var questions = await aiService.GenerateQuestionsAsync(topic, 3);
-        return Results.Ok(questions);
-    }
-    catch (Exception ex)
-    {
-        return Results.Problem(detail: ex.Message, title: "Błąd podczas łączenia z AI");
-    }
-})
-.WithName("TestAiGeneration")
-.WithOpenApi();
 
 app.Run();
