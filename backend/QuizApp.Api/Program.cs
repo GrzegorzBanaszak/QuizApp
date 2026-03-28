@@ -90,6 +90,7 @@ builder.Services.AddSignalR();
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ISingleplayerService, SingleplayerService>();
 
 
 builder.Services.AddCors(options =>
