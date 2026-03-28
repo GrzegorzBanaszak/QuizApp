@@ -1,5 +1,6 @@
 using AutoMapper;
 using QuizApp.Api.Data;
+using QuizApp.Api.Data.Seed;
 using QuizApp.Api.Services.Abstractions;
 using QuizApp.Api.Services.Implementations;
 using QuizApp.Api.Profiles;
@@ -118,6 +119,12 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    await AppDbSeeder.SeedAsync(dbContext);
+}
 
 if (app.Environment.IsDevelopment())
 {
