@@ -10,6 +10,12 @@ public sealed class FacebookProfileResponse
     [JsonPropertyName("name")]
     public string Name { get; set; } = string.Empty;
 
+    [JsonPropertyName("first_name")]
+    public string? FirstName { get; set; }
+
+    [JsonPropertyName("last_name")]
+    public string? LastName { get; set; }
+
     [JsonPropertyName("email")]
     public string? Email { get; set; }
 

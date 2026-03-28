@@ -2,10 +2,14 @@ namespace QuizApp.Api.Models;
 
 public class User
 {
-    public string Id { get; set; } = string.Empty;
-    public string Name { get; set; } = string.Empty;
-    public string? AvatarUrl { get; set; }
-    public string? Email { get; set; }
-    public string? ExternalId { get; set; }
-    public AuthProvider Provider { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public string Username { get; set; } = string.Empty;
+    public string AvatarUrl { get; set; } = string.Empty;
+    public string Role { get; set; } = "User";
+    public string? GoogleId { get; set; }
+    public string? FacebookId { get; set; }
+    public int TotalExperience { get; set; } = 0;
+    public int Coins { get; set; } = 0;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime LastLoginAt { get; set; } = DateTime.UtcNow;
 }

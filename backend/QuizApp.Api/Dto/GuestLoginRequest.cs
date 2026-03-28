@@ -1,3 +1,5 @@
 namespace QuizApp.Api.Dto;
 
-public sealed record GuestLoginRequest(string Name);
+public sealed record GuestLoginRequest(
+    string? CustomUsername,
+    string? CustomAvatarUrl);

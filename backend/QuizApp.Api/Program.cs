@@ -1,7 +1,13 @@
+using AutoMapper;
 using QuizApp.Api.Hubs;
-using QuizApp.Api.Services;
+using QuizApp.Api.Data;
+using QuizApp.Api.Services.Abstractions;
+using QuizApp.Api.Services.Implementations;
+using QuizApp.Api.Profiles;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -19,7 +25,48 @@ var allowedOrigins = new[]
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\""
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+builder.Services.AddSingleton<IMapper>(_ =>
+{
+    var configuration = new MapperConfiguration(cfg =>
+    {
+        cfg.AddProfile<UserProfile>();
+    });
+
+    return configuration.CreateMapper();
+});
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Missing ConnectionStrings:DefaultConnection configuration value.");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("Missing Jwt:Key configuration value.");
 
@@ -42,6 +89,8 @@ builder.Services
 
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<GameManager>();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddHttpClient<IAiQuestionGenerator, GeminiAiService>();
 
@@ -91,7 +140,7 @@ app.MapControllers();
 app.MapHub<GameHub>("/gameHub");
 app.MapGet("/health", () => true);
 
-app.MapGet("/api/test-ai/{topic}", async (string topic, QuizApp.Api.Services.IAiQuestionGenerator aiService) =>
+app.MapGet("/api/test-ai/{topic}", async (string topic, IAiQuestionGenerator aiService) =>
 {
     try
     {
