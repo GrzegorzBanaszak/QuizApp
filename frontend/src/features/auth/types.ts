@@ -31,10 +31,23 @@ export interface RegisterSocialRequest {
   customAvatarUrl?: string | null;
 }
 
+export interface UpdateUserProfileRequest {
+  username: string;
+  avatarUrl: string;
+}
+
 export interface GoogleTokenRequest {
   token: string;
 }
 
 export interface AuthSession {
   profile: UserProfileDto;
+}
+
+export type SocialProvider = "Google" | "Facebook";
+
+export interface PendingSocialLogin {
+  provider: SocialProvider;
+  profile: SocialProfileResponse;
+  providerToken: string;
 }

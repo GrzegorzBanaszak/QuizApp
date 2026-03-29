@@ -2,8 +2,10 @@ import type {
   AuthResponse,
   GoogleTokenRequest,
   GoogleVerifyResponse,
+  PendingSocialLogin,
   RegisterSocialRequest,
   SocialProfileResponse,
+  UpdateUserProfileRequest,
 } from "../types";
 
 const AUTH_BASE = "/api/auth";
@@ -31,6 +33,21 @@ export async function verifyGoogleToken(
       "Content-Type": "application/json",
     },
     body: JSON.stringify(payload),
+  });
+
+  return parseJsonResponse<GoogleVerifyResponse>(response);
+}
+
+export async function verifyFacebookToken(
+  token: string,
+): Promise<GoogleVerifyResponse> {
+  const response = await fetch(`${AUTH_BASE}/verify-facebook`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ token }),
   });
 
   return parseJsonResponse<GoogleVerifyResponse>(response);
@@ -88,6 +105,21 @@ export async function fetchCurrentUser(): Promise<AuthResponse["profile"]> {
   return parseJsonResponse<AuthResponse["profile"]>(response);
 }
 
+export async function updateCurrentUserProfile(
+  request: UpdateUserProfileRequest,
+): Promise<AuthResponse["profile"]> {
+  const response = await fetch("/api/user/me", {
+    method: "PUT",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(request),
+  });
+
+  return parseJsonResponse<AuthResponse["profile"]>(response);
+}
+
 export const isAuthResponse = (
   response: GoogleVerifyResponse,
 ): response is AuthResponse => "profile" in response && "userId" in response;
@@ -95,3 +127,5 @@ export const isAuthResponse = (
 export const isSocialProfileResponse = (
   response: GoogleVerifyResponse,
 ): response is SocialProfileResponse => !("profile" in response);
+
+export type { PendingSocialLogin };
