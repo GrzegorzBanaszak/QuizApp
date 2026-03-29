@@ -25,6 +25,12 @@ const SingleplayerPage = lazy(() =>
   })),
 );
 
+const CreateCharacterPage = lazy(() =>
+  import("../features/auth/pages/CreateCharacterPage").then((module) => ({
+    default: module.CreateCharacterPage,
+  })),
+);
+
 const AppLayout = () => (
   <Suspense
     fallback={
@@ -53,6 +59,10 @@ export const appRouter = createBrowserRouter([
       {
         path: "singleplayer",
         element: <SingleplayerPage />,
+      },
+      {
+        path: "auth/create-character",
+        element: <CreateCharacterPage />,
       },
       {
         path: "multiplayer",
