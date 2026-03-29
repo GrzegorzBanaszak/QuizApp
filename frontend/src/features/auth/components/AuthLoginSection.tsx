@@ -31,6 +31,11 @@ export const AuthLoginSection = () => {
   const error = useAuthStore((state) => state.error);
   const setError = useAuthStore((state) => state.setError);
 
+  const clearDraftAuth = () => {
+    setError(null);
+    setPendingSocialLogin(null);
+  };
+
   const handleGoogleLogin = async () => {
     const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
@@ -156,7 +161,7 @@ export const AuthLoginSection = () => {
                     })
                     .finally(() => {
                       setSession(null);
-                      setPendingSocialLogin(null);
+                      clearDraftAuth();
                     });
                 }}
                 className="rounded-full bg-[#ff68a7]/15 px-5 py-3 text-sm font-bold uppercase tracking-[0.2em] text-[#ff68a7] transition-colors hover:bg-[#ff68a7]/25"
@@ -218,7 +223,8 @@ export const AuthLoginSection = () => {
           </button>
 
           <Link
-            to="/auth/create-character"
+            to="/auth/create-character?mode=guest"
+            onClick={clearDraftAuth}
             className="flex items-center justify-center gap-3 rounded-full border-2 border-[#46465e]/30 bg-[#29294a] px-6 py-4 text-sm font-bold text-[#e5e3ff] transition-all hover:scale-[1.02] hover:border-[#e08dff]/50"
           >
             <span
@@ -242,4 +248,3 @@ export const AuthLoginSection = () => {
     </section>
   );
 };
-
