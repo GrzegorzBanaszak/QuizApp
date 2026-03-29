@@ -6,23 +6,23 @@ import { useAuthStore } from "../store/authStore";
 
 export const CreateCharacterPage = () => {
   const navigate = useNavigate();
-  const pendingGoogleLogin = useAuthStore((state) => state.pendingGoogleLogin);
+  const pendingSocialLogin = useAuthStore((state) => state.pendingSocialLogin);
   const setSession = useAuthStore((state) => state.setSession);
-  const setPendingGoogleLogin = useAuthStore(
-    (state) => state.setPendingGoogleLogin,
+  const setPendingSocialLogin = useAuthStore(
+    (state) => state.setPendingSocialLogin,
   );
   const setError = useAuthStore((state) => state.setError);
   const error = useAuthStore((state) => state.error);
 
-  const [name, setName] = useState(pendingGoogleLogin?.profile.name ?? "");
+  const [name, setName] = useState(pendingSocialLogin?.profile.name ?? "");
   const [selectedAvatarId, setSelectedAvatarId] = useState(authAvatars[0]?.id ?? "");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    if (pendingGoogleLogin?.profile.name) {
-      setName((currentName) => currentName || pendingGoogleLogin.profile.name);
+    if (pendingSocialLogin?.profile.name) {
+      setName((currentName) => currentName || pendingSocialLogin.profile.name);
     }
-  }, [pendingGoogleLogin]);
+  }, [pendingSocialLogin]);
 
   const selectedAvatar = useMemo(
     () =>
@@ -34,8 +34,8 @@ export const CreateCharacterPage = () => {
   const isReady = name.trim().length > 0;
 
   const handleCreateCharacter = async () => {
-    if (!pendingGoogleLogin) {
-      setError("Najpierw zaloguj się przez Google, aby utworzyć postać.");
+    if (!pendingSocialLogin) {
+      setError("Najpierw zaloguj się przez Google lub Facebook, aby utworzyć postać.");
       return;
     }
 
@@ -44,16 +44,17 @@ export const CreateCharacterPage = () => {
 
     try {
       const response = await registerSocial({
-        provider: "Google",
-        providerToken: pendingGoogleLogin.providerToken,
+        provider: pendingSocialLogin.provider,
+        providerToken: pendingSocialLogin.providerToken,
         customUsername: name.trim(),
-        customAvatarUrl: selectedAvatar?.image ?? pendingGoogleLogin.profile.avatarUrl,
+        customAvatarUrl:
+          selectedAvatar?.image ?? pendingSocialLogin.profile.avatarUrl,
       });
 
       setSession({
         profile: response.profile,
       });
-      setPendingGoogleLogin(null);
+      setPendingSocialLogin(null);
       navigate("/", { replace: true });
     } catch (submitError) {
       setError(
@@ -88,28 +89,28 @@ export const CreateCharacterPage = () => {
         <main className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <section className="glass-panel lg:col-span-8 rounded-[2rem] p-6 sm:p-8">
             <div className="flex flex-col gap-6">
-              {pendingGoogleLogin ? (
+              {pendingSocialLogin ? (
                 <div className="flex flex-col items-center gap-5 rounded-[2rem] bg-[#171730]/60 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
                   <div className="flex items-center gap-4">
                     <div className="relative">
                       <div className="h-20 w-20 overflow-hidden rounded-full bg-[#232341] ring-4 ring-[#8ff5ff] shadow-[0_0_24px_rgba(143,245,255,0.28)]">
                         <img
-                          src={pendingGoogleLogin.profile.avatarUrl}
-                          alt={pendingGoogleLogin.profile.name}
+                          src={pendingSocialLogin.profile.avatarUrl}
+                          alt={pendingSocialLogin.profile.name}
                           className="h-full w-full object-cover"
                         />
                       </div>
                       <div className="absolute -bottom-1 -right-1 rounded-full bg-[#8ff5ff] px-2 py-1 text-[10px] font-black tracking-tight text-[#003f43] shadow-lg">
-                        GOOGLE
+                        {pendingSocialLogin.provider.toUpperCase()}
                       </div>
                     </div>
 
                     <div>
                       <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#8ff5ff]">
-                        Profil z Google
+                        Profil z {pendingSocialLogin.provider}
                       </p>
                       <h2 className="mt-1 font-headline text-2xl font-black tracking-[-0.03em] text-[#f4d5ff]">
-                        {pendingGoogleLogin.profile.name}
+                        {pendingSocialLogin.profile.name}
                       </h2>
                       <p className="mt-1 text-sm text-[#aaa8c4]">
                         Wybierz nazwę postaci i docelowy awatar do gry.
@@ -122,7 +123,7 @@ export const CreateCharacterPage = () => {
                       link
                     </span>
                     <span className="text-xs font-black uppercase tracking-[0.2em]">
-                      {pendingGoogleLogin.providerToken.slice(0, 8)}...
+                      {pendingSocialLogin.providerToken.slice(0, 8)}...
                     </span>
                   </div>
                 </div>
@@ -238,7 +239,7 @@ export const CreateCharacterPage = () => {
                 <button
                   type="button"
                   onClick={handleCreateCharacter}
-                  disabled={!isReady || isSubmitting || !pendingGoogleLogin}
+                  disabled={!isReady || isSubmitting || !pendingSocialLogin}
                   className="rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-8 py-4 font-headline text-sm font-black tracking-[0.2em] text-[#4f006c] shadow-[0_0_30px_rgba(224,141,255,0.35)] transition-all hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {isSubmitting ? "TWORZENIE..." : "UTWÓRZ POSTAĆ"}

@@ -1,18 +1,20 @@
 import { Link, useNavigate } from "react-router";
-import { useAuthStore } from "../store/authStore";
 import {
   isAuthResponse,
   logout,
+  verifyFacebookToken,
   verifyGoogleToken,
 } from "../services/authApi";
+import { requestFacebookAccessToken } from "../services/facebookAuth";
 import { requestGoogleIdToken } from "../services/googleAuth";
+import { useAuthStore } from "../store/authStore";
 
 export const AuthLoginSection = () => {
   const navigate = useNavigate();
   const session = useAuthStore((state) => state.session);
   const setSession = useAuthStore((state) => state.setSession);
-  const setPendingGoogleLogin = useAuthStore(
-    (state) => state.setPendingGoogleLogin,
+  const setPendingSocialLogin = useAuthStore(
+    (state) => state.setPendingSocialLogin,
   );
   const isGoogleLoginLoading = useAuthStore(
     (state) => state.isGoogleLoginLoading,
@@ -20,13 +22,17 @@ export const AuthLoginSection = () => {
   const setGoogleLoginLoading = useAuthStore(
     (state) => state.setGoogleLoginLoading,
   );
+  const isFacebookLoginLoading = useAuthStore(
+    (state) => state.isFacebookLoginLoading,
+  );
+  const setFacebookLoginLoading = useAuthStore(
+    (state) => state.setFacebookLoginLoading,
+  );
   const error = useAuthStore((state) => state.error);
   const setError = useAuthStore((state) => state.setError);
 
   const handleGoogleLogin = async () => {
-    const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID as
-      | string
-      | undefined;
+    const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
     if (!googleClientId) {
       setError("Brak VITE_GOOGLE_CLIENT_ID w konfiguracji frontendu.");
@@ -44,12 +50,13 @@ export const AuthLoginSection = () => {
         setSession({
           profile: response.profile,
         });
-        setPendingGoogleLogin(null);
+        setPendingSocialLogin(null);
         navigate("/", { replace: true });
         return;
       }
 
-      setPendingGoogleLogin({
+      setPendingSocialLogin({
+        provider: "Google",
         profile: response,
         providerToken: idToken,
       });
@@ -62,6 +69,47 @@ export const AuthLoginSection = () => {
       );
     } finally {
       setGoogleLoginLoading(false);
+    }
+  };
+
+  const handleFacebookLogin = async () => {
+    const facebookAppId = import.meta.env.VITE_FACEBOOK_APP_ID;
+
+    if (!facebookAppId) {
+      setError("Brak VITE_FACEBOOK_APP_ID w konfiguracji frontendu.");
+      return;
+    }
+
+    setError(null);
+    setFacebookLoginLoading(true);
+
+    try {
+      const accessToken = await requestFacebookAccessToken(facebookAppId);
+      const response = await verifyFacebookToken(accessToken);
+
+      if (isAuthResponse(response)) {
+        setSession({
+          profile: response.profile,
+        });
+        setPendingSocialLogin(null);
+        navigate("/", { replace: true });
+        return;
+      }
+
+      setPendingSocialLogin({
+        provider: "Facebook",
+        profile: response,
+        providerToken: accessToken,
+      });
+      navigate("/auth/create-character", { replace: true });
+    } catch (loginError) {
+      setError(
+        loginError instanceof Error
+          ? loginError.message
+          : "Nie udało się zalogować przez Facebook.",
+      );
+    } finally {
+      setFacebookLoginLoading(false);
     }
   };
 
@@ -108,7 +156,7 @@ export const AuthLoginSection = () => {
                     })
                     .finally(() => {
                       setSession(null);
-                      setPendingGoogleLogin(null);
+                      setPendingSocialLogin(null);
                     });
                 }}
                 className="rounded-full bg-[#ff68a7]/15 px-5 py-3 text-sm font-bold uppercase tracking-[0.2em] text-[#ff68a7] transition-colors hover:bg-[#ff68a7]/25"
@@ -155,7 +203,9 @@ export const AuthLoginSection = () => {
 
           <button
             type="button"
-            className="flex items-center justify-center gap-3 rounded-full bg-[#1877F2] px-6 py-4 text-sm font-bold text-white transition-all hover:scale-[1.02]"
+            onClick={handleFacebookLogin}
+            disabled={isFacebookLoginLoading}
+            className="flex items-center justify-center gap-3 rounded-full bg-[#1877F2] px-6 py-4 text-sm font-bold text-white transition-all hover:scale-[1.02] disabled:cursor-wait disabled:opacity-60"
           >
             <svg
               className="h-6 w-6 fill-current"
@@ -192,3 +242,4 @@ export const AuthLoginSection = () => {
     </section>
   );
 };
+

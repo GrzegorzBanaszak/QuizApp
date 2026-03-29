@@ -2,6 +2,7 @@ import type {
   AuthResponse,
   GoogleTokenRequest,
   GoogleVerifyResponse,
+  PendingSocialLogin,
   RegisterSocialRequest,
   SocialProfileResponse,
 } from "../types";
@@ -31,6 +32,21 @@ export async function verifyGoogleToken(
       "Content-Type": "application/json",
     },
     body: JSON.stringify(payload),
+  });
+
+  return parseJsonResponse<GoogleVerifyResponse>(response);
+}
+
+export async function verifyFacebookToken(
+  token: string,
+): Promise<GoogleVerifyResponse> {
+  const response = await fetch(`${AUTH_BASE}/verify-facebook`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ token }),
   });
 
   return parseJsonResponse<GoogleVerifyResponse>(response);
@@ -95,3 +111,5 @@ export const isAuthResponse = (
 export const isSocialProfileResponse = (
   response: GoogleVerifyResponse,
 ): response is SocialProfileResponse => !("profile" in response);
+
+export type { PendingSocialLogin };

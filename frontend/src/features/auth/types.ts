@@ -38,3 +38,11 @@ export interface GoogleTokenRequest {
 export interface AuthSession {
   profile: UserProfileDto;
 }
+
+export type SocialProvider = "Google" | "Facebook";
+
+export interface PendingSocialLogin {
+  provider: SocialProvider;
+  profile: SocialProfileResponse;
+  providerToken: string;
+}
