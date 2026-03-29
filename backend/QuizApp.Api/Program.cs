@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using QuizApp.Api.Dto;
 
 var builder = WebApplication.CreateBuilder(args);
 var allowedOrigins = new[]
@@ -76,6 +77,23 @@ builder.Services
     {
         options.RequireHttpsMetadata = true;
         options.SaveToken = true;
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                var cookieName =
+                    context.HttpContext.RequestServices.GetRequiredService<IConfiguration>()["Jwt:CookieName"]
+                    ?? "quizapp_auth";
+
+                if (string.IsNullOrWhiteSpace(context.Token) &&
+                    context.Request.Cookies.TryGetValue(cookieName, out var cookieToken))
+                {
+                    context.Token = cookieToken;
+                }
+
+                return Task.CompletedTask;
+            }
+        };
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,

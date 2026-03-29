@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router";
 import { useAuthStore } from "../store/authStore";
 import {
   isAuthResponse,
+  logout,
   verifyGoogleToken,
 } from "../services/authApi";
 import { requestGoogleIdToken } from "../services/googleAuth";
@@ -41,7 +42,6 @@ export const AuthLoginSection = () => {
 
       if (isAuthResponse(response)) {
         setSession({
-          token: response.token,
           profile: response.profile,
         });
         setPendingGoogleLogin(null);
@@ -102,9 +102,14 @@ export const AuthLoginSection = () => {
               <button
                 type="button"
                 onClick={() => {
-                  setSession(null);
-                  setPendingGoogleLogin(null);
-                  setError(null);
+                  void logout()
+                    .catch(() => {
+                      setError("Nie udało się wylogować.");
+                    })
+                    .finally(() => {
+                      setSession(null);
+                      setPendingGoogleLogin(null);
+                    });
                 }}
                 className="rounded-full bg-[#ff68a7]/15 px-5 py-3 text-sm font-bold uppercase tracking-[0.2em] text-[#ff68a7] transition-colors hover:bg-[#ff68a7]/25"
               >

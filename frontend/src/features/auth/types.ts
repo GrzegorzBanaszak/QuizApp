@@ -18,7 +18,6 @@ export interface SocialProfileResponse {
 
 export interface AuthResponse {
   isNewUser: boolean;
-  token: string;
   userId: string;
   profile: UserProfileDto;
 }
@@ -37,7 +36,5 @@ export interface GoogleTokenRequest {
 }
 
 export interface AuthSession {
-  token: string;
   profile: UserProfileDto;
 }
-

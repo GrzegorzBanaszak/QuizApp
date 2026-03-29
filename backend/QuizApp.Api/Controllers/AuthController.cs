@@ -10,10 +10,12 @@ namespace QuizApp.Api.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
+    private readonly IConfiguration _configuration;
 
-    public AuthController(IAuthService authService)
+    public AuthController(IAuthService authService, IConfiguration configuration)
     {
         _authService = authService;
+        _configuration = configuration;
     }
 
     [HttpPost("verify-google")]
@@ -26,7 +28,9 @@ public class AuthController : ControllerBase
 
         try
         {
-            return Ok(await _authService.VerifyGoogleAsync(request.Token));
+            var result = await _authService.VerifyGoogleAsync(request.Token);
+            AppendAuthCookieIfPresent(result);
+            return Ok(result);
         }
         catch (InvalidJwtException)
         {
@@ -44,7 +48,9 @@ public class AuthController : ControllerBase
 
         try
         {
-            return Ok(await _authService.VerifyFacebookAsync(request.Token));
+            var result = await _authService.VerifyFacebookAsync(request.Token);
+            AppendAuthCookieIfPresent(result);
+            return Ok(result);
         }
         catch (UnauthorizedAccessException)
         {
@@ -67,7 +73,9 @@ public class AuthController : ControllerBase
 
         try
         {
-            return Ok(await _authService.RegisterSocialAsync(request));
+            var response = await _authService.RegisterSocialAsync(request);
+            AppendAuthCookie(response);
+            return Ok(response);
         }
         catch (InvalidJwtException)
         {
@@ -92,11 +100,72 @@ public class AuthController : ControllerBase
     {
         try
         {
-            return Ok(await _authService.LoginAsGuestAsync(request));
+            var response = await _authService.LoginAsGuestAsync(request);
+            AppendAuthCookie(response);
+            return Ok(response);
         }
         catch (UsernameTakenException ex)
         {
             return Conflict(new { message = ex.Message });
         }
+    }
+
+    [HttpPost("logout")]
+    public IActionResult Logout()
+    {
+        Response.Cookies.Delete(GetCookieName(), new CookieOptions
+        {
+            Path = "/",
+            Secure = IsSecureCookieEnabled(),
+            SameSite = GetSameSiteMode(),
+            HttpOnly = true
+        });
+
+        return NoContent();
+    }
+
+    private void AppendAuthCookieIfPresent(ISocialAuthResult result)
+    {
+        if (result is AuthResponse authResponse)
+        {
+            AppendAuthCookie(authResponse);
+        }
+    }
+
+    private void AppendAuthCookie(AuthResponse response)
+    {
+        Response.Cookies.Append(
+            GetCookieName(),
+            response.Token,
+            new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = IsSecureCookieEnabled(),
+                SameSite = GetSameSiteMode(),
+                Expires = new DateTimeOffset(response.ExpiresAtUtc),
+                Path = "/"
+            });
+    }
+
+    private string GetCookieName()
+    {
+        return _configuration["Jwt:CookieName"] ?? "quizapp_auth";
+    }
+
+    private SameSiteMode GetSameSiteMode()
+    {
+        var configuredMode = _configuration["Jwt:CookieSameSite"];
+
+        return configuredMode?.ToLowerInvariant() switch
+        {
+            "none" => SameSiteMode.None,
+            "strict" => SameSiteMode.Strict,
+            _ => SameSiteMode.Lax
+        };
+    }
+
+    private bool IsSecureCookieEnabled()
+    {
+        return _configuration.GetValue<bool?>("Jwt:CookieSecure") ?? true;
     }
 }

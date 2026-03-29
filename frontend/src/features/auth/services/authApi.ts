@@ -26,6 +26,7 @@ export async function verifyGoogleToken(
 
   const response = await fetch(`${AUTH_BASE}/verify-google`, {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
@@ -40,6 +41,7 @@ export async function registerSocial(
 ): Promise<AuthResponse> {
   const response = await fetch(`${AUTH_BASE}/register-social`, {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
@@ -49,11 +51,47 @@ export async function registerSocial(
   return parseJsonResponse<AuthResponse>(response);
 }
 
+export async function loginAsGuest(
+  request: {
+    customUsername?: string | null;
+    customAvatarUrl?: string | null;
+  },
+): Promise<AuthResponse> {
+  const response = await fetch(`${AUTH_BASE}/guest`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(request),
+  });
+
+  return parseJsonResponse<AuthResponse>(response);
+}
+
+export async function logout(): Promise<void> {
+  const response = await fetch(`${AUTH_BASE}/logout`, {
+    method: "POST",
+    credentials: "include",
+  });
+
+  if (!response.ok) {
+    throw new Error("Nie udało się wylogować.");
+  }
+}
+
+export async function fetchCurrentUser(): Promise<AuthResponse["profile"]> {
+  const response = await fetch("/api/user/me", {
+    credentials: "include",
+  });
+
+  return parseJsonResponse<AuthResponse["profile"]>(response);
+}
+
 export const isAuthResponse = (
   response: GoogleVerifyResponse,
-): response is AuthResponse => "profile" in response && "token" in response;
+): response is AuthResponse => "profile" in response && "userId" in response;
 
 export const isSocialProfileResponse = (
   response: GoogleVerifyResponse,
 ): response is SocialProfileResponse => !("profile" in response);
-

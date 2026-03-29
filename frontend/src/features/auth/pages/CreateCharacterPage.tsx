@@ -51,7 +51,6 @@ export const CreateCharacterPage = () => {
       });
 
       setSession({
-        token: response.token,
         profile: response.profile,
       });
       setPendingGoogleLogin(null);

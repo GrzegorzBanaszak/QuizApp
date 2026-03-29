@@ -16,12 +16,13 @@ public sealed class JwtTokenService : IJwtTokenService
         _configuration = configuration;
     }
 
-    public string GenerateToken(User user)
+    public JwtTokenResult GenerateToken(User user)
     {
         var jwtKey = _configuration["Jwt:Key"] ?? throw new InvalidOperationException("Missing Jwt:Key configuration value.");
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-        var expires = DateTime.UtcNow.AddHours(24);
+        var tokenLifetimeHours = _configuration.GetValue<double?>("Jwt:TokenLifetimeHours") ?? 24;
+        var expires = DateTime.UtcNow.AddHours(tokenLifetimeHours);
 
         var claims = new[]
         {
@@ -36,6 +37,8 @@ public sealed class JwtTokenService : IJwtTokenService
             expires: expires,
             signingCredentials: credentials);
 
-        return new JwtSecurityTokenHandler().WriteToken(token);
+        return new JwtTokenResult(
+            new JwtSecurityTokenHandler().WriteToken(token),
+            expires);
     }
 }

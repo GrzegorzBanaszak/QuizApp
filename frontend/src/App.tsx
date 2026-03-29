@@ -1,8 +1,33 @@
 import { RouterProvider } from "react-router";
+import { useEffect } from "react";
 import { appRouter } from "./app/router";
+import { fetchCurrentUser } from "./features/auth/services/authApi";
+import { useAuthStore } from "./features/auth/store/authStore";
+
+function SessionBootstrap() {
+  const setSession = useAuthStore((state) => state.setSession);
+  const clearAuth = useAuthStore((state) => state.clearAuth);
+
+  useEffect(() => {
+    void fetchCurrentUser()
+      .then((profile) => {
+        setSession({ profile });
+      })
+      .catch(() => {
+        clearAuth();
+      });
+  }, [clearAuth, setSession]);
+
+  return null;
+}
 
 function App() {
-  return <RouterProvider router={appRouter} />;
+  return (
+    <>
+      <SessionBootstrap />
+      <RouterProvider router={appRouter} />
+    </>
+  );
 }
 
 export default App;
