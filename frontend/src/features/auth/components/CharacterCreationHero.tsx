@@ -10,7 +10,7 @@ export const CharacterCreationHero = ({
   return (
     <header className="mx-auto w-full max-w-3xl text-center">
       <p className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-[#8ff5ff]">
-        Auth / Character Setup
+        Profil / Edycja
       </p>
       <h1 className="bg-gradient-to-r from-[#e08dff] via-[#d978ff] to-[#ff68a7] bg-clip-text font-headline text-4xl font-black tracking-[-0.04em] text-transparent sm:text-5xl lg:text-6xl">
         {title}
@@ -21,4 +21,3 @@ export const CharacterCreationHero = ({
     </header>
   );
 };
-

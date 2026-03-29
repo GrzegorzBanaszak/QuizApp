@@ -7,6 +7,7 @@ import { useAuthStore } from "./features/auth/store/authStore";
 function SessionBootstrap() {
   const setSession = useAuthStore((state) => state.setSession);
   const clearAuth = useAuthStore((state) => state.clearAuth);
+  const setAuthInitialized = useAuthStore((state) => state.setAuthInitialized);
 
   useEffect(() => {
     void fetchCurrentUser()
@@ -15,8 +16,11 @@ function SessionBootstrap() {
       })
       .catch(() => {
         clearAuth();
+      })
+      .finally(() => {
+        setAuthInitialized(true);
       });
-  }, [clearAuth, setSession]);
+  }, [clearAuth, setAuthInitialized, setSession]);
 
   return null;
 }

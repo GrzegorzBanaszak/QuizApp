@@ -1,102 +1,82 @@
-import { useEffect, useMemo, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router";
+import { useEffect, useState } from "react";
+import { Navigate, useNavigate } from "react-router";
 import { CharacterActionBar } from "../components/CharacterActionBar";
 import { CharacterAvatarPicker } from "../components/CharacterAvatarPicker";
 import { CharacterCreationHero } from "../components/CharacterCreationHero";
 import { CharacterNameField } from "../components/CharacterNameField";
 import { CharacterSystemNotice } from "../components/CharacterSystemNotice";
 import { authAvatars } from "../data/authMockData";
-import { loginAsGuest, registerSocial } from "../services/authApi";
+import { updateCurrentUserProfile } from "../services/authApi";
 import { useAuthStore } from "../store/authStore";
 
-export const CreateCharacterPage = () => {
+export const EditProfilePage = () => {
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
-  const pendingSocialLogin = useAuthStore((state) => state.pendingSocialLogin);
+  const session = useAuthStore((state) => state.session);
+  const isAuthInitialized = useAuthStore((state) => state.isAuthInitialized);
   const setSession = useAuthStore((state) => state.setSession);
-  const setPendingSocialLogin = useAuthStore(
-    (state) => state.setPendingSocialLogin,
-  );
   const setError = useAuthStore((state) => state.setError);
   const error = useAuthStore((state) => state.error);
 
-  const isGuestRoute = searchParams.get("mode") === "guest";
-  const isGuestFlow = isGuestRoute || !pendingSocialLogin;
-
-  const [name, setName] = useState(pendingSocialLogin?.profile.name ?? "");
-  const [selectedAvatarId, setSelectedAvatarId] = useState<string | null>(
-    isGuestFlow ? authAvatars[0]?.id ?? null : null,
-  );
+  const [name, setName] = useState("");
+  const [selectedAvatarId, setSelectedAvatarId] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    if (isGuestRoute) {
-      setPendingSocialLogin(null);
-      setError(null);
-      setName("");
-      setSelectedAvatarId(authAvatars[0]?.id ?? null);
+    if (!session) {
       return;
     }
 
-    if (pendingSocialLogin?.profile.name) {
-      setName((currentName) => currentName || pendingSocialLogin.profile.name);
-      setSelectedAvatarId(null);
-    }
-  }, [isGuestRoute, pendingSocialLogin, setError, setPendingSocialLogin]);
+    setName(session.profile.username);
+    setSelectedAvatarId(
+      authAvatars.find((avatar) => avatar.image === session.profile.avatarUrl)?.id ??
+        null,
+    );
+  }, [session]);
 
-  const selectedAvatar = useMemo(
-    () => authAvatars.find((avatar) => avatar.id === selectedAvatarId) ?? null,
-    [selectedAvatarId],
-  );
+  if (!isAuthInitialized) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] text-[#e5e3ff]">
+        <div className="glass-panel rounded-[2rem] px-8 py-6 text-center">
+          <p className="font-headline text-lg font-bold">Ładowanie profilu...</p>
+        </div>
+      </div>
+    );
+  }
 
-  const activeAvatarUrl =
-    selectedAvatar?.image ??
-    (isGuestFlow ? authAvatars[0]?.image ?? "" : pendingSocialLogin?.profile.avatarUrl ?? "");
-  const activeAvatarBadge =
-    selectedAvatar?.badge ??
-    (isGuestFlow
-      ? "GUEST"
-      : pendingSocialLogin?.provider.toUpperCase() ?? "NEW");
-  const activeAvatarName =
-    selectedAvatar?.name ??
-    (isGuestFlow ? "Konto gościa" : pendingSocialLogin?.profile.name ?? "Bezimienny gracz");
-  const avatarSourceLabel = isGuestFlow
-    ? "Konto gościa"
-    : pendingSocialLogin
-    ? `Profil z ${pendingSocialLogin.provider}`
-    : "Profil źródłowy";
-  const submitLabel = isGuestFlow ? "UTWÓRZ KONTO GOŚCIA" : "UTWÓRZ POSTAĆ";
+  if (!session) {
+    return <Navigate to="/" replace />;
+  }
 
+  const selectedAvatar =
+    authAvatars.find((avatar) => avatar.id === selectedAvatarId) ?? null;
+
+  const activeAvatarUrl = selectedAvatar?.image ?? session.profile.avatarUrl;
+  const activeAvatarBadge = selectedAvatar?.badge ?? "CURRENT";
+  const activeAvatarName = selectedAvatar?.name ?? session.profile.username;
+  const avatarSourceLabel = selectedAvatar
+    ? `Preset ${selectedAvatar.id}`
+    : "Aktualny avatar";
+  const submitLabel = "ZAPISZ ZMIANY";
+  const loadingLabel = "ZAPISYWANIE...";
   const isReady = name.trim().length > 0;
 
-  const handleCreateCharacter = async () => {
+  const handleSaveProfile = async () => {
     setError(null);
     setIsSubmitting(true);
 
     try {
-      const response = isGuestFlow
-        ? await loginAsGuest({
-            customUsername: name.trim(),
-            customAvatarUrl: selectedAvatar?.image ?? authAvatars[0]?.image ?? "",
-          })
-        : await registerSocial({
-            provider: pendingSocialLogin!.provider,
-            providerToken: pendingSocialLogin!.providerToken,
-            customUsername: name.trim(),
-            customAvatarUrl:
-              selectedAvatar?.image ?? pendingSocialLogin!.profile.avatarUrl,
-          });
-
-      setSession({
-        profile: response.profile,
+      const response = await updateCurrentUserProfile({
+        username: name.trim(),
+        avatarUrl: selectedAvatar?.image ?? session.profile.avatarUrl,
       });
-      setPendingSocialLogin(null);
+
+      setSession({ profile: response });
       navigate("/", { replace: true });
     } catch (submitError) {
       setError(
         submitError instanceof Error
           ? submitError.message
-          : "Nie udało się utworzyć postaci.",
+          : "Nie udało się zapisać profilu.",
       );
     } finally {
       setIsSubmitting(false);
@@ -110,12 +90,8 @@ export const CreateCharacterPage = () => {
 
       <div className="relative z-10 mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-4xl flex-col justify-center gap-8">
         <CharacterCreationHero
-          title="Stwórz nową postać"
-          description={
-            isGuestFlow
-              ? "Stwórz konto gościa i wybierz avatar z dostępnych presetów."
-              : "Zdefiniuj pseudonim i zdecyduj, czy zostawiasz zdjęcie z social media jako avatar, czy wybierasz jeden z presetów."
-          }
+          title="Edytuj profil"
+          description="Zmień nazwę użytkownika albo wybierz jeden z dostępnych avatarów. Zapis dotyczy tylko aktualnie zalogowanego konta."
         />
 
         <main className="flex flex-col gap-6">
@@ -138,14 +114,14 @@ export const CreateCharacterPage = () => {
 
                   <div>
                     <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#8ff5ff]">
-                      Aktywna postać
+                      Aktualny profil
                     </p>
                     <h2 className="mt-1 font-headline text-2xl font-black tracking-[-0.03em] text-[#f4d5ff]">
                       {name.trim() || "Bezimienny gracz"}
                     </h2>
                     <p className="mt-1 text-sm text-[#aaa8c4]">
-                      To jest aktualny avatar. Zmiana presetu nadpisze zdjęcie z
-                      social media.
+                      To jest aktualny avatar. Wybór presetu nadpisze obecne
+                      zdjęcie.
                     </p>
                     <div className="mt-3 inline-flex rounded-full bg-[#8ff5ff]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#8ff5ff]">
                       {avatarSourceLabel}
@@ -158,7 +134,7 @@ export const CreateCharacterPage = () => {
                     bolt
                   </span>
                   <span className="text-xs font-black uppercase tracking-[0.2em]">
-                    {isGuestFlow ? "Tryb gościa" : `${authAvatars.length} presetów`}
+                    {authAvatars.length} presetów
                   </span>
                 </div>
               </div>
@@ -170,20 +146,21 @@ export const CreateCharacterPage = () => {
                 selectedAvatarId={selectedAvatarId}
                 onSelectAvatar={setSelectedAvatarId}
                 onResetToSourceAvatar={() => setSelectedAvatarId(null)}
-                showResetToSourceAvatar={!isGuestFlow}
+                showResetToSourceAvatar={Boolean(selectedAvatarId)}
               />
 
               <CharacterActionBar
                 isSubmitting={isSubmitting}
                 isReady={isReady}
-                canSubmit={isGuestFlow || Boolean(pendingSocialLogin)}
+                canSubmit={Boolean(session)}
                 submitLabel={submitLabel}
-                onSubmit={handleCreateCharacter}
+                loadingLabel={loadingLabel}
+                onSubmit={handleSaveProfile}
               />
             </div>
           </section>
 
-          <CharacterSystemNotice error={error} isGuestFlow={isGuestFlow} />
+          <CharacterSystemNotice error={error} />
         </main>
       </div>
     </div>

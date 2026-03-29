@@ -5,6 +5,7 @@ import type {
   PendingSocialLogin,
   RegisterSocialRequest,
   SocialProfileResponse,
+  UpdateUserProfileRequest,
 } from "../types";
 
 const AUTH_BASE = "/api/auth";
@@ -99,6 +100,21 @@ export async function logout(): Promise<void> {
 export async function fetchCurrentUser(): Promise<AuthResponse["profile"]> {
   const response = await fetch("/api/user/me", {
     credentials: "include",
+  });
+
+  return parseJsonResponse<AuthResponse["profile"]>(response);
+}
+
+export async function updateCurrentUserProfile(
+  request: UpdateUserProfileRequest,
+): Promise<AuthResponse["profile"]> {
+  const response = await fetch("/api/user/me", {
+    method: "PUT",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(request),
   });
 
   return parseJsonResponse<AuthResponse["profile"]>(response);

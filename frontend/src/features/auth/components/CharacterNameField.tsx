@@ -21,7 +21,7 @@ export const CharacterNameField = ({
           type="text"
           value={value}
           onChange={(event) => onChange(event.target.value)}
-          maxLength={20}
+          maxLength={100}
           placeholder="Wpisz swój pseudonim..."
           className="h-14 w-full rounded-[1.5rem] border-0 bg-transparent px-5 text-base font-semibold text-[#e5e3ff] outline-none placeholder:text-[#74738d]"
         />
@@ -32,4 +32,3 @@ export const CharacterNameField = ({
     </div>
   );
 };
-

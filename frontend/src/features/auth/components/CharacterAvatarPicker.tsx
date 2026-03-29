@@ -27,7 +27,7 @@ export const CharacterAvatarPicker = ({
             onClick={onResetToSourceAvatar}
             className="w-fit rounded-full border border-white/10 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#aaa8c4] transition-colors hover:bg-white/5 hover:text-[#e5e3ff]"
           >
-            Użyj zdjęcia z social media
+            Przywróć aktualny avatar
           </button>
         ) : null}
       </div>

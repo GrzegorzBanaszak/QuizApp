@@ -31,6 +31,11 @@ export interface RegisterSocialRequest {
   customAvatarUrl?: string | null;
 }
 
+export interface UpdateUserProfileRequest {
+  username: string;
+  avatarUrl: string;
+}
+
 export interface GoogleTokenRequest {
   token: string;
 }

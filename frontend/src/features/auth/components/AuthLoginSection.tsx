@@ -1,21 +1,31 @@
 import { Link, useNavigate } from "react-router";
 import {
   isAuthResponse,
+  loginAsGuest,
   logout,
+  registerSocial,
   verifyFacebookToken,
   verifyGoogleToken,
 } from "../services/authApi";
 import { requestFacebookAccessToken } from "../services/facebookAuth";
 import { requestGoogleIdToken } from "../services/googleAuth";
+import { authAvatars } from "../data/authMockData";
 import { useAuthStore } from "../store/authStore";
+import type { SocialProfileResponse } from "../types";
+import { useState } from "react";
+
+const buildSocialUsername = (profile: SocialProfileResponse) => {
+  const baseName = profile.name.trim() || "User";
+  const sourceId = profile.googleId ?? profile.facebookId ?? "";
+  const suffix = sourceId ? sourceId.slice(-6) : Math.random().toString(36).slice(2, 8);
+  const maxBaseLength = Math.max(1, 100 - suffix.length - 1);
+  return `${baseName.slice(0, maxBaseLength)}-${suffix}`;
+};
 
 export const AuthLoginSection = () => {
   const navigate = useNavigate();
   const session = useAuthStore((state) => state.session);
   const setSession = useAuthStore((state) => state.setSession);
-  const setPendingSocialLogin = useAuthStore(
-    (state) => state.setPendingSocialLogin,
-  );
   const isGoogleLoginLoading = useAuthStore(
     (state) => state.isGoogleLoginLoading,
   );
@@ -30,10 +40,28 @@ export const AuthLoginSection = () => {
   );
   const error = useAuthStore((state) => state.error);
   const setError = useAuthStore((state) => state.setError);
+  const [isGuestLoginLoading, setGuestLoginLoading] = useState(false);
 
   const clearDraftAuth = () => {
     setError(null);
-    setPendingSocialLogin(null);
+  };
+
+  const createSocialSession = async (
+    provider: "Google" | "Facebook",
+    providerToken: string,
+    profile: SocialProfileResponse,
+  ) => {
+    const response = await registerSocial({
+      provider,
+      providerToken,
+      customUsername: buildSocialUsername(profile),
+      customAvatarUrl: profile.avatarUrl || authAvatars[0]?.image || "",
+    });
+
+    setSession({
+      profile: response.profile,
+    });
+    navigate("/", { replace: true });
   };
 
   const handleGoogleLogin = async () => {
@@ -55,17 +83,11 @@ export const AuthLoginSection = () => {
         setSession({
           profile: response.profile,
         });
-        setPendingSocialLogin(null);
         navigate("/", { replace: true });
         return;
       }
 
-      setPendingSocialLogin({
-        provider: "Google",
-        profile: response,
-        providerToken: idToken,
-      });
-      navigate("/auth/create-character", { replace: true });
+      await createSocialSession("Google", idToken, response);
     } catch (loginError) {
       setError(
         loginError instanceof Error
@@ -96,17 +118,11 @@ export const AuthLoginSection = () => {
         setSession({
           profile: response.profile,
         });
-        setPendingSocialLogin(null);
         navigate("/", { replace: true });
         return;
       }
 
-      setPendingSocialLogin({
-        provider: "Facebook",
-        profile: response,
-        providerToken: accessToken,
-      });
-      navigate("/auth/create-character", { replace: true });
+      await createSocialSession("Facebook", accessToken, response);
     } catch (loginError) {
       setError(
         loginError instanceof Error
@@ -115,6 +131,30 @@ export const AuthLoginSection = () => {
       );
     } finally {
       setFacebookLoginLoading(false);
+    }
+  };
+
+  const handleGuestLogin = async () => {
+    setError(null);
+    setGuestLoginLoading(true);
+
+    try {
+      const response = await loginAsGuest({
+        customAvatarUrl: authAvatars[0]?.image ?? "",
+      });
+
+      setSession({
+        profile: response.profile,
+      });
+      navigate("/", { replace: true });
+    } catch (loginError) {
+      setError(
+        loginError instanceof Error
+          ? loginError.message
+          : "Nie udało się zalogować jako gość.",
+      );
+    } finally {
+      setGuestLoginLoading(false);
     }
   };
 
@@ -147,10 +187,10 @@ export const AuthLoginSection = () => {
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
-                to="/auth/create-character"
+                to="/profile/edit"
                 className="rounded-full border border-[#e08dff]/30 bg-[#29294a] px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.2em] text-[#e5e3ff] transition-colors hover:border-[#e08dff]/50 hover:bg-[#29294a]/80"
               >
-                Zmień postać
+                Edytuj profil
               </Link>
               <button
                 type="button"
@@ -222,10 +262,11 @@ export const AuthLoginSection = () => {
             <span>Facebook</span>
           </button>
 
-          <Link
-            to="/auth/create-character?mode=guest"
-            onClick={clearDraftAuth}
-            className="flex items-center justify-center gap-3 rounded-full border-2 border-[#46465e]/30 bg-[#29294a] px-6 py-4 text-sm font-bold text-[#e5e3ff] transition-all hover:scale-[1.02] hover:border-[#e08dff]/50"
+          <button
+            type="button"
+            onClick={handleGuestLogin}
+            disabled={isGuestLoginLoading}
+            className="flex items-center justify-center gap-3 rounded-full border-2 border-[#46465e]/30 bg-[#29294a] px-6 py-4 text-sm font-bold text-[#e5e3ff] transition-all hover:scale-[1.02] hover:border-[#e08dff]/50 disabled:cursor-wait disabled:opacity-60"
           >
             <span
               className="material-symbols-outlined text-2xl"
@@ -234,7 +275,7 @@ export const AuthLoginSection = () => {
               person_outline
             </span>
             <span>Graj jako Gość</span>
-          </Link>
+          </button>
         </div>
 
         {error ? (

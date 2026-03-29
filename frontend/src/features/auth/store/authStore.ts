@@ -7,11 +7,13 @@ interface AuthState {
   pendingSocialLogin: PendingSocialLogin | null;
   isGoogleLoginLoading: boolean;
   isFacebookLoginLoading: boolean;
+  isAuthInitialized: boolean;
   error: string | null;
   setSession: (session: AuthSession | null) => void;
   setPendingSocialLogin: (value: PendingSocialLogin | null) => void;
   setGoogleLoginLoading: (value: boolean) => void;
   setFacebookLoginLoading: (value: boolean) => void;
+  setAuthInitialized: (value: boolean) => void;
   setError: (value: string | null) => void;
   clearAuth: () => void;
 }
@@ -23,12 +25,14 @@ export const useAuthStore = create<AuthState>()(
       pendingSocialLogin: null,
       isGoogleLoginLoading: false,
       isFacebookLoginLoading: false,
+      isAuthInitialized: false,
       error: null,
       setSession: (session) => set({ session }),
       setPendingSocialLogin: (value) => set({ pendingSocialLogin: value }),
       setGoogleLoginLoading: (value) => set({ isGoogleLoginLoading: value }),
       setFacebookLoginLoading: (value) =>
         set({ isFacebookLoginLoading: value }),
+      setAuthInitialized: (value) => set({ isAuthInitialized: value }),
       setError: (value) => set({ error: value }),
       clearAuth: () =>
         set({

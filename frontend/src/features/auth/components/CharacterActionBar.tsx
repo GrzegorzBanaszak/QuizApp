@@ -5,6 +5,7 @@ interface CharacterActionBarProps {
   isReady: boolean;
   canSubmit: boolean;
   submitLabel: string;
+  loadingLabel: string;
   onSubmit: () => void;
 }
 
@@ -13,6 +14,7 @@ export const CharacterActionBar = ({
   isReady,
   canSubmit,
   submitLabel,
+  loadingLabel,
   onSubmit,
 }: CharacterActionBarProps) => {
   return (
@@ -23,7 +25,7 @@ export const CharacterActionBar = ({
         disabled={!isReady || isSubmitting || !canSubmit}
         className="rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-8 py-4 font-headline text-sm font-black tracking-[0.2em] text-[#4f006c] shadow-[0_0_30px_rgba(224,141,255,0.35)] transition-all hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-50"
       >
-        {isSubmitting ? "TWORZENIE..." : submitLabel}
+        {isSubmitting ? loadingLabel : submitLabel}
       </button>
       <Link
         to="/"
