@@ -201,10 +201,13 @@ public sealed class AuthService : IAuthService
 
     private AuthResponse CreateAuthResponse(User user, bool isNewUser)
     {
+        var jwtToken = _jwtTokenService.GenerateToken(user);
+
         return new AuthResponse
         {
             IsNewUser = isNewUser,
-            Token = _jwtTokenService.GenerateToken(user),
+            Token = jwtToken.Token,
+            ExpiresAtUtc = jwtToken.ExpiresAtUtc,
             UserId = user.Id,
             Profile = _mapper.Map<UserProfileDto>(user)
         };
