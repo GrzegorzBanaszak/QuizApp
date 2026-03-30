@@ -25,8 +25,14 @@ const SingleplayerPage = lazy(() =>
   })),
 );
 
-const EditProfilePage = lazy(() =>
+const CreateCharacterPage = lazy(() =>
   import("../features/auth/pages/CreateCharacterPage").then((module) => ({
+    default: module.CreateCharacterPage,
+  })),
+);
+
+const EditProfilePage = lazy(() =>
+  import("../features/auth/pages/EditProfilePage").then((module) => ({
     default: module.EditProfilePage,
   })),
 );
@@ -66,7 +72,7 @@ export const appRouter = createBrowserRouter([
       },
       {
         path: "auth/create-character",
-        element: <EditProfilePage />,
+        element: <CreateCharacterPage />,
       },
       {
         path: "multiplayer",
