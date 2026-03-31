@@ -151,6 +151,8 @@ export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
       gameSession,
       selectedAnswerId,
       answerSelections,
+      selectedCategoryId,
+      categories,
     } = get();
 
     if (!gameSession || !selectedAnswerId) {
@@ -197,7 +199,27 @@ export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
         playerAnswers: updatedSelections,
       });
 
+      const updatedCategories = categories.map((category) => {
+        if (category.id !== selectedCategoryId) {
+          return category;
+        }
+
+        const updatedLevels = category.levels.map((level) =>
+          level.id === gameSession.levelId
+            ? { ...level, isCompleted: true }
+            : level,
+        );
+
+        return {
+          ...category,
+          levels: updatedLevels,
+          completedLevelsCount: updatedLevels.filter((level) => level.isCompleted)
+            .length,
+        };
+      });
+
       set({
+        categories: updatedCategories,
         resultSummary,
         screen: "result",
         selectedAnswerId: null,

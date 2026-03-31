@@ -86,11 +86,12 @@ export const LevelSelectView = () => {
   }
 
   const renderedLevels = categoryLevels.map((level, index) => {
-    const progress = category.levels.find((item) => item.id === level.id);
     const difficulty = resolveLevelDifficultyLabel(level.questionDistributions);
     const difficultyAccent = getDifficultyAccent(difficulty);
+    const progress = category.levels.find((item) => item.id === level.id);
     const order = progress?.order ?? index + 1;
-    const state = progress?.isCompleted
+    const title = formatLevelTitle(level.name, order);
+    const state = level.isCompleted
       ? "completed"
       : level.isUnlocked
         ? "available"
@@ -100,10 +101,11 @@ export const LevelSelectView = () => {
       id: String(level.id),
       backendId: level.id,
       order,
-      title: level.name,
+      title,
       questionCount: level.totalQuestionCount,
       difficulty,
       state,
+      grade: level.grade,
       accentTone: difficultyAccent.accentTone,
       accentGlow: difficultyAccent.accentGlow,
       iconTone: difficultyAccent.iconTone,
@@ -194,7 +196,7 @@ export const LevelSelectView = () => {
                   </div>
                   <div>
                     <h2 className="font-headline text-2xl font-bold text-[#aaa8c4]">
-                      {`Poziom ${level.order}: ${level.title}`}
+                      {level.title}
                     </h2>
                     <div className="mt-1 flex items-center gap-2 text-[#74738d]">
                       <span className="material-symbols-outlined text-sm">
@@ -245,13 +247,13 @@ export const LevelSelectView = () => {
                       <span
                         className={`font-headline text-5xl font-black ${level.accentTone}`}
                       >
-                        {level.order}
+                        {level.grade ?? level.order}
                       </span>
                     )}
                   </div>
                   <div>
                     <h2 className="font-headline text-2xl font-bold text-white">
-                      {`Poziom ${level.order}: ${level.title}`}
+                      {level.title}
                     </h2>
                     <div
                       className={`mt-1 flex items-center gap-2 ${
@@ -270,7 +272,7 @@ export const LevelSelectView = () => {
                 <button
                   type="button"
                   onClick={() =>
-                    void startLevel(level.backendId, `Poziom ${level.order}: ${level.title}`)
+                    void startLevel(level.backendId, level.title)
                   }
                   className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${
                     isAvailable
@@ -377,4 +379,15 @@ function getDifficultyAccent(difficulty: string): {
         iconTone: "text-[#e08dff]",
       };
   }
+}
+
+function formatLevelTitle(name: string, order: number): string {
+  const normalizedName = name.trim();
+  const expectedPrefix = `poziom ${order}`;
+
+  if (normalizedName.toLowerCase().startsWith(expectedPrefix)) {
+    return normalizedName;
+  }
+
+  return `Poziom ${order}: ${normalizedName}`;
 }

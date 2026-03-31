@@ -81,6 +81,8 @@ export interface SingleplayerCategoryLevelDetails {
   questionDistributions: SingleplayerLevelDistribution[];
   totalQuestionCount: number;
   isUnlocked: boolean;
+  isCompleted: boolean;
+  grade: string | null;
 }
 
 export interface SingleplayerLevel {

@@ -80,23 +80,50 @@ public sealed class SingleplayerService : ISingleplayerService
             return Array.Empty<LevelDto>();
         }
 
-        var completedOrders = await _context.SingleplayerResults
+        var levelResults = await _context.SingleplayerResults
             .AsNoTracking()
             .Where(result => result.UserId == userId && result.Level.CategoryId == categoryId)
-            .Select(result => result.Level.Order)
+            .Select(result => new
+            {
+                result.LevelId,
+                LevelOrder = result.Level.Order,
+                result.Score,
+                result.CorrectAnswers,
+                result.TotalQuestions,
+                result.PlayedAt
+            })
             .ToListAsync();
+
+        var completedOrders = levelResults
+            .Select(result => result.LevelOrder)
+            .Distinct()
+            .ToList();
 
         var highestUnlockedOrder = completedOrders.DefaultIfEmpty(0).Max();
 
         var unlockedThreshold = highestUnlockedOrder == 0 ? 1 : highestUnlockedOrder + 1;
+        var bestResultsByLevelId = levelResults
+            .GroupBy(result => result.LevelId)
+            .ToDictionary(
+                group => group.Key,
+                group => group
+                    .OrderByDescending(result => result.Score)
+                    .ThenByDescending(result => result.PlayedAt)
+                    .First());
 
         var mappedLevels = _mapper.Map<List<LevelDto>>(levels);
 
         for (var index = 0; index < mappedLevels.Count; index++)
         {
+            var bestResult = bestResultsByLevelId.GetValueOrDefault(levels[index].Id);
+
             mappedLevels[index] = mappedLevels[index] with
             {
-                IsUnlocked = levels[index].Order <= unlockedThreshold
+                IsUnlocked = levels[index].Order <= unlockedThreshold,
+                IsCompleted = bestResult is not null,
+                Grade = bestResult is null
+                    ? null
+                    : ResolveGrade(bestResult.CorrectAnswers, bestResult.TotalQuestions)
             };
         }
 
@@ -269,6 +296,38 @@ public sealed class SingleplayerService : ISingleplayerService
         return totalQuestions <= 0
             ? 0
             : correctAnswersCount * 10;
+    }
+
+    private static string ResolveGrade(int correctAnswersCount, int totalQuestions)
+    {
+        if (totalQuestions <= 0)
+        {
+            return "D";
+        }
+
+        var accuracy = (double)correctAnswersCount / totalQuestions;
+
+        if (accuracy >= 1.0d)
+        {
+            return "S";
+        }
+
+        if (accuracy >= 0.8d)
+        {
+            return "A";
+        }
+
+        if (accuracy >= 0.6d)
+        {
+            return "B";
+        }
+
+        if (accuracy >= 0.4d)
+        {
+            return "C";
+        }
+
+        return "D";
     }
 
     private static QuestionDifficulty ResolveLevelDifficulty(Level level)
