@@ -1,6 +1,9 @@
 import type {
+  SingleplayerAnswerSelection,
   SingleplayerCategory,
   SingleplayerCategoryLevelDetails,
+  SingleplayerGameSession,
+  SingleplayerResultSummary,
 } from "../types/singleplayer";
 
 async function parseJsonResponse<T>(response: Response): Promise<T> {
@@ -38,4 +41,33 @@ export async function fetchSingleplayerCategoryLevels(
   );
 
   return parseJsonResponse<SingleplayerCategoryLevelDetails[]>(response);
+}
+
+export async function fetchSingleplayerGame(
+  levelId: number,
+): Promise<SingleplayerGameSession> {
+  const response = await fetch(`/api/singleplayer/levels/${levelId}/questions`, {
+    credentials: "include",
+  });
+
+  return parseJsonResponse<SingleplayerGameSession>(response);
+}
+
+export async function submitSingleplayerGame(
+  levelId: number,
+  request: {
+    sessionId: string;
+    playerAnswers: SingleplayerAnswerSelection[];
+  },
+): Promise<SingleplayerResultSummary> {
+  const response = await fetch(`/api/singleplayer/levels/${levelId}/submit`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(request),
+  });
+
+  return parseJsonResponse<SingleplayerResultSummary>(response);
 }

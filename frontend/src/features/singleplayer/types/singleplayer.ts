@@ -39,6 +39,41 @@ export interface SingleplayerLevelDistribution {
   count: number;
 }
 
+export interface SingleplayerGameAnswer {
+  id: string;
+  text: string;
+}
+
+export interface SingleplayerGameQuestion {
+  id: number;
+  text: string;
+  answers: SingleplayerGameAnswer[];
+}
+
+export interface SingleplayerGameSession {
+  sessionId: string;
+  levelId: number;
+  questions: SingleplayerGameQuestion[];
+}
+
+export interface SingleplayerAnswerSelection {
+  questionId: number;
+  selectedAnswerId: string;
+}
+
+export interface SingleplayerQuestionResultDetail {
+  questionId: number;
+  isCorrect: boolean;
+  correctAnswerId: string;
+}
+
+export interface SingleplayerResultSummary {
+  totalScore: number;
+  correctAnswersCount: number;
+  totalQuestions: number;
+  details: SingleplayerQuestionResultDetail[];
+}
+
 export interface SingleplayerCategoryLevelDetails {
   id: number;
   categoryId: number;

@@ -269,7 +269,9 @@ export const LevelSelectView = () => {
                 </div>
                 <button
                   type="button"
-                  onClick={() => startLevel(level.id)}
+                  onClick={() =>
+                    void startLevel(level.backendId, `Poziom ${level.order}: ${level.title}`)
+                  }
                   className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${
                     isAvailable
                       ? "bg-[#e08dff] px-8 py-3 text-lg text-[#4f006c] shadow-lg shadow-[#e08dff]/40 hover:scale-105"
