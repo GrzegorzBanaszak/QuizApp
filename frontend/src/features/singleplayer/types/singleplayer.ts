@@ -34,6 +34,20 @@ export interface SingleplayerCategory {
   levels: SingleplayerCategoryLevel[];
 }
 
+export interface SingleplayerLevelDistribution {
+  difficulty: string;
+  count: number;
+}
+
+export interface SingleplayerCategoryLevelDetails {
+  id: number;
+  categoryId: number;
+  name: string;
+  questionDistributions: SingleplayerLevelDistribution[];
+  totalQuestionCount: number;
+  isUnlocked: boolean;
+}
+
 export interface SingleplayerLevel {
   id: string;
   letter: string;

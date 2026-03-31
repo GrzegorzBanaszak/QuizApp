@@ -7,6 +7,7 @@ import {
 } from "../services/singleplayerMockData";
 import type {
   SingleplayerCategory,
+  SingleplayerCategoryLevelDetails,
   SingleplayerScreen,
 } from "../types/singleplayer";
 
@@ -15,12 +16,18 @@ interface SingleplayerState {
   categories: SingleplayerCategory[];
   isCategoriesLoading: boolean;
   categoriesError: string | null;
+  categoryLevels: SingleplayerCategoryLevelDetails[];
+  isCategoryLevelsLoading: boolean;
+  categoryLevelsError: string | null;
   selectedCategoryId: number | null;
   selectedLevelId: string;
   selectedAnswerIndex: number | null;
   hydrateCategories: (categories: SingleplayerCategory[]) => void;
   setCategoriesLoading: (value: boolean) => void;
   setCategoriesError: (value: string | null) => void;
+  hydrateCategoryLevels: (levels: SingleplayerCategoryLevelDetails[]) => void;
+  setCategoryLevelsLoading: (value: boolean) => void;
+  setCategoryLevelsError: (value: string | null) => void;
   setSelectedCategoryId: (categoryId: number) => void;
   goToLevelSelect: () => void;
   goToHome: () => void;
@@ -36,6 +43,9 @@ export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
   categories: [],
   isCategoriesLoading: false,
   categoriesError: null,
+  categoryLevels: [],
+  isCategoryLevelsLoading: false,
+  categoryLevelsError: null,
   selectedCategoryId: null,
   selectedLevelId:
     levels.find((level) => level.state === "available")?.id ??
@@ -58,6 +68,9 @@ export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
     }),
   setCategoriesLoading: (value) => set({ isCategoriesLoading: value }),
   setCategoriesError: (value) => set({ categoriesError: value }),
+  hydrateCategoryLevels: (categoryLevels) => set({ categoryLevels }),
+  setCategoryLevelsLoading: (value) => set({ isCategoryLevelsLoading: value }),
+  setCategoryLevelsError: (value) => set({ categoryLevelsError: value }),
   setSelectedCategoryId: (categoryId) => set({ selectedCategoryId: categoryId }),
 
   goToLevelSelect: () => {

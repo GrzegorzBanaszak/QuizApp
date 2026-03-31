@@ -1,4 +1,7 @@
-import type { SingleplayerCategory } from "../types/singleplayer";
+import type {
+  SingleplayerCategory,
+  SingleplayerCategoryLevelDetails,
+} from "../types/singleplayer";
 
 async function parseJsonResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
@@ -22,4 +25,17 @@ export async function fetchSingleplayerCategories(): Promise<
   });
 
   return parseJsonResponse<SingleplayerCategory[]>(response);
+}
+
+export async function fetchSingleplayerCategoryLevels(
+  categoryId: number,
+): Promise<SingleplayerCategoryLevelDetails[]> {
+  const response = await fetch(
+    `/api/singleplayer/categories/${categoryId}/levels`,
+    {
+      credentials: "include",
+    },
+  );
+
+  return parseJsonResponse<SingleplayerCategoryLevelDetails[]>(response);
 }
