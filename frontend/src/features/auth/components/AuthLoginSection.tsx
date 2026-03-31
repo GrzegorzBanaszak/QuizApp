@@ -3,7 +3,6 @@ import {
   isAuthResponse,
   loginAsGuest,
   logout,
-  registerSocial,
   verifyFacebookToken,
   verifyGoogleToken,
 } from "../services/authApi";
@@ -11,21 +10,15 @@ import { requestFacebookAccessToken } from "../services/facebookAuth";
 import { requestGoogleIdToken } from "../services/googleAuth";
 import { authAvatars } from "../data/authMockData";
 import { useAuthStore } from "../store/authStore";
-import type { SocialProfileResponse } from "../types";
 import { useState } from "react";
-
-const buildSocialUsername = (profile: SocialProfileResponse) => {
-  const baseName = profile.name.trim() || "User";
-  const sourceId = profile.googleId ?? profile.facebookId ?? "";
-  const suffix = sourceId ? sourceId.slice(-6) : Math.random().toString(36).slice(2, 8);
-  const maxBaseLength = Math.max(1, 100 - suffix.length - 1);
-  return `${baseName.slice(0, maxBaseLength)}-${suffix}`;
-};
 
 export const AuthLoginSection = () => {
   const navigate = useNavigate();
   const session = useAuthStore((state) => state.session);
   const setSession = useAuthStore((state) => state.setSession);
+  const setPendingSocialLogin = useAuthStore(
+    (state) => state.setPendingSocialLogin,
+  );
   const isGoogleLoginLoading = useAuthStore(
     (state) => state.isGoogleLoginLoading,
   );
@@ -44,24 +37,6 @@ export const AuthLoginSection = () => {
 
   const clearDraftAuth = () => {
     setError(null);
-  };
-
-  const createSocialSession = async (
-    provider: "Google" | "Facebook",
-    providerToken: string,
-    profile: SocialProfileResponse,
-  ) => {
-    const response = await registerSocial({
-      provider,
-      providerToken,
-      customUsername: buildSocialUsername(profile),
-      customAvatarUrl: profile.avatarUrl || authAvatars[0]?.image || "",
-    });
-
-    setSession({
-      profile: response.profile,
-    });
-    navigate("/", { replace: true });
   };
 
   const handleGoogleLogin = async () => {
@@ -87,7 +62,12 @@ export const AuthLoginSection = () => {
         return;
       }
 
-      await createSocialSession("Google", idToken, response);
+      setPendingSocialLogin({
+        provider: "Google",
+        providerToken: idToken,
+        profile: response,
+      });
+      navigate("/auth/create-character", { replace: true });
     } catch (loginError) {
       setError(
         loginError instanceof Error
@@ -122,7 +102,12 @@ export const AuthLoginSection = () => {
         return;
       }
 
-      await createSocialSession("Facebook", accessToken, response);
+      setPendingSocialLogin({
+        provider: "Facebook",
+        providerToken: accessToken,
+        profile: response,
+      });
+      navigate("/auth/create-character", { replace: true });
     } catch (loginError) {
       setError(
         loginError instanceof Error
