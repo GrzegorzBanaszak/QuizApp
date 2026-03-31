@@ -8,8 +8,6 @@ public sealed class SingleplayerProfile : Profile
 {
     public SingleplayerProfile()
     {
-        CreateMap<Category, CategoryDto>();
-
         CreateMap<LevelQuestionDistribution, LevelQuestionDistributionDto>()
             .ConstructUsing(src => new LevelQuestionDistributionDto(src.Difficulty.ToString(), src.Count));
 

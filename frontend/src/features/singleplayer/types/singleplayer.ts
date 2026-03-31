@@ -18,17 +18,20 @@ export interface SingleplayerProfile {
   xp: string;
 }
 
-export interface SingleplayerCategory {
-  id: string;
-  title: string;
-  icon: string;
-  description: string;
+export interface SingleplayerCategoryLevel {
+  id: number;
+  order: number;
+  isCompleted: boolean;
   difficulty: string;
-  accent: string;
-  iconTone: string;
-  iconSurface: string;
-  difficultyTone: string;
-  progressLabel: string;
+}
+
+export interface SingleplayerCategory {
+  id: number;
+  name: string;
+  description: string;
+  totalLevels: number;
+  completedLevelsCount: number;
+  levels: SingleplayerCategoryLevel[];
 }
 
 export interface SingleplayerLevel {

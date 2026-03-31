@@ -1,30 +1,27 @@
 import { create } from "zustand";
 import {
-  avatars,
-  categories,
   leaderboard,
   levels,
   question,
   rewards,
 } from "../services/singleplayerMockData";
 import type {
-  SingleplayerProfile,
+  SingleplayerCategory,
   SingleplayerScreen,
 } from "../types/singleplayer";
 
 interface SingleplayerState {
   screen: SingleplayerScreen;
-  draftName: string;
-  selectedAvatarId: string;
-  selectedCategoryId: string;
+  categories: SingleplayerCategory[];
+  isCategoriesLoading: boolean;
+  categoriesError: string | null;
+  selectedCategoryId: number | null;
   selectedLevelId: string;
   selectedAnswerIndex: number | null;
-  profile: SingleplayerProfile | null;
-  setDraftName: (value: string) => void;
-  setSelectedAvatarId: (avatarId: string) => void;
-  setSelectedCategoryId: (categoryId: string) => void;
-  saveProfile: () => void;
-  editProfile: () => void;
+  hydrateCategories: (categories: SingleplayerCategory[]) => void;
+  setCategoriesLoading: (value: boolean) => void;
+  setCategoriesError: (value: string | null) => void;
+  setSelectedCategoryId: (categoryId: number) => void;
   goToLevelSelect: () => void;
   goToHome: () => void;
   startLevel: (levelId: string) => void;
@@ -36,43 +33,35 @@ interface SingleplayerState {
 
 export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
   screen: "home",
-  draftName: "",
-  selectedAvatarId: avatars[0]?.id ?? "avatar-1",
-  selectedCategoryId: categories[0]?.id ?? "general",
-  selectedLevelId: "hard",
+  categories: [],
+  isCategoriesLoading: false,
+  categoriesError: null,
+  selectedCategoryId: null,
+  selectedLevelId:
+    levels.find((level) => level.state === "available")?.id ??
+    levels[0]?.id ??
+    "hard",
   selectedAnswerIndex: null,
-  profile: null,
 
-  setDraftName: (value) => set({ draftName: value }),
-  setSelectedAvatarId: (avatarId) => set({ selectedAvatarId: avatarId }),
-  setSelectedCategoryId: (categoryId) =>
-    set({ selectedCategoryId: categoryId }),
-
-  saveProfile: () =>
+  hydrateCategories: (categories) =>
     set((state) => {
-      const trimmedName = state.draftName.trim();
-      if (!trimmedName) return state;
+      const hasSelectedCategory = categories.some(
+        (category) => category.id === state.selectedCategoryId,
+      );
 
       return {
-        profile: {
-          name: trimmedName,
-          avatarId: state.selectedAvatarId,
-          level: 42,
-          xp: "2.4k XP",
-        },
+        categories,
+        selectedCategoryId: hasSelectedCategory
+          ? state.selectedCategoryId
+          : categories[0]?.id ?? null,
       };
     }),
-
-  editProfile: () =>
-    set((state) => ({
-      draftName: state.profile?.name ?? "",
-      selectedAvatarId: state.profile?.avatarId ?? state.selectedAvatarId,
-      profile: null,
-      screen: "home",
-    })),
+  setCategoriesLoading: (value) => set({ isCategoriesLoading: value }),
+  setCategoriesError: (value) => set({ categoriesError: value }),
+  setSelectedCategoryId: (categoryId) => set({ selectedCategoryId: categoryId }),
 
   goToLevelSelect: () => {
-    if (!get().profile) return;
+    if (!get().selectedCategoryId) return;
     set({ screen: "levelSelect" });
   },
 
@@ -98,8 +87,6 @@ export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
 }));
 
 export const singleplayerMockData = {
-  avatars,
-  categories,
   levels,
   question,
   rewards,

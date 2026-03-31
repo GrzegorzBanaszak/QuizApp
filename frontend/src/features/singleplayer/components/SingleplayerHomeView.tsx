@@ -1,23 +1,38 @@
+import { useAuthStore } from "../../auth/store/authStore";
 import { CategoryGrid } from "./CategoryGrid";
-import { singleplayerMockData, useSingleplayerStore } from "../store/singleplayerStore";
+import { useSingleplayerStore } from "../store/singleplayerStore";
 
 export const SingleplayerHomeView = () => {
-  const profile = useSingleplayerStore((state) => state.profile);
+  const session = useAuthStore((state) => state.session);
+  const categories = useSingleplayerStore((state) => state.categories);
+  const isCategoriesLoading = useSingleplayerStore(
+    (state) => state.isCategoriesLoading,
+  );
+  const categoriesError = useSingleplayerStore((state) => state.categoriesError);
   const selectedCategoryId = useSingleplayerStore(
     (state) => state.selectedCategoryId,
   );
-  const selectedAvatarId = profile?.avatarId ?? singleplayerMockData.avatars[0]?.id;
-  const selectedAvatar =
-    singleplayerMockData.avatars.find((avatar) => avatar.id === selectedAvatarId) ??
-    singleplayerMockData.avatars[0];
   const goToLevelSelect = useSingleplayerStore((state) => state.goToLevelSelect);
   const setSelectedCategoryId = useSingleplayerStore(
     (state) => state.setSelectedCategoryId,
   );
 
-  const playerName = profile?.name ?? "NeonNinja";
-  const playerLevel = profile?.level ?? 42;
-  const playerXp = profile?.xp ?? "2.4k XP";
+  if (!session) {
+    return null;
+  }
+
+  const totalCompletedLevels = categories.reduce(
+    (sum, category) => sum + category.completedLevelsCount,
+    0,
+  );
+  const totalLevels = categories.reduce(
+    (sum, category) => sum + category.totalLevels,
+    0,
+  );
+  const selectedCategory =
+    categories.find((category) => category.id === selectedCategoryId) ??
+    categories[0] ??
+    null;
 
   return (
     <main className="mx-auto min-h-screen max-w-5xl px-6 pb-40 pt-12">
@@ -27,7 +42,7 @@ export const SingleplayerHomeView = () => {
             SINGLEPLAYER LOBBY
           </h1>
           <p className="mt-2 text-lg text-[#aaa8c4]">
-            Witaj ponownie, {playerName}. Wybierz wyzwanie na dziś.
+            Witaj ponownie, {session.profile.username}. Wybierz wyzwanie na dziś.
           </p>
         </div>
 
@@ -35,28 +50,34 @@ export const SingleplayerHomeView = () => {
           <div className="relative mb-6 flex-shrink-0 self-center md:mb-0">
             <div className="h-24 w-24 overflow-hidden rounded-full ring-4 ring-[#e08dff] shadow-[0_0_20px_#8A2BE2] md:h-28 md:w-28">
               <img
-                src={selectedAvatar.image}
-                alt={selectedAvatar.name}
+                src={session.profile.avatarUrl}
+                alt={session.profile.username}
                 className="h-full w-full object-cover"
               />
             </div>
             <div className="absolute -bottom-1 -right-1 rounded-full bg-[#ff68a7] px-2 py-0.5 text-[10px] font-black tracking-tight text-[#460024] shadow-lg">
-              PRO
+              USER
             </div>
           </div>
 
           <div className="flex min-w-0 flex-1 flex-col items-center md:items-start">
             <h2 className="mb-1 font-headline text-4xl font-black tracking-[-0.04em] text-[#e5e3ff]">
-              {playerName}
+              {session.profile.username}
             </h2>
             <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">
               <span className="inline-flex items-center rounded-full bg-[#e08dff]/20 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#e08dff] ring-1 ring-[#e08dff]/40">
-                Level {playerLevel}
+                {session.profile.totalExperience} XP
               </span>
               <div className="flex items-center gap-1 text-[#8ff5ff]">
-                <span className="material-symbols-outlined text-sm">bolt</span>
+                <span className="material-symbols-outlined text-sm">toll</span>
                 <span className="text-[10px] font-black uppercase tracking-widest">
-                  {playerXp}
+                  {session.profile.coins} coins
+                </span>
+              </div>
+              <div className="flex items-center gap-1 text-[#ffcf7d]">
+                <span className="material-symbols-outlined text-sm">stars</span>
+                <span className="text-[10px] font-black uppercase tracking-widest">
+                  {totalCompletedLevels}/{totalLevels} poziomów
                 </span>
               </div>
             </div>
@@ -70,28 +91,47 @@ export const SingleplayerHomeView = () => {
             Kategorie Quizu
           </h2>
           <div className="hidden items-center gap-2 text-[#8ff5ff] md:flex">
-            <span className="material-symbols-outlined text-base">group</span>
+            <span className="material-symbols-outlined text-base">stars</span>
             <span className="text-sm font-bold uppercase tracking-widest">
-              124 graczy online
+              {selectedCategory
+                ? `${selectedCategory.completedLevelsCount}/${selectedCategory.totalLevels} w wybranej kategorii`
+                : "Brak kategorii"}
             </span>
           </div>
         </div>
 
-        <CategoryGrid
-          categories={singleplayerMockData.categories}
-          selectedCategoryId={selectedCategoryId}
-          onSelect={setSelectedCategoryId}
-        />
+        {categoriesError ? (
+          <div className="mb-6 rounded-[1.5rem] border border-[#ff68a7]/30 bg-[#ff68a7]/10 px-5 py-4 text-sm text-[#ffd1e0]">
+            {categoriesError}
+          </div>
+        ) : null}
+
+        {isCategoriesLoading ? (
+          <div className="glass-panel rounded-[2rem] px-6 py-10 text-center text-[#aaa8c4]">
+            Ładowanie kategorii singleplayer...
+          </div>
+        ) : categories.length > 0 ? (
+          <CategoryGrid
+            categories={categories}
+            selectedCategoryId={selectedCategoryId}
+            onSelect={setSelectedCategoryId}
+          />
+        ) : (
+          <div className="glass-panel rounded-[2rem] px-6 py-10 text-center text-[#aaa8c4]">
+            Brak dostępnych kategorii.
+          </div>
+        )}
       </section>
 
       <div className="mt-16 flex justify-center">
         <button
           type="button"
           onClick={goToLevelSelect}
-          className="group relative overflow-hidden rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-12 py-5 shadow-[0_0_40px_rgba(224,141,255,0.4)] transition-all hover:scale-105 active:scale-95"
+          disabled={!selectedCategory || isCategoriesLoading}
+          className="group relative overflow-hidden rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-12 py-5 shadow-[0_0_40px_rgba(224,141,255,0.4)] transition-all hover:scale-105 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
         >
           <span className="relative z-10 flex items-center gap-3 font-headline text-xl font-black tracking-tight text-[#4f006c]">
-            ROZPOCZNIJ GRĘ
+            WYBIERZ POZIOM
             <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">
               bolt
             </span>

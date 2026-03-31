@@ -1,22 +1,21 @@
+import { useAuthStore } from "../../auth/store/authStore";
 import { singleplayerMockData, useSingleplayerStore } from "../store/singleplayerStore";
 
 export const LevelSelectView = () => {
-  const profile = useSingleplayerStore((state) => state.profile);
+  const session = useAuthStore((state) => state.session);
+  const categories = useSingleplayerStore((state) => state.categories);
   const selectedCategoryId = useSingleplayerStore(
     (state) => state.selectedCategoryId,
   );
   const goToHome = useSingleplayerStore((state) => state.goToHome);
   const startLevel = useSingleplayerStore((state) => state.startLevel);
 
-  if (!profile) return null;
-
-  const avatar =
-    singleplayerMockData.avatars.find((item) => item.id === profile.avatarId) ??
-    singleplayerMockData.avatars[0];
   const category =
-    singleplayerMockData.categories.find(
-      (item) => item.id === selectedCategoryId,
-    ) ?? singleplayerMockData.categories[0];
+    categories.find((item) => item.id === selectedCategoryId) ?? categories[0];
+
+  if (!session || !category) {
+    return null;
+  }
 
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden p-6 md:p-12 lg:p-20">
@@ -42,22 +41,22 @@ export const LevelSelectView = () => {
         <div className="relative">
           <div className="h-32 w-32 rounded-full border-4 border-[#e08dff] p-1 shadow-[0_0_25px_rgba(224,141,255,0.3)]">
             <img
-              src={avatar.image}
-              alt={avatar.name}
+              src={session.profile.avatarUrl}
+              alt={session.profile.username}
               className="h-full w-full rounded-full object-cover"
             />
           </div>
           <div className="absolute -bottom-2 -right-2 rounded-full bg-[#ff68a7] px-3 py-1 text-xs font-bold uppercase tracking-tight text-[#460024]">
-            Level {profile.level}
+            {session.profile.totalExperience} XP
           </div>
         </div>
         <div className="text-center md:text-left">
           <h1 className="font-headline mb-2 text-5xl font-bold tracking-tight text-white md:text-6xl">
-            {profile.name}
+            {session.profile.username}
           </h1>
           <p className="text-lg text-[#aaa8c4]">
             Twój postęp w kategorii:{" "}
-            <span className="font-bold text-[#8ff5ff]">{category.title}</span>
+            <span className="font-bold text-[#8ff5ff]">{category.name}</span>
           </p>
         </div>
       </section>
