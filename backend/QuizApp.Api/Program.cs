@@ -110,6 +110,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISingleplayerService, SingleplayerService>();
+builder.Services.AddHostedService<TemporaryGuestCleanupService>();
 
 
 builder.Services.AddCors(options =>
