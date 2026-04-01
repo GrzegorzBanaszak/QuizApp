@@ -18,17 +18,71 @@ export interface SingleplayerProfile {
   xp: string;
 }
 
-export interface SingleplayerCategory {
-  id: string;
-  title: string;
-  icon: string;
-  description: string;
+export interface SingleplayerCategoryLevel {
+  id: number;
+  order: number;
+  isCompleted: boolean;
   difficulty: string;
-  accent: string;
-  iconTone: string;
-  iconSurface: string;
-  difficultyTone: string;
-  progressLabel: string;
+}
+
+export interface SingleplayerCategory {
+  id: number;
+  name: string;
+  description: string;
+  totalLevels: number;
+  completedLevelsCount: number;
+  levels: SingleplayerCategoryLevel[];
+}
+
+export interface SingleplayerLevelDistribution {
+  difficulty: string;
+  count: number;
+}
+
+export interface SingleplayerGameAnswer {
+  id: string;
+  text: string;
+}
+
+export interface SingleplayerGameQuestion {
+  id: number;
+  text: string;
+  answers: SingleplayerGameAnswer[];
+}
+
+export interface SingleplayerGameSession {
+  sessionId: string;
+  levelId: number;
+  questions: SingleplayerGameQuestion[];
+}
+
+export interface SingleplayerAnswerSelection {
+  questionId: number;
+  selectedAnswerId: string;
+}
+
+export interface SingleplayerQuestionResultDetail {
+  questionId: number;
+  isCorrect: boolean;
+  correctAnswerId: string;
+}
+
+export interface SingleplayerResultSummary {
+  totalScore: number;
+  correctAnswersCount: number;
+  totalQuestions: number;
+  details: SingleplayerQuestionResultDetail[];
+}
+
+export interface SingleplayerCategoryLevelDetails {
+  id: number;
+  categoryId: number;
+  name: string;
+  questionDistributions: SingleplayerLevelDistribution[];
+  totalQuestionCount: number;
+  isUnlocked: boolean;
+  isCompleted: boolean;
+  grade: string | null;
 }
 
 export interface SingleplayerLevel {

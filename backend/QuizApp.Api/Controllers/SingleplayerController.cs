@@ -22,7 +22,12 @@ public sealed class SingleplayerController : ControllerBase
     [HttpGet("categories")]
     public async Task<ActionResult<IEnumerable<CategoryDto>>> GetCategories()
     {
-        return Ok(await _singleplayerService.GetCategoriesAsync());
+        if (!TryGetUserId(out var userId))
+        {
+            return Unauthorized();
+        }
+
+        return Ok(await _singleplayerService.GetCategoriesAsync(userId));
     }
 
     [HttpGet("categories/{categoryId}/levels")]

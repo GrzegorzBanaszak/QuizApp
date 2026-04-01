@@ -8,15 +8,15 @@ public sealed class SingleplayerProfile : Profile
 {
     public SingleplayerProfile()
     {
-        CreateMap<Category, CategoryDto>();
-
         CreateMap<LevelQuestionDistribution, LevelQuestionDistributionDto>()
             .ConstructUsing(src => new LevelQuestionDistributionDto(src.Difficulty.ToString(), src.Count));
 
         CreateMap<Level, LevelDto>()
             .ForMember(dest => dest.QuestionDistributions, opt => opt.MapFrom(src => src.QuestionDistributions.OrderBy(distribution => distribution.Difficulty)))
             .ForMember(dest => dest.TotalQuestionCount, opt => opt.MapFrom(src => src.QuestionDistributions.Sum(distribution => distribution.Count)))
-            .ForMember(dest => dest.IsUnlocked, opt => opt.Ignore());
+            .ForMember(dest => dest.IsUnlocked, opt => opt.Ignore())
+            .ForMember(dest => dest.IsCompleted, opt => opt.Ignore())
+            .ForMember(dest => dest.Grade, opt => opt.Ignore());
 
         CreateMap<SingleplayerAnswer, SingleplayerAnswerDto>();
 

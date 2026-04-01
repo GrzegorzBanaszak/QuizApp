@@ -1,22 +1,120 @@
-import { singleplayerMockData, useSingleplayerStore } from "../store/singleplayerStore";
+import { useEffect } from "react";
+import { useAuthStore } from "../../auth/store/authStore";
+import { fetchSingleplayerCategoryLevels } from "../services/singleplayerApi";
+import { useSingleplayerStore } from "../store/singleplayerStore";
+import type { SingleplayerLevelDistribution } from "../types/singleplayer";
 
 export const LevelSelectView = () => {
-  const profile = useSingleplayerStore((state) => state.profile);
+  const session = useAuthStore((state) => state.session);
+  const categories = useSingleplayerStore((state) => state.categories);
+  const categoryLevels = useSingleplayerStore((state) => state.categoryLevels);
+  const isCategoryLevelsLoading = useSingleplayerStore(
+    (state) => state.isCategoryLevelsLoading,
+  );
+  const categoryLevelsError = useSingleplayerStore(
+    (state) => state.categoryLevelsError,
+  );
   const selectedCategoryId = useSingleplayerStore(
     (state) => state.selectedCategoryId,
+  );
+  const hydrateCategoryLevels = useSingleplayerStore(
+    (state) => state.hydrateCategoryLevels,
+  );
+  const setCategoryLevelsLoading = useSingleplayerStore(
+    (state) => state.setCategoryLevelsLoading,
+  );
+  const setCategoryLevelsError = useSingleplayerStore(
+    (state) => state.setCategoryLevelsError,
   );
   const goToHome = useSingleplayerStore((state) => state.goToHome);
   const startLevel = useSingleplayerStore((state) => state.startLevel);
 
-  if (!profile) return null;
-
-  const avatar =
-    singleplayerMockData.avatars.find((item) => item.id === profile.avatarId) ??
-    singleplayerMockData.avatars[0];
   const category =
-    singleplayerMockData.categories.find(
-      (item) => item.id === selectedCategoryId,
-    ) ?? singleplayerMockData.categories[0];
+    categories.find((item) => item.id === selectedCategoryId) ?? categories[0];
+
+  useEffect(() => {
+    if (!selectedCategoryId) {
+      hydrateCategoryLevels([]);
+      return;
+    }
+
+    let isCancelled = false;
+
+    setCategoryLevelsLoading(true);
+    setCategoryLevelsError(null);
+
+    void fetchSingleplayerCategoryLevels(selectedCategoryId)
+      .then((levels) => {
+        if (isCancelled) {
+          return;
+        }
+
+        hydrateCategoryLevels(levels);
+      })
+      .catch((error) => {
+        if (isCancelled) {
+          return;
+        }
+
+        hydrateCategoryLevels([]);
+        setCategoryLevelsError(
+          error instanceof Error
+            ? error.message
+            : "Nie udało się pobrać poziomów dla kategorii.",
+        );
+      })
+      .finally(() => {
+        if (isCancelled) {
+          return;
+        }
+
+        setCategoryLevelsLoading(false);
+      });
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [
+    hydrateCategoryLevels,
+    selectedCategoryId,
+    setCategoryLevelsError,
+    setCategoryLevelsLoading,
+  ]);
+
+  if (!session || !category) {
+    return null;
+  }
+
+  const renderedLevels = categoryLevels.map((level, index) => {
+    const difficulty = resolveLevelDifficultyLabel(level.questionDistributions);
+    const difficultyAccent = getDifficultyAccent(difficulty);
+    const progress = category.levels.find((item) => item.id === level.id);
+    const order = progress?.order ?? index + 1;
+    const title = formatLevelTitle(level.name, order);
+    const state = level.isCompleted
+      ? "completed"
+      : level.isUnlocked
+        ? "available"
+        : "locked";
+
+    return {
+      id: String(level.id),
+      backendId: level.id,
+      order,
+      title,
+      questionCount: level.totalQuestionCount,
+      difficulty,
+      state,
+      grade: level.grade,
+      accentTone: difficultyAccent.accentTone,
+      accentGlow: difficultyAccent.accentGlow,
+      iconTone: difficultyAccent.iconTone,
+      lockedMessage:
+        state === "locked"
+          ? `Ukończ poziom ${Math.max(1, order - 1)}, aby odblokować`
+          : undefined,
+    };
+  });
 
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden p-6 md:p-12 lg:p-20">
@@ -42,32 +140,52 @@ export const LevelSelectView = () => {
         <div className="relative">
           <div className="h-32 w-32 rounded-full border-4 border-[#e08dff] p-1 shadow-[0_0_25px_rgba(224,141,255,0.3)]">
             <img
-              src={avatar.image}
-              alt={avatar.name}
+              src={session.profile.avatarUrl}
+              alt={session.profile.username}
               className="h-full w-full rounded-full object-cover"
             />
           </div>
           <div className="absolute -bottom-2 -right-2 rounded-full bg-[#ff68a7] px-3 py-1 text-xs font-bold uppercase tracking-tight text-[#460024]">
-            Level {profile.level}
+            {session.profile.totalExperience} XP
           </div>
         </div>
         <div className="text-center md:text-left">
           <h1 className="font-headline mb-2 text-5xl font-bold tracking-tight text-white md:text-6xl">
-            {profile.name}
+            {session.profile.username}
           </h1>
           <p className="text-lg text-[#aaa8c4]">
             Twój postęp w kategorii:{" "}
-            <span className="font-bold text-[#8ff5ff]">{category.title}</span>
+            <span className="font-bold text-[#8ff5ff]">{category.name}</span>
           </p>
         </div>
       </section>
 
       <main className="mx-auto w-full max-w-4xl space-y-6">
-        {singleplayerMockData.levels.map((level) => {
+        {categoryLevelsError ? (
+          <div className="rounded-[1.5rem] border border-[#ff68a7]/30 bg-[#ff68a7]/10 px-5 py-4 text-sm text-[#ffd1e0]">
+            {categoryLevelsError}
+          </div>
+        ) : null}
+
+        {isCategoryLevelsLoading ? (
+          <div className="glass-panel rounded-[2rem] px-6 py-10 text-center text-[#aaa8c4]">
+            Ładowanie poziomów kategorii...
+          </div>
+        ) : null}
+
+        {!isCategoryLevelsLoading &&
+        renderedLevels.length === 0 &&
+        !categoryLevelsError ? (
+          <div className="glass-panel rounded-[2rem] px-6 py-10 text-center text-[#aaa8c4]">
+            Ta kategoria nie ma jeszcze skonfigurowanych poziomów.
+          </div>
+        ) : null}
+
+        {renderedLevels.map((level) => {
           if (level.state === "locked") {
             return (
               <div
-                key={level.id}
+                key={level.backendId}
                 className="relative flex items-center justify-between rounded-[2rem] bg-[#111128] p-6 opacity-60"
               >
                 <div className="flex items-center gap-6">
@@ -81,8 +199,11 @@ export const LevelSelectView = () => {
                       {level.title}
                     </h2>
                     <div className="mt-1 flex items-center gap-2 text-[#74738d]">
+                      <span className="material-symbols-outlined text-sm">
+                        lock
+                      </span>
                       <span className="text-sm font-medium uppercase tracking-wide">
-                        Status: Zablokowany
+                        {`${level.difficulty} • ${level.questionCount} pytań`}
                       </span>
                     </div>
                   </div>
@@ -95,16 +216,10 @@ export const LevelSelectView = () => {
           }
 
           const isAvailable = level.state === "available";
-          const accentTone =
-            level.accent === "secondary" ? "text-[#ff68a7]" : "text-[#e08dff]";
-          const accentGlow =
-            level.accent === "secondary"
-              ? "shadow-[0_0_12px_rgba(255,104,167,0.35)]"
-              : "shadow-[0_0_12px_rgba(224,141,255,0.35)]";
 
           return (
             <div
-              key={level.id}
+              key={level.backendId}
               className={
                 isAvailable
                   ? "group relative flex items-center justify-between rounded-[2rem] bg-gradient-to-r from-[#e08dff] to-[#ff68a7] p-[2px] shadow-[0_0_30px_rgba(224,141,255,0.2)]"
@@ -120,17 +235,19 @@ export const LevelSelectView = () => {
               >
                 <div className="flex items-center gap-6">
                   <div
-                    className={`flex h-20 w-20 items-center justify-center rounded-[1.5rem] bg-[#232341] ${accentGlow}`}
+                    className={`flex h-20 w-20 items-center justify-center rounded-[1.5rem] bg-[#232341] ${level.accentGlow}`}
                   >
                     {isAvailable ? (
-                      <span className="material-symbols-outlined text-4xl text-[#e08dff]">
+                      <span
+                        className={`material-symbols-outlined text-4xl ${level.iconTone}`}
+                      >
                         bolt
                       </span>
                     ) : (
                       <span
-                        className={`font-headline text-5xl font-black ${accentTone}`}
+                        className={`font-headline text-5xl font-black ${level.accentTone}`}
                       >
-                        {level.letter}
+                        {level.grade ?? level.order}
                       </span>
                     )}
                   </div>
@@ -140,21 +257,23 @@ export const LevelSelectView = () => {
                     </h2>
                     <div
                       className={`mt-1 flex items-center gap-2 ${
-                        isAvailable ? "text-[#e08dff]" : "text-[#8ff5ff]"
+                        isAvailable ? level.iconTone : "text-[#8ff5ff]"
                       }`}
                     >
                       <span className="material-symbols-outlined text-sm">
                         {isAvailable ? "stars" : "check_circle"}
                       </span>
                       <span className="text-sm font-medium uppercase tracking-wide">
-                        {level.subtitle}
+                        {`${level.difficulty} • ${level.questionCount} pytań`}
                       </span>
                     </div>
                   </div>
                 </div>
                 <button
                   type="button"
-                  onClick={() => startLevel(level.id)}
+                  onClick={() =>
+                    void startLevel(level.backendId, level.title)
+                  }
                   className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${
                     isAvailable
                       ? "bg-[#e08dff] px-8 py-3 text-lg text-[#4f006c] shadow-lg shadow-[#e08dff]/40 hover:scale-105"
@@ -182,3 +301,93 @@ export const LevelSelectView = () => {
     </div>
   );
 };
+
+function resolveLevelDifficultyLabel(
+  distributions: SingleplayerLevelDistribution[],
+): string {
+  const dominantDistribution = [...distributions].sort((left, right) => {
+    if (right.count !== left.count) {
+      return right.count - left.count;
+    }
+
+    return (
+      normalizeDifficultyWeight(right.difficulty) -
+      normalizeDifficultyWeight(left.difficulty)
+    );
+  })[0];
+
+  return dominantDistribution?.difficulty ?? "Easy";
+}
+
+function normalizeDifficultyWeight(difficulty: string): number {
+  switch (difficulty.toLowerCase()) {
+    case "easy":
+      return 1;
+    case "easymedium":
+      return 2;
+    case "medium":
+      return 3;
+    case "mediumhard":
+      return 4;
+    case "hard":
+      return 5;
+    default:
+      return 0;
+  }
+}
+
+function getDifficultyAccent(difficulty: string): {
+  accentTone: string;
+  accentGlow: string;
+  iconTone: string;
+} {
+  switch (difficulty.toLowerCase()) {
+    case "easy":
+      return {
+        accentTone: "text-emerald-400",
+        accentGlow: "shadow-[0_0_12px_rgba(52,211,153,0.35)]",
+        iconTone: "text-emerald-400",
+      };
+    case "easymedium":
+      return {
+        accentTone: "text-lime-300",
+        accentGlow: "shadow-[0_0_12px_rgba(190,242,100,0.35)]",
+        iconTone: "text-lime-300",
+      };
+    case "medium":
+      return {
+        accentTone: "text-amber-300",
+        accentGlow: "shadow-[0_0_12px_rgba(252,211,77,0.35)]",
+        iconTone: "text-amber-300",
+      };
+    case "mediumhard":
+      return {
+        accentTone: "text-orange-400",
+        accentGlow: "shadow-[0_0_12px_rgba(251,146,60,0.35)]",
+        iconTone: "text-orange-400",
+      };
+    case "hard":
+      return {
+        accentTone: "text-rose-400",
+        accentGlow: "shadow-[0_0_12px_rgba(251,113,133,0.35)]",
+        iconTone: "text-rose-400",
+      };
+    default:
+      return {
+        accentTone: "text-[#e08dff]",
+        accentGlow: "shadow-[0_0_12px_rgba(224,141,255,0.35)]",
+        iconTone: "text-[#e08dff]",
+      };
+  }
+}
+
+function formatLevelTitle(name: string, order: number): string {
+  const normalizedName = name.trim();
+  const expectedPrefix = `poziom ${order}`;
+
+  if (normalizedName.toLowerCase().startsWith(expectedPrefix)) {
+    return normalizedName;
+  }
+
+  return `Poziom ${order}: ${normalizedName}`;
+}

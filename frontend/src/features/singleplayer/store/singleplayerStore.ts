@@ -1,107 +1,254 @@
 import { create } from "zustand";
-import {
-  avatars,
-  categories,
-  leaderboard,
-  levels,
-  question,
-  rewards,
-} from "../services/singleplayerMockData";
+import { fetchSingleplayerGame, submitSingleplayerGame } from "../services/singleplayerApi";
 import type {
-  SingleplayerProfile,
+  SingleplayerAnswerSelection,
+  SingleplayerCategory,
+  SingleplayerCategoryLevelDetails,
+  SingleplayerGameSession,
+  SingleplayerResultSummary,
   SingleplayerScreen,
 } from "../types/singleplayer";
 
 interface SingleplayerState {
   screen: SingleplayerScreen;
-  draftName: string;
-  selectedAvatarId: string;
-  selectedCategoryId: string;
-  selectedLevelId: string;
-  selectedAnswerIndex: number | null;
-  profile: SingleplayerProfile | null;
-  setDraftName: (value: string) => void;
-  setSelectedAvatarId: (avatarId: string) => void;
-  setSelectedCategoryId: (categoryId: string) => void;
-  saveProfile: () => void;
-  editProfile: () => void;
+  categories: SingleplayerCategory[];
+  isCategoriesLoading: boolean;
+  categoriesError: string | null;
+  categoryLevels: SingleplayerCategoryLevelDetails[];
+  isCategoryLevelsLoading: boolean;
+  categoryLevelsError: string | null;
+  selectedCategoryId: number | null;
+  selectedLevelId: number | null;
+  selectedLevelName: string | null;
+  selectedAnswerId: string | null;
+  currentQuestionIndex: number;
+  answerSelections: SingleplayerAnswerSelection[];
+  gameSession: SingleplayerGameSession | null;
+  resultSummary: SingleplayerResultSummary | null;
+  isGameLoading: boolean;
+  isSubmittingResult: boolean;
+  gameError: string | null;
+  hydrateCategories: (categories: SingleplayerCategory[]) => void;
+  setCategoriesLoading: (value: boolean) => void;
+  setCategoriesError: (value: string | null) => void;
+  hydrateCategoryLevels: (levels: SingleplayerCategoryLevelDetails[]) => void;
+  setCategoryLevelsLoading: (value: boolean) => void;
+  setCategoryLevelsError: (value: string | null) => void;
+  setSelectedCategoryId: (categoryId: number) => void;
+  setSelectedAnswerId: (answerId: string | null) => void;
   goToLevelSelect: () => void;
   goToHome: () => void;
-  startLevel: (levelId: string) => void;
-  selectAnswer: (answerIndex: number) => void;
-  finishQuestion: () => void;
-  replay: () => void;
+  startLevel: (levelId: number, levelName: string) => Promise<void>;
+  advanceQuestion: () => Promise<void>;
+  replay: () => Promise<void>;
   surrender: () => void;
 }
 
+const buildErrorMessage = (error: unknown, fallback: string): string =>
+  error instanceof Error ? error.message : fallback;
+
+const createGameplayResetState = () => ({
+  selectedAnswerId: null,
+  currentQuestionIndex: 0,
+  answerSelections: [] as SingleplayerAnswerSelection[],
+  gameSession: null as SingleplayerGameSession | null,
+  resultSummary: null as SingleplayerResultSummary | null,
+  isGameLoading: false,
+  isSubmittingResult: false,
+  gameError: null as string | null,
+});
+
 export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
   screen: "home",
-  draftName: "",
-  selectedAvatarId: avatars[0]?.id ?? "avatar-1",
-  selectedCategoryId: categories[0]?.id ?? "general",
-  selectedLevelId: "hard",
-  selectedAnswerIndex: null,
-  profile: null,
+  categories: [],
+  isCategoriesLoading: false,
+  categoriesError: null,
+  categoryLevels: [],
+  isCategoryLevelsLoading: false,
+  categoryLevelsError: null,
+  selectedCategoryId: null,
+  selectedLevelId: null,
+  selectedLevelName: null,
+  selectedAnswerId: null,
+  currentQuestionIndex: 0,
+  answerSelections: [],
+  gameSession: null,
+  resultSummary: null,
+  isGameLoading: false,
+  isSubmittingResult: false,
+  gameError: null,
 
-  setDraftName: (value) => set({ draftName: value }),
-  setSelectedAvatarId: (avatarId) => set({ selectedAvatarId: avatarId }),
-  setSelectedCategoryId: (categoryId) =>
-    set({ selectedCategoryId: categoryId }),
-
-  saveProfile: () =>
+  hydrateCategories: (categories) =>
     set((state) => {
-      const trimmedName = state.draftName.trim();
-      if (!trimmedName) return state;
+      const hasSelectedCategory = categories.some(
+        (category) => category.id === state.selectedCategoryId,
+      );
 
       return {
-        profile: {
-          name: trimmedName,
-          avatarId: state.selectedAvatarId,
-          level: 42,
-          xp: "2.4k XP",
-        },
+        categories,
+        selectedCategoryId: hasSelectedCategory
+          ? state.selectedCategoryId
+          : categories[0]?.id ?? null,
       };
     }),
+  setCategoriesLoading: (value) => set({ isCategoriesLoading: value }),
+  setCategoriesError: (value) => set({ categoriesError: value }),
+  hydrateCategoryLevels: (categoryLevels) => set({ categoryLevels }),
+  setCategoryLevelsLoading: (value) => set({ isCategoryLevelsLoading: value }),
+  setCategoryLevelsError: (value) => set({ categoryLevelsError: value }),
+  setSelectedCategoryId: (categoryId) => set({ selectedCategoryId: categoryId }),
+  setSelectedAnswerId: (answerId) => set({ selectedAnswerId: answerId }),
 
-  editProfile: () =>
-    set((state) => ({
-      draftName: state.profile?.name ?? "",
-      selectedAvatarId: state.profile?.avatarId ?? state.selectedAvatarId,
-      profile: null,
-      screen: "home",
-    })),
-
-  goToLevelSelect: () => {
-    if (!get().profile) return;
-    set({ screen: "levelSelect" });
-  },
-
-  goToHome: () => set({ screen: "home" }),
-
-  startLevel: (levelId) =>
+  goToLevelSelect: () =>
     set({
-      selectedLevelId: levelId,
-      selectedAnswerIndex: null,
-      screen: "gameplay",
+      screen: "levelSelect",
+      ...createGameplayResetState(),
     }),
 
-  selectAnswer: (answerIndex) => set({ selectedAnswerIndex: answerIndex }),
+  goToHome: () =>
+    set({
+      screen: "home",
+      ...createGameplayResetState(),
+      selectedLevelId: null,
+      selectedLevelName: null,
+    }),
 
-  finishQuestion: () => {
-    if (get().selectedAnswerIndex === null) return;
-    set({ screen: "result" });
+  startLevel: async (levelId, levelName) => {
+    set({
+      screen: "gameplay",
+      selectedLevelId: levelId,
+      selectedLevelName: levelName,
+      ...createGameplayResetState(),
+      isGameLoading: true,
+    });
+
+    try {
+      const gameSession = await fetchSingleplayerGame(levelId);
+
+      set({
+        gameSession,
+        currentQuestionIndex: 0,
+        selectedAnswerId: null,
+        answerSelections: [],
+        resultSummary: null,
+        gameError: null,
+      });
+    } catch (error) {
+      set({
+        gameError: buildErrorMessage(
+          error,
+          "Nie udało się pobrać pytań dla tego poziomu.",
+        ),
+      });
+    } finally {
+      set({ isGameLoading: false });
+    }
   },
 
-  replay: () => set({ selectedAnswerIndex: null, screen: "gameplay" }),
+  advanceQuestion: async () => {
+    const {
+      currentQuestionIndex,
+      gameSession,
+      selectedAnswerId,
+      answerSelections,
+      selectedCategoryId,
+      categories,
+    } = get();
 
-  surrender: () => set({ screen: "levelSelect" }),
+    if (!gameSession || !selectedAnswerId) {
+      return;
+    }
+
+    const currentQuestion = gameSession.questions[currentQuestionIndex];
+    if (!currentQuestion) {
+      return;
+    }
+
+    const updatedSelections = [
+      ...answerSelections.filter(
+        (selection) => selection.questionId !== currentQuestion.id,
+      ),
+      {
+        questionId: currentQuestion.id,
+        selectedAnswerId,
+      },
+    ];
+
+    const isLastQuestion =
+      currentQuestionIndex >= gameSession.questions.length - 1;
+
+    if (!isLastQuestion) {
+      set({
+        answerSelections: updatedSelections,
+        currentQuestionIndex: currentQuestionIndex + 1,
+        selectedAnswerId: null,
+        gameError: null,
+      });
+      return;
+    }
+
+    set({
+      answerSelections: updatedSelections,
+      isSubmittingResult: true,
+      gameError: null,
+    });
+
+    try {
+      const resultSummary = await submitSingleplayerGame(gameSession.levelId, {
+        sessionId: gameSession.sessionId,
+        playerAnswers: updatedSelections,
+      });
+
+      const updatedCategories = categories.map((category) => {
+        if (category.id !== selectedCategoryId) {
+          return category;
+        }
+
+        const updatedLevels = category.levels.map((level) =>
+          level.id === gameSession.levelId
+            ? { ...level, isCompleted: true }
+            : level,
+        );
+
+        return {
+          ...category,
+          levels: updatedLevels,
+          completedLevelsCount: updatedLevels.filter((level) => level.isCompleted)
+            .length,
+        };
+      });
+
+      set({
+        categories: updatedCategories,
+        resultSummary,
+        screen: "result",
+        selectedAnswerId: null,
+      });
+    } catch (error) {
+      set({
+        gameError: buildErrorMessage(
+          error,
+          "Nie udało się wysłać wyniku rozgrywki.",
+        ),
+      });
+    } finally {
+      set({ isSubmittingResult: false });
+    }
+  },
+
+  replay: async () => {
+    const { selectedLevelId, selectedLevelName } = get();
+
+    if (!selectedLevelId || !selectedLevelName) {
+      return;
+    }
+
+    await get().startLevel(selectedLevelId, selectedLevelName);
+  },
+
+  surrender: () =>
+    set({
+      screen: "levelSelect",
+      ...createGameplayResetState(),
+    }),
 }));
-
-export const singleplayerMockData = {
-  avatars,
-  categories,
-  levels,
-  question,
-  rewards,
-  leaderboard,
-};
