@@ -22,6 +22,58 @@ namespace QuizApp.Api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("QuizApp.Api.Models.Avatar", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<int>("Price")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
+
+                    b.Property<string>("RequiredAchievementCode")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("RequiredLevelKey")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("SortOrder")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UnlockType")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Key")
+                        .IsUnique();
+
+                    b.ToTable("Avatars", (string)null);
+                });
+
             modelBuilder.Entity("QuizApp.Api.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -56,6 +108,11 @@ namespace QuizApp.Api.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -67,6 +124,9 @@ namespace QuizApp.Api.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("Key")
+                        .IsUnique();
 
                     b.ToTable("Levels", (string)null);
                 });
@@ -273,6 +333,9 @@ namespace QuizApp.Api.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETUTCDATE()");
 
+                    b.Property<int?>("CurrentAvatarId")
+                        .HasColumnType("int");
+
                     b.Property<string>("FacebookId")
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
@@ -303,6 +366,8 @@ namespace QuizApp.Api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CurrentAvatarId");
+
                     b.HasIndex("FacebookId")
                         .IsUnique()
                         .HasFilter("[FacebookId] IS NOT NULL");
@@ -315,6 +380,55 @@ namespace QuizApp.Api.Migrations
                         .IsUnique();
 
                     b.ToTable("Users", (string)null);
+                });
+
+            modelBuilder.Entity("QuizApp.Api.Models.UserAchievement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AwardedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId", "Code")
+                        .IsUnique();
+
+                    b.ToTable("UserAchievements", (string)null);
+                });
+
+            modelBuilder.Entity("QuizApp.Api.Models.UserOwnedAvatar", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AvatarId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UnlockedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.HasKey("UserId", "AvatarId");
+
+                    b.HasIndex("AvatarId");
+
+                    b.ToTable("UserOwnedAvatars", (string)null);
                 });
 
             modelBuilder.Entity("QuizApp.Api.Models.Level", b =>
@@ -426,6 +540,53 @@ namespace QuizApp.Api.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("QuizApp.Api.Models.User", b =>
+                {
+                    b.HasOne("QuizApp.Api.Models.Avatar", "CurrentAvatar")
+                        .WithMany("SelectedByUsers")
+                        .HasForeignKey("CurrentAvatarId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("CurrentAvatar");
+                });
+
+            modelBuilder.Entity("QuizApp.Api.Models.UserAchievement", b =>
+                {
+                    b.HasOne("QuizApp.Api.Models.User", "User")
+                        .WithMany("Achievements")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("QuizApp.Api.Models.UserOwnedAvatar", b =>
+                {
+                    b.HasOne("QuizApp.Api.Models.Avatar", "Avatar")
+                        .WithMany("Owners")
+                        .HasForeignKey("AvatarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("QuizApp.Api.Models.User", "User")
+                        .WithMany("OwnedAvatars")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Avatar");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("QuizApp.Api.Models.Avatar", b =>
+                {
+                    b.Navigation("Owners");
+
+                    b.Navigation("SelectedByUsers");
+                });
+
             modelBuilder.Entity("QuizApp.Api.Models.Category", b =>
                 {
                     b.Navigation("Levels");
@@ -446,6 +607,13 @@ namespace QuizApp.Api.Migrations
             modelBuilder.Entity("QuizApp.Api.Models.SingleplayerQuestion", b =>
                 {
                     b.Navigation("Answers");
+                });
+
+            modelBuilder.Entity("QuizApp.Api.Models.User", b =>
+                {
+                    b.Navigation("Achievements");
+
+                    b.Navigation("OwnedAvatars");
                 });
 #pragma warning restore 612, 618
         }

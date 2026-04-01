@@ -1,3 +1,6 @@
 namespace QuizApp.Api.Dto;
 
-public sealed record UpdateUserProfileRequest(string Username, string AvatarUrl);
+public sealed class UpdateUserProfileRequest
+{
+    public string Username { get; init; } = string.Empty;
+}

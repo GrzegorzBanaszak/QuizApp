@@ -23,6 +23,9 @@ public sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasMaxLength(500);
 
+        entity.Property(u => u.CurrentAvatarId)
+            .IsRequired(false);
+
         entity.Property(u => u.Role)
             .IsRequired()
             .HasMaxLength(30);
@@ -50,5 +53,11 @@ public sealed class UserConfiguration : IEntityTypeConfiguration<User>
         entity.HasIndex(u => u.Username).IsUnique();
         entity.HasIndex(u => u.GoogleId).IsUnique().HasFilter("[GoogleId] IS NOT NULL");
         entity.HasIndex(u => u.FacebookId).IsUnique().HasFilter("[FacebookId] IS NOT NULL");
+
+        entity.HasOne(u => u.CurrentAvatar)
+            .WithMany(avatar => avatar.SelectedByUsers)
+            .HasForeignKey(u => u.CurrentAvatarId)
+            .OnDelete(DeleteBehavior.SetNull)
+            .IsRequired(false);
     }
 }

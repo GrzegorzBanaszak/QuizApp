@@ -10,6 +10,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using QuizApp.Api.Dto;
+using QuizApp.Api.Data.Seed;
 
 var builder = WebApplication.CreateBuilder(args);
 var allowedOrigins = new[]
@@ -107,9 +108,13 @@ builder.Services
 
 builder.Services.AddSignalR();
 builder.Services.AddHttpClient();
+builder.Services.Configure<AvatarSeedOptions>(builder.Configuration.GetSection(AvatarSeedOptions.SectionName));
+builder.Services.AddScoped<AvatarSeedService>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISingleplayerService, SingleplayerService>();
+builder.Services.AddScoped<IAvatarService, AvatarService>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddHostedService<TemporaryGuestCleanupService>();
 
 
@@ -137,6 +142,12 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 });
 
 var app = builder.Build();
+
+await using (var scope = app.Services.CreateAsyncScope())
+{
+    var seedService = scope.ServiceProvider.GetRequiredService<AvatarSeedService>();
+    await seedService.SeedAsync();
+}
 
 if (app.Environment.IsDevelopment())
 {

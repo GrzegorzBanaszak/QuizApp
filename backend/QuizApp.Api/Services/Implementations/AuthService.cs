@@ -16,19 +16,22 @@ public sealed class AuthService : IAuthService
     private readonly IMapper _mapper;
     private readonly AppDbContext _dbContext;
     private readonly IJwtTokenService _jwtTokenService;
+    private readonly IAvatarService _avatarService;
 
     public AuthService(
         IConfiguration configuration,
         IHttpClientFactory httpClientFactory,
         IMapper mapper,
         AppDbContext dbContext,
-        IJwtTokenService jwtTokenService)
+        IJwtTokenService jwtTokenService,
+        IAvatarService avatarService)
     {
         _configuration = configuration;
         _httpClientFactory = httpClientFactory;
         _mapper = mapper;
         _dbContext = dbContext;
         _jwtTokenService = jwtTokenService;
+        _avatarService = avatarService;
     }
 
     public async Task<ISocialAuthResult> VerifyGoogleAsync(string token)
@@ -51,8 +54,9 @@ public sealed class AuthService : IAuthService
     {
         var (provider, socialProfile) = await ValidateSocialTokenAsync(request.Provider, request.ProviderToken);
         var username = ResolveUsername(request.CustomUsername, socialProfile.Name);
-        var avatarUrl = ResolveAvatarUrl(request.CustomAvatarUrl, socialProfile.AvatarUrl);
         var now = DateTime.UtcNow;
+        var defaultAvatar = await _avatarService.GetDefaultAvatarAsync()
+            ?? throw new InvalidOperationException("No default avatar is configured.");
 
         var user = await FindUserByProviderIdAsync(provider, socialProfile);
 
@@ -61,7 +65,8 @@ public sealed class AuthService : IAuthService
             user = new User
             {
                 Username = username,
-                AvatarUrl = avatarUrl,
+                AvatarUrl = defaultAvatar.ImageUrl,
+                CurrentAvatarId = defaultAvatar.Id,
                 Role = "User",
                 GoogleId = provider == AuthProvider.Google ? socialProfile.GoogleId : null,
                 FacebookId = provider == AuthProvider.Facebook ? socialProfile.FacebookId : null,
@@ -85,11 +90,14 @@ public sealed class AuthService : IAuthService
     {
         var username = ResolveGuestUsername(request.CustomUsername);
         await EnsureUsernameAvailableAsync(username);
+        var defaultAvatar = await _avatarService.GetDefaultAvatarAsync()
+            ?? throw new InvalidOperationException("No default avatar is configured.");
 
         var user = new User
         {
             Username = username,
-            AvatarUrl = ResolveAvatarUrl(request.CustomAvatarUrl, string.Empty),
+            AvatarUrl = defaultAvatar.ImageUrl,
+            CurrentAvatarId = defaultAvatar.Id,
             Role = "Guest",
             LastLoginAt = DateTime.UtcNow
         };
@@ -229,10 +237,4 @@ public sealed class AuthService : IAuthService
             : customUsername.Trim();
     }
 
-    private static string ResolveAvatarUrl(string? customAvatarUrl, string fallbackAvatarUrl)
-    {
-        return string.IsNullOrWhiteSpace(customAvatarUrl)
-            ? fallbackAvatarUrl
-            : customAvatarUrl.Trim();
-    }
 }

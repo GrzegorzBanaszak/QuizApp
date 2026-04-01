@@ -32,4 +32,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="SeedData\avatars.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
