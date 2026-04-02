@@ -1,0 +1,118 @@
+[
+  {
+    "key": "base-fox",
+    "name": "Fox Scout",
+    "imageUrl": "/images/avatars/base-fox.png",
+    "sortOrder": 10,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "base-panda",
+    "name": "Panda Thinker",
+    "imageUrl": "/images/avatars/base-panda.png",
+    "sortOrder": 20,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "base-owl",
+    "name": "Owl Scholar",
+    "imageUrl": "/images/avatars/base-owl.png",
+    "sortOrder": 30,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "base-cat",
+    "name": "Cat Sprint",
+    "imageUrl": "/images/avatars/base-cat.png",
+    "sortOrder": 40,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "base-dog",
+    "name": "Dog Captain",
+    "imageUrl": "/images/avatars/base-dog.png",
+    "sortOrder": 50,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "base-bear",
+    "name": "Bear Tank",
+    "imageUrl": "/images/avatars/base-bear.png",
+    "sortOrder": 60,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "base-rabbit",
+    "name": "Rabbit Pulse",
+    "imageUrl": "/images/avatars/base-rabbit.png",
+    "sortOrder": 70,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "base-wolf",
+    "name": "Wolf Echo",
+    "imageUrl": "/images/avatars/base-wolf.png",
+    "sortOrder": 80,
+    "unlockType": "Default",
+    "price": 0
+  },
+  {
+    "key": "level-neon-knight",
+    "name": "Neon Knight",
+    "imageUrl": "/images/avatars/level-neon-knight.png",
+    "sortOrder": 90,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "level-3-cleared",
+    "price": 0
+  },
+  {
+    "key": "level-ember-mage",
+    "name": "Ember Mage",
+    "imageUrl": "/images/avatars/level-ember-mage.png",
+    "sortOrder": 100,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "level-7-cleared",
+    "price": 0
+  },
+  {
+    "key": "achievement-storm-crown",
+    "name": "Storm Crown",
+    "imageUrl": "/images/avatars/achievement-storm-crown.png",
+    "sortOrder": 110,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "first-category-cleared",
+    "price": 0
+  },
+  {
+    "key": "achievement-void-mask",
+    "name": "Void Mask",
+    "imageUrl": "/images/avatars/achievement-void-mask.png",
+    "sortOrder": 120,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "all-categories-cleared",
+    "price": 0
+  },
+  {
+    "key": "shop-gold-viking",
+    "name": "Gold Viking",
+    "imageUrl": "/images/avatars/shop-gold-viking.png",
+    "sortOrder": 130,
+    "unlockType": "Purchase",
+    "price": 250
+  },
+  {
+    "key": "shop-cosmic-queen",
+    "name": "Cosmic Queen",
+    "imageUrl": "/images/avatars/shop-cosmic-queen.png",
+    "sortOrder": 140,
+    "unlockType": "Purchase",
+    "price": 500
+  }
+]

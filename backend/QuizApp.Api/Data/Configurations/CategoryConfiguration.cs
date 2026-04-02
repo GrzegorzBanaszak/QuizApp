@@ -12,6 +12,10 @@ public sealed class CategoryConfiguration : IEntityTypeConfiguration<Category>
 
         entity.HasKey(c => c.Id);
 
+        entity.Property(c => c.Key)
+            .IsRequired()
+            .HasMaxLength(100);
+
         entity.Property(c => c.Name)
             .IsRequired()
             .HasMaxLength(200);
@@ -29,5 +33,8 @@ public sealed class CategoryConfiguration : IEntityTypeConfiguration<Category>
             .WithOne(q => q.Category)
             .HasForeignKey(q => q.CategoryId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        entity.HasIndex(c => c.Key)
+            .IsUnique();
     }
 }

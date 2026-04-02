@@ -12,6 +12,10 @@ public sealed class LevelConfiguration : IEntityTypeConfiguration<Level>
 
         entity.HasKey(l => l.Id);
 
+        entity.Property(l => l.Key)
+            .IsRequired()
+            .HasMaxLength(100);
+
         entity.Property(l => l.Name)
             .IsRequired()
             .HasMaxLength(200);
@@ -23,5 +27,8 @@ public sealed class LevelConfiguration : IEntityTypeConfiguration<Level>
             .WithOne(d => d.Level)
             .HasForeignKey(d => d.LevelId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        entity.HasIndex(l => l.Key)
+            .IsUnique();
     }
 }

@@ -1,11 +1,7 @@
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using QuizApp.Api.Data;
 using QuizApp.Api.Dto;
-using QuizApp.Api.Models;
+using QuizApp.Api.Services.Abstractions;
 
 namespace QuizApp.Api.Controllers;
 
@@ -14,92 +10,45 @@ namespace QuizApp.Api.Controllers;
 [Authorize]
 public sealed class UserController : ControllerBase
 {
-    private readonly AppDbContext _dbContext;
+    private readonly IUserService _userService;
 
-    public UserController(AppDbContext dbContext)
+    public UserController(IUserService userService)
     {
-        _dbContext = dbContext;
+        _userService = userService;
     }
 
     [HttpGet("me")]
-    public async Task<ActionResult<UserProfileDto>> Me()
+    public async Task<ActionResult<UserProfileDto>> Me(CancellationToken cancellationToken)
     {
-        var user = await GetCurrentUserAsync();
-        if (user is null)
+        var profile = await _userService.GetCurrentUserProfileAsync(User, cancellationToken);
+        if (profile is null)
         {
             return NotFound();
         }
 
-        return Ok(ToProfileDto(user));
+        return Ok(profile);
     }
 
     [HttpPut("me")]
-    public async Task<ActionResult<UserProfileDto>> UpdateMe([FromBody] UpdateUserProfileRequest request)
+    public async Task<ActionResult<UserProfileDto>> UpdateMe([FromBody] UpdateUserProfileRequest request, CancellationToken cancellationToken)
     {
         if (request is null)
         {
             return BadRequest(new { message = "Request body is required." });
         }
-
-        var username = request.Username?.Trim() ?? string.Empty;
-        var avatarUrl = request.AvatarUrl?.Trim() ?? string.Empty;
-
-        if (string.IsNullOrWhiteSpace(username))
+        
+        try
         {
-            return BadRequest(new { message = "Username is required." });
+            var profile = await _userService.UpdateCurrentUserProfileAsync(User, request, cancellationToken);
+            return profile is null ? NotFound() : Ok(profile);
         }
-
-        if (string.IsNullOrWhiteSpace(avatarUrl))
+        catch (ArgumentException ex)
         {
-            return BadRequest(new { message = "AvatarUrl is required." });
+            return BadRequest(new { message = ex.Message });
         }
-
-        var user = await GetCurrentUserAsync();
-        if (user is null)
+        catch (InvalidOperationException ex)
         {
-            return NotFound();
+            return Conflict(new { message = ex.Message });
         }
-
-        if (!string.Equals(user.Username, username, StringComparison.Ordinal))
-        {
-            var isUsernameTaken = await _dbContext.Users.AnyAsync(u => u.Username == username && u.Id != user.Id);
-            if (isUsernameTaken)
-            {
-                return Conflict(new { message = "Username is already taken." });
-            }
-        }
-
-        user.Username = username;
-        user.AvatarUrl = avatarUrl;
-
-        await _dbContext.SaveChangesAsync();
-
-        return Ok(ToProfileDto(user));
-    }
-
-    private async Task<User?> GetCurrentUserAsync()
-    {
-        var userIdValue =
-            User.FindFirstValue(ClaimTypes.NameIdentifier) ??
-            User.FindFirstValue(JwtRegisteredClaimNames.Sub);
-
-        if (!Guid.TryParse(userIdValue, out var userId))
-        {
-            return null;
-        }
-
-        return await _dbContext.Users.SingleOrDefaultAsync(u => u.Id == userId);
-    }
-
-    private static UserProfileDto ToProfileDto(User user)
-    {
-        return new UserProfileDto
-        {
-            Id = user.Id,
-            Username = user.Username,
-            AvatarUrl = user.AvatarUrl,
-            TotalExperience = user.TotalExperience,
-            Coins = user.Coins
-        };
     }
 }

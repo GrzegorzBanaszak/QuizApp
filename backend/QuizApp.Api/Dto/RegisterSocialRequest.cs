@@ -6,4 +6,4 @@ public sealed record RegisterSocialRequest(
     AuthProvider Provider,
     string ProviderToken,
     string? CustomUsername,
-    string? CustomAvatarUrl);
+    int? SelectedAvatarId);

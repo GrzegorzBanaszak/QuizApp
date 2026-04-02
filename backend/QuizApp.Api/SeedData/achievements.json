@@ -1,0 +1,57 @@
+[
+  {
+    "code": "level-3-cleared",
+    "name": "Third Step",
+    "description": "Complete level level-3.",
+    "iconUrl": "/images/achievements/level-3-cleared.png",
+    "sortOrder": 10,
+    "triggerType": "LevelCompletion",
+    "requiredLevelKey": "level-3",
+    "rewardType": "Avatar",
+    "rewardAvatarKey": "level-neon-knight"
+  },
+  {
+    "code": "level-7-cleared",
+    "name": "Deep Run",
+    "description": "Complete level level-7.",
+    "iconUrl": "/images/achievements/level-7-cleared.png",
+    "sortOrder": 20,
+    "triggerType": "LevelCompletion",
+    "requiredLevelKey": "level-7",
+    "rewardType": "Avatar",
+    "rewardAvatarKey": "level-ember-mage"
+  },
+  {
+    "code": "all-categories-cleared",
+    "name": "World Tour",
+    "description": "Complete all available categories.",
+    "iconUrl": "/images/achievements/all-categories-cleared.png",
+    "sortOrder": 30,
+    "triggerType": "CompletedCategoriesCount",
+    "requiredCompletedCategoriesCount": 3,
+    "rewardType": "Avatar",
+    "rewardAvatarKey": "achievement-void-mask"
+  },
+  {
+    "code": "first-category-cleared",
+    "name": "Category Champion",
+    "description": "Complete your first category.",
+    "iconUrl": "/images/achievements/first-category-cleared.png",
+    "sortOrder": 40,
+    "triggerType": "CompletedCategoriesCount",
+    "requiredCompletedCategoriesCount": 1,
+    "rewardType": "Avatar",
+    "rewardAvatarKey": "achievement-storm-crown"
+  },
+  {
+    "code": "two-categories-cleared",
+    "name": "Double Crown",
+    "description": "Complete two categories.",
+    "iconUrl": "/images/achievements/two-categories-cleared.png",
+    "sortOrder": 50,
+    "triggerType": "CompletedCategoriesCount",
+    "requiredCompletedCategoriesCount": 2,
+    "rewardType": "Coins",
+    "rewardCoins": 150
+  }
+]
