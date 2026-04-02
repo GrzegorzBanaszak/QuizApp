@@ -55,8 +55,8 @@ public sealed class AuthService : IAuthService
         var (provider, socialProfile) = await ValidateSocialTokenAsync(request.Provider, request.ProviderToken);
         var username = ResolveUsername(request.CustomUsername, socialProfile.Name);
         var now = DateTime.UtcNow;
-        var defaultAvatar = await _avatarService.GetDefaultAvatarAsync()
-            ?? throw new InvalidOperationException("No default avatar is configured.");
+        var selectedAvatar = await _avatarService.ResolveDefaultAvatarAsync(request.SelectedAvatarId)
+            ?? throw new InvalidOperationException("Selected avatar must be one of the default avatars.");
 
         var user = await FindUserByProviderIdAsync(provider, socialProfile);
 
@@ -65,8 +65,8 @@ public sealed class AuthService : IAuthService
             user = new User
             {
                 Username = username,
-                AvatarUrl = defaultAvatar.ImageUrl,
-                CurrentAvatarId = defaultAvatar.Id,
+                AvatarUrl = selectedAvatar.ImageUrl,
+                CurrentAvatarId = selectedAvatar.Id,
                 Role = "User",
                 GoogleId = provider == AuthProvider.Google ? socialProfile.GoogleId : null,
                 FacebookId = provider == AuthProvider.Facebook ? socialProfile.FacebookId : null,

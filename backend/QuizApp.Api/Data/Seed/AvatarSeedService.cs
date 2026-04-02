@@ -1,4 +1,3 @@
-using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using QuizApp.Api.Models;
@@ -33,12 +32,7 @@ public sealed class AvatarSeedService
             return;
         }
 
-        var json = await File.ReadAllTextAsync(filePath, cancellationToken);
-        var items = JsonSerializer.Deserialize<List<AvatarSeedItem>>(json, new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        });
-
+        var items = await SeedJsonFileReader.ReadListAsync<AvatarSeedItem>(filePath, cancellationToken);
         if (items is null || items.Count == 0)
         {
             _logger.LogWarning("Avatar seed file {FilePath} does not contain any avatars.", filePath);
@@ -56,11 +50,17 @@ public sealed class AvatarSeedService
             throw new InvalidOperationException($"Avatar seed contains duplicated keys: {string.Join(", ", duplicatedKeys)}");
         }
 
+        var achievementCodes = await _dbContext.AchievementDefinitions
+            .AsNoTracking()
+            .Select(item => item.Code)
+            .ToListAsync(cancellationToken);
+
+        var achievementCodeSet = achievementCodes.ToHashSet(StringComparer.OrdinalIgnoreCase);
         var existingAvatars = await _dbContext.Avatars.ToDictionaryAsync(item => item.Key, StringComparer.OrdinalIgnoreCase, cancellationToken);
 
         foreach (var item in items)
         {
-            Validate(item);
+            Validate(item, achievementCodeSet);
 
             if (!existingAvatars.TryGetValue(item.Key, out var avatar))
             {
@@ -73,9 +73,6 @@ public sealed class AvatarSeedService
             avatar.ImageUrl = item.ImageUrl.Trim();
             avatar.SortOrder = item.SortOrder;
             avatar.UnlockType = item.UnlockType;
-            avatar.RequiredLevelKey = string.IsNullOrWhiteSpace(item.RequiredLevelKey)
-                ? null
-                : item.RequiredLevelKey.Trim();
             avatar.RequiredAchievementCode = string.IsNullOrWhiteSpace(item.RequiredAchievementCode)
                 ? null
                 : item.RequiredAchievementCode.Trim();
@@ -83,6 +80,8 @@ public sealed class AvatarSeedService
         }
 
         await _dbContext.SaveChangesAsync(cancellationToken);
+
+        await ValidateAchievementAvatarRewardsAsync(cancellationToken);
 
         var defaultAvatar = await _dbContext.Avatars
             .OrderBy(item => item.SortOrder)
@@ -122,7 +121,32 @@ public sealed class AvatarSeedService
         }
     }
 
-    private static void Validate(AvatarSeedItem item)
+    private async Task ValidateAchievementAvatarRewardsAsync(CancellationToken cancellationToken)
+    {
+        var avatarKeys = await _dbContext.Avatars
+            .AsNoTracking()
+            .Select(item => item.Key)
+            .ToListAsync(cancellationToken);
+
+        var avatarKeySet = avatarKeys.ToHashSet(StringComparer.OrdinalIgnoreCase);
+        var missingAvatarRewards = await _dbContext.AchievementDefinitions
+            .AsNoTracking()
+            .Where(item => item.RewardType == AchievementRewardType.Avatar && item.RewardAvatarKey != null)
+            .Select(item => new { item.Code, item.RewardAvatarKey })
+            .ToListAsync(cancellationToken);
+
+        var invalidRewards = missingAvatarRewards
+            .Where(item => item.RewardAvatarKey is not null && !avatarKeySet.Contains(item.RewardAvatarKey))
+            .Select(item => $"{item.Code}:{item.RewardAvatarKey}")
+            .ToList();
+
+        if (invalidRewards.Count > 0)
+        {
+            throw new InvalidOperationException($"Achievement reward avatars are missing: {string.Join(", ", invalidRewards)}");
+        }
+    }
+
+    private static void Validate(AvatarSeedItem item, IReadOnlySet<string> achievementCodes)
     {
         if (string.IsNullOrWhiteSpace(item.Key))
         {
@@ -144,14 +168,16 @@ public sealed class AvatarSeedService
             throw new InvalidOperationException($"Avatar {item.Key} cannot have a negative price.");
         }
 
-        if (item.UnlockType == AvatarUnlockType.LevelCompletion && string.IsNullOrWhiteSpace(item.RequiredLevelKey))
-        {
-            throw new InvalidOperationException($"Avatar {item.Key} requires requiredLevelKey for LevelCompletion unlock.");
-        }
-
         if (item.UnlockType == AvatarUnlockType.Achievement && string.IsNullOrWhiteSpace(item.RequiredAchievementCode))
         {
             throw new InvalidOperationException($"Avatar {item.Key} requires requiredAchievementCode for Achievement unlock.");
+        }
+
+        if (item.UnlockType == AvatarUnlockType.Achievement &&
+            !string.IsNullOrWhiteSpace(item.RequiredAchievementCode) &&
+            !achievementCodes.Contains(item.RequiredAchievementCode.Trim()))
+        {
+            throw new InvalidOperationException($"Avatar {item.Key} references unknown achievement code {item.RequiredAchievementCode}.");
         }
 
         if (item.UnlockType == AvatarUnlockType.Purchase && item.Price <= 0)

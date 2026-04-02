@@ -1,0 +1,130 @@
+[
+  {
+    "key": "level-1",
+    "categoryKey": "science",
+    "name": "Science Basics",
+    "order": 1,
+    "questionDistributions": [
+      {
+        "difficulty": "Easy",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "key": "level-2",
+    "categoryKey": "science",
+    "name": "Lab Challenge",
+    "order": 2,
+    "questionDistributions": [
+      {
+        "difficulty": "Easy",
+        "count": 3
+      },
+      {
+        "difficulty": "Medium",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "key": "level-3",
+    "categoryKey": "science",
+    "name": "Discovery Run",
+    "order": 3,
+    "questionDistributions": [
+      {
+        "difficulty": "Medium",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "key": "level-4",
+    "categoryKey": "history",
+    "name": "Ancient Empires",
+    "order": 1,
+    "questionDistributions": [
+      {
+        "difficulty": "Easy",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "key": "level-5",
+    "categoryKey": "history",
+    "name": "Kings and Revolutions",
+    "order": 2,
+    "questionDistributions": [
+      {
+        "difficulty": "Easy",
+        "count": 2
+      },
+      {
+        "difficulty": "Medium",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "key": "level-6",
+    "categoryKey": "history",
+    "name": "Modern Conflicts",
+    "order": 3,
+    "questionDistributions": [
+      {
+        "difficulty": "Medium",
+        "count": 3
+      },
+      {
+        "difficulty": "Hard",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "key": "level-7",
+    "categoryKey": "geography",
+    "name": "World Capitals",
+    "order": 1,
+    "questionDistributions": [
+      {
+        "difficulty": "Easy",
+        "count": 3
+      },
+      {
+        "difficulty": "Medium",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "key": "level-8",
+    "categoryKey": "geography",
+    "name": "Terrain Routes",
+    "order": 2,
+    "questionDistributions": [
+      {
+        "difficulty": "Medium",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "key": "level-9",
+    "categoryKey": "geography",
+    "name": "Earth Extremes",
+    "order": 3,
+    "questionDistributions": [
+      {
+        "difficulty": "Medium",
+        "count": 2
+      },
+      {
+        "difficulty": "Hard",
+        "count": 3
+      }
+    ]
+  }
+]

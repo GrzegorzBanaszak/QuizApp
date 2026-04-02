@@ -13,6 +13,7 @@ public class AppDbContext : DbContext
     public DbSet<User> Users => Set<User>();
     public DbSet<UserOwnedAvatar> UserOwnedAvatars => Set<UserOwnedAvatar>();
     public DbSet<UserAchievement> UserAchievements => Set<UserAchievement>();
+    public DbSet<AchievementDefinition> AchievementDefinitions => Set<AchievementDefinition>();
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<Level> Levels => Set<Level>();
     public DbSet<LevelQuestionDistribution> LevelQuestionDistributions => Set<LevelQuestionDistribution>();

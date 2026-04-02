@@ -8,7 +8,6 @@ public class Avatar
     public string ImageUrl { get; set; } = string.Empty;
     public int SortOrder { get; set; }
     public AvatarUnlockType UnlockType { get; set; } = AvatarUnlockType.Default;
-    public string? RequiredLevelKey { get; set; }
     public string? RequiredAchievementCode { get; set; }
     public int Price { get; set; }
     public ICollection<UserOwnedAvatar> Owners { get; set; } = new List<UserOwnedAvatar>();

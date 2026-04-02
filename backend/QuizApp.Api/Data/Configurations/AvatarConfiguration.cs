@@ -29,9 +29,6 @@ public sealed class AvatarConfiguration : IEntityTypeConfiguration<Avatar>
             .HasMaxLength(40)
             .IsRequired();
 
-        entity.Property(avatar => avatar.RequiredLevelKey)
-            .HasMaxLength(100);
-
         entity.Property(avatar => avatar.RequiredAchievementCode)
             .HasMaxLength(100);
 

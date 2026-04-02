@@ -12,6 +12,10 @@ public sealed class SingleplayerQuestionConfiguration : IEntityTypeConfiguration
 
         entity.HasKey(q => q.Id);
 
+        entity.Property(q => q.Key)
+            .IsRequired()
+            .HasMaxLength(100);
+
         entity.Property(q => q.Text)
             .IsRequired()
             .HasMaxLength(1000);
@@ -34,5 +38,8 @@ public sealed class SingleplayerQuestionConfiguration : IEntityTypeConfiguration
             .WithMany(c => c.Questions)
             .HasForeignKey(q => q.CategoryId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        entity.HasIndex(q => q.Key)
+            .IsUnique();
     }
 }

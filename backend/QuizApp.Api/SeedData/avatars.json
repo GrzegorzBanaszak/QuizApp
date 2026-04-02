@@ -68,8 +68,8 @@
     "name": "Neon Knight",
     "imageUrl": "/images/avatars/level-neon-knight.png",
     "sortOrder": 90,
-    "unlockType": "LevelCompletion",
-    "requiredLevelKey": "level-3",
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "level-3-cleared",
     "price": 0
   },
   {
@@ -77,8 +77,8 @@
     "name": "Ember Mage",
     "imageUrl": "/images/avatars/level-ember-mage.png",
     "sortOrder": 100,
-    "unlockType": "LevelCompletion",
-    "requiredLevelKey": "level-7",
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "level-7-cleared",
     "price": 0
   },
   {
@@ -87,7 +87,7 @@
     "imageUrl": "/images/avatars/achievement-storm-crown.png",
     "sortOrder": 110,
     "unlockType": "Achievement",
-    "requiredAchievementCode": "perfect-streak-10",
+    "requiredAchievementCode": "first-category-cleared",
     "price": 0
   },
   {

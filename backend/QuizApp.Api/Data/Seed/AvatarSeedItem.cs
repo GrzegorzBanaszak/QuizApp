@@ -9,7 +9,6 @@ public sealed class AvatarSeedItem
     public string ImageUrl { get; init; } = string.Empty;
     public int SortOrder { get; init; }
     public AvatarUnlockType UnlockType { get; init; }
-    public string? RequiredLevelKey { get; init; }
     public string? RequiredAchievementCode { get; init; }
     public int Price { get; init; }
 }

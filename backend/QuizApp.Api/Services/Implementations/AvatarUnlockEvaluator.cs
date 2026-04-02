@@ -9,8 +9,6 @@ public static class AvatarUnlockEvaluator
         return avatar.UnlockType switch
         {
             AvatarUnlockType.Default => true,
-            AvatarUnlockType.LevelCompletion => !string.IsNullOrWhiteSpace(avatar.RequiredLevelKey)
-                && context.CompletedLevelKeys.Contains(avatar.RequiredLevelKey),
             AvatarUnlockType.Achievement => !string.IsNullOrWhiteSpace(avatar.RequiredAchievementCode)
                 && context.AchievementCodes.Contains(avatar.RequiredAchievementCode),
             AvatarUnlockType.Purchase => context.OwnedAvatarIds.Contains(avatar.Id),

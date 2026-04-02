@@ -108,10 +108,19 @@ builder.Services
 
 builder.Services.AddSignalR();
 builder.Services.AddHttpClient();
+builder.Services.Configure<CategorySeedOptions>(builder.Configuration.GetSection(CategorySeedOptions.SectionName));
+builder.Services.Configure<LevelSeedOptions>(builder.Configuration.GetSection(LevelSeedOptions.SectionName));
+builder.Services.Configure<SingleplayerQuestionSeedOptions>(builder.Configuration.GetSection(SingleplayerQuestionSeedOptions.SectionName));
+builder.Services.Configure<AchievementSeedOptions>(builder.Configuration.GetSection(AchievementSeedOptions.SectionName));
 builder.Services.Configure<AvatarSeedOptions>(builder.Configuration.GetSection(AvatarSeedOptions.SectionName));
+builder.Services.AddScoped<CategorySeedService>();
+builder.Services.AddScoped<LevelSeedService>();
+builder.Services.AddScoped<SingleplayerQuestionSeedService>();
+builder.Services.AddScoped<AchievementSeedService>();
 builder.Services.AddScoped<AvatarSeedService>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAchievementService, AchievementService>();
 builder.Services.AddScoped<ISingleplayerService, SingleplayerService>();
 builder.Services.AddScoped<IAvatarService, AvatarService>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -145,8 +154,17 @@ var app = builder.Build();
 
 await using (var scope = app.Services.CreateAsyncScope())
 {
-    var seedService = scope.ServiceProvider.GetRequiredService<AvatarSeedService>();
-    await seedService.SeedAsync();
+    var categorySeedService = scope.ServiceProvider.GetRequiredService<CategorySeedService>();
+    var levelSeedService = scope.ServiceProvider.GetRequiredService<LevelSeedService>();
+    var singleplayerQuestionSeedService = scope.ServiceProvider.GetRequiredService<SingleplayerQuestionSeedService>();
+    var achievementSeedService = scope.ServiceProvider.GetRequiredService<AchievementSeedService>();
+    var avatarSeedService = scope.ServiceProvider.GetRequiredService<AvatarSeedService>();
+
+    await categorySeedService.SeedAsync();
+    await levelSeedService.SeedAsync();
+    await singleplayerQuestionSeedService.SeedAsync();
+    await achievementSeedService.SeedAsync();
+    await avatarSeedService.SeedAsync();
 }
 
 if (app.Environment.IsDevelopment())

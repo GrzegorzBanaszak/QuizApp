@@ -15,7 +15,10 @@ public sealed class AvatarService : IAvatarService
         _dbContext = dbContext;
     }
 
-    public async Task<IReadOnlyList<AvatarDto>> GetCatalogAsync(Guid userId, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyList<AvatarDto>> GetCatalogAsync(
+        Guid userId,
+        AvatarCatalogView view,
+        CancellationToken cancellationToken = default)
     {
         var user = await _dbContext.Users
             .AsNoTracking()
@@ -32,9 +35,18 @@ public sealed class AvatarService : IAvatarService
             .ThenBy(item => item.Id)
             .ToListAsync(cancellationToken);
 
-        var context = await BuildUnlockContextAsync(userId, cancellationToken);
+        var achievementLookup = (await _dbContext.AchievementDefinitions
+                .AsNoTracking()
+                .Select(item => new AchievementSummary(item.Code, item.Name))
+                .ToListAsync(cancellationToken))
+            .ToDictionary(item => item.Code, item => item, StringComparer.OrdinalIgnoreCase);
 
-        return avatars
+        var context = await BuildUnlockContextAsync(userId, cancellationToken);
+        var filteredAvatars = view == AvatarCatalogView.Create
+            ? avatars.Where(item => item.UnlockType == AvatarUnlockType.Default)
+            : avatars;
+
+        return filteredAvatars
             .Select(avatar =>
             {
                 var isUnlocked = AvatarUnlockEvaluator.IsUnlocked(avatar, context);
@@ -46,12 +58,12 @@ public sealed class AvatarService : IAvatarService
                     Name = avatar.Name,
                     ImageUrl = avatar.ImageUrl,
                     UnlockType = avatar.UnlockType.ToString(),
-                    RequiredLevelKey = avatar.RequiredLevelKey,
-                    RequiredAchievementCode = avatar.RequiredAchievementCode,
+                    UnlockAchievementCode = avatar.RequiredAchievementCode,
                     Price = avatar.Price,
                     IsUnlocked = isUnlocked,
                     CanPurchase = avatar.UnlockType == AvatarUnlockType.Purchase && !isUnlocked && user.Coins >= avatar.Price,
-                    IsSelected = user.CurrentAvatarId == avatar.Id
+                    IsSelected = user.CurrentAvatarId == avatar.Id,
+                    UnlockDescription = BuildUnlockDescription(avatar, achievementLookup)
                 };
             })
             .ToList();
@@ -148,16 +160,21 @@ public sealed class AvatarService : IAvatarService
             .FirstOrDefaultAsync(cancellationToken);
     }
 
+    public async Task<Avatar?> ResolveDefaultAvatarAsync(int? avatarId, CancellationToken cancellationToken = default)
+    {
+        if (avatarId is null)
+        {
+            return await GetDefaultAvatarAsync(cancellationToken);
+        }
+
+        return await _dbContext.Avatars
+            .AsNoTracking()
+            .Where(item => item.Id == avatarId.Value && item.UnlockType == AvatarUnlockType.Default)
+            .FirstOrDefaultAsync(cancellationToken);
+    }
+
     private async Task<AvatarUnlockContext> BuildUnlockContextAsync(Guid userId, CancellationToken cancellationToken)
     {
-        var completedLevelKeys = (await _dbContext.SingleplayerResults
-                .AsNoTracking()
-                .Where(item => item.UserId == userId)
-                .Select(item => item.Level.Key)
-                .Distinct()
-                .ToListAsync(cancellationToken))
-            .ToHashSet(StringComparer.OrdinalIgnoreCase);
-
         var achievementCodes = (await _dbContext.UserAchievements
                 .AsNoTracking()
                 .Where(item => item.UserId == userId)
@@ -174,9 +191,25 @@ public sealed class AvatarService : IAvatarService
 
         return new AvatarUnlockContext
         {
-            CompletedLevelKeys = completedLevelKeys,
             AchievementCodes = achievementCodes,
             OwnedAvatarIds = ownedAvatarIds
+        };
+    }
+
+    private static string BuildUnlockDescription(
+        Avatar avatar,
+        IReadOnlyDictionary<string, AchievementSummary> achievementsByCode)
+    {
+        return avatar.UnlockType switch
+        {
+            AvatarUnlockType.Default => "Dostępny od początku.",
+            AvatarUnlockType.Achievement when avatar.RequiredAchievementCode is not null
+                && achievementsByCode.TryGetValue(avatar.RequiredAchievementCode, out var achievement) =>
+                $"Odblokuj osiągnięcie: {achievement.Name}.",
+            AvatarUnlockType.Achievement when avatar.RequiredAchievementCode is not null =>
+                $"Odblokuj osiągnięcie: {avatar.RequiredAchievementCode}.",
+            AvatarUnlockType.Purchase => $"Kup w sklepie za {avatar.Price} monet.",
+            _ => string.Empty
         };
     }
 
@@ -192,4 +225,6 @@ public sealed class AvatarService : IAvatarService
             Coins = user.Coins
         };
     }
+
+    private sealed record AchievementSummary(string Code, string Name);
 }

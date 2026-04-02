@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QuizApp.Api.Dto;
+using QuizApp.Api.Models;
 using QuizApp.Api.Services.Abstractions;
 
 namespace QuizApp.Api.Controllers;
@@ -20,7 +21,9 @@ public sealed class AvatarController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<AvatarDto>>> GetAvatars(CancellationToken cancellationToken)
+    public async Task<ActionResult<IReadOnlyList<AvatarDto>>> GetAvatars(
+        [FromQuery] AvatarCatalogView view = AvatarCatalogView.Catalog,
+        CancellationToken cancellationToken = default)
     {
         var userId = await _userService.GetCurrentUserIdAsync(User, cancellationToken);
         if (userId is null)
@@ -28,7 +31,7 @@ public sealed class AvatarController : ControllerBase
             return NotFound();
         }
 
-        return Ok(await _avatarService.GetCatalogAsync(userId.Value, cancellationToken));
+        return Ok(await _avatarService.GetCatalogAsync(userId.Value, view, cancellationToken));
     }
 
     [HttpPost("select")]

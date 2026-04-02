@@ -1,0 +1,17 @@
+[
+  {
+    "key": "science",
+    "name": "Science",
+    "description": "Questions about physics, chemistry, biology and scientific discoveries."
+  },
+  {
+    "key": "history",
+    "name": "History",
+    "description": "Questions about historical events, civilizations and important figures."
+  },
+  {
+    "key": "geography",
+    "name": "Geography",
+    "description": "Questions about countries, capitals, maps and the natural world."
+  }
+]

@@ -11,11 +11,13 @@ public sealed class SingleplayerService : ISingleplayerService
 {
     private readonly AppDbContext _context;
     private readonly IMapper _mapper;
+    private readonly IAchievementService _achievementService;
 
-    public SingleplayerService(AppDbContext context, IMapper mapper)
+    public SingleplayerService(AppDbContext context, IMapper mapper, IAchievementService achievementService)
     {
         _context = context;
         _mapper = mapper;
+        _achievementService = achievementService;
     }
 
     public async Task<IEnumerable<CategoryDto>> GetCategoriesAsync(Guid userId)
@@ -228,14 +230,19 @@ public sealed class SingleplayerService : ISingleplayerService
             PlayedAt = DateTime.UtcNow
         };
 
+        await using var transaction = await _context.Database.BeginTransactionAsync();
         _context.SingleplayerResults.Add(result);
         await _context.SaveChangesAsync();
+        var achievementResult = await _achievementService.EvaluateAsync(userId);
+        await transaction.CommitAsync();
 
         return new SingleplayerResultSummaryDto(
             totalScore,
             correctAnswersCount,
             totalQuestions,
-            details);
+            details,
+            achievementResult.AwardedCoins,
+            achievementResult.UnlockedAchievements.ToList());
     }
 
     private async Task<List<SingleplayerQuestion>> BuildQuestionsForLevelAsync(Level level)
