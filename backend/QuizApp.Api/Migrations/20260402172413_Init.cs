@@ -6,11 +6,35 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace QuizApp.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "AchievementDefinitions",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Code = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    IconUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    SortOrder = table.Column<int>(type: "int", nullable: false),
+                    TriggerType = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
+                    RequiredLevelKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    RequiredCategoryKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    RequiredCompletedCategoriesCount = table.Column<int>(type: "int", nullable: true),
+                    RewardType = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
+                    RewardCoins = table.Column<int>(type: "int", nullable: true),
+                    RewardAvatarKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AchievementDefinitions", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Avatars",
                 columns: table => new
@@ -22,7 +46,6 @@ namespace QuizApp.Api.Migrations
                     ImageUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     SortOrder = table.Column<int>(type: "int", nullable: false),
                     UnlockType = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
-                    RequiredLevelKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     RequiredAchievementCode = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     Price = table.Column<int>(type: "int", nullable: false, defaultValue: 0)
                 },
@@ -37,6 +60,7 @@ namespace QuizApp.Api.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Key = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false)
                 },
@@ -100,6 +124,7 @@ namespace QuizApp.Api.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Key = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     Difficulty = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Text = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
@@ -292,8 +317,20 @@ namespace QuizApp.Api.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_AchievementDefinitions_Code",
+                table: "AchievementDefinitions",
+                column: "Code",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Avatars_Key",
                 table: "Avatars",
+                column: "Key",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Categories_Key",
+                table: "Categories",
                 column: "Key",
                 unique: true);
 
@@ -344,6 +381,12 @@ namespace QuizApp.Api.Migrations
                 name: "IX_SingleplayerQuestions_CategoryId",
                 table: "SingleplayerQuestions",
                 column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SingleplayerQuestions_Key",
+                table: "SingleplayerQuestions",
+                column: "Key",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_SingleplayerResults_GameSessionId",
@@ -400,6 +443,9 @@ namespace QuizApp.Api.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "AchievementDefinitions");
+
             migrationBuilder.DropTable(
                 name: "LevelQuestionDistributions");
 

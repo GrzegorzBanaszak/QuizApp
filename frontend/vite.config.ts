@@ -15,6 +15,10 @@ export default defineConfig(() => {
           target: process.env.VITE_BACKEND_URL ?? "http://localhost:5211",
           changeOrigin: true,
         },
+        "/images": {
+          target: process.env.VITE_BACKEND_URL ?? "http://localhost:5211",
+          changeOrigin: true,
+        },
         "/gameHub": {
           target: process.env.VITE_BACKEND_URL ?? "http://localhost:5211",
           ws: true,

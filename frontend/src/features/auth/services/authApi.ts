@@ -1,4 +1,5 @@
 import type {
+  AuthAvatarOption,
   AuthResponse,
   GoogleTokenRequest,
   GoogleVerifyResponse,
@@ -66,6 +67,14 @@ export async function registerSocial(
   });
 
   return parseJsonResponse<AuthResponse>(response);
+}
+
+export async function fetchCreateCharacterAvatars(): Promise<AuthAvatarOption[]> {
+  const response = await fetch("/api/avatar/defaults", {
+    credentials: "include",
+  });
+
+  return parseJsonResponse<AuthAvatarOption[]>(response);
 }
 
 export async function loginAsGuest(

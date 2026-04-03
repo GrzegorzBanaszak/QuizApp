@@ -15,6 +15,30 @@ public sealed class AvatarService : IAvatarService
         _dbContext = dbContext;
     }
 
+    public async Task<IReadOnlyList<AvatarDto>> GetCreateCatalogAsync(CancellationToken cancellationToken = default)
+    {
+        return await _dbContext.Avatars
+            .AsNoTracking()
+            .Where(item => item.UnlockType == AvatarUnlockType.Default)
+            .OrderBy(item => item.SortOrder)
+            .ThenBy(item => item.Id)
+            .Select(item => new AvatarDto
+            {
+                Id = item.Id,
+                Key = item.Key,
+                Name = item.Name,
+                ImageUrl = item.ImageUrl,
+                UnlockType = item.UnlockType.ToString(),
+                UnlockAchievementCode = item.RequiredAchievementCode,
+                Price = item.Price,
+                IsUnlocked = true,
+                CanPurchase = false,
+                IsSelected = false,
+                UnlockDescription = "Dostępny od początku."
+            })
+            .ToListAsync(cancellationToken);
+    }
+
     public async Task<IReadOnlyList<AvatarDto>> GetCatalogAsync(
         Guid userId,
         AvatarCatalogView view,

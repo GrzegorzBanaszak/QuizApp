@@ -1,9 +1,16 @@
-import type { AuthAvatar } from "../data/authMockData";
+interface CharacterAvatarPickerItem {
+  id: string | number;
+  name: string;
+  image?: string;
+  imageUrl?: string;
+  badge?: string;
+  unlockType?: string;
+}
 
 interface CharacterAvatarPickerProps {
-  avatars: AuthAvatar[];
-  selectedAvatarId: string | null;
-  onSelectAvatar: (avatarId: string | null) => void;
+  avatars: CharacterAvatarPickerItem[];
+  selectedAvatarId: string | number | null;
+  onSelectAvatar: (avatarId: string | number | null) => void;
   onResetToSourceAvatar: () => void;
   showResetToSourceAvatar: boolean;
 }
@@ -35,6 +42,8 @@ export const CharacterAvatarPicker = ({
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {avatars.map((avatar) => {
           const isActive = avatar.id === selectedAvatarId;
+          const imageSrc = avatar.imageUrl ?? avatar.image ?? "";
+          const badgeLabel = avatar.unlockType ?? avatar.badge ?? "";
 
           return (
             <button
@@ -48,7 +57,7 @@ export const CharacterAvatarPicker = ({
               }`}
             >
               <img
-                src={avatar.image}
+                src={imageSrc}
                 alt={avatar.name}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -57,9 +66,11 @@ export const CharacterAvatarPicker = ({
                 <span className="max-w-[70%] truncate text-left text-[11px] font-bold uppercase tracking-[0.2em] text-[#e5e3ff]">
                   {avatar.name}
                 </span>
-                <span className="rounded-md bg-[#0c0c21]/80 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-[#8ff5ff]">
-                  {avatar.badge}
-                </span>
+                {badgeLabel ? (
+                  <span className="rounded-md bg-[#0c0c21]/80 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-[#8ff5ff]">
+                    {badgeLabel}
+                  </span>
+                ) : null}
               </div>
             </button>
           );

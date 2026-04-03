@@ -145,7 +145,11 @@ export const EditProfilePage = () => {
               <CharacterAvatarPicker
                 avatars={authAvatars}
                 selectedAvatarId={selectedAvatarId}
-                onSelectAvatar={setSelectedAvatarId}
+                onSelectAvatar={(avatarId) =>
+                  setSelectedAvatarId(
+                    typeof avatarId === "string" ? avatarId : null,
+                  )
+                }
                 onResetToSourceAvatar={() => setSelectedAvatarId(null)}
                 showResetToSourceAvatar={Boolean(selectedAvatarId)}
               />

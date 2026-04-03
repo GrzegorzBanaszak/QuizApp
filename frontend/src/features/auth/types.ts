@@ -28,7 +28,21 @@ export interface RegisterSocialRequest {
   provider: "Google" | "Facebook";
   providerToken: string;
   customUsername?: string | null;
-  customAvatarUrl?: string | null;
+  selectedAvatarId?: number | null;
+}
+
+export interface AuthAvatarOption {
+  id: number;
+  key: string;
+  name: string;
+  imageUrl: string;
+  unlockType: string;
+  unlockAchievementCode?: string | null;
+  price: number;
+  isUnlocked: boolean;
+  canPurchase: boolean;
+  isSelected: boolean;
+  unlockDescription: string;
 }
 
 export interface UpdateUserProfileRequest {
