@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "science-easy-ktora-planeta-jest-nazywana-czerwona-planeta",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Która planeta jest nazywana Czerwoną Planetą?",
+    "correctAnswerId": "science-easy-ktora-planeta-jest-nazywana-czerwona-planeta-a",
+    "answers": [
+      {
+        "id": "science-easy-ktora-planeta-jest-nazywana-czerwona-planeta-a",
+        "text": "Mars"
+      },
+      {
+        "id": "science-easy-ktora-planeta-jest-nazywana-czerwona-planeta-b",
+        "text": "Wenus"
+      },
+      {
+        "id": "science-easy-ktora-planeta-jest-nazywana-czerwona-planeta-c",
+        "text": "Jowisz"
+      },
+      {
+        "id": "science-easy-ktora-planeta-jest-nazywana-czerwona-planeta-d",
+        "text": "Merkury"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaki-jest-wzor-chemiczny-wody",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaki jest wzór chemiczny wody?",
+    "correctAnswerId": "science-easy-jaki-jest-wzor-chemiczny-wody-a",
+    "answers": [
+      {
+        "id": "science-easy-jaki-jest-wzor-chemiczny-wody-a",
+        "text": "H2O"
+      },
+      {
+        "id": "science-easy-jaki-jest-wzor-chemiczny-wody-b",
+        "text": "CO2"
+      },
+      {
+        "id": "science-easy-jaki-jest-wzor-chemiczny-wody-c",
+        "text": "O2"
+      },
+      {
+        "id": "science-easy-jaki-jest-wzor-chemiczny-wody-d",
+        "text": "NaCl"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-ktory-narzad-pompuje-krew-w-organizmie-cz-owieka",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Który narząd pompuje krew w organizmie człowieka?",
+    "correctAnswerId": "science-easy-ktory-narzad-pompuje-krew-w-organizmie-cz-owieka-a",
+    "answers": [
+      {
+        "id": "science-easy-ktory-narzad-pompuje-krew-w-organizmie-cz-owieka-a",
+        "text": "Serce"
+      },
+      {
+        "id": "science-easy-ktory-narzad-pompuje-krew-w-organizmie-cz-owieka-b",
+        "text": "Wątroba"
+      },
+      {
+        "id": "science-easy-ktory-narzad-pompuje-krew-w-organizmie-cz-owieka-c",
+        "text": "Płuco"
+      },
+      {
+        "id": "science-easy-ktory-narzad-pompuje-krew-w-organizmie-cz-owieka-d",
+        "text": "Nerka"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-czym-jest-s-once",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Czym jest Słońce?",
+    "correctAnswerId": "science-easy-czym-jest-s-once-a",
+    "answers": [
+      {
+        "id": "science-easy-czym-jest-s-once-a",
+        "text": "Gwiazdą"
+      },
+      {
+        "id": "science-easy-czym-jest-s-once-b",
+        "text": "Planetą"
+      },
+      {
+        "id": "science-easy-czym-jest-s-once-c",
+        "text": "Kometą"
+      },
+      {
+        "id": "science-easy-czym-jest-s-once-d",
+        "text": "Księżycem"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-proces-dzieki-ktoremu-rosliny-wytwa",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się proces, dzięki któremu rośliny wytwarzają pokarm z wykorzystaniem światła słonecznego?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-proces-dzieki-ktoremu-rosliny-wytwa-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-dzieki-ktoremu-rosliny-wytwa-a",
+        "text": "Fotosynteza"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-dzieki-ktoremu-rosliny-wytwa-b",
+        "text": "Oddychanie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-dzieki-ktoremu-rosliny-wytwa-c",
+        "text": "Fermentacja"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-dzieki-ktoremu-rosliny-wytwa-d",
+        "text": "Transpiracja"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jakie-jest-najwieksze-zwierze-na-ziemi",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jakie jest największe zwierzę na Ziemi?",
+    "correctAnswerId": "science-easy-jakie-jest-najwieksze-zwierze-na-ziemi-a",
+    "answers": [
+      {
+        "id": "science-easy-jakie-jest-najwieksze-zwierze-na-ziemi-a",
+        "text": "Płetwal błękitny"
+      },
+      {
+        "id": "science-easy-jakie-jest-najwieksze-zwierze-na-ziemi-b",
+        "text": "Słoń afrykański"
+      },
+      {
+        "id": "science-easy-jakie-jest-najwieksze-zwierze-na-ziemi-c",
+        "text": "Żyrafa"
+      },
+      {
+        "id": "science-easy-jakie-jest-najwieksze-zwierze-na-ziemi-d",
+        "text": "Rekin biały"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jakiego-gazu-potrzebuje-cz-owiek-do-oddychania",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jakiego gazu potrzebuje człowiek do oddychania?",
+    "correctAnswerId": "science-easy-jakiego-gazu-potrzebuje-cz-owiek-do-oddychania-a",
+    "answers": [
+      {
+        "id": "science-easy-jakiego-gazu-potrzebuje-cz-owiek-do-oddychania-a",
+        "text": "Tlenu"
+      },
+      {
+        "id": "science-easy-jakiego-gazu-potrzebuje-cz-owiek-do-oddychania-b",
+        "text": "Wodoru"
+      },
+      {
+        "id": "science-easy-jakiego-gazu-potrzebuje-cz-owiek-do-oddychania-c",
+        "text": "Helu"
+      },
+      {
+        "id": "science-easy-jakiego-gazu-potrzebuje-cz-owiek-do-oddychania-d",
+        "text": "Azotu"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-w-jakim-stanie-skupienia-znajduje-sie-lod",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "W jakim stanie skupienia znajduje się lód?",
+    "correctAnswerId": "science-easy-w-jakim-stanie-skupienia-znajduje-sie-lod-a",
+    "answers": [
+      {
+        "id": "science-easy-w-jakim-stanie-skupienia-znajduje-sie-lod-a",
+        "text": "Stałym"
+      },
+      {
+        "id": "science-easy-w-jakim-stanie-skupienia-znajduje-sie-lod-b",
+        "text": "Ciekłym"
+      },
+      {
+        "id": "science-easy-w-jakim-stanie-skupienia-znajduje-sie-lod-c",
+        "text": "Gazowym"
+      },
+      {
+        "id": "science-easy-w-jakim-stanie-skupienia-znajduje-sie-lod-d",
+        "text": "Plazmy"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-ile-nog-ma-owad",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Ile nóg ma owad?",
+    "correctAnswerId": "science-easy-ile-nog-ma-owad-a",
+    "answers": [
+      {
+        "id": "science-easy-ile-nog-ma-owad-a",
+        "text": "6"
+      },
+      {
+        "id": "science-easy-ile-nog-ma-owad-b",
+        "text": "4"
+      },
+      {
+        "id": "science-easy-ile-nog-ma-owad-c",
+        "text": "8"
+      },
+      {
+        "id": "science-easy-ile-nog-ma-owad-d",
+        "text": "10"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-ktora-czesc-rosliny-zwykle-pobiera-wode-z-gleby",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Która część rośliny zwykle pobiera wodę z gleby?",
+    "correctAnswerId": "science-easy-ktora-czesc-rosliny-zwykle-pobiera-wode-z-gleby-a",
+    "answers": [
+      {
+        "id": "science-easy-ktora-czesc-rosliny-zwykle-pobiera-wode-z-gleby-a",
+        "text": "Korzeń"
+      },
+      {
+        "id": "science-easy-ktora-czesc-rosliny-zwykle-pobiera-wode-z-gleby-b",
+        "text": "Liść"
+      },
+      {
+        "id": "science-easy-ktora-czesc-rosliny-zwykle-pobiera-wode-z-gleby-c",
+        "text": "Kwiat"
+      },
+      {
+        "id": "science-easy-ktora-czesc-rosliny-zwykle-pobiera-wode-z-gleby-d",
+        "text": "Łodyga"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaka-planeta-jest-najblizej-s-onca",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaka planeta jest najbliżej Słońca?",
+    "correctAnswerId": "science-easy-jaka-planeta-jest-najblizej-s-onca-a",
+    "answers": [
+      {
+        "id": "science-easy-jaka-planeta-jest-najblizej-s-onca-a",
+        "text": "Merkury"
+      },
+      {
+        "id": "science-easy-jaka-planeta-jest-najblizej-s-onca-b",
+        "text": "Mars"
+      },
+      {
+        "id": "science-easy-jaka-planeta-jest-najblizej-s-onca-c",
+        "text": "Saturn"
+      },
+      {
+        "id": "science-easy-jaka-planeta-jest-najblizej-s-onca-d",
+        "text": "Neptun"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-ktory-zmys-pozwala-nam-s-yszec",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Który zmysł pozwala nam słyszeć?",
+    "correctAnswerId": "science-easy-ktory-zmys-pozwala-nam-s-yszec-a",
+    "answers": [
+      {
+        "id": "science-easy-ktory-zmys-pozwala-nam-s-yszec-a",
+        "text": "Słuch"
+      },
+      {
+        "id": "science-easy-ktory-zmys-pozwala-nam-s-yszec-b",
+        "text": "Wzrok"
+      },
+      {
+        "id": "science-easy-ktory-zmys-pozwala-nam-s-yszec-c",
+        "text": "Smak"
+      },
+      {
+        "id": "science-easy-ktory-zmys-pozwala-nam-s-yszec-d",
+        "text": "Dotyk"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-naturalny-satelita-ziemi",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się naturalny satelita Ziemi?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-naturalny-satelita-ziemi-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-naturalny-satelita-ziemi-a",
+        "text": "Księżyc"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-naturalny-satelita-ziemi-b",
+        "text": "Mars"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-naturalny-satelita-ziemi-c",
+        "text": "Słońce"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-naturalny-satelita-ziemi-d",
+        "text": "Wenus"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jakim-przyrzadem-mierzy-sie-temperature",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jakim przyrządem mierzy się temperaturę?",
+    "correctAnswerId": "science-easy-jakim-przyrzadem-mierzy-sie-temperature-a",
+    "answers": [
+      {
+        "id": "science-easy-jakim-przyrzadem-mierzy-sie-temperature-a",
+        "text": "Termometrem"
+      },
+      {
+        "id": "science-easy-jakim-przyrzadem-mierzy-sie-temperature-b",
+        "text": "Barometrem"
+      },
+      {
+        "id": "science-easy-jakim-przyrzadem-mierzy-sie-temperature-c",
+        "text": "Kompasem"
+      },
+      {
+        "id": "science-easy-jakim-przyrzadem-mierzy-sie-temperature-d",
+        "text": "Mikroskopem"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-gwiazda-znajdujaca-sie-najblizej-zi",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się gwiazda znajdująca się najbliżej Ziemi?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-gwiazda-znajdujaca-sie-najblizej-zi-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-gwiazda-znajdujaca-sie-najblizej-zi-a",
+        "text": "Słońce"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-gwiazda-znajdujaca-sie-najblizej-zi-b",
+        "text": "Syriusz"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-gwiazda-znajdujaca-sie-najblizej-zi-c",
+        "text": "Polaris"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-gwiazda-znajdujaca-sie-najblizej-zi-d",
+        "text": "Betelgeza"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-ktory-organ-odpowiada-g-ownie-za-myslenie",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Który organ odpowiada głównie za myślenie?",
+    "correctAnswerId": "science-easy-ktory-organ-odpowiada-g-ownie-za-myslenie-a",
+    "answers": [
+      {
+        "id": "science-easy-ktory-organ-odpowiada-g-ownie-za-myslenie-a",
+        "text": "Mózg"
+      },
+      {
+        "id": "science-easy-ktory-organ-odpowiada-g-ownie-za-myslenie-b",
+        "text": "Serce"
+      },
+      {
+        "id": "science-easy-ktory-organ-odpowiada-g-ownie-za-myslenie-c",
+        "text": "Żołądek"
+      },
+      {
+        "id": "science-easy-ktory-organ-odpowiada-g-ownie-za-myslenie-d",
+        "text": "Trzustka"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jakie-zwierze-przechodzi-z-gasienicy-w-motyla",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jakie zwierzę przechodzi z gąsienicy w motyla?",
+    "correctAnswerId": "science-easy-jakie-zwierze-przechodzi-z-gasienicy-w-motyla-a",
+    "answers": [
+      {
+        "id": "science-easy-jakie-zwierze-przechodzi-z-gasienicy-w-motyla-a",
+        "text": "Motyl"
+      },
+      {
+        "id": "science-easy-jakie-zwierze-przechodzi-z-gasienicy-w-motyla-b",
+        "text": "Pająk"
+      },
+      {
+        "id": "science-easy-jakie-zwierze-przechodzi-z-gasienicy-w-motyla-c",
+        "text": "Mrówka"
+      },
+      {
+        "id": "science-easy-jakie-zwierze-przechodzi-z-gasienicy-w-motyla-d",
+        "text": "Ślimak"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-proces-oddychania-roslin-i-zwierzat",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się proces oddychania roślin i zwierząt polegający na pobieraniu tlenu?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-proces-oddychania-roslin-i-zwierzat-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-oddychania-roslin-i-zwierzat-a",
+        "text": "Oddychanie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-oddychania-roslin-i-zwierzat-b",
+        "text": "Fotosynteza"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-oddychania-roslin-i-zwierzat-c",
+        "text": "Kiełkowanie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-proces-oddychania-roslin-i-zwierzat-d",
+        "text": "Parowanie"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaka-barwe-ma-chlorofil",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaką barwę ma chlorofil?",
+    "correctAnswerId": "science-easy-jaka-barwe-ma-chlorofil-a",
+    "answers": [
+      {
+        "id": "science-easy-jaka-barwe-ma-chlorofil-a",
+        "text": "Zieloną"
+      },
+      {
+        "id": "science-easy-jaka-barwe-ma-chlorofil-b",
+        "text": "Niebieską"
+      },
+      {
+        "id": "science-easy-jaka-barwe-ma-chlorofil-c",
+        "text": "Czerwoną"
+      },
+      {
+        "id": "science-easy-jaka-barwe-ma-chlorofil-d",
+        "text": "Czarną"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-ktora-planeta-w-uk-adzie-s-onecznym-jest-najwieksz",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Która planeta w Układzie Słonecznym jest największa?",
+    "correctAnswerId": "science-easy-ktora-planeta-w-uk-adzie-s-onecznym-jest-najwieksz-a",
+    "answers": [
+      {
+        "id": "science-easy-ktora-planeta-w-uk-adzie-s-onecznym-jest-najwieksz-a",
+        "text": "Jowisz"
+      },
+      {
+        "id": "science-easy-ktora-planeta-w-uk-adzie-s-onecznym-jest-najwieksz-b",
+        "text": "Ziemia"
+      },
+      {
+        "id": "science-easy-ktora-planeta-w-uk-adzie-s-onecznym-jest-najwieksz-c",
+        "text": "Mars"
+      },
+      {
+        "id": "science-easy-ktora-planeta-w-uk-adzie-s-onecznym-jest-najwieksz-d",
+        "text": "Wenus"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-co-przyciaga-przedmioty-do-ziemi",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Co przyciąga przedmioty do Ziemi?",
+    "correctAnswerId": "science-easy-co-przyciaga-przedmioty-do-ziemi-a",
+    "answers": [
+      {
+        "id": "science-easy-co-przyciaga-przedmioty-do-ziemi-a",
+        "text": "Grawitacja"
+      },
+      {
+        "id": "science-easy-co-przyciaga-przedmioty-do-ziemi-b",
+        "text": "Magnetyzm"
+      },
+      {
+        "id": "science-easy-co-przyciaga-przedmioty-do-ziemi-c",
+        "text": "Wiatr"
+      },
+      {
+        "id": "science-easy-co-przyciaga-przedmioty-do-ziemi-d",
+        "text": "Światło"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-zwierze-ktore-zyje-zarowno-w-wodzie",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się zwierzę, które żyje zarówno w wodzie, jak i na lądzie?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-zwierze-ktore-zyje-zarowno-w-wodzie-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zyje-zarowno-w-wodzie-a",
+        "text": "Płaz"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zyje-zarowno-w-wodzie-b",
+        "text": "Gad"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zyje-zarowno-w-wodzie-c",
+        "text": "Ssak"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zyje-zarowno-w-wodzie-d",
+        "text": "Ptak"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaka-czesc-cia-a-chroni-czaszka",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaką część ciała chroni czaszka?",
+    "correctAnswerId": "science-easy-jaka-czesc-cia-a-chroni-czaszka-a",
+    "answers": [
+      {
+        "id": "science-easy-jaka-czesc-cia-a-chroni-czaszka-a",
+        "text": "Mózg"
+      },
+      {
+        "id": "science-easy-jaka-czesc-cia-a-chroni-czaszka-b",
+        "text": "Serce"
+      },
+      {
+        "id": "science-easy-jaka-czesc-cia-a-chroni-czaszka-c",
+        "text": "Płuca"
+      },
+      {
+        "id": "science-easy-jaka-czesc-cia-a-chroni-czaszka-d",
+        "text": "Żołądek"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-substancja-potrzebna-roslinom-do-fo",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się substancja potrzebna roślinom do fotosyntezy pobierana z powietrza?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-substancja-potrzebna-roslinom-do-fo-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-substancja-potrzebna-roslinom-do-fo-a",
+        "text": "Dwutlenek węgla"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-substancja-potrzebna-roslinom-do-fo-b",
+        "text": "Tlen"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-substancja-potrzebna-roslinom-do-fo-c",
+        "text": "Azot"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-substancja-potrzebna-roslinom-do-fo-d",
+        "text": "Hel"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-ktora-planeta-jest-znana-z-pierscieni",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Która planeta jest znana z pierścieni?",
+    "correctAnswerId": "science-easy-ktora-planeta-jest-znana-z-pierscieni-a",
+    "answers": [
+      {
+        "id": "science-easy-ktora-planeta-jest-znana-z-pierscieni-a",
+        "text": "Saturn"
+      },
+      {
+        "id": "science-easy-ktora-planeta-jest-znana-z-pierscieni-b",
+        "text": "Ziemia"
+      },
+      {
+        "id": "science-easy-ktora-planeta-jest-znana-z-pierscieni-c",
+        "text": "Merkury"
+      },
+      {
+        "id": "science-easy-ktora-planeta-jest-znana-z-pierscieni-d",
+        "text": "Mars"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-jednostka-d-ugosci-w-uk-adzie-si",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się jednostka długości w układzie SI?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-jednostka-d-ugosci-w-uk-adzie-si-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-jednostka-d-ugosci-w-uk-adzie-si-a",
+        "text": "Metr"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-jednostka-d-ugosci-w-uk-adzie-si-b",
+        "text": "Litr"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-jednostka-d-ugosci-w-uk-adzie-si-c",
+        "text": "Gram"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-jednostka-d-ugosci-w-uk-adzie-si-d",
+        "text": "Sekunda"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-przemiana-wody-w-pare-wodna",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się przemiana wody w parę wodną?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-przemiana-wody-w-pare-wodna-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-przemiana-wody-w-pare-wodna-a",
+        "text": "Parowanie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-przemiana-wody-w-pare-wodna-b",
+        "text": "Topnienie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-przemiana-wody-w-pare-wodna-c",
+        "text": "Krzepnięcie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-przemiana-wody-w-pare-wodna-d",
+        "text": "Sublimacja"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-zwierze-ktore-zywi-sie-tylko-roslin",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się zwierzę, które żywi się tylko roślinami?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-zwierze-ktore-zywi-sie-tylko-roslin-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zywi-sie-tylko-roslin-a",
+        "text": "Roślinożerca"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zywi-sie-tylko-roslin-b",
+        "text": "Drapieżnik"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zywi-sie-tylko-roslin-c",
+        "text": "Padlinożerca"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zwierze-ktore-zywi-sie-tylko-roslin-d",
+        "text": "Wszystkożerca"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaka-czesc-uk-adu-oddechowego-wykorzystujemy-do-wy",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaką część układu oddechowego wykorzystujemy do wymiany gazowej?",
+    "correctAnswerId": "science-easy-jaka-czesc-uk-adu-oddechowego-wykorzystujemy-do-wy-a",
+    "answers": [
+      {
+        "id": "science-easy-jaka-czesc-uk-adu-oddechowego-wykorzystujemy-do-wy-a",
+        "text": "Płuca"
+      },
+      {
+        "id": "science-easy-jaka-czesc-uk-adu-oddechowego-wykorzystujemy-do-wy-b",
+        "text": "Nerki"
+      },
+      {
+        "id": "science-easy-jaka-czesc-uk-adu-oddechowego-wykorzystujemy-do-wy-c",
+        "text": "Jelita"
+      },
+      {
+        "id": "science-easy-jaka-czesc-uk-adu-oddechowego-wykorzystujemy-do-wy-d",
+        "text": "Wątrobę"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-czerwona-substancja-we-krwi-przenos",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się czerwona substancja we krwi przenosząca tlen?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-czerwona-substancja-we-krwi-przenos-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-czerwona-substancja-we-krwi-przenos-a",
+        "text": "Hemoglobina"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-czerwona-substancja-we-krwi-przenos-b",
+        "text": "Insulina"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-czerwona-substancja-we-krwi-przenos-c",
+        "text": "Keratyna"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-czerwona-substancja-we-krwi-przenos-d",
+        "text": "Adrenalina"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaka-planeta-jest-ziemia-w-kolejnosci-od-s-onca",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaką planetą jest Ziemia w kolejności od Słońca?",
+    "correctAnswerId": "science-easy-jaka-planeta-jest-ziemia-w-kolejnosci-od-s-onca-a",
+    "answers": [
+      {
+        "id": "science-easy-jaka-planeta-jest-ziemia-w-kolejnosci-od-s-onca-a",
+        "text": "Trzecią"
+      },
+      {
+        "id": "science-easy-jaka-planeta-jest-ziemia-w-kolejnosci-od-s-onca-b",
+        "text": "Drugą"
+      },
+      {
+        "id": "science-easy-jaka-planeta-jest-ziemia-w-kolejnosci-od-s-onca-c",
+        "text": "Czwartą"
+      },
+      {
+        "id": "science-easy-jaka-planeta-jest-ziemia-w-kolejnosci-od-s-onca-d",
+        "text": "Piątą"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaki-metal-jest-w-temperaturze-pokojowej-ciecza",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaki metal jest w temperaturze pokojowej cieczą?",
+    "correctAnswerId": "science-easy-jaki-metal-jest-w-temperaturze-pokojowej-ciecza-a",
+    "answers": [
+      {
+        "id": "science-easy-jaki-metal-jest-w-temperaturze-pokojowej-ciecza-a",
+        "text": "Rtęć"
+      },
+      {
+        "id": "science-easy-jaki-metal-jest-w-temperaturze-pokojowej-ciecza-b",
+        "text": "Żelazo"
+      },
+      {
+        "id": "science-easy-jaki-metal-jest-w-temperaturze-pokojowej-ciecza-c",
+        "text": "Aluminium"
+      },
+      {
+        "id": "science-easy-jaki-metal-jest-w-temperaturze-pokojowej-ciecza-d",
+        "text": "Miedź"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jak-nazywa-sie-zmiana-stanu-skupienia-z-cieczy-w-c",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się zmiana stanu skupienia z cieczy w ciało stałe?",
+    "correctAnswerId": "science-easy-jak-nazywa-sie-zmiana-stanu-skupienia-z-cieczy-w-c-a",
+    "answers": [
+      {
+        "id": "science-easy-jak-nazywa-sie-zmiana-stanu-skupienia-z-cieczy-w-c-a",
+        "text": "Krzepnięcie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zmiana-stanu-skupienia-z-cieczy-w-c-b",
+        "text": "Wrzenie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zmiana-stanu-skupienia-z-cieczy-w-c-c",
+        "text": "Parowanie"
+      },
+      {
+        "id": "science-easy-jak-nazywa-sie-zmiana-stanu-skupienia-z-cieczy-w-c-d",
+        "text": "Topnienie"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-co-mierzy-waga",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Co mierzy waga?",
+    "correctAnswerId": "science-easy-co-mierzy-waga-a",
+    "answers": [
+      {
+        "id": "science-easy-co-mierzy-waga-a",
+        "text": "Masę"
+      },
+      {
+        "id": "science-easy-co-mierzy-waga-b",
+        "text": "Temperaturę"
+      },
+      {
+        "id": "science-easy-co-mierzy-waga-c",
+        "text": "Prędkość"
+      },
+      {
+        "id": "science-easy-co-mierzy-waga-d",
+        "text": "Objętość"
+      }
+    ]
+  },
+  {
+    "key": "science-easy-jaki-jest-podstawowy-sk-adnik-powietrza-na-ziemi",
+    "categoryKey": "science",
+    "difficulty": "Easy",
+    "text": "Jaki jest podstawowy składnik powietrza na Ziemi?",
+    "correctAnswerId": "science-easy-jaki-jest-podstawowy-sk-adnik-powietrza-na-ziemi-a",
+    "answers": [
+      {
+        "id": "science-easy-jaki-jest-podstawowy-sk-adnik-powietrza-na-ziemi-a",
+        "text": "Azot"
+      },
+      {
+        "id": "science-easy-jaki-jest-podstawowy-sk-adnik-powietrza-na-ziemi-b",
+        "text": "Tlen"
+      },
+      {
+        "id": "science-easy-jaki-jest-podstawowy-sk-adnik-powietrza-na-ziemi-c",
+        "text": "Dwutlenek węgla"
+      },
+      {
+        "id": "science-easy-jaki-jest-podstawowy-sk-adnik-powietrza-na-ziemi-d",
+        "text": "Hel"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-w-jakiej-temperaturze-wrze-woda-przy-cisnieniu-atm",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "W jakiej temperaturze wrze woda przy ciśnieniu atmosferycznym?",
+    "correctAnswerId": "science-easymedium-w-jakiej-temperaturze-wrze-woda-przy-cisnieniu-atm-a",
+    "answers": [
+      {
+        "id": "science-easymedium-w-jakiej-temperaturze-wrze-woda-przy-cisnieniu-atm-a",
+        "text": "100°C"
+      },
+      {
+        "id": "science-easymedium-w-jakiej-temperaturze-wrze-woda-przy-cisnieniu-atm-b",
+        "text": "0°C"
+      },
+      {
+        "id": "science-easymedium-w-jakiej-temperaturze-wrze-woda-przy-cisnieniu-atm-c",
+        "text": "50°C"
+      },
+      {
+        "id": "science-easymedium-w-jakiej-temperaturze-wrze-woda-przy-cisnieniu-atm-d",
+        "text": "150°C"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jaka-jednostka-mierzy-sie-natezenie-pradu-elektryc",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jaką jednostką mierzy się natężenie prądu elektrycznego?",
+    "correctAnswerId": "science-easymedium-jaka-jednostka-mierzy-sie-natezenie-pradu-elektryc-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-natezenie-pradu-elektryc-a",
+        "text": "Amper"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-natezenie-pradu-elektryc-b",
+        "text": "Wolt"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-natezenie-pradu-elektryc-c",
+        "text": "Wat"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-natezenie-pradu-elektryc-d",
+        "text": "Niuton"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywaja-sie-czerwone-krwinki",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywają się czerwone krwinki?",
+    "correctAnswerId": "science-easymedium-jak-nazywaja-sie-czerwone-krwinki-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywaja-sie-czerwone-krwinki-a",
+        "text": "Erytrocyty"
+      },
+      {
+        "id": "science-easymedium-jak-nazywaja-sie-czerwone-krwinki-b",
+        "text": "Leukocyty"
+      },
+      {
+        "id": "science-easymedium-jak-nazywaja-sie-czerwone-krwinki-c",
+        "text": "Neurony"
+      },
+      {
+        "id": "science-easymedium-jak-nazywaja-sie-czerwone-krwinki-d",
+        "text": "Płytki krwi"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jaka-jest-najtwardsza-naturalna-substancja-na-ziem",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest najtwardsza naturalna substancja na Ziemi?",
+    "correctAnswerId": "science-easymedium-jaka-jest-najtwardsza-naturalna-substancja-na-ziem-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jaka-jest-najtwardsza-naturalna-substancja-na-ziem-a",
+        "text": "Diament"
+      },
+      {
+        "id": "science-easymedium-jaka-jest-najtwardsza-naturalna-substancja-na-ziem-b",
+        "text": "Grafit"
+      },
+      {
+        "id": "science-easymedium-jaka-jest-najtwardsza-naturalna-substancja-na-ziem-c",
+        "text": "Kwarc"
+      },
+      {
+        "id": "science-easymedium-jaka-jest-najtwardsza-naturalna-substancja-na-ziem-d",
+        "text": "Sól kamienna"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ktora-planeta-obraca-sie-woko-w-asnej-osi-najwolni",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Która planeta obraca się wokół własnej osi najwolniej spośród planet skalistych?",
+    "correctAnswerId": "science-easymedium-ktora-planeta-obraca-sie-woko-w-asnej-osi-najwolni-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ktora-planeta-obraca-sie-woko-w-asnej-osi-najwolni-a",
+        "text": "Wenus"
+      },
+      {
+        "id": "science-easymedium-ktora-planeta-obraca-sie-woko-w-asnej-osi-najwolni-b",
+        "text": "Mars"
+      },
+      {
+        "id": "science-easymedium-ktora-planeta-obraca-sie-woko-w-asnej-osi-najwolni-c",
+        "text": "Ziemia"
+      },
+      {
+        "id": "science-easymedium-ktora-planeta-obraca-sie-woko-w-asnej-osi-najwolni-d",
+        "text": "Merkury"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywa-sie-przyrzad-s-uzacy-do-obserwacji-bard",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się przyrząd służący do obserwacji bardzo małych obiektów?",
+    "correctAnswerId": "science-easymedium-jak-nazywa-sie-przyrzad-s-uzacy-do-obserwacji-bard-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-s-uzacy-do-obserwacji-bard-a",
+        "text": "Mikroskop"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-s-uzacy-do-obserwacji-bard-b",
+        "text": "Teleskop"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-s-uzacy-do-obserwacji-bard-c",
+        "text": "Periskop"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-s-uzacy-do-obserwacji-bard-d",
+        "text": "Barometr"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ktory-pierwiastek-ma-symbol-o",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Który pierwiastek ma symbol O?",
+    "correctAnswerId": "science-easymedium-ktory-pierwiastek-ma-symbol-o-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ktory-pierwiastek-ma-symbol-o-a",
+        "text": "Tlen"
+      },
+      {
+        "id": "science-easymedium-ktory-pierwiastek-ma-symbol-o-b",
+        "text": "Złoto"
+      },
+      {
+        "id": "science-easymedium-ktory-pierwiastek-ma-symbol-o-c",
+        "text": "Ołów"
+      },
+      {
+        "id": "science-easymedium-ktory-pierwiastek-ma-symbol-o-d",
+        "text": "Osm"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jaka-jednostka-mierzy-sie-si-e",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jaką jednostką mierzy się siłę?",
+    "correctAnswerId": "science-easymedium-jaka-jednostka-mierzy-sie-si-e-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-si-e-a",
+        "text": "Niuton"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-si-e-b",
+        "text": "Pascal"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-si-e-c",
+        "text": "Joul"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-si-e-d",
+        "text": "Amper"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ktory-organ-wytwarza-insuline",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Który organ wytwarza insulinę?",
+    "correctAnswerId": "science-easymedium-ktory-organ-wytwarza-insuline-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ktory-organ-wytwarza-insuline-a",
+        "text": "Trzustka"
+      },
+      {
+        "id": "science-easymedium-ktory-organ-wytwarza-insuline-b",
+        "text": "Wątroba"
+      },
+      {
+        "id": "science-easymedium-ktory-organ-wytwarza-insuline-c",
+        "text": "Śledziona"
+      },
+      {
+        "id": "science-easymedium-ktory-organ-wytwarza-insuline-d",
+        "text": "Tarczyca"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywa-sie-droga-po-ktorej-ziemia-porusza-sie",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się droga, po której Ziemia porusza się wokół Słońca?",
+    "correctAnswerId": "science-easymedium-jak-nazywa-sie-droga-po-ktorej-ziemia-porusza-sie-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywa-sie-droga-po-ktorej-ziemia-porusza-sie-a",
+        "text": "Orbita"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-droga-po-ktorej-ziemia-porusza-sie-b",
+        "text": "Oś"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-droga-po-ktorej-ziemia-porusza-sie-c",
+        "text": "Trajektoria"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-droga-po-ktorej-ziemia-porusza-sie-d",
+        "text": "Ścieżka falowa"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jakim-zjawiskiem-jest-tecza",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jakim zjawiskiem jest tęcza?",
+    "correctAnswerId": "science-easymedium-jakim-zjawiskiem-jest-tecza-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jakim-zjawiskiem-jest-tecza-a",
+        "text": "Załamaniem i rozszczepieniem światła"
+      },
+      {
+        "id": "science-easymedium-jakim-zjawiskiem-jest-tecza-b",
+        "text": "Odbiciem dźwięku"
+      },
+      {
+        "id": "science-easymedium-jakim-zjawiskiem-jest-tecza-c",
+        "text": "Przepływem prądu"
+      },
+      {
+        "id": "science-easymedium-jakim-zjawiskiem-jest-tecza-d",
+        "text": "Magnetyzmem"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jaki-gaz-wydychamy-g-ownie-podczas-oddychania",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jaki gaz wydychamy głównie podczas oddychania?",
+    "correctAnswerId": "science-easymedium-jaki-gaz-wydychamy-g-ownie-podczas-oddychania-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jaki-gaz-wydychamy-g-ownie-podczas-oddychania-a",
+        "text": "Dwutlenek węgla"
+      },
+      {
+        "id": "science-easymedium-jaki-gaz-wydychamy-g-ownie-podczas-oddychania-b",
+        "text": "Azot"
+      },
+      {
+        "id": "science-easymedium-jaki-gaz-wydychamy-g-ownie-podczas-oddychania-c",
+        "text": "Hel"
+      },
+      {
+        "id": "science-easymedium-jaki-gaz-wydychamy-g-ownie-podczas-oddychania-d",
+        "text": "Wodór"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywa-sie-centrum-atomu",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się centrum atomu?",
+    "correctAnswerId": "science-easymedium-jak-nazywa-sie-centrum-atomu-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywa-sie-centrum-atomu-a",
+        "text": "Jądro atomowe"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-centrum-atomu-b",
+        "text": "Orbita"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-centrum-atomu-c",
+        "text": "Powłoka"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-centrum-atomu-d",
+        "text": "Elektron"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ktora-czesc-komorki-zawiera-materia-genetyczny",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Która część komórki zawiera materiał genetyczny?",
+    "correctAnswerId": "science-easymedium-ktora-czesc-komorki-zawiera-materia-genetyczny-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ktora-czesc-komorki-zawiera-materia-genetyczny-a",
+        "text": "Jądro komórkowe"
+      },
+      {
+        "id": "science-easymedium-ktora-czesc-komorki-zawiera-materia-genetyczny-b",
+        "text": "Błona komórkowa"
+      },
+      {
+        "id": "science-easymedium-ktora-czesc-komorki-zawiera-materia-genetyczny-c",
+        "text": "Cytoplazma"
+      },
+      {
+        "id": "science-easymedium-ktora-czesc-komorki-zawiera-materia-genetyczny-d",
+        "text": "Rybosom"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jakim-stanem-skupienia-jest-para-wodna",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jakim stanem skupienia jest para wodna?",
+    "correctAnswerId": "science-easymedium-jakim-stanem-skupienia-jest-para-wodna-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jakim-stanem-skupienia-jest-para-wodna-a",
+        "text": "Gazowym"
+      },
+      {
+        "id": "science-easymedium-jakim-stanem-skupienia-jest-para-wodna-b",
+        "text": "Stałym"
+      },
+      {
+        "id": "science-easymedium-jakim-stanem-skupienia-jest-para-wodna-c",
+        "text": "Ciekłym"
+      },
+      {
+        "id": "science-easymedium-jakim-stanem-skupienia-jest-para-wodna-d",
+        "text": "Półpłynnym"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jaka-planeta-jest-najdalej-od-s-onca",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jaka planeta jest najdalej od Słońca?",
+    "correctAnswerId": "science-easymedium-jaka-planeta-jest-najdalej-od-s-onca-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jaka-planeta-jest-najdalej-od-s-onca-a",
+        "text": "Neptun"
+      },
+      {
+        "id": "science-easymedium-jaka-planeta-jest-najdalej-od-s-onca-b",
+        "text": "Uran"
+      },
+      {
+        "id": "science-easymedium-jaka-planeta-jest-najdalej-od-s-onca-c",
+        "text": "Saturn"
+      },
+      {
+        "id": "science-easymedium-jaka-planeta-jest-najdalej-od-s-onca-d",
+        "text": "Jowisz"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywa-sie-proces-przechodzenia-cia-a-sta-ego",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się proces przechodzenia ciała stałego w ciecz?",
+    "correctAnswerId": "science-easymedium-jak-nazywa-sie-proces-przechodzenia-cia-a-sta-ego-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywa-sie-proces-przechodzenia-cia-a-sta-ego-a",
+        "text": "Topnienie"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-proces-przechodzenia-cia-a-sta-ego-b",
+        "text": "Krzepnięcie"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-proces-przechodzenia-cia-a-sta-ego-c",
+        "text": "Parowanie"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-proces-przechodzenia-cia-a-sta-ego-d",
+        "text": "Skraplanie"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ktory-uk-ad-w-organizmie-cz-owieka-transportuje-kr",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Który układ w organizmie człowieka transportuje krew?",
+    "correctAnswerId": "science-easymedium-ktory-uk-ad-w-organizmie-cz-owieka-transportuje-kr-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ktory-uk-ad-w-organizmie-cz-owieka-transportuje-kr-a",
+        "text": "Układ krwionośny"
+      },
+      {
+        "id": "science-easymedium-ktory-uk-ad-w-organizmie-cz-owieka-transportuje-kr-b",
+        "text": "Układ pokarmowy"
+      },
+      {
+        "id": "science-easymedium-ktory-uk-ad-w-organizmie-cz-owieka-transportuje-kr-c",
+        "text": "Układ nerwowy"
+      },
+      {
+        "id": "science-easymedium-ktory-uk-ad-w-organizmie-cz-owieka-transportuje-kr-d",
+        "text": "Układ kostny"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jaka-jednostka-mierzy-sie-napiecie-elektryczne",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jaką jednostką mierzy się napięcie elektryczne?",
+    "correctAnswerId": "science-easymedium-jaka-jednostka-mierzy-sie-napiecie-elektryczne-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-napiecie-elektryczne-a",
+        "text": "Wolt"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-napiecie-elektryczne-b",
+        "text": "Amper"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-napiecie-elektryczne-c",
+        "text": "Wat"
+      },
+      {
+        "id": "science-easymedium-jaka-jednostka-mierzy-sie-napiecie-elektryczne-d",
+        "text": "Om"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywa-sie-zielony-barwnik-w-lisciach",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się zielony barwnik w liściach?",
+    "correctAnswerId": "science-easymedium-jak-nazywa-sie-zielony-barwnik-w-lisciach-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywa-sie-zielony-barwnik-w-lisciach-a",
+        "text": "Chlorofil"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-zielony-barwnik-w-lisciach-b",
+        "text": "Melanina"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-zielony-barwnik-w-lisciach-c",
+        "text": "Keratyna"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-zielony-barwnik-w-lisciach-d",
+        "text": "Hemoglobina"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ile-chromosomow-ma-zwykle-cz-owiek-w-komorkach-cia",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Ile chromosomów ma zwykle człowiek w komórkach ciała?",
+    "correctAnswerId": "science-easymedium-ile-chromosomow-ma-zwykle-cz-owiek-w-komorkach-cia-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ile-chromosomow-ma-zwykle-cz-owiek-w-komorkach-cia-a",
+        "text": "46"
+      },
+      {
+        "id": "science-easymedium-ile-chromosomow-ma-zwykle-cz-owiek-w-komorkach-cia-b",
+        "text": "23"
+      },
+      {
+        "id": "science-easymedium-ile-chromosomow-ma-zwykle-cz-owiek-w-komorkach-cia-c",
+        "text": "44"
+      },
+      {
+        "id": "science-easymedium-ile-chromosomow-ma-zwykle-cz-owiek-w-komorkach-cia-d",
+        "text": "48"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywa-sie-najmniejsza-jednostka-budujaca-mate",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się najmniejsza jednostka budująca materię w chemii szkolnej?",
+    "correctAnswerId": "science-easymedium-jak-nazywa-sie-najmniejsza-jednostka-budujaca-mate-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywa-sie-najmniejsza-jednostka-budujaca-mate-a",
+        "text": "Atom"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-najmniejsza-jednostka-budujaca-mate-b",
+        "text": "Komórka"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-najmniejsza-jednostka-budujaca-mate-c",
+        "text": "Tkanka"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-najmniejsza-jednostka-budujaca-mate-d",
+        "text": "Cząsteczka DNA"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ktora-planeta-jest-nazywana-b-ekitna-planeta",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Która planeta jest nazywana Błękitną Planetą?",
+    "correctAnswerId": "science-easymedium-ktora-planeta-jest-nazywana-b-ekitna-planeta-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ktora-planeta-jest-nazywana-b-ekitna-planeta-a",
+        "text": "Ziemia"
+      },
+      {
+        "id": "science-easymedium-ktora-planeta-jest-nazywana-b-ekitna-planeta-b",
+        "text": "Neptun"
+      },
+      {
+        "id": "science-easymedium-ktora-planeta-jest-nazywana-b-ekitna-planeta-c",
+        "text": "Uran"
+      },
+      {
+        "id": "science-easymedium-ktora-planeta-jest-nazywana-b-ekitna-planeta-d",
+        "text": "Wenus"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-jak-nazywa-sie-przyrzad-do-mierzenia-cisnienia-atm",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się przyrząd do mierzenia ciśnienia atmosferycznego?",
+    "correctAnswerId": "science-easymedium-jak-nazywa-sie-przyrzad-do-mierzenia-cisnienia-atm-a",
+    "answers": [
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-do-mierzenia-cisnienia-atm-a",
+        "text": "Barometr"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-do-mierzenia-cisnienia-atm-b",
+        "text": "Higrometr"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-do-mierzenia-cisnienia-atm-c",
+        "text": "Termometr"
+      },
+      {
+        "id": "science-easymedium-jak-nazywa-sie-przyrzad-do-mierzenia-cisnienia-atm-d",
+        "text": "Dynamometr"
+      }
+    ]
+  },
+  {
+    "key": "science-easymedium-ktory-rodzaj-energii-jest-zwiazany-z-ruchem-cia-a",
+    "categoryKey": "science",
+    "difficulty": "EasyMedium",
+    "text": "Który rodzaj energii jest związany z ruchem ciała?",
+    "correctAnswerId": "science-easymedium-ktory-rodzaj-energii-jest-zwiazany-z-ruchem-cia-a-a",
+    "answers": [
+      {
+        "id": "science-easymedium-ktory-rodzaj-energii-jest-zwiazany-z-ruchem-cia-a-a",
+        "text": "Energia kinetyczna"
+      },
+      {
+        "id": "science-easymedium-ktory-rodzaj-energii-jest-zwiazany-z-ruchem-cia-a-b",
+        "text": "Energia potencjalna"
+      },
+      {
+        "id": "science-easymedium-ktory-rodzaj-energii-jest-zwiazany-z-ruchem-cia-a-c",
+        "text": "Energia jądrowa"
+      },
+      {
+        "id": "science-easymedium-ktory-rodzaj-energii-jest-zwiazany-z-ruchem-cia-a-d",
+        "text": "Energia chemiczna"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaka-si-a-utrzymuje-planety-na-orbitach-woko-s-onc",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaka siła utrzymuje planety na orbitach wokół Słońca?",
+    "correctAnswerId": "science-medium-jaka-si-a-utrzymuje-planety-na-orbitach-woko-s-onc-a",
+    "answers": [
+      {
+        "id": "science-medium-jaka-si-a-utrzymuje-planety-na-orbitach-woko-s-onc-a",
+        "text": "Grawitacja"
+      },
+      {
+        "id": "science-medium-jaka-si-a-utrzymuje-planety-na-orbitach-woko-s-onc-b",
+        "text": "Magnetyzm"
+      },
+      {
+        "id": "science-medium-jaka-si-a-utrzymuje-planety-na-orbitach-woko-s-onc-c",
+        "text": "Tarcie"
+      },
+      {
+        "id": "science-medium-jaka-si-a-utrzymuje-planety-na-orbitach-woko-s-onc-d",
+        "text": "Promieniowanie"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ile-kosci-ma-przecietnie-doros-y-cz-owiek",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Ile kości ma przeciętnie dorosły człowiek?",
+    "correctAnswerId": "science-medium-ile-kosci-ma-przecietnie-doros-y-cz-owiek-a",
+    "answers": [
+      {
+        "id": "science-medium-ile-kosci-ma-przecietnie-doros-y-cz-owiek-a",
+        "text": "206"
+      },
+      {
+        "id": "science-medium-ile-kosci-ma-przecietnie-doros-y-cz-owiek-b",
+        "text": "186"
+      },
+      {
+        "id": "science-medium-ile-kosci-ma-przecietnie-doros-y-cz-owiek-c",
+        "text": "226"
+      },
+      {
+        "id": "science-medium-ile-kosci-ma-przecietnie-doros-y-cz-owiek-d",
+        "text": "196"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaka-wartosc-ph-ma-roztwor-obojetny",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaką wartość pH ma roztwór obojętny?",
+    "correctAnswerId": "science-medium-jaka-wartosc-ph-ma-roztwor-obojetny-a",
+    "answers": [
+      {
+        "id": "science-medium-jaka-wartosc-ph-ma-roztwor-obojetny-a",
+        "text": "7"
+      },
+      {
+        "id": "science-medium-jaka-wartosc-ph-ma-roztwor-obojetny-b",
+        "text": "5"
+      },
+      {
+        "id": "science-medium-jaka-wartosc-ph-ma-roztwor-obojetny-c",
+        "text": "10"
+      },
+      {
+        "id": "science-medium-jaka-wartosc-ph-ma-roztwor-obojetny-d",
+        "text": "1"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaka-jest-jednostka-oporu-elektrycznego",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaka jest jednostka oporu elektrycznego?",
+    "correctAnswerId": "science-medium-jaka-jest-jednostka-oporu-elektrycznego-a",
+    "answers": [
+      {
+        "id": "science-medium-jaka-jest-jednostka-oporu-elektrycznego-a",
+        "text": "Om"
+      },
+      {
+        "id": "science-medium-jaka-jest-jednostka-oporu-elektrycznego-b",
+        "text": "Amper"
+      },
+      {
+        "id": "science-medium-jaka-jest-jednostka-oporu-elektrycznego-c",
+        "text": "Wolt"
+      },
+      {
+        "id": "science-medium-jaka-jest-jednostka-oporu-elektrycznego-d",
+        "text": "Tesla"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-pierwiastek-chemiczny-ma-symbol-na",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który pierwiastek chemiczny ma symbol Na?",
+    "correctAnswerId": "science-medium-ktory-pierwiastek-chemiczny-ma-symbol-na-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-ma-symbol-na-a",
+        "text": "Sód"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-ma-symbol-na-b",
+        "text": "Azot"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-ma-symbol-na-c",
+        "text": "Nikiel"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-ma-symbol-na-d",
+        "text": "Neon"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-proces-podzia-u-komorki-somatycznej",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się proces podziału komórki somatycznej?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-proces-podzia-u-komorki-somatycznej-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-podzia-u-komorki-somatycznej-a",
+        "text": "Mitoza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-podzia-u-komorki-somatycznej-b",
+        "text": "Mejoza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-podzia-u-komorki-somatycznej-c",
+        "text": "Fotosynteza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-podzia-u-komorki-somatycznej-d",
+        "text": "Dyfuzja"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktora-warstwa-atmosfery-zawiera-najwiecej-ozonu",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Która warstwa atmosfery zawiera najwięcej ozonu?",
+    "correctAnswerId": "science-medium-ktora-warstwa-atmosfery-zawiera-najwiecej-ozonu-a",
+    "answers": [
+      {
+        "id": "science-medium-ktora-warstwa-atmosfery-zawiera-najwiecej-ozonu-a",
+        "text": "Stratosfera"
+      },
+      {
+        "id": "science-medium-ktora-warstwa-atmosfery-zawiera-najwiecej-ozonu-b",
+        "text": "Troposfera"
+      },
+      {
+        "id": "science-medium-ktora-warstwa-atmosfery-zawiera-najwiecej-ozonu-c",
+        "text": "Mezosfera"
+      },
+      {
+        "id": "science-medium-ktora-warstwa-atmosfery-zawiera-najwiecej-ozonu-d",
+        "text": "Termosfera"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-energia-zgromadzona-w-po-ozeniu-cia",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się energia zgromadzona w położeniu ciała?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-energia-zgromadzona-w-po-ozeniu-cia-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-energia-zgromadzona-w-po-ozeniu-cia-a",
+        "text": "Energia potencjalna"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-energia-zgromadzona-w-po-ozeniu-cia-b",
+        "text": "Energia kinetyczna"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-energia-zgromadzona-w-po-ozeniu-cia-c",
+        "text": "Energia cieplna"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-energia-zgromadzona-w-po-ozeniu-cia-d",
+        "text": "Energia świetlna"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-organ-filtruje-krew-i-produkuje-mocz",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który organ filtruje krew i produkuje mocz?",
+    "correctAnswerId": "science-medium-ktory-organ-filtruje-krew-i-produkuje-mocz-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-organ-filtruje-krew-i-produkuje-mocz-a",
+        "text": "Nerki"
+      },
+      {
+        "id": "science-medium-ktory-organ-filtruje-krew-i-produkuje-mocz-b",
+        "text": "Płuca"
+      },
+      {
+        "id": "science-medium-ktory-organ-filtruje-krew-i-produkuje-mocz-c",
+        "text": "Trzustka"
+      },
+      {
+        "id": "science-medium-ktory-organ-filtruje-krew-i-produkuje-mocz-d",
+        "text": "Żołądek"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-przemiana-gazu-w-ciecz",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się przemiana gazu w ciecz?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-przemiana-gazu-w-ciecz-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-przemiana-gazu-w-ciecz-a",
+        "text": "Skraplanie"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-przemiana-gazu-w-ciecz-b",
+        "text": "Sublimacja"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-przemiana-gazu-w-ciecz-c",
+        "text": "Resublimacja"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-przemiana-gazu-w-ciecz-d",
+        "text": "Topnienie"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-diament",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który pierwiastek jest głównym składnikiem diamentu?",
+    "correctAnswerId": "science-medium-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-diament-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-diament-a",
+        "text": "Węgiel"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-diament-b",
+        "text": "Krzem"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-diament-c",
+        "text": "Wapń"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-diament-d",
+        "text": "Żelazo"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaka-jest-jednostka-mocy",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaka jest jednostka mocy?",
+    "correctAnswerId": "science-medium-jaka-jest-jednostka-mocy-a",
+    "answers": [
+      {
+        "id": "science-medium-jaka-jest-jednostka-mocy-a",
+        "text": "Wat"
+      },
+      {
+        "id": "science-medium-jaka-jest-jednostka-mocy-b",
+        "text": "Joul"
+      },
+      {
+        "id": "science-medium-jaka-jest-jednostka-mocy-c",
+        "text": "Niuton"
+      },
+      {
+        "id": "science-medium-jaka-jest-jednostka-mocy-d",
+        "text": "Pascal"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-galaktyka-w-ktorej-znajduje-sie-uk",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się galaktyka, w której znajduje się Układ Słoneczny?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-galaktyka-w-ktorej-znajduje-sie-uk-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-galaktyka-w-ktorej-znajduje-sie-uk-a",
+        "text": "Droga Mleczna"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-galaktyka-w-ktorej-znajduje-sie-uk-b",
+        "text": "Andromeda"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-galaktyka-w-ktorej-znajduje-sie-uk-c",
+        "text": "Wielki Obłok Magellana"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-galaktyka-w-ktorej-znajduje-sie-uk-d",
+        "text": "Galaktyka Sombrero"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jakie-zjawisko-powoduje-rozciaganie-metali-pod-wp",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jakie zjawisko powoduje rozciąganie metali pod wpływem temperatury?",
+    "correctAnswerId": "science-medium-jakie-zjawisko-powoduje-rozciaganie-metali-pod-wp-a",
+    "answers": [
+      {
+        "id": "science-medium-jakie-zjawisko-powoduje-rozciaganie-metali-pod-wp-a",
+        "text": "Rozszerzalność cieplna"
+      },
+      {
+        "id": "science-medium-jakie-zjawisko-powoduje-rozciaganie-metali-pod-wp-b",
+        "text": "Przewodnictwo elektryczne"
+      },
+      {
+        "id": "science-medium-jakie-zjawisko-powoduje-rozciaganie-metali-pod-wp-c",
+        "text": "Magnetyzm"
+      },
+      {
+        "id": "science-medium-jakie-zjawisko-powoduje-rozciaganie-metali-pod-wp-d",
+        "text": "Sprężystość"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaka-funkcje-pe-nia-bia-e-krwinki",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaką funkcję pełnią białe krwinki?",
+    "correctAnswerId": "science-medium-jaka-funkcje-pe-nia-bia-e-krwinki-a",
+    "answers": [
+      {
+        "id": "science-medium-jaka-funkcje-pe-nia-bia-e-krwinki-a",
+        "text": "Bronią organizm przed infekcjami"
+      },
+      {
+        "id": "science-medium-jaka-funkcje-pe-nia-bia-e-krwinki-b",
+        "text": "Transportują tlen"
+      },
+      {
+        "id": "science-medium-jaka-funkcje-pe-nia-bia-e-krwinki-c",
+        "text": "Trawią pokarm"
+      },
+      {
+        "id": "science-medium-jaka-funkcje-pe-nia-bia-e-krwinki-d",
+        "text": "Regulują temperaturę"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-rodzaj-ska-powstaje-z-zastyg-ej-magmy",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który rodzaj skał powstaje z zastygłej magmy?",
+    "correctAnswerId": "science-medium-ktory-rodzaj-ska-powstaje-z-zastyg-ej-magmy-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-rodzaj-ska-powstaje-z-zastyg-ej-magmy-a",
+        "text": "Skały magmowe"
+      },
+      {
+        "id": "science-medium-ktory-rodzaj-ska-powstaje-z-zastyg-ej-magmy-b",
+        "text": "Skały osadowe"
+      },
+      {
+        "id": "science-medium-ktory-rodzaj-ska-powstaje-z-zastyg-ej-magmy-c",
+        "text": "Skały metamorficzne"
+      },
+      {
+        "id": "science-medium-ktory-rodzaj-ska-powstaje-z-zastyg-ej-magmy-d",
+        "text": "Skały wapienne"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-pierwiastek-jest-niezbedny-do-budowy-hemoglo",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który pierwiastek jest niezbędny do budowy hemoglobiny?",
+    "correctAnswerId": "science-medium-ktory-pierwiastek-jest-niezbedny-do-budowy-hemoglo-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-niezbedny-do-budowy-hemoglo-a",
+        "text": "Żelazo"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-niezbedny-do-budowy-hemoglo-b",
+        "text": "Magnez"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-niezbedny-do-budowy-hemoglo-c",
+        "text": "Potas"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-jest-niezbedny-do-budowy-hemoglo-d",
+        "text": "Wapń"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-zdolnosc-organizmu-do-utrzymywania",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się zdolność organizmu do utrzymywania stałych warunków wewnętrznych?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-zdolnosc-organizmu-do-utrzymywania-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-zdolnosc-organizmu-do-utrzymywania-a",
+        "text": "Homeostaza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-zdolnosc-organizmu-do-utrzymywania-b",
+        "text": "Ewolucja"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-zdolnosc-organizmu-do-utrzymywania-c",
+        "text": "Mutacja"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-zdolnosc-organizmu-do-utrzymywania-d",
+        "text": "Dyfuzja"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaka-jest-predkosc-dzwieku-w-powietrzu-w-przyblize",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaka jest prędkość dźwięku w powietrzu w przybliżeniu w temperaturze pokojowej?",
+    "correctAnswerId": "science-medium-jaka-jest-predkosc-dzwieku-w-powietrzu-w-przyblize-a",
+    "answers": [
+      {
+        "id": "science-medium-jaka-jest-predkosc-dzwieku-w-powietrzu-w-przyblize-a",
+        "text": "Około 340 m/s"
+      },
+      {
+        "id": "science-medium-jaka-jest-predkosc-dzwieku-w-powietrzu-w-przyblize-b",
+        "text": "Około 34 m/s"
+      },
+      {
+        "id": "science-medium-jaka-jest-predkosc-dzwieku-w-powietrzu-w-przyblize-c",
+        "text": "Około 3 400 m/s"
+      },
+      {
+        "id": "science-medium-jaka-jest-predkosc-dzwieku-w-powietrzu-w-przyblize-d",
+        "text": "Około 1 000 m/s"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-jednostka-energii-w-uk-adzie-si",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się jednostka energii w układzie SI?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-jednostka-energii-w-uk-adzie-si-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-energii-w-uk-adzie-si-a",
+        "text": "Joul"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-energii-w-uk-adzie-si-b",
+        "text": "Wat"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-energii-w-uk-adzie-si-c",
+        "text": "Niuton"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-energii-w-uk-adzie-si-d",
+        "text": "Kelwin"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-narzad-odpowiada-g-ownie-za-detoksykacje-org",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który narząd odpowiada głównie za detoksykację organizmu?",
+    "correctAnswerId": "science-medium-ktory-narzad-odpowiada-g-ownie-za-detoksykacje-org-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-narzad-odpowiada-g-ownie-za-detoksykacje-org-a",
+        "text": "Wątroba"
+      },
+      {
+        "id": "science-medium-ktory-narzad-odpowiada-g-ownie-za-detoksykacje-org-b",
+        "text": "Trzustka"
+      },
+      {
+        "id": "science-medium-ktory-narzad-odpowiada-g-ownie-za-detoksykacje-org-c",
+        "text": "Śledziona"
+      },
+      {
+        "id": "science-medium-ktory-narzad-odpowiada-g-ownie-za-detoksykacje-org-d",
+        "text": "Pęcherz"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-ruch-czasteczek-z-miejsca-o-wiekszy",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się ruch cząsteczek z miejsca o większym stężeniu do miejsca o mniejszym stężeniu?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-ruch-czasteczek-z-miejsca-o-wiekszy-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-ruch-czasteczek-z-miejsca-o-wiekszy-a",
+        "text": "Dyfuzja"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-ruch-czasteczek-z-miejsca-o-wiekszy-b",
+        "text": "Osmoza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-ruch-czasteczek-z-miejsca-o-wiekszy-c",
+        "text": "Mitoza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-ruch-czasteczek-z-miejsca-o-wiekszy-d",
+        "text": "Konwekcja"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktora-witamina-powstaje-w-skorze-pod-wp-ywem-swiat",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Która witamina powstaje w skórze pod wpływem światła słonecznego?",
+    "correctAnswerId": "science-medium-ktora-witamina-powstaje-w-skorze-pod-wp-ywem-swiat-a",
+    "answers": [
+      {
+        "id": "science-medium-ktora-witamina-powstaje-w-skorze-pod-wp-ywem-swiat-a",
+        "text": "Witamina D"
+      },
+      {
+        "id": "science-medium-ktora-witamina-powstaje-w-skorze-pod-wp-ywem-swiat-b",
+        "text": "Witamina C"
+      },
+      {
+        "id": "science-medium-ktora-witamina-powstaje-w-skorze-pod-wp-ywem-swiat-c",
+        "text": "Witamina K"
+      },
+      {
+        "id": "science-medium-ktora-witamina-powstaje-w-skorze-pod-wp-ywem-swiat-d",
+        "text": "Witamina B12"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-jednostka-cisnienia-w-uk-adzie-si",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się jednostka ciśnienia w układzie SI?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-jednostka-cisnienia-w-uk-adzie-si-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-cisnienia-w-uk-adzie-si-a",
+        "text": "Pascal"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-cisnienia-w-uk-adzie-si-b",
+        "text": "Bar"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-cisnienia-w-uk-adzie-si-c",
+        "text": "Niuton"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-jednostka-cisnienia-w-uk-adzie-si-d",
+        "text": "Joul"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-planetarny-gigant-jest-najmniej-gesty-i-mog",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który planetarny gigant jest najmniej gęsty i mógłby teoretycznie unosić się na wodzie?",
+    "correctAnswerId": "science-medium-ktory-planetarny-gigant-jest-najmniej-gesty-i-mog-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-planetarny-gigant-jest-najmniej-gesty-i-mog-a",
+        "text": "Saturn"
+      },
+      {
+        "id": "science-medium-ktory-planetarny-gigant-jest-najmniej-gesty-i-mog-b",
+        "text": "Jowisz"
+      },
+      {
+        "id": "science-medium-ktory-planetarny-gigant-jest-najmniej-gesty-i-mog-c",
+        "text": "Neptun"
+      },
+      {
+        "id": "science-medium-ktory-planetarny-gigant-jest-najmniej-gesty-i-mog-d",
+        "text": "Uran"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-proces-utraty-lisci-przez-drzewa-li",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się proces utraty liści przez drzewa liściaste jesienią?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-proces-utraty-lisci-przez-drzewa-li-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-utraty-lisci-przez-drzewa-li-a",
+        "text": "Abscyzja"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-utraty-lisci-przez-drzewa-li-b",
+        "text": "Fotosynteza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-utraty-lisci-przez-drzewa-li-c",
+        "text": "Transpiracja"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-utraty-lisci-przez-drzewa-li-d",
+        "text": "Kiełkowanie"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-typ-wiazania-chemicznego-polega-na-uwspolnie",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który typ wiązania chemicznego polega na uwspólnieniu elektronów?",
+    "correctAnswerId": "science-medium-ktory-typ-wiazania-chemicznego-polega-na-uwspolnie-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-typ-wiazania-chemicznego-polega-na-uwspolnie-a",
+        "text": "Wiązanie kowalencyjne"
+      },
+      {
+        "id": "science-medium-ktory-typ-wiazania-chemicznego-polega-na-uwspolnie-b",
+        "text": "Wiązanie jonowe"
+      },
+      {
+        "id": "science-medium-ktory-typ-wiazania-chemicznego-polega-na-uwspolnie-c",
+        "text": "Wiązanie metaliczne"
+      },
+      {
+        "id": "science-medium-ktory-typ-wiazania-chemicznego-polega-na-uwspolnie-d",
+        "text": "Mostek wodorowy"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaki-jest-g-owny-gaz-cieplarniany-emitowany-przez",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaki jest główny gaz cieplarniany emitowany przez działalność człowieka?",
+    "correctAnswerId": "science-medium-jaki-jest-g-owny-gaz-cieplarniany-emitowany-przez-a",
+    "answers": [
+      {
+        "id": "science-medium-jaki-jest-g-owny-gaz-cieplarniany-emitowany-przez-a",
+        "text": "Dwutlenek węgla"
+      },
+      {
+        "id": "science-medium-jaki-jest-g-owny-gaz-cieplarniany-emitowany-przez-b",
+        "text": "Hel"
+      },
+      {
+        "id": "science-medium-jaki-jest-g-owny-gaz-cieplarniany-emitowany-przez-c",
+        "text": "Argon"
+      },
+      {
+        "id": "science-medium-jaki-jest-g-owny-gaz-cieplarniany-emitowany-przez-d",
+        "text": "Neon"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-przyspieszenie-cia-a-spadajacego-sw",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się przyspieszenie ciała spadającego swobodnie na Ziemi?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-przyspieszenie-cia-a-spadajacego-sw-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-przyspieszenie-cia-a-spadajacego-sw-a",
+        "text": "Przyspieszenie grawitacyjne"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-przyspieszenie-cia-a-spadajacego-sw-b",
+        "text": "Przyspieszenie kątowe"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-przyspieszenie-cia-a-spadajacego-sw-c",
+        "text": "Prędkość graniczna"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-przyspieszenie-cia-a-spadajacego-sw-d",
+        "text": "Ruch jednostajny"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-element-oka-odpowiada-za-regulacje-ilosci-sw",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który element oka odpowiada za regulację ilości światła wpadającego do oka?",
+    "correctAnswerId": "science-medium-ktory-element-oka-odpowiada-za-regulacje-ilosci-sw-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-element-oka-odpowiada-za-regulacje-ilosci-sw-a",
+        "text": "Tęczówka"
+      },
+      {
+        "id": "science-medium-ktory-element-oka-odpowiada-za-regulacje-ilosci-sw-b",
+        "text": "Siatkówka"
+      },
+      {
+        "id": "science-medium-ktory-element-oka-odpowiada-za-regulacje-ilosci-sw-c",
+        "text": "Soczewka"
+      },
+      {
+        "id": "science-medium-ktory-element-oka-odpowiada-za-regulacje-ilosci-sw-d",
+        "text": "Rogówka"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-podstawowa-jednostka-dziedziczenia",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się podstawowa jednostka dziedziczenia?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-podstawowa-jednostka-dziedziczenia-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-podstawowa-jednostka-dziedziczenia-a",
+        "text": "Gen"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-podstawowa-jednostka-dziedziczenia-b",
+        "text": "Neuron"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-podstawowa-jednostka-dziedziczenia-c",
+        "text": "Enzym"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-podstawowa-jednostka-dziedziczenia-d",
+        "text": "Tkanka"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-ktory-pierwiastek-chemiczny-jest-najlzejszy",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Który pierwiastek chemiczny jest najlżejszy?",
+    "correctAnswerId": "science-medium-ktory-pierwiastek-chemiczny-jest-najlzejszy-a",
+    "answers": [
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-jest-najlzejszy-a",
+        "text": "Wodór"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-jest-najlzejszy-b",
+        "text": "Hel"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-jest-najlzejszy-c",
+        "text": "Lit"
+      },
+      {
+        "id": "science-medium-ktory-pierwiastek-chemiczny-jest-najlzejszy-d",
+        "text": "Tlen"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-proces-przekszta-cania-energii-swie",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się proces przekształcania energii świetlnej w elektryczną w panelach słonecznych?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-proces-przekszta-cania-energii-swie-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-przekszta-cania-energii-swie-a",
+        "text": "Efekt fotowoltaiczny"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-przekszta-cania-energii-swie-b",
+        "text": "Indukcja elektromagnetyczna"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-przekszta-cania-energii-swie-c",
+        "text": "Elektroliza"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-proces-przekszta-cania-energii-swie-d",
+        "text": "Konwekcja"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jaka-funkcje-pe-ni-chlor-w-uzdatnianiu-wody",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jaką funkcję pełni chlor w uzdatnianiu wody?",
+    "correctAnswerId": "science-medium-jaka-funkcje-pe-ni-chlor-w-uzdatnianiu-wody-a",
+    "answers": [
+      {
+        "id": "science-medium-jaka-funkcje-pe-ni-chlor-w-uzdatnianiu-wody-a",
+        "text": "Dezynfekuje wodę"
+      },
+      {
+        "id": "science-medium-jaka-funkcje-pe-ni-chlor-w-uzdatnianiu-wody-b",
+        "text": "Zwiększa twardość wody"
+      },
+      {
+        "id": "science-medium-jaka-funkcje-pe-ni-chlor-w-uzdatnianiu-wody-c",
+        "text": "Barwi wodę"
+      },
+      {
+        "id": "science-medium-jaka-funkcje-pe-ni-chlor-w-uzdatnianiu-wody-d",
+        "text": "Usuwa sól"
+      }
+    ]
+  },
+  {
+    "key": "science-medium-jak-nazywa-sie-grupa-zwierzat-utrzymujacych-sta-a",
+    "categoryKey": "science",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się grupa zwierząt utrzymujących stałą temperaturę ciała niezależnie od otoczenia?",
+    "correctAnswerId": "science-medium-jak-nazywa-sie-grupa-zwierzat-utrzymujacych-sta-a-a",
+    "answers": [
+      {
+        "id": "science-medium-jak-nazywa-sie-grupa-zwierzat-utrzymujacych-sta-a-a",
+        "text": "Stałocieplne"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-grupa-zwierzat-utrzymujacych-sta-a-b",
+        "text": "Zmiennocieplne"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-grupa-zwierzat-utrzymujacych-sta-a-c",
+        "text": "Jajorodne"
+      },
+      {
+        "id": "science-medium-jak-nazywa-sie-grupa-zwierzat-utrzymujacych-sta-a-d",
+        "text": "Bezkręgowe"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-charakterystyczny-kszta-t-czasteczk",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się charakterystyczny kształt cząsteczki DNA?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-charakterystyczny-kszta-t-czasteczk-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-charakterystyczny-kszta-t-czasteczk-a",
+        "text": "Podwójna helisa"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-charakterystyczny-kszta-t-czasteczk-b",
+        "text": "Spirala pojedyncza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-charakterystyczny-kszta-t-czasteczk-c",
+        "text": "Sześcian molekularny"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-charakterystyczny-kszta-t-czasteczk-d",
+        "text": "Łańcuch prosty"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jaka-jest-przyblizona-predkosc-swiat-a-w-prozni",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest przybliżona prędkość światła w próżni?",
+    "correctAnswerId": "science-mediumhard-jaka-jest-przyblizona-predkosc-swiat-a-w-prozni-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jaka-jest-przyblizona-predkosc-swiat-a-w-prozni-a",
+        "text": "300 000 km/s"
+      },
+      {
+        "id": "science-mediumhard-jaka-jest-przyblizona-predkosc-swiat-a-w-prozni-b",
+        "text": "30 000 km/s"
+      },
+      {
+        "id": "science-mediumhard-jaka-jest-przyblizona-predkosc-swiat-a-w-prozni-c",
+        "text": "3 000 km/s"
+      },
+      {
+        "id": "science-mediumhard-jaka-jest-przyblizona-predkosc-swiat-a-w-prozni-d",
+        "text": "3 000 000 km/s"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktory-pierwiastek-ma-liczbe-atomowa-6",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Który pierwiastek ma liczbę atomową 6?",
+    "correctAnswerId": "science-mediumhard-ktory-pierwiastek-ma-liczbe-atomowa-6-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-ma-liczbe-atomowa-6-a",
+        "text": "Węgiel"
+      },
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-ma-liczbe-atomowa-6-b",
+        "text": "Tlen"
+      },
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-ma-liczbe-atomowa-6-c",
+        "text": "Azot"
+      },
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-ma-liczbe-atomowa-6-d",
+        "text": "Hel"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-komorka-pobiera-cza",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się proces, w którym komórka pobiera cząstki przez otaczanie ich błoną?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-komorka-pobiera-cza-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-komorka-pobiera-cza-a",
+        "text": "Endocytoza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-komorka-pobiera-cza-b",
+        "text": "Egzocytoza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-komorka-pobiera-cza-c",
+        "text": "Dyfuzja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-komorka-pobiera-cza-d",
+        "text": "Transpiracja"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktory-organellum-komorkowe-jest-nazywane-elektrown",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Który organellum komórkowe jest nazywane elektrownią komórki?",
+    "correctAnswerId": "science-mediumhard-ktory-organellum-komorkowe-jest-nazywane-elektrown-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktory-organellum-komorkowe-jest-nazywane-elektrown-a",
+        "text": "Mitochondrium"
+      },
+      {
+        "id": "science-mediumhard-ktory-organellum-komorkowe-jest-nazywane-elektrown-b",
+        "text": "Rybosom"
+      },
+      {
+        "id": "science-mediumhard-ktory-organellum-komorkowe-jest-nazywane-elektrown-c",
+        "text": "Lizosom"
+      },
+      {
+        "id": "science-mediumhard-ktory-organellum-komorkowe-jest-nazywane-elektrown-d",
+        "text": "Aparat Golgiego"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-zjawisko-wytwarzania-pradu-pod-wp-y",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się zjawisko wytwarzania prądu pod wpływem zmiennego pola magnetycznego?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-zjawisko-wytwarzania-pradu-pod-wp-y-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-wytwarzania-pradu-pod-wp-y-a",
+        "text": "Indukcja elektromagnetyczna"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-wytwarzania-pradu-pod-wp-y-b",
+        "text": "Elektroliza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-wytwarzania-pradu-pod-wp-y-c",
+        "text": "Jonizacja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-wytwarzania-pradu-pod-wp-y-d",
+        "text": "Dyfuzja"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jaka-wartosc-ma-zero-bezwzgledne-w-skali-celsjusza",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jaką wartość ma zero bezwzględne w skali Celsjusza?",
+    "correctAnswerId": "science-mediumhard-jaka-wartosc-ma-zero-bezwzgledne-w-skali-celsjusza-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jaka-wartosc-ma-zero-bezwzgledne-w-skali-celsjusza-a",
+        "text": "-273,15°C"
+      },
+      {
+        "id": "science-mediumhard-jaka-wartosc-ma-zero-bezwzgledne-w-skali-celsjusza-b",
+        "text": "-100°C"
+      },
+      {
+        "id": "science-mediumhard-jaka-wartosc-ma-zero-bezwzgledne-w-skali-celsjusza-c",
+        "text": "0°C"
+      },
+      {
+        "id": "science-mediumhard-jaka-wartosc-ma-zero-bezwzgledne-w-skali-celsjusza-d",
+        "text": "-459°C"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktory-rodzaj-promieniowania-ma-najwieksza-energie",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Który rodzaj promieniowania ma największą energię?",
+    "correctAnswerId": "science-mediumhard-ktory-rodzaj-promieniowania-ma-najwieksza-energie-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktory-rodzaj-promieniowania-ma-najwieksza-energie-a",
+        "text": "Promieniowanie gamma"
+      },
+      {
+        "id": "science-mediumhard-ktory-rodzaj-promieniowania-ma-najwieksza-energie-b",
+        "text": "Promieniowanie podczerwone"
+      },
+      {
+        "id": "science-mediumhard-ktory-rodzaj-promieniowania-ma-najwieksza-energie-c",
+        "text": "Mikrofale"
+      },
+      {
+        "id": "science-mediumhard-ktory-rodzaj-promieniowania-ma-najwieksza-energie-d",
+        "text": "Światło widzialne"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-proces-tworzenia-bia-ka-na-podstawi",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się proces tworzenia białka na podstawie informacji z mRNA?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-proces-tworzenia-bia-ka-na-podstawi-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-tworzenia-bia-ka-na-podstawi-a",
+        "text": "Translacja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-tworzenia-bia-ka-na-podstawi-b",
+        "text": "Transkrypcja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-tworzenia-bia-ka-na-podstawi-c",
+        "text": "Replikacja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-tworzenia-bia-ka-na-podstawi-d",
+        "text": "Mutacja"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktora-czesc-mozgu-odpowiada-przede-wszystkim-za-ko",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Która część mózgu odpowiada przede wszystkim za koordynację ruchów?",
+    "correctAnswerId": "science-mediumhard-ktora-czesc-mozgu-odpowiada-przede-wszystkim-za-ko-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktora-czesc-mozgu-odpowiada-przede-wszystkim-za-ko-a",
+        "text": "Móżdżek"
+      },
+      {
+        "id": "science-mediumhard-ktora-czesc-mozgu-odpowiada-przede-wszystkim-za-ko-b",
+        "text": "Wzgórze"
+      },
+      {
+        "id": "science-mediumhard-ktora-czesc-mozgu-odpowiada-przede-wszystkim-za-ko-c",
+        "text": "Rdzeń przedłużony"
+      },
+      {
+        "id": "science-mediumhard-ktora-czesc-mozgu-odpowiada-przede-wszystkim-za-ko-d",
+        "text": "Hipokamp"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jaki-jest-symbol-chemiczny-potasu",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jaki jest symbol chemiczny potasu?",
+    "correctAnswerId": "science-mediumhard-jaki-jest-symbol-chemiczny-potasu-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jaki-jest-symbol-chemiczny-potasu-a",
+        "text": "K"
+      },
+      {
+        "id": "science-mediumhard-jaki-jest-symbol-chemiczny-potasu-b",
+        "text": "P"
+      },
+      {
+        "id": "science-mediumhard-jaki-jest-symbol-chemiczny-potasu-c",
+        "text": "Pt"
+      },
+      {
+        "id": "science-mediumhard-jaki-jest-symbol-chemiczny-potasu-d",
+        "text": "Po"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-zdolnosc-organizmu-do-wytwarzania-s",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się zdolność organizmu do wytwarzania światła przez żywe organizmy?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-zdolnosc-organizmu-do-wytwarzania-s-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zdolnosc-organizmu-do-wytwarzania-s-a",
+        "text": "Bioluminescencja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zdolnosc-organizmu-do-wytwarzania-s-b",
+        "text": "Fotosynteza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zdolnosc-organizmu-do-wytwarzania-s-c",
+        "text": "Fluorescencja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zdolnosc-organizmu-do-wytwarzania-s-d",
+        "text": "Fermentacja"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jaka-nazwe-nosi-granica-po-przekroczeniu-ktorej-wo",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jaką nazwę nosi granica, po przekroczeniu której woda zaczyna wrzeć, gdy ciśnienie spada do bardzo niskich wartości?",
+    "correctAnswerId": "science-mediumhard-jaka-nazwe-nosi-granica-po-przekroczeniu-ktorej-wo-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-granica-po-przekroczeniu-ktorej-wo-a",
+        "text": "Punkt wrzenia zależny od ciśnienia"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-granica-po-przekroczeniu-ktorej-wo-b",
+        "text": "Punkt zamarzania stały"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-granica-po-przekroczeniu-ktorej-wo-c",
+        "text": "Punkt Curie"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-granica-po-przekroczeniu-ktorej-wo-d",
+        "text": "Punkt rosy"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktory-gaz-szlachetny-jest-najciezszy-sposrod-powsz",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Który gaz szlachetny jest najcięższy spośród powszechnie znanych stabilnych gazów szlachetnych?",
+    "correctAnswerId": "science-mediumhard-ktory-gaz-szlachetny-jest-najciezszy-sposrod-powsz-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktory-gaz-szlachetny-jest-najciezszy-sposrod-powsz-a",
+        "text": "Radon"
+      },
+      {
+        "id": "science-mediumhard-ktory-gaz-szlachetny-jest-najciezszy-sposrod-powsz-b",
+        "text": "Hel"
+      },
+      {
+        "id": "science-mediumhard-ktory-gaz-szlachetny-jest-najciezszy-sposrod-powsz-c",
+        "text": "Neon"
+      },
+      {
+        "id": "science-mediumhard-ktory-gaz-szlachetny-jest-najciezszy-sposrod-powsz-d",
+        "text": "Argon"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-proces-utraty-elektronow-przez-atom",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się proces utraty elektronów przez atom?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-proces-utraty-elektronow-przez-atom-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-utraty-elektronow-przez-atom-a",
+        "text": "Utlenianie"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-utraty-elektronow-przez-atom-b",
+        "text": "Redukcja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-utraty-elektronow-przez-atom-c",
+        "text": "Hydroliza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-utraty-elektronow-przez-atom-d",
+        "text": "Sedymentacja"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktory-rodzaj-komorek-nerwowych-przewodzi-impuls-od",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Który rodzaj komórek nerwowych przewodzi impuls od receptora do ośrodkowego układu nerwowego?",
+    "correctAnswerId": "science-mediumhard-ktory-rodzaj-komorek-nerwowych-przewodzi-impuls-od-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktory-rodzaj-komorek-nerwowych-przewodzi-impuls-od-a",
+        "text": "Neuron czuciowy"
+      },
+      {
+        "id": "science-mediumhard-ktory-rodzaj-komorek-nerwowych-przewodzi-impuls-od-b",
+        "text": "Neuron ruchowy"
+      },
+      {
+        "id": "science-mediumhard-ktory-rodzaj-komorek-nerwowych-przewodzi-impuls-od-c",
+        "text": "Erytrocyt"
+      },
+      {
+        "id": "science-mediumhard-ktory-rodzaj-komorek-nerwowych-przewodzi-impuls-od-d",
+        "text": "Osteocyt"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-zjawisko-zmiany-kierunku-fali-przy",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się zjawisko zmiany kierunku fali przy przejściu do innego ośrodka?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-zjawisko-zmiany-kierunku-fali-przy-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-zmiany-kierunku-fali-przy-a",
+        "text": "Załamanie"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-zmiany-kierunku-fali-przy-b",
+        "text": "Dyfrakcja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-zmiany-kierunku-fali-przy-c",
+        "text": "Interferencja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-zmiany-kierunku-fali-przy-d",
+        "text": "Polaryzacja"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktory-hormon-reguluje-poziom-glukozy-we-krwi-obniz",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Który hormon reguluje poziom glukozy we krwi, obniżając go?",
+    "correctAnswerId": "science-mediumhard-ktory-hormon-reguluje-poziom-glukozy-we-krwi-obniz-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktory-hormon-reguluje-poziom-glukozy-we-krwi-obniz-a",
+        "text": "Insulina"
+      },
+      {
+        "id": "science-mediumhard-ktory-hormon-reguluje-poziom-glukozy-we-krwi-obniz-b",
+        "text": "Adrenalina"
+      },
+      {
+        "id": "science-mediumhard-ktory-hormon-reguluje-poziom-glukozy-we-krwi-obniz-c",
+        "text": "Tyroksyna"
+      },
+      {
+        "id": "science-mediumhard-ktory-hormon-reguluje-poziom-glukozy-we-krwi-obniz-d",
+        "text": "Kortyzol"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-warstwa-naczyniowa-oka-odpowiedzial",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się warstwa naczyniowa oka odpowiedzialna m.in. za odżywianie siatkówki?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-warstwa-naczyniowa-oka-odpowiedzial-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-warstwa-naczyniowa-oka-odpowiedzial-a",
+        "text": "Naczyniówka"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-warstwa-naczyniowa-oka-odpowiedzial-b",
+        "text": "Rogówka"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-warstwa-naczyniowa-oka-odpowiedzial-c",
+        "text": "Twardówka"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-warstwa-naczyniowa-oka-odpowiedzial-d",
+        "text": "Soczewka"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jaka-nazwe-nosi-si-a-dzia-ajaca-przeciwnie-do-ruch",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jaką nazwę nosi siła działająca przeciwnie do ruchu ciała w cieczy lub gazie?",
+    "correctAnswerId": "science-mediumhard-jaka-nazwe-nosi-si-a-dzia-ajaca-przeciwnie-do-ruch-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-si-a-dzia-ajaca-przeciwnie-do-ruch-a",
+        "text": "Opór ośrodka"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-si-a-dzia-ajaca-przeciwnie-do-ruch-b",
+        "text": "Siła wyporu"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-si-a-dzia-ajaca-przeciwnie-do-ruch-c",
+        "text": "Siła elektromotoryczna"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-nosi-si-a-dzia-ajaca-przeciwnie-do-ruch-d",
+        "text": "Siła dośrodkowa"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-z-jednej-komorki-di",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się proces, w którym z jednej komórki diploidalnej powstają cztery haploidalne?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-z-jednej-komorki-di-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-z-jednej-komorki-di-a",
+        "text": "Mejoza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-z-jednej-komorki-di-b",
+        "text": "Mitoza"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-z-jednej-komorki-di-c",
+        "text": "Pączkowanie"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-proces-w-ktorym-z-jednej-komorki-di-d",
+        "text": "Koniugacja"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-kwarcu",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Który pierwiastek jest głównym składnikiem kwarcu?",
+    "correctAnswerId": "science-mediumhard-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-kwarcu-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-kwarcu-a",
+        "text": "Krzem"
+      },
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-kwarcu-b",
+        "text": "Węgiel"
+      },
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-kwarcu-c",
+        "text": "Wapń"
+      },
+      {
+        "id": "science-mediumhard-ktory-pierwiastek-jest-g-ownym-sk-adnikiem-kwarcu-d",
+        "text": "Żelazo"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-teoria-wyjasniajaca-przemieszczanie",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się teoria wyjaśniająca przemieszczanie się kontynentów po powierzchni Ziemi?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-teoria-wyjasniajaca-przemieszczanie-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-teoria-wyjasniajaca-przemieszczanie-a",
+        "text": "Teoria tektoniki płyt"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-teoria-wyjasniajaca-przemieszczanie-b",
+        "text": "Teoria geocentryczna"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-teoria-wyjasniajaca-przemieszczanie-c",
+        "text": "Teoria eteru"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-teoria-wyjasniajaca-przemieszczanie-d",
+        "text": "Teoria flogistonu"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jaka-nazwe-ma-najmniejsza-jednostka-bia-ka",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jaką nazwę ma najmniejsza jednostka białka?",
+    "correctAnswerId": "science-mediumhard-jaka-nazwe-ma-najmniejsza-jednostka-bia-ka-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jaka-nazwe-ma-najmniejsza-jednostka-bia-ka-a",
+        "text": "Aminokwas"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-ma-najmniejsza-jednostka-bia-ka-b",
+        "text": "Nukleotyd"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-ma-najmniejsza-jednostka-bia-ka-c",
+        "text": "Monosacharyd"
+      },
+      {
+        "id": "science-mediumhard-jaka-nazwe-ma-najmniejsza-jednostka-bia-ka-d",
+        "text": "Kwas tłuszczowy"
+      }
+    ]
+  },
+  {
+    "key": "science-mediumhard-jak-nazywa-sie-zjawisko-rozszczepienia-bia-ego-swi",
+    "categoryKey": "science",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się zjawisko rozszczepienia białego światła na kolory?",
+    "correctAnswerId": "science-mediumhard-jak-nazywa-sie-zjawisko-rozszczepienia-bia-ego-swi-a",
+    "answers": [
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-rozszczepienia-bia-ego-swi-a",
+        "text": "Dyspersja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-rozszczepienia-bia-ego-swi-b",
+        "text": "Dyfrakcja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-rozszczepienia-bia-ego-swi-c",
+        "text": "Polaryzacja"
+      },
+      {
+        "id": "science-mediumhard-jak-nazywa-sie-zjawisko-rozszczepienia-bia-ego-swi-d",
+        "text": "Absorpcja"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jaki-jest-symbol-chemiczny-z-ota",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jaki jest symbol chemiczny złota?",
+    "correctAnswerId": "science-hard-jaki-jest-symbol-chemiczny-z-ota-a",
+    "answers": [
+      {
+        "id": "science-hard-jaki-jest-symbol-chemiczny-z-ota-a",
+        "text": "Au"
+      },
+      {
+        "id": "science-hard-jaki-jest-symbol-chemiczny-z-ota-b",
+        "text": "Ag"
+      },
+      {
+        "id": "science-hard-jaki-jest-symbol-chemiczny-z-ota-c",
+        "text": "Gd"
+      },
+      {
+        "id": "science-hard-jaki-jest-symbol-chemiczny-z-ota-d",
+        "text": "Go"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-kto-jest-uznawany-za-tworce-uk-adu-okresowego-pier",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Kto jest uznawany za twórcę układu okresowego pierwiastków?",
+    "correctAnswerId": "science-hard-kto-jest-uznawany-za-tworce-uk-adu-okresowego-pier-a",
+    "answers": [
+      {
+        "id": "science-hard-kto-jest-uznawany-za-tworce-uk-adu-okresowego-pier-a",
+        "text": "Dmitrij Mendelejew"
+      },
+      {
+        "id": "science-hard-kto-jest-uznawany-za-tworce-uk-adu-okresowego-pier-b",
+        "text": "Isaac Newton"
+      },
+      {
+        "id": "science-hard-kto-jest-uznawany-za-tworce-uk-adu-okresowego-pier-c",
+        "text": "Albert Einstein"
+      },
+      {
+        "id": "science-hard-kto-jest-uznawany-za-tworce-uk-adu-okresowego-pier-d",
+        "text": "Galileusz"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-sta-a-okreslajaca-szybkosc-rozpadu",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się stała określająca szybkość rozpadu promieniotwórczego połowy próbki?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-sta-a-okreslajaca-szybkosc-rozpadu-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-sta-a-okreslajaca-szybkosc-rozpadu-a",
+        "text": "Okres półtrwania"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-sta-a-okreslajaca-szybkosc-rozpadu-b",
+        "text": "Stała Plancka"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-sta-a-okreslajaca-szybkosc-rozpadu-c",
+        "text": "Liczba Avogadra"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-sta-a-okreslajaca-szybkosc-rozpadu-d",
+        "text": "Punkt Curie"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-ktory-organellum-zawiera-enzymy-trawienne-rozk-ada",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Który organellum zawiera enzymy trawienne rozkładające zbędne elementy komórki?",
+    "correctAnswerId": "science-hard-ktory-organellum-zawiera-enzymy-trawienne-rozk-ada-a",
+    "answers": [
+      {
+        "id": "science-hard-ktory-organellum-zawiera-enzymy-trawienne-rozk-ada-a",
+        "text": "Lizosom"
+      },
+      {
+        "id": "science-hard-ktory-organellum-zawiera-enzymy-trawienne-rozk-ada-b",
+        "text": "Centriola"
+      },
+      {
+        "id": "science-hard-ktory-organellum-zawiera-enzymy-trawienne-rozk-ada-c",
+        "text": "Wakuola"
+      },
+      {
+        "id": "science-hard-ktory-organellum-zawiera-enzymy-trawienne-rozk-ada-d",
+        "text": "Jąderko"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-jednostka-czestotliwosci-w-uk-adzie",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się jednostka częstotliwości w układzie SI?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-jednostka-czestotliwosci-w-uk-adzie-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-czestotliwosci-w-uk-adzie-a",
+        "text": "Herc"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-czestotliwosci-w-uk-adzie-b",
+        "text": "Bel"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-czestotliwosci-w-uk-adzie-c",
+        "text": "Tesla"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-czestotliwosci-w-uk-adzie-d",
+        "text": "Kelwin"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-ktory-fizyk-sformu-owa-trzy-zasady-dynamiki-klasyc",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Który fizyk sformułował trzy zasady dynamiki klasycznej?",
+    "correctAnswerId": "science-hard-ktory-fizyk-sformu-owa-trzy-zasady-dynamiki-klasyc-a",
+    "answers": [
+      {
+        "id": "science-hard-ktory-fizyk-sformu-owa-trzy-zasady-dynamiki-klasyc-a",
+        "text": "Isaac Newton"
+      },
+      {
+        "id": "science-hard-ktory-fizyk-sformu-owa-trzy-zasady-dynamiki-klasyc-b",
+        "text": "Niels Bohr"
+      },
+      {
+        "id": "science-hard-ktory-fizyk-sformu-owa-trzy-zasady-dynamiki-klasyc-c",
+        "text": "Michael Faraday"
+      },
+      {
+        "id": "science-hard-ktory-fizyk-sformu-owa-trzy-zasady-dynamiki-klasyc-d",
+        "text": "Erwin Schrödinger"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-proces-bezposredniego-przejscia-cia",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się proces bezpośredniego przejścia ciała stałego w gaz?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-proces-bezposredniego-przejscia-cia-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-bezposredniego-przejscia-cia-a",
+        "text": "Sublimacja"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-bezposredniego-przejscia-cia-b",
+        "text": "Resublimacja"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-bezposredniego-przejscia-cia-c",
+        "text": "Skraplanie"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-bezposredniego-przejscia-cia-d",
+        "text": "Krzepnięcie"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jaki-jest-wzor-chemiczny-kwasu-siarkowego-vi",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jaki jest wzór chemiczny kwasu siarkowego(VI)?",
+    "correctAnswerId": "science-hard-jaki-jest-wzor-chemiczny-kwasu-siarkowego-vi-a",
+    "answers": [
+      {
+        "id": "science-hard-jaki-jest-wzor-chemiczny-kwasu-siarkowego-vi-a",
+        "text": "H2SO4"
+      },
+      {
+        "id": "science-hard-jaki-jest-wzor-chemiczny-kwasu-siarkowego-vi-b",
+        "text": "HCl"
+      },
+      {
+        "id": "science-hard-jaki-jest-wzor-chemiczny-kwasu-siarkowego-vi-c",
+        "text": "HNO3"
+      },
+      {
+        "id": "science-hard-jaki-jest-wzor-chemiczny-kwasu-siarkowego-vi-d",
+        "text": "H2CO3"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-ktory-planetarny-ksiezyc-jest-najwiekszy-w-uk-adzi",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Który planetarny księżyc jest największy w Układzie Słonecznym?",
+    "correctAnswerId": "science-hard-ktory-planetarny-ksiezyc-jest-najwiekszy-w-uk-adzi-a",
+    "answers": [
+      {
+        "id": "science-hard-ktory-planetarny-ksiezyc-jest-najwiekszy-w-uk-adzi-a",
+        "text": "Ganimedes"
+      },
+      {
+        "id": "science-hard-ktory-planetarny-ksiezyc-jest-najwiekszy-w-uk-adzi-b",
+        "text": "Tytan"
+      },
+      {
+        "id": "science-hard-ktory-planetarny-ksiezyc-jest-najwiekszy-w-uk-adzi-c",
+        "text": "Europa"
+      },
+      {
+        "id": "science-hard-ktory-planetarny-ksiezyc-jest-najwiekszy-w-uk-adzi-d",
+        "text": "Io"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jaka-nazwe-nosi-energia-potrzebna-do-usuniecia-ele",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jaką nazwę nosi energia potrzebna do usunięcia elektronu z atomu w stanie gazowym?",
+    "correctAnswerId": "science-hard-jaka-nazwe-nosi-energia-potrzebna-do-usuniecia-ele-a",
+    "answers": [
+      {
+        "id": "science-hard-jaka-nazwe-nosi-energia-potrzebna-do-usuniecia-ele-a",
+        "text": "Energia jonizacji"
+      },
+      {
+        "id": "science-hard-jaka-nazwe-nosi-energia-potrzebna-do-usuniecia-ele-b",
+        "text": "Energia wiązania"
+      },
+      {
+        "id": "science-hard-jaka-nazwe-nosi-energia-potrzebna-do-usuniecia-ele-c",
+        "text": "Energia aktywacji"
+      },
+      {
+        "id": "science-hard-jaka-nazwe-nosi-energia-potrzebna-do-usuniecia-ele-d",
+        "text": "Energia kinetyczna"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-ktory-typ-krwi-jest-nazywany-uniwersalnym-dawca-w",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Który typ krwi jest nazywany uniwersalnym dawcą w układzie ABO i Rh?",
+    "correctAnswerId": "science-hard-ktory-typ-krwi-jest-nazywany-uniwersalnym-dawca-w-a",
+    "answers": [
+      {
+        "id": "science-hard-ktory-typ-krwi-jest-nazywany-uniwersalnym-dawca-w-a",
+        "text": "0 Rh-"
+      },
+      {
+        "id": "science-hard-ktory-typ-krwi-jest-nazywany-uniwersalnym-dawca-w-b",
+        "text": "AB Rh+"
+      },
+      {
+        "id": "science-hard-ktory-typ-krwi-jest-nazywany-uniwersalnym-dawca-w-c",
+        "text": "A Rh+"
+      },
+      {
+        "id": "science-hard-ktory-typ-krwi-jest-nazywany-uniwersalnym-dawca-w-d",
+        "text": "B Rh-"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-proces-kopiowania-materia-u-genetyc",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się proces kopiowania materiału genetycznego przed podziałem komórki?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-proces-kopiowania-materia-u-genetyc-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-kopiowania-materia-u-genetyc-a",
+        "text": "Replikacja DNA"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-kopiowania-materia-u-genetyc-b",
+        "text": "Translacja"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-kopiowania-materia-u-genetyc-c",
+        "text": "Mutageneza"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-kopiowania-materia-u-genetyc-d",
+        "text": "Fermentacja"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-ktory-astronom-zaproponowa-heliocentryczny-model-u",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Który astronom zaproponował heliocentryczny model Układu Słonecznego?",
+    "correctAnswerId": "science-hard-ktory-astronom-zaproponowa-heliocentryczny-model-u-a",
+    "answers": [
+      {
+        "id": "science-hard-ktory-astronom-zaproponowa-heliocentryczny-model-u-a",
+        "text": "Mikołaj Kopernik"
+      },
+      {
+        "id": "science-hard-ktory-astronom-zaproponowa-heliocentryczny-model-u-b",
+        "text": "Johannes Kepler"
+      },
+      {
+        "id": "science-hard-ktory-astronom-zaproponowa-heliocentryczny-model-u-c",
+        "text": "Tycho Brahe"
+      },
+      {
+        "id": "science-hard-ktory-astronom-zaproponowa-heliocentryczny-model-u-d",
+        "text": "Edwin Hubble"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-zdolnosc-niektorych-materia-ow-do-o",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się zdolność niektórych materiałów do odpychania pola magnetycznego?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-zdolnosc-niektorych-materia-ow-do-o-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-zdolnosc-niektorych-materia-ow-do-o-a",
+        "text": "Diamagnetyzm"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-zdolnosc-niektorych-materia-ow-do-o-b",
+        "text": "Ferromagnetyzm"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-zdolnosc-niektorych-materia-ow-do-o-c",
+        "text": "Paramagnetyzm"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-zdolnosc-niektorych-materia-ow-do-o-d",
+        "text": "Piezoelektryczność"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jaki-jest-przyblizony-wiek-ziemi",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jaki jest przybliżony wiek Ziemi?",
+    "correctAnswerId": "science-hard-jaki-jest-przyblizony-wiek-ziemi-a",
+    "answers": [
+      {
+        "id": "science-hard-jaki-jest-przyblizony-wiek-ziemi-a",
+        "text": "4,54 miliarda lat"
+      },
+      {
+        "id": "science-hard-jaki-jest-przyblizony-wiek-ziemi-b",
+        "text": "540 milionów lat"
+      },
+      {
+        "id": "science-hard-jaki-jest-przyblizony-wiek-ziemi-c",
+        "text": "13,8 miliarda lat"
+      },
+      {
+        "id": "science-hard-jaki-jest-przyblizony-wiek-ziemi-d",
+        "text": "2 miliardy lat"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-jednostka-ilosci-substancji-w-uk-ad",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się jednostka ilości substancji w układzie SI?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-jednostka-ilosci-substancji-w-uk-ad-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-ilosci-substancji-w-uk-ad-a",
+        "text": "Mol"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-ilosci-substancji-w-uk-ad-b",
+        "text": "Gram"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-ilosci-substancji-w-uk-ad-c",
+        "text": "Litr"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-jednostka-ilosci-substancji-w-uk-ad-d",
+        "text": "Karat"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-ktory-enzym-rozk-ada-skrobie-juz-w-jamie-ustnej",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Który enzym rozkłada skrobię już w jamie ustnej?",
+    "correctAnswerId": "science-hard-ktory-enzym-rozk-ada-skrobie-juz-w-jamie-ustnej-a",
+    "answers": [
+      {
+        "id": "science-hard-ktory-enzym-rozk-ada-skrobie-juz-w-jamie-ustnej-a",
+        "text": "Amylaza ślinowa"
+      },
+      {
+        "id": "science-hard-ktory-enzym-rozk-ada-skrobie-juz-w-jamie-ustnej-b",
+        "text": "Pepsyna"
+      },
+      {
+        "id": "science-hard-ktory-enzym-rozk-ada-skrobie-juz-w-jamie-ustnej-c",
+        "text": "Lipaza"
+      },
+      {
+        "id": "science-hard-ktory-enzym-rozk-ada-skrobie-juz-w-jamie-ustnej-d",
+        "text": "Trypsyna"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-punkt-w-ktorym-zbiega-sie-pozorna-o",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się punkt, w którym zbiega się pozorna oś obrotu nieba na półkuli północnej?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-punkt-w-ktorym-zbiega-sie-pozorna-o-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-punkt-w-ktorym-zbiega-sie-pozorna-o-a",
+        "text": "Biegun północny niebieski"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-punkt-w-ktorym-zbiega-sie-pozorna-o-b",
+        "text": "Zenit"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-punkt-w-ktorym-zbiega-sie-pozorna-o-c",
+        "text": "Peryhelium"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-punkt-w-ktorym-zbiega-sie-pozorna-o-d",
+        "text": "Aphelium"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-ktory-pierwiastek-ma-najwyzsza-elektroujemnosc-w-u",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Który pierwiastek ma najwyższą elektroujemność w układzie okresowym?",
+    "correctAnswerId": "science-hard-ktory-pierwiastek-ma-najwyzsza-elektroujemnosc-w-u-a",
+    "answers": [
+      {
+        "id": "science-hard-ktory-pierwiastek-ma-najwyzsza-elektroujemnosc-w-u-a",
+        "text": "Fluor"
+      },
+      {
+        "id": "science-hard-ktory-pierwiastek-ma-najwyzsza-elektroujemnosc-w-u-b",
+        "text": "Tlen"
+      },
+      {
+        "id": "science-hard-ktory-pierwiastek-ma-najwyzsza-elektroujemnosc-w-u-c",
+        "text": "Chlor"
+      },
+      {
+        "id": "science-hard-ktory-pierwiastek-ma-najwyzsza-elektroujemnosc-w-u-d",
+        "text": "Azot"
+      }
+    ]
+  },
+  {
+    "key": "science-hard-jak-nazywa-sie-proces-samorzutnego-rozpadu-ciezkie",
+    "categoryKey": "science",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się proces samorzutnego rozpadu ciężkiego jądra atomowego na mniejsze jądra?",
+    "correctAnswerId": "science-hard-jak-nazywa-sie-proces-samorzutnego-rozpadu-ciezkie-a",
+    "answers": [
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-samorzutnego-rozpadu-ciezkie-a",
+        "text": "Rozszczepienie jądra"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-samorzutnego-rozpadu-ciezkie-b",
+        "text": "Synteza jądrowa"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-samorzutnego-rozpadu-ciezkie-c",
+        "text": "Jonizacja"
+      },
+      {
+        "id": "science-hard-jak-nazywa-sie-proces-samorzutnego-rozpadu-ciezkie-d",
+        "text": "Krystalizacja"
+      }
+    ]
+  }
+]

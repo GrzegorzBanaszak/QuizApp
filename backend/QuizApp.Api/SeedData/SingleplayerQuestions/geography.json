@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "geography-easy-capital-france",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Francji?",
+    "correctAnswerId": "geography-easy-capital-france-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-france-a",
+        "text": "Paryż"
+      },
+      {
+        "id": "geography-easy-capital-france-b",
+        "text": "Lyon"
+      },
+      {
+        "id": "geography-easy-capital-france-c",
+        "text": "Marsylia"
+      },
+      {
+        "id": "geography-easy-capital-france-d",
+        "text": "Nicea"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-germany",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Niemiec?",
+    "correctAnswerId": "geography-easy-capital-germany-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-germany-a",
+        "text": "Berlin"
+      },
+      {
+        "id": "geography-easy-capital-germany-b",
+        "text": "Monachium"
+      },
+      {
+        "id": "geography-easy-capital-germany-c",
+        "text": "Hamburg"
+      },
+      {
+        "id": "geography-easy-capital-germany-d",
+        "text": "Frankfurt"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-italy",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Włoch?",
+    "correctAnswerId": "geography-easy-capital-italy-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-italy-a",
+        "text": "Rzym"
+      },
+      {
+        "id": "geography-easy-capital-italy-b",
+        "text": "Mediolan"
+      },
+      {
+        "id": "geography-easy-capital-italy-c",
+        "text": "Neapol"
+      },
+      {
+        "id": "geography-easy-capital-italy-d",
+        "text": "Turyn"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-spain",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Hiszpanii?",
+    "correctAnswerId": "geography-easy-capital-spain-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-spain-a",
+        "text": "Madryt"
+      },
+      {
+        "id": "geography-easy-capital-spain-b",
+        "text": "Barcelona"
+      },
+      {
+        "id": "geography-easy-capital-spain-c",
+        "text": "Sewilla"
+      },
+      {
+        "id": "geography-easy-capital-spain-d",
+        "text": "Walencja"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-poland",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Polski?",
+    "correctAnswerId": "geography-easy-capital-poland-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-poland-a",
+        "text": "Warszawa"
+      },
+      {
+        "id": "geography-easy-capital-poland-b",
+        "text": "Kraków"
+      },
+      {
+        "id": "geography-easy-capital-poland-c",
+        "text": "Gdańsk"
+      },
+      {
+        "id": "geography-easy-capital-poland-d",
+        "text": "Wrocław"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-largest-continent",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Który kontynent jest największy pod względem powierzchni?",
+    "correctAnswerId": "geography-easy-largest-continent-a",
+    "answers": [
+      {
+        "id": "geography-easy-largest-continent-a",
+        "text": "Azja"
+      },
+      {
+        "id": "geography-easy-largest-continent-b",
+        "text": "Afryka"
+      },
+      {
+        "id": "geography-easy-largest-continent-c",
+        "text": "Europa"
+      },
+      {
+        "id": "geography-easy-largest-continent-d",
+        "text": "Ameryka Południowa"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-smallest-continent",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Który kontynent jest najmniejszy pod względem powierzchni?",
+    "correctAnswerId": "geography-easy-smallest-continent-a",
+    "answers": [
+      {
+        "id": "geography-easy-smallest-continent-a",
+        "text": "Australia"
+      },
+      {
+        "id": "geography-easy-smallest-continent-b",
+        "text": "Europa"
+      },
+      {
+        "id": "geography-easy-smallest-continent-c",
+        "text": "Antarktyda"
+      },
+      {
+        "id": "geography-easy-smallest-continent-d",
+        "text": "Ameryka Południowa"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-longest-river",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka rzeka jest najdłuższa na świecie według szkolnej wiedzy ogólnej?",
+    "correctAnswerId": "geography-easy-longest-river-a",
+    "answers": [
+      {
+        "id": "geography-easy-longest-river-a",
+        "text": "Nil"
+      },
+      {
+        "id": "geography-easy-longest-river-b",
+        "text": "Amazonka"
+      },
+      {
+        "id": "geography-easy-longest-river-c",
+        "text": "Jangcy"
+      },
+      {
+        "id": "geography-easy-longest-river-d",
+        "text": "Missisipi"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-largest-ocean",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Który ocean jest największy na Ziemi?",
+    "correctAnswerId": "geography-easy-largest-ocean-a",
+    "answers": [
+      {
+        "id": "geography-easy-largest-ocean-a",
+        "text": "Ocean Spokojny"
+      },
+      {
+        "id": "geography-easy-largest-ocean-b",
+        "text": "Ocean Atlantycki"
+      },
+      {
+        "id": "geography-easy-largest-ocean-c",
+        "text": "Ocean Indyjski"
+      },
+      {
+        "id": "geography-easy-largest-ocean-d",
+        "text": "Ocean Arktyczny"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-desert-sahara",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Na którym kontynencie leży Sahara?",
+    "correctAnswerId": "geography-easy-desert-sahara-a",
+    "answers": [
+      {
+        "id": "geography-easy-desert-sahara-a",
+        "text": "Afryka"
+      },
+      {
+        "id": "geography-easy-desert-sahara-b",
+        "text": "Azja"
+      },
+      {
+        "id": "geography-easy-desert-sahara-c",
+        "text": "Australia"
+      },
+      {
+        "id": "geography-easy-desert-sahara-d",
+        "text": "Ameryka Północna"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-uk",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Wielkiej Brytanii?",
+    "correctAnswerId": "geography-easy-capital-uk-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-uk-a",
+        "text": "Londyn"
+      },
+      {
+        "id": "geography-easy-capital-uk-b",
+        "text": "Manchester"
+      },
+      {
+        "id": "geography-easy-capital-uk-c",
+        "text": "Liverpool"
+      },
+      {
+        "id": "geography-easy-capital-uk-d",
+        "text": "Birmingham"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-japan",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Japonii?",
+    "correctAnswerId": "geography-easy-capital-japan-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-japan-a",
+        "text": "Tokio"
+      },
+      {
+        "id": "geography-easy-capital-japan-b",
+        "text": "Osaka"
+      },
+      {
+        "id": "geography-easy-capital-japan-c",
+        "text": "Kioto"
+      },
+      {
+        "id": "geography-easy-capital-japan-d",
+        "text": "Hiroshima"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-canada",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Kanady?",
+    "correctAnswerId": "geography-easy-capital-canada-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-canada-a",
+        "text": "Ottawa"
+      },
+      {
+        "id": "geography-easy-capital-canada-b",
+        "text": "Toronto"
+      },
+      {
+        "id": "geography-easy-capital-canada-c",
+        "text": "Vancouver"
+      },
+      {
+        "id": "geography-easy-capital-canada-d",
+        "text": "Montreal"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-australia",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Australii?",
+    "correctAnswerId": "geography-easy-capital-australia-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-australia-a",
+        "text": "Canberra"
+      },
+      {
+        "id": "geography-easy-capital-australia-b",
+        "text": "Sydney"
+      },
+      {
+        "id": "geography-easy-capital-australia-c",
+        "text": "Melbourne"
+      },
+      {
+        "id": "geography-easy-capital-australia-d",
+        "text": "Perth"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-usa",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Stanów Zjednoczonych?",
+    "correctAnswerId": "geography-easy-capital-usa-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-usa-a",
+        "text": "Waszyngton"
+      },
+      {
+        "id": "geography-easy-capital-usa-b",
+        "text": "Nowy Jork"
+      },
+      {
+        "id": "geography-easy-capital-usa-c",
+        "text": "Los Angeles"
+      },
+      {
+        "id": "geography-easy-capital-usa-d",
+        "text": "Chicago"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-continent-brazil",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Na jakim kontynencie leży Brazylia?",
+    "correctAnswerId": "geography-easy-continent-brazil-a",
+    "answers": [
+      {
+        "id": "geography-easy-continent-brazil-a",
+        "text": "Ameryka Południowa"
+      },
+      {
+        "id": "geography-easy-continent-brazil-b",
+        "text": "Ameryka Północna"
+      },
+      {
+        "id": "geography-easy-continent-brazil-c",
+        "text": "Afryka"
+      },
+      {
+        "id": "geography-easy-continent-brazil-d",
+        "text": "Europa"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-continent-egypt",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Na jakim kontynencie leży Egipt?",
+    "correctAnswerId": "geography-easy-continent-egypt-a",
+    "answers": [
+      {
+        "id": "geography-easy-continent-egypt-a",
+        "text": "Afryka"
+      },
+      {
+        "id": "geography-easy-continent-egypt-b",
+        "text": "Azja"
+      },
+      {
+        "id": "geography-easy-continent-egypt-c",
+        "text": "Europa"
+      },
+      {
+        "id": "geography-easy-continent-egypt-d",
+        "text": "Ameryka Południowa"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-portugal",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Portugalii?",
+    "correctAnswerId": "geography-easy-capital-portugal-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-portugal-a",
+        "text": "Lizbona"
+      },
+      {
+        "id": "geography-easy-capital-portugal-b",
+        "text": "Porto"
+      },
+      {
+        "id": "geography-easy-capital-portugal-c",
+        "text": "Faro"
+      },
+      {
+        "id": "geography-easy-capital-portugal-d",
+        "text": "Braga"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-greece",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Grecji?",
+    "correctAnswerId": "geography-easy-capital-greece-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-greece-a",
+        "text": "Ateny"
+      },
+      {
+        "id": "geography-easy-capital-greece-b",
+        "text": "Saloniki"
+      },
+      {
+        "id": "geography-easy-capital-greece-c",
+        "text": "Patras"
+      },
+      {
+        "id": "geography-easy-capital-greece-d",
+        "text": "Heraklion"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-netherlands",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Holandii?",
+    "correctAnswerId": "geography-easy-capital-netherlands-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-netherlands-a",
+        "text": "Amsterdam"
+      },
+      {
+        "id": "geography-easy-capital-netherlands-b",
+        "text": "Rotterdam"
+      },
+      {
+        "id": "geography-easy-capital-netherlands-c",
+        "text": "Haga"
+      },
+      {
+        "id": "geography-easy-capital-netherlands-d",
+        "text": "Utrecht"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-czech",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Czech?",
+    "correctAnswerId": "geography-easy-capital-czech-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-czech-a",
+        "text": "Praga"
+      },
+      {
+        "id": "geography-easy-capital-czech-b",
+        "text": "Brno"
+      },
+      {
+        "id": "geography-easy-capital-czech-c",
+        "text": "Ostrawa"
+      },
+      {
+        "id": "geography-easy-capital-czech-d",
+        "text": "Pilzno"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-hungary",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Węgier?",
+    "correctAnswerId": "geography-easy-capital-hungary-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-hungary-a",
+        "text": "Budapeszt"
+      },
+      {
+        "id": "geography-easy-capital-hungary-b",
+        "text": "Debreczyn"
+      },
+      {
+        "id": "geography-easy-capital-hungary-c",
+        "text": "Szeged"
+      },
+      {
+        "id": "geography-easy-capital-hungary-d",
+        "text": "Miszkolc"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-ireland",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Irlandii?",
+    "correctAnswerId": "geography-easy-capital-ireland-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-ireland-a",
+        "text": "Dublin"
+      },
+      {
+        "id": "geography-easy-capital-ireland-b",
+        "text": "Cork"
+      },
+      {
+        "id": "geography-easy-capital-ireland-c",
+        "text": "Galway"
+      },
+      {
+        "id": "geography-easy-capital-ireland-d",
+        "text": "Limerick"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-austria",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Austrii?",
+    "correctAnswerId": "geography-easy-capital-austria-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-austria-a",
+        "text": "Wiedeń"
+      },
+      {
+        "id": "geography-easy-capital-austria-b",
+        "text": "Salzburg"
+      },
+      {
+        "id": "geography-easy-capital-austria-c",
+        "text": "Graz"
+      },
+      {
+        "id": "geography-easy-capital-austria-d",
+        "text": "Innsbruck"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-belgium",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Belgii?",
+    "correctAnswerId": "geography-easy-capital-belgium-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-belgium-a",
+        "text": "Bruksela"
+      },
+      {
+        "id": "geography-easy-capital-belgium-b",
+        "text": "Antwerpia"
+      },
+      {
+        "id": "geography-easy-capital-belgium-c",
+        "text": "Brugia"
+      },
+      {
+        "id": "geography-easy-capital-belgium-d",
+        "text": "Gandawa"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-sweden",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Szwecji?",
+    "correctAnswerId": "geography-easy-capital-sweden-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-sweden-a",
+        "text": "Sztokholm"
+      },
+      {
+        "id": "geography-easy-capital-sweden-b",
+        "text": "Göteborg"
+      },
+      {
+        "id": "geography-easy-capital-sweden-c",
+        "text": "Malmö"
+      },
+      {
+        "id": "geography-easy-capital-sweden-d",
+        "text": "Uppsala"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-norway",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Norwegii?",
+    "correctAnswerId": "geography-easy-capital-norway-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-norway-a",
+        "text": "Oslo"
+      },
+      {
+        "id": "geography-easy-capital-norway-b",
+        "text": "Bergen"
+      },
+      {
+        "id": "geography-easy-capital-norway-c",
+        "text": "Trondheim"
+      },
+      {
+        "id": "geography-easy-capital-norway-d",
+        "text": "Stavanger"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-finland",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Finlandii?",
+    "correctAnswerId": "geography-easy-capital-finland-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-finland-a",
+        "text": "Helsinki"
+      },
+      {
+        "id": "geography-easy-capital-finland-b",
+        "text": "Turku"
+      },
+      {
+        "id": "geography-easy-capital-finland-c",
+        "text": "Tampere"
+      },
+      {
+        "id": "geography-easy-capital-finland-d",
+        "text": "Oulu"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-denmark",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Danii?",
+    "correctAnswerId": "geography-easy-capital-denmark-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-denmark-a",
+        "text": "Kopenhaga"
+      },
+      {
+        "id": "geography-easy-capital-denmark-b",
+        "text": "Aarhus"
+      },
+      {
+        "id": "geography-easy-capital-denmark-c",
+        "text": "Odense"
+      },
+      {
+        "id": "geography-easy-capital-denmark-d",
+        "text": "Aalborg"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-switzerland",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Szwajcarii?",
+    "correctAnswerId": "geography-easy-capital-switzerland-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-switzerland-a",
+        "text": "Berno"
+      },
+      {
+        "id": "geography-easy-capital-switzerland-b",
+        "text": "Zurych"
+      },
+      {
+        "id": "geography-easy-capital-switzerland-c",
+        "text": "Genewa"
+      },
+      {
+        "id": "geography-easy-capital-switzerland-d",
+        "text": "Lozanna"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-argentina",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Argentyny?",
+    "correctAnswerId": "geography-easy-capital-argentina-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-argentina-a",
+        "text": "Buenos Aires"
+      },
+      {
+        "id": "geography-easy-capital-argentina-b",
+        "text": "Córdoba"
+      },
+      {
+        "id": "geography-easy-capital-argentina-c",
+        "text": "Rosario"
+      },
+      {
+        "id": "geography-easy-capital-argentina-d",
+        "text": "Mendoza"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-mexico",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Meksyku?",
+    "correctAnswerId": "geography-easy-capital-mexico-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-mexico-a",
+        "text": "Meksyk"
+      },
+      {
+        "id": "geography-easy-capital-mexico-b",
+        "text": "Cancún"
+      },
+      {
+        "id": "geography-easy-capital-mexico-c",
+        "text": "Guadalajara"
+      },
+      {
+        "id": "geography-easy-capital-mexico-d",
+        "text": "Monterrey"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-china",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Chin?",
+    "correctAnswerId": "geography-easy-capital-china-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-china-a",
+        "text": "Pekin"
+      },
+      {
+        "id": "geography-easy-capital-china-b",
+        "text": "Szanghaj"
+      },
+      {
+        "id": "geography-easy-capital-china-c",
+        "text": "Hongkong"
+      },
+      {
+        "id": "geography-easy-capital-china-d",
+        "text": "Shenzhen"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-india",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Indii?",
+    "correctAnswerId": "geography-easy-capital-india-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-india-a",
+        "text": "Nowe Delhi"
+      },
+      {
+        "id": "geography-easy-capital-india-b",
+        "text": "Mumbaj"
+      },
+      {
+        "id": "geography-easy-capital-india-c",
+        "text": "Kalkuta"
+      },
+      {
+        "id": "geography-easy-capital-india-d",
+        "text": "Bengaluru"
+      }
+    ]
+  },
+  {
+    "key": "geography-easy-capital-russia",
+    "categoryKey": "geography",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Rosji?",
+    "correctAnswerId": "geography-easy-capital-russia-a",
+    "answers": [
+      {
+        "id": "geography-easy-capital-russia-a",
+        "text": "Moskwa"
+      },
+      {
+        "id": "geography-easy-capital-russia-b",
+        "text": "Petersburg"
+      },
+      {
+        "id": "geography-easy-capital-russia-c",
+        "text": "Kazań"
+      },
+      {
+        "id": "geography-easy-capital-russia-d",
+        "text": "Soczi"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-south-africa-admin",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Które miasto jest stolicą administracyjną Republiki Południowej Afryki?",
+    "correctAnswerId": "geography-easymedium-capital-south-africa-admin-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-south-africa-admin-a",
+        "text": "Pretoria"
+      },
+      {
+        "id": "geography-easymedium-capital-south-africa-admin-b",
+        "text": "Kapsztad"
+      },
+      {
+        "id": "geography-easymedium-capital-south-africa-admin-c",
+        "text": "Johannesburg"
+      },
+      {
+        "id": "geography-easymedium-capital-south-africa-admin-d",
+        "text": "Durban"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-turkey",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Turcji?",
+    "correctAnswerId": "geography-easymedium-capital-turkey-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-turkey-a",
+        "text": "Ankara"
+      },
+      {
+        "id": "geography-easymedium-capital-turkey-b",
+        "text": "Stambuł"
+      },
+      {
+        "id": "geography-easymedium-capital-turkey-c",
+        "text": "Izmir"
+      },
+      {
+        "id": "geography-easymedium-capital-turkey-d",
+        "text": "Antalya"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-new-zealand",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Nowej Zelandii?",
+    "correctAnswerId": "geography-easymedium-capital-new-zealand-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-new-zealand-a",
+        "text": "Wellington"
+      },
+      {
+        "id": "geography-easymedium-capital-new-zealand-b",
+        "text": "Auckland"
+      },
+      {
+        "id": "geography-easymedium-capital-new-zealand-c",
+        "text": "Christchurch"
+      },
+      {
+        "id": "geography-easymedium-capital-new-zealand-d",
+        "text": "Hamilton"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-brazil",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Brazylii?",
+    "correctAnswerId": "geography-easymedium-capital-brazil-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-brazil-a",
+        "text": "Brasília"
+      },
+      {
+        "id": "geography-easymedium-capital-brazil-b",
+        "text": "Rio de Janeiro"
+      },
+      {
+        "id": "geography-easymedium-capital-brazil-c",
+        "text": "São Paulo"
+      },
+      {
+        "id": "geography-easymedium-capital-brazil-d",
+        "text": "Salvador"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-morocco",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Maroka?",
+    "correctAnswerId": "geography-easymedium-capital-morocco-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-morocco-a",
+        "text": "Rabat"
+      },
+      {
+        "id": "geography-easymedium-capital-morocco-b",
+        "text": "Casablanca"
+      },
+      {
+        "id": "geography-easymedium-capital-morocco-c",
+        "text": "Marrakesz"
+      },
+      {
+        "id": "geography-easymedium-capital-morocco-d",
+        "text": "Fez"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-thailand",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Tajlandii?",
+    "correctAnswerId": "geography-easymedium-capital-thailand-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-thailand-a",
+        "text": "Bangkok"
+      },
+      {
+        "id": "geography-easymedium-capital-thailand-b",
+        "text": "Phuket"
+      },
+      {
+        "id": "geography-easymedium-capital-thailand-c",
+        "text": "Chiang Mai"
+      },
+      {
+        "id": "geography-easymedium-capital-thailand-d",
+        "text": "Pattaya"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-indonesia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Indonezji?",
+    "correctAnswerId": "geography-easymedium-capital-indonesia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-indonesia-a",
+        "text": "Dżakarta"
+      },
+      {
+        "id": "geography-easymedium-capital-indonesia-b",
+        "text": "Bali"
+      },
+      {
+        "id": "geography-easymedium-capital-indonesia-c",
+        "text": "Surabaja"
+      },
+      {
+        "id": "geography-easymedium-capital-indonesia-d",
+        "text": "Bandung"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-ukraine",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Ukrainy?",
+    "correctAnswerId": "geography-easymedium-capital-ukraine-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-ukraine-a",
+        "text": "Kijów"
+      },
+      {
+        "id": "geography-easymedium-capital-ukraine-b",
+        "text": "Lwów"
+      },
+      {
+        "id": "geography-easymedium-capital-ukraine-c",
+        "text": "Odessa"
+      },
+      {
+        "id": "geography-easymedium-capital-ukraine-d",
+        "text": "Charków"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-romania",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Rumunii?",
+    "correctAnswerId": "geography-easymedium-capital-romania-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-romania-a",
+        "text": "Bukareszt"
+      },
+      {
+        "id": "geography-easymedium-capital-romania-b",
+        "text": "Konstanca"
+      },
+      {
+        "id": "geography-easymedium-capital-romania-c",
+        "text": "Kluż-Napoka"
+      },
+      {
+        "id": "geography-easymedium-capital-romania-d",
+        "text": "Timișoara"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-bulgaria",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Bułgarii?",
+    "correctAnswerId": "geography-easymedium-capital-bulgaria-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-bulgaria-a",
+        "text": "Sofia"
+      },
+      {
+        "id": "geography-easymedium-capital-bulgaria-b",
+        "text": "Warna"
+      },
+      {
+        "id": "geography-easymedium-capital-bulgaria-c",
+        "text": "Płowdiw"
+      },
+      {
+        "id": "geography-easymedium-capital-bulgaria-d",
+        "text": "Ruse"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-croatia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Chorwacji?",
+    "correctAnswerId": "geography-easymedium-capital-croatia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-croatia-a",
+        "text": "Zagrzeb"
+      },
+      {
+        "id": "geography-easymedium-capital-croatia-b",
+        "text": "Split"
+      },
+      {
+        "id": "geography-easymedium-capital-croatia-c",
+        "text": "Dubrownik"
+      },
+      {
+        "id": "geography-easymedium-capital-croatia-d",
+        "text": "Rijeka"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-serbia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Serbii?",
+    "correctAnswerId": "geography-easymedium-capital-serbia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-serbia-a",
+        "text": "Belgrad"
+      },
+      {
+        "id": "geography-easymedium-capital-serbia-b",
+        "text": "Nowy Sad"
+      },
+      {
+        "id": "geography-easymedium-capital-serbia-c",
+        "text": "Nisz"
+      },
+      {
+        "id": "geography-easymedium-capital-serbia-d",
+        "text": "Subotica"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-slovakia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Słowacji?",
+    "correctAnswerId": "geography-easymedium-capital-slovakia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-slovakia-a",
+        "text": "Bratysława"
+      },
+      {
+        "id": "geography-easymedium-capital-slovakia-b",
+        "text": "Koszyce"
+      },
+      {
+        "id": "geography-easymedium-capital-slovakia-c",
+        "text": "Żylina"
+      },
+      {
+        "id": "geography-easymedium-capital-slovakia-d",
+        "text": "Nitra"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-lithuania",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Litwy?",
+    "correctAnswerId": "geography-easymedium-capital-lithuania-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-lithuania-a",
+        "text": "Wilno"
+      },
+      {
+        "id": "geography-easymedium-capital-lithuania-b",
+        "text": "Kowno"
+      },
+      {
+        "id": "geography-easymedium-capital-lithuania-c",
+        "text": "Kłajpeda"
+      },
+      {
+        "id": "geography-easymedium-capital-lithuania-d",
+        "text": "Szawle"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-latvia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Łotwy?",
+    "correctAnswerId": "geography-easymedium-capital-latvia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-latvia-a",
+        "text": "Ryga"
+      },
+      {
+        "id": "geography-easymedium-capital-latvia-b",
+        "text": "Dyneburg"
+      },
+      {
+        "id": "geography-easymedium-capital-latvia-c",
+        "text": "Liepāja"
+      },
+      {
+        "id": "geography-easymedium-capital-latvia-d",
+        "text": "Jelgava"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-estonia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Estonii?",
+    "correctAnswerId": "geography-easymedium-capital-estonia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-estonia-a",
+        "text": "Tallinn"
+      },
+      {
+        "id": "geography-easymedium-capital-estonia-b",
+        "text": "Tartu"
+      },
+      {
+        "id": "geography-easymedium-capital-estonia-c",
+        "text": "Narwa"
+      },
+      {
+        "id": "geography-easymedium-capital-estonia-d",
+        "text": "Pärnu"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-slovenia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Słowenii?",
+    "correctAnswerId": "geography-easymedium-capital-slovenia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-slovenia-a",
+        "text": "Lublana"
+      },
+      {
+        "id": "geography-easymedium-capital-slovenia-b",
+        "text": "Maribor"
+      },
+      {
+        "id": "geography-easymedium-capital-slovenia-c",
+        "text": "Koper"
+      },
+      {
+        "id": "geography-easymedium-capital-slovenia-d",
+        "text": "Celje"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-iceland",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Islandii?",
+    "correctAnswerId": "geography-easymedium-capital-iceland-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-iceland-a",
+        "text": "Reykjavík"
+      },
+      {
+        "id": "geography-easymedium-capital-iceland-b",
+        "text": "Akureyri"
+      },
+      {
+        "id": "geography-easymedium-capital-iceland-c",
+        "text": "Selfoss"
+      },
+      {
+        "id": "geography-easymedium-capital-iceland-d",
+        "text": "Keflavík"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-pakistan",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Pakistanu?",
+    "correctAnswerId": "geography-easymedium-capital-pakistan-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-pakistan-a",
+        "text": "Islamabad"
+      },
+      {
+        "id": "geography-easymedium-capital-pakistan-b",
+        "text": "Karaczi"
+      },
+      {
+        "id": "geography-easymedium-capital-pakistan-c",
+        "text": "Lahaur"
+      },
+      {
+        "id": "geography-easymedium-capital-pakistan-d",
+        "text": "Peszawar"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-saudi",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Arabii Saudyjskiej?",
+    "correctAnswerId": "geography-easymedium-capital-saudi-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-saudi-a",
+        "text": "Rijad"
+      },
+      {
+        "id": "geography-easymedium-capital-saudi-b",
+        "text": "Dżudda"
+      },
+      {
+        "id": "geography-easymedium-capital-saudi-c",
+        "text": "Mekka"
+      },
+      {
+        "id": "geography-easymedium-capital-saudi-d",
+        "text": "Medyna"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-uae",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Zjednoczonych Emiratów Arabskich?",
+    "correctAnswerId": "geography-easymedium-capital-uae-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-uae-a",
+        "text": "Abu Zabi"
+      },
+      {
+        "id": "geography-easymedium-capital-uae-b",
+        "text": "Dubaj"
+      },
+      {
+        "id": "geography-easymedium-capital-uae-c",
+        "text": "Szardża"
+      },
+      {
+        "id": "geography-easymedium-capital-uae-d",
+        "text": "Al-Ajn"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-kenya",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Kenii?",
+    "correctAnswerId": "geography-easymedium-capital-kenya-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-kenya-a",
+        "text": "Nairobi"
+      },
+      {
+        "id": "geography-easymedium-capital-kenya-b",
+        "text": "Mombasa"
+      },
+      {
+        "id": "geography-easymedium-capital-kenya-c",
+        "text": "Kisumu"
+      },
+      {
+        "id": "geography-easymedium-capital-kenya-d",
+        "text": "Nakuru"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-nigeria",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Nigerii?",
+    "correctAnswerId": "geography-easymedium-capital-nigeria-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-nigeria-a",
+        "text": "Abudża"
+      },
+      {
+        "id": "geography-easymedium-capital-nigeria-b",
+        "text": "Lagos"
+      },
+      {
+        "id": "geography-easymedium-capital-nigeria-c",
+        "text": "Kano"
+      },
+      {
+        "id": "geography-easymedium-capital-nigeria-d",
+        "text": "Ibadan"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-peru",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Peru?",
+    "correctAnswerId": "geography-easymedium-capital-peru-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-peru-a",
+        "text": "Lima"
+      },
+      {
+        "id": "geography-easymedium-capital-peru-b",
+        "text": "Cusco"
+      },
+      {
+        "id": "geography-easymedium-capital-peru-c",
+        "text": "Arequipa"
+      },
+      {
+        "id": "geography-easymedium-capital-peru-d",
+        "text": "Trujillo"
+      }
+    ]
+  },
+  {
+    "key": "geography-easymedium-capital-colombia",
+    "categoryKey": "geography",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Kolumbii?",
+    "correctAnswerId": "geography-easymedium-capital-colombia-a",
+    "answers": [
+      {
+        "id": "geography-easymedium-capital-colombia-a",
+        "text": "Bogota"
+      },
+      {
+        "id": "geography-easymedium-capital-colombia-b",
+        "text": "Medellín"
+      },
+      {
+        "id": "geography-easymedium-capital-colombia-c",
+        "text": "Cali"
+      },
+      {
+        "id": "geography-easymedium-capital-colombia-d",
+        "text": "Cartagena"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-amazon-country",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Przez które państwo przepływa największa część Amazonki?",
+    "correctAnswerId": "geography-medium-amazon-country-a",
+    "answers": [
+      {
+        "id": "geography-medium-amazon-country-a",
+        "text": "Brazylia"
+      },
+      {
+        "id": "geography-medium-amazon-country-b",
+        "text": "Peru"
+      },
+      {
+        "id": "geography-medium-amazon-country-c",
+        "text": "Kolumbia"
+      },
+      {
+        "id": "geography-medium-amazon-country-d",
+        "text": "Wenezuela"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-kilimanjaro-country",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "W którym państwie znajduje się Kilimandżaro?",
+    "correctAnswerId": "geography-medium-kilimanjaro-country-a",
+    "answers": [
+      {
+        "id": "geography-medium-kilimanjaro-country-a",
+        "text": "Tanzania"
+      },
+      {
+        "id": "geography-medium-kilimanjaro-country-b",
+        "text": "Kenia"
+      },
+      {
+        "id": "geography-medium-kilimanjaro-country-c",
+        "text": "Uganda"
+      },
+      {
+        "id": "geography-medium-kilimanjaro-country-d",
+        "text": "Etiopia"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-japan-ocean",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Nad którym oceanem leży Japonia?",
+    "correctAnswerId": "geography-medium-japan-ocean-a",
+    "answers": [
+      {
+        "id": "geography-medium-japan-ocean-a",
+        "text": "Ocean Spokojny"
+      },
+      {
+        "id": "geography-medium-japan-ocean-b",
+        "text": "Ocean Atlantycki"
+      },
+      {
+        "id": "geography-medium-japan-ocean-c",
+        "text": "Ocean Indyjski"
+      },
+      {
+        "id": "geography-medium-japan-ocean-d",
+        "text": "Ocean Arktyczny"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-canal-panama-connects",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jakie dwa oceany łączy Kanał Panamski?",
+    "correctAnswerId": "geography-medium-canal-panama-connects-a",
+    "answers": [
+      {
+        "id": "geography-medium-canal-panama-connects-a",
+        "text": "Ocean Atlantycki i Ocean Spokojny"
+      },
+      {
+        "id": "geography-medium-canal-panama-connects-b",
+        "text": "Ocean Indyjski i Ocean Spokojny"
+      },
+      {
+        "id": "geography-medium-canal-panama-connects-c",
+        "text": "Ocean Arktyczny i Ocean Atlantycki"
+      },
+      {
+        "id": "geography-medium-canal-panama-connects-d",
+        "text": "Ocean Indyjski i Ocean Atlantycki"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-river-through-paris",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka rzeka przepływa przez Paryż?",
+    "correctAnswerId": "geography-medium-river-through-paris-a",
+    "answers": [
+      {
+        "id": "geography-medium-river-through-paris-a",
+        "text": "Sekwana"
+      },
+      {
+        "id": "geography-medium-river-through-paris-b",
+        "text": "Loara"
+      },
+      {
+        "id": "geography-medium-river-through-paris-c",
+        "text": "Ren"
+      },
+      {
+        "id": "geography-medium-river-through-paris-d",
+        "text": "Tamiza"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-river-through-london",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka rzeka przepływa przez Londyn?",
+    "correctAnswerId": "geography-medium-river-through-london-a",
+    "answers": [
+      {
+        "id": "geography-medium-river-through-london-a",
+        "text": "Tamiza"
+      },
+      {
+        "id": "geography-medium-river-through-london-b",
+        "text": "Sekwana"
+      },
+      {
+        "id": "geography-medium-river-through-london-c",
+        "text": "Ren"
+      },
+      {
+        "id": "geography-medium-river-through-london-d",
+        "text": "Dunaj"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-river-through-rome",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka rzeka przepływa przez Rzym?",
+    "correctAnswerId": "geography-medium-river-through-rome-a",
+    "answers": [
+      {
+        "id": "geography-medium-river-through-rome-a",
+        "text": "Tyber"
+      },
+      {
+        "id": "geography-medium-river-through-rome-b",
+        "text": "Pad"
+      },
+      {
+        "id": "geography-medium-river-through-rome-c",
+        "text": "Arno"
+      },
+      {
+        "id": "geography-medium-river-through-rome-d",
+        "text": "Dunaj"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-highest-mountain",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaki jest najwyższy szczyt świata?",
+    "correctAnswerId": "geography-medium-highest-mountain-a",
+    "answers": [
+      {
+        "id": "geography-medium-highest-mountain-a",
+        "text": "Mount Everest"
+      },
+      {
+        "id": "geography-medium-highest-mountain-b",
+        "text": "K2"
+      },
+      {
+        "id": "geography-medium-highest-mountain-c",
+        "text": "Kangczendzonga"
+      },
+      {
+        "id": "geography-medium-highest-mountain-d",
+        "text": "Mont Blanc"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-mount-everest-range",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "W jakim paśmie górskim leży Mount Everest?",
+    "correctAnswerId": "geography-medium-mount-everest-range-a",
+    "answers": [
+      {
+        "id": "geography-medium-mount-everest-range-a",
+        "text": "Himalaje"
+      },
+      {
+        "id": "geography-medium-mount-everest-range-b",
+        "text": "Andy"
+      },
+      {
+        "id": "geography-medium-mount-everest-range-c",
+        "text": "Alpy"
+      },
+      {
+        "id": "geography-medium-mount-everest-range-d",
+        "text": "Karakorum"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-largest-country-area",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jakie państwo jest największe na świecie pod względem powierzchni?",
+    "correctAnswerId": "geography-medium-largest-country-area-a",
+    "answers": [
+      {
+        "id": "geography-medium-largest-country-area-a",
+        "text": "Rosja"
+      },
+      {
+        "id": "geography-medium-largest-country-area-b",
+        "text": "Kanada"
+      },
+      {
+        "id": "geography-medium-largest-country-area-c",
+        "text": "Chiny"
+      },
+      {
+        "id": "geography-medium-largest-country-area-d",
+        "text": "Stany Zjednoczone"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-most-populous-country",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jakie państwo jest obecnie najludniejsze na świecie?",
+    "correctAnswerId": "geography-medium-most-populous-country-a",
+    "answers": [
+      {
+        "id": "geography-medium-most-populous-country-a",
+        "text": "Indie"
+      },
+      {
+        "id": "geography-medium-most-populous-country-b",
+        "text": "Chiny"
+      },
+      {
+        "id": "geography-medium-most-populous-country-c",
+        "text": "Stany Zjednoczone"
+      },
+      {
+        "id": "geography-medium-most-populous-country-d",
+        "text": "Indonezja"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-mediterranean-between",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Morze Śródziemne leży między Europą, Afryką i którym kontynentem?",
+    "correctAnswerId": "geography-medium-mediterranean-between-a",
+    "answers": [
+      {
+        "id": "geography-medium-mediterranean-between-a",
+        "text": "Azją"
+      },
+      {
+        "id": "geography-medium-mediterranean-between-b",
+        "text": "Ameryką Północną"
+      },
+      {
+        "id": "geography-medium-mediterranean-between-c",
+        "text": "Australią"
+      },
+      {
+        "id": "geography-medium-mediterranean-between-d",
+        "text": "Antarktydą"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-kazakhstan",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Kazachstanu?",
+    "correctAnswerId": "geography-medium-capital-kazakhstan-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-kazakhstan-a",
+        "text": "Astana"
+      },
+      {
+        "id": "geography-medium-capital-kazakhstan-b",
+        "text": "Ałmaty"
+      },
+      {
+        "id": "geography-medium-capital-kazakhstan-c",
+        "text": "Szymkent"
+      },
+      {
+        "id": "geography-medium-capital-kazakhstan-d",
+        "text": "Karaganda"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-mongolia",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Mongolii?",
+    "correctAnswerId": "geography-medium-capital-mongolia-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-mongolia-a",
+        "text": "Ułan Bator"
+      },
+      {
+        "id": "geography-medium-capital-mongolia-b",
+        "text": "Erdenet"
+      },
+      {
+        "id": "geography-medium-capital-mongolia-c",
+        "text": "Darchan"
+      },
+      {
+        "id": "geography-medium-capital-mongolia-d",
+        "text": "Karakorum"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-vietnam",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Wietnamu?",
+    "correctAnswerId": "geography-medium-capital-vietnam-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-vietnam-a",
+        "text": "Hanoi"
+      },
+      {
+        "id": "geography-medium-capital-vietnam-b",
+        "text": "Ho Chi Minh"
+      },
+      {
+        "id": "geography-medium-capital-vietnam-c",
+        "text": "Da Nang"
+      },
+      {
+        "id": "geography-medium-capital-vietnam-d",
+        "text": "Hue"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-philippines",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Filipin?",
+    "correctAnswerId": "geography-medium-capital-philippines-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-philippines-a",
+        "text": "Manila"
+      },
+      {
+        "id": "geography-medium-capital-philippines-b",
+        "text": "Cebu"
+      },
+      {
+        "id": "geography-medium-capital-philippines-c",
+        "text": "Davao"
+      },
+      {
+        "id": "geography-medium-capital-philippines-d",
+        "text": "Quezon City"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-malaysia",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Malezji?",
+    "correctAnswerId": "geography-medium-capital-malaysia-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-malaysia-a",
+        "text": "Kuala Lumpur"
+      },
+      {
+        "id": "geography-medium-capital-malaysia-b",
+        "text": "George Town"
+      },
+      {
+        "id": "geography-medium-capital-malaysia-c",
+        "text": "Johor Bahru"
+      },
+      {
+        "id": "geography-medium-capital-malaysia-d",
+        "text": "Malakka"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-ethiopia",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Etiopii?",
+    "correctAnswerId": "geography-medium-capital-ethiopia-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-ethiopia-a",
+        "text": "Addis Abeba"
+      },
+      {
+        "id": "geography-medium-capital-ethiopia-b",
+        "text": "Adama"
+      },
+      {
+        "id": "geography-medium-capital-ethiopia-c",
+        "text": "Gonder"
+      },
+      {
+        "id": "geography-medium-capital-ethiopia-d",
+        "text": "Mekele"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-tanzania",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Tanzanii?",
+    "correctAnswerId": "geography-medium-capital-tanzania-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-tanzania-a",
+        "text": "Dodoma"
+      },
+      {
+        "id": "geography-medium-capital-tanzania-b",
+        "text": "Dar es Salaam"
+      },
+      {
+        "id": "geography-medium-capital-tanzania-c",
+        "text": "Arusza"
+      },
+      {
+        "id": "geography-medium-capital-tanzania-d",
+        "text": "Mwanza"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-chile",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Chile?",
+    "correctAnswerId": "geography-medium-capital-chile-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-chile-a",
+        "text": "Santiago"
+      },
+      {
+        "id": "geography-medium-capital-chile-b",
+        "text": "Valparaíso"
+      },
+      {
+        "id": "geography-medium-capital-chile-c",
+        "text": "La Serena"
+      },
+      {
+        "id": "geography-medium-capital-chile-d",
+        "text": "Concepción"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-ecuador",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Ekwadoru?",
+    "correctAnswerId": "geography-medium-capital-ecuador-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-ecuador-a",
+        "text": "Quito"
+      },
+      {
+        "id": "geography-medium-capital-ecuador-b",
+        "text": "Guayaquil"
+      },
+      {
+        "id": "geography-medium-capital-ecuador-c",
+        "text": "Cuenca"
+      },
+      {
+        "id": "geography-medium-capital-ecuador-d",
+        "text": "Loja"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-bolivia-constitutional",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest konstytucyjna stolica Boliwii?",
+    "correctAnswerId": "geography-medium-capital-bolivia-constitutional-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-bolivia-constitutional-a",
+        "text": "Sucre"
+      },
+      {
+        "id": "geography-medium-capital-bolivia-constitutional-b",
+        "text": "La Paz"
+      },
+      {
+        "id": "geography-medium-capital-bolivia-constitutional-c",
+        "text": "Santa Cruz"
+      },
+      {
+        "id": "geography-medium-capital-bolivia-constitutional-d",
+        "text": "Cochabamba"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-cuba",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Kuby?",
+    "correctAnswerId": "geography-medium-capital-cuba-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-cuba-a",
+        "text": "Hawana"
+      },
+      {
+        "id": "geography-medium-capital-cuba-b",
+        "text": "Santiago de Cuba"
+      },
+      {
+        "id": "geography-medium-capital-cuba-c",
+        "text": "Varadero"
+      },
+      {
+        "id": "geography-medium-capital-cuba-d",
+        "text": "Camagüey"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-dominican-republic",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Dominikany?",
+    "correctAnswerId": "geography-medium-capital-dominican-republic-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-dominican-republic-a",
+        "text": "Santo Domingo"
+      },
+      {
+        "id": "geography-medium-capital-dominican-republic-b",
+        "text": "Punta Cana"
+      },
+      {
+        "id": "geography-medium-capital-dominican-republic-c",
+        "text": "Santiago de los Caballeros"
+      },
+      {
+        "id": "geography-medium-capital-dominican-republic-d",
+        "text": "La Romana"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-sri-lanka-official",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest oficjalna stolica Sri Lanki?",
+    "correctAnswerId": "geography-medium-capital-sri-lanka-official-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-sri-lanka-official-a",
+        "text": "Sri Dźajawardanapura Kotte"
+      },
+      {
+        "id": "geography-medium-capital-sri-lanka-official-b",
+        "text": "Kolombo"
+      },
+      {
+        "id": "geography-medium-capital-sri-lanka-official-c",
+        "text": "Kandy"
+      },
+      {
+        "id": "geography-medium-capital-sri-lanka-official-d",
+        "text": "Galle"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-myanmar",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Mjanmy?",
+    "correctAnswerId": "geography-medium-capital-myanmar-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-myanmar-a",
+        "text": "Naypyidaw"
+      },
+      {
+        "id": "geography-medium-capital-myanmar-b",
+        "text": "Rangun"
+      },
+      {
+        "id": "geography-medium-capital-myanmar-c",
+        "text": "Mandalaj"
+      },
+      {
+        "id": "geography-medium-capital-myanmar-d",
+        "text": "Bago"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-nepal",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Nepalu?",
+    "correctAnswerId": "geography-medium-capital-nepal-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-nepal-a",
+        "text": "Katmandu"
+      },
+      {
+        "id": "geography-medium-capital-nepal-b",
+        "text": "Pokhara"
+      },
+      {
+        "id": "geography-medium-capital-nepal-c",
+        "text": "Lalitpur"
+      },
+      {
+        "id": "geography-medium-capital-nepal-d",
+        "text": "Biratnagar"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-bangladesh",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Bangladeszu?",
+    "correctAnswerId": "geography-medium-capital-bangladesh-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-bangladesh-a",
+        "text": "Dhaka"
+      },
+      {
+        "id": "geography-medium-capital-bangladesh-b",
+        "text": "Chittagong"
+      },
+      {
+        "id": "geography-medium-capital-bangladesh-c",
+        "text": "Khulna"
+      },
+      {
+        "id": "geography-medium-capital-bangladesh-d",
+        "text": "Sylhet"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-algeria",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Algierii?",
+    "correctAnswerId": "geography-medium-capital-algeria-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-algeria-a",
+        "text": "Algier"
+      },
+      {
+        "id": "geography-medium-capital-algeria-b",
+        "text": "Oran"
+      },
+      {
+        "id": "geography-medium-capital-algeria-c",
+        "text": "Konstantyna"
+      },
+      {
+        "id": "geography-medium-capital-algeria-d",
+        "text": "Annaba"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-angola",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Angoli?",
+    "correctAnswerId": "geography-medium-capital-angola-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-angola-a",
+        "text": "Luanda"
+      },
+      {
+        "id": "geography-medium-capital-angola-b",
+        "text": "Huambo"
+      },
+      {
+        "id": "geography-medium-capital-angola-c",
+        "text": "Benguela"
+      },
+      {
+        "id": "geography-medium-capital-angola-d",
+        "text": "Lubango"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-zimbabwe",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Zimbabwe?",
+    "correctAnswerId": "geography-medium-capital-zimbabwe-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-zimbabwe-a",
+        "text": "Harare"
+      },
+      {
+        "id": "geography-medium-capital-zimbabwe-b",
+        "text": "Bulawayo"
+      },
+      {
+        "id": "geography-medium-capital-zimbabwe-c",
+        "text": "Mutare"
+      },
+      {
+        "id": "geography-medium-capital-zimbabwe-d",
+        "text": "Gweru"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-venezuela",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Wenezueli?",
+    "correctAnswerId": "geography-medium-capital-venezuela-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-venezuela-a",
+        "text": "Caracas"
+      },
+      {
+        "id": "geography-medium-capital-venezuela-b",
+        "text": "Maracaibo"
+      },
+      {
+        "id": "geography-medium-capital-venezuela-c",
+        "text": "Valencia"
+      },
+      {
+        "id": "geography-medium-capital-venezuela-d",
+        "text": "Mérida"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-uruguay",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Urugwaju?",
+    "correctAnswerId": "geography-medium-capital-uruguay-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-uruguay-a",
+        "text": "Montevideo"
+      },
+      {
+        "id": "geography-medium-capital-uruguay-b",
+        "text": "Salto"
+      },
+      {
+        "id": "geography-medium-capital-uruguay-c",
+        "text": "Paysandú"
+      },
+      {
+        "id": "geography-medium-capital-uruguay-d",
+        "text": "Maldonado"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-paraguay",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Paragwaju?",
+    "correctAnswerId": "geography-medium-capital-paraguay-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-paraguay-a",
+        "text": "Asunción"
+      },
+      {
+        "id": "geography-medium-capital-paraguay-b",
+        "text": "Ciudad del Este"
+      },
+      {
+        "id": "geography-medium-capital-paraguay-c",
+        "text": "Encarnación"
+      },
+      {
+        "id": "geography-medium-capital-paraguay-d",
+        "text": "Luque"
+      }
+    ]
+  },
+  {
+    "key": "geography-medium-capital-costa-rica",
+    "categoryKey": "geography",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Kostaryki?",
+    "correctAnswerId": "geography-medium-capital-costa-rica-a",
+    "answers": [
+      {
+        "id": "geography-medium-capital-costa-rica-a",
+        "text": "San José"
+      },
+      {
+        "id": "geography-medium-capital-costa-rica-b",
+        "text": "Limón"
+      },
+      {
+        "id": "geography-medium-capital-costa-rica-c",
+        "text": "Cartago"
+      },
+      {
+        "id": "geography-medium-capital-costa-rica-d",
+        "text": "Liberia"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-azerbaijan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jakie miasto jest stolicą Azerbejdżanu?",
+    "correctAnswerId": "geography-mediumhard-capital-azerbaijan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-azerbaijan-a",
+        "text": "Baku"
+      },
+      {
+        "id": "geography-mediumhard-capital-azerbaijan-b",
+        "text": "Gandża"
+      },
+      {
+        "id": "geography-mediumhard-capital-azerbaijan-c",
+        "text": "Sumgait"
+      },
+      {
+        "id": "geography-mediumhard-capital-azerbaijan-d",
+        "text": "Nachiczewan"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-georgia",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Gruzji?",
+    "correctAnswerId": "geography-mediumhard-capital-georgia-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-georgia-a",
+        "text": "Tbilisi"
+      },
+      {
+        "id": "geography-mediumhard-capital-georgia-b",
+        "text": "Batumi"
+      },
+      {
+        "id": "geography-mediumhard-capital-georgia-c",
+        "text": "Kutaisi"
+      },
+      {
+        "id": "geography-mediumhard-capital-georgia-d",
+        "text": "Rustawi"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-armenia",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Armenii?",
+    "correctAnswerId": "geography-mediumhard-capital-armenia-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-armenia-a",
+        "text": "Erywań"
+      },
+      {
+        "id": "geography-mediumhard-capital-armenia-b",
+        "text": "Giumri"
+      },
+      {
+        "id": "geography-mediumhard-capital-armenia-c",
+        "text": "Wanadzor"
+      },
+      {
+        "id": "geography-mediumhard-capital-armenia-d",
+        "text": "Kapan"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-kyrgyzstan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Kirgistanu?",
+    "correctAnswerId": "geography-mediumhard-capital-kyrgyzstan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-kyrgyzstan-a",
+        "text": "Biszkek"
+      },
+      {
+        "id": "geography-mediumhard-capital-kyrgyzstan-b",
+        "text": "Osz"
+      },
+      {
+        "id": "geography-mediumhard-capital-kyrgyzstan-c",
+        "text": "Dżalalabad"
+      },
+      {
+        "id": "geography-mediumhard-capital-kyrgyzstan-d",
+        "text": "Karakol"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-uzbekistan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Uzbekistanu?",
+    "correctAnswerId": "geography-mediumhard-capital-uzbekistan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-uzbekistan-a",
+        "text": "Taszkent"
+      },
+      {
+        "id": "geography-mediumhard-capital-uzbekistan-b",
+        "text": "Samarkanda"
+      },
+      {
+        "id": "geography-mediumhard-capital-uzbekistan-c",
+        "text": "Buchara"
+      },
+      {
+        "id": "geography-mediumhard-capital-uzbekistan-d",
+        "text": "Andiżan"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-turkmenistan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Turkmenistanu?",
+    "correctAnswerId": "geography-mediumhard-capital-turkmenistan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-turkmenistan-a",
+        "text": "Aszchabad"
+      },
+      {
+        "id": "geography-mediumhard-capital-turkmenistan-b",
+        "text": "Turkmenbaszy"
+      },
+      {
+        "id": "geography-mediumhard-capital-turkmenistan-c",
+        "text": "Mary"
+      },
+      {
+        "id": "geography-mediumhard-capital-turkmenistan-d",
+        "text": "Daszoguz"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-tajikistan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Tadżykistanu?",
+    "correctAnswerId": "geography-mediumhard-capital-tajikistan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-tajikistan-a",
+        "text": "Duszanbe"
+      },
+      {
+        "id": "geography-mediumhard-capital-tajikistan-b",
+        "text": "Chodżent"
+      },
+      {
+        "id": "geography-mediumhard-capital-tajikistan-c",
+        "text": "Kulab"
+      },
+      {
+        "id": "geography-mediumhard-capital-tajikistan-d",
+        "text": "Bochtar"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-afghanistan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Afganistanu?",
+    "correctAnswerId": "geography-mediumhard-capital-afghanistan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-afghanistan-a",
+        "text": "Kabul"
+      },
+      {
+        "id": "geography-mediumhard-capital-afghanistan-b",
+        "text": "Herat"
+      },
+      {
+        "id": "geography-mediumhard-capital-afghanistan-c",
+        "text": "Kandahar"
+      },
+      {
+        "id": "geography-mediumhard-capital-afghanistan-d",
+        "text": "Mazar-i-Szarif"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-iran",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Iranu?",
+    "correctAnswerId": "geography-mediumhard-capital-iran-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-iran-a",
+        "text": "Teheran"
+      },
+      {
+        "id": "geography-mediumhard-capital-iran-b",
+        "text": "Isfahan"
+      },
+      {
+        "id": "geography-mediumhard-capital-iran-c",
+        "text": "Meszhed"
+      },
+      {
+        "id": "geography-mediumhard-capital-iran-d",
+        "text": "Sziraz"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-iraq",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Iraku?",
+    "correctAnswerId": "geography-mediumhard-capital-iraq-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-iraq-a",
+        "text": "Bagdad"
+      },
+      {
+        "id": "geography-mediumhard-capital-iraq-b",
+        "text": "Basra"
+      },
+      {
+        "id": "geography-mediumhard-capital-iraq-c",
+        "text": "Mosul"
+      },
+      {
+        "id": "geography-mediumhard-capital-iraq-d",
+        "text": "Karbala"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-syria",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Syrii?",
+    "correctAnswerId": "geography-mediumhard-capital-syria-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-syria-a",
+        "text": "Damaszek"
+      },
+      {
+        "id": "geography-mediumhard-capital-syria-b",
+        "text": "Aleppo"
+      },
+      {
+        "id": "geography-mediumhard-capital-syria-c",
+        "text": "Hims"
+      },
+      {
+        "id": "geography-mediumhard-capital-syria-d",
+        "text": "Latakia"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-jordan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Jordanii?",
+    "correctAnswerId": "geography-mediumhard-capital-jordan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-jordan-a",
+        "text": "Amman"
+      },
+      {
+        "id": "geography-mediumhard-capital-jordan-b",
+        "text": "Akaba"
+      },
+      {
+        "id": "geography-mediumhard-capital-jordan-c",
+        "text": "Irbid"
+      },
+      {
+        "id": "geography-mediumhard-capital-jordan-d",
+        "text": "Zarka"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-lebanon",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Libanu?",
+    "correctAnswerId": "geography-mediumhard-capital-lebanon-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-lebanon-a",
+        "text": "Bejrut"
+      },
+      {
+        "id": "geography-mediumhard-capital-lebanon-b",
+        "text": "Trypolis"
+      },
+      {
+        "id": "geography-mediumhard-capital-lebanon-c",
+        "text": "Sydon"
+      },
+      {
+        "id": "geography-mediumhard-capital-lebanon-d",
+        "text": "Tyr"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-qatar",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Kataru?",
+    "correctAnswerId": "geography-mediumhard-capital-qatar-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-qatar-a",
+        "text": "Doha"
+      },
+      {
+        "id": "geography-mediumhard-capital-qatar-b",
+        "text": "Al Rayyan"
+      },
+      {
+        "id": "geography-mediumhard-capital-qatar-c",
+        "text": "Al Wakra"
+      },
+      {
+        "id": "geography-mediumhard-capital-qatar-d",
+        "text": "Lusail"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-oman",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Omanu?",
+    "correctAnswerId": "geography-mediumhard-capital-oman-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-oman-a",
+        "text": "Maskat"
+      },
+      {
+        "id": "geography-mediumhard-capital-oman-b",
+        "text": "Salala"
+      },
+      {
+        "id": "geography-mediumhard-capital-oman-c",
+        "text": "Sohar"
+      },
+      {
+        "id": "geography-mediumhard-capital-oman-d",
+        "text": "Nizwa"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-yemen",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Jemenu?",
+    "correctAnswerId": "geography-mediumhard-capital-yemen-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-yemen-a",
+        "text": "Sana"
+      },
+      {
+        "id": "geography-mediumhard-capital-yemen-b",
+        "text": "Aden"
+      },
+      {
+        "id": "geography-mediumhard-capital-yemen-c",
+        "text": "Ta’izz"
+      },
+      {
+        "id": "geography-mediumhard-capital-yemen-d",
+        "text": "Al-Hudajda"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-sudan",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Sudanu?",
+    "correctAnswerId": "geography-mediumhard-capital-sudan-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-sudan-a",
+        "text": "Chartum"
+      },
+      {
+        "id": "geography-mediumhard-capital-sudan-b",
+        "text": "Omdurman"
+      },
+      {
+        "id": "geography-mediumhard-capital-sudan-c",
+        "text": "Port Sudan"
+      },
+      {
+        "id": "geography-mediumhard-capital-sudan-d",
+        "text": "Nyala"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-uganda",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Ugandy?",
+    "correctAnswerId": "geography-mediumhard-capital-uganda-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-uganda-a",
+        "text": "Kampala"
+      },
+      {
+        "id": "geography-mediumhard-capital-uganda-b",
+        "text": "Entebbe"
+      },
+      {
+        "id": "geography-mediumhard-capital-uganda-c",
+        "text": "Gulu"
+      },
+      {
+        "id": "geography-mediumhard-capital-uganda-d",
+        "text": "Jinja"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-rwanda",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Rwandy?",
+    "correctAnswerId": "geography-mediumhard-capital-rwanda-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-rwanda-a",
+        "text": "Kigali"
+      },
+      {
+        "id": "geography-mediumhard-capital-rwanda-b",
+        "text": "Butare"
+      },
+      {
+        "id": "geography-mediumhard-capital-rwanda-c",
+        "text": "Gisenyi"
+      },
+      {
+        "id": "geography-mediumhard-capital-rwanda-d",
+        "text": "Musanze"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-madagascar",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Madagaskaru?",
+    "correctAnswerId": "geography-mediumhard-capital-madagascar-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-madagascar-a",
+        "text": "Antananarywa"
+      },
+      {
+        "id": "geography-mediumhard-capital-madagascar-b",
+        "text": "Toamasina"
+      },
+      {
+        "id": "geography-mediumhard-capital-madagascar-c",
+        "text": "Mahajanga"
+      },
+      {
+        "id": "geography-mediumhard-capital-madagascar-d",
+        "text": "Fianarantsoa"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-mozambique",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Mozambiku?",
+    "correctAnswerId": "geography-mediumhard-capital-mozambique-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-mozambique-a",
+        "text": "Maputo"
+      },
+      {
+        "id": "geography-mediumhard-capital-mozambique-b",
+        "text": "Beira"
+      },
+      {
+        "id": "geography-mediumhard-capital-mozambique-c",
+        "text": "Nampula"
+      },
+      {
+        "id": "geography-mediumhard-capital-mozambique-d",
+        "text": "Tete"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-botswana",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Botswany?",
+    "correctAnswerId": "geography-mediumhard-capital-botswana-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-botswana-a",
+        "text": "Gaborone"
+      },
+      {
+        "id": "geography-mediumhard-capital-botswana-b",
+        "text": "Francistown"
+      },
+      {
+        "id": "geography-mediumhard-capital-botswana-c",
+        "text": "Maun"
+      },
+      {
+        "id": "geography-mediumhard-capital-botswana-d",
+        "text": "Lobatse"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-namibia",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Namibii?",
+    "correctAnswerId": "geography-mediumhard-capital-namibia-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-namibia-a",
+        "text": "Windhuk"
+      },
+      {
+        "id": "geography-mediumhard-capital-namibia-b",
+        "text": "Walvis Bay"
+      },
+      {
+        "id": "geography-mediumhard-capital-namibia-c",
+        "text": "Swakopmund"
+      },
+      {
+        "id": "geography-mediumhard-capital-namibia-d",
+        "text": "Oshakati"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-zambia",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Zambii?",
+    "correctAnswerId": "geography-mediumhard-capital-zambia-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-zambia-a",
+        "text": "Lusaka"
+      },
+      {
+        "id": "geography-mediumhard-capital-zambia-b",
+        "text": "Ndola"
+      },
+      {
+        "id": "geography-mediumhard-capital-zambia-c",
+        "text": "Kitwe"
+      },
+      {
+        "id": "geography-mediumhard-capital-zambia-d",
+        "text": "Livingstone"
+      }
+    ]
+  },
+  {
+    "key": "geography-mediumhard-capital-dr-congo",
+    "categoryKey": "geography",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Demokratycznej Republiki Konga?",
+    "correctAnswerId": "geography-mediumhard-capital-dr-congo-a",
+    "answers": [
+      {
+        "id": "geography-mediumhard-capital-dr-congo-a",
+        "text": "Kinszasa"
+      },
+      {
+        "id": "geography-mediumhard-capital-dr-congo-b",
+        "text": "Lubumbashi"
+      },
+      {
+        "id": "geography-mediumhard-capital-dr-congo-c",
+        "text": "Goma"
+      },
+      {
+        "id": "geography-mediumhard-capital-dr-congo-d",
+        "text": "Kisangani"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-burkina-faso",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Burkina Faso?",
+    "correctAnswerId": "geography-hard-capital-burkina-faso-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-burkina-faso-a",
+        "text": "Wagadugu"
+      },
+      {
+        "id": "geography-hard-capital-burkina-faso-b",
+        "text": "Bobo-Dioulasso"
+      },
+      {
+        "id": "geography-hard-capital-burkina-faso-c",
+        "text": "Koudougou"
+      },
+      {
+        "id": "geography-hard-capital-burkina-faso-d",
+        "text": "Banfora"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-mauritania",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Mauretanii?",
+    "correctAnswerId": "geography-hard-capital-mauritania-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-mauritania-a",
+        "text": "Nawakszut"
+      },
+      {
+        "id": "geography-hard-capital-mauritania-b",
+        "text": "Atar"
+      },
+      {
+        "id": "geography-hard-capital-mauritania-c",
+        "text": "Néma"
+      },
+      {
+        "id": "geography-hard-capital-mauritania-d",
+        "text": "Rosso"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-mali",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Mali?",
+    "correctAnswerId": "geography-hard-capital-mali-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-mali-a",
+        "text": "Bamako"
+      },
+      {
+        "id": "geography-hard-capital-mali-b",
+        "text": "Sikasso"
+      },
+      {
+        "id": "geography-hard-capital-mali-c",
+        "text": "Timbuktu"
+      },
+      {
+        "id": "geography-hard-capital-mali-d",
+        "text": "Gao"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-niger",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Nigru?",
+    "correctAnswerId": "geography-hard-capital-niger-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-niger-a",
+        "text": "Niamey"
+      },
+      {
+        "id": "geography-hard-capital-niger-b",
+        "text": "Agadez"
+      },
+      {
+        "id": "geography-hard-capital-niger-c",
+        "text": "Zinder"
+      },
+      {
+        "id": "geography-hard-capital-niger-d",
+        "text": "Maradi"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-chad",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Czadu?",
+    "correctAnswerId": "geography-hard-capital-chad-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-chad-a",
+        "text": "Ndżamena"
+      },
+      {
+        "id": "geography-hard-capital-chad-b",
+        "text": "Moundou"
+      },
+      {
+        "id": "geography-hard-capital-chad-c",
+        "text": "Sarh"
+      },
+      {
+        "id": "geography-hard-capital-chad-d",
+        "text": "Abéché"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-benin",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Beninu?",
+    "correctAnswerId": "geography-hard-capital-benin-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-benin-a",
+        "text": "Porto-Novo"
+      },
+      {
+        "id": "geography-hard-capital-benin-b",
+        "text": "Kotonu"
+      },
+      {
+        "id": "geography-hard-capital-benin-c",
+        "text": "Parakou"
+      },
+      {
+        "id": "geography-hard-capital-benin-d",
+        "text": "Abomey"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-togo",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Togo?",
+    "correctAnswerId": "geography-hard-capital-togo-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-togo-a",
+        "text": "Lomé"
+      },
+      {
+        "id": "geography-hard-capital-togo-b",
+        "text": "Sokodé"
+      },
+      {
+        "id": "geography-hard-capital-togo-c",
+        "text": "Kara"
+      },
+      {
+        "id": "geography-hard-capital-togo-d",
+        "text": "Atakpamé"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-eritrea",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Erytrei?",
+    "correctAnswerId": "geography-hard-capital-eritrea-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-eritrea-a",
+        "text": "Asmara"
+      },
+      {
+        "id": "geography-hard-capital-eritrea-b",
+        "text": "Massawa"
+      },
+      {
+        "id": "geography-hard-capital-eritrea-c",
+        "text": "Keren"
+      },
+      {
+        "id": "geography-hard-capital-eritrea-d",
+        "text": "Assab"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-djibouti",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Dżibuti?",
+    "correctAnswerId": "geography-hard-capital-djibouti-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-djibouti-a",
+        "text": "Dżibuti"
+      },
+      {
+        "id": "geography-hard-capital-djibouti-b",
+        "text": "Ali Sabieh"
+      },
+      {
+        "id": "geography-hard-capital-djibouti-c",
+        "text": "Tadjoura"
+      },
+      {
+        "id": "geography-hard-capital-djibouti-d",
+        "text": "Obock"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-burundi",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Burundi?",
+    "correctAnswerId": "geography-hard-capital-burundi-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-burundi-a",
+        "text": "Gitega"
+      },
+      {
+        "id": "geography-hard-capital-burundi-b",
+        "text": "Bużumbura"
+      },
+      {
+        "id": "geography-hard-capital-burundi-c",
+        "text": "Ngozi"
+      },
+      {
+        "id": "geography-hard-capital-burundi-d",
+        "text": "Ruyigi"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-suriname",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Surinamu?",
+    "correctAnswerId": "geography-hard-capital-suriname-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-suriname-a",
+        "text": "Paramaribo"
+      },
+      {
+        "id": "geography-hard-capital-suriname-b",
+        "text": "Nieuw Nickerie"
+      },
+      {
+        "id": "geography-hard-capital-suriname-c",
+        "text": "Moengo"
+      },
+      {
+        "id": "geography-hard-capital-suriname-d",
+        "text": "Albina"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-guyana",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Gujany?",
+    "correctAnswerId": "geography-hard-capital-guyana-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-guyana-a",
+        "text": "Georgetown"
+      },
+      {
+        "id": "geography-hard-capital-guyana-b",
+        "text": "Linden"
+      },
+      {
+        "id": "geography-hard-capital-guyana-c",
+        "text": "New Amsterdam"
+      },
+      {
+        "id": "geography-hard-capital-guyana-d",
+        "text": "Bartica"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-guyana-french",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Gujany Francuskiej?",
+    "correctAnswerId": "geography-hard-capital-guyana-french-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-guyana-french-a",
+        "text": "Kajenna"
+      },
+      {
+        "id": "geography-hard-capital-guyana-french-b",
+        "text": "Kourou"
+      },
+      {
+        "id": "geography-hard-capital-guyana-french-c",
+        "text": "Saint-Laurent-du-Maroni"
+      },
+      {
+        "id": "geography-hard-capital-guyana-french-d",
+        "text": "Matoury"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-fiji",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Fidżi?",
+    "correctAnswerId": "geography-hard-capital-fiji-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-fiji-a",
+        "text": "Suva"
+      },
+      {
+        "id": "geography-hard-capital-fiji-b",
+        "text": "Nadi"
+      },
+      {
+        "id": "geography-hard-capital-fiji-c",
+        "text": "Lautoka"
+      },
+      {
+        "id": "geography-hard-capital-fiji-d",
+        "text": "Labasa"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-samoa",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Samoa?",
+    "correctAnswerId": "geography-hard-capital-samoa-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-samoa-a",
+        "text": "Apia"
+      },
+      {
+        "id": "geography-hard-capital-samoa-b",
+        "text": "Salelologa"
+      },
+      {
+        "id": "geography-hard-capital-samoa-c",
+        "text": "Vaitele"
+      },
+      {
+        "id": "geography-hard-capital-samoa-d",
+        "text": "Faleula"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-vanuatu",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Vanuatu?",
+    "correctAnswerId": "geography-hard-capital-vanuatu-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-vanuatu-a",
+        "text": "Port Vila"
+      },
+      {
+        "id": "geography-hard-capital-vanuatu-b",
+        "text": "Luganville"
+      },
+      {
+        "id": "geography-hard-capital-vanuatu-c",
+        "text": "Isangel"
+      },
+      {
+        "id": "geography-hard-capital-vanuatu-d",
+        "text": "Lakatoro"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-tonga",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Tonga?",
+    "correctAnswerId": "geography-hard-capital-tonga-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-tonga-a",
+        "text": "Nukuʻalofa"
+      },
+      {
+        "id": "geography-hard-capital-tonga-b",
+        "text": "Neiafu"
+      },
+      {
+        "id": "geography-hard-capital-tonga-c",
+        "text": "Pangai"
+      },
+      {
+        "id": "geography-hard-capital-tonga-d",
+        "text": "Haveluloto"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-palau",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Palau?",
+    "correctAnswerId": "geography-hard-capital-palau-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-palau-a",
+        "text": "Ngerulmud"
+      },
+      {
+        "id": "geography-hard-capital-palau-b",
+        "text": "Koror"
+      },
+      {
+        "id": "geography-hard-capital-palau-c",
+        "text": "Melekeok"
+      },
+      {
+        "id": "geography-hard-capital-palau-d",
+        "text": "Airai"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-micronesia",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Sfederowanych Stanów Mikronezji?",
+    "correctAnswerId": "geography-hard-capital-micronesia-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-micronesia-a",
+        "text": "Palikir"
+      },
+      {
+        "id": "geography-hard-capital-micronesia-b",
+        "text": "Weno"
+      },
+      {
+        "id": "geography-hard-capital-micronesia-c",
+        "text": "Kolonia"
+      },
+      {
+        "id": "geography-hard-capital-micronesia-d",
+        "text": "Yap"
+      }
+    ]
+  },
+  {
+    "key": "geography-hard-capital-marshall",
+    "categoryKey": "geography",
+    "difficulty": "Hard",
+    "text": "Jaka jest stolica Wysp Marshalla?",
+    "correctAnswerId": "geography-hard-capital-marshall-a",
+    "answers": [
+      {
+        "id": "geography-hard-capital-marshall-a",
+        "text": "Majuro"
+      },
+      {
+        "id": "geography-hard-capital-marshall-b",
+        "text": "Ebeye"
+      },
+      {
+        "id": "geography-hard-capital-marshall-c",
+        "text": "Jaluit"
+      },
+      {
+        "id": "geography-hard-capital-marshall-d",
+        "text": "Arno"
+      }
+    ]
+  }
+]

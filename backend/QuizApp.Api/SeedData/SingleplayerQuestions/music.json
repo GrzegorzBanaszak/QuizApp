@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "music-easy-instrument-keys",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Na jakim instrumencie gra się za pomocą klawiszy i pedałów?",
+    "correctAnswerId": "music-easy-instrument-keys-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-keys-a",
+        "text": "Fortepianie"
+      },
+      {
+        "id": "music-easy-instrument-keys-b",
+        "text": "Skrzypcach"
+      },
+      {
+        "id": "music-easy-instrument-keys-c",
+        "text": "Trąbce"
+      },
+      {
+        "id": "music-easy-instrument-keys-d",
+        "text": "Perkusji"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-composer-four-seasons",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Kto skomponował „Cztery pory roku”?",
+    "correctAnswerId": "music-easy-composer-four-seasons-a",
+    "answers": [
+      {
+        "id": "music-easy-composer-four-seasons-a",
+        "text": "Antonio Vivaldi"
+      },
+      {
+        "id": "music-easy-composer-four-seasons-b",
+        "text": "Wolfgang Amadeusz Mozart"
+      },
+      {
+        "id": "music-easy-composer-four-seasons-c",
+        "text": "Ludwig van Beethoven"
+      },
+      {
+        "id": "music-easy-composer-four-seasons-d",
+        "text": "Johann Sebastian Bach"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-high-voice-female",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się najwyższy żeński głos wokalny?",
+    "correctAnswerId": "music-easy-high-voice-female-a",
+    "answers": [
+      {
+        "id": "music-easy-high-voice-female-a",
+        "text": "Sopran"
+      },
+      {
+        "id": "music-easy-high-voice-female-b",
+        "text": "Alt"
+      },
+      {
+        "id": "music-easy-high-voice-female-c",
+        "text": "Tenor"
+      },
+      {
+        "id": "music-easy-high-voice-female-d",
+        "text": "Bas"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-musical-symbol-pause",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się znak oznaczający ciszę w zapisie nutowym?",
+    "correctAnswerId": "music-easy-musical-symbol-pause-a",
+    "answers": [
+      {
+        "id": "music-easy-musical-symbol-pause-a",
+        "text": "Pauza"
+      },
+      {
+        "id": "music-easy-musical-symbol-pause-b",
+        "text": "Bemol"
+      },
+      {
+        "id": "music-easy-musical-symbol-pause-c",
+        "text": "Klucz"
+      },
+      {
+        "id": "music-easy-musical-symbol-pause-d",
+        "text": "Takt"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-band-players",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się zespół muzyków grających razem na różnych instrumentach klasycznych?",
+    "correctAnswerId": "music-easy-band-players-a",
+    "answers": [
+      {
+        "id": "music-easy-band-players-a",
+        "text": "Orkiestra"
+      },
+      {
+        "id": "music-easy-band-players-b",
+        "text": "Chór"
+      },
+      {
+        "id": "music-easy-band-players-c",
+        "text": "Duet"
+      },
+      {
+        "id": "music-easy-band-players-d",
+        "text": "Solista"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-instrument-strings-bow",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który instrument smyczkowy ma cztery struny i często gra melodię?",
+    "correctAnswerId": "music-easy-instrument-strings-bow-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-strings-bow-a",
+        "text": "Skrzypce"
+      },
+      {
+        "id": "music-easy-instrument-strings-bow-b",
+        "text": "Tuba"
+      },
+      {
+        "id": "music-easy-instrument-strings-bow-c",
+        "text": "Flet"
+      },
+      {
+        "id": "music-easy-instrument-strings-bow-d",
+        "text": "Bęben"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-style-opera",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się sceniczne dzieło muzyczne, w którym śpiew łączy się z grą aktorską?",
+    "correctAnswerId": "music-easy-style-opera-a",
+    "answers": [
+      {
+        "id": "music-easy-style-opera-a",
+        "text": "Opera"
+      },
+      {
+        "id": "music-easy-style-opera-b",
+        "text": "Sonata"
+      },
+      {
+        "id": "music-easy-style-opera-c",
+        "text": "Etiuda"
+      },
+      {
+        "id": "music-easy-style-opera-d",
+        "text": "Symfonia"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-music-speed-word",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się określenie tempa utworu muzycznego?",
+    "correctAnswerId": "music-easy-music-speed-word-a",
+    "answers": [
+      {
+        "id": "music-easy-music-speed-word-a",
+        "text": "Tempo"
+      },
+      {
+        "id": "music-easy-music-speed-word-b",
+        "text": "Tonacja"
+      },
+      {
+        "id": "music-easy-music-speed-word-c",
+        "text": "Rytm"
+      },
+      {
+        "id": "music-easy-music-speed-word-d",
+        "text": "Barwa"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-singer-solo",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się artysta wykonujący utwór samodzielnie?",
+    "correctAnswerId": "music-easy-singer-solo-a",
+    "answers": [
+      {
+        "id": "music-easy-singer-solo-a",
+        "text": "Solista"
+      },
+      {
+        "id": "music-easy-singer-solo-b",
+        "text": "Dyrygent"
+      },
+      {
+        "id": "music-easy-singer-solo-c",
+        "text": "Kompozytor"
+      },
+      {
+        "id": "music-easy-singer-solo-d",
+        "text": "Producent"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-male-lowest-voice",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się najniższy męski głos wokalny?",
+    "correctAnswerId": "music-easy-male-lowest-voice-a",
+    "answers": [
+      {
+        "id": "music-easy-male-lowest-voice-a",
+        "text": "Bas"
+      },
+      {
+        "id": "music-easy-male-lowest-voice-b",
+        "text": "Tenor"
+      },
+      {
+        "id": "music-easy-male-lowest-voice-c",
+        "text": "Alt"
+      },
+      {
+        "id": "music-easy-male-lowest-voice-d",
+        "text": "Baryton"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-instrument-wind-wood",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który z tych instrumentów należy do instrumentów dętych drewnianych?",
+    "correctAnswerId": "music-easy-instrument-wind-wood-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-wind-wood-a",
+        "text": "Klarnet"
+      },
+      {
+        "id": "music-easy-instrument-wind-wood-b",
+        "text": "Puzon"
+      },
+      {
+        "id": "music-easy-instrument-wind-wood-c",
+        "text": "Werbel"
+      },
+      {
+        "id": "music-easy-instrument-wind-wood-d",
+        "text": "Harfa"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-music-line-five",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się układ pięciu linii, na którym zapisuje się nuty?",
+    "correctAnswerId": "music-easy-music-line-five-a",
+    "answers": [
+      {
+        "id": "music-easy-music-line-five-a",
+        "text": "Pięciolinia"
+      },
+      {
+        "id": "music-easy-music-line-five-b",
+        "text": "Partytura"
+      },
+      {
+        "id": "music-easy-music-line-five-c",
+        "text": "Zwrotka"
+      },
+      {
+        "id": "music-easy-music-line-five-d",
+        "text": "Skala"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-instrument-beats",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Na którym instrumencie najczęściej wybija się rytm pałeczkami?",
+    "correctAnswerId": "music-easy-instrument-beats-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-beats-a",
+        "text": "Perkusji"
+      },
+      {
+        "id": "music-easy-instrument-beats-b",
+        "text": "Fortepianie"
+      },
+      {
+        "id": "music-easy-instrument-beats-c",
+        "text": "Oboju"
+      },
+      {
+        "id": "music-easy-instrument-beats-d",
+        "text": "Altówce"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-repeat-part-song",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się część piosenki, która zwykle się powtarza?",
+    "correctAnswerId": "music-easy-repeat-part-song-a",
+    "answers": [
+      {
+        "id": "music-easy-repeat-part-song-a",
+        "text": "Refren"
+      },
+      {
+        "id": "music-easy-repeat-part-song-b",
+        "text": "Zwrotka"
+      },
+      {
+        "id": "music-easy-repeat-part-song-c",
+        "text": "Wstęp"
+      },
+      {
+        "id": "music-easy-repeat-part-song-d",
+        "text": "Coda"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-piano-black-white",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który instrument ma czarne i białe klawisze?",
+    "correctAnswerId": "music-easy-piano-black-white-a",
+    "answers": [
+      {
+        "id": "music-easy-piano-black-white-a",
+        "text": "Pianino"
+      },
+      {
+        "id": "music-easy-piano-black-white-b",
+        "text": "Wiolonczela"
+      },
+      {
+        "id": "music-easy-piano-black-white-c",
+        "text": "Trąbka"
+      },
+      {
+        "id": "music-easy-piano-black-white-d",
+        "text": "Tamburyn"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-group-singers",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się grupa osób śpiewających razem?",
+    "correctAnswerId": "music-easy-group-singers-a",
+    "answers": [
+      {
+        "id": "music-easy-group-singers-a",
+        "text": "Chór"
+      },
+      {
+        "id": "music-easy-group-singers-b",
+        "text": "Kapela"
+      },
+      {
+        "id": "music-easy-group-singers-c",
+        "text": "Orkiestra"
+      },
+      {
+        "id": "music-easy-group-singers-d",
+        "text": "Duet"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-genre-jazz-improv",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jaki gatunek muzyczny słynie z improwizacji?",
+    "correctAnswerId": "music-easy-genre-jazz-improv-a",
+    "answers": [
+      {
+        "id": "music-easy-genre-jazz-improv-a",
+        "text": "Jazz"
+      },
+      {
+        "id": "music-easy-genre-jazz-improv-b",
+        "text": "Marsz"
+      },
+      {
+        "id": "music-easy-genre-jazz-improv-c",
+        "text": "Kołysanka"
+      },
+      {
+        "id": "music-easy-genre-jazz-improv-d",
+        "text": "Polka"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-instrument-long-metal",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który instrument dęty blaszany ma długą rozsuwaną rurę?",
+    "correctAnswerId": "music-easy-instrument-long-metal-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-long-metal-a",
+        "text": "Puzon"
+      },
+      {
+        "id": "music-easy-instrument-long-metal-b",
+        "text": "Flet"
+      },
+      {
+        "id": "music-easy-instrument-long-metal-c",
+        "text": "Obój"
+      },
+      {
+        "id": "music-easy-instrument-long-metal-d",
+        "text": "Saksofon"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-music-for-dance-fast",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się żywy taniec pochodzący z Polski w metrum trójdzielnym?",
+    "correctAnswerId": "music-easy-music-for-dance-fast-a",
+    "answers": [
+      {
+        "id": "music-easy-music-for-dance-fast-a",
+        "text": "Mazur"
+      },
+      {
+        "id": "music-easy-music-for-dance-fast-b",
+        "text": "Walc"
+      },
+      {
+        "id": "music-easy-music-for-dance-fast-c",
+        "text": "Tango"
+      },
+      {
+        "id": "music-easy-music-for-dance-fast-d",
+        "text": "Samba"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-person-leads-orchestra",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się osoba kierująca orkiestrą?",
+    "correctAnswerId": "music-easy-person-leads-orchestra-a",
+    "answers": [
+      {
+        "id": "music-easy-person-leads-orchestra-a",
+        "text": "Dyrygent"
+      },
+      {
+        "id": "music-easy-person-leads-orchestra-b",
+        "text": "Tekściarz"
+      },
+      {
+        "id": "music-easy-person-leads-orchestra-c",
+        "text": "Wokalista"
+      },
+      {
+        "id": "music-easy-person-leads-orchestra-d",
+        "text": "Lutnik"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-instrument-plucked-large",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który instrument strunowy szarpany jest duży i często ma złotą ramę?",
+    "correctAnswerId": "music-easy-instrument-plucked-large-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-plucked-large-a",
+        "text": "Harfa"
+      },
+      {
+        "id": "music-easy-instrument-plucked-large-b",
+        "text": "Gitara"
+      },
+      {
+        "id": "music-easy-instrument-plucked-large-c",
+        "text": "Mandolina"
+      },
+      {
+        "id": "music-easy-instrument-plucked-large-d",
+        "text": "Altówka"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-sheet-with-songs",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się zapis utworu muzycznego na papierze?",
+    "correctAnswerId": "music-easy-sheet-with-songs-a",
+    "answers": [
+      {
+        "id": "music-easy-sheet-with-songs-a",
+        "text": "Nuty"
+      },
+      {
+        "id": "music-easy-sheet-with-songs-b",
+        "text": "Anegdota"
+      },
+      {
+        "id": "music-easy-sheet-with-songs-c",
+        "text": "Legenda"
+      },
+      {
+        "id": "music-easy-sheet-with-songs-d",
+        "text": "Tabela"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-song-no-words",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się utwór wykonywany bez słów?",
+    "correctAnswerId": "music-easy-song-no-words-a",
+    "answers": [
+      {
+        "id": "music-easy-song-no-words-a",
+        "text": "Instrumentalny"
+      },
+      {
+        "id": "music-easy-song-no-words-b",
+        "text": "Teatralny"
+      },
+      {
+        "id": "music-easy-song-no-words-c",
+        "text": "Wokalny"
+      },
+      {
+        "id": "music-easy-song-no-words-d",
+        "text": "Filmowy"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-string-instrument-largest",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który z tych instrumentów jest największy z rodziny skrzypiec?",
+    "correctAnswerId": "music-easy-string-instrument-largest-a",
+    "answers": [
+      {
+        "id": "music-easy-string-instrument-largest-a",
+        "text": "Wiolonczela"
+      },
+      {
+        "id": "music-easy-string-instrument-largest-b",
+        "text": "Skrzypce"
+      },
+      {
+        "id": "music-easy-string-instrument-largest-c",
+        "text": "Altówka"
+      },
+      {
+        "id": "music-easy-string-instrument-largest-d",
+        "text": "Ukulele"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-national-song",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się uroczysta pieśń państwowa?",
+    "correctAnswerId": "music-easy-national-song-a",
+    "answers": [
+      {
+        "id": "music-easy-national-song-a",
+        "text": "Hymn"
+      },
+      {
+        "id": "music-easy-national-song-b",
+        "text": "Ballada"
+      },
+      {
+        "id": "music-easy-national-song-c",
+        "text": "Kołysanka"
+      },
+      {
+        "id": "music-easy-national-song-d",
+        "text": "Fuga"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-guitar-strings-count",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Ile strun ma standardowa gitara klasyczna?",
+    "correctAnswerId": "music-easy-guitar-strings-count-a",
+    "answers": [
+      {
+        "id": "music-easy-guitar-strings-count-a",
+        "text": "6"
+      },
+      {
+        "id": "music-easy-guitar-strings-count-b",
+        "text": "4"
+      },
+      {
+        "id": "music-easy-guitar-strings-count-c",
+        "text": "5"
+      },
+      {
+        "id": "music-easy-guitar-strings-count-d",
+        "text": "8"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-music-loudness",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się stopień głośności w muzyce?",
+    "correctAnswerId": "music-easy-music-loudness-a",
+    "answers": [
+      {
+        "id": "music-easy-music-loudness-a",
+        "text": "Dynamika"
+      },
+      {
+        "id": "music-easy-music-loudness-b",
+        "text": "Melodia"
+      },
+      {
+        "id": "music-easy-music-loudness-c",
+        "text": "Artykulacja"
+      },
+      {
+        "id": "music-easy-music-loudness-d",
+        "text": "Kadencja"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-song-sad-story",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się spokojna pieśń opowiadająca historię?",
+    "correctAnswerId": "music-easy-song-sad-story-a",
+    "answers": [
+      {
+        "id": "music-easy-song-sad-story-a",
+        "text": "Ballada"
+      },
+      {
+        "id": "music-easy-song-sad-story-b",
+        "text": "Rapsod"
+      },
+      {
+        "id": "music-easy-song-sad-story-c",
+        "text": "Marsz"
+      },
+      {
+        "id": "music-easy-song-sad-story-d",
+        "text": "Etiuda"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-instrument-small-percussion",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który instrument perkusyjny można potrząsać, aby wydobyć dźwięk?",
+    "correctAnswerId": "music-easy-instrument-small-percussion-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-small-percussion-a",
+        "text": "Marakasy"
+      },
+      {
+        "id": "music-easy-instrument-small-percussion-b",
+        "text": "Skrzypce"
+      },
+      {
+        "id": "music-easy-instrument-small-percussion-c",
+        "text": "Waltornia"
+      },
+      {
+        "id": "music-easy-instrument-small-percussion-d",
+        "text": "Organy"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-famous-polish-composer",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który polski kompozytor jest znany z mazurków i polonezów?",
+    "correctAnswerId": "music-easy-famous-polish-composer-a",
+    "answers": [
+      {
+        "id": "music-easy-famous-polish-composer-a",
+        "text": "Fryderyk Chopin"
+      },
+      {
+        "id": "music-easy-famous-polish-composer-b",
+        "text": "Karol Szymanowski"
+      },
+      {
+        "id": "music-easy-famous-polish-composer-c",
+        "text": "Stanisław Moniuszko"
+      },
+      {
+        "id": "music-easy-famous-polish-composer-d",
+        "text": "Henryk Wieniawski"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-piece-before-main",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się krótki utwór otwierający większe dzieło lub koncert?",
+    "correctAnswerId": "music-easy-piece-before-main-a",
+    "answers": [
+      {
+        "id": "music-easy-piece-before-main-a",
+        "text": "Uwertura"
+      },
+      {
+        "id": "music-easy-piece-before-main-b",
+        "text": "Aria"
+      },
+      {
+        "id": "music-easy-piece-before-main-c",
+        "text": "Etiuda"
+      },
+      {
+        "id": "music-easy-piece-before-main-d",
+        "text": "Repryza"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-instrument-brass-small",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Który instrument dęty blaszany jest najmniejszy z podanych?",
+    "correctAnswerId": "music-easy-instrument-brass-small-a",
+    "answers": [
+      {
+        "id": "music-easy-instrument-brass-small-a",
+        "text": "Trąbka"
+      },
+      {
+        "id": "music-easy-instrument-brass-small-b",
+        "text": "Tuba"
+      },
+      {
+        "id": "music-easy-instrument-brass-small-c",
+        "text": "Puzon"
+      },
+      {
+        "id": "music-easy-instrument-brass-small-d",
+        "text": "Waltornia"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-music-regular-pulse",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się regularne następstwo mocnych i słabych części w muzyce?",
+    "correctAnswerId": "music-easy-music-regular-pulse-a",
+    "answers": [
+      {
+        "id": "music-easy-music-regular-pulse-a",
+        "text": "Rytm"
+      },
+      {
+        "id": "music-easy-music-regular-pulse-b",
+        "text": "Echo"
+      },
+      {
+        "id": "music-easy-music-regular-pulse-c",
+        "text": "Barwa"
+      },
+      {
+        "id": "music-easy-music-regular-pulse-d",
+        "text": "Skala"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-church-key",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się symbol na początku pięciolinii wskazujący położenie dźwięków?",
+    "correctAnswerId": "music-easy-church-key-a",
+    "answers": [
+      {
+        "id": "music-easy-church-key-a",
+        "text": "Klucz"
+      },
+      {
+        "id": "music-easy-church-key-b",
+        "text": "Tremolo"
+      },
+      {
+        "id": "music-easy-church-key-c",
+        "text": "Pauza"
+      },
+      {
+        "id": "music-easy-church-key-d",
+        "text": "Akord"
+      }
+    ]
+  },
+  {
+    "key": "music-easy-voice-medium-male",
+    "categoryKey": "music",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się średni męski głos wokalny?",
+    "correctAnswerId": "music-easy-voice-medium-male-a",
+    "answers": [
+      {
+        "id": "music-easy-voice-medium-male-a",
+        "text": "Baryton"
+      },
+      {
+        "id": "music-easy-voice-medium-male-b",
+        "text": "Bas"
+      },
+      {
+        "id": "music-easy-voice-medium-male-c",
+        "text": "Kontratenor"
+      },
+      {
+        "id": "music-easy-voice-medium-male-d",
+        "text": "Sopran"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-beat-per-minute",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "W czym najczęściej podaje się tempo utworu na metronomie?",
+    "correctAnswerId": "music-easymedium-beat-per-minute-a",
+    "answers": [
+      {
+        "id": "music-easymedium-beat-per-minute-a",
+        "text": "W uderzeniach na minutę"
+      },
+      {
+        "id": "music-easymedium-beat-per-minute-b",
+        "text": "W decybelach"
+      },
+      {
+        "id": "music-easymedium-beat-per-minute-c",
+        "text": "W hercach"
+      },
+      {
+        "id": "music-easymedium-beat-per-minute-d",
+        "text": "W taktach na godzinę"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-clef-treble-name",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się klucz używany najczęściej do zapisu wyższych dźwięków?",
+    "correctAnswerId": "music-easymedium-clef-treble-name-a",
+    "answers": [
+      {
+        "id": "music-easymedium-clef-treble-name-a",
+        "text": "Klucz wiolinowy"
+      },
+      {
+        "id": "music-easymedium-clef-treble-name-b",
+        "text": "Klucz basowy"
+      },
+      {
+        "id": "music-easymedium-clef-treble-name-c",
+        "text": "Klucz tenorowy"
+      },
+      {
+        "id": "music-easymedium-clef-treble-name-d",
+        "text": "Klucz altowy"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-beethoven-country",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Z którego kraju pochodził Ludwig van Beethoven?",
+    "correctAnswerId": "music-easymedium-beethoven-country-a",
+    "answers": [
+      {
+        "id": "music-easymedium-beethoven-country-a",
+        "text": "Z Niemiec"
+      },
+      {
+        "id": "music-easymedium-beethoven-country-b",
+        "text": "Z Austrii"
+      },
+      {
+        "id": "music-easymedium-beethoven-country-c",
+        "text": "Z Włoch"
+      },
+      {
+        "id": "music-easymedium-beethoven-country-d",
+        "text": "Z Francji"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-moniuszko-work",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Które z tych dzieł skomponował Stanisław Moniuszko?",
+    "correctAnswerId": "music-easymedium-moniuszko-work-a",
+    "answers": [
+      {
+        "id": "music-easymedium-moniuszko-work-a",
+        "text": "Straszny dwór"
+      },
+      {
+        "id": "music-easymedium-moniuszko-work-b",
+        "text": "Halka i śnieg"
+      },
+      {
+        "id": "music-easymedium-moniuszko-work-c",
+        "text": "Pan Tadeusz"
+      },
+      {
+        "id": "music-easymedium-moniuszko-work-d",
+        "text": "Dziady muzyczne"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-instrument-reed-double",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Który instrument wykorzystuje stroik podwójny?",
+    "correctAnswerId": "music-easymedium-instrument-reed-double-a",
+    "answers": [
+      {
+        "id": "music-easymedium-instrument-reed-double-a",
+        "text": "Obój"
+      },
+      {
+        "id": "music-easymedium-instrument-reed-double-b",
+        "text": "Klarnet"
+      },
+      {
+        "id": "music-easymedium-instrument-reed-double-c",
+        "text": "Trąbka"
+      },
+      {
+        "id": "music-easymedium-instrument-reed-double-d",
+        "text": "Flet"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-piece-for-one-instrument",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się utwór przeznaczony do wykonania przez jednego wykonawcę?",
+    "correctAnswerId": "music-easymedium-piece-for-one-instrument-a",
+    "answers": [
+      {
+        "id": "music-easymedium-piece-for-one-instrument-a",
+        "text": "Solo"
+      },
+      {
+        "id": "music-easymedium-piece-for-one-instrument-b",
+        "text": "Trio"
+      },
+      {
+        "id": "music-easymedium-piece-for-one-instrument-c",
+        "text": "Chór"
+      },
+      {
+        "id": "music-easymedium-piece-for-one-instrument-d",
+        "text": "Symfonia"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-major-minor",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się system porządkujący dźwięki wokół jednego dźwięku centralnego?",
+    "correctAnswerId": "music-easymedium-major-minor-a",
+    "answers": [
+      {
+        "id": "music-easymedium-major-minor-a",
+        "text": "Tonacja"
+      },
+      {
+        "id": "music-easymedium-major-minor-b",
+        "text": "Dynamika"
+      },
+      {
+        "id": "music-easymedium-major-minor-c",
+        "text": "Instrumentacja"
+      },
+      {
+        "id": "music-easymedium-major-minor-d",
+        "text": "Rezonans"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-octave-interval",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Ile stopni skali obejmuje oktawa?",
+    "correctAnswerId": "music-easymedium-octave-interval-a",
+    "answers": [
+      {
+        "id": "music-easymedium-octave-interval-a",
+        "text": "8"
+      },
+      {
+        "id": "music-easymedium-octave-interval-b",
+        "text": "6"
+      },
+      {
+        "id": "music-easymedium-octave-interval-c",
+        "text": "7"
+      },
+      {
+        "id": "music-easymedium-octave-interval-d",
+        "text": "10"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-polish-dance-procession",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Który polski taniec ma uroczysty, dostojny charakter?",
+    "correctAnswerId": "music-easymedium-polish-dance-procession-a",
+    "answers": [
+      {
+        "id": "music-easymedium-polish-dance-procession-a",
+        "text": "Polonez"
+      },
+      {
+        "id": "music-easymedium-polish-dance-procession-b",
+        "text": "Oberek"
+      },
+      {
+        "id": "music-easymedium-polish-dance-procession-c",
+        "text": "Kujawiak"
+      },
+      {
+        "id": "music-easymedium-polish-dance-procession-d",
+        "text": "Krakowiak"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-vocal-no-instruments",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się muzyka wykonywana wyłącznie głosem, bez instrumentów?",
+    "correctAnswerId": "music-easymedium-vocal-no-instruments-a",
+    "answers": [
+      {
+        "id": "music-easymedium-vocal-no-instruments-a",
+        "text": "A cappella"
+      },
+      {
+        "id": "music-easymedium-vocal-no-instruments-b",
+        "text": "Legato"
+      },
+      {
+        "id": "music-easymedium-vocal-no-instruments-c",
+        "text": "Rubato"
+      },
+      {
+        "id": "music-easymedium-vocal-no-instruments-d",
+        "text": "Pizzicato"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-instrument-family-flute",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Do której grupy instrumentów należy flet poprzeczny?",
+    "correctAnswerId": "music-easymedium-instrument-family-flute-a",
+    "answers": [
+      {
+        "id": "music-easymedium-instrument-family-flute-a",
+        "text": "Dętych drewnianych"
+      },
+      {
+        "id": "music-easymedium-instrument-family-flute-b",
+        "text": "Dętych blaszanych"
+      },
+      {
+        "id": "music-easymedium-instrument-family-flute-c",
+        "text": "Smyczkowych"
+      },
+      {
+        "id": "music-easymedium-instrument-family-flute-d",
+        "text": "Perkusyjnych"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-mozart-city",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Z jakim miastem najczęściej kojarzony jest Wolfgang Amadeusz Mozart jako miejsce urodzenia?",
+    "correctAnswerId": "music-easymedium-mozart-city-a",
+    "answers": [
+      {
+        "id": "music-easymedium-mozart-city-a",
+        "text": "Salzburg"
+      },
+      {
+        "id": "music-easymedium-mozart-city-b",
+        "text": "Wiedeń"
+      },
+      {
+        "id": "music-easymedium-mozart-city-c",
+        "text": "Praga"
+      },
+      {
+        "id": "music-easymedium-mozart-city-d",
+        "text": "Monachium"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-opera-solo",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się solowa pieśń w operze?",
+    "correctAnswerId": "music-easymedium-opera-solo-a",
+    "answers": [
+      {
+        "id": "music-easymedium-opera-solo-a",
+        "text": "Aria"
+      },
+      {
+        "id": "music-easymedium-opera-solo-b",
+        "text": "Etiuda"
+      },
+      {
+        "id": "music-easymedium-opera-solo-c",
+        "text": "Rapsodia"
+      },
+      {
+        "id": "music-easymedium-opera-solo-d",
+        "text": "Sonata"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-fast-play-smooth",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się sposób wykonania dźwięków płynnie, bez wyraźnych przerw?",
+    "correctAnswerId": "music-easymedium-fast-play-smooth-a",
+    "answers": [
+      {
+        "id": "music-easymedium-fast-play-smooth-a",
+        "text": "Legato"
+      },
+      {
+        "id": "music-easymedium-fast-play-smooth-b",
+        "text": "Staccato"
+      },
+      {
+        "id": "music-easymedium-fast-play-smooth-c",
+        "text": "Marcato"
+      },
+      {
+        "id": "music-easymedium-fast-play-smooth-d",
+        "text": "Glissando"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-short-detached",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się sposób wykonania dźwięków krótko i oddzielnie?",
+    "correctAnswerId": "music-easymedium-short-detached-a",
+    "answers": [
+      {
+        "id": "music-easymedium-short-detached-a",
+        "text": "Staccato"
+      },
+      {
+        "id": "music-easymedium-short-detached-b",
+        "text": "Legato"
+      },
+      {
+        "id": "music-easymedium-short-detached-c",
+        "text": "Rubato"
+      },
+      {
+        "id": "music-easymedium-short-detached-d",
+        "text": "Cantabile"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-musical-three-people",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się zespół złożony z trzech wykonawców?",
+    "correctAnswerId": "music-easymedium-musical-three-people-a",
+    "answers": [
+      {
+        "id": "music-easymedium-musical-three-people-a",
+        "text": "Trio"
+      },
+      {
+        "id": "music-easymedium-musical-three-people-b",
+        "text": "Duet"
+      },
+      {
+        "id": "music-easymedium-musical-three-people-c",
+        "text": "Kwartet"
+      },
+      {
+        "id": "music-easymedium-musical-three-people-d",
+        "text": "Kwintet"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-instrument-low-brass",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Który instrument ma najniższe brzmienie wśród tych dętych blaszanych?",
+    "correctAnswerId": "music-easymedium-instrument-low-brass-a",
+    "answers": [
+      {
+        "id": "music-easymedium-instrument-low-brass-a",
+        "text": "Tuba"
+      },
+      {
+        "id": "music-easymedium-instrument-low-brass-b",
+        "text": "Trąbka"
+      },
+      {
+        "id": "music-easymedium-instrument-low-brass-c",
+        "text": "Waltornia"
+      },
+      {
+        "id": "music-easymedium-instrument-low-brass-d",
+        "text": "Kornet"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-famous-baroque-composer",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Który kompozytor jest jednym z najwybitniejszych twórców epoki baroku?",
+    "correctAnswerId": "music-easymedium-famous-baroque-composer-a",
+    "answers": [
+      {
+        "id": "music-easymedium-famous-baroque-composer-a",
+        "text": "Johann Sebastian Bach"
+      },
+      {
+        "id": "music-easymedium-famous-baroque-composer-b",
+        "text": "Giuseppe Verdi"
+      },
+      {
+        "id": "music-easymedium-famous-baroque-composer-c",
+        "text": "Claude Debussy"
+      },
+      {
+        "id": "music-easymedium-famous-baroque-composer-d",
+        "text": "Johannes Brahms"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-musical-introduction",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się początkowa część utworu wprowadzająca słuchacza?",
+    "correctAnswerId": "music-easymedium-musical-introduction-a",
+    "answers": [
+      {
+        "id": "music-easymedium-musical-introduction-a",
+        "text": "Wstęp"
+      },
+      {
+        "id": "music-easymedium-musical-introduction-b",
+        "text": "Kadencja"
+      },
+      {
+        "id": "music-easymedium-musical-introduction-c",
+        "text": "Repryza"
+      },
+      {
+        "id": "music-easymedium-musical-introduction-d",
+        "text": "Zwrot"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-group-four",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się zespół złożony z czterech osób?",
+    "correctAnswerId": "music-easymedium-group-four-a",
+    "answers": [
+      {
+        "id": "music-easymedium-group-four-a",
+        "text": "Kwartet"
+      },
+      {
+        "id": "music-easymedium-group-four-b",
+        "text": "Sekstet"
+      },
+      {
+        "id": "music-easymedium-group-four-c",
+        "text": "Trio"
+      },
+      {
+        "id": "music-easymedium-group-four-d",
+        "text": "Nonet"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-violin-family-middle",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Który instrument smyczkowy brzmi niżej od skrzypiec, ale wyżej od wiolonczeli?",
+    "correctAnswerId": "music-easymedium-violin-family-middle-a",
+    "answers": [
+      {
+        "id": "music-easymedium-violin-family-middle-a",
+        "text": "Altówka"
+      },
+      {
+        "id": "music-easymedium-violin-family-middle-b",
+        "text": "Kontrabas"
+      },
+      {
+        "id": "music-easymedium-violin-family-middle-c",
+        "text": "Harfa"
+      },
+      {
+        "id": "music-easymedium-violin-family-middle-d",
+        "text": "Mandolina"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-electronic-keyboard",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Który instrument elektroniczny ma klawisze i może naśladować wiele brzmień?",
+    "correctAnswerId": "music-easymedium-electronic-keyboard-a",
+    "answers": [
+      {
+        "id": "music-easymedium-electronic-keyboard-a",
+        "text": "Syntezator"
+      },
+      {
+        "id": "music-easymedium-electronic-keyboard-b",
+        "text": "Tamburyn"
+      },
+      {
+        "id": "music-easymedium-electronic-keyboard-c",
+        "text": "Obój"
+      },
+      {
+        "id": "music-easymedium-electronic-keyboard-d",
+        "text": "Puzon"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-note-duration-whole",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się nuta o długiej wartości, często równej czterem ćwierćnutom?",
+    "correctAnswerId": "music-easymedium-note-duration-whole-a",
+    "answers": [
+      {
+        "id": "music-easymedium-note-duration-whole-a",
+        "text": "Cała nuta"
+      },
+      {
+        "id": "music-easymedium-note-duration-whole-b",
+        "text": "Ósemka"
+      },
+      {
+        "id": "music-easymedium-note-duration-whole-c",
+        "text": "Szesnastka"
+      },
+      {
+        "id": "music-easymedium-note-duration-whole-d",
+        "text": "Półnuta z kropką"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-folk-music-people",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się muzyka związana z tradycją ludową danego regionu?",
+    "correctAnswerId": "music-easymedium-folk-music-people-a",
+    "answers": [
+      {
+        "id": "music-easymedium-folk-music-people-a",
+        "text": "Folklor"
+      },
+      {
+        "id": "music-easymedium-folk-music-people-b",
+        "text": "Awangarda"
+      },
+      {
+        "id": "music-easymedium-folk-music-people-c",
+        "text": "Minimalizm"
+      },
+      {
+        "id": "music-easymedium-folk-music-people-d",
+        "text": "Impresjonizm"
+      }
+    ]
+  },
+  {
+    "key": "music-easymedium-singing-without-words",
+    "categoryKey": "music",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się śpiewanie na samogłosce lub sylabie bez konkretnego tekstu?",
+    "correctAnswerId": "music-easymedium-singing-without-words-a",
+    "answers": [
+      {
+        "id": "music-easymedium-singing-without-words-a",
+        "text": "Wokaliza"
+      },
+      {
+        "id": "music-easymedium-singing-without-words-b",
+        "text": "Kadencja"
+      },
+      {
+        "id": "music-easymedium-singing-without-words-c",
+        "text": "Ballada"
+      },
+      {
+        "id": "music-easymedium-singing-without-words-d",
+        "text": "Fuga"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-chopin-nationality",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jakiej narodowości był Fryderyk Chopin?",
+    "correctAnswerId": "music-medium-chopin-nationality-a",
+    "answers": [
+      {
+        "id": "music-medium-chopin-nationality-a",
+        "text": "Polskiej"
+      },
+      {
+        "id": "music-medium-chopin-nationality-b",
+        "text": "Francuskiej"
+      },
+      {
+        "id": "music-medium-chopin-nationality-c",
+        "text": "Niemieckiej"
+      },
+      {
+        "id": "music-medium-chopin-nationality-d",
+        "text": "Rosyjskiej"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-form-symphony",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się wieloczęściowy utwór przeznaczony zwykle na orkiestrę?",
+    "correctAnswerId": "music-medium-form-symphony-a",
+    "answers": [
+      {
+        "id": "music-medium-form-symphony-a",
+        "text": "Symfonia"
+      },
+      {
+        "id": "music-medium-form-symphony-b",
+        "text": "Etiuda"
+      },
+      {
+        "id": "music-medium-form-symphony-c",
+        "text": "Preludium"
+      },
+      {
+        "id": "music-medium-form-symphony-d",
+        "text": "Pieśń"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-verdi-country",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Z którego kraju pochodził Giuseppe Verdi?",
+    "correctAnswerId": "music-medium-verdi-country-a",
+    "answers": [
+      {
+        "id": "music-medium-verdi-country-a",
+        "text": "Z Włoch"
+      },
+      {
+        "id": "music-medium-verdi-country-b",
+        "text": "Z Hiszpanii"
+      },
+      {
+        "id": "music-medium-verdi-country-c",
+        "text": "Z Austrii"
+      },
+      {
+        "id": "music-medium-verdi-country-d",
+        "text": "Z Rosji"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-notation-speed-change",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się stopniowe przyspieszanie tempa utworu?",
+    "correctAnswerId": "music-medium-music-notation-speed-change-a",
+    "answers": [
+      {
+        "id": "music-medium-music-notation-speed-change-a",
+        "text": "Accelerando"
+      },
+      {
+        "id": "music-medium-music-notation-speed-change-b",
+        "text": "Rallentando"
+      },
+      {
+        "id": "music-medium-music-notation-speed-change-c",
+        "text": "Sostenuto"
+      },
+      {
+        "id": "music-medium-music-notation-speed-change-d",
+        "text": "Diminuendo"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-notation-slower",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się stopniowe zwalnianie tempa utworu?",
+    "correctAnswerId": "music-medium-music-notation-slower-a",
+    "answers": [
+      {
+        "id": "music-medium-music-notation-slower-a",
+        "text": "Rallentando"
+      },
+      {
+        "id": "music-medium-music-notation-slower-b",
+        "text": "Accelerando"
+      },
+      {
+        "id": "music-medium-music-notation-slower-c",
+        "text": "Crescendo"
+      },
+      {
+        "id": "music-medium-music-notation-slower-d",
+        "text": "Allegro"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-crescendo-meaning",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Co oznacza w muzyce określenie „crescendo”?",
+    "correctAnswerId": "music-medium-crescendo-meaning-a",
+    "answers": [
+      {
+        "id": "music-medium-crescendo-meaning-a",
+        "text": "Stopniowe zwiększanie głośności"
+      },
+      {
+        "id": "music-medium-crescendo-meaning-b",
+        "text": "Stopniowe zwalnianie"
+      },
+      {
+        "id": "music-medium-crescendo-meaning-c",
+        "text": "Powrót do początku"
+      },
+      {
+        "id": "music-medium-crescendo-meaning-d",
+        "text": "Granie coraz ciszej"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-concerto-solo-orchestra",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się utwór, w którym instrument solowy współgra z orkiestrą?",
+    "correctAnswerId": "music-medium-concerto-solo-orchestra-a",
+    "answers": [
+      {
+        "id": "music-medium-concerto-solo-orchestra-a",
+        "text": "Koncert"
+      },
+      {
+        "id": "music-medium-concerto-solo-orchestra-b",
+        "text": "Fuga"
+      },
+      {
+        "id": "music-medium-concerto-solo-orchestra-c",
+        "text": "Psalm"
+      },
+      {
+        "id": "music-medium-concerto-solo-orchestra-d",
+        "text": "Kanon"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-opera-composer-carmen",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Kto skomponował operę „Carmen”?",
+    "correctAnswerId": "music-medium-opera-composer-carmen-a",
+    "answers": [
+      {
+        "id": "music-medium-opera-composer-carmen-a",
+        "text": "Georges Bizet"
+      },
+      {
+        "id": "music-medium-opera-composer-carmen-b",
+        "text": "Giacomo Puccini"
+      },
+      {
+        "id": "music-medium-opera-composer-carmen-c",
+        "text": "Richard Wagner"
+      },
+      {
+        "id": "music-medium-opera-composer-carmen-d",
+        "text": "Antonio Vivaldi"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-ensemble-five",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się zespół złożony z pięciu wykonawców?",
+    "correctAnswerId": "music-medium-music-ensemble-five-a",
+    "answers": [
+      {
+        "id": "music-medium-music-ensemble-five-a",
+        "text": "Kwintet"
+      },
+      {
+        "id": "music-medium-music-ensemble-five-b",
+        "text": "Kwartet"
+      },
+      {
+        "id": "music-medium-music-ensemble-five-c",
+        "text": "Oktet"
+      },
+      {
+        "id": "music-medium-music-ensemble-five-d",
+        "text": "Duet"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-classical-era-composer",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Który kompozytor należy do klasycyzmu wiedeńskiego?",
+    "correctAnswerId": "music-medium-classical-era-composer-a",
+    "answers": [
+      {
+        "id": "music-medium-classical-era-composer-a",
+        "text": "Joseph Haydn"
+      },
+      {
+        "id": "music-medium-classical-era-composer-b",
+        "text": "Richard Strauss"
+      },
+      {
+        "id": "music-medium-classical-era-composer-c",
+        "text": "Igor Strawiński"
+      },
+      {
+        "id": "music-medium-classical-era-composer-d",
+        "text": "Maurice Ravel"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-scale-major-emotion",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Z jakim charakterem najczęściej kojarzy się tonacja durowa?",
+    "correctAnswerId": "music-medium-scale-major-emotion-a",
+    "answers": [
+      {
+        "id": "music-medium-scale-major-emotion-a",
+        "text": "Jasnym i pogodnym"
+      },
+      {
+        "id": "music-medium-scale-major-emotion-b",
+        "text": "Mrocznym i niepokojącym"
+      },
+      {
+        "id": "music-medium-scale-major-emotion-c",
+        "text": "Wyłącznie żałobnym"
+      },
+      {
+        "id": "music-medium-scale-major-emotion-d",
+        "text": "Zawsze marszowym"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-line-bar",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się pionowa kreska dzieląca zapis muzyczny na części?",
+    "correctAnswerId": "music-medium-music-line-bar-a",
+    "answers": [
+      {
+        "id": "music-medium-music-line-bar-a",
+        "text": "Kreska taktowa"
+      },
+      {
+        "id": "music-medium-music-line-bar-b",
+        "text": "Łuk"
+      },
+      {
+        "id": "music-medium-music-line-bar-c",
+        "text": "Fermata"
+      },
+      {
+        "id": "music-medium-music-line-bar-d",
+        "text": "Mordent"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-piano-soft-loud",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jakie włoskie słowo oznacza „cicho” w zapisie muzycznym?",
+    "correctAnswerId": "music-medium-piano-soft-loud-a",
+    "answers": [
+      {
+        "id": "music-medium-piano-soft-loud-a",
+        "text": "Piano"
+      },
+      {
+        "id": "music-medium-piano-soft-loud-b",
+        "text": "Forte"
+      },
+      {
+        "id": "music-medium-piano-soft-loud-c",
+        "text": "Vivace"
+      },
+      {
+        "id": "music-medium-piano-soft-loud-d",
+        "text": "Presto"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-piano-loud",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jakie włoskie słowo oznacza „głośno” w zapisie muzycznym?",
+    "correctAnswerId": "music-medium-piano-loud-a",
+    "answers": [
+      {
+        "id": "music-medium-piano-loud-a",
+        "text": "Forte"
+      },
+      {
+        "id": "music-medium-piano-loud-b",
+        "text": "Adagio"
+      },
+      {
+        "id": "music-medium-piano-loud-c",
+        "text": "Dolce"
+      },
+      {
+        "id": "music-medium-piano-loud-d",
+        "text": "Largo"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-dance-triple-turning",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Który taniec towarzyski ma charakter wirowy i metrum 3/4?",
+    "correctAnswerId": "music-medium-dance-triple-turning-a",
+    "answers": [
+      {
+        "id": "music-medium-dance-triple-turning-a",
+        "text": "Walc"
+      },
+      {
+        "id": "music-medium-dance-triple-turning-b",
+        "text": "Foxtrot"
+      },
+      {
+        "id": "music-medium-dance-triple-turning-c",
+        "text": "Cha-cha"
+      },
+      {
+        "id": "music-medium-dance-triple-turning-d",
+        "text": "Marsz"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-composer-swan-lake",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Kto skomponował balet „Jezioro łabędzie”?",
+    "correctAnswerId": "music-medium-composer-swan-lake-a",
+    "answers": [
+      {
+        "id": "music-medium-composer-swan-lake-a",
+        "text": "Piotr Czajkowski"
+      },
+      {
+        "id": "music-medium-composer-swan-lake-b",
+        "text": "Siergiej Prokofiew"
+      },
+      {
+        "id": "music-medium-composer-swan-lake-c",
+        "text": "Franz Liszt"
+      },
+      {
+        "id": "music-medium-composer-swan-lake-d",
+        "text": "Feliks Mendelssohn"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-improvise-jazz-solo",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "W którym gatunku muzycznym improwizowane solo jest szczególnie ważne?",
+    "correctAnswerId": "music-medium-improvise-jazz-solo-a",
+    "answers": [
+      {
+        "id": "music-medium-improvise-jazz-solo-a",
+        "text": "W jazzie"
+      },
+      {
+        "id": "music-medium-improvise-jazz-solo-b",
+        "text": "W marszu wojskowym"
+      },
+      {
+        "id": "music-medium-improvise-jazz-solo-c",
+        "text": "W kolędzie"
+      },
+      {
+        "id": "music-medium-improvise-jazz-solo-d",
+        "text": "W hymnie państwowym"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-with-electronics",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się muzyka tworzona z wykorzystaniem syntezatorów i komputerów?",
+    "correctAnswerId": "music-medium-music-with-electronics-a",
+    "answers": [
+      {
+        "id": "music-medium-music-with-electronics-a",
+        "text": "Muzyka elektroniczna"
+      },
+      {
+        "id": "music-medium-music-with-electronics-b",
+        "text": "Muzyka dawna"
+      },
+      {
+        "id": "music-medium-music-with-electronics-c",
+        "text": "Muzyka sakralna"
+      },
+      {
+        "id": "music-medium-music-with-electronics-d",
+        "text": "Muzyka ludowa"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-opera-composer-halka",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Kto skomponował operę „Halka”?",
+    "correctAnswerId": "music-medium-opera-composer-halka-a",
+    "answers": [
+      {
+        "id": "music-medium-opera-composer-halka-a",
+        "text": "Stanisław Moniuszko"
+      },
+      {
+        "id": "music-medium-opera-composer-halka-b",
+        "text": "Karol Szymanowski"
+      },
+      {
+        "id": "music-medium-opera-composer-halka-c",
+        "text": "Mieczysław Karłowicz"
+      },
+      {
+        "id": "music-medium-opera-composer-halka-d",
+        "text": "Ignacy Paderewski"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-instrument-jazz-sax",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Który instrument jest szczególnie kojarzony z jazzem?",
+    "correctAnswerId": "music-medium-instrument-jazz-sax-a",
+    "answers": [
+      {
+        "id": "music-medium-instrument-jazz-sax-a",
+        "text": "Saksofon"
+      },
+      {
+        "id": "music-medium-instrument-jazz-sax-b",
+        "text": "Fagot"
+      },
+      {
+        "id": "music-medium-instrument-jazz-sax-c",
+        "text": "Harfa"
+      },
+      {
+        "id": "music-medium-instrument-jazz-sax-d",
+        "text": "Klawesyn"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-plucked-bow-technique",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się technika szarpania strun na instrumentach smyczkowych?",
+    "correctAnswerId": "music-medium-plucked-bow-technique-a",
+    "answers": [
+      {
+        "id": "music-medium-plucked-bow-technique-a",
+        "text": "Pizzicato"
+      },
+      {
+        "id": "music-medium-plucked-bow-technique-b",
+        "text": "Legato"
+      },
+      {
+        "id": "music-medium-plucked-bow-technique-c",
+        "text": "Trillo"
+      },
+      {
+        "id": "music-medium-plucked-bow-technique-d",
+        "text": "Portato"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-fugue-polyphonic",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się forma muzyczna oparta na naśladowaniu jednego tematu przez kolejne głosy?",
+    "correctAnswerId": "music-medium-fugue-polyphonic-a",
+    "answers": [
+      {
+        "id": "music-medium-fugue-polyphonic-a",
+        "text": "Fuga"
+      },
+      {
+        "id": "music-medium-fugue-polyphonic-b",
+        "text": "Mazurek"
+      },
+      {
+        "id": "music-medium-fugue-polyphonic-c",
+        "text": "Polka"
+      },
+      {
+        "id": "music-medium-fugue-polyphonic-d",
+        "text": "Ballada"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-chopin-genre-most",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Z jakim gatunkiem szczególnie kojarzy się twórczość Chopina?",
+    "correctAnswerId": "music-medium-chopin-genre-most-a",
+    "answers": [
+      {
+        "id": "music-medium-chopin-genre-most-a",
+        "text": "Fortepianowym"
+      },
+      {
+        "id": "music-medium-chopin-genre-most-b",
+        "text": "Operowym"
+      },
+      {
+        "id": "music-medium-chopin-genre-most-c",
+        "text": "Symfonicznym"
+      },
+      {
+        "id": "music-medium-chopin-genre-most-d",
+        "text": "Oratoryjnym"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-interval-smallest-western",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jaki jest najmniejszy podstawowy odstęp między dźwiękami w muzyce europejskiej?",
+    "correctAnswerId": "music-medium-music-interval-smallest-western-a",
+    "answers": [
+      {
+        "id": "music-medium-music-interval-smallest-western-a",
+        "text": "Półton"
+      },
+      {
+        "id": "music-medium-music-interval-smallest-western-b",
+        "text": "Kwinta"
+      },
+      {
+        "id": "music-medium-music-interval-smallest-western-c",
+        "text": "Oktawa"
+      },
+      {
+        "id": "music-medium-music-interval-smallest-western-d",
+        "text": "Tercja"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-baroque-basso-continuo",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Z jaką epoką najbardziej kojarzy się basso continuo?",
+    "correctAnswerId": "music-medium-baroque-basso-continuo-a",
+    "answers": [
+      {
+        "id": "music-medium-baroque-basso-continuo-a",
+        "text": "Z barokiem"
+      },
+      {
+        "id": "music-medium-baroque-basso-continuo-b",
+        "text": "Z romantyzmem"
+      },
+      {
+        "id": "music-medium-baroque-basso-continuo-c",
+        "text": "Z impresjonizmem"
+      },
+      {
+        "id": "music-medium-baroque-basso-continuo-d",
+        "text": "Z renesansem"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-opera-composer-traviata",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Kto skomponował operę „La Traviata”?",
+    "correctAnswerId": "music-medium-opera-composer-traviata-a",
+    "answers": [
+      {
+        "id": "music-medium-opera-composer-traviata-a",
+        "text": "Giuseppe Verdi"
+      },
+      {
+        "id": "music-medium-opera-composer-traviata-b",
+        "text": "Wolfgang Amadeusz Mozart"
+      },
+      {
+        "id": "music-medium-opera-composer-traviata-c",
+        "text": "Georges Bizet"
+      },
+      {
+        "id": "music-medium-opera-composer-traviata-d",
+        "text": "Christoph Gluck"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-choir-voice-tenor",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jaki męski głos wokalny jest wyższy od barytonu?",
+    "correctAnswerId": "music-medium-choir-voice-tenor-a",
+    "answers": [
+      {
+        "id": "music-medium-choir-voice-tenor-a",
+        "text": "Tenor"
+      },
+      {
+        "id": "music-medium-choir-voice-tenor-b",
+        "text": "Bas"
+      },
+      {
+        "id": "music-medium-choir-voice-tenor-c",
+        "text": "Kontrabas"
+      },
+      {
+        "id": "music-medium-choir-voice-tenor-d",
+        "text": "Alt"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-oratorio-definition",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się duże dzieło wokalno-instrumentalne o tematyce często religijnej, wykonywane bez inscenizacji?",
+    "correctAnswerId": "music-medium-oratorio-definition-a",
+    "answers": [
+      {
+        "id": "music-medium-oratorio-definition-a",
+        "text": "Oratorium"
+      },
+      {
+        "id": "music-medium-oratorio-definition-b",
+        "text": "Musical"
+      },
+      {
+        "id": "music-medium-oratorio-definition-c",
+        "text": "Ballada"
+      },
+      {
+        "id": "music-medium-oratorio-definition-d",
+        "text": "Suita"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-suite",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się cykl kilku kontrastujących części instrumentalnych, często tanecznych?",
+    "correctAnswerId": "music-medium-music-suite-a",
+    "answers": [
+      {
+        "id": "music-medium-music-suite-a",
+        "text": "Suita"
+      },
+      {
+        "id": "music-medium-music-suite-b",
+        "text": "Kanon"
+      },
+      {
+        "id": "music-medium-music-suite-c",
+        "text": "Improwizacja"
+      },
+      {
+        "id": "music-medium-music-suite-d",
+        "text": "Wariacja"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-rhythm-syncopation",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się przesunięcie akcentu rytmicznego na słabą część taktu?",
+    "correctAnswerId": "music-medium-rhythm-syncopation-a",
+    "answers": [
+      {
+        "id": "music-medium-rhythm-syncopation-a",
+        "text": "Synkopa"
+      },
+      {
+        "id": "music-medium-rhythm-syncopation-b",
+        "text": "Kadencja"
+      },
+      {
+        "id": "music-medium-rhythm-syncopation-c",
+        "text": "Arpeggio"
+      },
+      {
+        "id": "music-medium-rhythm-syncopation-d",
+        "text": "Transpozycja"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-debusy-era",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Z jakim nurtem najczęściej kojarzy się Claude Debussy?",
+    "correctAnswerId": "music-medium-debusy-era-a",
+    "answers": [
+      {
+        "id": "music-medium-debusy-era-a",
+        "text": "Impresjonizmem"
+      },
+      {
+        "id": "music-medium-debusy-era-b",
+        "text": "Barokiem"
+      },
+      {
+        "id": "music-medium-debusy-era-c",
+        "text": "Klasycyzmem"
+      },
+      {
+        "id": "music-medium-debusy-era-d",
+        "text": "Minimalizmem"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-opera-comic-name",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się krótka, lekka opera o komicznym charakterze?",
+    "correctAnswerId": "music-medium-opera-comic-name-a",
+    "answers": [
+      {
+        "id": "music-medium-opera-comic-name-a",
+        "text": "Opera buffa"
+      },
+      {
+        "id": "music-medium-opera-comic-name-b",
+        "text": "Grand opéra"
+      },
+      {
+        "id": "music-medium-opera-comic-name-c",
+        "text": "Oratorium"
+      },
+      {
+        "id": "music-medium-opera-comic-name-d",
+        "text": "Symfonietta"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-music-repeat-sign",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się powrót do głównego tematu lub części początkowej utworu?",
+    "correctAnswerId": "music-medium-music-repeat-sign-a",
+    "answers": [
+      {
+        "id": "music-medium-music-repeat-sign-a",
+        "text": "Repryza"
+      },
+      {
+        "id": "music-medium-music-repeat-sign-b",
+        "text": "Kadencja"
+      },
+      {
+        "id": "music-medium-music-repeat-sign-c",
+        "text": "Dygresja"
+      },
+      {
+        "id": "music-medium-music-repeat-sign-d",
+        "text": "Strofa"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-instrument-hammer-strings",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Który instrument wydobywa dźwięk przez uderzanie młoteczków w struny?",
+    "correctAnswerId": "music-medium-instrument-hammer-strings-a",
+    "answers": [
+      {
+        "id": "music-medium-instrument-hammer-strings-a",
+        "text": "Fortepian"
+      },
+      {
+        "id": "music-medium-instrument-hammer-strings-b",
+        "text": "Akordeon"
+      },
+      {
+        "id": "music-medium-instrument-hammer-strings-c",
+        "text": "Trąbka"
+      },
+      {
+        "id": "music-medium-instrument-hammer-strings-d",
+        "text": "Flet"
+      }
+    ]
+  },
+  {
+    "key": "music-medium-national-dance-fast-polish",
+    "categoryKey": "music",
+    "difficulty": "Medium",
+    "text": "Który polski taniec jest bardzo szybki i wirujący?",
+    "correctAnswerId": "music-medium-national-dance-fast-polish-a",
+    "answers": [
+      {
+        "id": "music-medium-national-dance-fast-polish-a",
+        "text": "Oberek"
+      },
+      {
+        "id": "music-medium-national-dance-fast-polish-b",
+        "text": "Polonez"
+      },
+      {
+        "id": "music-medium-national-dance-fast-polish-c",
+        "text": "Kujawiak"
+      },
+      {
+        "id": "music-medium-national-dance-fast-polish-d",
+        "text": "Menuet"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-wagner-music-drama",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Który kompozytor rozwinął ideę dramatu muzycznego i leitmotivu?",
+    "correctAnswerId": "music-mediumhard-wagner-music-drama-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-wagner-music-drama-a",
+        "text": "Richard Wagner"
+      },
+      {
+        "id": "music-mediumhard-wagner-music-drama-b",
+        "text": "Giuseppe Verdi"
+      },
+      {
+        "id": "music-mediumhard-wagner-music-drama-c",
+        "text": "Felix Mendelssohn"
+      },
+      {
+        "id": "music-mediumhard-wagner-music-drama-d",
+        "text": "Antonio Salieri"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-counterpoint-definition",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się technika łączenia kilku samodzielnych linii melodycznych?",
+    "correctAnswerId": "music-mediumhard-counterpoint-definition-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-counterpoint-definition-a",
+        "text": "Kontrapunkt"
+      },
+      {
+        "id": "music-mediumhard-counterpoint-definition-b",
+        "text": "Homofonia"
+      },
+      {
+        "id": "music-mediumhard-counterpoint-definition-c",
+        "text": "Instrumentacja"
+      },
+      {
+        "id": "music-mediumhard-counterpoint-definition-d",
+        "text": "Akcentacja"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-szymanowski-work",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Które dzieło skomponował Karol Szymanowski?",
+    "correctAnswerId": "music-mediumhard-szymanowski-work-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-szymanowski-work-a",
+        "text": "Harnasie"
+      },
+      {
+        "id": "music-mediumhard-szymanowski-work-b",
+        "text": "Straszny dwór"
+      },
+      {
+        "id": "music-mediumhard-szymanowski-work-c",
+        "text": "Aidę"
+      },
+      {
+        "id": "music-mediumhard-szymanowski-work-d",
+        "text": "Cztery pory roku"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-key-signature-flat",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza bemol przy nucie?",
+    "correctAnswerId": "music-mediumhard-key-signature-flat-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-key-signature-flat-a",
+        "text": "Obniżenie dźwięku o półton"
+      },
+      {
+        "id": "music-mediumhard-key-signature-flat-b",
+        "text": "Podwyższenie dźwięku o cały ton"
+      },
+      {
+        "id": "music-mediumhard-key-signature-flat-c",
+        "text": "Wydłużenie wartości nuty"
+      },
+      {
+        "id": "music-mediumhard-key-signature-flat-d",
+        "text": "Powrót do tonacji C-dur"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-sharp-sign",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza krzyżyk przy nucie?",
+    "correctAnswerId": "music-mediumhard-sharp-sign-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-sharp-sign-a",
+        "text": "Podwyższenie dźwięku o półton"
+      },
+      {
+        "id": "music-mediumhard-sharp-sign-b",
+        "text": "Obniżenie dźwięku o półton"
+      },
+      {
+        "id": "music-mediumhard-sharp-sign-c",
+        "text": "Skrócenie nuty o połowę"
+      },
+      {
+        "id": "music-mediumhard-sharp-sign-d",
+        "text": "Pauzę"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-natural-sign",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Do czego służy kasownik w zapisie muzycznym?",
+    "correctAnswerId": "music-mediumhard-natural-sign-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-natural-sign-a",
+        "text": "Do odwołania wcześniejszego podwyższenia lub obniżenia dźwięku"
+      },
+      {
+        "id": "music-mediumhard-natural-sign-b",
+        "text": "Do powtórzenia taktu"
+      },
+      {
+        "id": "music-mediumhard-natural-sign-c",
+        "text": "Do przyspieszenia tempa"
+      },
+      {
+        "id": "music-mediumhard-natural-sign-d",
+        "text": "Do zaznaczenia akcentu"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-polyphony-definition",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się faktura muzyczna, w której kilka głosów ma podobne znaczenie melodyczne?",
+    "correctAnswerId": "music-mediumhard-polyphony-definition-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-polyphony-definition-a",
+        "text": "Polifonia"
+      },
+      {
+        "id": "music-mediumhard-polyphony-definition-b",
+        "text": "Monodia"
+      },
+      {
+        "id": "music-mediumhard-polyphony-definition-c",
+        "text": "Melorecytacja"
+      },
+      {
+        "id": "music-mediumhard-polyphony-definition-d",
+        "text": "Aleatoryzm"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-homophony-definition",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się faktura z dominującą melodią i akompaniamentem?",
+    "correctAnswerId": "music-mediumhard-homophony-definition-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-homophony-definition-a",
+        "text": "Homofonia"
+      },
+      {
+        "id": "music-mediumhard-homophony-definition-b",
+        "text": "Polifonia"
+      },
+      {
+        "id": "music-mediumhard-homophony-definition-c",
+        "text": "Dodekafonia"
+      },
+      {
+        "id": "music-mediumhard-homophony-definition-d",
+        "text": "Monotonia"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-cadence-authentic",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się zakończenie muzyczne dające silne poczucie domknięcia?",
+    "correctAnswerId": "music-mediumhard-cadence-authentic-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-cadence-authentic-a",
+        "text": "Kadencja doskonała"
+      },
+      {
+        "id": "music-mediumhard-cadence-authentic-b",
+        "text": "Synkopa"
+      },
+      {
+        "id": "music-mediumhard-cadence-authentic-c",
+        "text": "Transpozycja"
+      },
+      {
+        "id": "music-mediumhard-cadence-authentic-d",
+        "text": "Akomodacja"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-transpose-meaning",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza transpozycja utworu?",
+    "correctAnswerId": "music-mediumhard-transpose-meaning-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-transpose-meaning-a",
+        "text": "Przeniesienie go do innej wysokości"
+      },
+      {
+        "id": "music-mediumhard-transpose-meaning-b",
+        "text": "Zmianę metrum na parzyste"
+      },
+      {
+        "id": "music-mediumhard-transpose-meaning-c",
+        "text": "Przyspieszenie tempa"
+      },
+      {
+        "id": "music-mediumhard-transpose-meaning-d",
+        "text": "Usunięcie refrenu"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-orchestra-score",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się pełny zapis wszystkich partii orkiestry?",
+    "correctAnswerId": "music-mediumhard-orchestra-score-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-orchestra-score-a",
+        "text": "Partytura"
+      },
+      {
+        "id": "music-mediumhard-orchestra-score-b",
+        "text": "Etiuda"
+      },
+      {
+        "id": "music-mediumhard-orchestra-score-c",
+        "text": "Libretto"
+      },
+      {
+        "id": "music-mediumhard-orchestra-score-d",
+        "text": "Kontrakt"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-opera-text",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się tekst literacki opery?",
+    "correctAnswerId": "music-mediumhard-opera-text-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-opera-text-a",
+        "text": "Libretto"
+      },
+      {
+        "id": "music-mediumhard-opera-text-b",
+        "text": "Manuskrypt"
+      },
+      {
+        "id": "music-mediumhard-opera-text-c",
+        "text": "Program"
+      },
+      {
+        "id": "music-mediumhard-opera-text-d",
+        "text": "Dysertacja"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-rubato-meaning",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza rubato w wykonaniu muzycznym?",
+    "correctAnswerId": "music-mediumhard-rubato-meaning-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-rubato-meaning-a",
+        "text": "Swobodne, elastyczne traktowanie tempa"
+      },
+      {
+        "id": "music-mediumhard-rubato-meaning-b",
+        "text": "Granie wyłącznie bardzo głośno"
+      },
+      {
+        "id": "music-mediumhard-rubato-meaning-c",
+        "text": "Śpiew bez słów"
+      },
+      {
+        "id": "music-mediumhard-rubato-meaning-d",
+        "text": "Powtarzanie jednego taktu"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-berlioz-known-for",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Z jakiego dzieła szczególnie znany jest Hector Berlioz?",
+    "correctAnswerId": "music-mediumhard-berlioz-known-for-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-berlioz-known-for-a",
+        "text": "Symfonii fantastycznej"
+      },
+      {
+        "id": "music-mediumhard-berlioz-known-for-b",
+        "text": "Bolera"
+      },
+      {
+        "id": "music-mediumhard-berlioz-known-for-c",
+        "text": "Mszy h-moll"
+      },
+      {
+        "id": "music-mediumhard-berlioz-known-for-d",
+        "text": "Nabucca"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-mahler-genre",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Z jakim gatunkiem najbardziej kojarzony jest Gustav Mahler?",
+    "correctAnswerId": "music-mediumhard-mahler-genre-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-mahler-genre-a",
+        "text": "Symfonią"
+      },
+      {
+        "id": "music-mediumhard-mahler-genre-b",
+        "text": "Operą komiczną"
+      },
+      {
+        "id": "music-mediumhard-mahler-genre-c",
+        "text": "Muzyką elektroniczną"
+      },
+      {
+        "id": "music-mediumhard-mahler-genre-d",
+        "text": "Madrygałem"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-stravinsky-ballet",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Który balet skomponował Igor Strawiński?",
+    "correctAnswerId": "music-mediumhard-stravinsky-ballet-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-stravinsky-ballet-a",
+        "text": "Święto wiosny"
+      },
+      {
+        "id": "music-mediumhard-stravinsky-ballet-b",
+        "text": "Dziadek do orzechów"
+      },
+      {
+        "id": "music-mediumhard-stravinsky-ballet-c",
+        "text": "Don Kichot"
+      },
+      {
+        "id": "music-mediumhard-stravinsky-ballet-d",
+        "text": "Giselle"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-ravel-bolero",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Kto skomponował „Bolero”?",
+    "correctAnswerId": "music-mediumhard-ravel-bolero-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-ravel-bolero-a",
+        "text": "Maurice Ravel"
+      },
+      {
+        "id": "music-mediumhard-ravel-bolero-b",
+        "text": "Claude Debussy"
+      },
+      {
+        "id": "music-mediumhard-ravel-bolero-c",
+        "text": "Camille Saint-Saëns"
+      },
+      {
+        "id": "music-mediumhard-ravel-bolero-d",
+        "text": "Franz Schubert"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-twelve-tone",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Z kim najczęściej wiąże się technikę dodekafoniczną?",
+    "correctAnswerId": "music-mediumhard-twelve-tone-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-twelve-tone-a",
+        "text": "Arnoldem Schönbergiem"
+      },
+      {
+        "id": "music-mediumhard-twelve-tone-b",
+        "text": "Antoninem Dvořákiem"
+      },
+      {
+        "id": "music-mediumhard-twelve-tone-c",
+        "text": "Edwardem Griegem"
+      },
+      {
+        "id": "music-mediumhard-twelve-tone-d",
+        "text": "Gioachino Rossinim"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-minimalism-composer",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Który kompozytor jest kojarzony z minimalizmem?",
+    "correctAnswerId": "music-mediumhard-minimalism-composer-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-minimalism-composer-a",
+        "text": "Philip Glass"
+      },
+      {
+        "id": "music-mediumhard-minimalism-composer-b",
+        "text": "Giuseppe Tartini"
+      },
+      {
+        "id": "music-mediumhard-minimalism-composer-c",
+        "text": "Frédéric Chopin"
+      },
+      {
+        "id": "music-mediumhard-minimalism-composer-d",
+        "text": "Jean Sibelius"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-jazz-style-swing",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się styl jazzowy z charakterystycznym kołyszącym pulsem, popularny w big-bandach?",
+    "correctAnswerId": "music-mediumhard-jazz-style-swing-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-jazz-style-swing-a",
+        "text": "Swing"
+      },
+      {
+        "id": "music-mediumhard-jazz-style-swing-b",
+        "text": "Grunge"
+      },
+      {
+        "id": "music-mediumhard-jazz-style-swing-c",
+        "text": "Bebop klasyczny"
+      },
+      {
+        "id": "music-mediumhard-jazz-style-swing-d",
+        "text": "Opera buffa"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-bebop-feature",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Która cecha najlepiej opisuje bebop?",
+    "correctAnswerId": "music-mediumhard-bebop-feature-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-bebop-feature-a",
+        "text": "Szybkie tempa i złożona improwizacja"
+      },
+      {
+        "id": "music-mediumhard-bebop-feature-b",
+        "text": "Marszowy rytm i prosty akompaniament"
+      },
+      {
+        "id": "music-mediumhard-bebop-feature-c",
+        "text": "Wyłącznie śpiew chóralny"
+      },
+      {
+        "id": "music-mediumhard-bebop-feature-d",
+        "text": "Brak instrumentów dętych"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-blues-structure",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jaka forma często występuje w bluesie?",
+    "correctAnswerId": "music-mediumhard-blues-structure-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-blues-structure-a",
+        "text": "Dwunastotaktowa"
+      },
+      {
+        "id": "music-mediumhard-blues-structure-b",
+        "text": "Pięcioczęściowa sonatowa"
+      },
+      {
+        "id": "music-mediumhard-blues-structure-c",
+        "text": "Fugowana"
+      },
+      {
+        "id": "music-mediumhard-blues-structure-d",
+        "text": "Rondowa"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-music-renaissance-vocal",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jaki gatunek wokalny był szczególnie ważny w renesansie?",
+    "correctAnswerId": "music-mediumhard-music-renaissance-vocal-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-music-renaissance-vocal-a",
+        "text": "Madrygał"
+      },
+      {
+        "id": "music-mediumhard-music-renaissance-vocal-b",
+        "text": "Operetka"
+      },
+      {
+        "id": "music-mediumhard-music-renaissance-vocal-c",
+        "text": "Musical"
+      },
+      {
+        "id": "music-mediumhard-music-renaissance-vocal-d",
+        "text": "Scherzo"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-baroque-plucked-keyboard",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Który instrument klawiszowy był szczególnie popularny w epoce baroku?",
+    "correctAnswerId": "music-mediumhard-baroque-plucked-keyboard-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-baroque-plucked-keyboard-a",
+        "text": "Klawesyn"
+      },
+      {
+        "id": "music-mediumhard-baroque-plucked-keyboard-b",
+        "text": "Syntezator"
+      },
+      {
+        "id": "music-mediumhard-baroque-plucked-keyboard-c",
+        "text": "Fortepian koncertowy"
+      },
+      {
+        "id": "music-mediumhard-baroque-plucked-keyboard-d",
+        "text": "Akordeon"
+      }
+    ]
+  },
+  {
+    "key": "music-mediumhard-french-horn-name",
+    "categoryKey": "music",
+    "difficulty": "MediumHard",
+    "text": "Jak inaczej po polsku nazywa się instrument „French horn”?",
+    "correctAnswerId": "music-mediumhard-french-horn-name-a",
+    "answers": [
+      {
+        "id": "music-mediumhard-french-horn-name-a",
+        "text": "Waltornia"
+      },
+      {
+        "id": "music-mediumhard-french-horn-name-b",
+        "text": "Kornet"
+      },
+      {
+        "id": "music-mediumhard-french-horn-name-c",
+        "text": "Tuba"
+      },
+      {
+        "id": "music-mediumhard-french-horn-name-d",
+        "text": "Puzon tenorowy"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-bach-well-tempered",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się słynny zbiór preludiów i fug Johanna Sebastiana Bacha napisany we wszystkich tonacjach dur i moll?",
+    "correctAnswerId": "music-hard-bach-well-tempered-a",
+    "answers": [
+      {
+        "id": "music-hard-bach-well-tempered-a",
+        "text": "Das Wohltemperierte Klavier"
+      },
+      {
+        "id": "music-hard-bach-well-tempered-b",
+        "text": "Die Kunst der Fuge"
+      },
+      {
+        "id": "music-hard-bach-well-tempered-c",
+        "text": "Mesjasz"
+      },
+      {
+        "id": "music-hard-bach-well-tempered-d",
+        "text": "Wariacje Goldbergowskie"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-beethoven-third-name",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Jaki przydomek nosi III Symfonia Beethovena?",
+    "correctAnswerId": "music-hard-beethoven-third-name-a",
+    "answers": [
+      {
+        "id": "music-hard-beethoven-third-name-a",
+        "text": "Eroica"
+      },
+      {
+        "id": "music-hard-beethoven-third-name-b",
+        "text": "Pastoralna"
+      },
+      {
+        "id": "music-hard-beethoven-third-name-c",
+        "text": "Losu"
+      },
+      {
+        "id": "music-hard-beethoven-third-name-d",
+        "text": "Niedokończona"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-mozart-requiem-key",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "W jakiej tonacji jest „Requiem” Mozarta?",
+    "correctAnswerId": "music-hard-mozart-requiem-key-a",
+    "answers": [
+      {
+        "id": "music-hard-mozart-requiem-key-a",
+        "text": "d-moll"
+      },
+      {
+        "id": "music-hard-mozart-requiem-key-b",
+        "text": "C-dur"
+      },
+      {
+        "id": "music-hard-mozart-requiem-key-c",
+        "text": "g-dur"
+      },
+      {
+        "id": "music-hard-mozart-requiem-key-d",
+        "text": "Es-dur"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-chopin-form-op49",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Jaką formę ma utwór Chopina op. 49?",
+    "correctAnswerId": "music-hard-chopin-form-op49-a",
+    "answers": [
+      {
+        "id": "music-hard-chopin-form-op49-a",
+        "text": "Fantazja"
+      },
+      {
+        "id": "music-hard-chopin-form-op49-b",
+        "text": "Etiuda"
+      },
+      {
+        "id": "music-hard-chopin-form-op49-c",
+        "text": "Ballada"
+      },
+      {
+        "id": "music-hard-chopin-form-op49-d",
+        "text": "Mazurek"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-wagner-cycle-name",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się czteroczęściowy cykl oper Richarda Wagnera?",
+    "correctAnswerId": "music-hard-wagner-cycle-name-a",
+    "answers": [
+      {
+        "id": "music-hard-wagner-cycle-name-a",
+        "text": "Pierścień Nibelunga"
+      },
+      {
+        "id": "music-hard-wagner-cycle-name-b",
+        "text": "Śpiewacy z Norymbergi"
+      },
+      {
+        "id": "music-hard-wagner-cycle-name-c",
+        "text": "Tannhäuser"
+      },
+      {
+        "id": "music-hard-wagner-cycle-name-d",
+        "text": "Parsifal"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-verdi-aida-setting",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "W jakim kraju rozgrywa się akcja opery „Aida”?",
+    "correctAnswerId": "music-hard-verdi-aida-setting-a",
+    "answers": [
+      {
+        "id": "music-hard-verdi-aida-setting-a",
+        "text": "W Egipcie"
+      },
+      {
+        "id": "music-hard-verdi-aida-setting-b",
+        "text": "We Włoszech"
+      },
+      {
+        "id": "music-hard-verdi-aida-setting-c",
+        "text": "W Hiszpanii"
+      },
+      {
+        "id": "music-hard-verdi-aida-setting-d",
+        "text": "W Grecji"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-mahler-resurrection-number",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Która symfonia Mahlera nosi przydomek „Zmartwychwstanie”?",
+    "correctAnswerId": "music-hard-mahler-resurrection-number-a",
+    "answers": [
+      {
+        "id": "music-hard-mahler-resurrection-number-a",
+        "text": "II Symfonia"
+      },
+      {
+        "id": "music-hard-mahler-resurrection-number-b",
+        "text": "V Symfonia"
+      },
+      {
+        "id": "music-hard-mahler-resurrection-number-c",
+        "text": "I Symfonia"
+      },
+      {
+        "id": "music-hard-mahler-resurrection-number-d",
+        "text": "VIII Symfonia"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-debussy-sea-title",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Jak brzmi tytuł słynnego dzieła Debussy’ego inspirowanego morzem?",
+    "correctAnswerId": "music-hard-debussy-sea-title-a",
+    "answers": [
+      {
+        "id": "music-hard-debussy-sea-title-a",
+        "text": "La Mer"
+      },
+      {
+        "id": "music-hard-debussy-sea-title-b",
+        "text": "Nocturnes"
+      },
+      {
+        "id": "music-hard-debussy-sea-title-c",
+        "text": "Pelléas et Mélisande"
+      },
+      {
+        "id": "music-hard-debussy-sea-title-d",
+        "text": "Images"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-ravel-orchestration",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Który utwór Ravela jest słynną orkiestracją dzieła Musorgskiego?",
+    "correctAnswerId": "music-hard-ravel-orchestration-a",
+    "answers": [
+      {
+        "id": "music-hard-ravel-orchestration-a",
+        "text": "Obrazki z wystawy"
+      },
+      {
+        "id": "music-hard-ravel-orchestration-b",
+        "text": "Bolero"
+      },
+      {
+        "id": "music-hard-ravel-orchestration-c",
+        "text": "Dafnis i Chloé"
+      },
+      {
+        "id": "music-hard-ravel-orchestration-d",
+        "text": "Pawana dla zmarłej infantki"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-stravinsky-paris-riot",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Premiera którego baletu Strawińskiego w 1913 roku wywołała skandal w Paryżu?",
+    "correctAnswerId": "music-hard-stravinsky-paris-riot-a",
+    "answers": [
+      {
+        "id": "music-hard-stravinsky-paris-riot-a",
+        "text": "Święto wiosny"
+      },
+      {
+        "id": "music-hard-stravinsky-paris-riot-b",
+        "text": "Ognisty ptak"
+      },
+      {
+        "id": "music-hard-stravinsky-paris-riot-c",
+        "text": "Pulcinella"
+      },
+      {
+        "id": "music-hard-stravinsky-paris-riot-d",
+        "text": "Pietruszka"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-schoenberg-opera",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się niedokończona opera Arnolda Schönberga oparta na historii biblijnej?",
+    "correctAnswerId": "music-hard-schoenberg-opera-a",
+    "answers": [
+      {
+        "id": "music-hard-schoenberg-opera-a",
+        "text": "Mojżesz i Aron"
+      },
+      {
+        "id": "music-hard-schoenberg-opera-b",
+        "text": "Wozzeck"
+      },
+      {
+        "id": "music-hard-schoenberg-opera-c",
+        "text": "Lulu"
+      },
+      {
+        "id": "music-hard-schoenberg-opera-d",
+        "text": "Fidelio"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-bartok-folk",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Który kompozytor zasłynął badaniami nad muzyką ludową Europy Środkowej i napisał „Muzykę na instrumenty strunowe, perkusję i czelestę”?",
+    "correctAnswerId": "music-hard-bartok-folk-a",
+    "answers": [
+      {
+        "id": "music-hard-bartok-folk-a",
+        "text": "Béla Bartók"
+      },
+      {
+        "id": "music-hard-bartok-folk-b",
+        "text": "Franz Liszt"
+      },
+      {
+        "id": "music-hard-bartok-folk-c",
+        "text": "Erik Satie"
+      },
+      {
+        "id": "music-hard-bartok-folk-d",
+        "text": "Nikolai Rimsky-Korsakov"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-polish-composer-stabat",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Który polski kompozytor napisał „Stabat Mater” z 1962 roku?",
+    "correctAnswerId": "music-hard-polish-composer-stabat-a",
+    "answers": [
+      {
+        "id": "music-hard-polish-composer-stabat-a",
+        "text": "Krzysztof Penderecki"
+      },
+      {
+        "id": "music-hard-polish-composer-stabat-b",
+        "text": "Witold Lutosławski"
+      },
+      {
+        "id": "music-hard-polish-composer-stabat-c",
+        "text": "Henryk Mikołaj Górecki"
+      },
+      {
+        "id": "music-hard-polish-composer-stabat-d",
+        "text": "Andrzej Panufnik"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-lutoslawski-technique",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Z jaką techniką wykonawczą kojarzy się twórczość Witolda Lutosławskiego?",
+    "correctAnswerId": "music-hard-lutoslawski-technique-a",
+    "answers": [
+      {
+        "id": "music-hard-lutoslawski-technique-a",
+        "text": "Aleatoryzmem kontrolowanym"
+      },
+      {
+        "id": "music-hard-lutoslawski-technique-b",
+        "text": "Dodekafonią serialną bez wyjątku"
+      },
+      {
+        "id": "music-hard-lutoslawski-technique-c",
+        "text": "Monodią gregoriańską"
+      },
+      {
+        "id": "music-hard-lutoslawski-technique-d",
+        "text": "Muzyką konkretną wyłącznie"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-gorecki-symphony-famous",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Która symfonia Henryka Mikołaja Góreckiego zdobyła światową popularność pod koniec XX wieku?",
+    "correctAnswerId": "music-hard-gorecki-symphony-famous-a",
+    "answers": [
+      {
+        "id": "music-hard-gorecki-symphony-famous-a",
+        "text": "III Symfonia „Symfonia pieśni żałosnych”"
+      },
+      {
+        "id": "music-hard-gorecki-symphony-famous-b",
+        "text": "I Symfonia „1959”"
+      },
+      {
+        "id": "music-hard-gorecki-symphony-famous-c",
+        "text": "II Symfonia „Kopernikowska”"
+      },
+      {
+        "id": "music-hard-gorecki-symphony-famous-d",
+        "text": "IV Symfonia „Tansman Episodes”"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-polish-violin-composer",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Który polski kompozytor był także wybitnym skrzypkiem i napisał koncerty skrzypcowe?",
+    "correctAnswerId": "music-hard-polish-violin-composer-a",
+    "answers": [
+      {
+        "id": "music-hard-polish-violin-composer-a",
+        "text": "Henryk Wieniawski"
+      },
+      {
+        "id": "music-hard-polish-violin-composer-b",
+        "text": "Mieczysław Karłowicz"
+      },
+      {
+        "id": "music-hard-polish-violin-composer-c",
+        "text": "Wojciech Kilar"
+      },
+      {
+        "id": "music-hard-polish-violin-composer-d",
+        "text": "Grażyna Bacewicz"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-bacewicz-instrument",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Na jakim instrumencie grała Grażyna Bacewicz?",
+    "correctAnswerId": "music-hard-bacewicz-instrument-a",
+    "answers": [
+      {
+        "id": "music-hard-bacewicz-instrument-a",
+        "text": "Na skrzypcach"
+      },
+      {
+        "id": "music-hard-bacewicz-instrument-b",
+        "text": "Na oboju"
+      },
+      {
+        "id": "music-hard-bacewicz-instrument-c",
+        "text": "Na tubie"
+      },
+      {
+        "id": "music-hard-bacewicz-instrument-d",
+        "text": "Na fagocie"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-orff-work",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się najbardziej znane dzieło Carla Orffa oparte częściowo na średniowiecznych tekstach?",
+    "correctAnswerId": "music-hard-orff-work-a",
+    "answers": [
+      {
+        "id": "music-hard-orff-work-a",
+        "text": "Carmina Burana"
+      },
+      {
+        "id": "music-hard-orff-work-b",
+        "text": "Mathis der Maler"
+      },
+      {
+        "id": "music-hard-orff-work-c",
+        "text": "West Side Story"
+      },
+      {
+        "id": "music-hard-orff-work-d",
+        "text": "War Requiem"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-messiaen-birds",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Który kompozytor był znany z fascynacji śpiewem ptaków i napisał „Kwartet na koniec czasu”?",
+    "correctAnswerId": "music-hard-messiaen-birds-a",
+    "answers": [
+      {
+        "id": "music-hard-messiaen-birds-a",
+        "text": "Olivier Messiaen"
+      },
+      {
+        "id": "music-hard-messiaen-birds-b",
+        "text": "Gabriel Fauré"
+      },
+      {
+        "id": "music-hard-messiaen-birds-c",
+        "text": "Charles Gounod"
+      },
+      {
+        "id": "music-hard-messiaen-birds-d",
+        "text": "Jacques Offenbach"
+      }
+    ]
+  },
+  {
+    "key": "music-hard-bruckner-symphony",
+    "categoryKey": "music",
+    "difficulty": "Hard",
+    "text": "Z jakim gatunkiem najbardziej kojarzony jest Anton Bruckner?",
+    "correctAnswerId": "music-hard-bruckner-symphony-a",
+    "answers": [
+      {
+        "id": "music-hard-bruckner-symphony-a",
+        "text": "Monumentalną symfonią"
+      },
+      {
+        "id": "music-hard-bruckner-symphony-b",
+        "text": "Operą komiczną"
+      },
+      {
+        "id": "music-hard-bruckner-symphony-c",
+        "text": "Piosenką kabaretową"
+      },
+      {
+        "id": "music-hard-bruckner-symphony-d",
+        "text": "Muzyką filmową"
+      }
+    ]
+  }
+]

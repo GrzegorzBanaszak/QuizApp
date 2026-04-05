@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "sports-easy-football-players",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Ilu zawodników jednej drużyny przebywa na boisku w piłce nożnej?",
+    "correctAnswerId": "sports-easy-football-players-a",
+    "answers": [
+      {
+        "id": "sports-easy-football-players-a",
+        "text": "11"
+      },
+      {
+        "id": "sports-easy-football-players-b",
+        "text": "10"
+      },
+      {
+        "id": "sports-easy-football-players-c",
+        "text": "9"
+      },
+      {
+        "id": "sports-easy-football-players-d",
+        "text": "12"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-basketball-points",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Ile punktów zwykle daje celny rzut zza linii za trzy punkty w koszykówce?",
+    "correctAnswerId": "sports-easy-basketball-points-a",
+    "answers": [
+      {
+        "id": "sports-easy-basketball-points-a",
+        "text": "3"
+      },
+      {
+        "id": "sports-easy-basketball-points-b",
+        "text": "2"
+      },
+      {
+        "id": "sports-easy-basketball-points-c",
+        "text": "1"
+      },
+      {
+        "id": "sports-easy-basketball-points-d",
+        "text": "4"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-tennis-racket",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jakiego sprzętu używa się do odbijania piłki w tenisie?",
+    "correctAnswerId": "sports-easy-tennis-racket-a",
+    "answers": [
+      {
+        "id": "sports-easy-tennis-racket-a",
+        "text": "Rakiety"
+      },
+      {
+        "id": "sports-easy-tennis-racket-b",
+        "text": "Kija"
+      },
+      {
+        "id": "sports-easy-tennis-racket-c",
+        "text": "Pałki"
+      },
+      {
+        "id": "sports-easy-tennis-racket-d",
+        "text": "Łuku"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-olympic-event",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się największa międzynarodowa impreza sportowa organizowana co cztery lata?",
+    "correctAnswerId": "sports-easy-olympic-event-a",
+    "answers": [
+      {
+        "id": "sports-easy-olympic-event-a",
+        "text": "Igrzyska olimpijskie"
+      },
+      {
+        "id": "sports-easy-olympic-event-b",
+        "text": "Mistrzostwa świata"
+      },
+      {
+        "id": "sports-easy-olympic-event-c",
+        "text": "Tour de France"
+      },
+      {
+        "id": "sports-easy-olympic-event-d",
+        "text": "Super Bowl"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-swimming-water",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "W jakim środowisku rozgrywa się pływanie sportowe?",
+    "correctAnswerId": "sports-easy-swimming-water-a",
+    "answers": [
+      {
+        "id": "sports-easy-swimming-water-a",
+        "text": "W wodzie"
+      },
+      {
+        "id": "sports-easy-swimming-water-b",
+        "text": "Na lodzie"
+      },
+      {
+        "id": "sports-easy-swimming-water-c",
+        "text": "Na trawie"
+      },
+      {
+        "id": "sports-easy-swimming-water-d",
+        "text": "W powietrzu"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-marathon-distance",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Ile kilometrów ma maraton?",
+    "correctAnswerId": "sports-easy-marathon-distance-a",
+    "answers": [
+      {
+        "id": "sports-easy-marathon-distance-a",
+        "text": "42,195 km"
+      },
+      {
+        "id": "sports-easy-marathon-distance-b",
+        "text": "40 km"
+      },
+      {
+        "id": "sports-easy-marathon-distance-c",
+        "text": "45 km"
+      },
+      {
+        "id": "sports-easy-marathon-distance-d",
+        "text": "50 km"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-volleyball-net",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Co oddziela dwie drużyny w siatkówce halowej?",
+    "correctAnswerId": "sports-easy-volleyball-net-a",
+    "answers": [
+      {
+        "id": "sports-easy-volleyball-net-a",
+        "text": "Siatka"
+      },
+      {
+        "id": "sports-easy-volleyball-net-b",
+        "text": "Mur"
+      },
+      {
+        "id": "sports-easy-volleyball-net-c",
+        "text": "Linia środkowa"
+      },
+      {
+        "id": "sports-easy-volleyball-net-d",
+        "text": "Bramka"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-boxing-gloves",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Czego używają zawodnicy podczas walki bokserskiej na dłoniach?",
+    "correctAnswerId": "sports-easy-boxing-gloves-a",
+    "answers": [
+      {
+        "id": "sports-easy-boxing-gloves-a",
+        "text": "Rękawic"
+      },
+      {
+        "id": "sports-easy-boxing-gloves-b",
+        "text": "Łyżew"
+      },
+      {
+        "id": "sports-easy-boxing-gloves-c",
+        "text": "Kasków"
+      },
+      {
+        "id": "sports-easy-boxing-gloves-d",
+        "text": "Płetw"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-cycling-vehicle",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Na jakim pojeździe ścigają się kolarze szosowi?",
+    "correctAnswerId": "sports-easy-cycling-vehicle-a",
+    "answers": [
+      {
+        "id": "sports-easy-cycling-vehicle-a",
+        "text": "Na rowerze"
+      },
+      {
+        "id": "sports-easy-cycling-vehicle-b",
+        "text": "Na motorze"
+      },
+      {
+        "id": "sports-easy-cycling-vehicle-c",
+        "text": "Na hulajnodze"
+      },
+      {
+        "id": "sports-easy-cycling-vehicle-d",
+        "text": "Na deskorolce"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-football-goalkeeper",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się zawodnik, który może łapać piłkę rękami w polu karnym?",
+    "correctAnswerId": "sports-easy-football-goalkeeper-a",
+    "answers": [
+      {
+        "id": "sports-easy-football-goalkeeper-a",
+        "text": "Bramkarz"
+      },
+      {
+        "id": "sports-easy-football-goalkeeper-b",
+        "text": "Obrońca"
+      },
+      {
+        "id": "sports-easy-football-goalkeeper-c",
+        "text": "Napastnik"
+      },
+      {
+        "id": "sports-easy-football-goalkeeper-d",
+        "text": "Sędzia"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-basketball-ring",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Do czego trzeba trafić piłką, aby zdobyć punkty w koszykówce?",
+    "correctAnswerId": "sports-easy-basketball-ring-a",
+    "answers": [
+      {
+        "id": "sports-easy-basketball-ring-a",
+        "text": "Do kosza"
+      },
+      {
+        "id": "sports-easy-basketball-ring-b",
+        "text": "Do bramki"
+      },
+      {
+        "id": "sports-easy-basketball-ring-c",
+        "text": "Do siatki"
+      },
+      {
+        "id": "sports-easy-basketball-ring-d",
+        "text": "Do dołka"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-athletics-sprint",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się krótki, bardzo szybki bieg w lekkoatletyce?",
+    "correctAnswerId": "sports-easy-athletics-sprint-a",
+    "answers": [
+      {
+        "id": "sports-easy-athletics-sprint-a",
+        "text": "Sprint"
+      },
+      {
+        "id": "sports-easy-athletics-sprint-b",
+        "text": "Marsz"
+      },
+      {
+        "id": "sports-easy-athletics-sprint-c",
+        "text": "Trucht"
+      },
+      {
+        "id": "sports-easy-athletics-sprint-d",
+        "text": "Sztafeta"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-table-tennis",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jak potocznie nazywa się tenis stołowy?",
+    "correctAnswerId": "sports-easy-table-tennis-a",
+    "answers": [
+      {
+        "id": "sports-easy-table-tennis-a",
+        "text": "Ping-pong"
+      },
+      {
+        "id": "sports-easy-table-tennis-b",
+        "text": "Badminton"
+      },
+      {
+        "id": "sports-easy-table-tennis-c",
+        "text": "Squash"
+      },
+      {
+        "id": "sports-easy-table-tennis-d",
+        "text": "Palant"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-winter-skis",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jaki sprzęt zakłada się na nogi podczas jazdy na nartach?",
+    "correctAnswerId": "sports-easy-winter-skis-a",
+    "answers": [
+      {
+        "id": "sports-easy-winter-skis-a",
+        "text": "Narty"
+      },
+      {
+        "id": "sports-easy-winter-skis-b",
+        "text": "Łyżwy"
+      },
+      {
+        "id": "sports-easy-winter-skis-c",
+        "text": "Raki"
+      },
+      {
+        "id": "sports-easy-winter-skis-d",
+        "text": "Płetwy"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-chess-board",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Na czym rozgrywa się partię szachów?",
+    "correctAnswerId": "sports-easy-chess-board-a",
+    "answers": [
+      {
+        "id": "sports-easy-chess-board-a",
+        "text": "Na szachownicy"
+      },
+      {
+        "id": "sports-easy-chess-board-b",
+        "text": "Na bieżni"
+      },
+      {
+        "id": "sports-easy-chess-board-c",
+        "text": "Na korcie"
+      },
+      {
+        "id": "sports-easy-chess-board-d",
+        "text": "Na macie"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-handball-hands",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jaką częścią ciała najczęściej podaje się piłkę w piłce ręcznej?",
+    "correctAnswerId": "sports-easy-handball-hands-a",
+    "answers": [
+      {
+        "id": "sports-easy-handball-hands-a",
+        "text": "Rękami"
+      },
+      {
+        "id": "sports-easy-handball-hands-b",
+        "text": "Nogami"
+      },
+      {
+        "id": "sports-easy-handball-hands-c",
+        "text": "Głową"
+      },
+      {
+        "id": "sports-easy-handball-hands-d",
+        "text": "Kijem"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-formula-one",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jaki sport kojarzy się z bolidami i wyścigami Grand Prix?",
+    "correctAnswerId": "sports-easy-formula-one-a",
+    "answers": [
+      {
+        "id": "sports-easy-formula-one-a",
+        "text": "Formuła 1"
+      },
+      {
+        "id": "sports-easy-formula-one-b",
+        "text": "Żużel"
+      },
+      {
+        "id": "sports-easy-formula-one-c",
+        "text": "Rajdy piesze"
+      },
+      {
+        "id": "sports-easy-formula-one-d",
+        "text": "Skoki narciarskie"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-judo-mat",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Na czym walczą zawodnicy judo?",
+    "correctAnswerId": "sports-easy-judo-mat-a",
+    "answers": [
+      {
+        "id": "sports-easy-judo-mat-a",
+        "text": "Na macie"
+      },
+      {
+        "id": "sports-easy-judo-mat-b",
+        "text": "Na lodzie"
+      },
+      {
+        "id": "sports-easy-judo-mat-c",
+        "text": "Na parkiecie"
+      },
+      {
+        "id": "sports-easy-judo-mat-d",
+        "text": "Na bieżni"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-hockey-ice",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Na jakiej nawierzchni najczęściej gra się w hokeja na lodzie?",
+    "correctAnswerId": "sports-easy-hockey-ice-a",
+    "answers": [
+      {
+        "id": "sports-easy-hockey-ice-a",
+        "text": "Na lodzie"
+      },
+      {
+        "id": "sports-easy-hockey-ice-b",
+        "text": "Na piasku"
+      },
+      {
+        "id": "sports-easy-hockey-ice-c",
+        "text": "Na trawie"
+      },
+      {
+        "id": "sports-easy-hockey-ice-d",
+        "text": "Na tartanie"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-golf-target",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Do czego należy wbić piłkę w golfie?",
+    "correctAnswerId": "sports-easy-golf-target-a",
+    "answers": [
+      {
+        "id": "sports-easy-golf-target-a",
+        "text": "Do dołka"
+      },
+      {
+        "id": "sports-easy-golf-target-b",
+        "text": "Do kosza"
+      },
+      {
+        "id": "sports-easy-golf-target-c",
+        "text": "Do bramki"
+      },
+      {
+        "id": "sports-easy-golf-target-d",
+        "text": "Do siatki"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-badminton-object",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Co odbija się w badmintonie?",
+    "correctAnswerId": "sports-easy-badminton-object-a",
+    "answers": [
+      {
+        "id": "sports-easy-badminton-object-a",
+        "text": "Lotkę"
+      },
+      {
+        "id": "sports-easy-badminton-object-b",
+        "text": "Piłkę lekarską"
+      },
+      {
+        "id": "sports-easy-badminton-object-c",
+        "text": "Krążek"
+      },
+      {
+        "id": "sports-easy-badminton-object-d",
+        "text": "Piłkę tenisową"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-baseball-bat",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się przyrząd do odbijania piłki w baseballu?",
+    "correctAnswerId": "sports-easy-baseball-bat-a",
+    "answers": [
+      {
+        "id": "sports-easy-baseball-bat-a",
+        "text": "Kij"
+      },
+      {
+        "id": "sports-easy-baseball-bat-b",
+        "text": "Rakieta"
+      },
+      {
+        "id": "sports-easy-baseball-bat-c",
+        "text": "Laska"
+      },
+      {
+        "id": "sports-easy-baseball-bat-d",
+        "text": "Młotek"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-skijumping",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "W jakiej dyscyplinie zawodnicy zjeżdżają z rozbiegu i lecą jak najdalej?",
+    "correctAnswerId": "sports-easy-skijumping-a",
+    "answers": [
+      {
+        "id": "sports-easy-skijumping-a",
+        "text": "W skokach narciarskich"
+      },
+      {
+        "id": "sports-easy-skijumping-b",
+        "text": "W biathlonie"
+      },
+      {
+        "id": "sports-easy-skijumping-c",
+        "text": "W curlingu"
+      },
+      {
+        "id": "sports-easy-skijumping-d",
+        "text": "W bobslejach"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-wrestling",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się sport walki polegający na chwytach i przewrotach bez użycia ciosów?",
+    "correctAnswerId": "sports-easy-wrestling-a",
+    "answers": [
+      {
+        "id": "sports-easy-wrestling-a",
+        "text": "Zapasy"
+      },
+      {
+        "id": "sports-easy-wrestling-b",
+        "text": "Boks"
+      },
+      {
+        "id": "sports-easy-wrestling-c",
+        "text": "Szermierka"
+      },
+      {
+        "id": "sports-easy-wrestling-d",
+        "text": "Karate"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-running-shoes",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Co najczęściej zakłada biegacz na stopy podczas zawodów?",
+    "correctAnswerId": "sports-easy-running-shoes-a",
+    "answers": [
+      {
+        "id": "sports-easy-running-shoes-a",
+        "text": "Buty biegowe"
+      },
+      {
+        "id": "sports-easy-running-shoes-b",
+        "text": "Płetwy"
+      },
+      {
+        "id": "sports-easy-running-shoes-c",
+        "text": "Łyżwy"
+      },
+      {
+        "id": "sports-easy-running-shoes-d",
+        "text": "Narty"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-scoreboard",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się tablica pokazująca wynik meczu?",
+    "correctAnswerId": "sports-easy-scoreboard-a",
+    "answers": [
+      {
+        "id": "sports-easy-scoreboard-a",
+        "text": "Tablica wyników"
+      },
+      {
+        "id": "sports-easy-scoreboard-b",
+        "text": "Plan gry"
+      },
+      {
+        "id": "sports-easy-scoreboard-c",
+        "text": "Lista zmian"
+      },
+      {
+        "id": "sports-easy-scoreboard-d",
+        "text": "Bilet startowy"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-referee",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Kto pilnuje przepisów podczas meczu?",
+    "correctAnswerId": "sports-easy-referee-a",
+    "answers": [
+      {
+        "id": "sports-easy-referee-a",
+        "text": "Sędzia"
+      },
+      {
+        "id": "sports-easy-referee-b",
+        "text": "Trener"
+      },
+      {
+        "id": "sports-easy-referee-c",
+        "text": "Kibic"
+      },
+      {
+        "id": "sports-easy-referee-d",
+        "text": "Kapitan"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-ski-poles",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Czego używa narciarz oprócz nart, aby się odpychać?",
+    "correctAnswerId": "sports-easy-ski-poles-a",
+    "answers": [
+      {
+        "id": "sports-easy-ski-poles-a",
+        "text": "Kijków"
+      },
+      {
+        "id": "sports-easy-ski-poles-b",
+        "text": "Rakiet"
+      },
+      {
+        "id": "sports-easy-ski-poles-c",
+        "text": "Wioseł"
+      },
+      {
+        "id": "sports-easy-ski-poles-d",
+        "text": "Lasek golfowych"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-olympic-rings",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Ile pierścieni ma symbol olimpijski?",
+    "correctAnswerId": "sports-easy-olympic-rings-a",
+    "answers": [
+      {
+        "id": "sports-easy-olympic-rings-a",
+        "text": "5"
+      },
+      {
+        "id": "sports-easy-olympic-rings-b",
+        "text": "4"
+      },
+      {
+        "id": "sports-easy-olympic-rings-c",
+        "text": "6"
+      },
+      {
+        "id": "sports-easy-olympic-rings-d",
+        "text": "7"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-football-card-red",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jakiego koloru kartka oznacza wykluczenie zawodnika w piłce nożnej?",
+    "correctAnswerId": "sports-easy-football-card-red-a",
+    "answers": [
+      {
+        "id": "sports-easy-football-card-red-a",
+        "text": "Czerwonego"
+      },
+      {
+        "id": "sports-easy-football-card-red-b",
+        "text": "Niebieskiego"
+      },
+      {
+        "id": "sports-easy-football-card-red-c",
+        "text": "Białego"
+      },
+      {
+        "id": "sports-easy-football-card-red-d",
+        "text": "Czarnego"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-tennis-court-net",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Co znajduje się pośrodku kortu tenisowego?",
+    "correctAnswerId": "sports-easy-tennis-court-net-a",
+    "answers": [
+      {
+        "id": "sports-easy-tennis-court-net-a",
+        "text": "Siatka"
+      },
+      {
+        "id": "sports-easy-tennis-court-net-b",
+        "text": "Kosz"
+      },
+      {
+        "id": "sports-easy-tennis-court-net-c",
+        "text": "Bramka"
+      },
+      {
+        "id": "sports-easy-tennis-court-net-d",
+        "text": "Belka"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-volleyball-team",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Ilu zawodników jednej drużyny jest na boisku w siatkówce?",
+    "correctAnswerId": "sports-easy-volleyball-team-a",
+    "answers": [
+      {
+        "id": "sports-easy-volleyball-team-a",
+        "text": "6"
+      },
+      {
+        "id": "sports-easy-volleyball-team-b",
+        "text": "5"
+      },
+      {
+        "id": "sports-easy-volleyball-team-c",
+        "text": "7"
+      },
+      {
+        "id": "sports-easy-volleyball-team-d",
+        "text": "8"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-medal-first",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jaki medal otrzymuje zwycięzca zawodów?",
+    "correctAnswerId": "sports-easy-medal-first-a",
+    "answers": [
+      {
+        "id": "sports-easy-medal-first-a",
+        "text": "Złoty"
+      },
+      {
+        "id": "sports-easy-medal-first-b",
+        "text": "Srebrny"
+      },
+      {
+        "id": "sports-easy-medal-first-c",
+        "text": "Brązowy"
+      },
+      {
+        "id": "sports-easy-medal-first-d",
+        "text": "Żelazny"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-biathlon-mix",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jakie dwie konkurencje łączy biathlon?",
+    "correctAnswerId": "sports-easy-biathlon-mix-a",
+    "answers": [
+      {
+        "id": "sports-easy-biathlon-mix-a",
+        "text": "Bieg narciarski i strzelanie"
+      },
+      {
+        "id": "sports-easy-biathlon-mix-b",
+        "text": "Łyżwiarstwo i boks"
+      },
+      {
+        "id": "sports-easy-biathlon-mix-c",
+        "text": "Pływanie i bieg"
+      },
+      {
+        "id": "sports-easy-biathlon-mix-d",
+        "text": "Jazdę na rowerze i rzut oszczepem"
+      }
+    ]
+  },
+  {
+    "key": "sports-easy-soccer-ball-shape",
+    "categoryKey": "sports",
+    "difficulty": "Easy",
+    "text": "Jaki kształt ma standardowa piłka nożna?",
+    "correctAnswerId": "sports-easy-soccer-ball-shape-a",
+    "answers": [
+      {
+        "id": "sports-easy-soccer-ball-shape-a",
+        "text": "Kulisty"
+      },
+      {
+        "id": "sports-easy-soccer-ball-shape-b",
+        "text": "Sześcienny"
+      },
+      {
+        "id": "sports-easy-soccer-ball-shape-c",
+        "text": "Owalny"
+      },
+      {
+        "id": "sports-easy-soccer-ball-shape-d",
+        "text": "Stożkowy"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-tennis-grand-slam",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się turniej wielkoszlemowy rozgrywany na trawie?",
+    "correctAnswerId": "sports-easymedium-tennis-grand-slam-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-tennis-grand-slam-a",
+        "text": "Wimbledon"
+      },
+      {
+        "id": "sports-easymedium-tennis-grand-slam-b",
+        "text": "Roland Garros"
+      },
+      {
+        "id": "sports-easymedium-tennis-grand-slam-c",
+        "text": "US Open"
+      },
+      {
+        "id": "sports-easymedium-tennis-grand-slam-d",
+        "text": "Australian Open"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-basketball-free-throw",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Ile punktów daje rzut wolny w koszykówce?",
+    "correctAnswerId": "sports-easymedium-basketball-free-throw-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-basketball-free-throw-a",
+        "text": "1"
+      },
+      {
+        "id": "sports-easymedium-basketball-free-throw-b",
+        "text": "2"
+      },
+      {
+        "id": "sports-easymedium-basketball-free-throw-c",
+        "text": "3"
+      },
+      {
+        "id": "sports-easymedium-basketball-free-throw-d",
+        "text": "0"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-football-offside",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się przepis zabraniający napastnikowi ustawienia się zbyt blisko bramki przeciwnika bez obrońców?",
+    "correctAnswerId": "sports-easymedium-football-offside-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-football-offside-a",
+        "text": "Spalony"
+      },
+      {
+        "id": "sports-easymedium-football-offside-b",
+        "text": "Aut"
+      },
+      {
+        "id": "sports-easymedium-football-offside-c",
+        "text": "Rzut rożny"
+      },
+      {
+        "id": "sports-easymedium-football-offside-d",
+        "text": "Dogrywka"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-swimming-stroke-butterfly",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się styl pływacki, w którym obie ręce pracują jednocześnie nad wodą?",
+    "correctAnswerId": "sports-easymedium-swimming-stroke-butterfly-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-swimming-stroke-butterfly-a",
+        "text": "Motylkowy"
+      },
+      {
+        "id": "sports-easymedium-swimming-stroke-butterfly-b",
+        "text": "Grzbietowy"
+      },
+      {
+        "id": "sports-easymedium-swimming-stroke-butterfly-c",
+        "text": "Klasyczny"
+      },
+      {
+        "id": "sports-easymedium-swimming-stroke-butterfly-d",
+        "text": "Dowolny"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-formula-one-pit",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się miejsce, w którym zespół obsługuje bolid podczas wyścigu Formuły 1?",
+    "correctAnswerId": "sports-easymedium-formula-one-pit-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-formula-one-pit-a",
+        "text": "Aleja serwisowa"
+      },
+      {
+        "id": "sports-easymedium-formula-one-pit-b",
+        "text": "Park zamknięty"
+      },
+      {
+        "id": "sports-easymedium-formula-one-pit-c",
+        "text": "Trybuna główna"
+      },
+      {
+        "id": "sports-easymedium-formula-one-pit-d",
+        "text": "Strefa kibica"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-athletics-javelin",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się konkurencja lekkoatletyczna polegająca na rzucie długim oszczepem?",
+    "correctAnswerId": "sports-easymedium-athletics-javelin-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-athletics-javelin-a",
+        "text": "Rzut oszczepem"
+      },
+      {
+        "id": "sports-easymedium-athletics-javelin-b",
+        "text": "Pchnięcie kulą"
+      },
+      {
+        "id": "sports-easymedium-athletics-javelin-c",
+        "text": "Rzut młotem"
+      },
+      {
+        "id": "sports-easymedium-athletics-javelin-d",
+        "text": "Skok o tyczce"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-volleyball-ace",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się zagrywka w siatkówce, po której przeciwnik nie dotyka piłki?",
+    "correctAnswerId": "sports-easymedium-volleyball-ace-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-volleyball-ace-a",
+        "text": "As serwisowy"
+      },
+      {
+        "id": "sports-easymedium-volleyball-ace-b",
+        "text": "Blok punktowy"
+      },
+      {
+        "id": "sports-easymedium-volleyball-ace-c",
+        "text": "Przebicie"
+      },
+      {
+        "id": "sports-easymedium-volleyball-ace-d",
+        "text": "Wystawa"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-cycling-race-france",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się najsłynniejszy wieloetapowy wyścig kolarski we Francji?",
+    "correctAnswerId": "sports-easymedium-cycling-race-france-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-cycling-race-france-a",
+        "text": "Tour de France"
+      },
+      {
+        "id": "sports-easymedium-cycling-race-france-b",
+        "text": "Giro d'Italia"
+      },
+      {
+        "id": "sports-easymedium-cycling-race-france-c",
+        "text": "Vuelta a España"
+      },
+      {
+        "id": "sports-easymedium-cycling-race-france-d",
+        "text": "Paris-Roubaix"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-boxing-knockout",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się zwycięstwo w boksie, gdy przeciwnik nie jest w stanie wstać przed końcem liczenia?",
+    "correctAnswerId": "sports-easymedium-boxing-knockout-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-boxing-knockout-a",
+        "text": "Nokaut"
+      },
+      {
+        "id": "sports-easymedium-boxing-knockout-b",
+        "text": "Remis"
+      },
+      {
+        "id": "sports-easymedium-boxing-knockout-c",
+        "text": "Finta"
+      },
+      {
+        "id": "sports-easymedium-boxing-knockout-d",
+        "text": "Klincz"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-ski-jumping-points",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Co poza długością skoku wpływa na notę w skokach narciarskich?",
+    "correctAnswerId": "sports-easymedium-ski-jumping-points-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-ski-jumping-points-a",
+        "text": "Styl skoku"
+      },
+      {
+        "id": "sports-easymedium-ski-jumping-points-b",
+        "text": "Kolor nart"
+      },
+      {
+        "id": "sports-easymedium-ski-jumping-points-c",
+        "text": "Numer startowy"
+      },
+      {
+        "id": "sports-easymedium-ski-jumping-points-d",
+        "text": "Wiek zawodnika"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-chess-checkmate",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się sytuacja kończąca partię szachów zwycięstwem jednego z graczy?",
+    "correctAnswerId": "sports-easymedium-chess-checkmate-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-chess-checkmate-a",
+        "text": "Mat"
+      },
+      {
+        "id": "sports-easymedium-chess-checkmate-b",
+        "text": "Pat"
+      },
+      {
+        "id": "sports-easymedium-chess-checkmate-c",
+        "text": "Szach"
+      },
+      {
+        "id": "sports-easymedium-chess-checkmate-d",
+        "text": "Roszada"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-handball-players",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Ilu zawodników jednej drużyny przebywa na boisku w piłce ręcznej razem z bramkarzem?",
+    "correctAnswerId": "sports-easymedium-handball-players-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-handball-players-a",
+        "text": "7"
+      },
+      {
+        "id": "sports-easymedium-handball-players-b",
+        "text": "6"
+      },
+      {
+        "id": "sports-easymedium-handball-players-c",
+        "text": "8"
+      },
+      {
+        "id": "sports-easymedium-handball-players-d",
+        "text": "9"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-hockey-object",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Czego używa się zamiast piłki w hokeju na lodzie?",
+    "correctAnswerId": "sports-easymedium-hockey-object-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-hockey-object-a",
+        "text": "Krążka"
+      },
+      {
+        "id": "sports-easymedium-hockey-object-b",
+        "text": "Lotki"
+      },
+      {
+        "id": "sports-easymedium-hockey-object-c",
+        "text": "Piłki tenisowej"
+      },
+      {
+        "id": "sports-easymedium-hockey-object-d",
+        "text": "Piłki gumowej"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-rowing-oars",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się sprzęt używany do napędzania łodzi w wioślarstwie?",
+    "correctAnswerId": "sports-easymedium-rowing-oars-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-rowing-oars-a",
+        "text": "Wiosła"
+      },
+      {
+        "id": "sports-easymedium-rowing-oars-b",
+        "text": "Kijki"
+      },
+      {
+        "id": "sports-easymedium-rowing-oars-c",
+        "text": "Płetwy"
+      },
+      {
+        "id": "sports-easymedium-rowing-oars-d",
+        "text": "Ster"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-badminton-court-divider",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Co oddziela połowy boiska w badmintonie?",
+    "correctAnswerId": "sports-easymedium-badminton-court-divider-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-badminton-court-divider-a",
+        "text": "Siatka"
+      },
+      {
+        "id": "sports-easymedium-badminton-court-divider-b",
+        "text": "Bramka"
+      },
+      {
+        "id": "sports-easymedium-badminton-court-divider-c",
+        "text": "Linia końcowa"
+      },
+      {
+        "id": "sports-easymedium-badminton-court-divider-d",
+        "text": "Bandą"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-gymnastics-balancebeam",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Na jakiej konkurencji gimnastycznej ćwiczą wyłącznie kobiety, przechodząc po wąskiej belce?",
+    "correctAnswerId": "sports-easymedium-gymnastics-balancebeam-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-gymnastics-balancebeam-a",
+        "text": "Równoważnia"
+      },
+      {
+        "id": "sports-easymedium-gymnastics-balancebeam-b",
+        "text": "Poręcze asymetryczne"
+      },
+      {
+        "id": "sports-easymedium-gymnastics-balancebeam-c",
+        "text": "Koń z łękami"
+      },
+      {
+        "id": "sports-easymedium-gymnastics-balancebeam-d",
+        "text": "Kółka"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-baseball-home-run",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się uderzenie w baseballu, po którym pałkarz może obiec wszystkie bazy i zdobyć punkt?",
+    "correctAnswerId": "sports-easymedium-baseball-home-run-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-baseball-home-run-a",
+        "text": "Home run"
+      },
+      {
+        "id": "sports-easymedium-baseball-home-run-b",
+        "text": "Strike"
+      },
+      {
+        "id": "sports-easymedium-baseball-home-run-c",
+        "text": "Bunt"
+      },
+      {
+        "id": "sports-easymedium-baseball-home-run-d",
+        "text": "Walk"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-rugby-shape-ball",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jaki kształt ma piłka do rugby?",
+    "correctAnswerId": "sports-easymedium-rugby-shape-ball-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-rugby-shape-ball-a",
+        "text": "Owalny"
+      },
+      {
+        "id": "sports-easymedium-rugby-shape-ball-b",
+        "text": "Kulisty"
+      },
+      {
+        "id": "sports-easymedium-rugby-shape-ball-c",
+        "text": "Płaski"
+      },
+      {
+        "id": "sports-easymedium-rugby-shape-ball-d",
+        "text": "Kwadratowy"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-golf-club",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się narzędzie używane do uderzania piłki w golfie?",
+    "correctAnswerId": "sports-easymedium-golf-club-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-golf-club-a",
+        "text": "Kij golfowy"
+      },
+      {
+        "id": "sports-easymedium-golf-club-b",
+        "text": "Rakieta"
+      },
+      {
+        "id": "sports-easymedium-golf-club-c",
+        "text": "Kijek hokejowy"
+      },
+      {
+        "id": "sports-easymedium-golf-club-d",
+        "text": "Młotek"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-speedskating-track",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Na czym rozgrywane jest łyżwiarstwo szybkie?",
+    "correctAnswerId": "sports-easymedium-speedskating-track-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-speedskating-track-a",
+        "text": "Na torze lodowym"
+      },
+      {
+        "id": "sports-easymedium-speedskating-track-b",
+        "text": "Na bieżni tartanowej"
+      },
+      {
+        "id": "sports-easymedium-speedskating-track-c",
+        "text": "Na torze kolarskim"
+      },
+      {
+        "id": "sports-easymedium-speedskating-track-d",
+        "text": "Na rzece"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-judo-belt",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jaki kolor pasa zazwyczaj oznacza najwyższe mistrzostwo w judo?",
+    "correctAnswerId": "sports-easymedium-judo-belt-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-judo-belt-a",
+        "text": "Czarny"
+      },
+      {
+        "id": "sports-easymedium-judo-belt-b",
+        "text": "Biały"
+      },
+      {
+        "id": "sports-easymedium-judo-belt-c",
+        "text": "Żółty"
+      },
+      {
+        "id": "sports-easymedium-judo-belt-d",
+        "text": "Niebieski"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-darts-target-center",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się środek tarczy w darcie?",
+    "correctAnswerId": "sports-easymedium-darts-target-center-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-darts-target-center-a",
+        "text": "Bullseye"
+      },
+      {
+        "id": "sports-easymedium-darts-target-center-b",
+        "text": "Hat-trick"
+      },
+      {
+        "id": "sports-easymedium-darts-target-center-c",
+        "text": "Checkout"
+      },
+      {
+        "id": "sports-easymedium-darts-target-center-d",
+        "text": "Double"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-cricket-batter",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się zawodnik odbijający piłkę w krykiecie?",
+    "correctAnswerId": "sports-easymedium-cricket-batter-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-cricket-batter-a",
+        "text": "Pałkarz"
+      },
+      {
+        "id": "sports-easymedium-cricket-batter-b",
+        "text": "Miotacz"
+      },
+      {
+        "id": "sports-easymedium-cricket-batter-c",
+        "text": "Łapacz"
+      },
+      {
+        "id": "sports-easymedium-cricket-batter-d",
+        "text": "Rozgrywający"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-waterpolo-pool",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Gdzie rozgrywa się mecz piłki wodnej?",
+    "correctAnswerId": "sports-easymedium-waterpolo-pool-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-waterpolo-pool-a",
+        "text": "W basenie"
+      },
+      {
+        "id": "sports-easymedium-waterpolo-pool-b",
+        "text": "Na jeziorze"
+      },
+      {
+        "id": "sports-easymedium-waterpolo-pool-c",
+        "text": "Na hali bez wody"
+      },
+      {
+        "id": "sports-easymedium-waterpolo-pool-d",
+        "text": "Na boisku trawiastym"
+      }
+    ]
+  },
+  {
+    "key": "sports-easymedium-snooker-red-balls",
+    "categoryKey": "sports",
+    "difficulty": "EasyMedium",
+    "text": "Ile czerwonych bil znajduje się na stole na początku frame'a w snookerze?",
+    "correctAnswerId": "sports-easymedium-snooker-red-balls-a",
+    "answers": [
+      {
+        "id": "sports-easymedium-snooker-red-balls-a",
+        "text": "15"
+      },
+      {
+        "id": "sports-easymedium-snooker-red-balls-b",
+        "text": "10"
+      },
+      {
+        "id": "sports-easymedium-snooker-red-balls-c",
+        "text": "12"
+      },
+      {
+        "id": "sports-easymedium-snooker-red-balls-d",
+        "text": "18"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-tennis-set",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile gemów trzeba zwykle wygrać, aby zdobyć seta w tenisie przy przewadze dwóch gemów?",
+    "correctAnswerId": "sports-medium-tennis-set-a",
+    "answers": [
+      {
+        "id": "sports-medium-tennis-set-a",
+        "text": "6"
+      },
+      {
+        "id": "sports-medium-tennis-set-b",
+        "text": "4"
+      },
+      {
+        "id": "sports-medium-tennis-set-c",
+        "text": "5"
+      },
+      {
+        "id": "sports-medium-tennis-set-d",
+        "text": "7"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-basketball-shot-clock",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile sekund wynosi standardowy zegar akcji w koszykówce FIBA?",
+    "correctAnswerId": "sports-medium-basketball-shot-clock-a",
+    "answers": [
+      {
+        "id": "sports-medium-basketball-shot-clock-a",
+        "text": "24"
+      },
+      {
+        "id": "sports-medium-basketball-shot-clock-b",
+        "text": "20"
+      },
+      {
+        "id": "sports-medium-basketball-shot-clock-c",
+        "text": "30"
+      },
+      {
+        "id": "sports-medium-basketball-shot-clock-d",
+        "text": "35"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-football-penalty-distance",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Z jakiej odległości wykonuje się rzut karny w piłce nożnej?",
+    "correctAnswerId": "sports-medium-football-penalty-distance-a",
+    "answers": [
+      {
+        "id": "sports-medium-football-penalty-distance-a",
+        "text": "11 metrów"
+      },
+      {
+        "id": "sports-medium-football-penalty-distance-b",
+        "text": "9 metrów"
+      },
+      {
+        "id": "sports-medium-football-penalty-distance-c",
+        "text": "10 metrów"
+      },
+      {
+        "id": "sports-medium-football-penalty-distance-d",
+        "text": "12 metrów"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-volleyball-set-points",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Do ilu punktów gra się zwykle seta w siatkówce, z wyjątkiem tie-breaka?",
+    "correctAnswerId": "sports-medium-volleyball-set-points-a",
+    "answers": [
+      {
+        "id": "sports-medium-volleyball-set-points-a",
+        "text": "Do 25"
+      },
+      {
+        "id": "sports-medium-volleyball-set-points-b",
+        "text": "Do 21"
+      },
+      {
+        "id": "sports-medium-volleyball-set-points-c",
+        "text": "Do 20"
+      },
+      {
+        "id": "sports-medium-volleyball-set-points-d",
+        "text": "Do 30"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-swimming-olympic-pool",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jaką długość ma basen olimpijski?",
+    "correctAnswerId": "sports-medium-swimming-olympic-pool-a",
+    "answers": [
+      {
+        "id": "sports-medium-swimming-olympic-pool-a",
+        "text": "50 metrów"
+      },
+      {
+        "id": "sports-medium-swimming-olympic-pool-b",
+        "text": "25 metrów"
+      },
+      {
+        "id": "sports-medium-swimming-olympic-pool-c",
+        "text": "75 metrów"
+      },
+      {
+        "id": "sports-medium-swimming-olympic-pool-d",
+        "text": "100 metrów"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-athletics-hurdles-men",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile metrów ma bieg przez płotki mężczyzn na stadionie w najkrótszym olimpijskim dystansie?",
+    "correctAnswerId": "sports-medium-athletics-hurdles-men-a",
+    "answers": [
+      {
+        "id": "sports-medium-athletics-hurdles-men-a",
+        "text": "110 metrów"
+      },
+      {
+        "id": "sports-medium-athletics-hurdles-men-b",
+        "text": "100 metrów"
+      },
+      {
+        "id": "sports-medium-athletics-hurdles-men-c",
+        "text": "120 metrów"
+      },
+      {
+        "id": "sports-medium-athletics-hurdles-men-d",
+        "text": "200 metrów"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-cycling-yellow-jersey",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jaki kolor koszulki nosi lider klasyfikacji generalnej Tour de France?",
+    "correctAnswerId": "sports-medium-cycling-yellow-jersey-a",
+    "answers": [
+      {
+        "id": "sports-medium-cycling-yellow-jersey-a",
+        "text": "Żółty"
+      },
+      {
+        "id": "sports-medium-cycling-yellow-jersey-b",
+        "text": "Zielony"
+      },
+      {
+        "id": "sports-medium-cycling-yellow-jersey-c",
+        "text": "Biały"
+      },
+      {
+        "id": "sports-medium-cycling-yellow-jersey-d",
+        "text": "Czerwony"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-boxing-rounds-professional",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile rund maksymalnie trwa walka o mistrzostwo świata w zawodowym boksie mężczyzn?",
+    "correctAnswerId": "sports-medium-boxing-rounds-professional-a",
+    "answers": [
+      {
+        "id": "sports-medium-boxing-rounds-professional-a",
+        "text": "12"
+      },
+      {
+        "id": "sports-medium-boxing-rounds-professional-b",
+        "text": "10"
+      },
+      {
+        "id": "sports-medium-boxing-rounds-professional-c",
+        "text": "15"
+      },
+      {
+        "id": "sports-medium-boxing-rounds-professional-d",
+        "text": "8"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-formula-one-lap",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się jedno pełne okrążenie toru wyścigowego?",
+    "correctAnswerId": "sports-medium-formula-one-lap-a",
+    "answers": [
+      {
+        "id": "sports-medium-formula-one-lap-a",
+        "text": "Okrążenie"
+      },
+      {
+        "id": "sports-medium-formula-one-lap-b",
+        "text": "Sektor"
+      },
+      {
+        "id": "sports-medium-formula-one-lap-c",
+        "text": "Stint"
+      },
+      {
+        "id": "sports-medium-formula-one-lap-d",
+        "text": "Pit stop"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-skijumping-kpoint",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się punkt konstrukcyjny skoczni oznaczany literą K?",
+    "correctAnswerId": "sports-medium-skijumping-kpoint-a",
+    "answers": [
+      {
+        "id": "sports-medium-skijumping-kpoint-a",
+        "text": "Punkt K"
+      },
+      {
+        "id": "sports-medium-skijumping-kpoint-b",
+        "text": "Punkt stylu"
+      },
+      {
+        "id": "sports-medium-skijumping-kpoint-c",
+        "text": "Punkt lotu"
+      },
+      {
+        "id": "sports-medium-skijumping-kpoint-d",
+        "text": "Punkt sędziego"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-biathlon-penalty",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Co otrzymuje biathlonista za niecelny strzał w sprincie?",
+    "correctAnswerId": "sports-medium-biathlon-penalty-a",
+    "answers": [
+      {
+        "id": "sports-medium-biathlon-penalty-a",
+        "text": "Rundę karną"
+      },
+      {
+        "id": "sports-medium-biathlon-penalty-b",
+        "text": "Dodatkowy nabój"
+      },
+      {
+        "id": "sports-medium-biathlon-penalty-c",
+        "text": "Odejmowane punkty"
+      },
+      {
+        "id": "sports-medium-biathlon-penalty-d",
+        "text": "Zmianę toru"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-handball-time",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile trwa mecz piłki ręcznej seniorów?",
+    "correctAnswerId": "sports-medium-handball-time-a",
+    "answers": [
+      {
+        "id": "sports-medium-handball-time-a",
+        "text": "60 minut"
+      },
+      {
+        "id": "sports-medium-handball-time-b",
+        "text": "50 minut"
+      },
+      {
+        "id": "sports-medium-handball-time-c",
+        "text": "70 minut"
+      },
+      {
+        "id": "sports-medium-handball-time-d",
+        "text": "80 minut"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-hockey-periods",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Na ile tercji podzielony jest mecz hokeja na lodzie?",
+    "correctAnswerId": "sports-medium-hockey-periods-a",
+    "answers": [
+      {
+        "id": "sports-medium-hockey-periods-a",
+        "text": "3"
+      },
+      {
+        "id": "sports-medium-hockey-periods-b",
+        "text": "2"
+      },
+      {
+        "id": "sports-medium-hockey-periods-c",
+        "text": "4"
+      },
+      {
+        "id": "sports-medium-hockey-periods-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-rugby-try",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile punktów daje przyłożenie w rugby union?",
+    "correctAnswerId": "sports-medium-rugby-try-a",
+    "answers": [
+      {
+        "id": "sports-medium-rugby-try-a",
+        "text": "5"
+      },
+      {
+        "id": "sports-medium-rugby-try-b",
+        "text": "3"
+      },
+      {
+        "id": "sports-medium-rugby-try-c",
+        "text": "6"
+      },
+      {
+        "id": "sports-medium-rugby-try-d",
+        "text": "7"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-golf-major-count",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile turniejów wielkoszlemowych mężczyzn jest w golfie?",
+    "correctAnswerId": "sports-medium-golf-major-count-a",
+    "answers": [
+      {
+        "id": "sports-medium-golf-major-count-a",
+        "text": "4"
+      },
+      {
+        "id": "sports-medium-golf-major-count-b",
+        "text": "3"
+      },
+      {
+        "id": "sports-medium-golf-major-count-c",
+        "text": "5"
+      },
+      {
+        "id": "sports-medium-golf-major-count-d",
+        "text": "6"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-chess-queen-move",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "W ilu kierunkach może poruszać się hetman w szachach?",
+    "correctAnswerId": "sports-medium-chess-queen-move-a",
+    "answers": [
+      {
+        "id": "sports-medium-chess-queen-move-a",
+        "text": "W poziomie, pionie i po przekątnych"
+      },
+      {
+        "id": "sports-medium-chess-queen-move-b",
+        "text": "Tylko po przekątnych"
+      },
+      {
+        "id": "sports-medium-chess-queen-move-c",
+        "text": "Tylko w pionie i poziomie"
+      },
+      {
+        "id": "sports-medium-chess-queen-move-d",
+        "text": "Jak skoczek"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-fencing-weapon",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Która z tych broni nie należy do olimpijskich konkurencji szermierki?",
+    "correctAnswerId": "sports-medium-fencing-weapon-a",
+    "answers": [
+      {
+        "id": "sports-medium-fencing-weapon-a",
+        "text": "Halabarda"
+      },
+      {
+        "id": "sports-medium-fencing-weapon-b",
+        "text": "Szpada"
+      },
+      {
+        "id": "sports-medium-fencing-weapon-c",
+        "text": "Floret"
+      },
+      {
+        "id": "sports-medium-fencing-weapon-d",
+        "text": "Szabla"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-gymnastics-vault",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się konkurencja gimnastyczna polegająca na przeskoku przez stół?",
+    "correctAnswerId": "sports-medium-gymnastics-vault-a",
+    "answers": [
+      {
+        "id": "sports-medium-gymnastics-vault-a",
+        "text": "Skok"
+      },
+      {
+        "id": "sports-medium-gymnastics-vault-b",
+        "text": "Ćwiczenia wolne"
+      },
+      {
+        "id": "sports-medium-gymnastics-vault-c",
+        "text": "Poręcze"
+      },
+      {
+        "id": "sports-medium-gymnastics-vault-d",
+        "text": "Kółka"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-speedskating-shorttrack",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się odmiana łyżwiarstwa szybkiego rozgrywana na krótszym torze?",
+    "correctAnswerId": "sports-medium-speedskating-shorttrack-a",
+    "answers": [
+      {
+        "id": "sports-medium-speedskating-shorttrack-a",
+        "text": "Short track"
+      },
+      {
+        "id": "sports-medium-speedskating-shorttrack-b",
+        "text": "Half track"
+      },
+      {
+        "id": "sports-medium-speedskating-shorttrack-c",
+        "text": "Ice sprint"
+      },
+      {
+        "id": "sports-medium-speedskating-shorttrack-d",
+        "text": "Mini skate"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-baseball-strikes",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile strike'ów eliminuje pałkarza w baseballu?",
+    "correctAnswerId": "sports-medium-baseball-strikes-a",
+    "answers": [
+      {
+        "id": "sports-medium-baseball-strikes-a",
+        "text": "3"
+      },
+      {
+        "id": "sports-medium-baseball-strikes-b",
+        "text": "2"
+      },
+      {
+        "id": "sports-medium-baseball-strikes-c",
+        "text": "4"
+      },
+      {
+        "id": "sports-medium-baseball-strikes-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-badminton-points",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Do ilu punktów gra się obecnie seta w badmintonie?",
+    "correctAnswerId": "sports-medium-badminton-points-a",
+    "answers": [
+      {
+        "id": "sports-medium-badminton-points-a",
+        "text": "21"
+      },
+      {
+        "id": "sports-medium-badminton-points-b",
+        "text": "15"
+      },
+      {
+        "id": "sports-medium-badminton-points-c",
+        "text": "25"
+      },
+      {
+        "id": "sports-medium-badminton-points-d",
+        "text": "11"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-snooker-max-break",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ile punktów ma maksymalny break w snookerze bez wolnej bili?",
+    "correctAnswerId": "sports-medium-snooker-max-break-a",
+    "answers": [
+      {
+        "id": "sports-medium-snooker-max-break-a",
+        "text": "147"
+      },
+      {
+        "id": "sports-medium-snooker-max-break-b",
+        "text": "155"
+      },
+      {
+        "id": "sports-medium-snooker-max-break-c",
+        "text": "135"
+      },
+      {
+        "id": "sports-medium-snooker-max-break-d",
+        "text": "140"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-darts-finish",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jaką punktacją zaczyna się najpopularniejszy wariant turniejowy w darcie 501?",
+    "correctAnswerId": "sports-medium-darts-finish-a",
+    "answers": [
+      {
+        "id": "sports-medium-darts-finish-a",
+        "text": "Od 501 punktów"
+      },
+      {
+        "id": "sports-medium-darts-finish-b",
+        "text": "Od 301 punktów"
+      },
+      {
+        "id": "sports-medium-darts-finish-c",
+        "text": "Od 701 punktów"
+      },
+      {
+        "id": "sports-medium-darts-finish-d",
+        "text": "Od 100 punktów"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-rowing-cox",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się osoba sterująca i dowodząca osadą w niektórych konkurencjach wioślarskich?",
+    "correctAnswerId": "sports-medium-rowing-cox-a",
+    "answers": [
+      {
+        "id": "sports-medium-rowing-cox-a",
+        "text": "Cox"
+      },
+      {
+        "id": "sports-medium-rowing-cox-b",
+        "text": "Kapitan"
+      },
+      {
+        "id": "sports-medium-rowing-cox-c",
+        "text": "Pilot"
+      },
+      {
+        "id": "sports-medium-rowing-cox-d",
+        "text": "Nawigator"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-waterpolo-team",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Ilu zawodników jednej drużyny gra jednocześnie w piłce wodnej?",
+    "correctAnswerId": "sports-medium-waterpolo-team-a",
+    "answers": [
+      {
+        "id": "sports-medium-waterpolo-team-a",
+        "text": "7"
+      },
+      {
+        "id": "sports-medium-waterpolo-team-b",
+        "text": "6"
+      },
+      {
+        "id": "sports-medium-waterpolo-team-c",
+        "text": "8"
+      },
+      {
+        "id": "sports-medium-waterpolo-team-d",
+        "text": "9"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-weightlifting-lifts",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jakie dwa boje składają się na dwubój olimpijski w podnoszeniu ciężarów?",
+    "correctAnswerId": "sports-medium-weightlifting-lifts-a",
+    "answers": [
+      {
+        "id": "sports-medium-weightlifting-lifts-a",
+        "text": "Rwanie i podrzut"
+      },
+      {
+        "id": "sports-medium-weightlifting-lifts-b",
+        "text": "Wyciskanie i przysiad"
+      },
+      {
+        "id": "sports-medium-weightlifting-lifts-c",
+        "text": "Podrzut i martwy ciąg"
+      },
+      {
+        "id": "sports-medium-weightlifting-lifts-d",
+        "text": "Rwanie i wyciskanie"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-tabletennis-games",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Do ilu punktów gra się gema w tenisie stołowym?",
+    "correctAnswerId": "sports-medium-tabletennis-games-a",
+    "answers": [
+      {
+        "id": "sports-medium-tabletennis-games-a",
+        "text": "11"
+      },
+      {
+        "id": "sports-medium-tabletennis-games-b",
+        "text": "15"
+      },
+      {
+        "id": "sports-medium-tabletennis-games-c",
+        "text": "21"
+      },
+      {
+        "id": "sports-medium-tabletennis-games-d",
+        "text": "9"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-curling-target",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się okrągły cel na lodzie w curlingu?",
+    "correctAnswerId": "sports-medium-curling-target-a",
+    "answers": [
+      {
+        "id": "sports-medium-curling-target-a",
+        "text": "Dom"
+      },
+      {
+        "id": "sports-medium-curling-target-b",
+        "text": "Pole karne"
+      },
+      {
+        "id": "sports-medium-curling-target-c",
+        "text": "Strefa punktowa"
+      },
+      {
+        "id": "sports-medium-curling-target-d",
+        "text": "Tarcza"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-surfing-wave",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Czego potrzebuje zawodnik przede wszystkim, by uprawiać surfing?",
+    "correctAnswerId": "sports-medium-surfing-wave-a",
+    "answers": [
+      {
+        "id": "sports-medium-surfing-wave-a",
+        "text": "Fali"
+      },
+      {
+        "id": "sports-medium-surfing-wave-b",
+        "text": "Śniegu"
+      },
+      {
+        "id": "sports-medium-surfing-wave-c",
+        "text": "Lodu"
+      },
+      {
+        "id": "sports-medium-surfing-wave-d",
+        "text": "Bieżni"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-triathlon-order",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jaka jest klasyczna kolejność konkurencji w triathlonie?",
+    "correctAnswerId": "sports-medium-triathlon-order-a",
+    "answers": [
+      {
+        "id": "sports-medium-triathlon-order-a",
+        "text": "Pływanie, rower, bieg"
+      },
+      {
+        "id": "sports-medium-triathlon-order-b",
+        "text": "Rower, pływanie, bieg"
+      },
+      {
+        "id": "sports-medium-triathlon-order-c",
+        "text": "Bieg, rower, pływanie"
+      },
+      {
+        "id": "sports-medium-triathlon-order-d",
+        "text": "Pływanie, bieg, rower"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-climbing-harness",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się element zabezpieczenia, którym wspinacz jest przypięty do liny?",
+    "correctAnswerId": "sports-medium-climbing-harness-a",
+    "answers": [
+      {
+        "id": "sports-medium-climbing-harness-a",
+        "text": "Uprząż"
+      },
+      {
+        "id": "sports-medium-climbing-harness-b",
+        "text": "Rękawica"
+      },
+      {
+        "id": "sports-medium-climbing-harness-c",
+        "text": "Płetwa"
+      },
+      {
+        "id": "sports-medium-climbing-harness-d",
+        "text": "Stuptut"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-ski-alpine-slalom",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Która konkurencja narciarstwa alpejskiego ma najgęściej ustawione bramki?",
+    "correctAnswerId": "sports-medium-ski-alpine-slalom-a",
+    "answers": [
+      {
+        "id": "sports-medium-ski-alpine-slalom-a",
+        "text": "Slalom"
+      },
+      {
+        "id": "sports-medium-ski-alpine-slalom-b",
+        "text": "Supergigant"
+      },
+      {
+        "id": "sports-medium-ski-alpine-slalom-c",
+        "text": "Zjazd"
+      },
+      {
+        "id": "sports-medium-ski-alpine-slalom-d",
+        "text": "Kombinacja"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-mma-octagon",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak potocznie nazywa się klatka używana w wielu walkach MMA?",
+    "correctAnswerId": "sports-medium-mma-octagon-a",
+    "answers": [
+      {
+        "id": "sports-medium-mma-octagon-a",
+        "text": "Oktagon"
+      },
+      {
+        "id": "sports-medium-mma-octagon-b",
+        "text": "Hexagon"
+      },
+      {
+        "id": "sports-medium-mma-octagon-c",
+        "text": "Ring"
+      },
+      {
+        "id": "sports-medium-mma-octagon-d",
+        "text": "Arena"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-horse-riding-dressage",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się olimpijska konkurencja jeździecka oceniana za precyzję figur i posłuszeństwo konia?",
+    "correctAnswerId": "sports-medium-horse-riding-dressage-a",
+    "answers": [
+      {
+        "id": "sports-medium-horse-riding-dressage-a",
+        "text": "Ujeżdżenie"
+      },
+      {
+        "id": "sports-medium-horse-riding-dressage-b",
+        "text": "WKKW"
+      },
+      {
+        "id": "sports-medium-horse-riding-dressage-c",
+        "text": "Woltyżerka"
+      },
+      {
+        "id": "sports-medium-horse-riding-dressage-d",
+        "text": "Wyścigi"
+      }
+    ]
+  },
+  {
+    "key": "sports-medium-skateboarding-trick",
+    "categoryKey": "sports",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się podstawowy trik w skateboardingu polegający na wybiciu deski i skoku z nią?",
+    "correctAnswerId": "sports-medium-skateboarding-trick-a",
+    "answers": [
+      {
+        "id": "sports-medium-skateboarding-trick-a",
+        "text": "Ollie"
+      },
+      {
+        "id": "sports-medium-skateboarding-trick-b",
+        "text": "Kick-off"
+      },
+      {
+        "id": "sports-medium-skateboarding-trick-c",
+        "text": "Slide"
+      },
+      {
+        "id": "sports-medium-skateboarding-trick-d",
+        "text": "Manual"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-football-var",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się system wideoweryfikacji pomagający sędziom w piłce nożnej?",
+    "correctAnswerId": "sports-mediumhard-football-var-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-football-var-a",
+        "text": "VAR"
+      },
+      {
+        "id": "sports-mediumhard-football-var-b",
+        "text": "Hawk-Eye"
+      },
+      {
+        "id": "sports-mediumhard-football-var-c",
+        "text": "DRS"
+      },
+      {
+        "id": "sports-mediumhard-football-var-d",
+        "text": "Goal Line Only"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-tennis-tiebreak",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Ile punktów trzeba zdobyć minimum, aby wygrać standardowy tie-break w tenisie przy przewadze dwóch punktów?",
+    "correctAnswerId": "sports-mediumhard-tennis-tiebreak-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-tennis-tiebreak-a",
+        "text": "7"
+      },
+      {
+        "id": "sports-mediumhard-tennis-tiebreak-b",
+        "text": "6"
+      },
+      {
+        "id": "sports-mediumhard-tennis-tiebreak-c",
+        "text": "8"
+      },
+      {
+        "id": "sports-mediumhard-tennis-tiebreak-d",
+        "text": "10"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-basketball-fiba-quarters",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Ile minut trwa jedna kwarta w koszykówce FIBA?",
+    "correctAnswerId": "sports-mediumhard-basketball-fiba-quarters-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-basketball-fiba-quarters-a",
+        "text": "10"
+      },
+      {
+        "id": "sports-mediumhard-basketball-fiba-quarters-b",
+        "text": "12"
+      },
+      {
+        "id": "sports-mediumhard-basketball-fiba-quarters-c",
+        "text": "8"
+      },
+      {
+        "id": "sports-mediumhard-basketball-fiba-quarters-d",
+        "text": "15"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-athletics-decatlon",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Ile konkurencji obejmuje dziesięciobój?",
+    "correctAnswerId": "sports-mediumhard-athletics-decatlon-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-athletics-decatlon-a",
+        "text": "10"
+      },
+      {
+        "id": "sports-mediumhard-athletics-decatlon-b",
+        "text": "8"
+      },
+      {
+        "id": "sports-mediumhard-athletics-decatlon-c",
+        "text": "9"
+      },
+      {
+        "id": "sports-mediumhard-athletics-decatlon-d",
+        "text": "12"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-cycling-time-trial",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się kolarska konkurencja, w której zawodnicy startują osobno i walczą z czasem?",
+    "correctAnswerId": "sports-mediumhard-cycling-time-trial-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-cycling-time-trial-a",
+        "text": "Jazda indywidualna na czas"
+      },
+      {
+        "id": "sports-mediumhard-cycling-time-trial-b",
+        "text": "Wyścig punktowy"
+      },
+      {
+        "id": "sports-mediumhard-cycling-time-trial-c",
+        "text": "Keirin"
+      },
+      {
+        "id": "sports-mediumhard-cycling-time-trial-d",
+        "text": "Madison"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-formula-one-qualifying",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się sesja wyłaniająca kolejność startową do wyścigu Formuły 1?",
+    "correctAnswerId": "sports-mediumhard-formula-one-qualifying-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-formula-one-qualifying-a",
+        "text": "Kwalifikacje"
+      },
+      {
+        "id": "sports-mediumhard-formula-one-qualifying-b",
+        "text": "Warm-up"
+      },
+      {
+        "id": "sports-mediumhard-formula-one-qualifying-c",
+        "text": "Rozgrzewka"
+      },
+      {
+        "id": "sports-mediumhard-formula-one-qualifying-d",
+        "text": "Park zamknięty"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-swimming-medley-order",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest kolejność stylów w wyścigu zmiennym indywidualnym?",
+    "correctAnswerId": "sports-mediumhard-swimming-medley-order-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-swimming-medley-order-a",
+        "text": "Motylkowy, grzbietowy, klasyczny, dowolny"
+      },
+      {
+        "id": "sports-mediumhard-swimming-medley-order-b",
+        "text": "Grzbietowy, klasyczny, motylkowy, dowolny"
+      },
+      {
+        "id": "sports-mediumhard-swimming-medley-order-c",
+        "text": "Klasyczny, motylkowy, grzbietowy, dowolny"
+      },
+      {
+        "id": "sports-mediumhard-swimming-medley-order-d",
+        "text": "Dowolny, klasyczny, grzbietowy, motylkowy"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-skijumping-hill-record",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się najlepsza odległość uzyskana kiedykolwiek na danej skoczni?",
+    "correctAnswerId": "sports-mediumhard-skijumping-hill-record-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-skijumping-hill-record-a",
+        "text": "Rekord skoczni"
+      },
+      {
+        "id": "sports-mediumhard-skijumping-hill-record-b",
+        "text": "Punkt K"
+      },
+      {
+        "id": "sports-mediumhard-skijumping-hill-record-c",
+        "text": "Nota maksymalna"
+      },
+      {
+        "id": "sports-mediumhard-skijumping-hill-record-d",
+        "text": "Lot wzorcowy"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-biathlon-start",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się format biegu biathlonowego, w którym zawodnicy startują pojedynczo w odstępach czasu?",
+    "correctAnswerId": "sports-mediumhard-biathlon-start-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-biathlon-start-a",
+        "text": "Bieg indywidualny"
+      },
+      {
+        "id": "sports-mediumhard-biathlon-start-b",
+        "text": "Start masowy"
+      },
+      {
+        "id": "sports-mediumhard-biathlon-start-c",
+        "text": "Sztafeta"
+      },
+      {
+        "id": "sports-mediumhard-biathlon-start-d",
+        "text": "Bieg równoległy"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-snooker-colors",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Która bila w snookerze jest warta najwięcej punktów?",
+    "correctAnswerId": "sports-mediumhard-snooker-colors-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-snooker-colors-a",
+        "text": "Czarna"
+      },
+      {
+        "id": "sports-mediumhard-snooker-colors-b",
+        "text": "Niebieska"
+      },
+      {
+        "id": "sports-mediumhard-snooker-colors-c",
+        "text": "Różowa"
+      },
+      {
+        "id": "sports-mediumhard-snooker-colors-d",
+        "text": "Brązowa"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-baseball-innings",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Na ile inningów rozgrywa się standardowy mecz baseballu MLB?",
+    "correctAnswerId": "sports-mediumhard-baseball-innings-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-baseball-innings-a",
+        "text": "9"
+      },
+      {
+        "id": "sports-mediumhard-baseball-innings-b",
+        "text": "7"
+      },
+      {
+        "id": "sports-mediumhard-baseball-innings-c",
+        "text": "8"
+      },
+      {
+        "id": "sports-mediumhard-baseball-innings-d",
+        "text": "10"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-rugby-conversion",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Ile punktów daje podwyższenie po przyłożeniu w rugby union?",
+    "correctAnswerId": "sports-mediumhard-rugby-conversion-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-rugby-conversion-a",
+        "text": "2"
+      },
+      {
+        "id": "sports-mediumhard-rugby-conversion-b",
+        "text": "1"
+      },
+      {
+        "id": "sports-mediumhard-rugby-conversion-c",
+        "text": "3"
+      },
+      {
+        "id": "sports-mediumhard-rugby-conversion-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-fencing-priority",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się zasada pierwszeństwa trafienia stosowana we florecie i szabli?",
+    "correctAnswerId": "sports-mediumhard-fencing-priority-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-fencing-priority-a",
+        "text": "Prawo drogi"
+      },
+      {
+        "id": "sports-mediumhard-fencing-priority-b",
+        "text": "Podwójne trafienie"
+      },
+      {
+        "id": "sports-mediumhard-fencing-priority-c",
+        "text": "Dogrywka"
+      },
+      {
+        "id": "sports-mediumhard-fencing-priority-d",
+        "text": "Parada"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-rowing-scull",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się styl wioślarstwa, w którym zawodnik trzyma po jednym wiośle w każdej ręce?",
+    "correctAnswerId": "sports-mediumhard-rowing-scull-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-rowing-scull-a",
+        "text": "Wiosłowanie dwoma wiosłami"
+      },
+      {
+        "id": "sports-mediumhard-rowing-scull-b",
+        "text": "Wiosłowanie jednym wiosłem"
+      },
+      {
+        "id": "sports-mediumhard-rowing-scull-c",
+        "text": "Sterowanie rufowe"
+      },
+      {
+        "id": "sports-mediumhard-rowing-scull-d",
+        "text": "Kajakarstwo"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-weightlifting-winner",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Co decyduje o końcowym wyniku zawodnika w podnoszeniu ciężarów?",
+    "correctAnswerId": "sports-mediumhard-weightlifting-winner-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-weightlifting-winner-a",
+        "text": "Suma najlepszego rwania i podrzutu"
+      },
+      {
+        "id": "sports-mediumhard-weightlifting-winner-b",
+        "text": "Najlepszy podrzut"
+      },
+      {
+        "id": "sports-mediumhard-weightlifting-winner-c",
+        "text": "Najlepsze trzy próby"
+      },
+      {
+        "id": "sports-mediumhard-weightlifting-winner-d",
+        "text": "Średnia wszystkich prób"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-curling-hammer",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się prawo do wykonania ostatniego zagrania w endzie w curlingu?",
+    "correctAnswerId": "sports-mediumhard-curling-hammer-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-curling-hammer-a",
+        "text": "Młotek"
+      },
+      {
+        "id": "sports-mediumhard-curling-hammer-b",
+        "text": "Szczotka"
+      },
+      {
+        "id": "sports-mediumhard-curling-hammer-c",
+        "text": "Bonus"
+      },
+      {
+        "id": "sports-mediumhard-curling-hammer-d",
+        "text": "Kapitanat"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-waterpolo-shotclock",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Ile sekund trwa akcja w piłce wodnej przed obowiązkiem oddania rzutu?",
+    "correctAnswerId": "sports-mediumhard-waterpolo-shotclock-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-waterpolo-shotclock-a",
+        "text": "30"
+      },
+      {
+        "id": "sports-mediumhard-waterpolo-shotclock-b",
+        "text": "24"
+      },
+      {
+        "id": "sports-mediumhard-waterpolo-shotclock-c",
+        "text": "35"
+      },
+      {
+        "id": "sports-mediumhard-waterpolo-shotclock-d",
+        "text": "40"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-tabletennis-serve-change",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Co ile punktów zmienia się serwujący w tenisie stołowym?",
+    "correctAnswerId": "sports-mediumhard-tabletennis-serve-change-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-tabletennis-serve-change-a",
+        "text": "Co 2 punkty"
+      },
+      {
+        "id": "sports-mediumhard-tabletennis-serve-change-b",
+        "text": "Co 1 punkt"
+      },
+      {
+        "id": "sports-mediumhard-tabletennis-serve-change-c",
+        "text": "Co 3 punkty"
+      },
+      {
+        "id": "sports-mediumhard-tabletennis-serve-change-d",
+        "text": "Co 5 punktów"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-mma-weightclass",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się podział zawodników według masy ciała w sportach walki?",
+    "correctAnswerId": "sports-mediumhard-mma-weightclass-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-mma-weightclass-a",
+        "text": "Kategoria wagowa"
+      },
+      {
+        "id": "sports-mediumhard-mma-weightclass-b",
+        "text": "Klasa punktowa"
+      },
+      {
+        "id": "sports-mediumhard-mma-weightclass-c",
+        "text": "Poziom techniczny"
+      },
+      {
+        "id": "sports-mediumhard-mma-weightclass-d",
+        "text": "Liga open"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-climbing-bouldering",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się odmiana wspinaczki sportowej bez liny na niskich problemach?",
+    "correctAnswerId": "sports-mediumhard-climbing-bouldering-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-climbing-bouldering-a",
+        "text": "Bouldering"
+      },
+      {
+        "id": "sports-mediumhard-climbing-bouldering-b",
+        "text": "Lead"
+      },
+      {
+        "id": "sports-mediumhard-climbing-bouldering-c",
+        "text": "Top rope"
+      },
+      {
+        "id": "sports-mediumhard-climbing-bouldering-d",
+        "text": "Alpinizm"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-golf-birdie",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się wynik o jedno uderzenie lepszy od par na dołku golfowym?",
+    "correctAnswerId": "sports-mediumhard-golf-birdie-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-golf-birdie-a",
+        "text": "Birdie"
+      },
+      {
+        "id": "sports-mediumhard-golf-birdie-b",
+        "text": "Bogey"
+      },
+      {
+        "id": "sports-mediumhard-golf-birdie-c",
+        "text": "Eagle"
+      },
+      {
+        "id": "sports-mediumhard-golf-birdie-d",
+        "text": "Albatros"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-darts-bull",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Ile punktów warte jest środkowe czerwone pole tarczy w darcie?",
+    "correctAnswerId": "sports-mediumhard-darts-bull-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-darts-bull-a",
+        "text": "50"
+      },
+      {
+        "id": "sports-mediumhard-darts-bull-b",
+        "text": "25"
+      },
+      {
+        "id": "sports-mediumhard-darts-bull-c",
+        "text": "60"
+      },
+      {
+        "id": "sports-mediumhard-darts-bull-d",
+        "text": "40"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-triathlon-ironman",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Ile kilometrów liczy część biegowa pełnego Ironmana?",
+    "correctAnswerId": "sports-mediumhard-triathlon-ironman-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-triathlon-ironman-a",
+        "text": "42,195 km"
+      },
+      {
+        "id": "sports-mediumhard-triathlon-ironman-b",
+        "text": "21,1 km"
+      },
+      {
+        "id": "sports-mediumhard-triathlon-ironman-c",
+        "text": "30 km"
+      },
+      {
+        "id": "sports-mediumhard-triathlon-ironman-d",
+        "text": "50 km"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-hockey-powerplay",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się gra w przewadze liczebnej po karze przeciwnika w hokeju na lodzie?",
+    "correctAnswerId": "sports-mediumhard-hockey-powerplay-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-hockey-powerplay-a",
+        "text": "Power play"
+      },
+      {
+        "id": "sports-mediumhard-hockey-powerplay-b",
+        "text": "Icing"
+      },
+      {
+        "id": "sports-mediumhard-hockey-powerplay-c",
+        "text": "Face-off"
+      },
+      {
+        "id": "sports-mediumhard-hockey-powerplay-d",
+        "text": "Forechecking"
+      }
+    ]
+  },
+  {
+    "key": "sports-mediumhard-chess-castling",
+    "categoryKey": "sports",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się jedyny ruch w szachach, w którym poruszają się jednocześnie król i wieża?",
+    "correctAnswerId": "sports-mediumhard-chess-castling-a",
+    "answers": [
+      {
+        "id": "sports-mediumhard-chess-castling-a",
+        "text": "Roszada"
+      },
+      {
+        "id": "sports-mediumhard-chess-castling-b",
+        "text": "En passant"
+      },
+      {
+        "id": "sports-mediumhard-chess-castling-c",
+        "text": "Promocja"
+      },
+      {
+        "id": "sports-mediumhard-chess-castling-d",
+        "text": "Gambit"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-football-olympics",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "W którym roku piłka nożna kobiet po raz pierwszy pojawiła się na igrzyskach olimpijskich?",
+    "correctAnswerId": "sports-hard-football-olympics-a",
+    "answers": [
+      {
+        "id": "sports-hard-football-olympics-a",
+        "text": "1996"
+      },
+      {
+        "id": "sports-hard-football-olympics-b",
+        "text": "1988"
+      },
+      {
+        "id": "sports-hard-football-olympics-c",
+        "text": "1992"
+      },
+      {
+        "id": "sports-hard-football-olympics-d",
+        "text": "2000"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-tennis-calendar-slam",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się osiągnięcie polegające na wygraniu wszystkich czterech turniejów wielkoszlemowych w jednym roku?",
+    "correctAnswerId": "sports-hard-tennis-calendar-slam-a",
+    "answers": [
+      {
+        "id": "sports-hard-tennis-calendar-slam-a",
+        "text": "Wielki Szlem kalendarzowy"
+      },
+      {
+        "id": "sports-hard-tennis-calendar-slam-b",
+        "text": "Złoty set"
+      },
+      {
+        "id": "sports-hard-tennis-calendar-slam-c",
+        "text": "Super tie-break"
+      },
+      {
+        "id": "sports-hard-tennis-calendar-slam-d",
+        "text": "Channel Slam"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-basketball-foul-out-fiba",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Po ilu faulach osobistych zawodnik zostaje wykluczony z meczu w koszykówce FIBA?",
+    "correctAnswerId": "sports-hard-basketball-foul-out-fiba-a",
+    "answers": [
+      {
+        "id": "sports-hard-basketball-foul-out-fiba-a",
+        "text": "Po 5"
+      },
+      {
+        "id": "sports-hard-basketball-foul-out-fiba-b",
+        "text": "Po 4"
+      },
+      {
+        "id": "sports-hard-basketball-foul-out-fiba-c",
+        "text": "Po 6"
+      },
+      {
+        "id": "sports-hard-basketball-foul-out-fiba-d",
+        "text": "Po 7"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-formula-one-chequered",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się flaga sygnalizująca zakończenie wyścigu samochodowego?",
+    "correctAnswerId": "sports-hard-formula-one-chequered-a",
+    "answers": [
+      {
+        "id": "sports-hard-formula-one-chequered-a",
+        "text": "Flaga w szachownicę"
+      },
+      {
+        "id": "sports-hard-formula-one-chequered-b",
+        "text": "Czerwona flaga"
+      },
+      {
+        "id": "sports-hard-formula-one-chequered-c",
+        "text": "Żółta flaga"
+      },
+      {
+        "id": "sports-hard-formula-one-chequered-d",
+        "text": "Zielona flaga"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-athletics-polevault",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "W której konkurencji lekkoatletycznej zawodnik używa długiej tyczki, aby pokonać poprzeczkę?",
+    "correctAnswerId": "sports-hard-athletics-polevault-a",
+    "answers": [
+      {
+        "id": "sports-hard-athletics-polevault-a",
+        "text": "Skok o tyczce"
+      },
+      {
+        "id": "sports-hard-athletics-polevault-b",
+        "text": "Skok wzwyż"
+      },
+      {
+        "id": "sports-hard-athletics-polevault-c",
+        "text": "Trójskok"
+      },
+      {
+        "id": "sports-hard-athletics-polevault-d",
+        "text": "Rzut oszczepem"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-swimming-fina",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się międzynarodowa federacja zarządzająca pływaniem, znana dziś jako World Aquatics?",
+    "correctAnswerId": "sports-hard-swimming-fina-a",
+    "answers": [
+      {
+        "id": "sports-hard-swimming-fina-a",
+        "text": "FINA"
+      },
+      {
+        "id": "sports-hard-swimming-fina-b",
+        "text": "FIFA"
+      },
+      {
+        "id": "sports-hard-swimming-fina-c",
+        "text": "IAAF"
+      },
+      {
+        "id": "sports-hard-swimming-fina-d",
+        "text": "UCI"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-cycling-keirin",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Która konkurencja torowa rozpoczyna się za specjalnym motocyklem prowadzącym?",
+    "correctAnswerId": "sports-hard-cycling-keirin-a",
+    "answers": [
+      {
+        "id": "sports-hard-cycling-keirin-a",
+        "text": "Keirin"
+      },
+      {
+        "id": "sports-hard-cycling-keirin-b",
+        "text": "Scratch"
+      },
+      {
+        "id": "sports-hard-cycling-keirin-c",
+        "text": "Omnium"
+      },
+      {
+        "id": "sports-hard-cycling-keirin-d",
+        "text": "Madison"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-biathlon-shooting-order",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "W jakiej kolejności w sprincie biathlonowym odbywa się strzelanie?",
+    "correctAnswerId": "sports-hard-biathlon-shooting-order-a",
+    "answers": [
+      {
+        "id": "sports-hard-biathlon-shooting-order-a",
+        "text": "Leżąc, potem stojąc"
+      },
+      {
+        "id": "sports-hard-biathlon-shooting-order-b",
+        "text": "Stojąc, potem leżąc"
+      },
+      {
+        "id": "sports-hard-biathlon-shooting-order-c",
+        "text": "Dwa razy leżąc"
+      },
+      {
+        "id": "sports-hard-biathlon-shooting-order-d",
+        "text": "Dwa razy stojąc"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-snooker-lowest-color",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Która kolorowa bila w snookerze ma najmniejszą wartość punktową?",
+    "correctAnswerId": "sports-hard-snooker-lowest-color-a",
+    "answers": [
+      {
+        "id": "sports-hard-snooker-lowest-color-a",
+        "text": "Żółta"
+      },
+      {
+        "id": "sports-hard-snooker-lowest-color-b",
+        "text": "Zielona"
+      },
+      {
+        "id": "sports-hard-snooker-lowest-color-c",
+        "text": "Brązowa"
+      },
+      {
+        "id": "sports-hard-snooker-lowest-color-d",
+        "text": "Niebieska"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-rugby-dropgoal",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Ile punktów daje drop goal w rugby union?",
+    "correctAnswerId": "sports-hard-rugby-dropgoal-a",
+    "answers": [
+      {
+        "id": "sports-hard-rugby-dropgoal-a",
+        "text": "3"
+      },
+      {
+        "id": "sports-hard-rugby-dropgoal-b",
+        "text": "2"
+      },
+      {
+        "id": "sports-hard-rugby-dropgoal-c",
+        "text": "4"
+      },
+      {
+        "id": "sports-hard-rugby-dropgoal-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-fencing-piste",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się plansza, na której walczą szermierze?",
+    "correctAnswerId": "sports-hard-fencing-piste-a",
+    "answers": [
+      {
+        "id": "sports-hard-fencing-piste-a",
+        "text": "Piste"
+      },
+      {
+        "id": "sports-hard-fencing-piste-b",
+        "text": "Tatami"
+      },
+      {
+        "id": "sports-hard-fencing-piste-c",
+        "text": "Kort"
+      },
+      {
+        "id": "sports-hard-fencing-piste-d",
+        "text": "Ring"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-rowing-coxless",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Co oznacza określenie 'bez sternika' w wioślarstwie?",
+    "correctAnswerId": "sports-hard-rowing-coxless-a",
+    "answers": [
+      {
+        "id": "sports-hard-rowing-coxless-a",
+        "text": "Osada płynie bez osoby sterującej"
+      },
+      {
+        "id": "sports-hard-rowing-coxless-b",
+        "text": "Łódź nie ma żagli"
+      },
+      {
+        "id": "sports-hard-rowing-coxless-c",
+        "text": "Start następuje bez sędziego"
+      },
+      {
+        "id": "sports-hard-rowing-coxless-d",
+        "text": "Wiosła są krótsze"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-curling-end-count",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Ile endów liczy standardowy mecz curlingu na najwyższym poziomie?",
+    "correctAnswerId": "sports-hard-curling-end-count-a",
+    "answers": [
+      {
+        "id": "sports-hard-curling-end-count-a",
+        "text": "10"
+      },
+      {
+        "id": "sports-hard-curling-end-count-b",
+        "text": "8"
+      },
+      {
+        "id": "sports-hard-curling-end-count-c",
+        "text": "12"
+      },
+      {
+        "id": "sports-hard-curling-end-count-d",
+        "text": "6"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-golf-albatross",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się wynik o trzy uderzenia lepszy od par na jednym dołku?",
+    "correctAnswerId": "sports-hard-golf-albatross-a",
+    "answers": [
+      {
+        "id": "sports-hard-golf-albatross-a",
+        "text": "Albatros"
+      },
+      {
+        "id": "sports-hard-golf-albatross-b",
+        "text": "Birdie"
+      },
+      {
+        "id": "sports-hard-golf-albatross-c",
+        "text": "Eagle"
+      },
+      {
+        "id": "sports-hard-golf-albatross-d",
+        "text": "Condor"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-darts-doubleout",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Co oznacza zasada double out w darcie 501?",
+    "correctAnswerId": "sports-hard-darts-doubleout-a",
+    "answers": [
+      {
+        "id": "sports-hard-darts-doubleout-a",
+        "text": "Mecz trzeba skończyć trafiając pole podwójne"
+      },
+      {
+        "id": "sports-hard-darts-doubleout-b",
+        "text": "Każdą kolejkę zaczyna się od dubla"
+      },
+      {
+        "id": "sports-hard-darts-doubleout-c",
+        "text": "Liczą się tylko duble"
+      },
+      {
+        "id": "sports-hard-darts-doubleout-d",
+        "text": "Bullseye liczy się podwójnie"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-tabletennis-let",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się sytuacja w tenisie stołowym, gdy serwis dotknie siatki i mimo to wpadnie prawidłowo?",
+    "correctAnswerId": "sports-hard-tabletennis-let-a",
+    "answers": [
+      {
+        "id": "sports-hard-tabletennis-let-a",
+        "text": "Let"
+      },
+      {
+        "id": "sports-hard-tabletennis-let-b",
+        "text": "Fault"
+      },
+      {
+        "id": "sports-hard-tabletennis-let-c",
+        "text": "Net out"
+      },
+      {
+        "id": "sports-hard-tabletennis-let-d",
+        "text": "Replay point"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-mma-unanimous",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Co oznacza jednogłośna decyzja sędziów w MMA lub boksie?",
+    "correctAnswerId": "sports-hard-mma-unanimous-a",
+    "answers": [
+      {
+        "id": "sports-hard-mma-unanimous-a",
+        "text": "Wszyscy sędziowie wskazali tego samego zwycięzcę"
+      },
+      {
+        "id": "sports-hard-mma-unanimous-b",
+        "text": "Jeden sędzia wskazał remis"
+      },
+      {
+        "id": "sports-hard-mma-unanimous-c",
+        "text": "Walka kończy się bez punktów"
+      },
+      {
+        "id": "sports-hard-mma-unanimous-d",
+        "text": "Zwycięzca wygrał przez nokaut"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-climbing-lead",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się wspinaczka sportowa z liną, w której zawodnik wpina ekspresy w trakcie prowadzenia drogi?",
+    "correctAnswerId": "sports-hard-climbing-lead-a",
+    "answers": [
+      {
+        "id": "sports-hard-climbing-lead-a",
+        "text": "Lead"
+      },
+      {
+        "id": "sports-hard-climbing-lead-b",
+        "text": "Bouldering"
+      },
+      {
+        "id": "sports-hard-climbing-lead-c",
+        "text": "Speed climbing"
+      },
+      {
+        "id": "sports-hard-climbing-lead-d",
+        "text": "Top rope"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-chess-enpassant",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się specjalne bicie pionka w szachach wykonywane w przelocie?",
+    "correctAnswerId": "sports-hard-chess-enpassant-a",
+    "answers": [
+      {
+        "id": "sports-hard-chess-enpassant-a",
+        "text": "En passant"
+      },
+      {
+        "id": "sports-hard-chess-enpassant-b",
+        "text": "Promocja"
+      },
+      {
+        "id": "sports-hard-chess-enpassant-c",
+        "text": "Roszada długa"
+      },
+      {
+        "id": "sports-hard-chess-enpassant-d",
+        "text": "Pat"
+      }
+    ]
+  },
+  {
+    "key": "sports-hard-hockey-icing",
+    "categoryKey": "sports",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się przewinienie w hokeju na lodzie polegające na wybiciu krążka z własnej połowy za linię końcową przeciwnika bez kontaktu z innym graczem?",
+    "correctAnswerId": "sports-hard-hockey-icing-a",
+    "answers": [
+      {
+        "id": "sports-hard-hockey-icing-a",
+        "text": "Icing"
+      },
+      {
+        "id": "sports-hard-hockey-icing-b",
+        "text": "Offside"
+      },
+      {
+        "id": "sports-hard-hockey-icing-c",
+        "text": "Power play"
+      },
+      {
+        "id": "sports-hard-hockey-icing-d",
+        "text": "Body checking"
+      }
+    ]
+  }
+]

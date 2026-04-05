@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "technology-easy-computer-brain",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Co jest nazywane „mózgiem” komputera?",
+    "correctAnswerId": "technology-easy-computer-brain-a",
+    "answers": [
+      {
+        "id": "technology-easy-computer-brain-a",
+        "text": "Procesor"
+      },
+      {
+        "id": "technology-easy-computer-brain-b",
+        "text": "Dysk twardy"
+      },
+      {
+        "id": "technology-easy-computer-brain-c",
+        "text": "Monitor"
+      },
+      {
+        "id": "technology-easy-computer-brain-d",
+        "text": "Klawiatura"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-keyboard-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy klawiatura?",
+    "correctAnswerId": "technology-easy-keyboard-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-keyboard-use-a",
+        "text": "Do wprowadzania tekstu i poleceń"
+      },
+      {
+        "id": "technology-easy-keyboard-use-b",
+        "text": "Do drukowania dokumentów"
+      },
+      {
+        "id": "technology-easy-keyboard-use-c",
+        "text": "Do chłodzenia komputera"
+      },
+      {
+        "id": "technology-easy-keyboard-use-d",
+        "text": "Do wyświetlania obrazu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-mouse-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego najczęściej służy mysz komputerowa?",
+    "correctAnswerId": "technology-easy-mouse-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-mouse-use-a",
+        "text": "Do sterowania kursorem"
+      },
+      {
+        "id": "technology-easy-mouse-use-b",
+        "text": "Do przechowywania plików"
+      },
+      {
+        "id": "technology-easy-mouse-use-c",
+        "text": "Do nagrywania dźwięku"
+      },
+      {
+        "id": "technology-easy-mouse-use-d",
+        "text": "Do łączenia z internetem"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-screen-device",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Które urządzenie wyświetla obraz z komputera?",
+    "correctAnswerId": "technology-easy-screen-device-a",
+    "answers": [
+      {
+        "id": "technology-easy-screen-device-a",
+        "text": "Monitor"
+      },
+      {
+        "id": "technology-easy-screen-device-b",
+        "text": "Router"
+      },
+      {
+        "id": "technology-easy-screen-device-c",
+        "text": "Pendrive"
+      },
+      {
+        "id": "technology-easy-screen-device-d",
+        "text": "Skaner"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-internet-network",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Czym jest internet?",
+    "correctAnswerId": "technology-easy-internet-network-a",
+    "answers": [
+      {
+        "id": "technology-easy-internet-network-a",
+        "text": "Globalną siecią komputerową"
+      },
+      {
+        "id": "technology-easy-internet-network-b",
+        "text": "Programem do pisania"
+      },
+      {
+        "id": "technology-easy-internet-network-c",
+        "text": "Rodzajem drukarki"
+      },
+      {
+        "id": "technology-easy-internet-network-d",
+        "text": "Typem baterii"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-phone-smart",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się telefon z dostępem do aplikacji i internetu?",
+    "correctAnswerId": "technology-easy-phone-smart-a",
+    "answers": [
+      {
+        "id": "technology-easy-phone-smart-a",
+        "text": "Smartfon"
+      },
+      {
+        "id": "technology-easy-phone-smart-b",
+        "text": "Pager"
+      },
+      {
+        "id": "technology-easy-phone-smart-c",
+        "text": "Kalkulator"
+      },
+      {
+        "id": "technology-easy-phone-smart-d",
+        "text": "Modem"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-printer-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy drukarka?",
+    "correctAnswerId": "technology-easy-printer-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-printer-use-a",
+        "text": "Do drukowania dokumentów"
+      },
+      {
+        "id": "technology-easy-printer-use-b",
+        "text": "Do skanowania sieci Wi‑Fi"
+      },
+      {
+        "id": "technology-easy-printer-use-c",
+        "text": "Do odtwarzania muzyki"
+      },
+      {
+        "id": "technology-easy-printer-use-d",
+        "text": "Do ładowania laptopa"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-save-file",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Co zwykle robi opcja „Zapisz” w programie?",
+    "correctAnswerId": "technology-easy-save-file-a",
+    "answers": [
+      {
+        "id": "technology-easy-save-file-a",
+        "text": "Zachowuje plik w pamięci"
+      },
+      {
+        "id": "technology-easy-save-file-b",
+        "text": "Usuwa plik"
+      },
+      {
+        "id": "technology-easy-save-file-c",
+        "text": "Wyłącza komputer"
+      },
+      {
+        "id": "technology-easy-save-file-d",
+        "text": "Zmienia język systemu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-wifi-wireless",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Co oznacza Wi‑Fi?",
+    "correctAnswerId": "technology-easy-wifi-wireless-a",
+    "answers": [
+      {
+        "id": "technology-easy-wifi-wireless-a",
+        "text": "Bezprzewodowe połączenie z siecią"
+      },
+      {
+        "id": "technology-easy-wifi-wireless-b",
+        "text": "Program antywirusowy"
+      },
+      {
+        "id": "technology-easy-wifi-wireless-c",
+        "text": "Rodzaj kabla"
+      },
+      {
+        "id": "technology-easy-wifi-wireless-d",
+        "text": "Typ ekranu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-laptop-portable",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Które urządzenie jest komputerem przenośnym?",
+    "correctAnswerId": "technology-easy-laptop-portable-a",
+    "answers": [
+      {
+        "id": "technology-easy-laptop-portable-a",
+        "text": "Laptop"
+      },
+      {
+        "id": "technology-easy-laptop-portable-b",
+        "text": "Serwerownia"
+      },
+      {
+        "id": "technology-easy-laptop-portable-c",
+        "text": "Monitor"
+      },
+      {
+        "id": "technology-easy-laptop-portable-d",
+        "text": "Głośnik"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-browser-example",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Który z poniższych programów jest przeglądarką internetową?",
+    "correctAnswerId": "technology-easy-browser-example-a",
+    "answers": [
+      {
+        "id": "technology-easy-browser-example-a",
+        "text": "Google Chrome"
+      },
+      {
+        "id": "technology-easy-browser-example-b",
+        "text": "Microsoft Excel"
+      },
+      {
+        "id": "technology-easy-browser-example-c",
+        "text": "Adobe Photoshop"
+      },
+      {
+        "id": "technology-easy-browser-example-d",
+        "text": "VLC"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-email-purpose",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy e-mail?",
+    "correctAnswerId": "technology-easy-email-purpose-a",
+    "answers": [
+      {
+        "id": "technology-easy-email-purpose-a",
+        "text": "Do wysyłania wiadomości elektronicznych"
+      },
+      {
+        "id": "technology-easy-email-purpose-b",
+        "text": "Do czyszczenia dysku"
+      },
+      {
+        "id": "technology-easy-email-purpose-c",
+        "text": "Do tworzenia sieci Wi‑Fi"
+      },
+      {
+        "id": "technology-easy-email-purpose-d",
+        "text": "Do mierzenia prędkości procesora"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-usb-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego najczęściej używa się pendrive'a?",
+    "correctAnswerId": "technology-easy-usb-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-usb-use-a",
+        "text": "Do przenoszenia plików"
+      },
+      {
+        "id": "technology-easy-usb-use-b",
+        "text": "Do chłodzenia komputera"
+      },
+      {
+        "id": "technology-easy-usb-use-c",
+        "text": "Do drukowania zdjęć"
+      },
+      {
+        "id": "technology-easy-usb-use-d",
+        "text": "Do wzmacniania sygnału GPS"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-app-meaning",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Czym jest aplikacja?",
+    "correctAnswerId": "technology-easy-app-meaning-a",
+    "answers": [
+      {
+        "id": "technology-easy-app-meaning-a",
+        "text": "Programem przeznaczonym do wykonywania określonych zadań"
+      },
+      {
+        "id": "technology-easy-app-meaning-b",
+        "text": "Kablem do ładowania telefonu"
+      },
+      {
+        "id": "technology-easy-app-meaning-c",
+        "text": "Elementem obudowy"
+      },
+      {
+        "id": "technology-easy-app-meaning-d",
+        "text": "Rodzajem baterii"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-password-role",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy hasło?",
+    "correctAnswerId": "technology-easy-password-role-a",
+    "answers": [
+      {
+        "id": "technology-easy-password-role-a",
+        "text": "Do zabezpieczenia dostępu do konta lub urządzenia"
+      },
+      {
+        "id": "technology-easy-password-role-b",
+        "text": "Do zwiększenia jasności ekranu"
+      },
+      {
+        "id": "technology-easy-password-role-c",
+        "text": "Do przyspieszenia internetu"
+      },
+      {
+        "id": "technology-easy-password-role-d",
+        "text": "Do formatowania dysku"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-touchscreen",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się ekran reagujący na dotyk?",
+    "correctAnswerId": "technology-easy-touchscreen-a",
+    "answers": [
+      {
+        "id": "technology-easy-touchscreen-a",
+        "text": "Ekran dotykowy"
+      },
+      {
+        "id": "technology-easy-touchscreen-b",
+        "text": "Ekran analogowy"
+      },
+      {
+        "id": "technology-easy-touchscreen-c",
+        "text": "Ekran pasywny"
+      },
+      {
+        "id": "technology-easy-touchscreen-d",
+        "text": "Ekran laserowy"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-camera-phone",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy aparat w smartfonie?",
+    "correctAnswerId": "technology-easy-camera-phone-a",
+    "answers": [
+      {
+        "id": "technology-easy-camera-phone-a",
+        "text": "Do robienia zdjęć i nagrywania filmów"
+      },
+      {
+        "id": "technology-easy-camera-phone-b",
+        "text": "Do drukowania dokumentów"
+      },
+      {
+        "id": "technology-easy-camera-phone-c",
+        "text": "Do zwiększania pamięci RAM"
+      },
+      {
+        "id": "technology-easy-camera-phone-d",
+        "text": "Do szyfrowania plików"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-router-home",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Jakie urządzenie zwykle rozdziela internet w domu?",
+    "correctAnswerId": "technology-easy-router-home-a",
+    "answers": [
+      {
+        "id": "technology-easy-router-home-a",
+        "text": "Router"
+      },
+      {
+        "id": "technology-easy-router-home-b",
+        "text": "Monitor"
+      },
+      {
+        "id": "technology-easy-router-home-c",
+        "text": "Projektor"
+      },
+      {
+        "id": "technology-easy-router-home-d",
+        "text": "Skanner"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-download-meaning",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Co oznacza pobieranie pliku?",
+    "correctAnswerId": "technology-easy-download-meaning-a",
+    "answers": [
+      {
+        "id": "technology-easy-download-meaning-a",
+        "text": "Kopiowanie pliku z internetu na urządzenie"
+      },
+      {
+        "id": "technology-easy-download-meaning-b",
+        "text": "Usuwanie pliku z dysku"
+      },
+      {
+        "id": "technology-easy-download-meaning-c",
+        "text": "Drukowanie pliku"
+      },
+      {
+        "id": "technology-easy-download-meaning-d",
+        "text": "Zmianę nazwy pliku"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-upload-meaning",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Co oznacza wysyłanie pliku do chmury?",
+    "correctAnswerId": "technology-easy-upload-meaning-a",
+    "answers": [
+      {
+        "id": "technology-easy-upload-meaning-a",
+        "text": "Przesyłanie pliku z urządzenia do internetu"
+      },
+      {
+        "id": "technology-easy-upload-meaning-b",
+        "text": "Usuwanie pliku na stałe"
+      },
+      {
+        "id": "technology-easy-upload-meaning-c",
+        "text": "Kompresowanie pliku"
+      },
+      {
+        "id": "technology-easy-upload-meaning-d",
+        "text": "Odłączanie internetu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-icon-trash",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego zwykle służy ikona kosza w systemie?",
+    "correctAnswerId": "technology-easy-icon-trash-a",
+    "answers": [
+      {
+        "id": "technology-easy-icon-trash-a",
+        "text": "Do usuwania plików"
+      },
+      {
+        "id": "technology-easy-icon-trash-b",
+        "text": "Do instalowania aktualizacji"
+      },
+      {
+        "id": "technology-easy-icon-trash-c",
+        "text": "Do zmiany tapety"
+      },
+      {
+        "id": "technology-easy-icon-trash-d",
+        "text": "Do zwiększania głośności"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-operating-system-example",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Który z poniższych jest systemem operacyjnym?",
+    "correctAnswerId": "technology-easy-operating-system-example-a",
+    "answers": [
+      {
+        "id": "technology-easy-operating-system-example-a",
+        "text": "Windows"
+      },
+      {
+        "id": "technology-easy-operating-system-example-b",
+        "text": "YouTube"
+      },
+      {
+        "id": "technology-easy-operating-system-example-c",
+        "text": "Bluetooth"
+      },
+      {
+        "id": "technology-easy-operating-system-example-d",
+        "text": "PDF"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-bluetooth-purpose",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy Bluetooth?",
+    "correctAnswerId": "technology-easy-bluetooth-purpose-a",
+    "answers": [
+      {
+        "id": "technology-easy-bluetooth-purpose-a",
+        "text": "Do bezprzewodowego łączenia urządzeń na niewielką odległość"
+      },
+      {
+        "id": "technology-easy-bluetooth-purpose-b",
+        "text": "Do drukowania plików z internetu"
+      },
+      {
+        "id": "technology-easy-bluetooth-purpose-c",
+        "text": "Do zwiększania pojemności baterii"
+      },
+      {
+        "id": "technology-easy-bluetooth-purpose-d",
+        "text": "Do budowy stron WWW"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-battery-role",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy bateria w laptopie?",
+    "correctAnswerId": "technology-easy-battery-role-a",
+    "answers": [
+      {
+        "id": "technology-easy-battery-role-a",
+        "text": "Do zasilania urządzenia bez kabla"
+      },
+      {
+        "id": "technology-easy-battery-role-b",
+        "text": "Do przechowywania haseł"
+      },
+      {
+        "id": "technology-easy-battery-role-c",
+        "text": "Do chłodzenia procesora"
+      },
+      {
+        "id": "technology-easy-battery-role-d",
+        "text": "Do wzmacniania sygnału Wi‑Fi"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-microphone-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy mikrofon?",
+    "correctAnswerId": "technology-easy-microphone-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-microphone-use-a",
+        "text": "Do nagrywania i przesyłania dźwięku"
+      },
+      {
+        "id": "technology-easy-microphone-use-b",
+        "text": "Do wyświetlania obrazu"
+      },
+      {
+        "id": "technology-easy-microphone-use-c",
+        "text": "Do drukowania tekstu"
+      },
+      {
+        "id": "technology-easy-microphone-use-d",
+        "text": "Do skanowania dokumentów"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-speaker-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służą głośniki?",
+    "correctAnswerId": "technology-easy-speaker-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-speaker-use-a",
+        "text": "Do odtwarzania dźwięku"
+      },
+      {
+        "id": "technology-easy-speaker-use-b",
+        "text": "Do przechowywania zdjęć"
+      },
+      {
+        "id": "technology-easy-speaker-use-c",
+        "text": "Do tworzenia kopii zapasowej"
+      },
+      {
+        "id": "technology-easy-speaker-use-d",
+        "text": "Do ładowania telefonu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-cloud-basic",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Czym potocznie nazywa się „chmurę”?",
+    "correctAnswerId": "technology-easy-cloud-basic-a",
+    "answers": [
+      {
+        "id": "technology-easy-cloud-basic-a",
+        "text": "Usługami przechowywania i pracy na danych przez internet"
+      },
+      {
+        "id": "technology-easy-cloud-basic-b",
+        "text": "Rodzajem monitora"
+      },
+      {
+        "id": "technology-easy-cloud-basic-c",
+        "text": "Programem antywirusowym"
+      },
+      {
+        "id": "technology-easy-cloud-basic-d",
+        "text": "Kablem sieciowym"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-qr-code",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego najczęściej służy kod QR?",
+    "correctAnswerId": "technology-easy-qr-code-a",
+    "answers": [
+      {
+        "id": "technology-easy-qr-code-a",
+        "text": "Do szybkiego otwierania linków lub informacji po zeskanowaniu"
+      },
+      {
+        "id": "technology-easy-qr-code-b",
+        "text": "Do zwiększania pamięci RAM"
+      },
+      {
+        "id": "technology-easy-qr-code-c",
+        "text": "Do chłodzenia telefonu"
+      },
+      {
+        "id": "technology-easy-qr-code-d",
+        "text": "Do szyfrowania Wi‑Fi"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-search-engine",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Która z poniższych usług jest wyszukiwarką internetową?",
+    "correctAnswerId": "technology-easy-search-engine-a",
+    "answers": [
+      {
+        "id": "technology-easy-search-engine-a",
+        "text": "Google"
+      },
+      {
+        "id": "technology-easy-search-engine-b",
+        "text": "Netflix"
+      },
+      {
+        "id": "technology-easy-search-engine-c",
+        "text": "Spotify"
+      },
+      {
+        "id": "technology-easy-search-engine-d",
+        "text": "WhatsApp"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-tablet-device",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Czym jest tablet?",
+    "correctAnswerId": "technology-easy-tablet-device-a",
+    "answers": [
+      {
+        "id": "technology-easy-tablet-device-a",
+        "text": "Przenośnym urządzeniem z ekranem dotykowym"
+      },
+      {
+        "id": "technology-easy-tablet-device-b",
+        "text": "Rodzajem drukarki"
+      },
+      {
+        "id": "technology-easy-tablet-device-c",
+        "text": "Programem do obróbki zdjęć"
+      },
+      {
+        "id": "technology-easy-tablet-device-d",
+        "text": "Typem procesora"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-file-folder",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy folder w komputerze?",
+    "correctAnswerId": "technology-easy-file-folder-a",
+    "answers": [
+      {
+        "id": "technology-easy-file-folder-a",
+        "text": "Do porządkowania plików"
+      },
+      {
+        "id": "technology-easy-file-folder-b",
+        "text": "Do zwiększania szybkości internetu"
+      },
+      {
+        "id": "technology-easy-file-folder-c",
+        "text": "Do skanowania wirusów"
+      },
+      {
+        "id": "technology-easy-file-folder-d",
+        "text": "Do naprawy ekranu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-video-call",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się rozmowa z obrazem przez internet?",
+    "correctAnswerId": "technology-easy-video-call-a",
+    "answers": [
+      {
+        "id": "technology-easy-video-call-a",
+        "text": "Wideorozmowa"
+      },
+      {
+        "id": "technology-easy-video-call-b",
+        "text": "Kompresja"
+      },
+      {
+        "id": "technology-easy-video-call-c",
+        "text": "Druk 3D"
+      },
+      {
+        "id": "technology-easy-video-call-d",
+        "text": "Defragmentacja"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-headphones-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służą słuchawki?",
+    "correctAnswerId": "technology-easy-headphones-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-headphones-use-a",
+        "text": "Do słuchania dźwięku bez użycia głośników"
+      },
+      {
+        "id": "technology-easy-headphones-use-b",
+        "text": "Do zapisywania plików"
+      },
+      {
+        "id": "technology-easy-headphones-use-c",
+        "text": "Do ładowania telefonu"
+      },
+      {
+        "id": "technology-easy-headphones-use-d",
+        "text": "Do łączenia z Wi‑Fi"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-scanner-use",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Do czego służy skaner?",
+    "correctAnswerId": "technology-easy-scanner-use-a",
+    "answers": [
+      {
+        "id": "technology-easy-scanner-use-a",
+        "text": "Do zamiany dokumentu papierowego na plik cyfrowy"
+      },
+      {
+        "id": "technology-easy-scanner-use-b",
+        "text": "Do drukowania zdjęć"
+      },
+      {
+        "id": "technology-easy-scanner-use-c",
+        "text": "Do przyspieszania komputera"
+      },
+      {
+        "id": "technology-easy-scanner-use-d",
+        "text": "Do tworzenia aplikacji"
+      }
+    ]
+  },
+  {
+    "key": "technology-easy-update-basic",
+    "categoryKey": "technology",
+    "difficulty": "Easy",
+    "text": "Czym jest aktualizacja programu?",
+    "correctAnswerId": "technology-easy-update-basic-a",
+    "answers": [
+      {
+        "id": "technology-easy-update-basic-a",
+        "text": "Nowszą wersją poprawiającą działanie lub bezpieczeństwo"
+      },
+      {
+        "id": "technology-easy-update-basic-b",
+        "text": "Całkowitym usunięciem programu"
+      },
+      {
+        "id": "technology-easy-update-basic-c",
+        "text": "Formatowaniem dysku"
+      },
+      {
+        "id": "technology-easy-update-basic-d",
+        "text": "Zmianą hasła"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-ram-role",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Za co głównie odpowiada pamięć RAM w komputerze?",
+    "correctAnswerId": "technology-easymedium-ram-role-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-ram-role-a",
+        "text": "Za tymczasowe przechowywanie danych używanych przez programy"
+      },
+      {
+        "id": "technology-easymedium-ram-role-b",
+        "text": "Za trwałe przechowywanie plików"
+      },
+      {
+        "id": "technology-easymedium-ram-role-c",
+        "text": "Za wyświetlanie obrazu"
+      },
+      {
+        "id": "technology-easymedium-ram-role-d",
+        "text": "Za drukowanie dokumentów"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-ssd-vs-hdd",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Który nośnik danych jest zazwyczaj szybszy?",
+    "correctAnswerId": "technology-easymedium-ssd-vs-hdd-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-ssd-vs-hdd-a",
+        "text": "SSD"
+      },
+      {
+        "id": "technology-easymedium-ssd-vs-hdd-b",
+        "text": "HDD"
+      },
+      {
+        "id": "technology-easymedium-ssd-vs-hdd-c",
+        "text": "Płyta DVD"
+      },
+      {
+        "id": "technology-easymedium-ssd-vs-hdd-d",
+        "text": "Dyskietka"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-url-meaning",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Co oznacza adres URL?",
+    "correctAnswerId": "technology-easymedium-url-meaning-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-url-meaning-a",
+        "text": "Adres zasobu w internecie"
+      },
+      {
+        "id": "technology-easymedium-url-meaning-b",
+        "text": "Nazwa użytkownika w sieci"
+      },
+      {
+        "id": "technology-easymedium-url-meaning-c",
+        "text": "Rodzaj programu antywirusowego"
+      },
+      {
+        "id": "technology-easymedium-url-meaning-d",
+        "text": "Typ pamięci komputera"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-phishing-basic",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Czym jest phishing?",
+    "correctAnswerId": "technology-easymedium-phishing-basic-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-phishing-basic-a",
+        "text": "Próbą wyłudzenia danych przez podszywanie się pod zaufane źródło"
+      },
+      {
+        "id": "technology-easymedium-phishing-basic-b",
+        "text": "Sposobem chłodzenia serwera"
+      },
+      {
+        "id": "technology-easymedium-phishing-basic-c",
+        "text": "Rodzajem języka programowania"
+      },
+      {
+        "id": "technology-easymedium-phishing-basic-d",
+        "text": "Metodą kompresji plików"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-antivirus-role",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Do czego służy program antywirusowy?",
+    "correctAnswerId": "technology-easymedium-antivirus-role-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-antivirus-role-a",
+        "text": "Do wykrywania i usuwania złośliwego oprogramowania"
+      },
+      {
+        "id": "technology-easymedium-antivirus-role-b",
+        "text": "Do zwiększania pojemności dysku"
+      },
+      {
+        "id": "technology-easymedium-antivirus-role-c",
+        "text": "Do projektowania stron WWW"
+      },
+      {
+        "id": "technology-easymedium-antivirus-role-d",
+        "text": "Do zarządzania drukarką"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-operating-system-role",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Jaką rolę pełni system operacyjny?",
+    "correctAnswerId": "technology-easymedium-operating-system-role-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-operating-system-role-a",
+        "text": "Zarządza sprzętem i uruchamia programy"
+      },
+      {
+        "id": "technology-easymedium-operating-system-role-b",
+        "text": "Jest wyłącznie przeglądarką internetową"
+      },
+      {
+        "id": "technology-easymedium-operating-system-role-c",
+        "text": "Służy tylko do pisania tekstu"
+      },
+      {
+        "id": "technology-easymedium-operating-system-role-d",
+        "text": "Jest rodzajem kabla sieciowego"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-browser-cache",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Do czego służy pamięć podręczna przeglądarki?",
+    "correctAnswerId": "technology-easymedium-browser-cache-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-browser-cache-a",
+        "text": "Do szybszego ładowania wcześniej odwiedzanych zasobów"
+      },
+      {
+        "id": "technology-easymedium-browser-cache-b",
+        "text": "Do szyfrowania dysku"
+      },
+      {
+        "id": "technology-easymedium-browser-cache-c",
+        "text": "Do instalacji sterowników"
+      },
+      {
+        "id": "technology-easymedium-browser-cache-d",
+        "text": "Do zwiększania rozdzielczości monitora"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-cpu-cores",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Co zwykle oznacza większa liczba rdzeni procesora?",
+    "correctAnswerId": "technology-easymedium-cpu-cores-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-cpu-cores-a",
+        "text": "Możliwość sprawniejszego wykonywania wielu zadań naraz"
+      },
+      {
+        "id": "technology-easymedium-cpu-cores-b",
+        "text": "Większą pojemność dysku"
+      },
+      {
+        "id": "technology-easymedium-cpu-cores-c",
+        "text": "Lepszy sygnał Wi‑Fi"
+      },
+      {
+        "id": "technology-easymedium-cpu-cores-d",
+        "text": "Dłuższy kabel zasilający"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-resolution-meaning",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Co oznacza wyższa rozdzielczość ekranu?",
+    "correctAnswerId": "technology-easymedium-resolution-meaning-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-resolution-meaning-a",
+        "text": "Więcej pikseli tworzących obraz"
+      },
+      {
+        "id": "technology-easymedium-resolution-meaning-b",
+        "text": "Głośniejszy dźwięk"
+      },
+      {
+        "id": "technology-easymedium-resolution-meaning-c",
+        "text": "Szybszy internet"
+      },
+      {
+        "id": "technology-easymedium-resolution-meaning-d",
+        "text": "Mniejszą wagę urządzenia"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-vpn-basic",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Do czego służy VPN?",
+    "correctAnswerId": "technology-easymedium-vpn-basic-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-vpn-basic-a",
+        "text": "Do tworzenia szyfrowanego połączenia z siecią"
+      },
+      {
+        "id": "technology-easymedium-vpn-basic-b",
+        "text": "Do czyszczenia ekranu"
+      },
+      {
+        "id": "technology-easymedium-vpn-basic-c",
+        "text": "Do zwiększania pamięci RAM"
+      },
+      {
+        "id": "technology-easymedium-vpn-basic-d",
+        "text": "Do ładowania smartfona"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-file-extension",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Co często wskazuje rozszerzenie pliku, np. .pdf lub .jpg?",
+    "correctAnswerId": "technology-easymedium-file-extension-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-file-extension-a",
+        "text": "Typ pliku"
+      },
+      {
+        "id": "technology-easymedium-file-extension-b",
+        "text": "Hasło do pliku"
+      },
+      {
+        "id": "technology-easymedium-file-extension-c",
+        "text": "Właściciela pliku"
+      },
+      {
+        "id": "technology-easymedium-file-extension-d",
+        "text": "Wersję systemu operacyjnego"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-two-factor",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Na czym polega uwierzytelnianie dwuskładnikowe?",
+    "correctAnswerId": "technology-easymedium-two-factor-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-two-factor-a",
+        "text": "Na logowaniu z użyciem hasła i dodatkowego potwierdzenia"
+      },
+      {
+        "id": "technology-easymedium-two-factor-b",
+        "text": "Na wpisaniu hasła dwa razy"
+      },
+      {
+        "id": "technology-easymedium-two-factor-c",
+        "text": "Na używaniu dwóch kont e-mail"
+      },
+      {
+        "id": "technology-easymedium-two-factor-d",
+        "text": "Na zmianie hasła co dwa dni"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-cookie-basic",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Czym są pliki cookie w przeglądarce?",
+    "correctAnswerId": "technology-easymedium-cookie-basic-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-cookie-basic-a",
+        "text": "Małymi danymi zapisywanymi przez strony internetowe"
+      },
+      {
+        "id": "technology-easymedium-cookie-basic-b",
+        "text": "Wirusami komputerowymi"
+      },
+      {
+        "id": "technology-easymedium-cookie-basic-c",
+        "text": "Zdjęciami profilowymi"
+      },
+      {
+        "id": "technology-easymedium-cookie-basic-d",
+        "text": "Rodzajem wyszukiwarki"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-streaming",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Co oznacza streaming w internecie?",
+    "correctAnswerId": "technology-easymedium-streaming-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-streaming-a",
+        "text": "Odtwarzanie treści bez pełnego pobrania pliku"
+      },
+      {
+        "id": "technology-easymedium-streaming-b",
+        "text": "Usuwanie danych z serwera"
+      },
+      {
+        "id": "technology-easymedium-streaming-c",
+        "text": "Tworzenie kopii zapasowej"
+      },
+      {
+        "id": "technology-easymedium-streaming-d",
+        "text": "Skanowanie komputera"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-nfc-basic",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Do czego służy NFC w smartfonie?",
+    "correctAnswerId": "technology-easymedium-nfc-basic-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-nfc-basic-a",
+        "text": "Do bardzo bliskiej komunikacji bezprzewodowej, np. płatności"
+      },
+      {
+        "id": "technology-easymedium-nfc-basic-b",
+        "text": "Do chłodzenia baterii"
+      },
+      {
+        "id": "technology-easymedium-nfc-basic-c",
+        "text": "Do tworzenia kopii zapasowej zdjęć"
+      },
+      {
+        "id": "technology-easymedium-nfc-basic-d",
+        "text": "Do podłączania monitora"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-malware-basic",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Co oznacza termin malware?",
+    "correctAnswerId": "technology-easymedium-malware-basic-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-malware-basic-a",
+        "text": "Złośliwe oprogramowanie"
+      },
+      {
+        "id": "technology-easymedium-malware-basic-b",
+        "text": "Program do obróbki zdjęć"
+      },
+      {
+        "id": "technology-easymedium-malware-basic-c",
+        "text": "Rodzaj routera"
+      },
+      {
+        "id": "technology-easymedium-malware-basic-d",
+        "text": "Metodę kodowania filmów"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-backup-basic",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Czym jest kopia zapasowa?",
+    "correctAnswerId": "technology-easymedium-backup-basic-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-backup-basic-a",
+        "text": "Dodatkową kopią danych na wypadek utraty oryginału"
+      },
+      {
+        "id": "technology-easymedium-backup-basic-b",
+        "text": "Programem do grania"
+      },
+      {
+        "id": "technology-easymedium-backup-basic-c",
+        "text": "Aktualizacją systemu"
+      },
+      {
+        "id": "technology-easymedium-backup-basic-d",
+        "text": "Typem klawiatury"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-incognito",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Co zwykle robi tryb incognito w przeglądarce?",
+    "correctAnswerId": "technology-easymedium-incognito-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-incognito-a",
+        "text": "Ogranicza zapisywanie historii lokalnie na urządzeniu"
+      },
+      {
+        "id": "technology-easymedium-incognito-b",
+        "text": "Ukrywa użytkownika przed dostawcą internetu"
+      },
+      {
+        "id": "technology-easymedium-incognito-c",
+        "text": "Przyspiesza procesor"
+      },
+      {
+        "id": "technology-easymedium-incognito-d",
+        "text": "Naprawia błędy systemu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-gps-role",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Do czego służy GPS w urządzeniu mobilnym?",
+    "correctAnswerId": "technology-easymedium-gps-role-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-gps-role-a",
+        "text": "Do określania położenia"
+      },
+      {
+        "id": "technology-easymedium-gps-role-b",
+        "text": "Do szyfrowania wiadomości"
+      },
+      {
+        "id": "technology-easymedium-gps-role-c",
+        "text": "Do zwiększania jakości zdjęć"
+      },
+      {
+        "id": "technology-easymedium-gps-role-d",
+        "text": "Do ładowania baterii"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-pdf-format",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Do czego najczęściej służy format PDF?",
+    "correctAnswerId": "technology-easymedium-pdf-format-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-pdf-format-a",
+        "text": "Do wygodnego udostępniania dokumentów z zachowaniem układu"
+      },
+      {
+        "id": "technology-easymedium-pdf-format-b",
+        "text": "Do nagrywania muzyki"
+      },
+      {
+        "id": "technology-easymedium-pdf-format-c",
+        "text": "Do tworzenia baz danych"
+      },
+      {
+        "id": "technology-easymedium-pdf-format-d",
+        "text": "Do budowy sieci Wi‑Fi"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-hotspot",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Czym jest hotspot w telefonie?",
+    "correctAnswerId": "technology-easymedium-hotspot-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-hotspot-a",
+        "text": "Udostępnianiem internetu innym urządzeniom"
+      },
+      {
+        "id": "technology-easymedium-hotspot-b",
+        "text": "Rodzajem aparatu fotograficznego"
+      },
+      {
+        "id": "technology-easymedium-hotspot-c",
+        "text": "Trybem oszczędzania baterii"
+      },
+      {
+        "id": "technology-easymedium-hotspot-d",
+        "text": "Typem ekranu"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-firmware",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Czym jest firmware?",
+    "correctAnswerId": "technology-easymedium-firmware-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-firmware-a",
+        "text": "Oprogramowaniem wbudowanym w urządzenie"
+      },
+      {
+        "id": "technology-easymedium-firmware-b",
+        "text": "Usługą chmurową"
+      },
+      {
+        "id": "technology-easymedium-firmware-c",
+        "text": "Rodzajem karty pamięci"
+      },
+      {
+        "id": "technology-easymedium-firmware-d",
+        "text": "Programem antywirusowym"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-driver-role",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Do czego służy sterownik urządzenia?",
+    "correctAnswerId": "technology-easymedium-driver-role-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-driver-role-a",
+        "text": "Pozwala systemowi komunikować się ze sprzętem"
+      },
+      {
+        "id": "technology-easymedium-driver-role-b",
+        "text": "Zwiększa pojemność baterii"
+      },
+      {
+        "id": "technology-easymedium-driver-role-c",
+        "text": "Kompresuje pliki"
+      },
+      {
+        "id": "technology-easymedium-driver-role-d",
+        "text": "Zmienia rozdzielczość filmów"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-qr-auth",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "W aplikacjach internetowych kod QR bywa używany do:",
+    "correctAnswerId": "technology-easymedium-qr-auth-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-qr-auth-a",
+        "text": "Szybkiego logowania lub parowania urządzeń"
+      },
+      {
+        "id": "technology-easymedium-qr-auth-b",
+        "text": "Naprawy uszkodzonego ekranu"
+      },
+      {
+        "id": "technology-easymedium-qr-auth-c",
+        "text": "Przyspieszenia procesora"
+      },
+      {
+        "id": "technology-easymedium-qr-auth-d",
+        "text": "Zmniejszenia zużycia RAM"
+      }
+    ]
+  },
+  {
+    "key": "technology-easymedium-algorithm-basic",
+    "categoryKey": "technology",
+    "difficulty": "EasyMedium",
+    "text": "Czym w informatyce jest algorytm?",
+    "correctAnswerId": "technology-easymedium-algorithm-basic-a",
+    "answers": [
+      {
+        "id": "technology-easymedium-algorithm-basic-a",
+        "text": "Zestawem kroków prowadzących do rozwiązania zadania"
+      },
+      {
+        "id": "technology-easymedium-algorithm-basic-b",
+        "text": "Rodzajem monitora"
+      },
+      {
+        "id": "technology-easymedium-algorithm-basic-c",
+        "text": "Nazwą złącza USB"
+      },
+      {
+        "id": "technology-easymedium-algorithm-basic-d",
+        "text": "Pamięcią masową"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-ip-address",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego służy adres IP?",
+    "correctAnswerId": "technology-medium-ip-address-a",
+    "answers": [
+      {
+        "id": "technology-medium-ip-address-a",
+        "text": "Do identyfikacji urządzenia w sieci"
+      },
+      {
+        "id": "technology-medium-ip-address-b",
+        "text": "Do ładowania baterii"
+      },
+      {
+        "id": "technology-medium-ip-address-c",
+        "text": "Do mierzenia temperatury procesora"
+      },
+      {
+        "id": "technology-medium-ip-address-d",
+        "text": "Do tworzenia kopii papierowej"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-dns-role",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Jaką funkcję pełni DNS?",
+    "correctAnswerId": "technology-medium-dns-role-a",
+    "answers": [
+      {
+        "id": "technology-medium-dns-role-a",
+        "text": "Tłumaczy nazwy domen na adresy IP"
+      },
+      {
+        "id": "technology-medium-dns-role-b",
+        "text": "Szyfruje dysk twardy"
+      },
+      {
+        "id": "technology-medium-dns-role-c",
+        "text": "Projektuje interfejsy aplikacji"
+      },
+      {
+        "id": "technology-medium-dns-role-d",
+        "text": "Zwiększa szybkość procesora"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-html-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego służy HTML?",
+    "correctAnswerId": "technology-medium-html-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-html-basic-a",
+        "text": "Do tworzenia struktury stron internetowych"
+      },
+      {
+        "id": "technology-medium-html-basic-b",
+        "text": "Do edycji zdjęć"
+      },
+      {
+        "id": "technology-medium-html-basic-c",
+        "text": "Do zarządzania bazą danych"
+      },
+      {
+        "id": "technology-medium-html-basic-d",
+        "text": "Do kompresji plików"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-css-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego głównie służy CSS?",
+    "correctAnswerId": "technology-medium-css-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-css-basic-a",
+        "text": "Do definiowania wyglądu stron internetowych"
+      },
+      {
+        "id": "technology-medium-css-basic-b",
+        "text": "Do pisania systemów operacyjnych"
+      },
+      {
+        "id": "technology-medium-css-basic-c",
+        "text": "Do szyfrowania połączeń"
+      },
+      {
+        "id": "technology-medium-css-basic-d",
+        "text": "Do sterowania drukarką 3D"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-javascript-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego najczęściej używa się JavaScriptu w przeglądarce?",
+    "correctAnswerId": "technology-medium-javascript-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-javascript-basic-a",
+        "text": "Do dodawania interakcji na stronach WWW"
+      },
+      {
+        "id": "technology-medium-javascript-basic-b",
+        "text": "Do formatowania dysków"
+      },
+      {
+        "id": "technology-medium-javascript-basic-c",
+        "text": "Do chłodzenia kart graficznych"
+      },
+      {
+        "id": "technology-medium-javascript-basic-d",
+        "text": "Do wysyłania SMS-ów bez sieci"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-sql-purpose",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego służy SQL?",
+    "correctAnswerId": "technology-medium-sql-purpose-a",
+    "answers": [
+      {
+        "id": "technology-medium-sql-purpose-a",
+        "text": "Do pracy z relacyjnymi bazami danych"
+      },
+      {
+        "id": "technology-medium-sql-purpose-b",
+        "text": "Do projektowania obudów komputerów"
+      },
+      {
+        "id": "technology-medium-sql-purpose-c",
+        "text": "Do tworzenia prezentacji"
+      },
+      {
+        "id": "technology-medium-sql-purpose-d",
+        "text": "Do testowania monitorów"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-database-row",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Jak w bazie danych najczęściej nazywa się pojedynczy rekord tabeli?",
+    "correctAnswerId": "technology-medium-database-row-a",
+    "answers": [
+      {
+        "id": "technology-medium-database-row-a",
+        "text": "Wiersz"
+      },
+      {
+        "id": "technology-medium-database-row-b",
+        "text": "Nagłówek"
+      },
+      {
+        "id": "technology-medium-database-row-c",
+        "text": "Piksel"
+      },
+      {
+        "id": "technology-medium-database-row-d",
+        "text": "Pakiet"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-api-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Czym jest API?",
+    "correctAnswerId": "technology-medium-api-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-api-basic-a",
+        "text": "Interfejsem umożliwiającym komunikację między programami"
+      },
+      {
+        "id": "technology-medium-api-basic-b",
+        "text": "Rodzajem pamięci podręcznej"
+      },
+      {
+        "id": "technology-medium-api-basic-c",
+        "text": "Typem kabla HDMI"
+      },
+      {
+        "id": "technology-medium-api-basic-d",
+        "text": "Programem antywirusowym"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-https-purpose",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co zapewnia HTTPS względem HTTP?",
+    "correctAnswerId": "technology-medium-https-purpose-a",
+    "answers": [
+      {
+        "id": "technology-medium-https-purpose-a",
+        "text": "Szyfrowanie połączenia"
+      },
+      {
+        "id": "technology-medium-https-purpose-b",
+        "text": "Większą pojemność dysku"
+      },
+      {
+        "id": "technology-medium-https-purpose-c",
+        "text": "Lepszą jakość obrazu"
+      },
+      {
+        "id": "technology-medium-https-purpose-d",
+        "text": "Szybsze działanie procesora"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-latency-meaning",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co w sieciach oznacza opóźnienie, czyli latency?",
+    "correctAnswerId": "technology-medium-latency-meaning-a",
+    "answers": [
+      {
+        "id": "technology-medium-latency-meaning-a",
+        "text": "Czas potrzebny na przesłanie danych między punktami"
+      },
+      {
+        "id": "technology-medium-latency-meaning-b",
+        "text": "Maksymalną wielkość pliku"
+      },
+      {
+        "id": "technology-medium-latency-meaning-c",
+        "text": "Liczbę użytkowników sieci"
+      },
+      {
+        "id": "technology-medium-latency-meaning-d",
+        "text": "Moc zasilacza"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-bandwidth",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co oznacza przepustowość łącza?",
+    "correctAnswerId": "technology-medium-bandwidth-a",
+    "answers": [
+      {
+        "id": "technology-medium-bandwidth-a",
+        "text": "Ilość danych możliwych do przesłania w jednostce czasu"
+      },
+      {
+        "id": "technology-medium-bandwidth-b",
+        "text": "Jakość obudowy komputera"
+      },
+      {
+        "id": "technology-medium-bandwidth-c",
+        "text": "Liczbę ikon na pulpicie"
+      },
+      {
+        "id": "technology-medium-bandwidth-d",
+        "text": "Szybkość ładowania baterii"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-firewall-role",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Jaką funkcję pełni firewall?",
+    "correctAnswerId": "technology-medium-firewall-role-a",
+    "answers": [
+      {
+        "id": "technology-medium-firewall-role-a",
+        "text": "Filtruje ruch sieciowy zgodnie z regułami bezpieczeństwa"
+      },
+      {
+        "id": "technology-medium-firewall-role-b",
+        "text": "Drukuje raporty o błędach"
+      },
+      {
+        "id": "technology-medium-firewall-role-c",
+        "text": "Przyspiesza start systemu"
+      },
+      {
+        "id": "technology-medium-firewall-role-d",
+        "text": "Ustawia jasność monitora"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-encryption-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Czym jest szyfrowanie danych?",
+    "correctAnswerId": "technology-medium-encryption-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-encryption-basic-a",
+        "text": "Przekształcaniem ich tak, by były czytelne tylko dla uprawnionych"
+      },
+      {
+        "id": "technology-medium-encryption-basic-b",
+        "text": "Fizycznym niszczeniem plików"
+      },
+      {
+        "id": "technology-medium-encryption-basic-c",
+        "text": "Sortowaniem katalogów"
+      },
+      {
+        "id": "technology-medium-encryption-basic-d",
+        "text": "Kopiowaniem zdjęć do chmury"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-hash-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego służy funkcja skrótu, czyli hash?",
+    "correctAnswerId": "technology-medium-hash-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-hash-basic-a",
+        "text": "Do tworzenia krótkiej reprezentacji danych"
+      },
+      {
+        "id": "technology-medium-hash-basic-b",
+        "text": "Do chłodzenia procesora"
+      },
+      {
+        "id": "technology-medium-hash-basic-c",
+        "text": "Do wzmacniania sygnału Bluetooth"
+      },
+      {
+        "id": "technology-medium-hash-basic-d",
+        "text": "Do montażu filmów"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-oop-class",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Czym w programowaniu obiektowym jest klasa?",
+    "correctAnswerId": "technology-medium-oop-class-a",
+    "answers": [
+      {
+        "id": "technology-medium-oop-class-a",
+        "text": "Szablonem do tworzenia obiektów"
+      },
+      {
+        "id": "technology-medium-oop-class-b",
+        "text": "Uruchomionym programem"
+      },
+      {
+        "id": "technology-medium-oop-class-c",
+        "text": "Typem serwera DNS"
+      },
+      {
+        "id": "technology-medium-oop-class-d",
+        "text": "Rodzajem bazy danych"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-git-purpose",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego służy Git?",
+    "correctAnswerId": "technology-medium-git-purpose-a",
+    "answers": [
+      {
+        "id": "technology-medium-git-purpose-a",
+        "text": "Do kontroli wersji kodu"
+      },
+      {
+        "id": "technology-medium-git-purpose-b",
+        "text": "Do tworzenia animacji 3D"
+      },
+      {
+        "id": "technology-medium-git-purpose-c",
+        "text": "Do diagnostyki baterii"
+      },
+      {
+        "id": "technology-medium-git-purpose-d",
+        "text": "Do drukowania etykiet"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-open-source",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co oznacza open source?",
+    "correctAnswerId": "technology-medium-open-source-a",
+    "answers": [
+      {
+        "id": "technology-medium-open-source-a",
+        "text": "Kod źródłowy dostępny do wglądu i modyfikacji"
+      },
+      {
+        "id": "technology-medium-open-source-b",
+        "text": "Program płatny abonamentowo"
+      },
+      {
+        "id": "technology-medium-open-source-c",
+        "text": "Urządzenie bezprzewodowe"
+      },
+      {
+        "id": "technology-medium-open-source-d",
+        "text": "Witrynę bez certyfikatu"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-bug-meaning",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co w programowaniu oznacza bug?",
+    "correctAnswerId": "technology-medium-bug-meaning-a",
+    "answers": [
+      {
+        "id": "technology-medium-bug-meaning-a",
+        "text": "Błąd w oprogramowaniu"
+      },
+      {
+        "id": "technology-medium-bug-meaning-b",
+        "text": "Nową funkcję aplikacji"
+      },
+      {
+        "id": "technology-medium-bug-meaning-c",
+        "text": "Rodzaj licencji"
+      },
+      {
+        "id": "technology-medium-bug-meaning-d",
+        "text": "Kopię zapasową projektu"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-compile-meaning",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co oznacza kompilacja programu?",
+    "correctAnswerId": "technology-medium-compile-meaning-a",
+    "answers": [
+      {
+        "id": "technology-medium-compile-meaning-a",
+        "text": "Tłumaczenie kodu źródłowego na postać wykonywalną"
+      },
+      {
+        "id": "technology-medium-compile-meaning-b",
+        "text": "Usuwanie plików tymczasowych"
+      },
+      {
+        "id": "technology-medium-compile-meaning-c",
+        "text": "Tworzenie grafiki do gry"
+      },
+      {
+        "id": "technology-medium-compile-meaning-d",
+        "text": "Skanowanie komputera"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-binary-system",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Ile cyfr używa system binarny?",
+    "correctAnswerId": "technology-medium-binary-system-a",
+    "answers": [
+      {
+        "id": "technology-medium-binary-system-a",
+        "text": "2"
+      },
+      {
+        "id": "technology-medium-binary-system-b",
+        "text": "8"
+      },
+      {
+        "id": "technology-medium-binary-system-c",
+        "text": "10"
+      },
+      {
+        "id": "technology-medium-binary-system-d",
+        "text": "16"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-cache-server",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego może służyć cache na serwerze?",
+    "correctAnswerId": "technology-medium-cache-server-a",
+    "answers": [
+      {
+        "id": "technology-medium-cache-server-a",
+        "text": "Do przyspieszania odpowiedzi przez przechowywanie często używanych danych"
+      },
+      {
+        "id": "technology-medium-cache-server-b",
+        "text": "Do nagrywania mikrofonu"
+      },
+      {
+        "id": "technology-medium-cache-server-c",
+        "text": "Do zwiększania liczby pikseli"
+      },
+      {
+        "id": "technology-medium-cache-server-d",
+        "text": "Do podłączania drukarki"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-virtual-machine",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Czym jest maszyna wirtualna?",
+    "correctAnswerId": "technology-medium-virtual-machine-a",
+    "answers": [
+      {
+        "id": "technology-medium-virtual-machine-a",
+        "text": "Wirtualnym komputerem działającym wewnątrz innego systemu"
+      },
+      {
+        "id": "technology-medium-virtual-machine-b",
+        "text": "Rodzajem kabla sieciowego"
+      },
+      {
+        "id": "technology-medium-virtual-machine-c",
+        "text": "Pamięcią w telefonie"
+      },
+      {
+        "id": "technology-medium-virtual-machine-d",
+        "text": "Monitorem dotykowym"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-container-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co odróżnia kontener od klasycznej maszyny wirtualnej?",
+    "correctAnswerId": "technology-medium-container-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-container-basic-a",
+        "text": "Kontenery zwykle współdzielą jądro systemu gospodarza"
+      },
+      {
+        "id": "technology-medium-container-basic-b",
+        "text": "Kontenery wymagają własnego monitora"
+      },
+      {
+        "id": "technology-medium-container-basic-c",
+        "text": "Maszyny wirtualne nie używają pamięci RAM"
+      },
+      {
+        "id": "technology-medium-container-basic-d",
+        "text": "Kontenery działają tylko bez internetu"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-responsive-web",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Co oznacza, że strona jest responsywna?",
+    "correctAnswerId": "technology-medium-responsive-web-a",
+    "answers": [
+      {
+        "id": "technology-medium-responsive-web-a",
+        "text": "Dostosowuje układ do różnych rozmiarów ekranów"
+      },
+      {
+        "id": "technology-medium-responsive-web-b",
+        "text": "Działa wyłącznie na komputerach stacjonarnych"
+      },
+      {
+        "id": "technology-medium-responsive-web-c",
+        "text": "Nie potrzebuje internetu"
+      },
+      {
+        "id": "technology-medium-responsive-web-d",
+        "text": "Jest zawsze zapisana w PDF"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-pixel-meaning",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Czym jest piksel?",
+    "correctAnswerId": "technology-medium-pixel-meaning-a",
+    "answers": [
+      {
+        "id": "technology-medium-pixel-meaning-a",
+        "text": "Najmniejszym elementem obrazu rastrowego"
+      },
+      {
+        "id": "technology-medium-pixel-meaning-b",
+        "text": "Rodzajem procesora"
+      },
+      {
+        "id": "technology-medium-pixel-meaning-c",
+        "text": "Typem pliku dźwiękowego"
+      },
+      {
+        "id": "technology-medium-pixel-meaning-d",
+        "text": "Jednostką pamięci RAM"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-megabyte-bytes",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Ile bajtów ma 1 megabajt w ujęciu binarnym?",
+    "correctAnswerId": "technology-medium-megabyte-bytes-a",
+    "answers": [
+      {
+        "id": "technology-medium-megabyte-bytes-a",
+        "text": "1 048 576"
+      },
+      {
+        "id": "technology-medium-megabyte-bytes-b",
+        "text": "1 000"
+      },
+      {
+        "id": "technology-medium-megabyte-bytes-c",
+        "text": "1 024"
+      },
+      {
+        "id": "technology-medium-megabyte-bytes-d",
+        "text": "1 000 000 000"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-search-index",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego służy indeks w bazie danych?",
+    "correctAnswerId": "technology-medium-search-index-a",
+    "answers": [
+      {
+        "id": "technology-medium-search-index-a",
+        "text": "Do przyspieszania wyszukiwania danych"
+      },
+      {
+        "id": "technology-medium-search-index-b",
+        "text": "Do szyfrowania tabel"
+      },
+      {
+        "id": "technology-medium-search-index-c",
+        "text": "Do zmiany koloru interfejsu"
+      },
+      {
+        "id": "technology-medium-search-index-d",
+        "text": "Do tworzenia backupu"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-cloud-saas",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Czym jest model SaaS?",
+    "correctAnswerId": "technology-medium-cloud-saas-a",
+    "answers": [
+      {
+        "id": "technology-medium-cloud-saas-a",
+        "text": "Udostępnianiem oprogramowania jako usługi przez internet"
+      },
+      {
+        "id": "technology-medium-cloud-saas-b",
+        "text": "Sprzedażą wyłącznie sprzętu komputerowego"
+      },
+      {
+        "id": "technology-medium-cloud-saas-c",
+        "text": "Lokalną instalacją systemu operacyjnego"
+      },
+      {
+        "id": "technology-medium-cloud-saas-d",
+        "text": "Metodą czyszczenia cache"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-rest-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "W kontekście API, co zwykle oznacza REST?",
+    "correctAnswerId": "technology-medium-rest-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-rest-basic-a",
+        "text": "Styl projektowania usług sieciowych oparty o zasoby"
+      },
+      {
+        "id": "technology-medium-rest-basic-b",
+        "text": "Program do testowania monitorów"
+      },
+      {
+        "id": "technology-medium-rest-basic-c",
+        "text": "Rodzaj fizycznego serwera"
+      },
+      {
+        "id": "technology-medium-rest-basic-d",
+        "text": "Sposób szyfrowania Wi‑Fi"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-json-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego często używa się formatu JSON?",
+    "correctAnswerId": "technology-medium-json-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-json-basic-a",
+        "text": "Do wymiany danych między systemami"
+      },
+      {
+        "id": "technology-medium-json-basic-b",
+        "text": "Do drukowania dokumentów w wysokiej jakości"
+      },
+      {
+        "id": "technology-medium-json-basic-c",
+        "text": "Do kompresji wideo"
+      },
+      {
+        "id": "technology-medium-json-basic-d",
+        "text": "Do projektowania obwodów"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-tcp-role",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Za co odpowiada TCP?",
+    "correctAnswerId": "technology-medium-tcp-role-a",
+    "answers": [
+      {
+        "id": "technology-medium-tcp-role-a",
+        "text": "Za niezawodną transmisję danych w sieci"
+      },
+      {
+        "id": "technology-medium-tcp-role-b",
+        "text": "Za wyświetlanie stron internetowych"
+      },
+      {
+        "id": "technology-medium-tcp-role-c",
+        "text": "Za rysowanie grafiki 3D"
+      },
+      {
+        "id": "technology-medium-tcp-role-d",
+        "text": "Za działanie ekranu dotykowego"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-udp-characteristic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Która cecha najlepiej opisuje UDP?",
+    "correctAnswerId": "technology-medium-udp-characteristic-a",
+    "answers": [
+      {
+        "id": "technology-medium-udp-characteristic-a",
+        "text": "Jest szybszy, ale nie gwarantuje dostarczenia pakietów"
+      },
+      {
+        "id": "technology-medium-udp-characteristic-b",
+        "text": "Zawsze szyfruje dane end-to-end"
+      },
+      {
+        "id": "technology-medium-udp-characteristic-c",
+        "text": "Służy wyłącznie do stron WWW"
+      },
+      {
+        "id": "technology-medium-udp-characteristic-d",
+        "text": "Działa tylko w sieciach lokalnych"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-cookies-session",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Dlaczego strony używają cookie sesyjnych?",
+    "correctAnswerId": "technology-medium-cookies-session-a",
+    "answers": [
+      {
+        "id": "technology-medium-cookies-session-a",
+        "text": "Aby utrzymywać stan użytkownika między żądaniami"
+      },
+      {
+        "id": "technology-medium-cookies-session-b",
+        "text": "Aby zwiększyć jasność ekranu"
+      },
+      {
+        "id": "technology-medium-cookies-session-c",
+        "text": "Aby aktualizować BIOS"
+      },
+      {
+        "id": "technology-medium-cookies-session-d",
+        "text": "Aby chłodzić serwer"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-markdown-purpose",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Do czego służy Markdown?",
+    "correctAnswerId": "technology-medium-markdown-purpose-a",
+    "answers": [
+      {
+        "id": "technology-medium-markdown-purpose-a",
+        "text": "Do prostego formatowania tekstu"
+      },
+      {
+        "id": "technology-medium-markdown-purpose-b",
+        "text": "Do kompilowania sterowników"
+      },
+      {
+        "id": "technology-medium-markdown-purpose-c",
+        "text": "Do zarządzania kartą graficzną"
+      },
+      {
+        "id": "technology-medium-markdown-purpose-d",
+        "text": "Do testowania wydajności sieci"
+      }
+    ]
+  },
+  {
+    "key": "technology-medium-ai-basic",
+    "categoryKey": "technology",
+    "difficulty": "Medium",
+    "text": "Czym najogólniej jest sztuczna inteligencja?",
+    "correctAnswerId": "technology-medium-ai-basic-a",
+    "answers": [
+      {
+        "id": "technology-medium-ai-basic-a",
+        "text": "Dziedziną tworzącą systemy wykonujące zadania wymagające zwykle ludzkiej inteligencji"
+      },
+      {
+        "id": "technology-medium-ai-basic-b",
+        "text": "Wyłącznie robotem humanoidalnym"
+      },
+      {
+        "id": "technology-medium-ai-basic-c",
+        "text": "Rodzajem systemu plików"
+      },
+      {
+        "id": "technology-medium-ai-basic-d",
+        "text": "Nazwą protokołu Wi‑Fi"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-binary-8bit",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Jaką maksymalną wartość dziesiętną można zapisać na 8 bitach bez znaku?",
+    "correctAnswerId": "technology-mediumhard-binary-8bit-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-binary-8bit-a",
+        "text": "255"
+      },
+      {
+        "id": "technology-mediumhard-binary-8bit-b",
+        "text": "127"
+      },
+      {
+        "id": "technology-mediumhard-binary-8bit-c",
+        "text": "256"
+      },
+      {
+        "id": "technology-mediumhard-binary-8bit-d",
+        "text": "511"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-normalization",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Po co stosuje się normalizację bazy danych?",
+    "correctAnswerId": "technology-mediumhard-normalization-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-normalization-a",
+        "text": "Aby ograniczyć nadmiarowość i poprawić spójność danych"
+      },
+      {
+        "id": "technology-mediumhard-normalization-b",
+        "text": "Aby zwiększyć jasność interfejsu"
+      },
+      {
+        "id": "technology-mediumhard-normalization-c",
+        "text": "Aby przyspieszyć procesor"
+      },
+      {
+        "id": "technology-mediumhard-normalization-d",
+        "text": "Aby zamienić bazę na plik PDF"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-big-o",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Co opisuje notacja Big O?",
+    "correctAnswerId": "technology-mediumhard-big-o-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-big-o-a",
+        "text": "Złożoność czasową lub pamięciową algorytmu"
+      },
+      {
+        "id": "technology-mediumhard-big-o-b",
+        "text": "Wersję systemu operacyjnego"
+      },
+      {
+        "id": "technology-mediumhard-big-o-c",
+        "text": "Rozmiar ekranu"
+      },
+      {
+        "id": "technology-mediumhard-big-o-d",
+        "text": "Moc zasilacza"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-recursion",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Czym jest rekurencja w programowaniu?",
+    "correctAnswerId": "technology-mediumhard-recursion-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-recursion-a",
+        "text": "Techniką, w której funkcja wywołuje samą siebie"
+      },
+      {
+        "id": "technology-mediumhard-recursion-b",
+        "text": "Sposobem tworzenia kopii zapasowej"
+      },
+      {
+        "id": "technology-mediumhard-recursion-c",
+        "text": "Typem połączenia Bluetooth"
+      },
+      {
+        "id": "technology-mediumhard-recursion-d",
+        "text": "Metodą szyfrowania dysków"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-index-primary",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest główna rola klucza głównego w tabeli bazy danych?",
+    "correctAnswerId": "technology-mediumhard-index-primary-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-index-primary-a",
+        "text": "Jednoznaczna identyfikacja rekordu"
+      },
+      {
+        "id": "technology-mediumhard-index-primary-b",
+        "text": "Zwiększanie rozdzielczości ekranu"
+      },
+      {
+        "id": "technology-mediumhard-index-primary-c",
+        "text": "Szyfrowanie połączeń HTTP"
+      },
+      {
+        "id": "technology-mediumhard-index-primary-d",
+        "text": "Zmniejszanie zużycia baterii"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-cdn-purpose",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Do czego służy CDN?",
+    "correctAnswerId": "technology-mediumhard-cdn-purpose-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-cdn-purpose-a",
+        "text": "Do szybszego dostarczania treści z serwerów bliskich użytkownikowi"
+      },
+      {
+        "id": "technology-mediumhard-cdn-purpose-b",
+        "text": "Do kompresji procesora"
+      },
+      {
+        "id": "technology-mediumhard-cdn-purpose-c",
+        "text": "Do tworzenia tabel w Excelu"
+      },
+      {
+        "id": "technology-mediumhard-cdn-purpose-d",
+        "text": "Do skanowania dokumentów papierowych"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-load-balancer",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Jaką funkcję pełni load balancer?",
+    "correctAnswerId": "technology-mediumhard-load-balancer-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-load-balancer-a",
+        "text": "Rozdziela ruch między wiele serwerów"
+      },
+      {
+        "id": "technology-mediumhard-load-balancer-b",
+        "text": "Konwertuje obrazy do PDF"
+      },
+      {
+        "id": "technology-mediumhard-load-balancer-c",
+        "text": "Naprawia uszkodzony dysk"
+      },
+      {
+        "id": "technology-mediumhard-load-balancer-d",
+        "text": "Tłumaczy kod źródłowy"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-oauth-basic",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Do czego służy OAuth 2.0?",
+    "correctAnswerId": "technology-mediumhard-oauth-basic-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-oauth-basic-a",
+        "text": "Do delegowania dostępu do zasobów bez ujawniania hasła"
+      },
+      {
+        "id": "technology-mediumhard-oauth-basic-b",
+        "text": "Do kompresji plików audio"
+      },
+      {
+        "id": "technology-mediumhard-oauth-basic-c",
+        "text": "Do formatowania dysku"
+      },
+      {
+        "id": "technology-mediumhard-oauth-basic-d",
+        "text": "Do zarządzania temperaturą CPU"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-public-private-key",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Które stwierdzenie o kryptografii asymetrycznej jest prawdziwe?",
+    "correctAnswerId": "technology-mediumhard-public-private-key-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-public-private-key-a",
+        "text": "Używa pary kluczy: publicznego i prywatnego"
+      },
+      {
+        "id": "technology-mediumhard-public-private-key-b",
+        "text": "Zawsze używa jednego wspólnego hasła"
+      },
+      {
+        "id": "technology-mediumhard-public-private-key-c",
+        "text": "Nie służy do podpisów cyfrowych"
+      },
+      {
+        "id": "technology-mediumhard-public-private-key-d",
+        "text": "Działa tylko offline"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-docker-image",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Czym w Dockerze jest obraz, czyli image?",
+    "correctAnswerId": "technology-mediumhard-docker-image-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-docker-image-a",
+        "text": "Szablonem używanym do uruchamiania kontenerów"
+      },
+      {
+        "id": "technology-mediumhard-docker-image-b",
+        "text": "Gotowym zrzutem ekranu z terminala"
+      },
+      {
+        "id": "technology-mediumhard-docker-image-c",
+        "text": "Typem sieci bezprzewodowej"
+      },
+      {
+        "id": "technology-mediumhard-docker-image-d",
+        "text": "Bazą danych dla aplikacji"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-nosql-basic",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Które stwierdzenie najlepiej opisuje bazy NoSQL?",
+    "correctAnswerId": "technology-mediumhard-nosql-basic-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-nosql-basic-a",
+        "text": "Nie opierają się wyłącznie na klasycznym modelu relacyjnym"
+      },
+      {
+        "id": "technology-mediumhard-nosql-basic-b",
+        "text": "Zawsze wymagają języka SQL"
+      },
+      {
+        "id": "technology-mediumhard-nosql-basic-c",
+        "text": "Działają tylko lokalnie"
+      },
+      {
+        "id": "technology-mediumhard-nosql-basic-d",
+        "text": "Służą wyłącznie do przechowywania zdjęć"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-raid-basic",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Po co stosuje się macierze RAID?",
+    "correctAnswerId": "technology-mediumhard-raid-basic-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-raid-basic-a",
+        "text": "Aby poprawić niezawodność lub wydajność przechowywania danych"
+      },
+      {
+        "id": "technology-mediumhard-raid-basic-b",
+        "text": "Aby zwiększyć jasność monitora"
+      },
+      {
+        "id": "technology-mediumhard-raid-basic-c",
+        "text": "Aby szyfrować ruch Wi‑Fi"
+      },
+      {
+        "id": "technology-mediumhard-raid-basic-d",
+        "text": "Aby programować strony internetowe"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-latency-vs-throughput",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Co najlepiej odróżnia opóźnienie od przepustowości?",
+    "correctAnswerId": "technology-mediumhard-latency-vs-throughput-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-latency-vs-throughput-a",
+        "text": "Opóźnienie to czas reakcji, a przepustowość to ilość danych w czasie"
+      },
+      {
+        "id": "technology-mediumhard-latency-vs-throughput-b",
+        "text": "To dwa określenia na to samo"
+      },
+      {
+        "id": "technology-mediumhard-latency-vs-throughput-c",
+        "text": "Opóźnienie dotyczy tylko dysków, a przepustowość tylko internetu"
+      },
+      {
+        "id": "technology-mediumhard-latency-vs-throughput-d",
+        "text": "Przepustowość zawsze mierzy się w stopniach Celsjusza"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-dns-cache",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Jaki jest efekt działania cache DNS?",
+    "correctAnswerId": "technology-mediumhard-dns-cache-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-dns-cache-a",
+        "text": "Szybsze ponowne odnajdywanie znanych adresów"
+      },
+      {
+        "id": "technology-mediumhard-dns-cache-b",
+        "text": "Usunięcie potrzeby posiadania adresów IP"
+      },
+      {
+        "id": "technology-mediumhard-dns-cache-c",
+        "text": "Stałe szyfrowanie wszystkich plików"
+      },
+      {
+        "id": "technology-mediumhard-dns-cache-d",
+        "text": "Zwiększenie pojemności dysku"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-tcp-three-way",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Ile etapów ma klasyczny three-way handshake w TCP?",
+    "correctAnswerId": "technology-mediumhard-tcp-three-way-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-tcp-three-way-a",
+        "text": "3"
+      },
+      {
+        "id": "technology-mediumhard-tcp-three-way-b",
+        "text": "2"
+      },
+      {
+        "id": "technology-mediumhard-tcp-three-way-c",
+        "text": "4"
+      },
+      {
+        "id": "technology-mediumhard-tcp-three-way-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-crud-meaning",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza skrót CRUD?",
+    "correctAnswerId": "technology-mediumhard-crud-meaning-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-crud-meaning-a",
+        "text": "Create, Read, Update, Delete"
+      },
+      {
+        "id": "technology-mediumhard-crud-meaning-b",
+        "text": "Copy, Run, Upload, Deploy"
+      },
+      {
+        "id": "technology-mediumhard-crud-meaning-c",
+        "text": "Cache, Route, Use, Debug"
+      },
+      {
+        "id": "technology-mediumhard-crud-meaning-d",
+        "text": "Create, Render, Undo, Download"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-compiler-vs-interpreter",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Które stwierdzenie najlepiej porównuje kompilator i interpreter?",
+    "correctAnswerId": "technology-mediumhard-compiler-vs-interpreter-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-compiler-vs-interpreter-a",
+        "text": "Kompilator tłumaczy zwykle cały program przed uruchomieniem, a interpreter wykonuje kod krok po kroku"
+      },
+      {
+        "id": "technology-mediumhard-compiler-vs-interpreter-b",
+        "text": "Interpreter zawsze tworzy plik wykonywalny"
+      },
+      {
+        "id": "technology-mediumhard-compiler-vs-interpreter-c",
+        "text": "Kompilator działa tylko w przeglądarce"
+      },
+      {
+        "id": "technology-mediumhard-compiler-vs-interpreter-d",
+        "text": "To dokładnie to samo"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-ci-cd",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Do czego służy praktyka CI/CD?",
+    "correctAnswerId": "technology-mediumhard-ci-cd-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-ci-cd-a",
+        "text": "Do automatyzacji budowania, testowania i wdrażania aplikacji"
+      },
+      {
+        "id": "technology-mediumhard-ci-cd-b",
+        "text": "Do czyszczenia monitorów"
+      },
+      {
+        "id": "technology-mediumhard-ci-cd-c",
+        "text": "Do zwiększania pamięci RAM"
+      },
+      {
+        "id": "technology-mediumhard-ci-cd-d",
+        "text": "Do projektowania ikon aplikacji"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-dom-web",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Czym w kontekście WWW jest DOM?",
+    "correctAnswerId": "technology-mediumhard-dom-web-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-dom-web-a",
+        "text": "Strukturą reprezentującą dokument strony w pamięci przeglądarki"
+      },
+      {
+        "id": "technology-mediumhard-dom-web-b",
+        "text": "Rodzajem protokołu VPN"
+      },
+      {
+        "id": "technology-mediumhard-dom-web-c",
+        "text": "Trybem oszczędzania baterii"
+      },
+      {
+        "id": "technology-mediumhard-dom-web-d",
+        "text": "Sposobem chłodzenia serwera"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-garbage-collector",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Za co odpowiada garbage collector?",
+    "correctAnswerId": "technology-mediumhard-garbage-collector-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-garbage-collector-a",
+        "text": "Za automatyczne odzyskiwanie nieużywanej pamięci"
+      },
+      {
+        "id": "technology-mediumhard-garbage-collector-b",
+        "text": "Za szyfrowanie dysku twardego"
+      },
+      {
+        "id": "technology-mediumhard-garbage-collector-c",
+        "text": "Za przyspieszanie sieci Wi‑Fi"
+      },
+      {
+        "id": "technology-mediumhard-garbage-collector-d",
+        "text": "Za tworzenie kopii papierowych"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-immutable-data",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza, że obiekt jest immutable?",
+    "correctAnswerId": "technology-mediumhard-immutable-data-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-immutable-data-a",
+        "text": "Nie można zmienić jego stanu po utworzeniu"
+      },
+      {
+        "id": "technology-mediumhard-immutable-data-b",
+        "text": "Można go edytować bez ograniczeń"
+      },
+      {
+        "id": "technology-mediumhard-immutable-data-c",
+        "text": "Istnieje tylko w bazie danych"
+      },
+      {
+        "id": "technology-mediumhard-immutable-data-d",
+        "text": "Działa wyłącznie offline"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-encryption-symmetric",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Jak działa szyfrowanie symetryczne?",
+    "correctAnswerId": "technology-mediumhard-encryption-symmetric-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-encryption-symmetric-a",
+        "text": "Do szyfrowania i deszyfrowania używa tego samego klucza"
+      },
+      {
+        "id": "technology-mediumhard-encryption-symmetric-b",
+        "text": "Wymaga dwóch różnych par kluczy"
+      },
+      {
+        "id": "technology-mediumhard-encryption-symmetric-c",
+        "text": "Nie pozwala odszyfrować danych"
+      },
+      {
+        "id": "technology-mediumhard-encryption-symmetric-d",
+        "text": "Stosuje się je tylko do obrazu"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-http-status-404",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza kod HTTP 404?",
+    "correctAnswerId": "technology-mediumhard-http-status-404-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-http-status-404-a",
+        "text": "Nie znaleziono zasobu"
+      },
+      {
+        "id": "technology-mediumhard-http-status-404-b",
+        "text": "Błąd serwera wewnętrznego"
+      },
+      {
+        "id": "technology-mediumhard-http-status-404-c",
+        "text": "Brak uprawnień administratora"
+      },
+      {
+        "id": "technology-mediumhard-http-status-404-d",
+        "text": "Połączenie zostało zaszyfrowane"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-http-status-500",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Co oznacza kod HTTP 500?",
+    "correctAnswerId": "technology-mediumhard-http-status-500-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-http-status-500-a",
+        "text": "Wewnętrzny błąd serwera"
+      },
+      {
+        "id": "technology-mediumhard-http-status-500-b",
+        "text": "Strona została przeniesiona na stałe"
+      },
+      {
+        "id": "technology-mediumhard-http-status-500-c",
+        "text": "Użytkownik podał złe hasło"
+      },
+      {
+        "id": "technology-mediumhard-http-status-500-d",
+        "text": "Nie znaleziono pliku CSS"
+      }
+    ]
+  },
+  {
+    "key": "technology-mediumhard-ai-ml-difference",
+    "categoryKey": "technology",
+    "difficulty": "MediumHard",
+    "text": "Które zdanie najlepiej opisuje relację AI i machine learning?",
+    "correctAnswerId": "technology-mediumhard-ai-ml-difference-a",
+    "answers": [
+      {
+        "id": "technology-mediumhard-ai-ml-difference-a",
+        "text": "Machine learning jest poddziedziną sztucznej inteligencji"
+      },
+      {
+        "id": "technology-mediumhard-ai-ml-difference-b",
+        "text": "To pojęcia całkowicie niezwiązane"
+      },
+      {
+        "id": "technology-mediumhard-ai-ml-difference-c",
+        "text": "AI jest częścią drukowania 3D"
+      },
+      {
+        "id": "technology-mediumhard-ai-ml-difference-d",
+        "text": "Machine learning oznacza wyłącznie robotykę"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-osi-layer-http",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "W której warstwie modelu OSI najczęściej umieszcza się protokół HTTP?",
+    "correctAnswerId": "technology-hard-osi-layer-http-a",
+    "answers": [
+      {
+        "id": "technology-hard-osi-layer-http-a",
+        "text": "Warstwa aplikacji"
+      },
+      {
+        "id": "technology-hard-osi-layer-http-b",
+        "text": "Warstwa fizyczna"
+      },
+      {
+        "id": "technology-hard-osi-layer-http-c",
+        "text": "Warstwa łącza danych"
+      },
+      {
+        "id": "technology-hard-osi-layer-http-d",
+        "text": "Warstwa sieci"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-ipv4-bits",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Ile bitów ma adres IPv4?",
+    "correctAnswerId": "technology-hard-ipv4-bits-a",
+    "answers": [
+      {
+        "id": "technology-hard-ipv4-bits-a",
+        "text": "32"
+      },
+      {
+        "id": "technology-hard-ipv4-bits-b",
+        "text": "16"
+      },
+      {
+        "id": "technology-hard-ipv4-bits-c",
+        "text": "64"
+      },
+      {
+        "id": "technology-hard-ipv4-bits-d",
+        "text": "128"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-ipv6-bits",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Ile bitów ma adres IPv6?",
+    "correctAnswerId": "technology-hard-ipv6-bits-a",
+    "answers": [
+      {
+        "id": "technology-hard-ipv6-bits-a",
+        "text": "128"
+      },
+      {
+        "id": "technology-hard-ipv6-bits-b",
+        "text": "64"
+      },
+      {
+        "id": "technology-hard-ipv6-bits-c",
+        "text": "32"
+      },
+      {
+        "id": "technology-hard-ipv6-bits-d",
+        "text": "256"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-acid-database",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Która właściwość ACID oznacza, że transakcja wykonuje się w całości albo wcale?",
+    "correctAnswerId": "technology-hard-acid-database-a",
+    "answers": [
+      {
+        "id": "technology-hard-acid-database-a",
+        "text": "Atomowość"
+      },
+      {
+        "id": "technology-hard-acid-database-b",
+        "text": "Trwałość"
+      },
+      {
+        "id": "technology-hard-acid-database-c",
+        "text": "Izolacja"
+      },
+      {
+        "id": "technology-hard-acid-database-d",
+        "text": "Spójność"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-deadlock",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Czym w informatyce jest deadlock?",
+    "correctAnswerId": "technology-hard-deadlock-a",
+    "answers": [
+      {
+        "id": "technology-hard-deadlock-a",
+        "text": "Stan wzajemnego blokowania się procesów czekających na zasoby"
+      },
+      {
+        "id": "technology-hard-deadlock-b",
+        "text": "Automatycznym odzyskiwaniem pamięci"
+      },
+      {
+        "id": "technology-hard-deadlock-c",
+        "text": "Rodzajem szyfrowania danych"
+      },
+      {
+        "id": "technology-hard-deadlock-d",
+        "text": "Błędem rozdzielczości ekranu"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-time-complexity-binary-search",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Jaka jest złożoność czasowa wyszukiwania binarnego w posortowanej tablicy?",
+    "correctAnswerId": "technology-hard-time-complexity-binary-search-a",
+    "answers": [
+      {
+        "id": "technology-hard-time-complexity-binary-search-a",
+        "text": "O(log n)"
+      },
+      {
+        "id": "technology-hard-time-complexity-binary-search-b",
+        "text": "O(n)"
+      },
+      {
+        "id": "technology-hard-time-complexity-binary-search-c",
+        "text": "O(n log n)"
+      },
+      {
+        "id": "technology-hard-time-complexity-binary-search-d",
+        "text": "O(1)"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-time-complexity-linear-search",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Jaka jest złożoność czasowa wyszukiwania liniowego w najgorszym przypadku?",
+    "correctAnswerId": "technology-hard-time-complexity-linear-search-a",
+    "answers": [
+      {
+        "id": "technology-hard-time-complexity-linear-search-a",
+        "text": "O(n)"
+      },
+      {
+        "id": "technology-hard-time-complexity-linear-search-b",
+        "text": "O(1)"
+      },
+      {
+        "id": "technology-hard-time-complexity-linear-search-c",
+        "text": "O(log n)"
+      },
+      {
+        "id": "technology-hard-time-complexity-linear-search-d",
+        "text": "O(n²)"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-normalization-third-form",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Jaki jest główny cel trzeciej postaci normalnej (3NF)?",
+    "correctAnswerId": "technology-hard-normalization-third-form-a",
+    "answers": [
+      {
+        "id": "technology-hard-normalization-third-form-a",
+        "text": "Usunięcie zależności przechodnich między atrybutami niekluczowymi"
+      },
+      {
+        "id": "technology-hard-normalization-third-form-b",
+        "text": "Zwiększenie rozmiaru tabel"
+      },
+      {
+        "id": "technology-hard-normalization-third-form-c",
+        "text": "Dodanie jak największej liczby duplikatów"
+      },
+      {
+        "id": "technology-hard-normalization-third-form-d",
+        "text": "Zamiana wszystkich kolumn na tekst"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-rsa-basic",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Na jakim problemie matematycznym opiera się bezpieczeństwo RSA w klasycznym ujęciu?",
+    "correctAnswerId": "technology-hard-rsa-basic-a",
+    "answers": [
+      {
+        "id": "technology-hard-rsa-basic-a",
+        "text": "Trudności faktoryzacji dużych liczb"
+      },
+      {
+        "id": "technology-hard-rsa-basic-b",
+        "text": "Trudności sortowania tablic"
+      },
+      {
+        "id": "technology-hard-rsa-basic-c",
+        "text": "Obliczaniu średniej arytmetycznej"
+      },
+      {
+        "id": "technology-hard-rsa-basic-d",
+        "text": "Kompresji bezstratnej"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-sql-join-inner",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Co zwraca INNER JOIN w SQL?",
+    "correctAnswerId": "technology-hard-sql-join-inner-a",
+    "answers": [
+      {
+        "id": "technology-hard-sql-join-inner-a",
+        "text": "Tylko wiersze mające dopasowanie w obu tabelach"
+      },
+      {
+        "id": "technology-hard-sql-join-inner-b",
+        "text": "Wszystkie wiersze z lewej tabeli niezależnie od dopasowania"
+      },
+      {
+        "id": "technology-hard-sql-join-inner-c",
+        "text": "Wszystkie możliwe kombinacje wierszy"
+      },
+      {
+        "id": "technology-hard-sql-join-inner-d",
+        "text": "Tylko puste rekordy"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-sql-left-join",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Co zwraca LEFT JOIN w SQL?",
+    "correctAnswerId": "technology-hard-sql-left-join-a",
+    "answers": [
+      {
+        "id": "technology-hard-sql-left-join-a",
+        "text": "Wszystkie wiersze z lewej tabeli oraz dopasowane z prawej"
+      },
+      {
+        "id": "technology-hard-sql-left-join-b",
+        "text": "Tylko wiersze wspólne dla obu tabel"
+      },
+      {
+        "id": "technology-hard-sql-left-join-c",
+        "text": "Wyłącznie wiersze z prawej tabeli"
+      },
+      {
+        "id": "technology-hard-sql-left-join-d",
+        "text": "Tylko rekordy bez klucza głównego"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-big-endian",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Co oznacza zapis big-endian?",
+    "correctAnswerId": "technology-hard-big-endian-a",
+    "answers": [
+      {
+        "id": "technology-hard-big-endian-a",
+        "text": "Najbardziej znaczący bajt jest zapisywany jako pierwszy"
+      },
+      {
+        "id": "technology-hard-big-endian-b",
+        "text": "Najmniej znaczący bajt jest zapisywany jako pierwszy"
+      },
+      {
+        "id": "technology-hard-big-endian-c",
+        "text": "Bajty są zapisywane losowo"
+      },
+      {
+        "id": "technology-hard-big-endian-d",
+        "text": "Dane są zawsze kompresowane"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-stack-overflow",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Kiedy może dojść do stack overflow?",
+    "correctAnswerId": "technology-hard-stack-overflow-a",
+    "answers": [
+      {
+        "id": "technology-hard-stack-overflow-a",
+        "text": "Gdy stos wywołań przekroczy dostępną pamięć, np. przez zbyt głęboką rekurencję"
+      },
+      {
+        "id": "technology-hard-stack-overflow-b",
+        "text": "Gdy dysk SSD się zapełni"
+      },
+      {
+        "id": "technology-hard-stack-overflow-c",
+        "text": "Gdy monitor ma za dużą rozdzielczość"
+      },
+      {
+        "id": "technology-hard-stack-overflow-d",
+        "text": "Gdy router straci sygnał"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-race-condition",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Czym jest race condition?",
+    "correctAnswerId": "technology-hard-race-condition-a",
+    "answers": [
+      {
+        "id": "technology-hard-race-condition-a",
+        "text": "Błędem wynikającym z niekontrolowanego współbieżnego dostępu do współdzielonych danych"
+      },
+      {
+        "id": "technology-hard-race-condition-b",
+        "text": "Metodą szyfrowania plików"
+      },
+      {
+        "id": "technology-hard-race-condition-c",
+        "text": "Sposobem tworzenia kopii zapasowej"
+      },
+      {
+        "id": "technology-hard-race-condition-d",
+        "text": "Rodzajem systemu plików"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-cap-theorem",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Które trzy właściwości opisuje CAP theorem?",
+    "correctAnswerId": "technology-hard-cap-theorem-a",
+    "answers": [
+      {
+        "id": "technology-hard-cap-theorem-a",
+        "text": "Spójność, dostępność i tolerancję podziału sieci"
+      },
+      {
+        "id": "technology-hard-cap-theorem-b",
+        "text": "Szybkość, pojemność i bezpieczeństwo"
+      },
+      {
+        "id": "technology-hard-cap-theorem-c",
+        "text": "Kompresję, autoryzację i prywatność"
+      },
+      {
+        "id": "technology-hard-cap-theorem-d",
+        "text": "Cache, API i protokół"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-compiler-optimization",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Po co stosuje się optymalizacje kompilatora?",
+    "correctAnswerId": "technology-hard-compiler-optimization-a",
+    "answers": [
+      {
+        "id": "technology-hard-compiler-optimization-a",
+        "text": "Aby poprawić wydajność lub zmniejszyć rozmiar kodu wynikowego"
+      },
+      {
+        "id": "technology-hard-compiler-optimization-b",
+        "text": "Aby zwiększyć wielkość plików źródłowych"
+      },
+      {
+        "id": "technology-hard-compiler-optimization-c",
+        "text": "Aby usunąć potrzebę testów"
+      },
+      {
+        "id": "technology-hard-compiler-optimization-d",
+        "text": "Aby zamienić język programowania"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-tls-handshake",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Jaki jest główny cel handshake w TLS?",
+    "correctAnswerId": "technology-hard-tls-handshake-a",
+    "answers": [
+      {
+        "id": "technology-hard-tls-handshake-a",
+        "text": "Uzgodnienie parametrów szyfrowania i bezpieczne rozpoczęcie sesji"
+      },
+      {
+        "id": "technology-hard-tls-handshake-b",
+        "text": "Przydzielenie adresu IP routerowi"
+      },
+      {
+        "id": "technology-hard-tls-handshake-c",
+        "text": "Aktualizacja sterownika drukarki"
+      },
+      {
+        "id": "technology-hard-tls-handshake-d",
+        "text": "Zmiana rozdzielczości strony"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-kernel-role",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Jaka jest główna rola jądra systemu operacyjnego?",
+    "correctAnswerId": "technology-hard-kernel-role-a",
+    "answers": [
+      {
+        "id": "technology-hard-kernel-role-a",
+        "text": "Zarządzanie zasobami sprzętowymi i podstawowymi usługami systemu"
+      },
+      {
+        "id": "technology-hard-kernel-role-b",
+        "text": "Tworzenie prezentacji multimedialnych"
+      },
+      {
+        "id": "technology-hard-kernel-role-c",
+        "text": "Projektowanie ikon pulpitu"
+      },
+      {
+        "id": "technology-hard-kernel-role-d",
+        "text": "Przechowywanie zdjęć użytkownika"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-garbage-collector-stoptheworld",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Co oznacza określenie stop-the-world w kontekście garbage collectora?",
+    "correctAnswerId": "technology-hard-garbage-collector-stoptheworld-a",
+    "answers": [
+      {
+        "id": "technology-hard-garbage-collector-stoptheworld-a",
+        "text": "Tymczasowe wstrzymanie wykonywania aplikacji podczas części pracy GC"
+      },
+      {
+        "id": "technology-hard-garbage-collector-stoptheworld-b",
+        "text": "Całkowite usunięcie systemu operacyjnego"
+      },
+      {
+        "id": "technology-hard-garbage-collector-stoptheworld-c",
+        "text": "Przerwanie działania internetu"
+      },
+      {
+        "id": "technology-hard-garbage-collector-stoptheworld-d",
+        "text": "Wyłączenie monitora po bezczynności"
+      }
+    ]
+  },
+  {
+    "key": "technology-hard-eventual-consistency",
+    "categoryKey": "technology",
+    "difficulty": "Hard",
+    "text": "Co oznacza eventual consistency w systemach rozproszonych?",
+    "correctAnswerId": "technology-hard-eventual-consistency-a",
+    "answers": [
+      {
+        "id": "technology-hard-eventual-consistency-a",
+        "text": "Dane mogą być chwilowo niespójne, ale z czasem staną się zgodne"
+      },
+      {
+        "id": "technology-hard-eventual-consistency-b",
+        "text": "Wszystkie repliki są zawsze identyczne natychmiast"
+      },
+      {
+        "id": "technology-hard-eventual-consistency-c",
+        "text": "System działa wyłącznie offline"
+      },
+      {
+        "id": "technology-hard-eventual-consistency-d",
+        "text": "Baza danych nie przyjmuje zapisów"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "gaming-easy-mario-company",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Która firma stworzyła postać Mario?",
+    "correctAnswerId": "gaming-easy-mario-company-a",
+    "answers": [
+      {
+        "id": "gaming-easy-mario-company-a",
+        "text": "Nintendo"
+      },
+      {
+        "id": "gaming-easy-mario-company-b",
+        "text": "Sega"
+      },
+      {
+        "id": "gaming-easy-mario-company-c",
+        "text": "Sony"
+      },
+      {
+        "id": "gaming-easy-mario-company-d",
+        "text": "Capcom"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-minecraft-dev",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Kto stworzył grę Minecraft?",
+    "correctAnswerId": "gaming-easy-minecraft-dev-a",
+    "answers": [
+      {
+        "id": "gaming-easy-minecraft-dev-a",
+        "text": "Markus Persson"
+      },
+      {
+        "id": "gaming-easy-minecraft-dev-b",
+        "text": "Hideo Kojima"
+      },
+      {
+        "id": "gaming-easy-minecraft-dev-c",
+        "text": "Gabe Newell"
+      },
+      {
+        "id": "gaming-easy-minecraft-dev-d",
+        "text": "Shigeru Miyamoto"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-pacman-yellow",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się żółta postać z klasycznej gry zręcznościowej zjadająca kropki?",
+    "correctAnswerId": "gaming-easy-pacman-yellow-a",
+    "answers": [
+      {
+        "id": "gaming-easy-pacman-yellow-a",
+        "text": "Pac-Man"
+      },
+      {
+        "id": "gaming-easy-pacman-yellow-b",
+        "text": "Sonic"
+      },
+      {
+        "id": "gaming-easy-pacman-yellow-c",
+        "text": "Kirby"
+      },
+      {
+        "id": "gaming-easy-pacman-yellow-d",
+        "text": "Crash Bandicoot"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-tetris-shapes",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Na układaniu jakich elementów polega gra Tetris?",
+    "correctAnswerId": "gaming-easy-tetris-shapes-a",
+    "answers": [
+      {
+        "id": "gaming-easy-tetris-shapes-a",
+        "text": "Klocków"
+      },
+      {
+        "id": "gaming-easy-tetris-shapes-b",
+        "text": "Kart"
+      },
+      {
+        "id": "gaming-easy-tetris-shapes-c",
+        "text": "Planet"
+      },
+      {
+        "id": "gaming-easy-tetris-shapes-d",
+        "text": "Samochodów"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-pokemon-capture",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "W czym trenerzy łapią Pokémony?",
+    "correctAnswerId": "gaming-easy-pokemon-capture-a",
+    "answers": [
+      {
+        "id": "gaming-easy-pokemon-capture-a",
+        "text": "W Poké Ballach"
+      },
+      {
+        "id": "gaming-easy-pokemon-capture-b",
+        "text": "W skrzyniach"
+      },
+      {
+        "id": "gaming-easy-pokemon-capture-c",
+        "text": "W kapsułach energii"
+      },
+      {
+        "id": "gaming-easy-pokemon-capture-d",
+        "text": "W sieciach"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-playstation-maker",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Która firma produkuje konsole PlayStation?",
+    "correctAnswerId": "gaming-easy-playstation-maker-a",
+    "answers": [
+      {
+        "id": "gaming-easy-playstation-maker-a",
+        "text": "Sony"
+      },
+      {
+        "id": "gaming-easy-playstation-maker-b",
+        "text": "Microsoft"
+      },
+      {
+        "id": "gaming-easy-playstation-maker-c",
+        "text": "Nintendo"
+      },
+      {
+        "id": "gaming-easy-playstation-maker-d",
+        "text": "Atari"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-xbox-maker",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Która firma produkuje konsole Xbox?",
+    "correctAnswerId": "gaming-easy-xbox-maker-a",
+    "answers": [
+      {
+        "id": "gaming-easy-xbox-maker-a",
+        "text": "Microsoft"
+      },
+      {
+        "id": "gaming-easy-xbox-maker-b",
+        "text": "Sega"
+      },
+      {
+        "id": "gaming-easy-xbox-maker-c",
+        "text": "Sony"
+      },
+      {
+        "id": "gaming-easy-xbox-maker-d",
+        "text": "Nintendo"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-zelda-hero",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię główny bohater serii The Legend of Zelda?",
+    "correctAnswerId": "gaming-easy-zelda-hero-a",
+    "answers": [
+      {
+        "id": "gaming-easy-zelda-hero-a",
+        "text": "Link"
+      },
+      {
+        "id": "gaming-easy-zelda-hero-b",
+        "text": "Zelda"
+      },
+      {
+        "id": "gaming-easy-zelda-hero-c",
+        "text": "Ganon"
+      },
+      {
+        "id": "gaming-easy-zelda-hero-d",
+        "text": "Epona"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-sonic-animal",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jakim zwierzęciem jest Sonic?",
+    "correctAnswerId": "gaming-easy-sonic-animal-a",
+    "answers": [
+      {
+        "id": "gaming-easy-sonic-animal-a",
+        "text": "Jeżem"
+      },
+      {
+        "id": "gaming-easy-sonic-animal-b",
+        "text": "Lisem"
+      },
+      {
+        "id": "gaming-easy-sonic-animal-c",
+        "text": "Królikiem"
+      },
+      {
+        "id": "gaming-easy-sonic-animal-d",
+        "text": "Kotem"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-mario-brother",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię brat Mario?",
+    "correctAnswerId": "gaming-easy-mario-brother-a",
+    "answers": [
+      {
+        "id": "gaming-easy-mario-brother-a",
+        "text": "Luigi"
+      },
+      {
+        "id": "gaming-easy-mario-brother-b",
+        "text": "Yoshi"
+      },
+      {
+        "id": "gaming-easy-mario-brother-c",
+        "text": "Wario"
+      },
+      {
+        "id": "gaming-easy-mario-brother-d",
+        "text": "Toad"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-fortnite-genre",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Do jakiego gatunku najczęściej zalicza się Fortnite?",
+    "correctAnswerId": "gaming-easy-fortnite-genre-a",
+    "answers": [
+      {
+        "id": "gaming-easy-fortnite-genre-a",
+        "text": "Battle royale"
+      },
+      {
+        "id": "gaming-easy-fortnite-genre-b",
+        "text": "Wyścigi"
+      },
+      {
+        "id": "gaming-easy-fortnite-genre-c",
+        "text": "Strategia turowa"
+      },
+      {
+        "id": "gaming-easy-fortnite-genre-d",
+        "text": "Symulator rolniczy"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-creeper-game",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Z jakiej gry pochodzi Creeper?",
+    "correctAnswerId": "gaming-easy-creeper-game-a",
+    "answers": [
+      {
+        "id": "gaming-easy-creeper-game-a",
+        "text": "Minecraft"
+      },
+      {
+        "id": "gaming-easy-creeper-game-b",
+        "text": "Terraria"
+      },
+      {
+        "id": "gaming-easy-creeper-game-c",
+        "text": "Roblox"
+      },
+      {
+        "id": "gaming-easy-creeper-game-d",
+        "text": "Among Us"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-mushroom-kingdom",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "W jakim królestwie rozgrywa się wiele gier z Mario?",
+    "correctAnswerId": "gaming-easy-mushroom-kingdom-a",
+    "answers": [
+      {
+        "id": "gaming-easy-mushroom-kingdom-a",
+        "text": "W Grzybowym Królestwie"
+      },
+      {
+        "id": "gaming-easy-mushroom-kingdom-b",
+        "text": "W Hyrule"
+      },
+      {
+        "id": "gaming-easy-mushroom-kingdom-c",
+        "text": "W Midgarze"
+      },
+      {
+        "id": "gaming-easy-mushroom-kingdom-d",
+        "text": "W Los Santos"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-mario-dinosaur",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się zielony dinozaur z serii Mario?",
+    "correctAnswerId": "gaming-easy-mario-dinosaur-a",
+    "answers": [
+      {
+        "id": "gaming-easy-mario-dinosaur-a",
+        "text": "Yoshi"
+      },
+      {
+        "id": "gaming-easy-mario-dinosaur-b",
+        "text": "Bowser"
+      },
+      {
+        "id": "gaming-easy-mario-dinosaur-c",
+        "text": "Toad"
+      },
+      {
+        "id": "gaming-easy-mario-dinosaur-d",
+        "text": "Koopa"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-pokemon-pikachu-type",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jakiego typu jest Pikachu?",
+    "correctAnswerId": "gaming-easy-pokemon-pikachu-type-a",
+    "answers": [
+      {
+        "id": "gaming-easy-pokemon-pikachu-type-a",
+        "text": "Elektrycznego"
+      },
+      {
+        "id": "gaming-easy-pokemon-pikachu-type-b",
+        "text": "Ognistego"
+      },
+      {
+        "id": "gaming-easy-pokemon-pikachu-type-c",
+        "text": "Wodnego"
+      },
+      {
+        "id": "gaming-easy-pokemon-pikachu-type-d",
+        "text": "Trawiastego"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-gta-city",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się fikcyjne miasto inspirowane Miami w serii GTA?",
+    "correctAnswerId": "gaming-easy-gta-city-a",
+    "answers": [
+      {
+        "id": "gaming-easy-gta-city-a",
+        "text": "Vice City"
+      },
+      {
+        "id": "gaming-easy-gta-city-b",
+        "text": "Liberty City"
+      },
+      {
+        "id": "gaming-easy-gta-city-c",
+        "text": "San Fierro"
+      },
+      {
+        "id": "gaming-easy-gta-city-d",
+        "text": "Rapture"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-amongus-role",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się oszust w grze Among Us?",
+    "correctAnswerId": "gaming-easy-amongus-role-a",
+    "answers": [
+      {
+        "id": "gaming-easy-amongus-role-a",
+        "text": "Impostor"
+      },
+      {
+        "id": "gaming-easy-amongus-role-b",
+        "text": "Pilot"
+      },
+      {
+        "id": "gaming-easy-amongus-role-c",
+        "text": "Hunter"
+      },
+      {
+        "id": "gaming-easy-amongus-role-d",
+        "text": "Commander"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-fifa-sport",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jakiej dyscypliny dotyczy seria FIFA?",
+    "correctAnswerId": "gaming-easy-fifa-sport-a",
+    "answers": [
+      {
+        "id": "gaming-easy-fifa-sport-a",
+        "text": "Piłki nożnej"
+      },
+      {
+        "id": "gaming-easy-fifa-sport-b",
+        "text": "Koszykówki"
+      },
+      {
+        "id": "gaming-easy-fifa-sport-c",
+        "text": "Tenisa"
+      },
+      {
+        "id": "gaming-easy-fifa-sport-d",
+        "text": "Hokeja"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-sims-life",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "W której grze kierujesz życiem wirtualnych postaci zwanych Simami?",
+    "correctAnswerId": "gaming-easy-sims-life-a",
+    "answers": [
+      {
+        "id": "gaming-easy-sims-life-a",
+        "text": "The Sims"
+      },
+      {
+        "id": "gaming-easy-sims-life-b",
+        "text": "Cities: Skylines"
+      },
+      {
+        "id": "gaming-easy-sims-life-c",
+        "text": "Animal Crossing"
+      },
+      {
+        "id": "gaming-easy-sims-life-d",
+        "text": "Stardew Valley"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-portal-gun",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się urządzenie tworzące portale w grze Portal?",
+    "correctAnswerId": "gaming-easy-portal-gun-a",
+    "answers": [
+      {
+        "id": "gaming-easy-portal-gun-a",
+        "text": "Portal Gun"
+      },
+      {
+        "id": "gaming-easy-portal-gun-b",
+        "text": "Gravity Gun"
+      },
+      {
+        "id": "gaming-easy-portal-gun-c",
+        "text": "Railgun"
+      },
+      {
+        "id": "gaming-easy-portal-gun-d",
+        "text": "Hookshot"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-lol-map",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się podstawowa mapa w League of Legends?",
+    "correctAnswerId": "gaming-easy-lol-map-a",
+    "answers": [
+      {
+        "id": "gaming-easy-lol-map-a",
+        "text": "Summoner's Rift"
+      },
+      {
+        "id": "gaming-easy-lol-map-b",
+        "text": "Dust II"
+      },
+      {
+        "id": "gaming-easy-lol-map-c",
+        "text": "Erangel"
+      },
+      {
+        "id": "gaming-easy-lol-map-d",
+        "text": "King's Row"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-snake-goal",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Co zbiera w klasycznej grze Snake rosnący wąż?",
+    "correctAnswerId": "gaming-easy-snake-goal-a",
+    "answers": [
+      {
+        "id": "gaming-easy-snake-goal-a",
+        "text": "Jedzenie"
+      },
+      {
+        "id": "gaming-easy-snake-goal-b",
+        "text": "Monety"
+      },
+      {
+        "id": "gaming-easy-snake-goal-c",
+        "text": "Bronie"
+      },
+      {
+        "id": "gaming-easy-snake-goal-d",
+        "text": "Paliwo"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-roblox-platform",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Czym jest Roblox?",
+    "correctAnswerId": "gaming-easy-roblox-platform-a",
+    "answers": [
+      {
+        "id": "gaming-easy-roblox-platform-a",
+        "text": "Platformą z grami tworzonymi przez użytkowników"
+      },
+      {
+        "id": "gaming-easy-roblox-platform-b",
+        "text": "Konsolą przenośną"
+      },
+      {
+        "id": "gaming-easy-roblox-platform-c",
+        "text": "Silnikiem samochodowym"
+      },
+      {
+        "id": "gaming-easy-roblox-platform-d",
+        "text": "Programem antywirusowym"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-bowser-role",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Kim najczęściej jest Bowser w grach z Mario?",
+    "correctAnswerId": "gaming-easy-bowser-role-a",
+    "answers": [
+      {
+        "id": "gaming-easy-bowser-role-a",
+        "text": "Głównym przeciwnikiem"
+      },
+      {
+        "id": "gaming-easy-bowser-role-b",
+        "text": "Pomocnikiem gracza"
+      },
+      {
+        "id": "gaming-easy-bowser-role-c",
+        "text": "Sędzią"
+      },
+      {
+        "id": "gaming-easy-bowser-role-d",
+        "text": "Kupcem"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-mario-kart-item",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Który przedmiot w Mario Kart daje chwilową nietykalność i przyspieszenie?",
+    "correctAnswerId": "gaming-easy-mario-kart-item-a",
+    "answers": [
+      {
+        "id": "gaming-easy-mario-kart-item-a",
+        "text": "Gwiazda"
+      },
+      {
+        "id": "gaming-easy-mario-kart-item-b",
+        "text": "Banan"
+      },
+      {
+        "id": "gaming-easy-mario-kart-item-c",
+        "text": "Muszla zielona"
+      },
+      {
+        "id": "gaming-easy-mario-kart-item-d",
+        "text": "Grzybek"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-gta-crime",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Z jakiego gatunku słynie seria Grand Theft Auto?",
+    "correctAnswerId": "gaming-easy-gta-crime-a",
+    "answers": [
+      {
+        "id": "gaming-easy-gta-crime-a",
+        "text": "Gier akcji w otwartym świecie"
+      },
+      {
+        "id": "gaming-easy-gta-crime-b",
+        "text": "Gier logicznych"
+      },
+      {
+        "id": "gaming-easy-gta-crime-c",
+        "text": "Symulatorów lotu"
+      },
+      {
+        "id": "gaming-easy-gta-crime-d",
+        "text": "Visual novel"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-minecraft-blocks",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Z czego zbudowany jest świat Minecrafta?",
+    "correctAnswerId": "gaming-easy-minecraft-blocks-a",
+    "answers": [
+      {
+        "id": "gaming-easy-minecraft-blocks-a",
+        "text": "Z bloków"
+      },
+      {
+        "id": "gaming-easy-minecraft-blocks-b",
+        "text": "Z sześciokątów"
+      },
+      {
+        "id": "gaming-easy-minecraft-blocks-c",
+        "text": "Z pikseli 2D"
+      },
+      {
+        "id": "gaming-easy-minecraft-blocks-d",
+        "text": "Z planet"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-counterterrorists-game",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "W której serii występują drużyny terrorystów i antyterrorystów?",
+    "correctAnswerId": "gaming-easy-counterterrorists-game-a",
+    "answers": [
+      {
+        "id": "gaming-easy-counterterrorists-game-a",
+        "text": "Counter-Strike"
+      },
+      {
+        "id": "gaming-easy-counterterrorists-game-b",
+        "text": "Overwatch"
+      },
+      {
+        "id": "gaming-easy-counterterrorists-game-c",
+        "text": "Rocket League"
+      },
+      {
+        "id": "gaming-easy-counterterrorists-game-d",
+        "text": "Diablo"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-animalcrossing-island",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Na czym gracz buduje życie w Animal Crossing: New Horizons?",
+    "correctAnswerId": "gaming-easy-animalcrossing-island-a",
+    "answers": [
+      {
+        "id": "gaming-easy-animalcrossing-island-a",
+        "text": "Na wyspie"
+      },
+      {
+        "id": "gaming-easy-animalcrossing-island-b",
+        "text": "Na statku kosmicznym"
+      },
+      {
+        "id": "gaming-easy-animalcrossing-island-c",
+        "text": "W lochu"
+      },
+      {
+        "id": "gaming-easy-animalcrossing-island-d",
+        "text": "Na pustyni"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-fallguys-goal",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jaki jest główny cel w Fall Guys?",
+    "correctAnswerId": "gaming-easy-fallguys-goal-a",
+    "answers": [
+      {
+        "id": "gaming-easy-fallguys-goal-a",
+        "text": "Przetrwać rundy i wygrać finał"
+      },
+      {
+        "id": "gaming-easy-fallguys-goal-b",
+        "text": "Zbudować bazę"
+      },
+      {
+        "id": "gaming-easy-fallguys-goal-c",
+        "text": "Pokonać smoka"
+      },
+      {
+        "id": "gaming-easy-fallguys-goal-d",
+        "text": "Zdobyć wszystkie planety"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-overwatch-teamsize",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Ilu graczy liczy standardowa drużyna w nowym Overwatch 2?",
+    "correctAnswerId": "gaming-easy-overwatch-teamsize-a",
+    "answers": [
+      {
+        "id": "gaming-easy-overwatch-teamsize-a",
+        "text": "5"
+      },
+      {
+        "id": "gaming-easy-overwatch-teamsize-b",
+        "text": "4"
+      },
+      {
+        "id": "gaming-easy-overwatch-teamsize-c",
+        "text": "6"
+      },
+      {
+        "id": "gaming-easy-overwatch-teamsize-d",
+        "text": "7"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-mortal-kombat-finish",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się efektowne wykończenie przeciwnika w Mortal Kombat?",
+    "correctAnswerId": "gaming-easy-mortal-kombat-finish-a",
+    "answers": [
+      {
+        "id": "gaming-easy-mortal-kombat-finish-a",
+        "text": "Fatality"
+      },
+      {
+        "id": "gaming-easy-mortal-kombat-finish-b",
+        "text": "Combo Break"
+      },
+      {
+        "id": "gaming-easy-mortal-kombat-finish-c",
+        "text": "Limit Break"
+      },
+      {
+        "id": "gaming-easy-mortal-kombat-finish-d",
+        "text": "Ultimate Shot"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-legend-zelda-princess",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię księżniczka z serii The Legend of Zelda?",
+    "correctAnswerId": "gaming-easy-legend-zelda-princess-a",
+    "answers": [
+      {
+        "id": "gaming-easy-legend-zelda-princess-a",
+        "text": "Zelda"
+      },
+      {
+        "id": "gaming-easy-legend-zelda-princess-b",
+        "text": "Samus"
+      },
+      {
+        "id": "gaming-easy-legend-zelda-princess-c",
+        "text": "Peach"
+      },
+      {
+        "id": "gaming-easy-legend-zelda-princess-d",
+        "text": "Tifa"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-terraria-dimension",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Czy Terraria jest głównie grą 2D czy 3D?",
+    "correctAnswerId": "gaming-easy-terraria-dimension-a",
+    "answers": [
+      {
+        "id": "gaming-easy-terraria-dimension-a",
+        "text": "2D"
+      },
+      {
+        "id": "gaming-easy-terraria-dimension-b",
+        "text": "3D"
+      },
+      {
+        "id": "gaming-easy-terraria-dimension-c",
+        "text": "VR"
+      },
+      {
+        "id": "gaming-easy-terraria-dimension-d",
+        "text": "Tekstową"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easy-rocketleague-sport",
+    "categoryKey": "gaming",
+    "difficulty": "Easy",
+    "text": "Co łączy Rocket League z tradycyjnym sportem?",
+    "correctAnswerId": "gaming-easy-rocketleague-sport-a",
+    "answers": [
+      {
+        "id": "gaming-easy-rocketleague-sport-a",
+        "text": "Samochody grają tam w piłkę"
+      },
+      {
+        "id": "gaming-easy-rocketleague-sport-b",
+        "text": "To symulator tenisa"
+      },
+      {
+        "id": "gaming-easy-rocketleague-sport-c",
+        "text": "To gra o golfie"
+      },
+      {
+        "id": "gaming-easy-rocketleague-sport-d",
+        "text": "To gra o baseballu"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-moba-meaning",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Co oznacza skrót MOBA w grach?",
+    "correctAnswerId": "gaming-easymedium-moba-meaning-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-moba-meaning-a",
+        "text": "Multiplayer Online Battle Arena"
+      },
+      {
+        "id": "gaming-easymedium-moba-meaning-b",
+        "text": "Massive Offline Battle Action"
+      },
+      {
+        "id": "gaming-easymedium-moba-meaning-c",
+        "text": "Multi Open Battle Adventure"
+      },
+      {
+        "id": "gaming-easymedium-moba-meaning-d",
+        "text": "Modern Online Base Assault"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-rpg-meaning",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Co oznacza skrót RPG?",
+    "correctAnswerId": "gaming-easymedium-rpg-meaning-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-rpg-meaning-a",
+        "text": "Role-Playing Game"
+      },
+      {
+        "id": "gaming-easymedium-rpg-meaning-b",
+        "text": "Racing Pro Game"
+      },
+      {
+        "id": "gaming-easymedium-rpg-meaning-c",
+        "text": "Real Power Graphics"
+      },
+      {
+        "id": "gaming-easymedium-rpg-meaning-d",
+        "text": "Rapid Play Generator"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-fps-meaning",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Co oznacza skrót FPS jako gatunek gry?",
+    "correctAnswerId": "gaming-easymedium-fps-meaning-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-fps-meaning-a",
+        "text": "First-Person Shooter"
+      },
+      {
+        "id": "gaming-easymedium-fps-meaning-b",
+        "text": "Fast Power Strategy"
+      },
+      {
+        "id": "gaming-easymedium-fps-meaning-c",
+        "text": "Full Player System"
+      },
+      {
+        "id": "gaming-easymedium-fps-meaning-d",
+        "text": "Fantasy Party Simulator"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-metroid-heroine",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak ma na imię bohaterka serii Metroid?",
+    "correctAnswerId": "gaming-easymedium-metroid-heroine-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-metroid-heroine-a",
+        "text": "Samus Aran"
+      },
+      {
+        "id": "gaming-easymedium-metroid-heroine-b",
+        "text": "Lara Croft"
+      },
+      {
+        "id": "gaming-easymedium-metroid-heroine-c",
+        "text": "Aloy"
+      },
+      {
+        "id": "gaming-easymedium-metroid-heroine-d",
+        "text": "Jill Valentine"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-witcher-author",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Kto jest autorem książek, na podstawie których powstała seria Wiedźmin?",
+    "correctAnswerId": "gaming-easymedium-witcher-author-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-witcher-author-a",
+        "text": "Andrzej Sapkowski"
+      },
+      {
+        "id": "gaming-easymedium-witcher-author-b",
+        "text": "Stanisław Lem"
+      },
+      {
+        "id": "gaming-easymedium-witcher-author-c",
+        "text": "Jacek Dukaj"
+      },
+      {
+        "id": "gaming-easymedium-witcher-author-d",
+        "text": "Henryk Sienkiewicz"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-steam-owner",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Która firma stworzyła platformę Steam?",
+    "correctAnswerId": "gaming-easymedium-steam-owner-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-steam-owner-a",
+        "text": "Valve"
+      },
+      {
+        "id": "gaming-easymedium-steam-owner-b",
+        "text": "Epic Games"
+      },
+      {
+        "id": "gaming-easymedium-steam-owner-c",
+        "text": "Ubisoft"
+      },
+      {
+        "id": "gaming-easymedium-steam-owner-d",
+        "text": "Blizzard"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-warcraft-faction",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jakie są dwie główne frakcje w World of Warcraft?",
+    "correctAnswerId": "gaming-easymedium-warcraft-faction-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-warcraft-faction-a",
+        "text": "Sojusz i Horda"
+      },
+      {
+        "id": "gaming-easymedium-warcraft-faction-b",
+        "text": "Ludzie i Orkowie"
+      },
+      {
+        "id": "gaming-easymedium-warcraft-faction-c",
+        "text": "Światło i Cień"
+      },
+      {
+        "id": "gaming-easymedium-warcraft-faction-d",
+        "text": "Północ i Południe"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-diablo-genre",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Do jakiego gatunku należy seria Diablo?",
+    "correctAnswerId": "gaming-easymedium-diablo-genre-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-diablo-genre-a",
+        "text": "Hack and slash action RPG"
+      },
+      {
+        "id": "gaming-easymedium-diablo-genre-b",
+        "text": "Symulator życia"
+      },
+      {
+        "id": "gaming-easymedium-diablo-genre-c",
+        "text": "Wyścigi"
+      },
+      {
+        "id": "gaming-easymedium-diablo-genre-d",
+        "text": "Strategia 4X"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-minecraft-nether",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się piekielny wymiar w Minecrafcie?",
+    "correctAnswerId": "gaming-easymedium-minecraft-nether-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-minecraft-nether-a",
+        "text": "Nether"
+      },
+      {
+        "id": "gaming-easymedium-minecraft-nether-b",
+        "text": "Aether"
+      },
+      {
+        "id": "gaming-easymedium-minecraft-nether-c",
+        "text": "End City"
+      },
+      {
+        "id": "gaming-easymedium-minecraft-nether-d",
+        "text": "Overvoid"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-pokemon-evolve-stone",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Który kamień może ewoluować Eevee w Vaporeona?",
+    "correctAnswerId": "gaming-easymedium-pokemon-evolve-stone-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-pokemon-evolve-stone-a",
+        "text": "Kamień Wody"
+      },
+      {
+        "id": "gaming-easymedium-pokemon-evolve-stone-b",
+        "text": "Kamień Ognia"
+      },
+      {
+        "id": "gaming-easymedium-pokemon-evolve-stone-c",
+        "text": "Kamień Liścia"
+      },
+      {
+        "id": "gaming-easymedium-pokemon-evolve-stone-d",
+        "text": "Kamień Księżycowy"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-darksouls-difficulty",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Z czego najbardziej słynie seria Dark Souls?",
+    "correctAnswerId": "gaming-easymedium-darksouls-difficulty-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-darksouls-difficulty-a",
+        "text": "Z wysokiego poziomu trudności"
+      },
+      {
+        "id": "gaming-easymedium-darksouls-difficulty-b",
+        "text": "Z wyścigów samochodowych"
+      },
+      {
+        "id": "gaming-easymedium-darksouls-difficulty-c",
+        "text": "Z budowania miast"
+      },
+      {
+        "id": "gaming-easymedium-darksouls-difficulty-d",
+        "text": "Z minigier muzycznych"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-league-roles",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Która rola w League of Legends najczęściej wspiera drużynę na dolnej alei?",
+    "correctAnswerId": "gaming-easymedium-league-roles-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-league-roles-a",
+        "text": "Support"
+      },
+      {
+        "id": "gaming-easymedium-league-roles-b",
+        "text": "Top"
+      },
+      {
+        "id": "gaming-easymedium-league-roles-c",
+        "text": "Jungler"
+      },
+      {
+        "id": "gaming-easymedium-league-roles-d",
+        "text": "Mid"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-minecraft-boss-dragon",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się smok-boss w końcowym wymiarze Minecrafta?",
+    "correctAnswerId": "gaming-easymedium-minecraft-boss-dragon-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-minecraft-boss-dragon-a",
+        "text": "Smok Kresu"
+      },
+      {
+        "id": "gaming-easymedium-minecraft-boss-dragon-b",
+        "text": "Smok Netheru"
+      },
+      {
+        "id": "gaming-easymedium-minecraft-boss-dragon-c",
+        "text": "Smok Chaosu"
+      },
+      {
+        "id": "gaming-easymedium-minecraft-boss-dragon-d",
+        "text": "Smok Pustki"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-zelda-hyrule",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się kraina w serii The Legend of Zelda?",
+    "correctAnswerId": "gaming-easymedium-zelda-hyrule-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-zelda-hyrule-a",
+        "text": "Hyrule"
+      },
+      {
+        "id": "gaming-easymedium-zelda-hyrule-b",
+        "text": "Midgar"
+      },
+      {
+        "id": "gaming-easymedium-zelda-hyrule-c",
+        "text": "Skyrim"
+      },
+      {
+        "id": "gaming-easymedium-zelda-hyrule-d",
+        "text": "Raccoon City"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-eldenring-studio",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Które studio stworzyło Elden Ring?",
+    "correctAnswerId": "gaming-easymedium-eldenring-studio-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-eldenring-studio-a",
+        "text": "FromSoftware"
+      },
+      {
+        "id": "gaming-easymedium-eldenring-studio-b",
+        "text": "BioWare"
+      },
+      {
+        "id": "gaming-easymedium-eldenring-studio-c",
+        "text": "Bethesda"
+      },
+      {
+        "id": "gaming-easymedium-eldenring-studio-d",
+        "text": "Naughty Dog"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-cs-bomb",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Na jakich oznaczonych miejscach podkłada się bombę w Counter-Strike?",
+    "correctAnswerId": "gaming-easymedium-cs-bomb-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-cs-bomb-a",
+        "text": "A i B"
+      },
+      {
+        "id": "gaming-easymedium-cs-bomb-b",
+        "text": "1 i 2"
+      },
+      {
+        "id": "gaming-easymedium-cs-bomb-c",
+        "text": "X i Y"
+      },
+      {
+        "id": "gaming-easymedium-cs-bomb-d",
+        "text": "Alpha i Omega"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-overwatch-class",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak w Overwatch 2 nazywa się klasa bohaterów pochłaniających dużo obrażeń?",
+    "correctAnswerId": "gaming-easymedium-overwatch-class-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-overwatch-class-a",
+        "text": "Tank"
+      },
+      {
+        "id": "gaming-easymedium-overwatch-class-b",
+        "text": "Mage"
+      },
+      {
+        "id": "gaming-easymedium-overwatch-class-c",
+        "text": "Scout"
+      },
+      {
+        "id": "gaming-easymedium-overwatch-class-d",
+        "text": "Engineer"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-stardew-town",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się miasteczko w Stardew Valley?",
+    "correctAnswerId": "gaming-easymedium-stardew-town-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-stardew-town-a",
+        "text": "Pelican Town"
+      },
+      {
+        "id": "gaming-easymedium-stardew-town-b",
+        "text": "Oak Town"
+      },
+      {
+        "id": "gaming-easymedium-stardew-town-c",
+        "text": "Moonvale"
+      },
+      {
+        "id": "gaming-easymedium-stardew-town-d",
+        "text": "Silver City"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-assassins-creed-company",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Która firma odpowiada za serię Assassin's Creed?",
+    "correctAnswerId": "gaming-easymedium-assassins-creed-company-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-assassins-creed-company-a",
+        "text": "Ubisoft"
+      },
+      {
+        "id": "gaming-easymedium-assassins-creed-company-b",
+        "text": "EA"
+      },
+      {
+        "id": "gaming-easymedium-assassins-creed-company-c",
+        "text": "Rockstar Games"
+      },
+      {
+        "id": "gaming-easymedium-assassins-creed-company-d",
+        "text": "CD Projekt"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-resident-evil-zombie",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Z jakim typem przeciwników najbardziej kojarzy się seria Resident Evil?",
+    "correctAnswerId": "gaming-easymedium-resident-evil-zombie-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-resident-evil-zombie-a",
+        "text": "Zombie i mutanci"
+      },
+      {
+        "id": "gaming-easymedium-resident-evil-zombie-b",
+        "text": "Rycerze"
+      },
+      {
+        "id": "gaming-easymedium-resident-evil-zombie-c",
+        "text": "Kosmici z kreskówki"
+      },
+      {
+        "id": "gaming-easymedium-resident-evil-zombie-d",
+        "text": "Sportowcy"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-godofwar-hero",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak ma na imię główny bohater serii God of War?",
+    "correctAnswerId": "gaming-easymedium-godofwar-hero-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-godofwar-hero-a",
+        "text": "Kratos"
+      },
+      {
+        "id": "gaming-easymedium-godofwar-hero-b",
+        "text": "Atreus"
+      },
+      {
+        "id": "gaming-easymedium-godofwar-hero-c",
+        "text": "Zeus"
+      },
+      {
+        "id": "gaming-easymedium-godofwar-hero-d",
+        "text": "Baldur"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-halo-hero",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się główny bohater serii Halo?",
+    "correctAnswerId": "gaming-easymedium-halo-hero-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-halo-hero-a",
+        "text": "Master Chief"
+      },
+      {
+        "id": "gaming-easymedium-halo-hero-b",
+        "text": "Marcus Fenix"
+      },
+      {
+        "id": "gaming-easymedium-halo-hero-c",
+        "text": "Commander Shepard"
+      },
+      {
+        "id": "gaming-easymedium-halo-hero-d",
+        "text": "Doom Slayer"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-genshin-elements",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Ile podstawowych żywiołów występuje w Genshin Impact?",
+    "correctAnswerId": "gaming-easymedium-genshin-elements-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-genshin-elements-a",
+        "text": "7"
+      },
+      {
+        "id": "gaming-easymedium-genshin-elements-b",
+        "text": "5"
+      },
+      {
+        "id": "gaming-easymedium-genshin-elements-c",
+        "text": "6"
+      },
+      {
+        "id": "gaming-easymedium-genshin-elements-d",
+        "text": "8"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-undertale-route",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się przejście gry Undertale bez zabijania przeciwników?",
+    "correctAnswerId": "gaming-easymedium-undertale-route-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-undertale-route-a",
+        "text": "Pacifist Route"
+      },
+      {
+        "id": "gaming-easymedium-undertale-route-b",
+        "text": "Chaos Route"
+      },
+      {
+        "id": "gaming-easymedium-undertale-route-c",
+        "text": "Hero Route"
+      },
+      {
+        "id": "gaming-easymedium-undertale-route-d",
+        "text": "Zero Route"
+      }
+    ]
+  },
+  {
+    "key": "gaming-easymedium-pokeball-best",
+    "categoryKey": "gaming",
+    "difficulty": "EasyMedium",
+    "text": "Który z tych przedmiotów jest podstawowym przedmiotem do łapania Pokémonów?",
+    "correctAnswerId": "gaming-easymedium-pokeball-best-a",
+    "answers": [
+      {
+        "id": "gaming-easymedium-pokeball-best-a",
+        "text": "Poké Ball"
+      },
+      {
+        "id": "gaming-easymedium-pokeball-best-b",
+        "text": "Rare Candy"
+      },
+      {
+        "id": "gaming-easymedium-pokeball-best-c",
+        "text": "Repel"
+      },
+      {
+        "id": "gaming-easymedium-pokeball-best-d",
+        "text": "Potion"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-minecraft-end-dimension",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się wymiar, w którym walczy się ze Smokiem Kresu?",
+    "correctAnswerId": "gaming-medium-minecraft-end-dimension-a",
+    "answers": [
+      {
+        "id": "gaming-medium-minecraft-end-dimension-a",
+        "text": "The End"
+      },
+      {
+        "id": "gaming-medium-minecraft-end-dimension-b",
+        "text": "Nether"
+      },
+      {
+        "id": "gaming-medium-minecraft-end-dimension-c",
+        "text": "Overworld"
+      },
+      {
+        "id": "gaming-medium-minecraft-end-dimension-d",
+        "text": "The Deep"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-zelda-master-sword",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się legendarny miecz Linka?",
+    "correctAnswerId": "gaming-medium-zelda-master-sword-a",
+    "answers": [
+      {
+        "id": "gaming-medium-zelda-master-sword-a",
+        "text": "Master Sword"
+      },
+      {
+        "id": "gaming-medium-zelda-master-sword-b",
+        "text": "Buster Sword"
+      },
+      {
+        "id": "gaming-medium-zelda-master-sword-c",
+        "text": "Moonlight Sword"
+      },
+      {
+        "id": "gaming-medium-zelda-master-sword-d",
+        "text": "Silver Blade"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-ff7-city",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się miasto z początku Final Fantasy VII?",
+    "correctAnswerId": "gaming-medium-ff7-city-a",
+    "answers": [
+      {
+        "id": "gaming-medium-ff7-city-a",
+        "text": "Midgar"
+      },
+      {
+        "id": "gaming-medium-ff7-city-b",
+        "text": "Balamb"
+      },
+      {
+        "id": "gaming-medium-ff7-city-c",
+        "text": "Lindblum"
+      },
+      {
+        "id": "gaming-medium-ff7-city-d",
+        "text": "Spira"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-portal-cake",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jakie ciasto stało się memem dzięki grze Portal?",
+    "correctAnswerId": "gaming-medium-portal-cake-a",
+    "answers": [
+      {
+        "id": "gaming-medium-portal-cake-a",
+        "text": "Tort"
+      },
+      {
+        "id": "gaming-medium-portal-cake-b",
+        "text": "Sernik"
+      },
+      {
+        "id": "gaming-medium-portal-cake-c",
+        "text": "Szarlotka"
+      },
+      {
+        "id": "gaming-medium-portal-cake-d",
+        "text": "Makaronik"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-bioshock-city",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się podwodne miasto z BioShock?",
+    "correctAnswerId": "gaming-medium-bioshock-city-a",
+    "answers": [
+      {
+        "id": "gaming-medium-bioshock-city-a",
+        "text": "Rapture"
+      },
+      {
+        "id": "gaming-medium-bioshock-city-b",
+        "text": "Columbia"
+      },
+      {
+        "id": "gaming-medium-bioshock-city-c",
+        "text": "Atlantis"
+      },
+      {
+        "id": "gaming-medium-bioshock-city-d",
+        "text": "Arcadia"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-skyrim-province",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "W jakiej prowincji toczy się akcja The Elder Scrolls V?",
+    "correctAnswerId": "gaming-medium-skyrim-province-a",
+    "answers": [
+      {
+        "id": "gaming-medium-skyrim-province-a",
+        "text": "Skyrim"
+      },
+      {
+        "id": "gaming-medium-skyrim-province-b",
+        "text": "Morrowind"
+      },
+      {
+        "id": "gaming-medium-skyrim-province-c",
+        "text": "Cyrodiil"
+      },
+      {
+        "id": "gaming-medium-skyrim-province-d",
+        "text": "Hammerfell"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-witcher-medallion",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jakie zwierzę widnieje na medalionie Geralta?",
+    "correctAnswerId": "gaming-medium-witcher-medallion-a",
+    "answers": [
+      {
+        "id": "gaming-medium-witcher-medallion-a",
+        "text": "Wilk"
+      },
+      {
+        "id": "gaming-medium-witcher-medallion-b",
+        "text": "Kot"
+      },
+      {
+        "id": "gaming-medium-witcher-medallion-c",
+        "text": "Gryf"
+      },
+      {
+        "id": "gaming-medium-witcher-medallion-d",
+        "text": "Niedźwiedź"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-warcraft-capital-alliance",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Które miasto jest klasyczną stolicą ludzi w World of Warcraft?",
+    "correctAnswerId": "gaming-medium-warcraft-capital-alliance-a",
+    "answers": [
+      {
+        "id": "gaming-medium-warcraft-capital-alliance-a",
+        "text": "Stormwind"
+      },
+      {
+        "id": "gaming-medium-warcraft-capital-alliance-b",
+        "text": "Orgrimmar"
+      },
+      {
+        "id": "gaming-medium-warcraft-capital-alliance-c",
+        "text": "Darnassus"
+      },
+      {
+        "id": "gaming-medium-warcraft-capital-alliance-d",
+        "text": "Undercity"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-starcraft-races",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jakie trzy główne rasy występują w StarCraft?",
+    "correctAnswerId": "gaming-medium-starcraft-races-a",
+    "answers": [
+      {
+        "id": "gaming-medium-starcraft-races-a",
+        "text": "Terranie, Zergowie i Protosi"
+      },
+      {
+        "id": "gaming-medium-starcraft-races-b",
+        "text": "Elfy, Ludzie i Orkowie"
+      },
+      {
+        "id": "gaming-medium-starcraft-races-c",
+        "text": "Ludzie, Mutanci i Roboty"
+      },
+      {
+        "id": "gaming-medium-starcraft-races-d",
+        "text": "Imperium, Rebelianci i Piraci"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-cs-dust2",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Która mapa jest najbardziej ikoniczna dla Counter-Strike?",
+    "correctAnswerId": "gaming-medium-cs-dust2-a",
+    "answers": [
+      {
+        "id": "gaming-medium-cs-dust2-a",
+        "text": "Dust II"
+      },
+      {
+        "id": "gaming-medium-cs-dust2-b",
+        "text": "Nuketown"
+      },
+      {
+        "id": "gaming-medium-cs-dust2-c",
+        "text": "Haven"
+      },
+      {
+        "id": "gaming-medium-cs-dust2-d",
+        "text": "Inferno City"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-doom-genre",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Która seria była jedną z najważniejszych w popularyzacji FPS-ów w latach 90.?",
+    "correctAnswerId": "gaming-medium-doom-genre-a",
+    "answers": [
+      {
+        "id": "gaming-medium-doom-genre-a",
+        "text": "Doom"
+      },
+      {
+        "id": "gaming-medium-doom-genre-b",
+        "text": "SimCity"
+      },
+      {
+        "id": "gaming-medium-doom-genre-c",
+        "text": "Myst"
+      },
+      {
+        "id": "gaming-medium-doom-genre-d",
+        "text": "Civilization"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-wow-max-level",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jaki rodzaj aktywności w MMORPG zwykle polega na pokonywaniu bossów przez dużą grupę?",
+    "correctAnswerId": "gaming-medium-wow-max-level-a",
+    "answers": [
+      {
+        "id": "gaming-medium-wow-max-level-a",
+        "text": "Raid"
+      },
+      {
+        "id": "gaming-medium-wow-max-level-b",
+        "text": "Crafting"
+      },
+      {
+        "id": "gaming-medium-wow-max-level-c",
+        "text": "Trading"
+      },
+      {
+        "id": "gaming-medium-wow-max-level-d",
+        "text": "Fishing"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-souls-currency",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się zasób zbierany po pokonaniu wrogów w Dark Souls?",
+    "correctAnswerId": "gaming-medium-souls-currency-a",
+    "answers": [
+      {
+        "id": "gaming-medium-souls-currency-a",
+        "text": "Souls"
+      },
+      {
+        "id": "gaming-medium-souls-currency-b",
+        "text": "Runes"
+      },
+      {
+        "id": "gaming-medium-souls-currency-c",
+        "text": "Coins"
+      },
+      {
+        "id": "gaming-medium-souls-currency-d",
+        "text": "Echoes"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-rocketleague-mode",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jaką piłkę wykorzystuje podstawowy tryb Rocket League?",
+    "correctAnswerId": "gaming-medium-rocketleague-mode-a",
+    "answers": [
+      {
+        "id": "gaming-medium-rocketleague-mode-a",
+        "text": "Piłkę nożną"
+      },
+      {
+        "id": "gaming-medium-rocketleague-mode-b",
+        "text": "Piłkę do rugby"
+      },
+      {
+        "id": "gaming-medium-rocketleague-mode-c",
+        "text": "Krążek hokejowy"
+      },
+      {
+        "id": "gaming-medium-rocketleague-mode-d",
+        "text": "Piłkę tenisową"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-minecraft-ore-redstone",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Która ruda w Minecrafcie służy do budowy prostych układów logicznych?",
+    "correctAnswerId": "gaming-medium-minecraft-ore-redstone-a",
+    "answers": [
+      {
+        "id": "gaming-medium-minecraft-ore-redstone-a",
+        "text": "Redstone"
+      },
+      {
+        "id": "gaming-medium-minecraft-ore-redstone-b",
+        "text": "Emerald"
+      },
+      {
+        "id": "gaming-medium-minecraft-ore-redstone-c",
+        "text": "Quartz"
+      },
+      {
+        "id": "gaming-medium-minecraft-ore-redstone-d",
+        "text": "Copper"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-fortnite-building",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jaka mechanika długo wyróżniała Fortnite na tle innych battle royale?",
+    "correctAnswerId": "gaming-medium-fortnite-building-a",
+    "answers": [
+      {
+        "id": "gaming-medium-fortnite-building-a",
+        "text": "Budowanie konstrukcji"
+      },
+      {
+        "id": "gaming-medium-fortnite-building-b",
+        "text": "Prowadzenie czołgów"
+      },
+      {
+        "id": "gaming-medium-fortnite-building-c",
+        "text": "Zarządzanie farmą"
+      },
+      {
+        "id": "gaming-medium-fortnite-building-d",
+        "text": "Walki turowe"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-gta5-characters",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Ilu grywalnych protagonistów ma podstawowe GTA V?",
+    "correctAnswerId": "gaming-medium-gta5-characters-a",
+    "answers": [
+      {
+        "id": "gaming-medium-gta5-characters-a",
+        "text": "3"
+      },
+      {
+        "id": "gaming-medium-gta5-characters-b",
+        "text": "2"
+      },
+      {
+        "id": "gaming-medium-gta5-characters-c",
+        "text": "4"
+      },
+      {
+        "id": "gaming-medium-gta5-characters-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-mass-effect-ship",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się statek dowodzony przez Sheparda?",
+    "correctAnswerId": "gaming-medium-mass-effect-ship-a",
+    "answers": [
+      {
+        "id": "gaming-medium-mass-effect-ship-a",
+        "text": "Normandy"
+      },
+      {
+        "id": "gaming-medium-mass-effect-ship-b",
+        "text": "Infinity"
+      },
+      {
+        "id": "gaming-medium-mass-effect-ship-c",
+        "text": "Serenity"
+      },
+      {
+        "id": "gaming-medium-mass-effect-ship-d",
+        "text": "Tempestus"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-fallout-company",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Które studio stworzyło serię Fallout?",
+    "correctAnswerId": "gaming-medium-fallout-company-a",
+    "answers": [
+      {
+        "id": "gaming-medium-fallout-company-a",
+        "text": "Interplay"
+      },
+      {
+        "id": "gaming-medium-fallout-company-b",
+        "text": "Valve"
+      },
+      {
+        "id": "gaming-medium-fallout-company-c",
+        "text": "Bungie"
+      },
+      {
+        "id": "gaming-medium-fallout-company-d",
+        "text": "Rare"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-assassins-creed-device",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się urządzenie pozwalające odczytywać wspomnienia przodków w Assassin's Creed?",
+    "correctAnswerId": "gaming-medium-assassins-creed-device-a",
+    "answers": [
+      {
+        "id": "gaming-medium-assassins-creed-device-a",
+        "text": "Animus"
+      },
+      {
+        "id": "gaming-medium-assassins-creed-device-b",
+        "text": "Helix Core"
+      },
+      {
+        "id": "gaming-medium-assassins-creed-device-c",
+        "text": "Codex"
+      },
+      {
+        "id": "gaming-medium-assassins-creed-device-d",
+        "text": "Matrix"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-league-map-monster",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się potężny neutralny potwór wzmacniający drużynę w LoL-u?",
+    "correctAnswerId": "gaming-medium-league-map-monster-a",
+    "answers": [
+      {
+        "id": "gaming-medium-league-map-monster-a",
+        "text": "Baron Nashor"
+      },
+      {
+        "id": "gaming-medium-league-map-monster-b",
+        "text": "Roshan"
+      },
+      {
+        "id": "gaming-medium-league-map-monster-c",
+        "text": "Rift Drake"
+      },
+      {
+        "id": "gaming-medium-league-map-monster-d",
+        "text": "Blue Sentinel"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-overwatch-healer",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Która bohaterka Overwatch słynie z leczenia promieniem i wskrzeszania?",
+    "correctAnswerId": "gaming-medium-overwatch-healer-a",
+    "answers": [
+      {
+        "id": "gaming-medium-overwatch-healer-a",
+        "text": "Mercy"
+      },
+      {
+        "id": "gaming-medium-overwatch-healer-b",
+        "text": "Tracer"
+      },
+      {
+        "id": "gaming-medium-overwatch-healer-c",
+        "text": "Widowmaker"
+      },
+      {
+        "id": "gaming-medium-overwatch-healer-d",
+        "text": "Sombra"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-pubg-origin",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Z jakiej gry wywodzi się skrót PUBG?",
+    "correctAnswerId": "gaming-medium-pubg-origin-a",
+    "answers": [
+      {
+        "id": "gaming-medium-pubg-origin-a",
+        "text": "PlayerUnknown's Battlegrounds"
+      },
+      {
+        "id": "gaming-medium-pubg-origin-b",
+        "text": "Public Ultimate Battle Grounds"
+      },
+      {
+        "id": "gaming-medium-pubg-origin-c",
+        "text": "Player United Battle Game"
+      },
+      {
+        "id": "gaming-medium-pubg-origin-d",
+        "text": "Primary Urban Battle Group"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-valorant-plant",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się urządzenie podkładane przez atakujących w Valorant?",
+    "correctAnswerId": "gaming-medium-valorant-plant-a",
+    "answers": [
+      {
+        "id": "gaming-medium-valorant-plant-a",
+        "text": "Spike"
+      },
+      {
+        "id": "gaming-medium-valorant-plant-b",
+        "text": "Bomb Core"
+      },
+      {
+        "id": "gaming-medium-valorant-plant-c",
+        "text": "Shard"
+      },
+      {
+        "id": "gaming-medium-valorant-plant-d",
+        "text": "Pulse"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-minecraft-villagers",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywają się mieszkańcy wiosek w Minecrafcie?",
+    "correctAnswerId": "gaming-medium-minecraft-villagers-a",
+    "answers": [
+      {
+        "id": "gaming-medium-minecraft-villagers-a",
+        "text": "Villagerzy"
+      },
+      {
+        "id": "gaming-medium-minecraft-villagers-b",
+        "text": "Koloniści"
+      },
+      {
+        "id": "gaming-medium-minecraft-villagers-c",
+        "text": "Kupcy"
+      },
+      {
+        "id": "gaming-medium-minecraft-villagers-d",
+        "text": "Cywile"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-pokemon-regions-kanto",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się pierwszy region z głównej serii Pokémon?",
+    "correctAnswerId": "gaming-medium-pokemon-regions-kanto-a",
+    "answers": [
+      {
+        "id": "gaming-medium-pokemon-regions-kanto-a",
+        "text": "Kanto"
+      },
+      {
+        "id": "gaming-medium-pokemon-regions-kanto-b",
+        "text": "Johto"
+      },
+      {
+        "id": "gaming-medium-pokemon-regions-kanto-c",
+        "text": "Hoenn"
+      },
+      {
+        "id": "gaming-medium-pokemon-regions-kanto-d",
+        "text": "Sinnoh"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-eldenring-hub",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się główne schronienie gracza w Elden Ring?",
+    "correctAnswerId": "gaming-medium-eldenring-hub-a",
+    "answers": [
+      {
+        "id": "gaming-medium-eldenring-hub-a",
+        "text": "Roundtable Hold"
+      },
+      {
+        "id": "gaming-medium-eldenring-hub-b",
+        "text": "Firelink Shrine"
+      },
+      {
+        "id": "gaming-medium-eldenring-hub-c",
+        "text": "Majula"
+      },
+      {
+        "id": "gaming-medium-eldenring-hub-d",
+        "text": "Nexus"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-fifa-mode",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się najpopularniejszy tryb kolekcjonowania kart w serii FIFA/EA FC?",
+    "correctAnswerId": "gaming-medium-fifa-mode-a",
+    "answers": [
+      {
+        "id": "gaming-medium-fifa-mode-a",
+        "text": "Ultimate Team"
+      },
+      {
+        "id": "gaming-medium-fifa-mode-b",
+        "text": "Career Board"
+      },
+      {
+        "id": "gaming-medium-fifa-mode-c",
+        "text": "Legend Arena"
+      },
+      {
+        "id": "gaming-medium-fifa-mode-d",
+        "text": "Club Draft"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-sims-plumbob",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się zielony kryształ nad głową Sima?",
+    "correctAnswerId": "gaming-medium-sims-plumbob-a",
+    "answers": [
+      {
+        "id": "gaming-medium-sims-plumbob-a",
+        "text": "Plumbob"
+      },
+      {
+        "id": "gaming-medium-sims-plumbob-b",
+        "text": "Simstone"
+      },
+      {
+        "id": "gaming-medium-sims-plumbob-c",
+        "text": "Crystop"
+      },
+      {
+        "id": "gaming-medium-sims-plumbob-d",
+        "text": "Mood Gem"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-metalgear-stealth",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Z jakiego gatunku najbardziej znana jest seria Metal Gear Solid?",
+    "correctAnswerId": "gaming-medium-metalgear-stealth-a",
+    "answers": [
+      {
+        "id": "gaming-medium-metalgear-stealth-a",
+        "text": "Składanka skradankowa"
+      },
+      {
+        "id": "gaming-medium-metalgear-stealth-b",
+        "text": "Gra rytmiczna"
+      },
+      {
+        "id": "gaming-medium-metalgear-stealth-c",
+        "text": "Wyścigi arcade"
+      },
+      {
+        "id": "gaming-medium-metalgear-stealth-d",
+        "text": "MMORPG"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-resident-evil-city",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się miasto z Resident Evil 2 i 3?",
+    "correctAnswerId": "gaming-medium-resident-evil-city-a",
+    "answers": [
+      {
+        "id": "gaming-medium-resident-evil-city-a",
+        "text": "Raccoon City"
+      },
+      {
+        "id": "gaming-medium-resident-evil-city-b",
+        "text": "Silent Hill"
+      },
+      {
+        "id": "gaming-medium-resident-evil-city-c",
+        "text": "Vice City"
+      },
+      {
+        "id": "gaming-medium-resident-evil-city-d",
+        "text": "Liberty City"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-silenthill-town",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się miasteczko z serii horrorów Konami?",
+    "correctAnswerId": "gaming-medium-silenthill-town-a",
+    "answers": [
+      {
+        "id": "gaming-medium-silenthill-town-a",
+        "text": "Silent Hill"
+      },
+      {
+        "id": "gaming-medium-silenthill-town-b",
+        "text": "Bright Falls"
+      },
+      {
+        "id": "gaming-medium-silenthill-town-c",
+        "text": "Ravenholm"
+      },
+      {
+        "id": "gaming-medium-silenthill-town-d",
+        "text": "Old Haven"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-hades-father",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Kim jest ojciec Zagreusa w grze Hades?",
+    "correctAnswerId": "gaming-medium-hades-father-a",
+    "answers": [
+      {
+        "id": "gaming-medium-hades-father-a",
+        "text": "Hades"
+      },
+      {
+        "id": "gaming-medium-hades-father-b",
+        "text": "Posejdon"
+      },
+      {
+        "id": "gaming-medium-hades-father-c",
+        "text": "Ares"
+      },
+      {
+        "id": "gaming-medium-hades-father-d",
+        "text": "Hermes"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-civilization-creator",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Kto stworzył serię Civilization?",
+    "correctAnswerId": "gaming-medium-civilization-creator-a",
+    "answers": [
+      {
+        "id": "gaming-medium-civilization-creator-a",
+        "text": "Sid Meier"
+      },
+      {
+        "id": "gaming-medium-civilization-creator-b",
+        "text": "Will Wright"
+      },
+      {
+        "id": "gaming-medium-civilization-creator-c",
+        "text": "Todd Howard"
+      },
+      {
+        "id": "gaming-medium-civilization-creator-d",
+        "text": "Tim Schafer"
+      }
+    ]
+  },
+  {
+    "key": "gaming-medium-diablo-loot-color",
+    "categoryKey": "gaming",
+    "difficulty": "Medium",
+    "text": "Jaki kolor najczęściej oznacza przedmioty legendarne w Diablo III?",
+    "correctAnswerId": "gaming-medium-diablo-loot-color-a",
+    "answers": [
+      {
+        "id": "gaming-medium-diablo-loot-color-a",
+        "text": "Pomarańczowy"
+      },
+      {
+        "id": "gaming-medium-diablo-loot-color-b",
+        "text": "Niebieski"
+      },
+      {
+        "id": "gaming-medium-diablo-loot-color-c",
+        "text": "Zielony"
+      },
+      {
+        "id": "gaming-medium-diablo-loot-color-d",
+        "text": "Szary"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-gta-liberty-city-base",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Na którym prawdziwym mieście wzorowane jest Liberty City?",
+    "correctAnswerId": "gaming-mediumhard-gta-liberty-city-base-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-gta-liberty-city-base-a",
+        "text": "Na Nowym Jorku"
+      },
+      {
+        "id": "gaming-mediumhard-gta-liberty-city-base-b",
+        "text": "Na Los Angeles"
+      },
+      {
+        "id": "gaming-mediumhard-gta-liberty-city-base-c",
+        "text": "Na Chicago"
+      },
+      {
+        "id": "gaming-mediumhard-gta-liberty-city-base-d",
+        "text": "Na Bostonie"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-mario-first-game",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "W której grze Mario pojawił się po raz pierwszy?",
+    "correctAnswerId": "gaming-mediumhard-mario-first-game-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-mario-first-game-a",
+        "text": "Donkey Kong"
+      },
+      {
+        "id": "gaming-mediumhard-mario-first-game-b",
+        "text": "Super Mario Bros."
+      },
+      {
+        "id": "gaming-mediumhard-mario-first-game-c",
+        "text": "Mario Kart"
+      },
+      {
+        "id": "gaming-mediumhard-mario-first-game-d",
+        "text": "Yoshi's Island"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-warcraft-frozen-throne",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak ma na imię książę, który stał się Królem Liszem w Warcraft III?",
+    "correctAnswerId": "gaming-mediumhard-warcraft-frozen-throne-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-warcraft-frozen-throne-a",
+        "text": "Arthas Menethil"
+      },
+      {
+        "id": "gaming-mediumhard-warcraft-frozen-throne-b",
+        "text": "Varian Wrynn"
+      },
+      {
+        "id": "gaming-mediumhard-warcraft-frozen-throne-c",
+        "text": "Anduin Lothar"
+      },
+      {
+        "id": "gaming-mediumhard-warcraft-frozen-throne-d",
+        "text": "Kael'thas"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-bioshock-columbia",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się podniebne miasto z BioShock Infinite?",
+    "correctAnswerId": "gaming-mediumhard-bioshock-columbia-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-bioshock-columbia-a",
+        "text": "Columbia"
+      },
+      {
+        "id": "gaming-mediumhard-bioshock-columbia-b",
+        "text": "Arcadia"
+      },
+      {
+        "id": "gaming-mediumhard-bioshock-columbia-c",
+        "text": "Eden"
+      },
+      {
+        "id": "gaming-mediumhard-bioshock-columbia-d",
+        "text": "Helios"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-souls-bonfire",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywają się ogniska pełniące rolę punktów odpoczynku w Dark Souls?",
+    "correctAnswerId": "gaming-mediumhard-souls-bonfire-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-souls-bonfire-a",
+        "text": "Bonfire"
+      },
+      {
+        "id": "gaming-mediumhard-souls-bonfire-b",
+        "text": "Sanctuary"
+      },
+      {
+        "id": "gaming-mediumhard-souls-bonfire-c",
+        "text": "Beacon"
+      },
+      {
+        "id": "gaming-mediumhard-souls-bonfire-d",
+        "text": "Camp Node"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-minecraft-enchant",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jaki materiał jest potrzebny do wytworzenia stołu do zaklęć oprócz książki i obsydianu?",
+    "correctAnswerId": "gaming-mediumhard-minecraft-enchant-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-minecraft-enchant-a",
+        "text": "Diament"
+      },
+      {
+        "id": "gaming-mediumhard-minecraft-enchant-b",
+        "text": "Żelazo"
+      },
+      {
+        "id": "gaming-mediumhard-minecraft-enchant-c",
+        "text": "Lapis lazuli"
+      },
+      {
+        "id": "gaming-mediumhard-minecraft-enchant-d",
+        "text": "Szmaragd"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-league-drake",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Który smok w LoL-u daje duszę zwiększającą tarczę po zadaniu obrażeń?",
+    "correctAnswerId": "gaming-mediumhard-league-drake-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-league-drake-a",
+        "text": "Hextechowy"
+      },
+      {
+        "id": "gaming-mediumhard-league-drake-b",
+        "text": "Piekielny"
+      },
+      {
+        "id": "gaming-mediumhard-league-drake-c",
+        "text": "Górski"
+      },
+      {
+        "id": "gaming-mediumhard-league-drake-d",
+        "text": "Oceaniczny"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-zelda-timeline",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się słynny miecz rozszczepiający zło w serii Zelda?",
+    "correctAnswerId": "gaming-mediumhard-zelda-timeline-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-zelda-timeline-a",
+        "text": "Master Sword"
+      },
+      {
+        "id": "gaming-mediumhard-zelda-timeline-b",
+        "text": "Biggoron Sword"
+      },
+      {
+        "id": "gaming-mediumhard-zelda-timeline-c",
+        "text": "Four Sword"
+      },
+      {
+        "id": "gaming-mediumhard-zelda-timeline-d",
+        "text": "Kokiri Blade"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-ff-moogle",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywają się maskotki z wielu części Final Fantasy, kończące zdania na „kupo”?",
+    "correctAnswerId": "gaming-mediumhard-ff-moogle-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-ff-moogle-a",
+        "text": "Moogle"
+      },
+      {
+        "id": "gaming-mediumhard-ff-moogle-b",
+        "text": "Chocobo"
+      },
+      {
+        "id": "gaming-mediumhard-ff-moogle-c",
+        "text": "Tonberry"
+      },
+      {
+        "id": "gaming-mediumhard-ff-moogle-d",
+        "text": "Cactuar"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-pokemon-151",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Ile Pokémonów liczył pierwszy oficjalny Pokédex w regionie Kanto?",
+    "correctAnswerId": "gaming-mediumhard-pokemon-151-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-pokemon-151-a",
+        "text": "151"
+      },
+      {
+        "id": "gaming-mediumhard-pokemon-151-b",
+        "text": "100"
+      },
+      {
+        "id": "gaming-mediumhard-pokemon-151-c",
+        "text": "120"
+      },
+      {
+        "id": "gaming-mediumhard-pokemon-151-d",
+        "text": "200"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-starcraft-zerg",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Która rasa w StarCraft słynie z szybkiego zalewania przeciwnika liczbą jednostek?",
+    "correctAnswerId": "gaming-mediumhard-starcraft-zerg-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-starcraft-zerg-a",
+        "text": "Zerg"
+      },
+      {
+        "id": "gaming-mediumhard-starcraft-zerg-b",
+        "text": "Protosi"
+      },
+      {
+        "id": "gaming-mediumhard-starcraft-zerg-c",
+        "text": "Terranie"
+      },
+      {
+        "id": "gaming-mediumhard-starcraft-zerg-d",
+        "text": "Xel'Naga"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-metalgear-hero",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się główny bohater Metal Gear Solid 3: Snake Eater?",
+    "correctAnswerId": "gaming-mediumhard-metalgear-hero-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-metalgear-hero-a",
+        "text": "Naked Snake"
+      },
+      {
+        "id": "gaming-mediumhard-metalgear-hero-b",
+        "text": "Solid Snake"
+      },
+      {
+        "id": "gaming-mediumhard-metalgear-hero-c",
+        "text": "Liquid Snake"
+      },
+      {
+        "id": "gaming-mediumhard-metalgear-hero-d",
+        "text": "Raiden"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-wow-expansion-outland",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "W jakim dodatku do World of Warcraft gracze po raz pierwszy trafili do Outlandu?",
+    "correctAnswerId": "gaming-mediumhard-wow-expansion-outland-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-wow-expansion-outland-a",
+        "text": "The Burning Crusade"
+      },
+      {
+        "id": "gaming-mediumhard-wow-expansion-outland-b",
+        "text": "Wrath of the Lich King"
+      },
+      {
+        "id": "gaming-mediumhard-wow-expansion-outland-c",
+        "text": "Cataclysm"
+      },
+      {
+        "id": "gaming-mediumhard-wow-expansion-outland-d",
+        "text": "Legion"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-half-life-scientist",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak ma na imię naukowiec, bohater serii Half-Life?",
+    "correctAnswerId": "gaming-mediumhard-half-life-scientist-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-half-life-scientist-a",
+        "text": "Gordon Freeman"
+      },
+      {
+        "id": "gaming-mediumhard-half-life-scientist-b",
+        "text": "Alyx Vance"
+      },
+      {
+        "id": "gaming-mediumhard-half-life-scientist-c",
+        "text": "Adrian Shephard"
+      },
+      {
+        "id": "gaming-mediumhard-half-life-scientist-d",
+        "text": "Eli Vance"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-dota-ancients",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jaki jest główny cel w standardowym meczu Dota 2?",
+    "correctAnswerId": "gaming-mediumhard-dota-ancients-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-dota-ancients-a",
+        "text": "Zniszczyć Ancient przeciwnika"
+      },
+      {
+        "id": "gaming-mediumhard-dota-ancients-b",
+        "text": "Zdobyć najwięcej fragów"
+      },
+      {
+        "id": "gaming-mediumhard-dota-ancients-c",
+        "text": "Przetrwać 30 minut"
+      },
+      {
+        "id": "gaming-mediumhard-dota-ancients-d",
+        "text": "Zebrać wszystkie runy"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-elden-ring-currency",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się główna waluta/doświadczenie w Elden Ring?",
+    "correctAnswerId": "gaming-mediumhard-elden-ring-currency-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-elden-ring-currency-a",
+        "text": "Runy"
+      },
+      {
+        "id": "gaming-mediumhard-elden-ring-currency-b",
+        "text": "Dusze"
+      },
+      {
+        "id": "gaming-mediumhard-elden-ring-currency-c",
+        "text": "Echoes"
+      },
+      {
+        "id": "gaming-mediumhard-elden-ring-currency-d",
+        "text": "Sigile"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-hollowknight-city",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się upadłe królestwo w Hollow Knight?",
+    "correctAnswerId": "gaming-mediumhard-hollowknight-city-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-hollowknight-city-a",
+        "text": "Hallownest"
+      },
+      {
+        "id": "gaming-mediumhard-hollowknight-city-b",
+        "text": "Lordran"
+      },
+      {
+        "id": "gaming-mediumhard-hollowknight-city-c",
+        "text": "Boletaria"
+      },
+      {
+        "id": "gaming-mediumhard-hollowknight-city-d",
+        "text": "Drangleic"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-genshin-city-wind",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się miasto Anemo w Genshin Impact?",
+    "correctAnswerId": "gaming-mediumhard-genshin-city-wind-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-genshin-city-wind-a",
+        "text": "Mondstadt"
+      },
+      {
+        "id": "gaming-mediumhard-genshin-city-wind-b",
+        "text": "Liyue"
+      },
+      {
+        "id": "gaming-mediumhard-genshin-city-wind-c",
+        "text": "Inazuma"
+      },
+      {
+        "id": "gaming-mediumhard-genshin-city-wind-d",
+        "text": "Sumeru"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-assassins-creed-blade",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się ukryta broń asasynów na przedramieniu?",
+    "correctAnswerId": "gaming-mediumhard-assassins-creed-blade-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-assassins-creed-blade-a",
+        "text": "Ukryte ostrze"
+      },
+      {
+        "id": "gaming-mediumhard-assassins-creed-blade-b",
+        "text": "Krótki miecz"
+      },
+      {
+        "id": "gaming-mediumhard-assassins-creed-blade-c",
+        "text": "Hak skrytobójcy"
+      },
+      {
+        "id": "gaming-mediumhard-assassins-creed-blade-d",
+        "text": "Sztylet cienia"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-portal-antagonist",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się sztuczna inteligencja będąca główną antagonistką w Portal?",
+    "correctAnswerId": "gaming-mediumhard-portal-antagonist-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-portal-antagonist-a",
+        "text": "GLaDOS"
+      },
+      {
+        "id": "gaming-mediumhard-portal-antagonist-b",
+        "text": "SHODAN"
+      },
+      {
+        "id": "gaming-mediumhard-portal-antagonist-c",
+        "text": "Cortana"
+      },
+      {
+        "id": "gaming-mediumhard-portal-antagonist-d",
+        "text": "EVA"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-resident-evil-corporation",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jaka korporacja stoi za katastrofami biologicznymi w Resident Evil?",
+    "correctAnswerId": "gaming-mediumhard-resident-evil-corporation-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-resident-evil-corporation-a",
+        "text": "Umbrella"
+      },
+      {
+        "id": "gaming-mediumhard-resident-evil-corporation-b",
+        "text": "Abstergo"
+      },
+      {
+        "id": "gaming-mediumhard-resident-evil-corporation-c",
+        "text": "Vault-Tec"
+      },
+      {
+        "id": "gaming-mediumhard-resident-evil-corporation-d",
+        "text": "Hyperion"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-witcher-school",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Do której szkoły należy Geralt?",
+    "correctAnswerId": "gaming-mediumhard-witcher-school-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-witcher-school-a",
+        "text": "Szkoły Wilka"
+      },
+      {
+        "id": "gaming-mediumhard-witcher-school-b",
+        "text": "Szkoły Kota"
+      },
+      {
+        "id": "gaming-mediumhard-witcher-school-c",
+        "text": "Szkoły Gryfa"
+      },
+      {
+        "id": "gaming-mediumhard-witcher-school-d",
+        "text": "Szkoły Żmii"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-skyrim-shout",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się smoczy krzyk odpychający przeciwników w Skyrim?",
+    "correctAnswerId": "gaming-mediumhard-skyrim-shout-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-skyrim-shout-a",
+        "text": "Fus Ro Dah"
+      },
+      {
+        "id": "gaming-mediumhard-skyrim-shout-b",
+        "text": "Aard Vark"
+      },
+      {
+        "id": "gaming-mediumhard-skyrim-shout-c",
+        "text": "Thu'um Vex"
+      },
+      {
+        "id": "gaming-mediumhard-skyrim-shout-d",
+        "text": "Yol Toor Shul"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-fifa-studio",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Które studio historycznie odpowiadało za serię FIFA przed zmianą nazwy na EA Sports FC?",
+    "correctAnswerId": "gaming-mediumhard-fifa-studio-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-fifa-studio-a",
+        "text": "EA Sports"
+      },
+      {
+        "id": "gaming-mediumhard-fifa-studio-b",
+        "text": "2K Sports"
+      },
+      {
+        "id": "gaming-mediumhard-fifa-studio-c",
+        "text": "Konami"
+      },
+      {
+        "id": "gaming-mediumhard-fifa-studio-d",
+        "text": "Ubisoft"
+      }
+    ]
+  },
+  {
+    "key": "gaming-mediumhard-mass-effect-species",
+    "categoryKey": "gaming",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się rasa Garrusa Vakaryana?",
+    "correctAnswerId": "gaming-mediumhard-mass-effect-species-a",
+    "answers": [
+      {
+        "id": "gaming-mediumhard-mass-effect-species-a",
+        "text": "Turianie"
+      },
+      {
+        "id": "gaming-mediumhard-mass-effect-species-b",
+        "text": "Kroganie"
+      },
+      {
+        "id": "gaming-mediumhard-mass-effect-species-c",
+        "text": "Asari"
+      },
+      {
+        "id": "gaming-mediumhard-mass-effect-species-d",
+        "text": "Quarianie"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-doomguy-name",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak bywa określany bezimienny bohater klasycznych odsłon Dooma?",
+    "correctAnswerId": "gaming-hard-doomguy-name-a",
+    "answers": [
+      {
+        "id": "gaming-hard-doomguy-name-a",
+        "text": "Doomguy"
+      },
+      {
+        "id": "gaming-hard-doomguy-name-b",
+        "text": "Slayer Prime"
+      },
+      {
+        "id": "gaming-hard-doomguy-name-c",
+        "text": "Hell Marine"
+      },
+      {
+        "id": "gaming-hard-doomguy-name-d",
+        "text": "Mars Ranger"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-ff7-villain",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się główny antagonista Final Fantasy VII?",
+    "correctAnswerId": "gaming-hard-ff7-villain-a",
+    "answers": [
+      {
+        "id": "gaming-hard-ff7-villain-a",
+        "text": "Sephiroth"
+      },
+      {
+        "id": "gaming-hard-ff7-villain-b",
+        "text": "Kefka"
+      },
+      {
+        "id": "gaming-hard-ff7-villain-c",
+        "text": "Jecht"
+      },
+      {
+        "id": "gaming-hard-ff7-villain-d",
+        "text": "Ardyn"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-diablo-brother",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Którym z tytułowych Wielkich Złych jest Diablo?",
+    "correctAnswerId": "gaming-hard-diablo-brother-a",
+    "answers": [
+      {
+        "id": "gaming-hard-diablo-brother-a",
+        "text": "Panem Terroru"
+      },
+      {
+        "id": "gaming-hard-diablo-brother-b",
+        "text": "Panem Zniszczenia"
+      },
+      {
+        "id": "gaming-hard-diablo-brother-c",
+        "text": "Panem Kłamstw"
+      },
+      {
+        "id": "gaming-hard-diablo-brother-d",
+        "text": "Panem Bólu"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-warcraft-tree",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się drzewo świata nocnych elfów z Warcrafta zniszczone na początku Battle for Azeroth?",
+    "correctAnswerId": "gaming-hard-warcraft-tree-a",
+    "answers": [
+      {
+        "id": "gaming-hard-warcraft-tree-a",
+        "text": "Teldrassil"
+      },
+      {
+        "id": "gaming-hard-warcraft-tree-b",
+        "text": "Nordrassil"
+      },
+      {
+        "id": "gaming-hard-warcraft-tree-c",
+        "text": "Vordrassil"
+      },
+      {
+        "id": "gaming-hard-warcraft-tree-d",
+        "text": "Shaladrassil"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-mgs-ai",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jaki kryptonim nosi cybernetyczny bohater gry Metal Gear Rising: Revengeance?",
+    "correctAnswerId": "gaming-hard-mgs-ai-a",
+    "answers": [
+      {
+        "id": "gaming-hard-mgs-ai-a",
+        "text": "Raiden"
+      },
+      {
+        "id": "gaming-hard-mgs-ai-b",
+        "text": "Gray Fox"
+      },
+      {
+        "id": "gaming-hard-mgs-ai-c",
+        "text": "Snake"
+      },
+      {
+        "id": "gaming-hard-mgs-ai-d",
+        "text": "Otacon"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-zelda-ocarina-villain",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Kto jest głównym antagonistą w The Legend of Zelda: Ocarina of Time?",
+    "correctAnswerId": "gaming-hard-zelda-ocarina-villain-a",
+    "answers": [
+      {
+        "id": "gaming-hard-zelda-ocarina-villain-a",
+        "text": "Ganondorf"
+      },
+      {
+        "id": "gaming-hard-zelda-ocarina-villain-b",
+        "text": "Vaati"
+      },
+      {
+        "id": "gaming-hard-zelda-ocarina-villain-c",
+        "text": "Majora"
+      },
+      {
+        "id": "gaming-hard-zelda-ocarina-villain-d",
+        "text": "Zant"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-starcraft-queen",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się Królowa Ostrzy w StarCraft?",
+    "correctAnswerId": "gaming-hard-starcraft-queen-a",
+    "answers": [
+      {
+        "id": "gaming-hard-starcraft-queen-a",
+        "text": "Sarah Kerrigan"
+      },
+      {
+        "id": "gaming-hard-starcraft-queen-b",
+        "text": "Nova Terra"
+      },
+      {
+        "id": "gaming-hard-starcraft-queen-c",
+        "text": "Selendis"
+      },
+      {
+        "id": "gaming-hard-starcraft-queen-d",
+        "text": "Alexstrasza"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-elder-scrolls-prince",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Który daedryczny książę odpowiada za domenę wiedzy i pamięci w Skyrim: Dragonborn?",
+    "correctAnswerId": "gaming-hard-elder-scrolls-prince-a",
+    "answers": [
+      {
+        "id": "gaming-hard-elder-scrolls-prince-a",
+        "text": "Hermaeus Mora"
+      },
+      {
+        "id": "gaming-hard-elder-scrolls-prince-b",
+        "text": "Mehrunes Dagon"
+      },
+      {
+        "id": "gaming-hard-elder-scrolls-prince-c",
+        "text": "Molag Bal"
+      },
+      {
+        "id": "gaming-hard-elder-scrolls-prince-d",
+        "text": "Boethiah"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-darksouls-city",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się legendarne miasto bogów w Dark Souls?",
+    "correctAnswerId": "gaming-hard-darksouls-city-a",
+    "answers": [
+      {
+        "id": "gaming-hard-darksouls-city-a",
+        "text": "Anor Londo"
+      },
+      {
+        "id": "gaming-hard-darksouls-city-b",
+        "text": "Yharnam"
+      },
+      {
+        "id": "gaming-hard-darksouls-city-c",
+        "text": "Lothric"
+      },
+      {
+        "id": "gaming-hard-darksouls-city-d",
+        "text": "Latria"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-half-life-resonance",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się katastrofalne zdarzenie z początku Half-Life?",
+    "correctAnswerId": "gaming-hard-half-life-resonance-a",
+    "answers": [
+      {
+        "id": "gaming-hard-half-life-resonance-a",
+        "text": "Kaskada rezonansowa"
+      },
+      {
+        "id": "gaming-hard-half-life-resonance-b",
+        "text": "Załamanie portalu"
+      },
+      {
+        "id": "gaming-hard-half-life-resonance-c",
+        "text": "Błąd kwantowy"
+      },
+      {
+        "id": "gaming-hard-half-life-resonance-d",
+        "text": "Przebicie rdzenia"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-wow-lk-weapon",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się runiczny miecz Króla Lisza?",
+    "correctAnswerId": "gaming-hard-wow-lk-weapon-a",
+    "answers": [
+      {
+        "id": "gaming-hard-wow-lk-weapon-a",
+        "text": "Frostmourne"
+      },
+      {
+        "id": "gaming-hard-wow-lk-weapon-b",
+        "text": "Ashbringer"
+      },
+      {
+        "id": "gaming-hard-wow-lk-weapon-c",
+        "text": "Shadowmourne"
+      },
+      {
+        "id": "gaming-hard-wow-lk-weapon-d",
+        "text": "Doomhammer"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-pokemon-ghost-tower",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się nawiedzona wieża z pierwszej generacji Pokémonów?",
+    "correctAnswerId": "gaming-hard-pokemon-ghost-tower-a",
+    "answers": [
+      {
+        "id": "gaming-hard-pokemon-ghost-tower-a",
+        "text": "Pokémon Tower"
+      },
+      {
+        "id": "gaming-hard-pokemon-ghost-tower-b",
+        "text": "Spirit Pillar"
+      },
+      {
+        "id": "gaming-hard-pokemon-ghost-tower-c",
+        "text": "Lavender Spire"
+      },
+      {
+        "id": "gaming-hard-pokemon-ghost-tower-d",
+        "text": "Ghost Keep"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-bioshock-plasmids",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywają się genetyczne moce w BioShock?",
+    "correctAnswerId": "gaming-hard-bioshock-plasmids-a",
+    "answers": [
+      {
+        "id": "gaming-hard-bioshock-plasmids-a",
+        "text": "Plazmidy"
+      },
+      {
+        "id": "gaming-hard-bioshock-plasmids-b",
+        "text": "Mutageny"
+      },
+      {
+        "id": "gaming-hard-bioshock-plasmids-c",
+        "text": "Talenty"
+      },
+      {
+        "id": "gaming-hard-bioshock-plasmids-d",
+        "text": "Katalizatory"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-halo-ring",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywają się ogromne instalacje z serii Halo?",
+    "correctAnswerId": "gaming-hard-halo-ring-a",
+    "answers": [
+      {
+        "id": "gaming-hard-halo-ring-a",
+        "text": "Halo"
+      },
+      {
+        "id": "gaming-hard-halo-ring-b",
+        "text": "Arki"
+      },
+      {
+        "id": "gaming-hard-halo-ring-c",
+        "text": "Relikty"
+      },
+      {
+        "id": "gaming-hard-halo-ring-d",
+        "text": "Monolity"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-assassins-creed-order",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się zakon będący odwiecznym wrogiem asasynów?",
+    "correctAnswerId": "gaming-hard-assassins-creed-order-a",
+    "answers": [
+      {
+        "id": "gaming-hard-assassins-creed-order-a",
+        "text": "Templariusze"
+      },
+      {
+        "id": "gaming-hard-assassins-creed-order-b",
+        "text": "Inkwizytorzy"
+      },
+      {
+        "id": "gaming-hard-assassins-creed-order-c",
+        "text": "Strażnicy Edenu"
+      },
+      {
+        "id": "gaming-hard-assassins-creed-order-d",
+        "text": "Bractwo Krzyża"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-hollowknight-disease",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się pomarańczowa zaraza opanowująca Hallownest?",
+    "correctAnswerId": "gaming-hard-hollowknight-disease-a",
+    "answers": [
+      {
+        "id": "gaming-hard-hollowknight-disease-a",
+        "text": "Infekcja"
+      },
+      {
+        "id": "gaming-hard-hollowknight-disease-b",
+        "text": "Pustka"
+      },
+      {
+        "id": "gaming-hard-hollowknight-disease-c",
+        "text": "Klątwa Króla"
+      },
+      {
+        "id": "gaming-hard-hollowknight-disease-d",
+        "text": "Miazmat"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-mass-effect-reapers",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się rasa maszyn zagrażająca galaktyce w Mass Effect?",
+    "correctAnswerId": "gaming-hard-mass-effect-reapers-a",
+    "answers": [
+      {
+        "id": "gaming-hard-mass-effect-reapers-a",
+        "text": "Żniwiarze"
+      },
+      {
+        "id": "gaming-hard-mass-effect-reapers-b",
+        "text": "Gety"
+      },
+      {
+        "id": "gaming-hard-mass-effect-reapers-c",
+        "text": "Proteanie"
+      },
+      {
+        "id": "gaming-hard-mass-effect-reapers-d",
+        "text": "Cerberus"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-persona-school",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "W jakim mieście znajduje się szkoła Yasogami w Persona 4?",
+    "correctAnswerId": "gaming-hard-persona-school-a",
+    "answers": [
+      {
+        "id": "gaming-hard-persona-school-a",
+        "text": "Inaba"
+      },
+      {
+        "id": "gaming-hard-persona-school-b",
+        "text": "Shibuya"
+      },
+      {
+        "id": "gaming-hard-persona-school-c",
+        "text": "Iwatodai"
+      },
+      {
+        "id": "gaming-hard-persona-school-d",
+        "text": "Minato"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-resident-evil-virus",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się wirus odpowiedzialny za wiele wydarzeń w pierwszym Resident Evil?",
+    "correctAnswerId": "gaming-hard-resident-evil-virus-a",
+    "answers": [
+      {
+        "id": "gaming-hard-resident-evil-virus-a",
+        "text": "T-Wirus"
+      },
+      {
+        "id": "gaming-hard-resident-evil-virus-b",
+        "text": "G-Wirus"
+      },
+      {
+        "id": "gaming-hard-resident-evil-virus-c",
+        "text": "C-Wirus"
+      },
+      {
+        "id": "gaming-hard-resident-evil-virus-d",
+        "text": "Progenitor"
+      }
+    ]
+  },
+  {
+    "key": "gaming-hard-planescape-skull",
+    "categoryKey": "gaming",
+    "difficulty": "Hard",
+    "text": "Jak ma na imię gadająca czaszka towarzysząca Bezimiennemu w Planescape: Torment?",
+    "correctAnswerId": "gaming-hard-planescape-skull-a",
+    "answers": [
+      {
+        "id": "gaming-hard-planescape-skull-a",
+        "text": "Morte"
+      },
+      {
+        "id": "gaming-hard-planescape-skull-b",
+        "text": "Ignus"
+      },
+      {
+        "id": "gaming-hard-planescape-skull-c",
+        "text": "Dak'kon"
+      },
+      {
+        "id": "gaming-hard-planescape-skull-d",
+        "text": "Nordom"
+      }
+    ]
+  }
+]
