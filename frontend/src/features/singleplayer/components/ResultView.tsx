@@ -1,9 +1,14 @@
 import { useMemo } from "react";
+import { Link } from "react-router";
 import { useSingleplayerStore } from "../store/singleplayerStore";
 
 export const ResultView = () => {
-  const selectedLevelName = useSingleplayerStore((state) => state.selectedLevelName);
-  const answerSelections = useSingleplayerStore((state) => state.answerSelections);
+  const selectedLevelName = useSingleplayerStore(
+    (state) => state.selectedLevelName,
+  );
+  const answerSelections = useSingleplayerStore(
+    (state) => state.answerSelections,
+  );
   const gameSession = useSingleplayerStore((state) => state.gameSession);
   const resultSummary = useSingleplayerStore((state) => state.resultSummary);
   const replay = useSingleplayerStore((state) => state.replay);
@@ -41,22 +46,24 @@ export const ResultView = () => {
     });
   }, [answerSelections, gameSession, resultSummary]);
 
+  const unlockedAchievements = resultSummary?.unlockedAchievements ?? [];
+
   if (!resultSummary) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] px-6 text-[#e5e3ff]">
         <div className="glass-panel w-full max-w-2xl rounded-[2rem] px-10 py-12 text-center">
           <h1 className="font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">
-            Wynik nie jest jeszcze dostępny
+            Wynik nie jest jeszcze dostepny
           </h1>
           <p className="mt-3 text-[#aaa8c4]">
-            Nie udało się odczytać podsumowania rozgrywki.
+            Nie udalo sie odczytac podsumowania rozgrywki.
           </p>
           <button
             type="button"
             onClick={goToLevelSelect}
             className="mt-8 rounded-full border border-white/10 px-8 py-4 font-bold text-[#e5e3ff]"
           >
-            Wróć do poziomów
+            Wroc do poziomow
           </button>
         </div>
       </div>
@@ -64,7 +71,8 @@ export const ResultView = () => {
   }
 
   const accuracy = Math.round(
-    (resultSummary.correctAnswersCount / Math.max(1, resultSummary.totalQuestions)) *
+    (resultSummary.correctAnswersCount /
+      Math.max(1, resultSummary.totalQuestions)) *
       100,
   );
   const rank = resolveRank(accuracy);
@@ -94,7 +102,7 @@ export const ResultView = () => {
                   {selectedLevelName ?? "Singleplayer Run"}
                 </h2>
                 <p className="mt-2 max-w-lg text-[#aaa8c4]">
-                  {`Skuteczność ${accuracy}%. Backend policzył ${resultSummary.correctAnswersCount} poprawnych odpowiedzi z ${resultSummary.totalQuestions}.`}
+                  {`Skutecznosc ${accuracy}%. Backend policzyl ${resultSummary.correctAnswersCount} poprawnych odpowiedzi z ${resultSummary.totalQuestions}.`}
                 </p>
               </div>
             </div>
@@ -102,7 +110,7 @@ export const ResultView = () => {
 
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
             <ResultStatCard
-              label="Wynik końcowy"
+              label="Wynik koncowy"
               value={String(resultSummary.totalScore)}
               suffix="pkt"
               borderClassName="border-[#e08dff]"
@@ -113,7 +121,7 @@ export const ResultView = () => {
               borderClassName="border-[#8ff5ff]"
             />
             <ResultStatCard
-              label="Skuteczność"
+              label="Skutecznosc"
               value={`${accuracy}%`}
               borderClassName="border-[#ffcf7d]"
             />
@@ -123,10 +131,114 @@ export const ResultView = () => {
             <div className="mb-6 flex items-center justify-between">
               <div>
                 <h3 className="font-headline text-2xl font-black tracking-tight">
+                  Zdobyte nagrody
+                </h3>
+                <p className="mt-1 text-sm text-[#aaa8c4]">
+                  Ten blok korzysta z danych zwroconych przez backend po
+                  zakonczeniu rozgrywki.
+                </p>
+              </div>
+              <div className="rounded-full bg-white/5 px-4 py-2 text-sm font-bold text-[#8ff5ff]">
+                {resultSummary.awardedCoins} coins
+              </div>
+            </div>
+
+            {unlockedAchievements.length > 0 ? (
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                {unlockedAchievements.map((reward) => (
+                  <article
+                    key={reward.code}
+                    className="rounded-[1.5rem] border border-white/10 bg-black/15 p-4"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="h-16 w-16 overflow-hidden rounded-[1.2rem] bg-white/5 ring-1 ring-white/10">
+                        {reward.rewardAvatarImageUrl ? (
+                          <img
+                            src={reward.rewardAvatarImageUrl}
+                            alt={reward.name}
+                            className="h-full w-full object-cover"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="flex h-full w-full items-center justify-center text-[#8ff5ff]">
+                            <span className="material-symbols-outlined text-2xl">
+                              emoji_events
+                            </span>
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <h4 className="font-headline text-xl font-black tracking-tight text-[#f4d5ff]">
+                            {reward.name}
+                          </h4>
+                          <span className="rounded-full bg-[#8ff5ff]/15 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#8ff5ff]">
+                            {reward.rewardType}
+                          </span>
+                        </div>
+                        <p className="mt-2 text-sm text-[#aaa8c4]">
+                          {reward.rewardDescription}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {reward.rewardCoins ? (
+                        <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-2 text-xs font-bold text-[#ffcf7d]">
+                          <span className="material-symbols-outlined text-sm">
+                            monetization_on
+                          </span>
+                          {reward.rewardCoins} coins
+                        </span>
+                      ) : null}
+                      {reward.rewardAvatarKey ? (
+                        <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-2 text-xs font-bold text-[#8ff5ff]">
+                          <span className="material-symbols-outlined text-sm">
+                            face
+                          </span>
+                          {reward.rewardAvatarKey}
+                        </span>
+                      ) : null}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <div className="rounded-[1.5rem] bg-black/15 px-5 py-5 text-sm text-[#aaa8c4]">
+                W tej rozgrywce nie odblokowano nowych nagrod.
+              </div>
+            )}
+
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <Link
+                to="/achievements"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 font-bold text-[#e5e3ff] transition-colors hover:bg-white/10"
+              >
+                <span className="material-symbols-outlined text-sm">
+                  emoji_events
+                </span>
+                Katalog achievementow
+              </Link>
+              <Link
+                to="/avatars"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-6 py-3 font-black tracking-[0.18em] text-[#4f006c] transition-transform hover:scale-105 active:scale-95"
+              >
+                <span className="material-symbols-outlined text-sm">face</span>
+                Katalog avatarow
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] bg-[#171730] p-6 md:p-8">
+            <div className="mb-6 flex items-center justify-between">
+              <div>
+                <h3 className="font-headline text-2xl font-black tracking-tight">
                   Przebieg rundy
                 </h3>
                 <p className="mt-1 text-sm text-[#aaa8c4]">
-                  Poprawna odpowiedź dla każdego pytania pochodzi bezpośrednio z backendu.
+                  Poprawna odpowiedz dla kazdego pytania pochodzi bezposrednio
+                  z backendu.
                 </p>
               </div>
               <span className="material-symbols-outlined text-[#8ff5ff]">
@@ -160,7 +272,7 @@ export const ResultView = () => {
                           <span className="material-symbols-outlined text-sm">
                             {detail.isCorrect ? "check_circle" : "cancel"}
                           </span>
-                          {detail.isCorrect ? "Poprawnie" : "Błędnie"}
+                          {detail.isCorrect ? "Poprawnie" : "Blednie"}
                         </span>
                       </div>
                       <h4 className="font-headline text-xl font-bold text-[#f4d5ff]">
@@ -171,14 +283,14 @@ export const ResultView = () => {
 
                   <div className="mt-5 grid gap-3 md:grid-cols-2">
                     <AnswerInfoCard
-                      label="Twoja odpowiedź"
+                      label="Twoja odpowiedz"
                       value={detail.selectedAnswerText}
                       accentClassName={
                         detail.isCorrect ? "text-emerald-300" : "text-rose-300"
                       }
                     />
                     <AnswerInfoCard
-                      label="Poprawna odpowiedź"
+                      label="Poprawna odpowiedz"
                       value={detail.correctAnswerText}
                       accentClassName="text-[#8ff5ff]"
                     />
@@ -205,7 +317,7 @@ export const ResultView = () => {
               className="flex items-center justify-center gap-2 rounded-full border border-[#e08dff]/20 bg-[#29294a] px-8 py-4 font-bold text-[#e5e3ff] transition-all hover:bg-[#232341] active:scale-95"
             >
               <span className="material-symbols-outlined">map</span>
-              Powrót do wyboru poziomu
+              Powrot do wyboru poziomu
             </button>
           </div>
         </section>
@@ -229,7 +341,7 @@ export const ResultView = () => {
             <dl className="space-y-4 text-sm text-[#aaa8c4]">
               <SummaryRow label="Poziom" value={selectedLevelName ?? "Nieznany"} />
               <SummaryRow
-                label="Liczba pytań"
+                label="Liczba pytan"
                 value={String(resultSummary.totalQuestions)}
               />
               <SummaryRow

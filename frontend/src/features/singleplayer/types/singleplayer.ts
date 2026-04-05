@@ -67,11 +67,25 @@ export interface SingleplayerQuestionResultDetail {
   correctAnswerId: string;
 }
 
+export interface SingleplayerAchievementAward {
+  code: string;
+  name: string;
+  description: string;
+  iconUrl: string;
+  rewardType: string;
+  rewardDescription: string;
+  rewardCoins?: number | null;
+  rewardAvatarKey?: string | null;
+  rewardAvatarImageUrl?: string | null;
+}
+
 export interface SingleplayerResultSummary {
   totalScore: number;
   correctAnswersCount: number;
   totalQuestions: number;
   details: SingleplayerQuestionResultDetail[];
+  awardedCoins: number;
+  unlockedAchievements: SingleplayerAchievementAward[];
 }
 
 export interface SingleplayerCategoryLevelDetails {

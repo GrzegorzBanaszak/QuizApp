@@ -145,7 +145,10 @@ export const AuthLoginSection = () => {
 
   if (session) {
     return (
-      <section className="mb-16 w-full max-w-4xl" aria-label="Profil użytkownika">
+      <section
+        className="mb-16 w-full max-w-4xl"
+        aria-label="Profil użytkownika"
+      >
         <div className="glass-panel rounded-[2rem] border border-[#46465e]/30 px-5 py-6 md:px-8 md:py-8">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
