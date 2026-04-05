@@ -5,6 +5,7 @@ public sealed class SocialProfileResponse : ISocialAuthResult
     public bool IsNewUser { get; init; }
     public string? GoogleId { get; init; }
     public string? FacebookId { get; init; }
+    public string? ProviderToken { get; init; }
     public string Name { get; init; } = string.Empty;
     public string? FirstName { get; init; }
     public string? LastName { get; init; }

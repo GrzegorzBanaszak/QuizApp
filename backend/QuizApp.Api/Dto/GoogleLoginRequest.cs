@@ -1,6 +1,6 @@
 namespace QuizApp.Api.Dto;
 
 public sealed record GoogleLoginRequest(
-    string ProviderToken,
-    string? CustomUsername,
-    string? CustomAvatarUrl);
+    string? Code,
+    string? RedirectUri,
+    string? Token);

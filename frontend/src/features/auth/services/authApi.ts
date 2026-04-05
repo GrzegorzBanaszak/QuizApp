@@ -1,7 +1,7 @@
 import type {
   AuthAvatarOption,
   AuthResponse,
-  GoogleTokenRequest,
+  GoogleLoginRequest,
   GoogleVerifyResponse,
   PendingSocialLogin,
   RegisterSocialRequest,
@@ -22,21 +22,26 @@ async function parseJsonResponse<T>(response: Response): Promise<T> {
   return (await response.json()) as T;
 }
 
-export async function verifyGoogleToken(
-  token: string,
+export async function verifyGoogleCode(
+  request: GoogleLoginRequest,
 ): Promise<GoogleVerifyResponse> {
-  const payload: GoogleTokenRequest = { token };
-
   const response = await fetch(`${AUTH_BASE}/verify-google`, {
     method: "POST",
     credentials: "include",
     headers: {
       "Content-Type": "application/json",
+      "X-Requested-With": "XMLHttpRequest",
     },
-    body: JSON.stringify(payload),
+    body: JSON.stringify(request),
   });
 
   return parseJsonResponse<GoogleVerifyResponse>(response);
+}
+
+export async function verifyGoogleToken(
+  token: string,
+): Promise<GoogleVerifyResponse> {
+  return verifyGoogleCode({ token });
 }
 
 export async function verifyFacebookToken(

@@ -1,16 +1,16 @@
+import { useEffectEvent, useState, startTransition } from "react";
 import { Link, useNavigate } from "react-router";
 import {
   isAuthResponse,
   loginAsGuest,
   logout,
   verifyFacebookToken,
-  verifyGoogleToken,
+  verifyGoogleCode,
 } from "../services/authApi";
-import { requestFacebookAccessToken } from "../services/facebookAuth";
-import { requestGoogleIdToken } from "../services/googleAuth";
 import { authAvatars } from "../data/authMockData";
+import { requestFacebookAccessToken } from "../services/facebookAuth";
+import { requestGoogleAuthorizationCode } from "../services/googleAuth";
 import { useAuthStore } from "../store/authStore";
-import { useState } from "react";
 
 export const AuthLoginSection = () => {
   const navigate = useNavigate();
@@ -18,12 +18,6 @@ export const AuthLoginSection = () => {
   const setSession = useAuthStore((state) => state.setSession);
   const setPendingSocialLogin = useAuthStore(
     (state) => state.setPendingSocialLogin,
-  );
-  const isGoogleLoginLoading = useAuthStore(
-    (state) => state.isGoogleLoginLoading,
-  );
-  const setGoogleLoginLoading = useAuthStore(
-    (state) => state.setGoogleLoginLoading,
   );
   const isFacebookLoginLoading = useAuthStore(
     (state) => state.isFacebookLoginLoading,
@@ -34,14 +28,14 @@ export const AuthLoginSection = () => {
   const error = useAuthStore((state) => state.error);
   const setError = useAuthStore((state) => state.setError);
   const [isGuestLoginLoading, setGuestLoginLoading] = useState(false);
+  const [isGoogleLoginLoading, setGoogleLoginLoading] = useState(false);
+  const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
   const clearDraftAuth = () => {
     setError(null);
   };
 
-  const handleGoogleLogin = async () => {
-    const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
-
+  const handleGoogleLogin = useEffectEvent(async () => {
     if (!googleClientId) {
       setError("Brak VITE_GOOGLE_CLIENT_ID w konfiguracji frontendu.");
       return;
@@ -51,23 +45,36 @@ export const AuthLoginSection = () => {
     setGoogleLoginLoading(true);
 
     try {
-      const idToken = await requestGoogleIdToken(googleClientId);
-      const response = await verifyGoogleToken(idToken);
+      const code = await requestGoogleAuthorizationCode(googleClientId);
+      const response = await verifyGoogleCode({
+        code,
+        redirectUri: window.location.origin,
+      });
 
       if (isAuthResponse(response)) {
-        setSession({
-          profile: response.profile,
+        startTransition(() => {
+          setSession({
+            profile: response.profile,
+          });
+          navigate("/", { replace: true });
         });
-        navigate("/", { replace: true });
         return;
       }
 
-      setPendingSocialLogin({
-        provider: "Google",
-        providerToken: idToken,
-        profile: response,
+      startTransition(() => {
+        const providerToken = response.providerToken;
+
+        if (!providerToken) {
+          throw new Error("Brak tymczasowego tokena logowania Google.");
+        }
+
+        setPendingSocialLogin({
+          provider: "Google",
+          providerToken,
+          profile: response,
+        });
+        navigate("/auth/create-character", { replace: true });
       });
-      navigate("/auth/create-character", { replace: true });
     } catch (loginError) {
       setError(
         loginError instanceof Error
@@ -77,7 +84,7 @@ export const AuthLoginSection = () => {
     } finally {
       setGoogleLoginLoading(false);
     }
-  };
+  });
 
   const handleFacebookLogin = async () => {
     const facebookAppId = import.meta.env.VITE_FACEBOOK_APP_ID;
@@ -145,10 +152,7 @@ export const AuthLoginSection = () => {
 
   if (session) {
     return (
-      <section
-        className="mb-16 w-full max-w-4xl"
-        aria-label="Profil użytkownika"
-      >
+      <section className="mb-16 w-full max-w-4xl" aria-label="Profil użytkownika">
         <div className="glass-panel rounded-[2rem] border border-[#46465e]/30 px-5 py-6 md:px-8 md:py-8">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
@@ -209,11 +213,17 @@ export const AuthLoginSection = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <button
             type="button"
-            onClick={handleGoogleLogin}
+            onClick={() => {
+              void handleGoogleLogin();
+            }}
             disabled={isGoogleLoginLoading}
-            className="flex items-center justify-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-bold text-gray-900 transition-all hover:scale-[1.02] disabled:cursor-wait disabled:opacity-60"
+            className="flex items-center justify-center gap-3 rounded-full border border-[#dadce0] bg-white px-6 py-4 text-sm font-bold text-[#3c4043] shadow-[0_10px_30px_rgba(5,8,22,0.24)] transition-all hover:scale-[1.02] hover:border-[#c6c6c6] disabled:cursor-wait disabled:opacity-60"
           >
-            <svg className="h-6 w-6" viewBox="0 0 24 24" aria-hidden="true">
+            <svg
+              className="h-6 w-6 shrink-0"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
               <path
                 d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
                 fill="#4285F4"

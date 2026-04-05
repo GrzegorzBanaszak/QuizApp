@@ -19,22 +19,39 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("verify-google")]
-    public async Task<IActionResult> VerifyGoogle([FromBody] GoogleTokenRequest request)
+    public async Task<IActionResult> VerifyGoogle([FromBody] GoogleLoginRequest request)
     {
-        if (string.IsNullOrWhiteSpace(request.Token))
+        if (string.IsNullOrWhiteSpace(request.Token) && string.IsNullOrWhiteSpace(request.Code))
         {
-            return BadRequest(new { message = "token is required." });
+            return BadRequest(new { message = "token or code is required." });
+        }
+
+        if (!string.IsNullOrWhiteSpace(request.Code) && string.IsNullOrWhiteSpace(request.RedirectUri))
+        {
+            return BadRequest(new { message = "redirectUri is required when code is provided." });
         }
 
         try
         {
-            var result = await _authService.VerifyGoogleAsync(request.Token);
+            var result = !string.IsNullOrWhiteSpace(request.Code)
+                ? await _authService.VerifyGoogleCodeAsync(
+                    request.Code,
+                    request.RedirectUri!)
+                : await _authService.VerifyGoogleAsync(request.Token!);
             AppendAuthCookieIfPresent(result);
             return Ok(result);
         }
         catch (InvalidJwtException)
         {
             return Unauthorized(new { message = "Invalid Google token." });
+        }
+        catch (UnauthorizedAccessException)
+        {
+            return Unauthorized(new { message = "Invalid Google token." });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new { message = ex.Message });
         }
     }
 
@@ -79,11 +96,11 @@ public class AuthController : ControllerBase
         }
         catch (InvalidJwtException)
         {
-            return Unauthorized(new { message = "Invalid Google token." });
+            return Unauthorized(new { message = request.Provider == QuizApp.Api.Models.AuthProvider.Google ? "Invalid Google token." : "Invalid Facebook token." });
         }
         catch (UnauthorizedAccessException)
         {
-            return Unauthorized(new { message = "Invalid Facebook token." });
+            return Unauthorized(new { message = request.Provider == QuizApp.Api.Models.AuthProvider.Google ? "Invalid Google token." : "Invalid Facebook token." });
         }
         catch (ArgumentOutOfRangeException ex)
         {

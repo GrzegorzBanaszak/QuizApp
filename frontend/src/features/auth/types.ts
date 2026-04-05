@@ -10,6 +10,7 @@ export interface SocialProfileResponse {
   isNewUser: boolean;
   googleId?: string | null;
   facebookId?: string | null;
+  providerToken?: string | null;
   name: string;
   firstName?: string | null;
   lastName?: string | null;
@@ -50,8 +51,10 @@ export interface UpdateUserProfileRequest {
   avatarUrl: string;
 }
 
-export interface GoogleTokenRequest {
-  token: string;
+export interface GoogleLoginRequest {
+  code?: string | null;
+  redirectUri?: string | null;
+  token?: string | null;
 }
 
 export interface AuthSession {
