@@ -5,8 +5,8 @@ import {
   getAchievementStatus,
 } from "./achievementCatalogUtils";
 import {
+  AchievementMiniLabel,
   AchievementVisual,
-  InfoPanel,
   ProgressBlock,
   RewardChip,
   StatusPill,
@@ -19,77 +19,124 @@ export const FeaturedAchievementCard = ({
 }) => {
   const status = getAchievementStatus(achievement);
   const accent = getAchievementAccent(achievement, true);
+  const wrapperClassName =
+    status.key === "unlocked"
+      ? "bg-[linear-gradient(135deg,rgba(224,141,255,0.26)_0%,rgba(255,104,167,0.18)_100%)]"
+      : status.key === "in-progress"
+        ? "bg-[linear-gradient(135deg,rgba(143,245,255,0.14)_0%,rgba(224,141,255,0.14)_100%)]"
+        : "bg-[linear-gradient(135deg,rgba(70,70,94,0.22)_0%,rgba(12,12,33,0.28)_100%)]";
+  const hiddenDescription =
+    status.key === "locked"
+      ? "Ukryte osiagniecie. Kontynuuj gre, aby dowiedziec sie wiecej."
+      : achievement.description;
 
   return (
-    <article className="group relative overflow-hidden rounded-[2.25rem] bg-[linear-gradient(135deg,rgba(29,29,57,0.92)_0%,rgba(17,17,40,0.92)_52%,rgba(12,12,33,0.94)_100%)] p-1 shadow-[0_24px_80px_rgba(5,8,22,0.36)] ring-1 ring-white/8">
+    <article
+      className={`group relative overflow-hidden rounded-[2.25rem] p-1 shadow-[0_24px_80px_rgba(5,8,22,0.36)] ring-1 ring-white/8 ${wrapperClassName}`}
+    >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(143,245,255,0.18),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(224,141,255,0.22),transparent_34%)] opacity-80" />
-      <div className="relative flex h-full flex-col gap-6 rounded-[calc(2.25rem-4px)] bg-[#171730]/80 p-6 backdrop-blur-xl md:p-8 lg:flex-row lg:items-stretch">
+      <div className="absolute inset-0 opacity-10">
+        <div className="h-full w-full bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.08)_45%,transparent_100%)]" />
+      </div>
+      <div className="relative flex h-full flex-col gap-8 rounded-[calc(2.25rem-4px)] bg-[#1d1d39]/55 p-8 backdrop-blur-md md:p-10 lg:flex-row">
         <div className="flex min-w-0 flex-1 flex-col">
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <AchievementVisual achievement={achievement} featured />
-              <div className="min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <StatusPill status={status} />
-                  {achievement.isElite ? (
-                    <span className="rounded-full bg-[#8ff5ff]/12 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#8ff5ff] ring-1 ring-[#8ff5ff]/20">
-                      Elitarne
-                    </span>
-                  ) : null}
+          <div>
+            <div className="flex flex-wrap items-start justify-between gap-6">
+              <div className="flex items-start gap-6">
+                <div className="shrink-0">
+                  <AchievementVisual
+                    achievement={achievement}
+                    status={status}
+                    featured
+                  />
                 </div>
-                <h2 className="mt-3 font-headline text-3xl font-black tracking-[-0.04em] text-[#f4d5ff] md:text-4xl">
-                  {achievement.name}
-                </h2>
-                <p className="mt-3 max-w-3xl text-sm leading-7 text-[#aaa8c4] md:text-base">
-                  {achievement.description}
-                </p>
+
+                <div className="min-w-0">
+                  <h2 className="font-headline text-3xl font-black uppercase tracking-[-0.05em] text-[#f4d5ff] md:text-5xl">
+                    {achievement.name}
+                  </h2>
+                  <p
+                    className={`mt-4 max-w-3xl text-base leading-8 md:text-lg ${
+                      status.key === "locked"
+                        ? "italic text-[#8d8aa8]"
+                        : "text-[#d5d2ef]"
+                    }`}
+                  >
+                    {hiddenDescription}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-2">
+                <StatusPill status={status} />
+                {achievement.isElite ? (
+                  <span className="rounded-full border border-[#8ff5ff]/40 bg-[#8ff5ff]/10 px-4 py-1.5 text-[10px] font-black uppercase tracking-[0.24em] text-[#8ff5ff]">
+                    Elitarne
+                  </span>
+                ) : null}
+              </div>
+            </div>
+
+            <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+              <div>
+                <AchievementMiniLabel
+                  label="Wyzwanie"
+                  value={achievement.conditionDescription}
+                />
+
+                <div className="mt-8">
+                  <ProgressBlock
+                    achievement={achievement}
+                    accent={accent}
+                    status={status}
+                    large
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-3 lg:justify-end">
+                <RewardChip kind="xp" value={achievement.rewardExperience} />
+                <RewardChip kind="coins" value={achievement.rewardCoins} />
+                <RewardChip
+                  kind="avatar"
+                  value={achievement.rewardAvatarKey}
+                  imageUrl={achievement.rewardAvatarImageUrl}
+                />
               </div>
             </div>
           </div>
 
-          <div className="mt-6 grid gap-3 md:grid-cols-2">
-            <InfoPanel label="Warunek" value={achievement.conditionDescription} />
-            <InfoPanel
-              label="Nagroda"
-              value={
-                achievement.rewardDescription ||
-                "Nagroda zostanie ujawniona po odblokowaniu."
-              }
-            />
-          </div>
-
-          <div className="mt-6">
-            <ProgressBlock achievement={achievement} accent={accent} large />
+          <div className="mt-8 flex items-center justify-between gap-4 pt-5 text-sm text-[#aaa8c4]">
+            <span>
+              {achievement.isUnlocked && achievement.awardedAt
+                ? `Zdobyte ${formatAchievementAwardedAt(achievement.awardedAt)}.`
+                : status.key === "in-progress"
+                  ? "Postep jest juz naliczany przez backend."
+                  : "Jeszcze zablokowane"}
+            </span>
+            <span className="text-xs font-black uppercase tracking-[0.24em] text-[#8ff5ff]">
+              {achievement.progressLabel}
+            </span>
           </div>
         </div>
 
-        <div className="flex w-full flex-col justify-between gap-4 rounded-[1.9rem] bg-black/18 p-5 ring-1 ring-white/8 lg:max-w-sm">
-          <div>
-            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-[#aaa8c4]">
-              Premie
+        <div className="rounded-[2rem] bg-[#232341]/80 p-5 lg:w-[18rem]">
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] text-[#aaa8c4]">
+            Status
+          </p>
+          <p className="mt-3 font-headline text-3xl font-black text-[#f4d5ff]">
+            {status.label}
+          </p>
+          <p className="mt-3 text-sm leading-7 text-[#aaa8c4]">
+            {achievement.rewardDescription ||
+              "Nagroda zostanie ujawniona po odblokowaniu."}
+          </p>
+          <div className="mt-6 rounded-[1.5rem] bg-white/5 px-4 py-3">
+            <p className="text-[10px] font-black uppercase tracking-[0.24em] text-[#aaa8c4]">
+              Typ nagrody
             </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <RewardChip kind="xp" value={achievement.rewardExperience} />
-              <RewardChip kind="coins" value={achievement.rewardCoins} />
-              <RewardChip
-                kind="avatar"
-                value={achievement.rewardAvatarKey}
-                imageUrl={achievement.rewardAvatarImageUrl}
-              />
-            </div>
-          </div>
-
-          <div className="rounded-[1.5rem] bg-white/5 p-4">
-            <p className="text-[10px] font-black uppercase tracking-[0.26em] text-[#aaa8c4]">
-              Status
-            </p>
-            <p className="mt-2 font-headline text-2xl font-black text-[#f4d5ff]">
-              {status.label}
-            </p>
-            <p className="mt-2 text-sm text-[#aaa8c4]">
-              {achievement.awardedAt
-                ? `Zdobyte ${formatAchievementAwardedAt(achievement.awardedAt)}.`
-                : "Kontynuuj gre, aby domknac wymagany progres i odblokowac nagrode."}
+            <p className="mt-2 text-sm font-bold text-[#f4d5ff]">
+              {achievement.rewardType === "Avatar" ? "Avatar" : "XP / Monety"}
             </p>
           </div>
         </div>

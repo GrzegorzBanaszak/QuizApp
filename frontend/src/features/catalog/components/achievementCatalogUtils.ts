@@ -25,6 +25,7 @@ export interface AchievementAccent {
   shellClassName: string;
   bodyClassName: string;
   barClassName: string;
+  labelClassName: string;
 }
 
 export function getAchievementCatalogStats(
@@ -89,7 +90,8 @@ export function getAchievementAccent(
         "bg-[linear-gradient(145deg,rgba(224,141,255,0.22)_0%,rgba(255,104,167,0.16)_100%)] ring-1 ring-[#e08dff]/12",
       bodyClassName: featured ? "" : "bg-[#171730]/82",
       barClassName:
-        "bg-gradient-to-r from-[#e08dff] via-[#f1a3ff] to-[#ff68a7] text-[#f4d5ff]",
+        "bg-gradient-to-r from-[#e08dff] via-[#f1a3ff] to-[#ff68a7]",
+      labelClassName: "text-[#f4d5ff]",
     };
   }
 
@@ -98,15 +100,16 @@ export function getAchievementAccent(
       shellClassName:
         "bg-[linear-gradient(145deg,rgba(143,245,255,0.15)_0%,rgba(224,141,255,0.08)_100%)] ring-1 ring-[#8ff5ff]/10",
       bodyClassName: featured ? "" : "bg-[#171730]/78",
-      barClassName:
-        "bg-gradient-to-r from-[#8ff5ff] to-[#00deec] text-[#8ff5ff]",
+      barClassName: "bg-gradient-to-r from-[#8ff5ff] to-[#00deec]",
+      labelClassName: "text-[#8ff5ff]",
     };
   }
 
   return {
     shellClassName: "bg-white/[0.04] ring-1 ring-white/8",
     bodyClassName: featured ? "" : "bg-[#14142c]/78 saturate-50",
-    barClassName: "bg-[#46465e] text-[#aaa8c4]",
+    barClassName: "bg-[#46465e]",
+    labelClassName: "text-[#aaa8c4]",
   };
 }
 

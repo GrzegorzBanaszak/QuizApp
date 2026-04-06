@@ -41,8 +41,8 @@ backend/.vscode/*
 backend/**/appsettings.Development.json
 backend/**/appsettings.Production.json
 
-# Statyczne avatary użytkowników
-backend/QuizApp.Api/wwwroot/images/avatars/
+# Statyczne pliki backendu
+backend/**/wwwroot/
 
 # =========================
 # INFRASTRUKTURA (Terraform)
