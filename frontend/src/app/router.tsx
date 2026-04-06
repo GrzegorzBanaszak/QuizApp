@@ -66,13 +66,13 @@ const AppLayout = () => (
   <Suspense
     fallback={
       <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] text-[#e5e3ff]">
-        <div className="glass-panel rounded-[2rem] px-8 py-6 text-center">
+        <div className="glass-panel rounded-4xl px-8 py-6 text-center">
           <p className="font-headline text-lg font-bold">Ładowanie trybu...</p>
         </div>
       </div>
     }
   >
-    <div className="min-h-screen pb-24 text-[#e5e3ff] md:pb-0">
+    <div className="min-h-screen  text-[#e5e3ff] md:pb-0">
       <AppNavigation />
       <Outlet />
     </div>

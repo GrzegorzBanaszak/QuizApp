@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSingleplayerStore } from "../store/singleplayerStore";
+import { scrollToTop } from "../utils/scrollToTop";
 
 export const GameplayView = () => {
   const gameSession = useSingleplayerStore((state) => state.gameSession);
@@ -48,6 +49,10 @@ export const GameplayView = () => {
       cancelAnimationFrame(frame);
       window.clearTimeout(timer);
     };
+  }, [currentQuestion?.id]);
+
+  useEffect(() => {
+    scrollToTop();
   }, [currentQuestion?.id]);
 
   const totalQuestions = gameSession?.questions.length ?? 0;

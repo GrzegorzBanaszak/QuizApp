@@ -1,6 +1,7 @@
 import { useAuthStore } from "../../auth/store/authStore";
 import { CategoryGrid } from "./CategoryGrid";
 import { useSingleplayerStore } from "../store/singleplayerStore";
+import { Link } from "react-router";
 
 export const SingleplayerHomeView = () => {
   const session = useAuthStore((state) => state.session);
@@ -8,11 +9,12 @@ export const SingleplayerHomeView = () => {
   const isCategoriesLoading = useSingleplayerStore(
     (state) => state.isCategoriesLoading,
   );
-  const categoriesError = useSingleplayerStore((state) => state.categoriesError);
+  const categoriesError = useSingleplayerStore(
+    (state) => state.categoriesError,
+  );
   const selectedCategoryId = useSingleplayerStore(
     (state) => state.selectedCategoryId,
   );
-  const goToLevelSelect = useSingleplayerStore((state) => state.goToLevelSelect);
   const setSelectedCategoryId = useSingleplayerStore(
     (state) => state.setSelectedCategoryId,
   );
@@ -35,14 +37,15 @@ export const SingleplayerHomeView = () => {
     null;
 
   return (
-    <main className="mx-auto min-h-screen max-w-5xl px-6 pb-40 pt-12">
+    <main className="mx-auto min-h-screen max-w-5xl px-6 pb-48 pt-12">
       <section className="mb-20">
         <div className="mb-10">
           <h1 className="bg-gradient-to-r from-[#e08dff] via-[#d978ff] to-[#ff68a7] bg-clip-text font-headline text-4xl font-black tracking-[-0.04em] text-transparent md:text-5xl">
             SINGLEPLAYER LOBBY
           </h1>
           <p className="mt-2 text-lg text-[#aaa8c4]">
-            Witaj ponownie, {session.profile.username}. Wybierz wyzwanie na dziś.
+            Witaj ponownie, {session.profile.username}. Wybierz wyzwanie na
+            dziś.
           </p>
         </div>
 
@@ -124,20 +127,17 @@ export const SingleplayerHomeView = () => {
       </section>
 
       <div className="mt-16 flex justify-center">
-        <button
-          type="button"
-          onClick={goToLevelSelect}
-          disabled={!selectedCategory || isCategoriesLoading}
-          className="group relative overflow-hidden rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-12 py-5 shadow-[0_0_40px_rgba(224,141,255,0.4)] transition-all hover:scale-105 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
+        <Link
+          to="/"
+          className="group relative overflow-hidden rounded-full border border-white/10 bg-[#111128] px-12 py-5 shadow-[0_0_40px_rgba(17,17,40,0.4)] transition-all hover:scale-105 active:scale-95"
         >
-          <span className="relative z-10 flex items-center gap-3 font-headline text-xl font-black tracking-tight text-[#4f006c]">
-            WYBIERZ POZIOM
-            <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">
-              bolt
+          <span className="relative z-10 flex items-center gap-3 font-headline text-xl font-black tracking-tight text-[#e5e3ff]">
+            POWRÓT
+            <span className="material-symbols-outlined transition-transform group-hover:-translate-x-2">
+              arrow_back
             </span>
           </span>
-          <div className="absolute inset-0 translate-y-full bg-white/20 transition-transform group-hover:translate-y-0" />
-        </button>
+        </Link>
       </div>
     </main>
   );
