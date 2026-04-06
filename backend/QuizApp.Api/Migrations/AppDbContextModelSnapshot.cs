@@ -68,6 +68,9 @@ namespace QuizApp.Api.Migrations
                     b.Property<int?>("RewardCoins")
                         .HasColumnType("int");
 
+                    b.Property<int?>("RewardExperience")
+                        .HasColumnType("int");
+
                     b.Property<string>("RewardType")
                         .IsRequired()
                         .HasMaxLength(40)
@@ -179,6 +182,11 @@ namespace QuizApp.Api.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int>("FirstCompletionExperience")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
+
                     b.Property<string>("Key")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -191,6 +199,11 @@ namespace QuizApp.Api.Migrations
 
                     b.Property<int>("Order")
                         .HasColumnType("int");
+
+                    b.Property<int>("ReplayExperience")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
 
                     b.HasKey("Id");
 

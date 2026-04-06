@@ -8,4 +8,5 @@ public sealed class UserProfileDto
     public int? CurrentAvatarId { get; init; }
     public int TotalExperience { get; init; }
     public int Coins { get; init; }
+    public PlayerProgressDto Progress { get; init; } = new();
 }

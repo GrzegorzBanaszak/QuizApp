@@ -27,6 +27,7 @@ namespace QuizApp.Api.Migrations
                     RequiredCategoryKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     RequiredCompletedCategoriesCount = table.Column<int>(type: "int", nullable: true),
                     RewardType = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
+                    RewardExperience = table.Column<int>(type: "int", nullable: true),
                     RewardCoins = table.Column<int>(type: "int", nullable: true),
                     RewardAvatarKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
                 },
@@ -105,7 +106,9 @@ namespace QuizApp.Api.Migrations
                     Key = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Order = table.Column<int>(type: "int", nullable: false)
+                    Order = table.Column<int>(type: "int", nullable: false),
+                    FirstCompletionExperience = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
+                    ReplayExperience = table.Column<int>(type: "int", nullable: false, defaultValue: 0)
                 },
                 constraints: table =>
                 {

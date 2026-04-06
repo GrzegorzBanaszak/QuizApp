@@ -1,951 +1,1722 @@
-[
-  {
-    "key": "level-1",
-    "categoryKey": "science",
-    "name": "Podstawy nauki",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-2",
-    "categoryKey": "science",
-    "name": "Pierwsze eksperymenty",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-3",
-    "categoryKey": "science",
-    "name": "Świat odkryć",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-4",
-    "categoryKey": "science",
-    "name": "Laboratorium wiedzy",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-5",
-    "categoryKey": "science",
-    "name": "Naukowe wyzwanie",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-6",
-    "categoryKey": "science",
-    "name": "Sekrety wszechświata",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-7",
-    "categoryKey": "science",
-    "name": "Zaawansowane teorie",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-8",
-    "categoryKey": "science",
-    "name": "Granice poznania",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-9",
-    "categoryKey": "science",
-    "name": "Mistrz nauki",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-10",
-    "categoryKey": "science",
-    "name": "Elita odkrywców",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-11",
-    "categoryKey": "history",
-    "name": "Początki historii",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-12",
-    "categoryKey": "history",
-    "name": "Dawne cywilizacje",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-13",
-    "categoryKey": "history",
-    "name": "Królowie i imperia",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-14",
-    "categoryKey": "history",
-    "name": "Wielkie epoki",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-15",
-    "categoryKey": "history",
-    "name": "Bitwy i rewolucje",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-16",
-    "categoryKey": "history",
-    "name": "Przełomowe wydarzenia",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-17",
-    "categoryKey": "history",
-    "name": "Historia świata",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-18",
-    "categoryKey": "history",
-    "name": "Tajemnice przeszłości",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-19",
-    "categoryKey": "history",
-    "name": "Ekspert dziejów",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-20",
-    "categoryKey": "history",
-    "name": "Mistrz historii",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-21",
-    "categoryKey": "geography",
-    "name": "Podstawy geografii",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-22",
-    "categoryKey": "geography",
-    "name": "Mapy i stolice",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-23",
-    "categoryKey": "geography",
-    "name": "Kraje świata",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-24",
-    "categoryKey": "geography",
-    "name": "Lądy i oceany",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-25",
-    "categoryKey": "geography",
-    "name": "Szlaki i regiony",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-26",
-    "categoryKey": "geography",
-    "name": "Planeta Ziemia",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-27",
-    "categoryKey": "geography",
-    "name": "Ekstremalne miejsca",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-28",
-    "categoryKey": "geography",
-    "name": "Geograficzne wyzwanie",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-29",
-    "categoryKey": "geography",
-    "name": "Ekspert map",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-30",
-    "categoryKey": "geography",
-    "name": "Mistrz geografii",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-31",
-    "categoryKey": "technology",
-    "name": "Podstawy technologii",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-32",
-    "categoryKey": "technology",
-    "name": "Cyfrowy start",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-33",
-    "categoryKey": "technology",
-    "name": "Świat komputerów",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-34",
-    "categoryKey": "technology",
-    "name": "Internet i aplikacje",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-35",
-    "categoryKey": "technology",
-    "name": "Nowoczesne rozwiązania",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-36",
-    "categoryKey": "technology",
-    "name": "Kod i maszyny",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-37",
-    "categoryKey": "technology",
-    "name": "Zaawansowana technika",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-38",
-    "categoryKey": "technology",
-    "name": "Cyfrowi eksperci",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-39",
-    "categoryKey": "technology",
-    "name": "Technologiczne wyzwanie",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-40",
-    "categoryKey": "technology",
-    "name": "Mistrz technologii",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-41",
-    "categoryKey": "sports",
-    "name": "Podstawy sportu",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-42",
-    "categoryKey": "sports",
-    "name": "Sportowy rozruch",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-43",
-    "categoryKey": "sports",
-    "name": "Gwiazdy stadionów",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-44",
-    "categoryKey": "sports",
-    "name": "Dyscypliny świata",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-45",
-    "categoryKey": "sports",
-    "name": "Turniej wiedzy",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-46",
-    "categoryKey": "sports",
-    "name": "Historia sportu",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-47",
-    "categoryKey": "sports",
-    "name": "Legendy aren",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-48",
-    "categoryKey": "sports",
-    "name": "Sportowe wyzwanie",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-49",
-    "categoryKey": "sports",
-    "name": "Ekspert sportowy",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-50",
-    "categoryKey": "sports",
-    "name": "Mistrz sportu",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-51",
-    "categoryKey": "movies",
-    "name": "Podstawy kina",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-52",
-    "categoryKey": "movies",
-    "name": "Filmowy start",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-53",
-    "categoryKey": "movies",
-    "name": "Znane produkcje",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-54",
-    "categoryKey": "movies",
-    "name": "Gwiazdy ekranu",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-55",
-    "categoryKey": "movies",
-    "name": "Magia kina",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-56",
-    "categoryKey": "movies",
-    "name": "Filmowe klasyki",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-57",
-    "categoryKey": "movies",
-    "name": "Reżyserzy i dzieła",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-58",
-    "categoryKey": "movies",
-    "name": "Kinowe wyzwanie",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-59",
-    "categoryKey": "movies",
-    "name": "Ekspert filmowy",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-60",
-    "categoryKey": "movies",
-    "name": "Mistrz kina",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-61",
-    "categoryKey": "music",
-    "name": "Podstawy muzyki",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-62",
-    "categoryKey": "music",
-    "name": "Muzyczny start",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-63",
-    "categoryKey": "music",
-    "name": "Dźwięki świata",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-64",
-    "categoryKey": "music",
-    "name": "Wykonawcy i hity",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-65",
-    "categoryKey": "music",
-    "name": "Rytm i melodia",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-66",
-    "categoryKey": "music",
-    "name": "Muzyczne klasyki",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-67",
-    "categoryKey": "music",
-    "name": "Gatunki i legendy",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-68",
-    "categoryKey": "music",
-    "name": "Muzyczne wyzwanie",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-69",
-    "categoryKey": "music",
-    "name": "Ekspert muzyczny",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-70",
-    "categoryKey": "music",
-    "name": "Mistrz muzyki",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-71",
-    "categoryKey": "literature",
-    "name": "Podstawy literatury",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-72",
-    "categoryKey": "literature",
-    "name": "Świat książek",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-73",
-    "categoryKey": "literature",
-    "name": "Autorzy i tytuły",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-74",
-    "categoryKey": "literature",
-    "name": "Klasyka pióra",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-75",
-    "categoryKey": "literature",
-    "name": "Literackie motywy",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-76",
-    "categoryKey": "literature",
-    "name": "Wielkie dzieła",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-77",
-    "categoryKey": "literature",
-    "name": "Epoki literackie",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-78",
-    "categoryKey": "literature",
-    "name": "Literackie wyzwanie",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-79",
-    "categoryKey": "literature",
-    "name": "Ekspert literatury",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-80",
-    "categoryKey": "literature",
-    "name": "Mistrz literatury",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-81",
-    "categoryKey": "gaming",
-    "name": "Podstawy gier",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-82",
-    "categoryKey": "gaming",
-    "name": "Start gracza",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-83",
-    "categoryKey": "gaming",
-    "name": "Świat gamingu",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-84",
-    "categoryKey": "gaming",
-    "name": "Kultowe tytuły",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-85",
-    "categoryKey": "gaming",
-    "name": "Bohaterowie i światy",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-86",
-    "categoryKey": "gaming",
-    "name": "Historia gier",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-87",
-    "categoryKey": "gaming",
-    "name": "Zaawansowany gracz",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-88",
-    "categoryKey": "gaming",
-    "name": "Gamingowe wyzwanie",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-89",
-    "categoryKey": "gaming",
-    "name": "Ekspert gier",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-90",
-    "categoryKey": "gaming",
-    "name": "Mistrz gamingu",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  },
-
-  {
-    "key": "level-91",
-    "categoryKey": "general_knowledge",
-    "name": "Podstawy wiedzy ogólnej",
-    "order": 1,
-    "questionDistributions": [{ "difficulty": "Easy", "count": 5 }]
-  },
-  {
-    "key": "level-92",
-    "categoryKey": "general_knowledge",
-    "name": "Na dobry początek",
-    "order": 2,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 4 },
-      { "difficulty": "EasyMedium", "count": 1 }
-    ]
-  },
-  {
-    "key": "level-93",
-    "categoryKey": "general_knowledge",
-    "name": "Różne dziedziny",
-    "order": 3,
-    "questionDistributions": [
-      { "difficulty": "Easy", "count": 3 },
-      { "difficulty": "EasyMedium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-94",
-    "categoryKey": "general_knowledge",
-    "name": "Wszechstronny umysł",
-    "order": 4,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 3 },
-      { "difficulty": "Medium", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-95",
-    "categoryKey": "general_knowledge",
-    "name": "Quizowy krok dalej",
-    "order": 5,
-    "questionDistributions": [
-      { "difficulty": "EasyMedium", "count": 2 },
-      { "difficulty": "Medium", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-96",
-    "categoryKey": "general_knowledge",
-    "name": "Prawdziwe wyzwanie",
-    "order": 6,
-    "questionDistributions": [{ "difficulty": "Medium", "count": 5 }]
-  },
-  {
-    "key": "level-97",
-    "categoryKey": "general_knowledge",
-    "name": "Szeroka wiedza",
-    "order": 7,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 3 },
-      { "difficulty": "MediumHard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-98",
-    "categoryKey": "general_knowledge",
-    "name": "Quiz ekspercki",
-    "order": 8,
-    "questionDistributions": [
-      { "difficulty": "Medium", "count": 2 },
-      { "difficulty": "MediumHard", "count": 3 }
-    ]
-  },
-  {
-    "key": "level-99",
-    "categoryKey": "general_knowledge",
-    "name": "Ekspert wiedzy ogólnej",
-    "order": 9,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 3 },
-      { "difficulty": "Hard", "count": 2 }
-    ]
-  },
-  {
-    "key": "level-100",
-    "categoryKey": "general_knowledge",
-    "name": "Mistrz quizu",
-    "order": 10,
-    "questionDistributions": [
-      { "difficulty": "MediumHard", "count": 2 },
-      { "difficulty": "Hard", "count": 3 }
-    ]
-  }
+﻿[
+    {
+        "key":  "level-1",
+        "categoryKey":  "science",
+        "name":  "Podstawy nauki",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-2",
+        "categoryKey":  "science",
+        "name":  "Pierwsze eksperymenty",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-3",
+        "categoryKey":  "science",
+        "name":  "Ĺšwiat odkryÄ‡",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-4",
+        "categoryKey":  "science",
+        "name":  "Laboratorium wiedzy",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-5",
+        "categoryKey":  "science",
+        "name":  "Naukowe wyzwanie",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-6",
+        "categoryKey":  "science",
+        "name":  "Sekrety wszechĹ›wiata",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-7",
+        "categoryKey":  "science",
+        "name":  "Zaawansowane teorie",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-8",
+        "categoryKey":  "science",
+        "name":  "Granice poznania",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-9",
+        "categoryKey":  "science",
+        "name":  "Mistrz nauki",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-10",
+        "categoryKey":  "science",
+        "name":  "Elita odkrywcĂłw",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-11",
+        "categoryKey":  "history",
+        "name":  "PoczÄ…tki historii",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-12",
+        "categoryKey":  "history",
+        "name":  "Dawne cywilizacje",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-13",
+        "categoryKey":  "history",
+        "name":  "KrĂłlowie i imperia",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-14",
+        "categoryKey":  "history",
+        "name":  "Wielkie epoki",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-15",
+        "categoryKey":  "history",
+        "name":  "Bitwy i rewolucje",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-16",
+        "categoryKey":  "history",
+        "name":  "PrzeĹ‚omowe wydarzenia",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-17",
+        "categoryKey":  "history",
+        "name":  "Historia Ĺ›wiata",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-18",
+        "categoryKey":  "history",
+        "name":  "Tajemnice przeszĹ‚oĹ›ci",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-19",
+        "categoryKey":  "history",
+        "name":  "Ekspert dziejĂłw",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-20",
+        "categoryKey":  "history",
+        "name":  "Mistrz historii",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-21",
+        "categoryKey":  "geography",
+        "name":  "Podstawy geografii",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-22",
+        "categoryKey":  "geography",
+        "name":  "Mapy i stolice",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-23",
+        "categoryKey":  "geography",
+        "name":  "Kraje Ĺ›wiata",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-24",
+        "categoryKey":  "geography",
+        "name":  "LÄ…dy i oceany",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-25",
+        "categoryKey":  "geography",
+        "name":  "Szlaki i regiony",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-26",
+        "categoryKey":  "geography",
+        "name":  "Planeta Ziemia",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-27",
+        "categoryKey":  "geography",
+        "name":  "Ekstremalne miejsca",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-28",
+        "categoryKey":  "geography",
+        "name":  "Geograficzne wyzwanie",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-29",
+        "categoryKey":  "geography",
+        "name":  "Ekspert map",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-30",
+        "categoryKey":  "geography",
+        "name":  "Mistrz geografii",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-31",
+        "categoryKey":  "technology",
+        "name":  "Podstawy technologii",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-32",
+        "categoryKey":  "technology",
+        "name":  "Cyfrowy start",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-33",
+        "categoryKey":  "technology",
+        "name":  "Ĺšwiat komputerĂłw",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-34",
+        "categoryKey":  "technology",
+        "name":  "Internet i aplikacje",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-35",
+        "categoryKey":  "technology",
+        "name":  "Nowoczesne rozwiÄ…zania",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-36",
+        "categoryKey":  "technology",
+        "name":  "Kod i maszyny",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-37",
+        "categoryKey":  "technology",
+        "name":  "Zaawansowana technika",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-38",
+        "categoryKey":  "technology",
+        "name":  "Cyfrowi eksperci",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-39",
+        "categoryKey":  "technology",
+        "name":  "Technologiczne wyzwanie",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-40",
+        "categoryKey":  "technology",
+        "name":  "Mistrz technologii",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-41",
+        "categoryKey":  "sports",
+        "name":  "Podstawy sportu",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-42",
+        "categoryKey":  "sports",
+        "name":  "Sportowy rozruch",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-43",
+        "categoryKey":  "sports",
+        "name":  "Gwiazdy stadionĂłw",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-44",
+        "categoryKey":  "sports",
+        "name":  "Dyscypliny Ĺ›wiata",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-45",
+        "categoryKey":  "sports",
+        "name":  "Turniej wiedzy",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-46",
+        "categoryKey":  "sports",
+        "name":  "Historia sportu",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-47",
+        "categoryKey":  "sports",
+        "name":  "Legendy aren",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-48",
+        "categoryKey":  "sports",
+        "name":  "Sportowe wyzwanie",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-49",
+        "categoryKey":  "sports",
+        "name":  "Ekspert sportowy",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-50",
+        "categoryKey":  "sports",
+        "name":  "Mistrz sportu",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-51",
+        "categoryKey":  "movies",
+        "name":  "Podstawy kina",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-52",
+        "categoryKey":  "movies",
+        "name":  "Filmowy start",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-53",
+        "categoryKey":  "movies",
+        "name":  "Znane produkcje",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-54",
+        "categoryKey":  "movies",
+        "name":  "Gwiazdy ekranu",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-55",
+        "categoryKey":  "movies",
+        "name":  "Magia kina",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-56",
+        "categoryKey":  "movies",
+        "name":  "Filmowe klasyki",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-57",
+        "categoryKey":  "movies",
+        "name":  "ReĹĽyserzy i dzieĹ‚a",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-58",
+        "categoryKey":  "movies",
+        "name":  "Kinowe wyzwanie",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-59",
+        "categoryKey":  "movies",
+        "name":  "Ekspert filmowy",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-60",
+        "categoryKey":  "movies",
+        "name":  "Mistrz kina",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-61",
+        "categoryKey":  "music",
+        "name":  "Podstawy muzyki",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-62",
+        "categoryKey":  "music",
+        "name":  "Muzyczny start",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-63",
+        "categoryKey":  "music",
+        "name":  "DĹşwiÄ™ki Ĺ›wiata",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-64",
+        "categoryKey":  "music",
+        "name":  "Wykonawcy i hity",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-65",
+        "categoryKey":  "music",
+        "name":  "Rytm i melodia",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-66",
+        "categoryKey":  "music",
+        "name":  "Muzyczne klasyki",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-67",
+        "categoryKey":  "music",
+        "name":  "Gatunki i legendy",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-68",
+        "categoryKey":  "music",
+        "name":  "Muzyczne wyzwanie",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-69",
+        "categoryKey":  "music",
+        "name":  "Ekspert muzyczny",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-70",
+        "categoryKey":  "music",
+        "name":  "Mistrz muzyki",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-71",
+        "categoryKey":  "literature",
+        "name":  "Podstawy literatury",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-72",
+        "categoryKey":  "literature",
+        "name":  "Ĺšwiat ksiÄ…ĹĽek",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-73",
+        "categoryKey":  "literature",
+        "name":  "Autorzy i tytuĹ‚y",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-74",
+        "categoryKey":  "literature",
+        "name":  "Klasyka piĂłra",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-75",
+        "categoryKey":  "literature",
+        "name":  "Literackie motywy",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-76",
+        "categoryKey":  "literature",
+        "name":  "Wielkie dzieĹ‚a",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-77",
+        "categoryKey":  "literature",
+        "name":  "Epoki literackie",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-78",
+        "categoryKey":  "literature",
+        "name":  "Literackie wyzwanie",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-79",
+        "categoryKey":  "literature",
+        "name":  "Ekspert literatury",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-80",
+        "categoryKey":  "literature",
+        "name":  "Mistrz literatury",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-81",
+        "categoryKey":  "gaming",
+        "name":  "Podstawy gier",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-82",
+        "categoryKey":  "gaming",
+        "name":  "Start gracza",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-83",
+        "categoryKey":  "gaming",
+        "name":  "Ĺšwiat gamingu",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-84",
+        "categoryKey":  "gaming",
+        "name":  "Kultowe tytuĹ‚y",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-85",
+        "categoryKey":  "gaming",
+        "name":  "Bohaterowie i Ĺ›wiaty",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-86",
+        "categoryKey":  "gaming",
+        "name":  "Historia gier",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-87",
+        "categoryKey":  "gaming",
+        "name":  "Zaawansowany gracz",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-88",
+        "categoryKey":  "gaming",
+        "name":  "Gamingowe wyzwanie",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-89",
+        "categoryKey":  "gaming",
+        "name":  "Ekspert gier",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-90",
+        "categoryKey":  "gaming",
+        "name":  "Mistrz gamingu",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    },
+    {
+        "key":  "level-91",
+        "categoryKey":  "general_knowledge",
+        "name":  "Podstawy wiedzy ogĂłlnej",
+        "order":  1,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  100,
+        "replayExperience":  25
+    },
+    {
+        "key":  "level-92",
+        "categoryKey":  "general_knowledge",
+        "name":  "Na dobry poczÄ…tek",
+        "order":  2,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  4
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  1
+                                      }
+                                  ],
+        "firstCompletionExperience":  120,
+        "replayExperience":  30
+    },
+    {
+        "key":  "level-93",
+        "categoryKey":  "general_knowledge",
+        "name":  "RĂłĹĽne dziedziny",
+        "order":  3,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Easy",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  140,
+        "replayExperience":  35
+    },
+    {
+        "key":  "level-94",
+        "categoryKey":  "general_knowledge",
+        "name":  "Wszechstronny umysĹ‚",
+        "order":  4,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  160,
+        "replayExperience":  40
+    },
+    {
+        "key":  "level-95",
+        "categoryKey":  "general_knowledge",
+        "name":  "Quizowy krok dalej",
+        "order":  5,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "EasyMedium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  180,
+        "replayExperience":  45
+    },
+    {
+        "key":  "level-96",
+        "categoryKey":  "general_knowledge",
+        "name":  "Prawdziwe wyzwanie",
+        "order":  6,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  5
+                                      }
+                                  ],
+        "firstCompletionExperience":  200,
+        "replayExperience":  50
+    },
+    {
+        "key":  "level-97",
+        "categoryKey":  "general_knowledge",
+        "name":  "Szeroka wiedza",
+        "order":  7,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  220,
+        "replayExperience":  55
+    },
+    {
+        "key":  "level-98",
+        "categoryKey":  "general_knowledge",
+        "name":  "Quiz ekspercki",
+        "order":  8,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "Medium",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  240,
+        "replayExperience":  60
+    },
+    {
+        "key":  "level-99",
+        "categoryKey":  "general_knowledge",
+        "name":  "Ekspert wiedzy ogĂłlnej",
+        "order":  9,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  3
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  2
+                                      }
+                                  ],
+        "firstCompletionExperience":  260,
+        "replayExperience":  65
+    },
+    {
+        "key":  "level-100",
+        "categoryKey":  "general_knowledge",
+        "name":  "Mistrz quizu",
+        "order":  10,
+        "questionDistributions":  [
+                                      {
+                                          "difficulty":  "MediumHard",
+                                          "count":  2
+                                      },
+                                      {
+                                          "difficulty":  "Hard",
+                                          "count":  3
+                                      }
+                                  ],
+        "firstCompletionExperience":  280,
+        "replayExperience":  70
+    }
 ]

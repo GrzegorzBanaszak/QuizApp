@@ -14,6 +14,7 @@ public sealed class AchievementSeedItem
     public string? RequiredCategoryKey { get; init; }
     public int? RequiredCompletedCategoriesCount { get; init; }
     public AchievementRewardType RewardType { get; init; }
+    public int? RewardExperience { get; init; }
     public int? RewardCoins { get; init; }
     public string? RewardAvatarKey { get; init; }
 }

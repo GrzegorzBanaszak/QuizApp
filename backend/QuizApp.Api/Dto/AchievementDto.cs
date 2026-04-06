@@ -10,6 +10,7 @@ public sealed class AchievementDto
     public string ConditionDescription { get; init; } = string.Empty;
     public string RewardType { get; init; } = string.Empty;
     public string RewardDescription { get; init; } = string.Empty;
+    public int? RewardExperience { get; init; }
     public int? RewardCoins { get; init; }
     public string? RewardAvatarKey { get; init; }
     public string? RewardAvatarImageUrl { get; init; }

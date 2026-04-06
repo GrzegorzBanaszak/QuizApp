@@ -87,6 +87,8 @@ public sealed class LevelSeedService
             level.CategoryId = categoryId;
             level.Name = item.Name.Trim();
             level.Order = item.Order;
+            level.FirstCompletionExperience = item.FirstCompletionExperience ?? ResolveDefaultFirstCompletionExperience(item.Order);
+            level.ReplayExperience = item.ReplayExperience ?? ResolveDefaultReplayExperience(level.FirstCompletionExperience);
 
             SyncQuestionDistributions(level, item.QuestionDistributions);
         }
@@ -147,6 +149,16 @@ public sealed class LevelSeedService
             throw new InvalidOperationException($"Level {item.Key} must have a positive order.");
         }
 
+        if (item.FirstCompletionExperience is <= 0)
+        {
+            throw new InvalidOperationException($"Level {item.Key} must have a positive firstCompletionExperience value when provided.");
+        }
+
+        if (item.ReplayExperience is < 0)
+        {
+            throw new InvalidOperationException($"Level {item.Key} cannot have a negative replayExperience value.");
+        }
+
         if (item.QuestionDistributions.Count == 0)
         {
             throw new InvalidOperationException($"Level {item.Key} must define at least one question distribution.");
@@ -167,5 +179,15 @@ public sealed class LevelSeedService
         {
             throw new InvalidOperationException($"Level {item.Key} contains a non-positive question distribution count.");
         }
+    }
+
+    private static int ResolveDefaultFirstCompletionExperience(int levelOrder)
+    {
+        return 80 + (levelOrder * 20);
+    }
+
+    private static int ResolveDefaultReplayExperience(int firstCompletionExperience)
+    {
+        return Math.Max(20, firstCompletionExperience / 4);
     }
 }

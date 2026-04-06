@@ -7,5 +7,11 @@ public sealed record SingleplayerResultSummaryDto(
     int CorrectAnswersCount,
     int TotalQuestions,
     List<QuestionResultDetail> Details,
+    int AwardedExperience,
+    int AwardedLevelExperience,
+    int AwardedAchievementExperience,
     int AwardedCoins,
+    bool IsFirstCompletion,
+    bool LeveledUp,
+    PlayerProgressDto Progress,
     List<AchievementAwardDto> UnlockedAchievements);

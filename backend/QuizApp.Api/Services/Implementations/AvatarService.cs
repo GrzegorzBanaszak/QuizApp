@@ -9,10 +9,12 @@ namespace QuizApp.Api.Services.Implementations;
 public sealed class AvatarService : IAvatarService
 {
     private readonly AppDbContext _dbContext;
+    private readonly IProgressionService _progressionService;
 
-    public AvatarService(AppDbContext dbContext)
+    public AvatarService(AppDbContext dbContext, IProgressionService progressionService)
     {
         _dbContext = dbContext;
+        _progressionService = progressionService;
     }
 
     public async Task<IReadOnlyList<AvatarDto>> GetCreateCatalogAsync(CancellationToken cancellationToken = default)
@@ -123,7 +125,7 @@ public sealed class AvatarService : IAvatarService
 
         await _dbContext.SaveChangesAsync(cancellationToken);
 
-        return ToProfileDto(user, avatar);
+        return UserProfileMapper.ToDto(user, _progressionService, avatar);
     }
 
     public async Task<UserProfileDto?> PurchaseAvatarAsync(Guid userId, int avatarId, CancellationToken cancellationToken = default)
@@ -153,7 +155,7 @@ public sealed class AvatarService : IAvatarService
 
         if (user.OwnedAvatars.Any(item => item.AvatarId == avatarId))
         {
-            return ToProfileDto(user, user.CurrentAvatar);
+            return UserProfileMapper.ToDto(user, _progressionService, user.CurrentAvatar);
         }
 
         if (user.Coins < avatar.Price)
@@ -171,7 +173,7 @@ public sealed class AvatarService : IAvatarService
 
         await _dbContext.SaveChangesAsync(cancellationToken);
 
-        return ToProfileDto(user, user.CurrentAvatar);
+        return UserProfileMapper.ToDto(user, _progressionService, user.CurrentAvatar);
     }
 
     public Task<Avatar?> GetDefaultAvatarAsync(CancellationToken cancellationToken = default)
@@ -234,19 +236,6 @@ public sealed class AvatarService : IAvatarService
                 $"Odblokuj osiągnięcie: {avatar.RequiredAchievementCode}.",
             AvatarUnlockType.Purchase => $"Kup w sklepie za {avatar.Price} monet.",
             _ => string.Empty
-        };
-    }
-
-    private static UserProfileDto ToProfileDto(User user, Avatar? avatar)
-    {
-        return new UserProfileDto
-        {
-            Id = user.Id,
-            Username = user.Username,
-            AvatarUrl = avatar?.ImageUrl ?? user.AvatarUrl,
-            CurrentAvatarId = user.CurrentAvatarId,
-            TotalExperience = user.TotalExperience,
-            Coins = user.Coins
         };
     }
 

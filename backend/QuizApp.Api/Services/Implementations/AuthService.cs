@@ -1,4 +1,3 @@
-using AutoMapper;
 using Google.Apis.Auth;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -19,25 +18,25 @@ public sealed class AuthService : IAuthService
 {
     private readonly IConfiguration _configuration;
     private readonly IHttpClientFactory _httpClientFactory;
-    private readonly IMapper _mapper;
     private readonly AppDbContext _dbContext;
     private readonly IJwtTokenService _jwtTokenService;
     private readonly IAvatarService _avatarService;
+    private readonly IProgressionService _progressionService;
 
     public AuthService(
         IConfiguration configuration,
         IHttpClientFactory httpClientFactory,
-        IMapper mapper,
         AppDbContext dbContext,
         IJwtTokenService jwtTokenService,
-        IAvatarService avatarService)
+        IAvatarService avatarService,
+        IProgressionService progressionService)
     {
         _configuration = configuration;
         _httpClientFactory = httpClientFactory;
-        _mapper = mapper;
         _dbContext = dbContext;
         _jwtTokenService = jwtTokenService;
         _avatarService = avatarService;
+        _progressionService = progressionService;
     }
 
     public async Task<ISocialAuthResult> VerifyGoogleAsync(string token)
@@ -348,7 +347,7 @@ public sealed class AuthService : IAuthService
             Token = jwtToken.Token,
             ExpiresAtUtc = jwtToken.ExpiresAtUtc,
             UserId = user.Id,
-            Profile = _mapper.Map<UserProfileDto>(user)
+            Profile = UserProfileMapper.ToDto(user, _progressionService)
         };
     }
 
