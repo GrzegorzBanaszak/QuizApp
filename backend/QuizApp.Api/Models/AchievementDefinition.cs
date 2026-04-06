@@ -13,6 +13,7 @@ public class AchievementDefinition
     public string? RequiredCategoryKey { get; set; }
     public int? RequiredCompletedCategoriesCount { get; set; }
     public AchievementRewardType RewardType { get; set; }
+    public int? RewardExperience { get; set; }
     public int? RewardCoins { get; set; }
     public string? RewardAvatarKey { get; set; }
 }

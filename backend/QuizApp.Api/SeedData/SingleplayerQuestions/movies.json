@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "movies-easy-director-titanic",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Kto wyreżyserował film „Titanic”?",
+    "correctAnswerId": "movies-easy-director-titanic-a",
+    "answers": [
+      {
+        "id": "movies-easy-director-titanic-a",
+        "text": "James Cameron"
+      },
+      {
+        "id": "movies-easy-director-titanic-b",
+        "text": "Steven Spielberg"
+      },
+      {
+        "id": "movies-easy-director-titanic-c",
+        "text": "Ridley Scott"
+      },
+      {
+        "id": "movies-easy-director-titanic-d",
+        "text": "Peter Jackson"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-harry-potter-author",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Na podstawie książek której autorki powstała seria filmów o Harrym Potterze?",
+    "correctAnswerId": "movies-easy-harry-potter-author-a",
+    "answers": [
+      {
+        "id": "movies-easy-harry-potter-author-a",
+        "text": "J.K. Rowling"
+      },
+      {
+        "id": "movies-easy-harry-potter-author-b",
+        "text": "Suzanne Collins"
+      },
+      {
+        "id": "movies-easy-harry-potter-author-c",
+        "text": "Stephenie Meyer"
+      },
+      {
+        "id": "movies-easy-harry-potter-author-d",
+        "text": "Agatha Christie"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-frozen-elsa",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię siostra Anny w filmie „Kraina lodu”?",
+    "correctAnswerId": "movies-easy-frozen-elsa-a",
+    "answers": [
+      {
+        "id": "movies-easy-frozen-elsa-a",
+        "text": "Elsa"
+      },
+      {
+        "id": "movies-easy-frozen-elsa-b",
+        "text": "Vaiana"
+      },
+      {
+        "id": "movies-easy-frozen-elsa-c",
+        "text": "Bella"
+      },
+      {
+        "id": "movies-easy-frozen-elsa-d",
+        "text": "Ariel"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-lion-king-simba",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię lwi bohater filmu „Król Lew”?",
+    "correctAnswerId": "movies-easy-lion-king-simba-a",
+    "answers": [
+      {
+        "id": "movies-easy-lion-king-simba-a",
+        "text": "Simba"
+      },
+      {
+        "id": "movies-easy-lion-king-simba-b",
+        "text": "Mufasa"
+      },
+      {
+        "id": "movies-easy-lion-king-simba-c",
+        "text": "Timon"
+      },
+      {
+        "id": "movies-easy-lion-king-simba-d",
+        "text": "Scar"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-star-wars-vader",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się czarny charakter w sadze „Gwiezdne wojny”, ubrany w czarną zbroję i hełm?",
+    "correctAnswerId": "movies-easy-star-wars-vader-a",
+    "answers": [
+      {
+        "id": "movies-easy-star-wars-vader-a",
+        "text": "Darth Vader"
+      },
+      {
+        "id": "movies-easy-star-wars-vader-b",
+        "text": "Yoda"
+      },
+      {
+        "id": "movies-easy-star-wars-vader-c",
+        "text": "Han Solo"
+      },
+      {
+        "id": "movies-easy-star-wars-vader-d",
+        "text": "Obi-Wan Kenobi"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-avatar-blue",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się niebieska rasa przedstawiona w filmie „Avatar”?",
+    "correctAnswerId": "movies-easy-avatar-blue-a",
+    "answers": [
+      {
+        "id": "movies-easy-avatar-blue-a",
+        "text": "Na’vi"
+      },
+      {
+        "id": "movies-easy-avatar-blue-b",
+        "text": "Ewoki"
+      },
+      {
+        "id": "movies-easy-avatar-blue-c",
+        "text": "Kryptonianie"
+      },
+      {
+        "id": "movies-easy-avatar-blue-d",
+        "text": "Minionki"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-home-alone-boy",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię chłopiec pozostawiony sam w domu w filmie „Kevin sam w domu”?",
+    "correctAnswerId": "movies-easy-home-alone-boy-a",
+    "answers": [
+      {
+        "id": "movies-easy-home-alone-boy-a",
+        "text": "Kevin"
+      },
+      {
+        "id": "movies-easy-home-alone-boy-b",
+        "text": "Alex"
+      },
+      {
+        "id": "movies-easy-home-alone-boy-c",
+        "text": "Charlie"
+      },
+      {
+        "id": "movies-easy-home-alone-boy-d",
+        "text": "Tom"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-shrek-ogre",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Kim jest Shrek?",
+    "correctAnswerId": "movies-easy-shrek-ogre-a",
+    "answers": [
+      {
+        "id": "movies-easy-shrek-ogre-a",
+        "text": "Ogrorem"
+      },
+      {
+        "id": "movies-easy-shrek-ogre-b",
+        "text": "Smokiem"
+      },
+      {
+        "id": "movies-easy-shrek-ogre-c",
+        "text": "Rycerzem"
+      },
+      {
+        "id": "movies-easy-shrek-ogre-d",
+        "text": "Krasnalem"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-jurassic-dinosaurs",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jakie prehistoryczne zwierzęta są głównym motywem filmu „Park Jurajski”?",
+    "correctAnswerId": "movies-easy-jurassic-dinosaurs-a",
+    "answers": [
+      {
+        "id": "movies-easy-jurassic-dinosaurs-a",
+        "text": "Dinozaury"
+      },
+      {
+        "id": "movies-easy-jurassic-dinosaurs-b",
+        "text": "Mamut y"
+      },
+      {
+        "id": "movies-easy-jurassic-dinosaurs-c",
+        "text": "Smoki"
+      },
+      {
+        "id": "movies-easy-jurassic-dinosaurs-d",
+        "text": "Rekiny"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-oscar-statuette",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się najbardziej znana nagroda filmowa w kształcie złotej statuetki?",
+    "correctAnswerId": "movies-easy-oscar-statuette-a",
+    "answers": [
+      {
+        "id": "movies-easy-oscar-statuette-a",
+        "text": "Oscar"
+      },
+      {
+        "id": "movies-easy-oscar-statuette-b",
+        "text": "Złota Palma"
+      },
+      {
+        "id": "movies-easy-oscar-statuette-c",
+        "text": "Złoty Glob"
+      },
+      {
+        "id": "movies-easy-oscar-statuette-d",
+        "text": "BAFTA"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-minions-color",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jakiego koloru są Minionki?",
+    "correctAnswerId": "movies-easy-minions-color-a",
+    "answers": [
+      {
+        "id": "movies-easy-minions-color-a",
+        "text": "Żółte"
+      },
+      {
+        "id": "movies-easy-minions-color-b",
+        "text": "Niebieskie"
+      },
+      {
+        "id": "movies-easy-minions-color-c",
+        "text": "Zielone"
+      },
+      {
+        "id": "movies-easy-minions-color-d",
+        "text": "Czerwone"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-toy-story-cowboy",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się kowboj z filmu „Toy Story”?",
+    "correctAnswerId": "movies-easy-toy-story-cowboy-a",
+    "answers": [
+      {
+        "id": "movies-easy-toy-story-cowboy-a",
+        "text": "Chudy"
+      },
+      {
+        "id": "movies-easy-toy-story-cowboy-b",
+        "text": "Buzz"
+      },
+      {
+        "id": "movies-easy-toy-story-cowboy-c",
+        "text": "Forky"
+      },
+      {
+        "id": "movies-easy-toy-story-cowboy-d",
+        "text": "Rex"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-finding-nemo-fish",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jakiego gatunku rybą jest Nemo?",
+    "correctAnswerId": "movies-easy-finding-nemo-fish-a",
+    "answers": [
+      {
+        "id": "movies-easy-finding-nemo-fish-a",
+        "text": "Błazenek"
+      },
+      {
+        "id": "movies-easy-finding-nemo-fish-b",
+        "text": "Rekin"
+      },
+      {
+        "id": "movies-easy-finding-nemo-fish-c",
+        "text": "Tuńczyk"
+      },
+      {
+        "id": "movies-easy-finding-nemo-fish-d",
+        "text": "Dorsz"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-batman-city",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się miasto, którego broni Batman?",
+    "correctAnswerId": "movies-easy-batman-city-a",
+    "answers": [
+      {
+        "id": "movies-easy-batman-city-a",
+        "text": "Gotham"
+      },
+      {
+        "id": "movies-easy-batman-city-b",
+        "text": "Metropolis"
+      },
+      {
+        "id": "movies-easy-batman-city-c",
+        "text": "Atlantyda"
+      },
+      {
+        "id": "movies-easy-batman-city-d",
+        "text": "Springfield"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-matrix-pill",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Którą pigułkę wybiera Neo, aby poznać prawdę?",
+    "correctAnswerId": "movies-easy-matrix-pill-a",
+    "answers": [
+      {
+        "id": "movies-easy-matrix-pill-a",
+        "text": "Czerwoną"
+      },
+      {
+        "id": "movies-easy-matrix-pill-b",
+        "text": "Niebieską"
+      },
+      {
+        "id": "movies-easy-matrix-pill-c",
+        "text": "Zieloną"
+      },
+      {
+        "id": "movies-easy-matrix-pill-d",
+        "text": "Żółtą"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-transformers-robots",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "W co najczęściej zmieniają się bohaterowie serii „Transformers”?",
+    "correctAnswerId": "movies-easy-transformers-robots-a",
+    "answers": [
+      {
+        "id": "movies-easy-transformers-robots-a",
+        "text": "Pojazdy"
+      },
+      {
+        "id": "movies-easy-transformers-robots-b",
+        "text": "Zwierzęta"
+      },
+      {
+        "id": "movies-easy-transformers-robots-c",
+        "text": "Budynki"
+      },
+      {
+        "id": "movies-easy-transformers-robots-d",
+        "text": "Rośliny"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-cars-lightning",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię czerwony samochód wyścigowy z filmu „Auta”?",
+    "correctAnswerId": "movies-easy-cars-lightning-a",
+    "answers": [
+      {
+        "id": "movies-easy-cars-lightning-a",
+        "text": "Zygzak McQueen"
+      },
+      {
+        "id": "movies-easy-cars-lightning-b",
+        "text": "Złomek"
+      },
+      {
+        "id": "movies-easy-cars-lightning-c",
+        "text": "Franek"
+      },
+      {
+        "id": "movies-easy-cars-lightning-d",
+        "text": "Doc Hudson"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-pirates-jack",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się kapitan grany przez Johnny’ego Deppa w serii „Piraci z Karaibów”?",
+    "correctAnswerId": "movies-easy-pirates-jack-a",
+    "answers": [
+      {
+        "id": "movies-easy-pirates-jack-a",
+        "text": "Jack Sparrow"
+      },
+      {
+        "id": "movies-easy-pirates-jack-b",
+        "text": "Will Turner"
+      },
+      {
+        "id": "movies-easy-pirates-jack-c",
+        "text": "Hector Barbossa"
+      },
+      {
+        "id": "movies-easy-pirates-jack-d",
+        "text": "Davy Jones"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-incredibles-family",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "O jakiej rodzinie opowiada film „Iniemamocni”?",
+    "correctAnswerId": "movies-easy-incredibles-family-a",
+    "answers": [
+      {
+        "id": "movies-easy-incredibles-family-a",
+        "text": "O rodzinie superbohaterów"
+      },
+      {
+        "id": "movies-easy-incredibles-family-b",
+        "text": "O rodzinie czarodziejów"
+      },
+      {
+        "id": "movies-easy-incredibles-family-c",
+        "text": "O rodzinie piratów"
+      },
+      {
+        "id": "movies-easy-incredibles-family-d",
+        "text": "O rodzinie kosmitów"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-up-house",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Co unosi dom w filmie „Odlot”?",
+    "correctAnswerId": "movies-easy-up-house-a",
+    "answers": [
+      {
+        "id": "movies-easy-up-house-a",
+        "text": "Balony"
+      },
+      {
+        "id": "movies-easy-up-house-b",
+        "text": "Silniki"
+      },
+      {
+        "id": "movies-easy-up-house-c",
+        "text": "Skrzydła"
+      },
+      {
+        "id": "movies-easy-up-house-d",
+        "text": "Helikopter"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-lord-rings-object",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jaki przedmiot jest najważniejszy w trylogii „Władca Pierścieni”?",
+    "correctAnswerId": "movies-easy-lord-rings-object-a",
+    "answers": [
+      {
+        "id": "movies-easy-lord-rings-object-a",
+        "text": "Pierścień"
+      },
+      {
+        "id": "movies-easy-lord-rings-object-b",
+        "text": "Miecz"
+      },
+      {
+        "id": "movies-easy-lord-rings-object-c",
+        "text": "Korona"
+      },
+      {
+        "id": "movies-easy-lord-rings-object-d",
+        "text": "Amulet"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-jaws-animal",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jakie zwierzę budzi grozę w filmie „Szczęki”?",
+    "correctAnswerId": "movies-easy-jaws-animal-a",
+    "answers": [
+      {
+        "id": "movies-easy-jaws-animal-a",
+        "text": "Rekin"
+      },
+      {
+        "id": "movies-easy-jaws-animal-b",
+        "text": "Krokodyl"
+      },
+      {
+        "id": "movies-easy-jaws-animal-c",
+        "text": "Wąż"
+      },
+      {
+        "id": "movies-easy-jaws-animal-d",
+        "text": "Wilk"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-cinderella-shoe",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jaki przedmiot gubi Kopciuszek?",
+    "correctAnswerId": "movies-easy-cinderella-shoe-a",
+    "answers": [
+      {
+        "id": "movies-easy-cinderella-shoe-a",
+        "text": "Pantofelek"
+      },
+      {
+        "id": "movies-easy-cinderella-shoe-b",
+        "text": "Koronę"
+      },
+      {
+        "id": "movies-easy-cinderella-shoe-c",
+        "text": "Torebkę"
+      },
+      {
+        "id": "movies-easy-cinderella-shoe-d",
+        "text": "Rękawiczkę"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-indiana-job",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Kim z zawodu jest Indiana Jones?",
+    "correctAnswerId": "movies-easy-indiana-job-a",
+    "answers": [
+      {
+        "id": "movies-easy-indiana-job-a",
+        "text": "Archeologiem"
+      },
+      {
+        "id": "movies-easy-indiana-job-b",
+        "text": "Lekarzem"
+      },
+      {
+        "id": "movies-easy-indiana-job-c",
+        "text": "Pilotem"
+      },
+      {
+        "id": "movies-easy-indiana-job-d",
+        "text": "Detektywem"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-hulk-color",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jaki kolor ma Hulk?",
+    "correctAnswerId": "movies-easy-hulk-color-a",
+    "answers": [
+      {
+        "id": "movies-easy-hulk-color-a",
+        "text": "Zielony"
+      },
+      {
+        "id": "movies-easy-hulk-color-b",
+        "text": "Niebieski"
+      },
+      {
+        "id": "movies-easy-hulk-color-c",
+        "text": "Czerwony"
+      },
+      {
+        "id": "movies-easy-hulk-color-d",
+        "text": "Czarny"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-beauty-beast",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Kto zakochuje się w Bestii w filmie Disneya?",
+    "correctAnswerId": "movies-easy-beauty-beast-a",
+    "answers": [
+      {
+        "id": "movies-easy-beauty-beast-a",
+        "text": "Bella"
+      },
+      {
+        "id": "movies-easy-beauty-beast-b",
+        "text": "Jasmina"
+      },
+      {
+        "id": "movies-easy-beauty-beast-c",
+        "text": "Mulan"
+      },
+      {
+        "id": "movies-easy-beauty-beast-d",
+        "text": "Roszpunka"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-frozen-snowman",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się bałwan z „Krainy lodu”?",
+    "correctAnswerId": "movies-easy-frozen-snowman-a",
+    "answers": [
+      {
+        "id": "movies-easy-frozen-snowman-a",
+        "text": "Olaf"
+      },
+      {
+        "id": "movies-easy-frozen-snowman-b",
+        "text": "Sven"
+      },
+      {
+        "id": "movies-easy-frozen-snowman-c",
+        "text": "Kristoff"
+      },
+      {
+        "id": "movies-easy-frozen-snowman-d",
+        "text": "Hans"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-spider-man-power",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jaką zdolność ma Spider-Man?",
+    "correctAnswerId": "movies-easy-spider-man-power-a",
+    "answers": [
+      {
+        "id": "movies-easy-spider-man-power-a",
+        "text": "Wspina się po ścianach"
+      },
+      {
+        "id": "movies-easy-spider-man-power-b",
+        "text": "Oddycha pod wodą"
+      },
+      {
+        "id": "movies-easy-spider-man-power-c",
+        "text": "Zamraża przedmioty"
+      },
+      {
+        "id": "movies-easy-spider-man-power-d",
+        "text": "Czyta w myślach"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-superman-planet",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Z jakiej planety pochodzi Superman?",
+    "correctAnswerId": "movies-easy-superman-planet-a",
+    "answers": [
+      {
+        "id": "movies-easy-superman-planet-a",
+        "text": "Krypton"
+      },
+      {
+        "id": "movies-easy-superman-planet-b",
+        "text": "Wulkan"
+      },
+      {
+        "id": "movies-easy-superman-planet-c",
+        "text": "Pandora"
+      },
+      {
+        "id": "movies-easy-superman-planet-d",
+        "text": "Mars"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-moana-ocean",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak ma na imię bohaterka filmu „Vaiana: Skarb oceanu”?",
+    "correctAnswerId": "movies-easy-moana-ocean-a",
+    "answers": [
+      {
+        "id": "movies-easy-moana-ocean-a",
+        "text": "Vaiana"
+      },
+      {
+        "id": "movies-easy-moana-ocean-b",
+        "text": "Mira"
+      },
+      {
+        "id": "movies-easy-moana-ocean-c",
+        "text": "Lilo"
+      },
+      {
+        "id": "movies-easy-moana-ocean-d",
+        "text": "Merida"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-avengers-team",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się drużyna superbohaterów z filmów Marvela?",
+    "correctAnswerId": "movies-easy-avengers-team-a",
+    "answers": [
+      {
+        "id": "movies-easy-avengers-team-a",
+        "text": "Avengers"
+      },
+      {
+        "id": "movies-easy-avengers-team-b",
+        "text": "X-Men"
+      },
+      {
+        "id": "movies-easy-avengers-team-c",
+        "text": "Strażnicy Czasu"
+      },
+      {
+        "id": "movies-easy-avengers-team-d",
+        "text": "Fantastyczna Trójka"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-kungfu-panda",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jakim zwierzęciem jest Po z filmu „Kung Fu Panda”?",
+    "correctAnswerId": "movies-easy-kungfu-panda-a",
+    "answers": [
+      {
+        "id": "movies-easy-kungfu-panda-a",
+        "text": "Pandą"
+      },
+      {
+        "id": "movies-easy-kungfu-panda-b",
+        "text": "Tygrysem"
+      },
+      {
+        "id": "movies-easy-kungfu-panda-c",
+        "text": "Lisem"
+      },
+      {
+        "id": "movies-easy-kungfu-panda-d",
+        "text": "Żółwiem"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-deadpool-mask",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jakiego koloru jest strój Deadpoola?",
+    "correctAnswerId": "movies-easy-deadpool-mask-a",
+    "answers": [
+      {
+        "id": "movies-easy-deadpool-mask-a",
+        "text": "Czerwono-czarny"
+      },
+      {
+        "id": "movies-easy-deadpool-mask-b",
+        "text": "Zielony"
+      },
+      {
+        "id": "movies-easy-deadpool-mask-c",
+        "text": "Niebiesko-biały"
+      },
+      {
+        "id": "movies-easy-deadpool-mask-d",
+        "text": "Złoty"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-ice-age-scrat",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Za czym ciągle goni Scrat w serii „Epoka lodowcowa”?",
+    "correctAnswerId": "movies-easy-ice-age-scrat-a",
+    "answers": [
+      {
+        "id": "movies-easy-ice-age-scrat-a",
+        "text": "Za żołędziem"
+      },
+      {
+        "id": "movies-easy-ice-age-scrat-b",
+        "text": "Za rybą"
+      },
+      {
+        "id": "movies-easy-ice-age-scrat-c",
+        "text": "Za kością"
+      },
+      {
+        "id": "movies-easy-ice-age-scrat-d",
+        "text": "Za jabłkiem"
+      }
+    ]
+  },
+  {
+    "key": "movies-easy-wonder-woman-weapon",
+    "categoryKey": "movies",
+    "difficulty": "Easy",
+    "text": "Jakiej broni kojarzy się najbardziej Wonder Woman?",
+    "correctAnswerId": "movies-easy-wonder-woman-weapon-a",
+    "answers": [
+      {
+        "id": "movies-easy-wonder-woman-weapon-a",
+        "text": "Lasso prawdy"
+      },
+      {
+        "id": "movies-easy-wonder-woman-weapon-b",
+        "text": "Młot"
+      },
+      {
+        "id": "movies-easy-wonder-woman-weapon-c",
+        "text": "Łuk"
+      },
+      {
+        "id": "movies-easy-wonder-woman-weapon-d",
+        "text": "Tarcza Kapitana Ameryki"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-titanic-ship",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Na pokładzie jakiego statku rozgrywa się akcja filmu „Titanic”?",
+    "correctAnswerId": "movies-easymedium-titanic-ship-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-titanic-ship-a",
+        "text": "Titanica"
+      },
+      {
+        "id": "movies-easymedium-titanic-ship-b",
+        "text": "Britannica"
+      },
+      {
+        "id": "movies-easymedium-titanic-ship-c",
+        "text": "Queen Mary"
+      },
+      {
+        "id": "movies-easymedium-titanic-ship-d",
+        "text": "Bismarcka"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-gollum-ring",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się postać uzależniona od Pierścienia we „Władcy Pierścieni”?",
+    "correctAnswerId": "movies-easymedium-gollum-ring-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-gollum-ring-a",
+        "text": "Gollum"
+      },
+      {
+        "id": "movies-easymedium-gollum-ring-b",
+        "text": "Gimli"
+      },
+      {
+        "id": "movies-easymedium-gollum-ring-c",
+        "text": "Boromir"
+      },
+      {
+        "id": "movies-easymedium-gollum-ring-d",
+        "text": "Elrond"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-pixar-lamp",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Które studio animacji słynie z logo z lampką skaczącą na literę?",
+    "correctAnswerId": "movies-easymedium-pixar-lamp-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-pixar-lamp-a",
+        "text": "Pixar"
+      },
+      {
+        "id": "movies-easymedium-pixar-lamp-b",
+        "text": "DreamWorks"
+      },
+      {
+        "id": "movies-easymedium-pixar-lamp-c",
+        "text": "Illumination"
+      },
+      {
+        "id": "movies-easymedium-pixar-lamp-d",
+        "text": "Studio Ghibli"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-godfather-family",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "O losach jakiej rodziny opowiada film „Ojciec chrzestny”?",
+    "correctAnswerId": "movies-easymedium-godfather-family-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-godfather-family-a",
+        "text": "Corleone"
+      },
+      {
+        "id": "movies-easymedium-godfather-family-b",
+        "text": "Soprano"
+      },
+      {
+        "id": "movies-easymedium-godfather-family-c",
+        "text": "Montague"
+      },
+      {
+        "id": "movies-easymedium-godfather-family-d",
+        "text": "Capulet"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-rocky-sport",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jaki sport uprawia główny bohater serii „Rocky”?",
+    "correctAnswerId": "movies-easymedium-rocky-sport-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-rocky-sport-a",
+        "text": "Boks"
+      },
+      {
+        "id": "movies-easymedium-rocky-sport-b",
+        "text": "Koszykówkę"
+      },
+      {
+        "id": "movies-easymedium-rocky-sport-c",
+        "text": "Bejsbol"
+      },
+      {
+        "id": "movies-easymedium-rocky-sport-d",
+        "text": "Zapasy"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-forrest-bench",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Na jakim meblu Forrest Gump opowiada swoją historię na początku filmu?",
+    "correctAnswerId": "movies-easymedium-forrest-bench-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-forrest-bench-a",
+        "text": "Na ławce"
+      },
+      {
+        "id": "movies-easymedium-forrest-bench-b",
+        "text": "Na fotelu"
+      },
+      {
+        "id": "movies-easymedium-forrest-bench-c",
+        "text": "Na łóżku"
+      },
+      {
+        "id": "movies-easymedium-forrest-bench-d",
+        "text": "Na schodach"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-gladiator-role",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Kim był Maksimus w filmie „Gladiator”?",
+    "correctAnswerId": "movies-easymedium-gladiator-role-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-gladiator-role-a",
+        "text": "Rzymskim generałem"
+      },
+      {
+        "id": "movies-easymedium-gladiator-role-b",
+        "text": "Senatorem"
+      },
+      {
+        "id": "movies-easymedium-gladiator-role-c",
+        "text": "Kupcem"
+      },
+      {
+        "id": "movies-easymedium-gladiator-role-d",
+        "text": "Kapłanem"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-black-panther-country",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się fikcyjne afrykańskie państwo z filmu „Czarna Pantera”?",
+    "correctAnswerId": "movies-easymedium-black-panther-country-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-black-panther-country-a",
+        "text": "Wakanda"
+      },
+      {
+        "id": "movies-easymedium-black-panther-country-b",
+        "text": "Genosha"
+      },
+      {
+        "id": "movies-easymedium-black-panther-country-c",
+        "text": "Latveria"
+      },
+      {
+        "id": "movies-easymedium-black-panther-country-d",
+        "text": "Zamunda"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-hunger-games-name",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się główna bohaterka serii „Igrzyska śmierci”?",
+    "correctAnswerId": "movies-easymedium-hunger-games-name-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-hunger-games-name-a",
+        "text": "Katniss Everdeen"
+      },
+      {
+        "id": "movies-easymedium-hunger-games-name-b",
+        "text": "Tris Prior"
+      },
+      {
+        "id": "movies-easymedium-hunger-games-name-c",
+        "text": "Hermiona Granger"
+      },
+      {
+        "id": "movies-easymedium-hunger-games-name-d",
+        "text": "Bella Swan"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-back-to-future-car",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jaką marką samochodu podróżuje w czasie bohater filmu „Powrót do przyszłości”?",
+    "correctAnswerId": "movies-easymedium-back-to-future-car-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-back-to-future-car-a",
+        "text": "DeLorean"
+      },
+      {
+        "id": "movies-easymedium-back-to-future-car-b",
+        "text": "Ford"
+      },
+      {
+        "id": "movies-easymedium-back-to-future-car-c",
+        "text": "Chevrolet"
+      },
+      {
+        "id": "movies-easymedium-back-to-future-car-d",
+        "text": "Toyota"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-interstellar-director",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Kto wyreżyserował film „Interstellar”?",
+    "correctAnswerId": "movies-easymedium-interstellar-director-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-interstellar-director-a",
+        "text": "Christopher Nolan"
+      },
+      {
+        "id": "movies-easymedium-interstellar-director-b",
+        "text": "Denis Villeneuve"
+      },
+      {
+        "id": "movies-easymedium-interstellar-director-c",
+        "text": "David Fincher"
+      },
+      {
+        "id": "movies-easymedium-interstellar-director-d",
+        "text": "Martin Scorsese"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-starwars-father",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Czyim ojcem okazuje się Darth Vader?",
+    "correctAnswerId": "movies-easymedium-starwars-father-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-starwars-father-a",
+        "text": "Luke’a Skywalkera"
+      },
+      {
+        "id": "movies-easymedium-starwars-father-b",
+        "text": "Hana Solo"
+      },
+      {
+        "id": "movies-easymedium-starwars-father-c",
+        "text": "Obi-Wana"
+      },
+      {
+        "id": "movies-easymedium-starwars-father-d",
+        "text": "Yody"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-la-la-land-city",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "W jakim mieście rozgrywa się film „La La Land”?",
+    "correctAnswerId": "movies-easymedium-la-la-land-city-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-la-la-land-city-a",
+        "text": "Los Angeles"
+      },
+      {
+        "id": "movies-easymedium-la-la-land-city-b",
+        "text": "Nowy Jork"
+      },
+      {
+        "id": "movies-easymedium-la-la-land-city-c",
+        "text": "Chicago"
+      },
+      {
+        "id": "movies-easymedium-la-la-land-city-d",
+        "text": "San Francisco"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-animated-ogre-studio",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Które studio stworzyło film „Shrek”?",
+    "correctAnswerId": "movies-easymedium-animated-ogre-studio-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-animated-ogre-studio-a",
+        "text": "DreamWorks"
+      },
+      {
+        "id": "movies-easymedium-animated-ogre-studio-b",
+        "text": "Pixar"
+      },
+      {
+        "id": "movies-easymedium-animated-ogre-studio-c",
+        "text": "Disney Animation"
+      },
+      {
+        "id": "movies-easymedium-animated-ogre-studio-d",
+        "text": "Aardman"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-joker-batman-enemy",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Kim jest Joker w uniwersum Batmana?",
+    "correctAnswerId": "movies-easymedium-joker-batman-enemy-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-joker-batman-enemy-a",
+        "text": "Wrogiem Batmana"
+      },
+      {
+        "id": "movies-easymedium-joker-batman-enemy-b",
+        "text": "Bratem Batmana"
+      },
+      {
+        "id": "movies-easymedium-joker-batman-enemy-c",
+        "text": "Policjantem"
+      },
+      {
+        "id": "movies-easymedium-joker-batman-enemy-d",
+        "text": "Lokajem Bruce’a"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-harry-house",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Do którego domu w Hogwarcie należał Harry Potter?",
+    "correctAnswerId": "movies-easymedium-harry-house-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-harry-house-a",
+        "text": "Gryffindor"
+      },
+      {
+        "id": "movies-easymedium-harry-house-b",
+        "text": "Slytherin"
+      },
+      {
+        "id": "movies-easymedium-harry-house-c",
+        "text": "Ravenclaw"
+      },
+      {
+        "id": "movies-easymedium-harry-house-d",
+        "text": "Hufflepuff"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-nemo-father",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jak ma na imię ojciec Nemo?",
+    "correctAnswerId": "movies-easymedium-nemo-father-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-nemo-father-a",
+        "text": "Marlin"
+      },
+      {
+        "id": "movies-easymedium-nemo-father-b",
+        "text": "Dory"
+      },
+      {
+        "id": "movies-easymedium-nemo-father-c",
+        "text": "Gill"
+      },
+      {
+        "id": "movies-easymedium-nemo-father-d",
+        "text": "Bruce"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-thor-weapon",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się młot Thora?",
+    "correctAnswerId": "movies-easymedium-thor-weapon-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-thor-weapon-a",
+        "text": "Mjölnir"
+      },
+      {
+        "id": "movies-easymedium-thor-weapon-b",
+        "text": "Stormbreaker"
+      },
+      {
+        "id": "movies-easymedium-thor-weapon-c",
+        "text": "Excalibur"
+      },
+      {
+        "id": "movies-easymedium-thor-weapon-d",
+        "text": "Andúril"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-jurassic-creator",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Na podstawie powieści którego autora powstał „Park Jurajski”?",
+    "correctAnswerId": "movies-easymedium-jurassic-creator-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-jurassic-creator-a",
+        "text": "Michaela Crichtona"
+      },
+      {
+        "id": "movies-easymedium-jurassic-creator-b",
+        "text": "Stephena Kinga"
+      },
+      {
+        "id": "movies-easymedium-jurassic-creator-c",
+        "text": "Dana Browna"
+      },
+      {
+        "id": "movies-easymedium-jurassic-creator-d",
+        "text": "J.R.R. Tolkiena"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-avatar-moon",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się księżyc, na którym toczy się akcja filmu „Avatar”?",
+    "correctAnswerId": "movies-easymedium-avatar-moon-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-avatar-moon-a",
+        "text": "Pandora"
+      },
+      {
+        "id": "movies-easymedium-avatar-moon-b",
+        "text": "Titan"
+      },
+      {
+        "id": "movies-easymedium-avatar-moon-c",
+        "text": "Europa"
+      },
+      {
+        "id": "movies-easymedium-avatar-moon-d",
+        "text": "Vormir"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-mission-impossible-actor",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Który aktor wciela się w Ethana Hunta w serii „Mission: Impossible”?",
+    "correctAnswerId": "movies-easymedium-mission-impossible-actor-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-mission-impossible-actor-a",
+        "text": "Tom Cruise"
+      },
+      {
+        "id": "movies-easymedium-mission-impossible-actor-b",
+        "text": "Matt Damon"
+      },
+      {
+        "id": "movies-easymedium-mission-impossible-actor-c",
+        "text": "Brad Pitt"
+      },
+      {
+        "id": "movies-easymedium-mission-impossible-actor-d",
+        "text": "Keanu Reeves"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-terminator-phrase",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Jakie słynne zdanie mówi Terminator?",
+    "correctAnswerId": "movies-easymedium-terminator-phrase-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-terminator-phrase-a",
+        "text": "Wrócę"
+      },
+      {
+        "id": "movies-easymedium-terminator-phrase-b",
+        "text": "Nie ma wyboru"
+      },
+      {
+        "id": "movies-easymedium-terminator-phrase-c",
+        "text": "To już koniec"
+      },
+      {
+        "id": "movies-easymedium-terminator-phrase-d",
+        "text": "Biegnij"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-spirited-away-director",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Kto wyreżyserował film animowany „Spirited Away: W krainie bogów”?",
+    "correctAnswerId": "movies-easymedium-spirited-away-director-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-spirited-away-director-a",
+        "text": "Hayao Miyazaki"
+      },
+      {
+        "id": "movies-easymedium-spirited-away-director-b",
+        "text": "Makoto Shinkai"
+      },
+      {
+        "id": "movies-easymedium-spirited-away-director-c",
+        "text": "Mamoru Hosoda"
+      },
+      {
+        "id": "movies-easymedium-spirited-away-director-d",
+        "text": "Satoshi Kon"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-fellowship-members",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Ilu członków liczyła Drużyna Pierścienia na początku wyprawy?",
+    "correctAnswerId": "movies-easymedium-fellowship-members-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-fellowship-members-a",
+        "text": "9"
+      },
+      {
+        "id": "movies-easymedium-fellowship-members-b",
+        "text": "7"
+      },
+      {
+        "id": "movies-easymedium-fellowship-members-c",
+        "text": "8"
+      },
+      {
+        "id": "movies-easymedium-fellowship-members-d",
+        "text": "10"
+      }
+    ]
+  },
+  {
+    "key": "movies-easymedium-avatar-element-bender",
+    "categoryKey": "movies",
+    "difficulty": "EasyMedium",
+    "text": "Którym żywiołem włada Aang w filmie „Ostatni władca wiatru” jako tytułowy awatar?",
+    "correctAnswerId": "movies-easymedium-avatar-element-bender-a",
+    "answers": [
+      {
+        "id": "movies-easymedium-avatar-element-bender-a",
+        "text": "Wszystkimi czterema"
+      },
+      {
+        "id": "movies-easymedium-avatar-element-bender-b",
+        "text": "Tylko ogniem"
+      },
+      {
+        "id": "movies-easymedium-avatar-element-bender-c",
+        "text": "Tylko wodą"
+      },
+      {
+        "id": "movies-easymedium-avatar-element-bender-d",
+        "text": "Tylko ziemią"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-casablanca-line",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się miasto z tytułu klasycznego filmu z Humphreyem Bogartem?",
+    "correctAnswerId": "movies-medium-casablanca-line-a",
+    "answers": [
+      {
+        "id": "movies-medium-casablanca-line-a",
+        "text": "Casablanca"
+      },
+      {
+        "id": "movies-medium-casablanca-line-b",
+        "text": "Marrakesz"
+      },
+      {
+        "id": "movies-medium-casablanca-line-c",
+        "text": "Kair"
+      },
+      {
+        "id": "movies-medium-casablanca-line-d",
+        "text": "Algier"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-citizen-kane-word",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jakie słowo wypowiada Kane na początku filmu „Obywatel Kane”?",
+    "correctAnswerId": "movies-medium-citizen-kane-word-a",
+    "answers": [
+      {
+        "id": "movies-medium-citizen-kane-word-a",
+        "text": "Rosebud"
+      },
+      {
+        "id": "movies-medium-citizen-kane-word-b",
+        "text": "Snowball"
+      },
+      {
+        "id": "movies-medium-citizen-kane-word-c",
+        "text": "Forever"
+      },
+      {
+        "id": "movies-medium-citizen-kane-word-d",
+        "text": "Citizen"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-psycho-director",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Kto wyreżyserował film „Psychoza”?",
+    "correctAnswerId": "movies-medium-psycho-director-a",
+    "answers": [
+      {
+        "id": "movies-medium-psycho-director-a",
+        "text": "Alfred Hitchcock"
+      },
+      {
+        "id": "movies-medium-psycho-director-b",
+        "text": "Stanley Kubrick"
+      },
+      {
+        "id": "movies-medium-psycho-director-c",
+        "text": "Roman Polański"
+      },
+      {
+        "id": "movies-medium-psycho-director-d",
+        "text": "Francis Ford Coppola"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-2001-computer",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się komputer pokładowy w filmie „2001: Odyseja kosmiczna”?",
+    "correctAnswerId": "movies-medium-2001-computer-a",
+    "answers": [
+      {
+        "id": "movies-medium-2001-computer-a",
+        "text": "HAL 9000"
+      },
+      {
+        "id": "movies-medium-2001-computer-b",
+        "text": "Deep Blue"
+      },
+      {
+        "id": "movies-medium-2001-computer-c",
+        "text": "Skynet"
+      },
+      {
+        "id": "movies-medium-2001-computer-d",
+        "text": "Jarvis"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-schindlers-list-director",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Kto wyreżyserował „Listę Schindlera”?",
+    "correctAnswerId": "movies-medium-schindlers-list-director-a",
+    "answers": [
+      {
+        "id": "movies-medium-schindlers-list-director-a",
+        "text": "Steven Spielberg"
+      },
+      {
+        "id": "movies-medium-schindlers-list-director-b",
+        "text": "Clint Eastwood"
+      },
+      {
+        "id": "movies-medium-schindlers-list-director-c",
+        "text": "Miloš Forman"
+      },
+      {
+        "id": "movies-medium-schindlers-list-director-d",
+        "text": "Ridley Scott"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-blade-runner-replicants",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywają się sztuczni ludzie w filmie „Łowca androidów”?",
+    "correctAnswerId": "movies-medium-blade-runner-replicants-a",
+    "answers": [
+      {
+        "id": "movies-medium-blade-runner-replicants-a",
+        "text": "Replikanci"
+      },
+      {
+        "id": "movies-medium-blade-runner-replicants-b",
+        "text": "Klony"
+      },
+      {
+        "id": "movies-medium-blade-runner-replicants-c",
+        "text": "Mutanci"
+      },
+      {
+        "id": "movies-medium-blade-runner-replicants-d",
+        "text": "Syntetycy"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-fight-club-author",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Na podstawie książki którego autora powstał film „Podziemny krąg”?",
+    "correctAnswerId": "movies-medium-fight-club-author-a",
+    "answers": [
+      {
+        "id": "movies-medium-fight-club-author-a",
+        "text": "Chucka Palahniuka"
+      },
+      {
+        "id": "movies-medium-fight-club-author-b",
+        "text": "Breta Eastona Ellisa"
+      },
+      {
+        "id": "movies-medium-fight-club-author-c",
+        "text": "Stephena Kinga"
+      },
+      {
+        "id": "movies-medium-fight-club-author-d",
+        "text": "Johna Irvinga"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-pulp-fiction-director",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Kto wyreżyserował „Pulp Fiction”?",
+    "correctAnswerId": "movies-medium-pulp-fiction-director-a",
+    "answers": [
+      {
+        "id": "movies-medium-pulp-fiction-director-a",
+        "text": "Quentin Tarantino"
+      },
+      {
+        "id": "movies-medium-pulp-fiction-director-b",
+        "text": "Guy Ritchie"
+      },
+      {
+        "id": "movies-medium-pulp-fiction-director-c",
+        "text": "Tim Burton"
+      },
+      {
+        "id": "movies-medium-pulp-fiction-director-d",
+        "text": "Oliver Stone"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-amelie-city",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "W jakim mieście mieszka Amelia Poulain w filmie „Amelia”?",
+    "correctAnswerId": "movies-medium-amelie-city-a",
+    "answers": [
+      {
+        "id": "movies-medium-amelie-city-a",
+        "text": "Paryż"
+      },
+      {
+        "id": "movies-medium-amelie-city-b",
+        "text": "Lyon"
+      },
+      {
+        "id": "movies-medium-amelie-city-c",
+        "text": "Bruksela"
+      },
+      {
+        "id": "movies-medium-amelie-city-d",
+        "text": "Madryt"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-braveheart-hero",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Kogo gra Mel Gibson w filmie „Braveheart”?",
+    "correctAnswerId": "movies-medium-braveheart-hero-a",
+    "answers": [
+      {
+        "id": "movies-medium-braveheart-hero-a",
+        "text": "Williama Wallace’a"
+      },
+      {
+        "id": "movies-medium-braveheart-hero-b",
+        "text": "Roberta Bruce’a"
+      },
+      {
+        "id": "movies-medium-braveheart-hero-c",
+        "text": "Ryszarda Lwie Serce"
+      },
+      {
+        "id": "movies-medium-braveheart-hero-d",
+        "text": "Henryka V"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-dark-knight-city",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "W jakim mieście rozgrywa się akcja filmu „Mroczny Rycerz”?",
+    "correctAnswerId": "movies-medium-dark-knight-city-a",
+    "answers": [
+      {
+        "id": "movies-medium-dark-knight-city-a",
+        "text": "Gotham"
+      },
+      {
+        "id": "movies-medium-dark-knight-city-b",
+        "text": "Metropolis"
+      },
+      {
+        "id": "movies-medium-dark-knight-city-c",
+        "text": "Star City"
+      },
+      {
+        "id": "movies-medium-dark-knight-city-d",
+        "text": "Central City"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-social-network-site",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Powstanie jakiego serwisu przedstawia film „The Social Network”?",
+    "correctAnswerId": "movies-medium-social-network-site-a",
+    "answers": [
+      {
+        "id": "movies-medium-social-network-site-a",
+        "text": "Facebooka"
+      },
+      {
+        "id": "movies-medium-social-network-site-b",
+        "text": "Twittera"
+      },
+      {
+        "id": "movies-medium-social-network-site-c",
+        "text": "Instagrama"
+      },
+      {
+        "id": "movies-medium-social-network-site-d",
+        "text": "YouTube’a"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-whiplash-instrument",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Na jakim instrumencie gra główny bohater filmu „Whiplash”?",
+    "correctAnswerId": "movies-medium-whiplash-instrument-a",
+    "answers": [
+      {
+        "id": "movies-medium-whiplash-instrument-a",
+        "text": "Perkusji"
+      },
+      {
+        "id": "movies-medium-whiplash-instrument-b",
+        "text": "Fortepianie"
+      },
+      {
+        "id": "movies-medium-whiplash-instrument-c",
+        "text": "Saksofonie"
+      },
+      {
+        "id": "movies-medium-whiplash-instrument-d",
+        "text": "Skrzypcach"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-arrival-language",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Czego dotyczy główny wysiłek bohaterki filmu „Nowy początek”?",
+    "correctAnswerId": "movies-medium-arrival-language-a",
+    "answers": [
+      {
+        "id": "movies-medium-arrival-language-a",
+        "text": "Tłumaczenia języka obcych"
+      },
+      {
+        "id": "movies-medium-arrival-language-b",
+        "text": "Budowy statku"
+      },
+      {
+        "id": "movies-medium-arrival-language-c",
+        "text": "Ucieczki z planety"
+      },
+      {
+        "id": "movies-medium-arrival-language-d",
+        "text": "Poszukiwania lekarstwa"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-inception-job",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Czym zajmuje się Dom Cobb w filmie „Incepcja”?",
+    "correctAnswerId": "movies-medium-inception-job-a",
+    "answers": [
+      {
+        "id": "movies-medium-inception-job-a",
+        "text": "Kradnie informacje ze snów"
+      },
+      {
+        "id": "movies-medium-inception-job-b",
+        "text": "Projektuje gry"
+      },
+      {
+        "id": "movies-medium-inception-job-c",
+        "text": "Ściga przestępców"
+      },
+      {
+        "id": "movies-medium-inception-job-d",
+        "text": "Pilotuje samoloty"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-parasite-country",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Z jakiego kraju pochodzi film „Parasite”?",
+    "correctAnswerId": "movies-medium-parasite-country-a",
+    "answers": [
+      {
+        "id": "movies-medium-parasite-country-a",
+        "text": "Z Korei Południowej"
+      },
+      {
+        "id": "movies-medium-parasite-country-b",
+        "text": "Z Japonii"
+      },
+      {
+        "id": "movies-medium-parasite-country-c",
+        "text": "Z Chin"
+      },
+      {
+        "id": "movies-medium-parasite-country-d",
+        "text": "Z Tajlandii"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-mad-max-world",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "W jakim świecie rozgrywa się „Mad Max: Na drodze gniewu”?",
+    "correctAnswerId": "movies-medium-mad-max-world-a",
+    "answers": [
+      {
+        "id": "movies-medium-mad-max-world-a",
+        "text": "Postapokaliptycznym"
+      },
+      {
+        "id": "movies-medium-mad-max-world-b",
+        "text": "Średniowiecznym"
+      },
+      {
+        "id": "movies-medium-mad-max-world-c",
+        "text": "Podwodnym"
+      },
+      {
+        "id": "movies-medium-mad-max-world-d",
+        "text": "Kosmicznym"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-wall-e-job",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Co robi WALL-E na opuszczonej Ziemi?",
+    "correctAnswerId": "movies-medium-wall-e-job-a",
+    "answers": [
+      {
+        "id": "movies-medium-wall-e-job-a",
+        "text": "Sprząta odpady"
+      },
+      {
+        "id": "movies-medium-wall-e-job-b",
+        "text": "Buduje rakiety"
+      },
+      {
+        "id": "movies-medium-wall-e-job-c",
+        "text": "Uprawia rośliny"
+      },
+      {
+        "id": "movies-medium-wall-e-job-d",
+        "text": "Naprawia roboty"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-coco-holiday",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Z jakim świętem związana jest akcja animacji „Coco”?",
+    "correctAnswerId": "movies-medium-coco-holiday-a",
+    "answers": [
+      {
+        "id": "movies-medium-coco-holiday-a",
+        "text": "Dniem Zmarłych"
+      },
+      {
+        "id": "movies-medium-coco-holiday-b",
+        "text": "Bożym Narodzeniem"
+      },
+      {
+        "id": "movies-medium-coco-holiday-c",
+        "text": "Wielkanocą"
+      },
+      {
+        "id": "movies-medium-coco-holiday-d",
+        "text": "Halloween"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-the-prestige-rivals",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Kim są główni bohaterowie filmu „Prestiż”?",
+    "correctAnswerId": "movies-medium-the-prestige-rivals-a",
+    "answers": [
+      {
+        "id": "movies-medium-the-prestige-rivals-a",
+        "text": "Rywalizującymi iluzjonistami"
+      },
+      {
+        "id": "movies-medium-the-prestige-rivals-b",
+        "text": "Detektywami"
+      },
+      {
+        "id": "movies-medium-the-prestige-rivals-c",
+        "text": "Astronautami"
+      },
+      {
+        "id": "movies-medium-the-prestige-rivals-d",
+        "text": "Bokserami"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-no-country-weapon",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jaką nietypową broń wykorzystuje Anton Chigurh w „To nie jest kraj dla starych ludzi”?",
+    "correctAnswerId": "movies-medium-no-country-weapon-a",
+    "answers": [
+      {
+        "id": "movies-medium-no-country-weapon-a",
+        "text": "Pistolet ubojowy na sprężone powietrze"
+      },
+      {
+        "id": "movies-medium-no-country-weapon-b",
+        "text": "Łuk"
+      },
+      {
+        "id": "movies-medium-no-country-weapon-c",
+        "text": "Harpun"
+      },
+      {
+        "id": "movies-medium-no-country-weapon-d",
+        "text": "Miotacz ognia"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-dune-spice",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się cenna substancja z filmu „Diuna”?",
+    "correctAnswerId": "movies-medium-dune-spice-a",
+    "answers": [
+      {
+        "id": "movies-medium-dune-spice-a",
+        "text": "Melanż"
+      },
+      {
+        "id": "movies-medium-dune-spice-b",
+        "text": "Vibranium"
+      },
+      {
+        "id": "movies-medium-dune-spice-c",
+        "text": "Unobtainium"
+      },
+      {
+        "id": "movies-medium-dune-spice-d",
+        "text": "Adamantium"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-shawshank-prison",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się więzienie z filmu „Skazani na Shawshank”?",
+    "correctAnswerId": "movies-medium-shawshank-prison-a",
+    "answers": [
+      {
+        "id": "movies-medium-shawshank-prison-a",
+        "text": "Shawshank"
+      },
+      {
+        "id": "movies-medium-shawshank-prison-b",
+        "text": "Sing Sing"
+      },
+      {
+        "id": "movies-medium-shawshank-prison-c",
+        "text": "Alcatraz"
+      },
+      {
+        "id": "movies-medium-shawshank-prison-d",
+        "text": "Rikers"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-godfather-actor",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Który aktor wciela się w młodego Vita Corleone w filmie „Ojciec chrzestny II”?",
+    "correctAnswerId": "movies-medium-godfather-actor-a",
+    "answers": [
+      {
+        "id": "movies-medium-godfather-actor-a",
+        "text": "Robert De Niro"
+      },
+      {
+        "id": "movies-medium-godfather-actor-b",
+        "text": "Al Pacino"
+      },
+      {
+        "id": "movies-medium-godfather-actor-c",
+        "text": "Robert Duvall"
+      },
+      {
+        "id": "movies-medium-godfather-actor-d",
+        "text": "Joe Pesci"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-matrix-city",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się ostatnie ludzkie miasto w serii „Matrix”?",
+    "correctAnswerId": "movies-medium-matrix-city-a",
+    "answers": [
+      {
+        "id": "movies-medium-matrix-city-a",
+        "text": "Zion"
+      },
+      {
+        "id": "movies-medium-matrix-city-b",
+        "text": "Nova"
+      },
+      {
+        "id": "movies-medium-matrix-city-c",
+        "text": "Elysium"
+      },
+      {
+        "id": "movies-medium-matrix-city-d",
+        "text": "Arcadia"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-spirited-character",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak ma na imię dziewczynka, która trafia do świata duchów w „Spirited Away”?",
+    "correctAnswerId": "movies-medium-spirited-character-a",
+    "answers": [
+      {
+        "id": "movies-medium-spirited-character-a",
+        "text": "Chihiro"
+      },
+      {
+        "id": "movies-medium-spirited-character-b",
+        "text": "Satsuki"
+      },
+      {
+        "id": "movies-medium-spirited-character-c",
+        "text": "Kiki"
+      },
+      {
+        "id": "movies-medium-spirited-character-d",
+        "text": "Sophie"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-gladiator-emperor",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Który cesarz jest głównym antagonistą w filmie „Gladiator”?",
+    "correctAnswerId": "movies-medium-gladiator-emperor-a",
+    "answers": [
+      {
+        "id": "movies-medium-gladiator-emperor-a",
+        "text": "Kommodus"
+      },
+      {
+        "id": "movies-medium-gladiator-emperor-b",
+        "text": "Marek Aureliusz"
+      },
+      {
+        "id": "movies-medium-gladiator-emperor-c",
+        "text": "Neron"
+      },
+      {
+        "id": "movies-medium-gladiator-emperor-d",
+        "text": "Trajan"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-green-mile-power",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jaki niezwykły dar ma John Coffey w „Zielonej mili”?",
+    "correctAnswerId": "movies-medium-green-mile-power-a",
+    "answers": [
+      {
+        "id": "movies-medium-green-mile-power-a",
+        "text": "Uzdrowianie"
+      },
+      {
+        "id": "movies-medium-green-mile-power-b",
+        "text": "Czytanie myśli"
+      },
+      {
+        "id": "movies-medium-green-mile-power-c",
+        "text": "Niewidzialność"
+      },
+      {
+        "id": "movies-medium-green-mile-power-d",
+        "text": "Telekinezę"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-oldboy-country",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Z jakiego kraju pochodzi oryginalny film „Oldboy”?",
+    "correctAnswerId": "movies-medium-oldboy-country-a",
+    "answers": [
+      {
+        "id": "movies-medium-oldboy-country-a",
+        "text": "Z Korei Południowej"
+      },
+      {
+        "id": "movies-medium-oldboy-country-b",
+        "text": "Z Japonii"
+      },
+      {
+        "id": "movies-medium-oldboy-country-c",
+        "text": "Z Chin"
+      },
+      {
+        "id": "movies-medium-oldboy-country-d",
+        "text": "Z USA"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-et-alien",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się kosmita z filmu Spielberga z 1982 roku?",
+    "correctAnswerId": "movies-medium-et-alien-a",
+    "answers": [
+      {
+        "id": "movies-medium-et-alien-a",
+        "text": "E.T."
+      },
+      {
+        "id": "movies-medium-et-alien-b",
+        "text": "Alf"
+      },
+      {
+        "id": "movies-medium-et-alien-c",
+        "text": "Stitch"
+      },
+      {
+        "id": "movies-medium-et-alien-d",
+        "text": "Chewie"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-birdman-role",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jaki zawód wykonuje bohater grany przez Michaela Keatona w „Birdmanie”?",
+    "correctAnswerId": "movies-medium-birdman-role-a",
+    "answers": [
+      {
+        "id": "movies-medium-birdman-role-a",
+        "text": "Aktor"
+      },
+      {
+        "id": "movies-medium-birdman-role-b",
+        "text": "Pisarz"
+      },
+      {
+        "id": "movies-medium-birdman-role-c",
+        "text": "Muzyk"
+      },
+      {
+        "id": "movies-medium-birdman-role-d",
+        "text": "Policjant"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-her-os",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się system operacyjny, w którym zakochuje się bohater filmu „Her”?",
+    "correctAnswerId": "movies-medium-her-os-a",
+    "answers": [
+      {
+        "id": "movies-medium-her-os-a",
+        "text": "Samantha"
+      },
+      {
+        "id": "movies-medium-her-os-b",
+        "text": "EVA"
+      },
+      {
+        "id": "movies-medium-her-os-c",
+        "text": "Lucy"
+      },
+      {
+        "id": "movies-medium-her-os-d",
+        "text": "Trinity"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-memento-issue",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Na jaki problem cierpi bohater filmu „Memento”?",
+    "correctAnswerId": "movies-medium-memento-issue-a",
+    "answers": [
+      {
+        "id": "movies-medium-memento-issue-a",
+        "text": "Utratę pamięci krótkotrwałej"
+      },
+      {
+        "id": "movies-medium-memento-issue-b",
+        "text": "Ślepotę"
+      },
+      {
+        "id": "movies-medium-memento-issue-c",
+        "text": "Paraliż"
+      },
+      {
+        "id": "movies-medium-memento-issue-d",
+        "text": "Bezsenność"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-pan-labyrinth-setting",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "W realiach jakiego kraju rozgrywa się „Labirynt fauna”?",
+    "correctAnswerId": "movies-medium-pan-labyrinth-setting-a",
+    "answers": [
+      {
+        "id": "movies-medium-pan-labyrinth-setting-a",
+        "text": "Hiszpanii"
+      },
+      {
+        "id": "movies-medium-pan-labyrinth-setting-b",
+        "text": "Włoch"
+      },
+      {
+        "id": "movies-medium-pan-labyrinth-setting-c",
+        "text": "Meksyku"
+      },
+      {
+        "id": "movies-medium-pan-labyrinth-setting-d",
+        "text": "Grecji"
+      }
+    ]
+  },
+  {
+    "key": "movies-medium-good-bad-ugly-composer",
+    "categoryKey": "movies",
+    "difficulty": "Medium",
+    "text": "Kto skomponował muzykę do „Dobrego, złego i brzydkiego”?",
+    "correctAnswerId": "movies-medium-good-bad-ugly-composer-a",
+    "answers": [
+      {
+        "id": "movies-medium-good-bad-ugly-composer-a",
+        "text": "Ennio Morricone"
+      },
+      {
+        "id": "movies-medium-good-bad-ugly-composer-b",
+        "text": "Hans Zimmer"
+      },
+      {
+        "id": "movies-medium-good-bad-ugly-composer-c",
+        "text": "Nino Rota"
+      },
+      {
+        "id": "movies-medium-good-bad-ugly-composer-d",
+        "text": "John Williams"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-seven-samurai-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował film „Siedmiu samurajów”?",
+    "correctAnswerId": "movies-mediumhard-seven-samurai-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-seven-samurai-director-a",
+        "text": "Akira Kurosawa"
+      },
+      {
+        "id": "movies-mediumhard-seven-samurai-director-b",
+        "text": "Yasujirō Ozu"
+      },
+      {
+        "id": "movies-mediumhard-seven-samurai-director-c",
+        "text": "Kenji Mizoguchi"
+      },
+      {
+        "id": "movies-mediumhard-seven-samurai-director-d",
+        "text": "Takashi Miike"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-metropolis-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował niemy film „Metropolis” z 1927 roku?",
+    "correctAnswerId": "movies-mediumhard-metropolis-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-metropolis-director-a",
+        "text": "Fritz Lang"
+      },
+      {
+        "id": "movies-mediumhard-metropolis-director-b",
+        "text": "F.W. Murnau"
+      },
+      {
+        "id": "movies-mediumhard-metropolis-director-c",
+        "text": "Carl Theodor Dreyer"
+      },
+      {
+        "id": "movies-mediumhard-metropolis-director-d",
+        "text": "Billy Wilder"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-vertigo-title",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Jak brzmi polski tytuł filmu Hitchcocka „Vertigo”?",
+    "correctAnswerId": "movies-mediumhard-vertigo-title-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-vertigo-title-a",
+        "text": "Zawrót głowy"
+      },
+      {
+        "id": "movies-mediumhard-vertigo-title-b",
+        "text": "Okno na podwórze"
+      },
+      {
+        "id": "movies-mediumhard-vertigo-title-c",
+        "text": "Północ, północny zachód"
+      },
+      {
+        "id": "movies-mediumhard-vertigo-title-d",
+        "text": "Ptaki"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-rashomon-structure",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Z jakiej nietypowej konstrukcji narracyjnej słynie film „Rashōmon”?",
+    "correctAnswerId": "movies-mediumhard-rashomon-structure-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-rashomon-structure-a",
+        "text": "Pokazuje sprzeczne wersje tego samego wydarzenia"
+      },
+      {
+        "id": "movies-mediumhard-rashomon-structure-b",
+        "text": "Opowiada historię od końca"
+      },
+      {
+        "id": "movies-mediumhard-rashomon-structure-c",
+        "text": "Nie ma dialogów"
+      },
+      {
+        "id": "movies-mediumhard-rashomon-structure-d",
+        "text": "Jest jednym ujęciem"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-apocalypse-now-source",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Na podstawie jakiej noweli luźno oparto „Czas Apokalipsy”?",
+    "correctAnswerId": "movies-mediumhard-apocalypse-now-source-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-apocalypse-now-source-a",
+        "text": "Jądro ciemności"
+      },
+      {
+        "id": "movies-mediumhard-apocalypse-now-source-b",
+        "text": "Moby Dick"
+      },
+      {
+        "id": "movies-mediumhard-apocalypse-now-source-c",
+        "text": "Wyspa skarbów"
+      },
+      {
+        "id": "movies-mediumhard-apocalypse-now-source-d",
+        "text": "Rok 1984"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-clockwork-orange-author",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto napisał powieść „Mechaniczna pomarańcza”, na podstawie której powstał film Kubricka?",
+    "correctAnswerId": "movies-mediumhard-clockwork-orange-author-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-clockwork-orange-author-a",
+        "text": "Anthony Burgess"
+      },
+      {
+        "id": "movies-mediumhard-clockwork-orange-author-b",
+        "text": "Aldous Huxley"
+      },
+      {
+        "id": "movies-mediumhard-clockwork-orange-author-c",
+        "text": "George Orwell"
+      },
+      {
+        "id": "movies-mediumhard-clockwork-orange-author-d",
+        "text": "William Golding"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-seventh-seal-game",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "W jaką grę bohater „Siódmej pieczęci” gra ze Śmiercią?",
+    "correctAnswerId": "movies-mediumhard-seventh-seal-game-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-seventh-seal-game-a",
+        "text": "W szachy"
+      },
+      {
+        "id": "movies-mediumhard-seventh-seal-game-b",
+        "text": "W karty"
+      },
+      {
+        "id": "movies-mediumhard-seventh-seal-game-c",
+        "text": "W kości"
+      },
+      {
+        "id": "movies-mediumhard-seventh-seal-game-d",
+        "text": "W warcaby"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-stalker-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował film „Stalker”?",
+    "correctAnswerId": "movies-mediumhard-stalker-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-stalker-director-a",
+        "text": "Andriej Tarkowski"
+      },
+      {
+        "id": "movies-mediumhard-stalker-director-b",
+        "text": "Siergiej Eisenstein"
+      },
+      {
+        "id": "movies-mediumhard-stalker-director-c",
+        "text": "Elem Klimow"
+      },
+      {
+        "id": "movies-mediumhard-stalker-director-d",
+        "text": "Nikita Michałkow"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-mulholland-drive-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował „Mulholland Drive”?",
+    "correctAnswerId": "movies-mediumhard-mulholland-drive-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-mulholland-drive-director-a",
+        "text": "David Lynch"
+      },
+      {
+        "id": "movies-mediumhard-mulholland-drive-director-b",
+        "text": "David Cronenberg"
+      },
+      {
+        "id": "movies-mediumhard-mulholland-drive-director-c",
+        "text": "Darren Aronofsky"
+      },
+      {
+        "id": "movies-mediumhard-mulholland-drive-director-d",
+        "text": "Paul Thomas Anderson"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-double-indemnity-style",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Z jakim nurtem kojarzony jest film „Podwójne ubezpieczenie”?",
+    "correctAnswerId": "movies-mediumhard-double-indemnity-style-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-double-indemnity-style-a",
+        "text": "Film noir"
+      },
+      {
+        "id": "movies-mediumhard-double-indemnity-style-b",
+        "text": "Nowa fala"
+      },
+      {
+        "id": "movies-mediumhard-double-indemnity-style-c",
+        "text": "Neorealizm"
+      },
+      {
+        "id": "movies-mediumhard-double-indemnity-style-d",
+        "text": "Ekspresjonizm niemiecki"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-bicycle-thieves-country",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Z jakiego kraju pochodzi film „Złodzieje rowerów”?",
+    "correctAnswerId": "movies-mediumhard-bicycle-thieves-country-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-bicycle-thieves-country-a",
+        "text": "Z Włoch"
+      },
+      {
+        "id": "movies-mediumhard-bicycle-thieves-country-b",
+        "text": "Z Francji"
+      },
+      {
+        "id": "movies-mediumhard-bicycle-thieves-country-c",
+        "text": "Z Niemiec"
+      },
+      {
+        "id": "movies-mediumhard-bicycle-thieves-country-d",
+        "text": "Z Hiszpanii"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-persona-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował film „Persona”?",
+    "correctAnswerId": "movies-mediumhard-persona-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-persona-director-a",
+        "text": "Ingmar Bergman"
+      },
+      {
+        "id": "movies-mediumhard-persona-director-b",
+        "text": "Lars von Trier"
+      },
+      {
+        "id": "movies-mediumhard-persona-director-c",
+        "text": "Thomas Vinterberg"
+      },
+      {
+        "id": "movies-mediumhard-persona-director-d",
+        "text": "Roy Andersson"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-8-half-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował film „8 i 1/2”?",
+    "correctAnswerId": "movies-mediumhard-8-half-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-8-half-director-a",
+        "text": "Federico Fellini"
+      },
+      {
+        "id": "movies-mediumhard-8-half-director-b",
+        "text": "Luchino Visconti"
+      },
+      {
+        "id": "movies-mediumhard-8-half-director-c",
+        "text": "Michelangelo Antonioni"
+      },
+      {
+        "id": "movies-mediumhard-8-half-director-d",
+        "text": "Pier Paolo Pasolini"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-andrei-rublev-subject",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "O kim opowiada film „Andriej Rublow”?",
+    "correctAnswerId": "movies-mediumhard-andrei-rublev-subject-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-andrei-rublev-subject-a",
+        "text": "O ikonopiścy"
+      },
+      {
+        "id": "movies-mediumhard-andrei-rublev-subject-b",
+        "text": "O carze"
+      },
+      {
+        "id": "movies-mediumhard-andrei-rublev-subject-c",
+        "text": "O kompozytorze"
+      },
+      {
+        "id": "movies-mediumhard-andrei-rublev-subject-d",
+        "text": "O generale"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-battle-algiers-topic",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Jakiego konfliktu dotyczy film „Bitwa o Algier”?",
+    "correctAnswerId": "movies-mediumhard-battle-algiers-topic-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-battle-algiers-topic-a",
+        "text": "Walki o niepodległość Algierii"
+      },
+      {
+        "id": "movies-mediumhard-battle-algiers-topic-b",
+        "text": "Wojny w Wietnamie"
+      },
+      {
+        "id": "movies-mediumhard-battle-algiers-topic-c",
+        "text": "II wojny światowej"
+      },
+      {
+        "id": "movies-mediumhard-battle-algiers-topic-d",
+        "text": "Wojny secesyjnej"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-berry-lyndon-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował „Barry’ego Lyndona”?",
+    "correctAnswerId": "movies-mediumhard-berry-lyndon-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-berry-lyndon-director-a",
+        "text": "Stanley Kubrick"
+      },
+      {
+        "id": "movies-mediumhard-berry-lyndon-director-b",
+        "text": "Ridley Scott"
+      },
+      {
+        "id": "movies-mediumhard-berry-lyndon-director-c",
+        "text": "Peter Weir"
+      },
+      {
+        "id": "movies-mediumhard-berry-lyndon-director-d",
+        "text": "Miloš Forman"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-amarcord-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto stworzył film „Amarcord”?",
+    "correctAnswerId": "movies-mediumhard-amarcord-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-amarcord-director-a",
+        "text": "Federico Fellini"
+      },
+      {
+        "id": "movies-mediumhard-amarcord-director-b",
+        "text": "Bernardo Bertolucci"
+      },
+      {
+        "id": "movies-mediumhard-amarcord-director-c",
+        "text": "Roberto Rossellini"
+      },
+      {
+        "id": "movies-mediumhard-amarcord-director-d",
+        "text": "Vittorio De Sica"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-children-men-source",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Na podstawie czyjej powieści powstał film „Ludzkie dzieci”?",
+    "correctAnswerId": "movies-mediumhard-children-men-source-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-children-men-source-a",
+        "text": "P.D. James"
+      },
+      {
+        "id": "movies-mediumhard-children-men-source-b",
+        "text": "Margaret Atwood"
+      },
+      {
+        "id": "movies-mediumhard-children-men-source-c",
+        "text": "Doris Lessing"
+      },
+      {
+        "id": "movies-mediumhard-children-men-source-d",
+        "text": "Ursuli Le Guin"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-there-will-be-blood-oil",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Jakiej branży dotyczy biznes głównego bohatera filmu „Aż poleje się krew”?",
+    "correctAnswerId": "movies-mediumhard-there-will-be-blood-oil-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-there-will-be-blood-oil-a",
+        "text": "Naftowej"
+      },
+      {
+        "id": "movies-mediumhard-there-will-be-blood-oil-b",
+        "text": "Stalowej"
+      },
+      {
+        "id": "movies-mediumhard-there-will-be-blood-oil-c",
+        "text": "Tekstylnej"
+      },
+      {
+        "id": "movies-mediumhard-there-will-be-blood-oil-d",
+        "text": "Bankowej"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-ran-inspiration",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Na dramacie którego autora oparto film Kurosawy „Ran”?",
+    "correctAnswerId": "movies-mediumhard-ran-inspiration-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-ran-inspiration-a",
+        "text": "Williama Szekspira"
+      },
+      {
+        "id": "movies-mediumhard-ran-inspiration-b",
+        "text": "Antona Czechowa"
+      },
+      {
+        "id": "movies-mediumhard-ran-inspiration-c",
+        "text": "Henrika Ibsena"
+      },
+      {
+        "id": "movies-mediumhard-ran-inspiration-d",
+        "text": "Molière’a"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-tokyo-story-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował „Tokijską opowieść”?",
+    "correctAnswerId": "movies-mediumhard-tokyo-story-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-tokyo-story-director-a",
+        "text": "Yasujirō Ozu"
+      },
+      {
+        "id": "movies-mediumhard-tokyo-story-director-b",
+        "text": "Akira Kurosawa"
+      },
+      {
+        "id": "movies-mediumhard-tokyo-story-director-c",
+        "text": "Hayao Miyazaki"
+      },
+      {
+        "id": "movies-mediumhard-tokyo-story-director-d",
+        "text": "Nagisa Oshima"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-satantango-country",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Z jakiego kraju pochodzi film „Szatańskie tango”?",
+    "correctAnswerId": "movies-mediumhard-satantango-country-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-satantango-country-a",
+        "text": "Z Węgier"
+      },
+      {
+        "id": "movies-mediumhard-satantango-country-b",
+        "text": "Z Rumunii"
+      },
+      {
+        "id": "movies-mediumhard-satantango-country-c",
+        "text": "Z Polski"
+      },
+      {
+        "id": "movies-mediumhard-satantango-country-d",
+        "text": "Z Czech"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-tree-life-director",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto wyreżyserował „Drzewo życia”?",
+    "correctAnswerId": "movies-mediumhard-tree-life-director-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-tree-life-director-a",
+        "text": "Terrence Malick"
+      },
+      {
+        "id": "movies-mediumhard-tree-life-director-b",
+        "text": "Terry Gilliam"
+      },
+      {
+        "id": "movies-mediumhard-tree-life-director-c",
+        "text": "Robert Altman"
+      },
+      {
+        "id": "movies-mediumhard-tree-life-director-d",
+        "text": "Paul Schrader"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-uncle-boonmee-country",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Z jakiego kraju pochodzi film „Wujek Boonmee, który potrafi przywołać swoje poprzednie wcielenia”?",
+    "correctAnswerId": "movies-mediumhard-uncle-boonmee-country-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-uncle-boonmee-country-a",
+        "text": "Z Tajlandii"
+      },
+      {
+        "id": "movies-mediumhard-uncle-boonmee-country-b",
+        "text": "Z Korei Południowej"
+      },
+      {
+        "id": "movies-mediumhard-uncle-boonmee-country-c",
+        "text": "Z Japonii"
+      },
+      {
+        "id": "movies-mediumhard-uncle-boonmee-country-d",
+        "text": "Z Filipin"
+      }
+    ]
+  },
+  {
+    "key": "movies-mediumhard-cinema-paradiso-composer",
+    "categoryKey": "movies",
+    "difficulty": "MediumHard",
+    "text": "Kto skomponował muzykę do filmu „Cinema Paradiso”?",
+    "correctAnswerId": "movies-mediumhard-cinema-paradiso-composer-a",
+    "answers": [
+      {
+        "id": "movies-mediumhard-cinema-paradiso-composer-a",
+        "text": "Ennio Morricone"
+      },
+      {
+        "id": "movies-mediumhard-cinema-paradiso-composer-b",
+        "text": "Nicola Piovani"
+      },
+      {
+        "id": "movies-mediumhard-cinema-paradiso-composer-c",
+        "text": "Nino Rota"
+      },
+      {
+        "id": "movies-mediumhard-cinema-paradiso-composer-d",
+        "text": "Alexandre Desplat"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-french-connection-oscar",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Który film zdobył Oscara za najlepszy film za rok 1971?",
+    "correctAnswerId": "movies-hard-french-connection-oscar-a",
+    "answers": [
+      {
+        "id": "movies-hard-french-connection-oscar-a",
+        "text": "Francuski łącznik"
+      },
+      {
+        "id": "movies-hard-french-connection-oscar-b",
+        "text": "Ojciec chrzestny"
+      },
+      {
+        "id": "movies-hard-french-connection-oscar-c",
+        "text": "Mechaniczna pomarańcza"
+      },
+      {
+        "id": "movies-hard-french-connection-oscar-d",
+        "text": "Kabaret"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-tokyo-story-grandparents",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Do jakiego miasta jadą starsi bohaterowie w „Tokijskiej opowieści”, by odwiedzić dzieci?",
+    "correctAnswerId": "movies-hard-tokyo-story-grandparents-a",
+    "answers": [
+      {
+        "id": "movies-hard-tokyo-story-grandparents-a",
+        "text": "Do Tokio"
+      },
+      {
+        "id": "movies-hard-tokyo-story-grandparents-b",
+        "text": "Do Osaki"
+      },
+      {
+        "id": "movies-hard-tokyo-story-grandparents-c",
+        "text": "Do Kioto"
+      },
+      {
+        "id": "movies-hard-tokyo-story-grandparents-d",
+        "text": "Do Nagoi"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-umbrellas-cherbourg-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował musical „Parasolki z Cherbourga”?",
+    "correctAnswerId": "movies-hard-umbrellas-cherbourg-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-umbrellas-cherbourg-director-a",
+        "text": "Jacques Demy"
+      },
+      {
+        "id": "movies-hard-umbrellas-cherbourg-director-b",
+        "text": "François Truffaut"
+      },
+      {
+        "id": "movies-hard-umbrellas-cherbourg-director-c",
+        "text": "Jean-Luc Godard"
+      },
+      {
+        "id": "movies-hard-umbrellas-cherbourg-director-d",
+        "text": "Claude Chabrol"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-last-year-marienbad-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował „Zeszłego roku w Marienbadzie”?",
+    "correctAnswerId": "movies-hard-last-year-marienbad-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-last-year-marienbad-director-a",
+        "text": "Alain Resnais"
+      },
+      {
+        "id": "movies-hard-last-year-marienbad-director-b",
+        "text": "Éric Rohmer"
+      },
+      {
+        "id": "movies-hard-last-year-marienbad-director-c",
+        "text": "Louis Malle"
+      },
+      {
+        "id": "movies-hard-last-year-marienbad-director-d",
+        "text": "Jean Renoir"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-red-desert-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował film „Czerwona pustynia”?",
+    "correctAnswerId": "movies-hard-red-desert-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-red-desert-director-a",
+        "text": "Michelangelo Antonioni"
+      },
+      {
+        "id": "movies-hard-red-desert-director-b",
+        "text": "Bernardo Bertolucci"
+      },
+      {
+        "id": "movies-hard-red-desert-director-c",
+        "text": "Pier Paolo Pasolini"
+      },
+      {
+        "id": "movies-hard-red-desert-director-d",
+        "text": "Sergio Leone"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-mirror-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto stworzył film „Zwierciadło” z 1975 roku?",
+    "correctAnswerId": "movies-hard-mirror-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-mirror-director-a",
+        "text": "Andriej Tarkowski"
+      },
+      {
+        "id": "movies-hard-mirror-director-b",
+        "text": "Elem Klimow"
+      },
+      {
+        "id": "movies-hard-mirror-director-c",
+        "text": "Krzysztof Kieślowski"
+      },
+      {
+        "id": "movies-hard-mirror-director-d",
+        "text": "Siergiej Paradżanow"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-agruire-actor",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Który aktor gra tytułową rolę w filmie „Aguirre, gniew boży”?",
+    "correctAnswerId": "movies-hard-agruire-actor-a",
+    "answers": [
+      {
+        "id": "movies-hard-agruire-actor-a",
+        "text": "Klaus Kinski"
+      },
+      {
+        "id": "movies-hard-agruire-actor-b",
+        "text": "Bruno Ganz"
+      },
+      {
+        "id": "movies-hard-agruire-actor-c",
+        "text": "Max von Sydow"
+      },
+      {
+        "id": "movies-hard-agruire-actor-d",
+        "text": "Rutger Hauer"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-close-up-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował film „Close-Up”?",
+    "correctAnswerId": "movies-hard-close-up-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-close-up-director-a",
+        "text": "Abbas Kiarostami"
+      },
+      {
+        "id": "movies-hard-close-up-director-b",
+        "text": "Asghar Farhadi"
+      },
+      {
+        "id": "movies-hard-close-up-director-c",
+        "text": "Jafar Panahi"
+      },
+      {
+        "id": "movies-hard-close-up-director-d",
+        "text": "Majid Majidi"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-playtime-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto stworzył film „Playtime”?",
+    "correctAnswerId": "movies-hard-playtime-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-playtime-director-a",
+        "text": "Jacques Tati"
+      },
+      {
+        "id": "movies-hard-playtime-director-b",
+        "text": "Luis Buñuel"
+      },
+      {
+        "id": "movies-hard-playtime-director-c",
+        "text": "Jean Vigo"
+      },
+      {
+        "id": "movies-hard-playtime-director-d",
+        "text": "Robert Bresson"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-pickpocket-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował „Kieszonkowca”?",
+    "correctAnswerId": "movies-hard-pickpocket-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-pickpocket-director-a",
+        "text": "Robert Bresson"
+      },
+      {
+        "id": "movies-hard-pickpocket-director-b",
+        "text": "Henri-Georges Clouzot"
+      },
+      {
+        "id": "movies-hard-pickpocket-director-c",
+        "text": "Jean-Pierre Melville"
+      },
+      {
+        "id": "movies-hard-pickpocket-director-d",
+        "text": "Marcel Carné"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-au-hasard-balthazar-animal",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Jakim zwierzęciem jest Balthazar w filmie Bressona?",
+    "correctAnswerId": "movies-hard-au-hasard-balthazar-animal-a",
+    "answers": [
+      {
+        "id": "movies-hard-au-hasard-balthazar-animal-a",
+        "text": "Osłem"
+      },
+      {
+        "id": "movies-hard-au-hasard-balthazar-animal-b",
+        "text": "Koniem"
+      },
+      {
+        "id": "movies-hard-au-hasard-balthazar-animal-c",
+        "text": "Psem"
+      },
+      {
+        "id": "movies-hard-au-hasard-balthazar-animal-d",
+        "text": "Wołem"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-german-expressionism-cabinet",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Jak brzmi pełny tytuł słynnego filmu ekspresjonizmu niemieckiego „Gabinet...”?",
+    "correctAnswerId": "movies-hard-german-expressionism-cabinet-a",
+    "answers": [
+      {
+        "id": "movies-hard-german-expressionism-cabinet-a",
+        "text": "Doktora Caligari"
+      },
+      {
+        "id": "movies-hard-german-expressionism-cabinet-b",
+        "text": "Doktora Mabuse"
+      },
+      {
+        "id": "movies-hard-german-expressionism-cabinet-c",
+        "text": "Profesora Unrata"
+      },
+      {
+        "id": "movies-hard-german-expressionism-cabinet-d",
+        "text": "Doktora Moreau"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-late-spring-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował „Późną wiosnę”?",
+    "correctAnswerId": "movies-hard-late-spring-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-late-spring-director-a",
+        "text": "Yasujirō Ozu"
+      },
+      {
+        "id": "movies-hard-late-spring-director-b",
+        "text": "Kenji Mizoguchi"
+      },
+      {
+        "id": "movies-hard-late-spring-director-c",
+        "text": "Akira Kurosawa"
+      },
+      {
+        "id": "movies-hard-late-spring-director-d",
+        "text": "Mikio Naruse"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-werckmeister-country",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Z jakiego kraju pochodzi film „Harmonie Werckmeistera”?",
+    "correctAnswerId": "movies-hard-werckmeister-country-a",
+    "answers": [
+      {
+        "id": "movies-hard-werckmeister-country-a",
+        "text": "Z Węgier"
+      },
+      {
+        "id": "movies-hard-werckmeister-country-b",
+        "text": "Z Serbii"
+      },
+      {
+        "id": "movies-hard-werckmeister-country-c",
+        "text": "Z Chorwacji"
+      },
+      {
+        "id": "movies-hard-werckmeister-country-d",
+        "text": "Z Austrii"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-in-the-mood-city",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "W jakim mieście rozgrywa się film „Spragnieni miłości”?",
+    "correctAnswerId": "movies-hard-in-the-mood-city-a",
+    "answers": [
+      {
+        "id": "movies-hard-in-the-mood-city-a",
+        "text": "W Hongkongu"
+      },
+      {
+        "id": "movies-hard-in-the-mood-city-b",
+        "text": "W Szanghaju"
+      },
+      {
+        "id": "movies-hard-in-the-mood-city-c",
+        "text": "W Singapurze"
+      },
+      {
+        "id": "movies-hard-in-the-mood-city-d",
+        "text": "W Tajpej"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-tokyo-drifter-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował film „Tokyo Drifter”?",
+    "correctAnswerId": "movies-hard-tokyo-drifter-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-tokyo-drifter-director-a",
+        "text": "Seijun Suzuki"
+      },
+      {
+        "id": "movies-hard-tokyo-drifter-director-b",
+        "text": "Takashi Kitano"
+      },
+      {
+        "id": "movies-hard-tokyo-drifter-director-c",
+        "text": "Masaki Kobayashi"
+      },
+      {
+        "id": "movies-hard-tokyo-drifter-director-d",
+        "text": "Kinji Fukasaku"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-la-jetee-form",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Jaką nietypową formę ma film „La Jetée”?",
+    "correctAnswerId": "movies-hard-la-jetee-form-a",
+    "answers": [
+      {
+        "id": "movies-hard-la-jetee-form-a",
+        "text": "Składa się głównie ze statycznych fotografii"
+      },
+      {
+        "id": "movies-hard-la-jetee-form-b",
+        "text": "Jest animacją poklatkową"
+      },
+      {
+        "id": "movies-hard-la-jetee-form-c",
+        "text": "Jest niemy"
+      },
+      {
+        "id": "movies-hard-la-jetee-form-d",
+        "text": "Jest czarno-białym musicalem"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-three-colors-blue-composer",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Który kompozytor jest autorem muzyki do filmu „Trzy kolory: Niebieski”?",
+    "correctAnswerId": "movies-hard-three-colors-blue-composer-a",
+    "answers": [
+      {
+        "id": "movies-hard-three-colors-blue-composer-a",
+        "text": "Zbigniew Preisner"
+      },
+      {
+        "id": "movies-hard-three-colors-blue-composer-b",
+        "text": "Wojciech Kilar"
+      },
+      {
+        "id": "movies-hard-three-colors-blue-composer-c",
+        "text": "Michał Lorenc"
+      },
+      {
+        "id": "movies-hard-three-colors-blue-composer-d",
+        "text": "Jan A.P. Kaczmarek"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-dekalog-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował cykl filmowy „Dekalog”?",
+    "correctAnswerId": "movies-hard-dekalog-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-dekalog-director-a",
+        "text": "Krzysztof Kieślowski"
+      },
+      {
+        "id": "movies-hard-dekalog-director-b",
+        "text": "Agnieszka Holland"
+      },
+      {
+        "id": "movies-hard-dekalog-director-c",
+        "text": "Andrzej Wajda"
+      },
+      {
+        "id": "movies-hard-dekalog-director-d",
+        "text": "Krzysztof Zanussi"
+      }
+    ]
+  },
+  {
+    "key": "movies-hard-woman-under-influence-director",
+    "categoryKey": "movies",
+    "difficulty": "Hard",
+    "text": "Kto wyreżyserował „Kobietę pod presją”?",
+    "correctAnswerId": "movies-hard-woman-under-influence-director-a",
+    "answers": [
+      {
+        "id": "movies-hard-woman-under-influence-director-a",
+        "text": "John Cassavetes"
+      },
+      {
+        "id": "movies-hard-woman-under-influence-director-b",
+        "text": "Sidney Lumet"
+      },
+      {
+        "id": "movies-hard-woman-under-influence-director-c",
+        "text": "Martin Scorsese"
+      },
+      {
+        "id": "movies-hard-woman-under-influence-director-d",
+        "text": "Robert Altman"
+      }
+    ]
+  }
+]

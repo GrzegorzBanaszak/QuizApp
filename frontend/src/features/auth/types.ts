@@ -10,6 +10,7 @@ export interface SocialProfileResponse {
   isNewUser: boolean;
   googleId?: string | null;
   facebookId?: string | null;
+  providerToken?: string | null;
   name: string;
   firstName?: string | null;
   lastName?: string | null;
@@ -28,7 +29,21 @@ export interface RegisterSocialRequest {
   provider: "Google" | "Facebook";
   providerToken: string;
   customUsername?: string | null;
-  customAvatarUrl?: string | null;
+  selectedAvatarId?: number | null;
+}
+
+export interface AuthAvatarOption {
+  id: number;
+  key: string;
+  name: string;
+  imageUrl: string;
+  unlockType: string;
+  unlockAchievementCode?: string | null;
+  price: number;
+  isUnlocked: boolean;
+  canPurchase: boolean;
+  isSelected: boolean;
+  unlockDescription: string;
 }
 
 export interface UpdateUserProfileRequest {
@@ -36,8 +51,10 @@ export interface UpdateUserProfileRequest {
   avatarUrl: string;
 }
 
-export interface GoogleTokenRequest {
-  token: string;
+export interface GoogleLoginRequest {
+  code?: string | null;
+  redirectUri?: string | null;
+  token?: string | null;
 }
 
 export interface AuthSession {

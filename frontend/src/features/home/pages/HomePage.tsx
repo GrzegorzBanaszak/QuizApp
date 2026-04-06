@@ -1,12 +1,11 @@
 import { Link } from "react-router";
-import { AuthLoginSection } from "../../auth/components/AuthLoginSection";
 import { useAuthStore } from "../../auth/store/authStore";
 
 const modeCards = [
   {
     title: "Graj Solo",
     description:
-      "Sprawdź swoją wiedzę w starciu z AI. Dynamicznie generowane pytania dopasowane do Twoich zainteresowań i droga do globalnego Top 100.",
+      "Sprawdz swoja wiedze w starciu z AI. Dynamicznie generowane pytania dopasowane do Twoich zainteresowan i droga do globalnego Top 100.",
     to: "/singleplayer",
     icon: "bolt",
     iconClassName: "text-[#e08dff]",
@@ -21,7 +20,7 @@ const modeCards = [
   {
     title: "Graj ze Znajomymi",
     description:
-      "Rywalizacja w czasie rzeczywistym. Wybieraj między klasycznym quizem a intensywnymi turniejami eliminacyjnymi i sprawdź, kto naprawdę prowadzi lobby.",
+      "Rywalizacja w czasie rzeczywistym. Wybieraj miedzy klasycznym quizem a intensywnymi turniejami eliminacyjnymi i sprawdz, kto naprawde prowadzi lobby.",
     to: "/multiplayer",
     icon: "group",
     iconClassName: "text-[#ff68a7]",
@@ -36,7 +35,7 @@ const modeCards = [
   {
     title: "Tryb Imprezy",
     description:
-      "Zmień salon w studio telewizyjne. Telefon staje się kontrolerem, a wspólny ekran główną sceną z mechanikami sabotażu i widowiskową rywalizacją.",
+      "Zmien salon w studio telewizyjne. Telefon staje sie kontrolerem, a wspolny ekran glowna scena z mechanikami sabotażu i widowiskowa rywalizacja.",
     to: "/party",
     icon: "tv",
     iconClassName: "text-[#8ff5ff]",
@@ -68,24 +67,99 @@ export const HomePage = () => {
             </span>
           </div>
           <h1 className="neon-text-glow font-headline text-4xl font-black uppercase tracking-[-0.04em] text-[#f4d5ff] md:text-6xl">
-            Witaj w Świecie QuizVolt
+            Witaj w Swiecie QuizVolt
           </h1>
-          <p className="mx-auto mt-4 max-w-3xl text-base font-medium tracking-wide text-[#aaa8c4] md:text-lg">
+          <p className="mx-auto mt-4 max-w-4xl text-base font-medium tracking-wide text-[#aaa8c4] md:text-lg">
             {session
-              ? "Masz aktywną sesję. Wybierz tryb gry."
-              : "Zaloguj się, aby zapisać postępy lub graj od razu"}
+              ? "Masz aktywna sesje. Wybierz tryb gry albo sprawdz katalogi postepu."
+              : "Zaloguj sie, aby zapisac postepy lub graj od razu."}
           </p>
         </header>
 
-        <AuthLoginSection />
+        {!session ? (
+          <div className="mb-10 flex w-full justify-center">
+            <Link
+              to="/auth/login"
+              className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#e08dff] to-[#ff68a7] px-6 py-4 text-sm font-black uppercase tracking-[0.18em] text-[#4f006c] transition-transform hover:scale-105 active:scale-95"
+            >
+              <span className="material-symbols-outlined text-xl">login</span>
+              Zaloguj się
+            </Link>
+          </div>
+        ) : null}
+
+        {session ? (
+          <section className="mb-10 w-full">
+            <div className="mb-4 flex items-end justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#8ff5ff]">
+                  Kolekcja gracza
+                </p>
+                <h2 className="mt-2 font-headline text-2xl font-black tracking-tight text-[#f4d5ff]">
+                  Katalogi i postep
+                </h2>
+              </div>
+              <span className="hidden text-sm text-[#aaa8c4] md:block">
+                Przegladaj to, co juz masz i to, co mozna jeszcze odblokowac.
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <Link
+                to="/avatars"
+                className="glass-panel group rounded-[2rem] p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="rounded-2xl bg-[#e08dff]/20 p-3 text-[#e08dff]">
+                    <span className="material-symbols-outlined">face</span>
+                  </div>
+                  <span className="text-xs font-black uppercase tracking-[0.24em] text-[#8ff5ff]">
+                    Protected
+                  </span>
+                </div>
+                <h3 className="font-headline text-2xl font-black tracking-tight text-[#e5e3ff]">
+                  Wszystkie avatary
+                </h3>
+                <p className="mt-2 max-w-xl text-sm text-[#aaa8c4]">
+                  Zobacz pelny katalog avatarow, w tym te odblokowane przez
+                  achievementy i te dostepne do zakupu.
+                </p>
+              </Link>
+
+              <Link
+                to="/achievements"
+                className="glass-panel group rounded-[2rem] p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="rounded-2xl bg-[#8ff5ff]/20 p-3 text-[#8ff5ff]">
+                    <span className="material-symbols-outlined">
+                      emoji_events
+                    </span>
+                  </div>
+                  <span className="text-xs font-black uppercase tracking-[0.24em] text-[#ffcf7d]">
+                    Rewards
+                  </span>
+                </div>
+                <h3 className="font-headline text-2xl font-black tracking-tight text-[#e5e3ff]">
+                  Wszystkie achievementy
+                </h3>
+                <p className="mt-2 max-w-xl text-sm text-[#aaa8c4]">
+                  Sprawdz warunki zdobycia i nagrody, ktore backend juz zwraca w
+                  katalogu.
+                </p>
+              </Link>
+            </div>
+          </section>
+        ) : null}
 
         <main
           id="mode-selection"
           className="grid w-full grid-cols-1 gap-6 md:grid-cols-3 md:gap-8"
         >
           {modeCards.map((card) => {
-            const [beforeHighlight, afterHighlight] =
-              card.description.split(card.highlightLabel);
+            const [beforeHighlight, afterHighlight] = card.description.split(
+              card.highlightLabel,
+            );
 
             return (
               <section
@@ -138,21 +212,6 @@ export const HomePage = () => {
           </p>
         </footer>
       </div>
-
-      <nav className="glass-panel fixed bottom-0 left-0 z-50 flex w-full items-center justify-around rounded-t-[2rem] px-6 pb-8 pt-4 shadow-[0_-10px_40px_rgba(224,141,255,0.08)] md:hidden">
-        <div className="rounded-2xl bg-[#e08dff]/20 p-3 text-[#e08dff] shadow-[0_0_15px_rgba(224,141,255,0.3)]">
-          <span className="material-symbols-outlined">bolt</span>
-        </div>
-        <div className="p-3 text-[#74738d] transition-colors hover:text-[#e08dff]">
-          <span className="material-symbols-outlined">emoji_events</span>
-        </div>
-        <div className="p-3 text-[#74738d] transition-colors hover:text-[#e08dff]">
-          <span className="material-symbols-outlined">leaderboard</span>
-        </div>
-        <div className="p-3 text-[#74738d] transition-colors hover:text-[#e08dff]">
-          <span className="material-symbols-outlined">settings</span>
-        </div>
-      </nav>
     </div>
   );
 };

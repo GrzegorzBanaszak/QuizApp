@@ -11,10 +11,12 @@ namespace QuizApp.Api.Services.Implementations;
 public sealed class UserService : IUserService
 {
     private readonly AppDbContext _dbContext;
+    private readonly IProgressionService _progressionService;
 
-    public UserService(AppDbContext dbContext)
+    public UserService(AppDbContext dbContext, IProgressionService progressionService)
     {
         _dbContext = dbContext;
+        _progressionService = progressionService;
     }
 
     public async Task<Guid?> GetCurrentUserIdAsync(ClaimsPrincipal principal, CancellationToken cancellationToken = default)
@@ -44,7 +46,7 @@ public sealed class UserService : IUserService
             .AsNoTracking()
             .SingleOrDefaultAsync(item => item.Id == userId.Value, cancellationToken);
 
-        return user is null ? null : ToProfileDto(user);
+        return user is null ? null : UserProfileMapper.ToDto(user, _progressionService);
     }
 
     public async Task<UserProfileDto?> UpdateCurrentUserProfileAsync(
@@ -58,6 +60,12 @@ public sealed class UserService : IUserService
         if (string.IsNullOrWhiteSpace(username))
         {
             throw new ArgumentException("Username is required.", nameof(request));
+        }
+
+        var avatarUrl = request.AvatarUrl?.Trim() ?? string.Empty;
+        if (string.IsNullOrWhiteSpace(avatarUrl))
+        {
+            throw new ArgumentException("AvatarUrl is required.", nameof(request));
         }
 
         var userId = await GetCurrentUserIdAsync(principal, cancellationToken);
@@ -86,21 +94,14 @@ public sealed class UserService : IUserService
         }
 
         user.Username = username;
+        user.AvatarUrl = avatarUrl;
+
+        var avatar = await _dbContext.Avatars
+            .SingleOrDefaultAsync(item => item.ImageUrl == avatarUrl, cancellationToken);
+
+        user.CurrentAvatarId = avatar?.Id;
         await _dbContext.SaveChangesAsync(cancellationToken);
 
-        return ToProfileDto(user);
-    }
-
-    private static UserProfileDto ToProfileDto(User user)
-    {
-        return new UserProfileDto
-        {
-            Id = user.Id,
-            Username = user.Username,
-            AvatarUrl = user.AvatarUrl,
-            CurrentAvatarId = user.CurrentAvatarId,
-            TotalExperience = user.TotalExperience,
-            Coins = user.Coins
-        };
+        return UserProfileMapper.ToDto(user, _progressionService, avatar);
     }
 }

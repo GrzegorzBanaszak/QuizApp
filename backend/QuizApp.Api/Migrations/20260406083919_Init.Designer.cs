@@ -12,8 +12,8 @@ using QuizApp.Api.Data;
 namespace QuizApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260402170320_AchievementsAndLevelSeed")]
-    partial class AchievementsAndLevelSeed
+    [Migration("20260406083919_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,6 +69,9 @@ namespace QuizApp.Api.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<int?>("RewardCoins")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("RewardExperience")
                         .HasColumnType("int");
 
                     b.Property<string>("RewardType")
@@ -182,6 +185,11 @@ namespace QuizApp.Api.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int>("FirstCompletionExperience")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
+
                     b.Property<string>("Key")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -194,6 +202,11 @@ namespace QuizApp.Api.Migrations
 
                     b.Property<int>("Order")
                         .HasColumnType("int");
+
+                    b.Property<int>("ReplayExperience")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
 
                     b.HasKey("Id");
 
@@ -327,6 +340,11 @@ namespace QuizApp.Api.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasMaxLength(1000)
@@ -335,6 +353,9 @@ namespace QuizApp.Api.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("Key")
+                        .IsUnique();
 
                     b.ToTable("SingleplayerQuestions", (string)null);
                 });

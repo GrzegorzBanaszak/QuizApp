@@ -12,12 +12,18 @@ public sealed class SingleplayerService : ISingleplayerService
     private readonly AppDbContext _context;
     private readonly IMapper _mapper;
     private readonly IAchievementService _achievementService;
+    private readonly IProgressionService _progressionService;
 
-    public SingleplayerService(AppDbContext context, IMapper mapper, IAchievementService achievementService)
+    public SingleplayerService(
+        AppDbContext context,
+        IMapper mapper,
+        IAchievementService achievementService,
+        IProgressionService progressionService)
     {
         _context = context;
         _mapper = mapper;
         _achievementService = achievementService;
+        _progressionService = progressionService;
     }
 
     public async Task<IEnumerable<CategoryDto>> GetCategoriesAsync(Guid userId)
@@ -170,6 +176,10 @@ public sealed class SingleplayerService : ISingleplayerService
 
     public async Task<SingleplayerResultSummaryDto> SubmitGameAsync(Guid userId, int levelId, SingleplayerSubmitRequestDto request)
     {
+        var user = await _context.Users
+            .SingleOrDefaultAsync(item => item.Id == userId)
+            ?? throw new KeyNotFoundException($"User {userId} was not found.");
+
         var session = await _context.SingleplayerGameSessions
             .AsNoTracking()
             .Include(item => item.Level)
@@ -218,6 +228,13 @@ public sealed class SingleplayerService : ISingleplayerService
 
         var totalQuestions = questions.Count;
         var totalScore = CalculateScore(correctAnswersCount, totalQuestions);
+        var hadCompletedLevelBefore = await _context.SingleplayerResults
+            .AsNoTracking()
+            .AnyAsync(item => item.UserId == userId && item.LevelId == levelId);
+        var awardedLevelExperience = hadCompletedLevelBefore
+            ? session.Level.ReplayExperience
+            : session.Level.FirstCompletionExperience;
+        var previousProgress = _progressionService.BuildProgress(user.TotalExperience);
 
         var result = new SingleplayerResult
         {
@@ -232,16 +249,25 @@ public sealed class SingleplayerService : ISingleplayerService
 
         await using var transaction = await _context.Database.BeginTransactionAsync();
         _context.SingleplayerResults.Add(result);
+        user.TotalExperience += awardedLevelExperience;
         await _context.SaveChangesAsync();
         var achievementResult = await _achievementService.EvaluateAsync(userId);
         await transaction.CommitAsync();
+        var finalProgress = _progressionService.BuildProgress(user.TotalExperience);
+        var awardedExperience = awardedLevelExperience + achievementResult.AwardedExperience;
 
         return new SingleplayerResultSummaryDto(
             totalScore,
             correctAnswersCount,
             totalQuestions,
             details,
+            awardedExperience,
+            awardedLevelExperience,
+            achievementResult.AwardedExperience,
             achievementResult.AwardedCoins,
+            !hadCompletedLevelBefore,
+            finalProgress.Level > previousProgress.Level,
+            finalProgress,
             achievementResult.UnlockedAchievements.ToList());
     }
 

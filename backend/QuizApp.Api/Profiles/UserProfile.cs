@@ -8,6 +8,7 @@ public sealed class UserProfile : Profile
 {
     public UserProfile()
     {
-        CreateMap<User, UserProfileDto>();
+        CreateMap<User, UserProfileDto>()
+            .ForMember(dest => dest.Progress, opt => opt.Ignore());
     }
 }

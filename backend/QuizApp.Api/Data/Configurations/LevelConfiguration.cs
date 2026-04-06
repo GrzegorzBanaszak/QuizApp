@@ -23,6 +23,12 @@ public sealed class LevelConfiguration : IEntityTypeConfiguration<Level>
         entity.Property(l => l.Order)
             .IsRequired();
 
+        entity.Property(l => l.FirstCompletionExperience)
+            .HasDefaultValue(0);
+
+        entity.Property(l => l.ReplayExperience)
+            .HasDefaultValue(0);
+
         entity.HasMany(l => l.QuestionDistributions)
             .WithOne(d => d.Level)
             .HasForeignKey(d => d.LevelId)

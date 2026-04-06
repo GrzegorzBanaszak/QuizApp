@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter, Outlet } from "react-router";
+import { AppNavigation } from "./AppNavigation";
 
 const HomePage = lazy(() =>
   import("../features/home/pages/HomePage").then((module) => ({
@@ -31,9 +32,27 @@ const CreateCharacterPage = lazy(() =>
   })),
 );
 
+const LoginPage = lazy(() =>
+  import("../features/auth/pages/LoginPage").then((module) => ({
+    default: module.LoginPage,
+  })),
+);
+
 const EditProfilePage = lazy(() =>
   import("../features/auth/pages/EditProfilePage").then((module) => ({
     default: module.EditProfilePage,
+  })),
+);
+
+const AvatarCatalogPage = lazy(() =>
+  import("../features/catalog/pages/AvatarCatalogPage").then((module) => ({
+    default: module.AvatarCatalogPage,
+  })),
+);
+
+const AchievementCatalogPage = lazy(() =>
+  import("../features/catalog/pages/AchievementCatalogPage").then((module) => ({
+    default: module.AchievementCatalogPage,
   })),
 );
 
@@ -47,7 +66,8 @@ const AppLayout = () => (
       </div>
     }
   >
-    <div className="min-h-screen text-[#e5e3ff]">
+    <div className="min-h-screen pb-24 text-[#e5e3ff] md:pb-0">
+      <AppNavigation />
       <Outlet />
     </div>
   </Suspense>
@@ -71,8 +91,20 @@ export const appRouter = createBrowserRouter([
         element: <EditProfilePage />,
       },
       {
+        path: "avatars",
+        element: <AvatarCatalogPage />,
+      },
+      {
+        path: "achievements",
+        element: <AchievementCatalogPage />,
+      },
+      {
         path: "auth/create-character",
         element: <CreateCharacterPage />,
+      },
+      {
+        path: "auth/login",
+        element: <LoginPage />,
       },
       {
         path: "multiplayer",

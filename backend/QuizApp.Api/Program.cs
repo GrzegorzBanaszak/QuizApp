@@ -120,6 +120,7 @@ builder.Services.AddScoped<AchievementSeedService>();
 builder.Services.AddScoped<AvatarSeedService>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IProgressionService, ProgressionService>();
 builder.Services.AddScoped<IAchievementService, AchievementService>();
 builder.Services.AddScoped<ISingleplayerService, SingleplayerService>();
 builder.Services.AddScoped<IAvatarService, AvatarService>();

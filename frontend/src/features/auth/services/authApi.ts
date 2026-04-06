@@ -1,12 +1,13 @@
 import type {
   AuthResponse,
-  GoogleTokenRequest,
+  GoogleLoginRequest,
   GoogleVerifyResponse,
   PendingSocialLogin,
   RegisterSocialRequest,
   SocialProfileResponse,
   UpdateUserProfileRequest,
 } from "../types";
+import type { AvatarCatalogItem } from "../../catalog/types";
 
 const AUTH_BASE = "/api/auth";
 
@@ -21,21 +22,26 @@ async function parseJsonResponse<T>(response: Response): Promise<T> {
   return (await response.json()) as T;
 }
 
-export async function verifyGoogleToken(
-  token: string,
+export async function verifyGoogleCode(
+  request: GoogleLoginRequest,
 ): Promise<GoogleVerifyResponse> {
-  const payload: GoogleTokenRequest = { token };
-
   const response = await fetch(`${AUTH_BASE}/verify-google`, {
     method: "POST",
     credentials: "include",
     headers: {
       "Content-Type": "application/json",
+      "X-Requested-With": "XMLHttpRequest",
     },
-    body: JSON.stringify(payload),
+    body: JSON.stringify(request),
   });
 
   return parseJsonResponse<GoogleVerifyResponse>(response);
+}
+
+export async function verifyGoogleToken(
+  token: string,
+): Promise<GoogleVerifyResponse> {
+  return verifyGoogleCode({ token });
 }
 
 export async function verifyFacebookToken(
@@ -66,6 +72,14 @@ export async function registerSocial(
   });
 
   return parseJsonResponse<AuthResponse>(response);
+}
+
+export async function fetchCreateCharacterAvatars(): Promise<AvatarCatalogItem[]> {
+  const response = await fetch("/api/avatar/defaults", {
+    credentials: "include",
+  });
+
+  return parseJsonResponse<AvatarCatalogItem[]>(response);
 }
 
 export async function loginAsGuest(

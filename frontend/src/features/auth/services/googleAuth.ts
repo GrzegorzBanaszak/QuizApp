@@ -2,14 +2,21 @@ declare global {
   interface Window {
     google?: {
       accounts?: {
-        id?: {
-          initialize: (config: {
+        oauth2?: {
+          initCodeClient: (config: {
             client_id: string;
-            callback: (response: { credential?: string }) => void;
-            auto_select?: boolean;
-            cancel_on_tap_outside?: boolean;
-          }) => void;
-          prompt: (callback?: (notification: any) => void) => void;
+            scope: string;
+            ux_mode?: "popup" | "redirect";
+            redirect_uri?: string;
+            callback: (response: {
+              code?: string;
+              error?: string;
+              error_description?: string;
+            }) => void;
+            error_callback?: (error: { type?: string; message?: string }) => void;
+          }) => {
+            requestCode: () => void;
+          };
         };
       };
     };
@@ -19,7 +26,7 @@ declare global {
 let googleScriptPromise: Promise<void> | null = null;
 
 function loadGoogleScript(): Promise<void> {
-  if (window.google?.accounts?.id) {
+  if (window.google?.accounts?.oauth2) {
     return Promise.resolve();
   }
 
@@ -34,7 +41,7 @@ function loadGoogleScript(): Promise<void> {
 
     if (existingScript) {
       const poll = window.setInterval(() => {
-        if (window.google?.accounts?.id) {
+        if (window.google?.accounts?.oauth2) {
           window.clearInterval(poll);
           resolve();
         }
@@ -53,65 +60,84 @@ function loadGoogleScript(): Promise<void> {
     script.async = true;
     script.defer = true;
     script.onload = () => resolve();
-    script.onerror = () => reject(new Error("Nie udało się załadować Google Sign-In."));
+    script.onerror = () =>
+      reject(new Error("Nie udało się załadować Google Sign-In."));
     document.head.appendChild(script);
   });
 
   return googleScriptPromise;
 }
 
-export async function requestGoogleIdToken(clientId: string): Promise<string> {
+export async function requestGoogleAuthorizationCode(
+  clientId: string,
+): Promise<string> {
   await loadGoogleScript();
 
-  const googleId = window.google?.accounts?.id;
-  if (!googleId) {
+  const googleOauth = window.google?.accounts?.oauth2;
+  if (!googleOauth) {
     throw new Error("Google Sign-In jest niedostępny.");
   }
 
   return new Promise<string>((resolve, reject) => {
     let settled = false;
     const timeoutId = window.setTimeout(() => {
-      if (settled) return;
+      if (settled) {
+        return;
+      }
+
       settled = true;
       reject(new Error("Przekroczono czas oczekiwania na logowanie Google."));
     }, 120000);
 
     const finishResolve = (value: string) => {
-      if (settled) return;
+      if (settled) {
+        return;
+      }
+
       settled = true;
       window.clearTimeout(timeoutId);
       resolve(value);
     };
 
-    const finishReject = (value: Error) => {
-      if (settled) return;
+    const finishReject = (error: Error) => {
+      if (settled) {
+        return;
+      }
+
       settled = true;
       window.clearTimeout(timeoutId);
-      reject(value);
+      reject(error);
     };
 
-    googleId.initialize({
+    const codeClient = googleOauth.initCodeClient({
       client_id: clientId,
-      auto_select: false,
-      cancel_on_tap_outside: false,
+      scope: "openid email profile",
+      ux_mode: "popup",
+      redirect_uri: window.location.origin,
       callback: (response) => {
-        if (!response.credential) {
-          finishReject(new Error("Nie otrzymano id_token z Google."));
+        if (response.error) {
+          finishReject(
+            new Error(
+              response.error_description ?? response.error ?? "Google auth error.",
+            ),
+          );
           return;
         }
 
-        finishResolve(response.credential);
+        if (!response.code) {
+          finishReject(new Error("Nie otrzymano kodu autoryzacji Google."));
+          return;
+        }
+
+        finishResolve(response.code);
+      },
+      error_callback: (error) => {
+        finishReject(
+          new Error(error.message ?? error.type ?? "Google auth error."),
+        );
       },
     });
 
-    googleId.prompt((notification: any) => {
-      if (notification?.isNotDisplayed?.() || notification?.isSkippedMoment?.()) {
-        const reason =
-          notification?.getNotDisplayedReason?.() ??
-          notification?.getSkippedReason?.() ??
-          "Google prompt was not displayed.";
-        finishReject(new Error(String(reason)));
-      }
-    });
+    codeClient.requestCode();
   });
 }

@@ -59,6 +59,7 @@ public sealed class AchievementService : IAchievementService
                 ConditionDescription = BuildConditionDescription(definition, levelNamesByKey, categoryNamesByKey),
                 RewardType = definition.RewardType.ToString(),
                 RewardDescription = BuildRewardDescription(definition, avatarsByKey),
+                RewardExperience = definition.RewardExperience,
                 RewardCoins = definition.RewardCoins,
                 RewardAvatarKey = definition.RewardAvatarKey,
                 RewardAvatarImageUrl = TryGetRewardAvatarImageUrl(definition, avatarsByKey),
@@ -123,13 +124,16 @@ public sealed class AchievementService : IAchievementService
             .Where(item => item.RewardType == AchievementRewardType.Coins)
             .Sum(item => item.RewardCoins ?? 0);
 
-        if (awardedCoins > 0)
+        var awardedExperience = unlockedDefinitions.Sum(item => item.RewardExperience ?? 0);
+
+        if (awardedCoins > 0 || awardedExperience > 0)
         {
             var user = await _dbContext.Users
                 .SingleOrDefaultAsync(item => item.Id == userId, cancellationToken)
                 ?? throw new KeyNotFoundException($"User {userId} was not found.");
 
             user.Coins += awardedCoins;
+            user.TotalExperience += awardedExperience;
         }
 
         await _dbContext.SaveChangesAsync(cancellationToken);
@@ -138,6 +142,7 @@ public sealed class AchievementService : IAchievementService
 
         return new AchievementEvaluationResult
         {
+            AwardedExperience = awardedExperience,
             AwardedCoins = awardedCoins,
             UnlockedAchievements = unlockedDefinitions
                 .Select(definition => new AchievementAwardDto
@@ -148,6 +153,7 @@ public sealed class AchievementService : IAchievementService
                     IconUrl = definition.IconUrl,
                     RewardType = definition.RewardType.ToString(),
                     RewardDescription = BuildRewardDescription(definition, avatarLookup),
+                    RewardExperience = definition.RewardExperience,
                     RewardCoins = definition.RewardCoins,
                     RewardAvatarKey = definition.RewardAvatarKey,
                     RewardAvatarImageUrl = TryGetRewardAvatarImageUrl(definition, avatarLookup)
@@ -220,16 +226,30 @@ public sealed class AchievementService : IAchievementService
         AchievementDefinition definition,
         IReadOnlyDictionary<string, AvatarRewardInfo> avatarsByKey)
     {
-        return definition.RewardType switch
+        var rewardParts = new List<string>();
+
+        if (definition.RewardExperience is > 0)
         {
-            AchievementRewardType.Coins => $"Nagroda: {definition.RewardCoins ?? 0} monet.",
-            AchievementRewardType.Avatar when definition.RewardAvatarKey is not null
-                && avatarsByKey.TryGetValue(definition.RewardAvatarKey, out var avatar) =>
-                $"Nagroda: avatar {avatar.Name}.",
-            AchievementRewardType.Avatar when definition.RewardAvatarKey is not null =>
-                $"Nagroda: avatar {definition.RewardAvatarKey}.",
-            _ => string.Empty
-        };
+            rewardParts.Add($"{definition.RewardExperience.Value} XP");
+        }
+
+        switch (definition.RewardType)
+        {
+            case AchievementRewardType.Coins:
+                rewardParts.Add($"{definition.RewardCoins ?? 0} monet");
+                break;
+            case AchievementRewardType.Avatar when definition.RewardAvatarKey is not null
+                && avatarsByKey.TryGetValue(definition.RewardAvatarKey, out var avatar):
+                rewardParts.Add($"avatar {avatar.Name}");
+                break;
+            case AchievementRewardType.Avatar when definition.RewardAvatarKey is not null:
+                rewardParts.Add($"avatar {definition.RewardAvatarKey}");
+                break;
+        }
+
+        return rewardParts.Count == 0
+            ? string.Empty
+            : $"Nagroda: {string.Join(", ", rewardParts)}.";
     }
 
     private static string? TryGetRewardAvatarImageUrl(

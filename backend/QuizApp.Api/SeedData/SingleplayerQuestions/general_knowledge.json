@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "general_knowledge-easy-capital-poland",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jakie jest miasto stołeczne Polski?",
+    "correctAnswerId": "general_knowledge-easy-capital-poland-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-capital-poland-a",
+        "text": "Warszawa"
+      },
+      {
+        "id": "general_knowledge-easy-capital-poland-b",
+        "text": "Kraków"
+      },
+      {
+        "id": "general_knowledge-easy-capital-poland-c",
+        "text": "Gdańsk"
+      },
+      {
+        "id": "general_knowledge-easy-capital-poland-d",
+        "text": "Wrocław"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-largest-continent",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Który kontynent jest największy pod względem powierzchni?",
+    "correctAnswerId": "general_knowledge-easy-largest-continent-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-largest-continent-a",
+        "text": "Azja"
+      },
+      {
+        "id": "general_knowledge-easy-largest-continent-b",
+        "text": "Afryka"
+      },
+      {
+        "id": "general_knowledge-easy-largest-continent-c",
+        "text": "Europa"
+      },
+      {
+        "id": "general_knowledge-easy-largest-continent-d",
+        "text": "Ameryka Południowa"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-seven-days",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Ile dni ma tydzień?",
+    "correctAnswerId": "general_knowledge-easy-seven-days-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-seven-days-a",
+        "text": "7"
+      },
+      {
+        "id": "general_knowledge-easy-seven-days-b",
+        "text": "5"
+      },
+      {
+        "id": "general_knowledge-easy-seven-days-c",
+        "text": "6"
+      },
+      {
+        "id": "general_knowledge-easy-seven-days-d",
+        "text": "8"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-planet-red",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Która planeta jest nazywana Czerwoną Planetą?",
+    "correctAnswerId": "general_knowledge-easy-planet-red-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-planet-red-a",
+        "text": "Mars"
+      },
+      {
+        "id": "general_knowledge-easy-planet-red-b",
+        "text": "Wenus"
+      },
+      {
+        "id": "general_knowledge-easy-planet-red-c",
+        "text": "Jowisz"
+      },
+      {
+        "id": "general_knowledge-easy-planet-red-d",
+        "text": "Merkury"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-water-formula",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jaki jest wzór chemiczny wody?",
+    "correctAnswerId": "general_knowledge-easy-water-formula-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-water-formula-a",
+        "text": "H2O"
+      },
+      {
+        "id": "general_knowledge-easy-water-formula-b",
+        "text": "CO2"
+      },
+      {
+        "id": "general_knowledge-easy-water-formula-c",
+        "text": "O2"
+      },
+      {
+        "id": "general_knowledge-easy-water-formula-d",
+        "text": "NaCl"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-mammal-bat",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Które z tych zwierząt jest ssakiem?",
+    "correctAnswerId": "general_knowledge-easy-mammal-bat-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-mammal-bat-a",
+        "text": "Nietoperz"
+      },
+      {
+        "id": "general_knowledge-easy-mammal-bat-b",
+        "text": "Jaskółka"
+      },
+      {
+        "id": "general_knowledge-easy-mammal-bat-c",
+        "text": "Krokodyl"
+      },
+      {
+        "id": "general_knowledge-easy-mammal-bat-d",
+        "text": "Pstrąg"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-author-pan-tadeusz",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Kto napisał „Pana Tadeusza”?",
+    "correctAnswerId": "general_knowledge-easy-author-pan-tadeusz-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-author-pan-tadeusz-a",
+        "text": "Adam Mickiewicz"
+      },
+      {
+        "id": "general_knowledge-easy-author-pan-tadeusz-b",
+        "text": "Juliusz Słowacki"
+      },
+      {
+        "id": "general_knowledge-easy-author-pan-tadeusz-c",
+        "text": "Henryk Sienkiewicz"
+      },
+      {
+        "id": "general_knowledge-easy-author-pan-tadeusz-d",
+        "text": "Bolesław Prus"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-largest-ocean",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Który ocean jest największy na Ziemi?",
+    "correctAnswerId": "general_knowledge-easy-largest-ocean-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-largest-ocean-a",
+        "text": "Ocean Spokojny"
+      },
+      {
+        "id": "general_knowledge-easy-largest-ocean-b",
+        "text": "Ocean Atlantycki"
+      },
+      {
+        "id": "general_knowledge-easy-largest-ocean-c",
+        "text": "Ocean Indyjski"
+      },
+      {
+        "id": "general_knowledge-easy-largest-ocean-d",
+        "text": "Ocean Arktyczny"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-months-year",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Ile miesięcy ma rok?",
+    "correctAnswerId": "general_knowledge-easy-months-year-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-months-year-a",
+        "text": "12"
+      },
+      {
+        "id": "general_knowledge-easy-months-year-b",
+        "text": "10"
+      },
+      {
+        "id": "general_knowledge-easy-months-year-c",
+        "text": "11"
+      },
+      {
+        "id": "general_knowledge-easy-months-year-d",
+        "text": "13"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-color-sunflower",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jakiego koloru są najczęściej płatki słonecznika?",
+    "correctAnswerId": "general_knowledge-easy-color-sunflower-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-color-sunflower-a",
+        "text": "Żółte"
+      },
+      {
+        "id": "general_knowledge-easy-color-sunflower-b",
+        "text": "Niebieskie"
+      },
+      {
+        "id": "general_knowledge-easy-color-sunflower-c",
+        "text": "Fioletowe"
+      },
+      {
+        "id": "general_knowledge-easy-color-sunflower-d",
+        "text": "Czarne"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-instrument-keys",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Który instrument ma klawisze?",
+    "correctAnswerId": "general_knowledge-easy-instrument-keys-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-instrument-keys-a",
+        "text": "Pianino"
+      },
+      {
+        "id": "general_knowledge-easy-instrument-keys-b",
+        "text": "Skrzypce"
+      },
+      {
+        "id": "general_knowledge-easy-instrument-keys-c",
+        "text": "Trąbka"
+      },
+      {
+        "id": "general_knowledge-easy-instrument-keys-d",
+        "text": "Flet"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-fastest-land-animal",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jakie zwierzę jest najszybsze na lądzie?",
+    "correctAnswerId": "general_knowledge-easy-fastest-land-animal-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-fastest-land-animal-a",
+        "text": "Gepard"
+      },
+      {
+        "id": "general_knowledge-easy-fastest-land-animal-b",
+        "text": "Lew"
+      },
+      {
+        "id": "general_knowledge-easy-fastest-land-animal-c",
+        "text": "Koń"
+      },
+      {
+        "id": "general_knowledge-easy-fastest-land-animal-d",
+        "text": "Tygrys"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-currency-eurozone",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się waluta używana w wielu krajach Unii Europejskiej?",
+    "correctAnswerId": "general_knowledge-easy-currency-eurozone-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-currency-eurozone-a",
+        "text": "Euro"
+      },
+      {
+        "id": "general_knowledge-easy-currency-eurozone-b",
+        "text": "Dolar"
+      },
+      {
+        "id": "general_knowledge-easy-currency-eurozone-c",
+        "text": "Funt"
+      },
+      {
+        "id": "general_knowledge-easy-currency-eurozone-d",
+        "text": "Frank"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-shape-ball",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jaki kształt ma piłka nożna?",
+    "correctAnswerId": "general_knowledge-easy-shape-ball-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-shape-ball-a",
+        "text": "Kulisty"
+      },
+      {
+        "id": "general_knowledge-easy-shape-ball-b",
+        "text": "Kwadratowy"
+      },
+      {
+        "id": "general_knowledge-easy-shape-ball-c",
+        "text": "Trójkątny"
+      },
+      {
+        "id": "general_knowledge-easy-shape-ball-d",
+        "text": "Prostokątny"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-season-after-spring",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jaka pora roku następuje po wiośnie?",
+    "correctAnswerId": "general_knowledge-easy-season-after-spring-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-season-after-spring-a",
+        "text": "Lato"
+      },
+      {
+        "id": "general_knowledge-easy-season-after-spring-b",
+        "text": "Jesień"
+      },
+      {
+        "id": "general_knowledge-easy-season-after-spring-c",
+        "text": "Zima"
+      },
+      {
+        "id": "general_knowledge-easy-season-after-spring-d",
+        "text": "Przedwiośnie"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-animal-barks",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Które zwierzę szczeka?",
+    "correctAnswerId": "general_knowledge-easy-animal-barks-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-animal-barks-a",
+        "text": "Pies"
+      },
+      {
+        "id": "general_knowledge-easy-animal-barks-b",
+        "text": "Kot"
+      },
+      {
+        "id": "general_knowledge-easy-animal-barks-c",
+        "text": "Krowa"
+      },
+      {
+        "id": "general_knowledge-easy-animal-barks-d",
+        "text": "Koń"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-moon-earth",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jak nazywa się naturalny satelita Ziemi?",
+    "correctAnswerId": "general_knowledge-easy-moon-earth-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-moon-earth-a",
+        "text": "Księżyc"
+      },
+      {
+        "id": "general_knowledge-easy-moon-earth-b",
+        "text": "Mars"
+      },
+      {
+        "id": "general_knowledge-easy-moon-earth-c",
+        "text": "Słońce"
+      },
+      {
+        "id": "general_knowledge-easy-moon-earth-d",
+        "text": "Wenus"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-continent-egypt",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Na którym kontynencie leży Egipt?",
+    "correctAnswerId": "general_knowledge-easy-continent-egypt-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-continent-egypt-a",
+        "text": "Afryka"
+      },
+      {
+        "id": "general_knowledge-easy-continent-egypt-b",
+        "text": "Azja"
+      },
+      {
+        "id": "general_knowledge-easy-continent-egypt-c",
+        "text": "Europa"
+      },
+      {
+        "id": "general_knowledge-easy-continent-egypt-d",
+        "text": "Ameryka Południowa"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-sport-racket",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "W którym sporcie używa się rakiety?",
+    "correctAnswerId": "general_knowledge-easy-sport-racket-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-sport-racket-a",
+        "text": "Tenis"
+      },
+      {
+        "id": "general_knowledge-easy-sport-racket-b",
+        "text": "Piłka nożna"
+      },
+      {
+        "id": "general_knowledge-easy-sport-racket-c",
+        "text": "Pływanie"
+      },
+      {
+        "id": "general_knowledge-easy-sport-racket-d",
+        "text": "Boks"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-primary-color-red",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Który z tych kolorów jest kolorem podstawowym?",
+    "correctAnswerId": "general_knowledge-easy-primary-color-red-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-primary-color-red-a",
+        "text": "Czerwony"
+      },
+      {
+        "id": "general_knowledge-easy-primary-color-red-b",
+        "text": "Brązowy"
+      },
+      {
+        "id": "general_knowledge-easy-primary-color-red-c",
+        "text": "Różowy"
+      },
+      {
+        "id": "general_knowledge-easy-primary-color-red-d",
+        "text": "Szary"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-bird-cannot-fly",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Który z tych ptaków nie lata?",
+    "correctAnswerId": "general_knowledge-easy-bird-cannot-fly-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-bird-cannot-fly-a",
+        "text": "Pingwin"
+      },
+      {
+        "id": "general_knowledge-easy-bird-cannot-fly-b",
+        "text": "Jaskółka"
+      },
+      {
+        "id": "general_knowledge-easy-bird-cannot-fly-c",
+        "text": "Orzeł"
+      },
+      {
+        "id": "general_knowledge-easy-bird-cannot-fly-d",
+        "text": "Bocian"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-day-after-friday",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jaki dzień tygodnia jest po piątku?",
+    "correctAnswerId": "general_knowledge-easy-day-after-friday-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-day-after-friday-a",
+        "text": "Sobota"
+      },
+      {
+        "id": "general_knowledge-easy-day-after-friday-b",
+        "text": "Czwartek"
+      },
+      {
+        "id": "general_knowledge-easy-day-after-friday-c",
+        "text": "Niedziela"
+      },
+      {
+        "id": "general_knowledge-easy-day-after-friday-d",
+        "text": "Poniedziałek"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-capital-france",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jaka jest stolica Francji?",
+    "correctAnswerId": "general_knowledge-easy-capital-france-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-capital-france-a",
+        "text": "Paryż"
+      },
+      {
+        "id": "general_knowledge-easy-capital-france-b",
+        "text": "Lyon"
+      },
+      {
+        "id": "general_knowledge-easy-capital-france-c",
+        "text": "Marsylia"
+      },
+      {
+        "id": "general_knowledge-easy-capital-france-d",
+        "text": "Nicea"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-hot-star",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Która gwiazda ogrzewa Ziemię?",
+    "correctAnswerId": "general_knowledge-easy-hot-star-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-hot-star-a",
+        "text": "Słońce"
+      },
+      {
+        "id": "general_knowledge-easy-hot-star-b",
+        "text": "Polaris"
+      },
+      {
+        "id": "general_knowledge-easy-hot-star-c",
+        "text": "Syriusz"
+      },
+      {
+        "id": "general_knowledge-easy-hot-star-d",
+        "text": "Wega"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-drink-cow-milk",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Od jakiego zwierzęcia najczęściej pochodzi mleko spożywcze?",
+    "correctAnswerId": "general_knowledge-easy-drink-cow-milk-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-drink-cow-milk-a",
+        "text": "Krowa"
+      },
+      {
+        "id": "general_knowledge-easy-drink-cow-milk-b",
+        "text": "Owca"
+      },
+      {
+        "id": "general_knowledge-easy-drink-cow-milk-c",
+        "text": "Koza"
+      },
+      {
+        "id": "general_knowledge-easy-drink-cow-milk-d",
+        "text": "Koń"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-body-organ-blood",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Który narząd pompuje krew w ciele człowieka?",
+    "correctAnswerId": "general_knowledge-easy-body-organ-blood-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-body-organ-blood-a",
+        "text": "Serce"
+      },
+      {
+        "id": "general_knowledge-easy-body-organ-blood-b",
+        "text": "Wątroba"
+      },
+      {
+        "id": "general_knowledge-easy-body-organ-blood-c",
+        "text": "Płuco"
+      },
+      {
+        "id": "general_knowledge-easy-body-organ-blood-d",
+        "text": "Żołądek"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-wood-plant",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Która część rośliny zazwyczaj znajduje się pod ziemią?",
+    "correctAnswerId": "general_knowledge-easy-wood-plant-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-wood-plant-a",
+        "text": "Korzeń"
+      },
+      {
+        "id": "general_knowledge-easy-wood-plant-b",
+        "text": "Liść"
+      },
+      {
+        "id": "general_knowledge-easy-wood-plant-c",
+        "text": "Kwiat"
+      },
+      {
+        "id": "general_knowledge-easy-wood-plant-d",
+        "text": "Owoc"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-language-brazil",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Jakim językiem urzędowym mówi się w Brazylii?",
+    "correctAnswerId": "general_knowledge-easy-language-brazil-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-language-brazil-a",
+        "text": "Portugalskim"
+      },
+      {
+        "id": "general_knowledge-easy-language-brazil-b",
+        "text": "Hiszpańskim"
+      },
+      {
+        "id": "general_knowledge-easy-language-brazil-c",
+        "text": "Angielskim"
+      },
+      {
+        "id": "general_knowledge-easy-language-brazil-d",
+        "text": "Francuskim"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-number-sides-triangle",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Ile boków ma trójkąt?",
+    "correctAnswerId": "general_knowledge-easy-number-sides-triangle-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-number-sides-triangle-a",
+        "text": "3"
+      },
+      {
+        "id": "general_knowledge-easy-number-sides-triangle-b",
+        "text": "4"
+      },
+      {
+        "id": "general_knowledge-easy-number-sides-triangle-c",
+        "text": "5"
+      },
+      {
+        "id": "general_knowledge-easy-number-sides-triangle-d",
+        "text": "6"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-frozen-water",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Czym jest lód?",
+    "correctAnswerId": "general_knowledge-easy-frozen-water-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-frozen-water-a",
+        "text": "Zamarzniętą wodą"
+      },
+      {
+        "id": "general_knowledge-easy-frozen-water-b",
+        "text": "Parą wodną"
+      },
+      {
+        "id": "general_knowledge-easy-frozen-water-c",
+        "text": "Gazem szlachetnym"
+      },
+      {
+        "id": "general_knowledge-easy-frozen-water-d",
+        "text": "Metalem"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-animal-stripes",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Które zwierzę ma czarno-białe pasy?",
+    "correctAnswerId": "general_knowledge-easy-animal-stripes-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-animal-stripes-a",
+        "text": "Zebra"
+      },
+      {
+        "id": "general_knowledge-easy-animal-stripes-b",
+        "text": "Żyrafa"
+      },
+      {
+        "id": "general_knowledge-easy-animal-stripes-c",
+        "text": "Słoń"
+      },
+      {
+        "id": "general_knowledge-easy-animal-stripes-d",
+        "text": "Nosorożec"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-planet-we-live",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Na której planecie żyjemy?",
+    "correctAnswerId": "general_knowledge-easy-planet-we-live-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-planet-we-live-a",
+        "text": "Ziemia"
+      },
+      {
+        "id": "general_knowledge-easy-planet-we-live-b",
+        "text": "Mars"
+      },
+      {
+        "id": "general_knowledge-easy-planet-we-live-c",
+        "text": "Saturn"
+      },
+      {
+        "id": "general_knowledge-easy-planet-we-live-d",
+        "text": "Jowisz"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-sport-basket",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "W którym sporcie zdobywa się punkty wrzucając piłkę do kosza?",
+    "correctAnswerId": "general_knowledge-easy-sport-basket-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-sport-basket-a",
+        "text": "Koszykówka"
+      },
+      {
+        "id": "general_knowledge-easy-sport-basket-b",
+        "text": "Siatkówka"
+      },
+      {
+        "id": "general_knowledge-easy-sport-basket-c",
+        "text": "Piłka ręczna"
+      },
+      {
+        "id": "general_knowledge-easy-sport-basket-d",
+        "text": "Rugby"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-winter-precipitation",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Co najczęściej pada zimą przy ujemnej temperaturze?",
+    "correctAnswerId": "general_knowledge-easy-winter-precipitation-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-winter-precipitation-a",
+        "text": "Śnieg"
+      },
+      {
+        "id": "general_knowledge-easy-winter-precipitation-b",
+        "text": "Grad letni"
+      },
+      {
+        "id": "general_knowledge-easy-winter-precipitation-c",
+        "text": "Piasek"
+      },
+      {
+        "id": "general_knowledge-easy-winter-precipitation-d",
+        "text": "Liście"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easy-book-place",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Easy",
+    "text": "Gdzie zwykle wypożycza się książki?",
+    "correctAnswerId": "general_knowledge-easy-book-place-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easy-book-place-a",
+        "text": "W bibliotece"
+      },
+      {
+        "id": "general_knowledge-easy-book-place-b",
+        "text": "W aptece"
+      },
+      {
+        "id": "general_knowledge-easy-book-place-c",
+        "text": "Na poczcie"
+      },
+      {
+        "id": "general_knowledge-easy-book-place-d",
+        "text": "W warsztacie"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-largest-planet",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Która planeta jest największa w Układzie Słonecznym?",
+    "correctAnswerId": "general_knowledge-easymedium-largest-planet-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-largest-planet-a",
+        "text": "Jowisz"
+      },
+      {
+        "id": "general_knowledge-easymedium-largest-planet-b",
+        "text": "Mars"
+      },
+      {
+        "id": "general_knowledge-easymedium-largest-planet-c",
+        "text": "Wenus"
+      },
+      {
+        "id": "general_knowledge-easymedium-largest-planet-d",
+        "text": "Merkury"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-blood-color-veins",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Jakiego koloru jest krew człowieka?",
+    "correctAnswerId": "general_knowledge-easymedium-blood-color-veins-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-blood-color-veins-a",
+        "text": "Czerwona"
+      },
+      {
+        "id": "general_knowledge-easymedium-blood-color-veins-b",
+        "text": "Niebieska"
+      },
+      {
+        "id": "general_knowledge-easymedium-blood-color-veins-c",
+        "text": "Zielona"
+      },
+      {
+        "id": "general_knowledge-easymedium-blood-color-veins-d",
+        "text": "Przezroczysta"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-author-hobbit",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Kto napisał „Hobbita”?",
+    "correctAnswerId": "general_knowledge-easymedium-author-hobbit-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-author-hobbit-a",
+        "text": "J.R.R. Tolkien"
+      },
+      {
+        "id": "general_knowledge-easymedium-author-hobbit-b",
+        "text": "C.S. Lewis"
+      },
+      {
+        "id": "general_knowledge-easymedium-author-hobbit-c",
+        "text": "George Orwell"
+      },
+      {
+        "id": "general_knowledge-easymedium-author-hobbit-d",
+        "text": "J.K. Rowling"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-capital-canada",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest stolica Kanady?",
+    "correctAnswerId": "general_knowledge-easymedium-capital-canada-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-capital-canada-a",
+        "text": "Ottawa"
+      },
+      {
+        "id": "general_knowledge-easymedium-capital-canada-b",
+        "text": "Toronto"
+      },
+      {
+        "id": "general_knowledge-easymedium-capital-canada-c",
+        "text": "Vancouver"
+      },
+      {
+        "id": "general_knowledge-easymedium-capital-canada-d",
+        "text": "Montreal"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-instrument-strings-four",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Który instrument ma zwykle cztery struny i jest używany smyczkiem?",
+    "correctAnswerId": "general_knowledge-easymedium-instrument-strings-four-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-instrument-strings-four-a",
+        "text": "Skrzypce"
+      },
+      {
+        "id": "general_knowledge-easymedium-instrument-strings-four-b",
+        "text": "Gitara"
+      },
+      {
+        "id": "general_knowledge-easymedium-instrument-strings-four-c",
+        "text": "Flet"
+      },
+      {
+        "id": "general_knowledge-easymedium-instrument-strings-four-d",
+        "text": "Perkusja"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-human-bones",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Ile kości ma przeciętnie dorosły człowiek?",
+    "correctAnswerId": "general_knowledge-easymedium-human-bones-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-human-bones-a",
+        "text": "206"
+      },
+      {
+        "id": "general_knowledge-easymedium-human-bones-b",
+        "text": "186"
+      },
+      {
+        "id": "general_knowledge-easymedium-human-bones-c",
+        "text": "196"
+      },
+      {
+        "id": "general_knowledge-easymedium-human-bones-d",
+        "text": "226"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-metal-liquid-room",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Który metal jest ciekły w temperaturze pokojowej?",
+    "correctAnswerId": "general_knowledge-easymedium-metal-liquid-room-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-metal-liquid-room-a",
+        "text": "Rtęć"
+      },
+      {
+        "id": "general_knowledge-easymedium-metal-liquid-room-b",
+        "text": "Żelazo"
+      },
+      {
+        "id": "general_knowledge-easymedium-metal-liquid-room-c",
+        "text": "Miedź"
+      },
+      {
+        "id": "general_knowledge-easymedium-metal-liquid-room-d",
+        "text": "Aluminium"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-largest-desert-hot",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Która gorąca pustynia jest największa na świecie?",
+    "correctAnswerId": "general_knowledge-easymedium-largest-desert-hot-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-largest-desert-hot-a",
+        "text": "Sahara"
+      },
+      {
+        "id": "general_knowledge-easymedium-largest-desert-hot-b",
+        "text": "Gobi"
+      },
+      {
+        "id": "general_knowledge-easymedium-largest-desert-hot-c",
+        "text": "Atakama"
+      },
+      {
+        "id": "general_knowledge-easymedium-largest-desert-hot-d",
+        "text": "Kalahari"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-olympic-rings",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Ile pierścieni znajduje się w symbolu olimpijskim?",
+    "correctAnswerId": "general_knowledge-easymedium-olympic-rings-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-olympic-rings-a",
+        "text": "5"
+      },
+      {
+        "id": "general_knowledge-easymedium-olympic-rings-b",
+        "text": "4"
+      },
+      {
+        "id": "general_knowledge-easymedium-olympic-rings-c",
+        "text": "6"
+      },
+      {
+        "id": "general_knowledge-easymedium-olympic-rings-d",
+        "text": "7"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-rome-river",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Nad jaką rzeką leży Rzym?",
+    "correctAnswerId": "general_knowledge-easymedium-rome-river-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-rome-river-a",
+        "text": "Tyber"
+      },
+      {
+        "id": "general_knowledge-easymedium-rome-river-b",
+        "text": "Ren"
+      },
+      {
+        "id": "general_knowledge-easymedium-rome-river-c",
+        "text": "Sekwana"
+      },
+      {
+        "id": "general_knowledge-easymedium-rome-river-d",
+        "text": "Dunaj"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-painter-mona-lisa",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Kto namalował „Mona Lisę”?",
+    "correctAnswerId": "general_knowledge-easymedium-painter-mona-lisa-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-painter-mona-lisa-a",
+        "text": "Leonardo da Vinci"
+      },
+      {
+        "id": "general_knowledge-easymedium-painter-mona-lisa-b",
+        "text": "Vincent van Gogh"
+      },
+      {
+        "id": "general_knowledge-easymedium-painter-mona-lisa-c",
+        "text": "Pablo Picasso"
+      },
+      {
+        "id": "general_knowledge-easymedium-painter-mona-lisa-d",
+        "text": "Claude Monet"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-gas-plants-use",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Który gaz rośliny pobierają z powietrza do fotosyntezy?",
+    "correctAnswerId": "general_knowledge-easymedium-gas-plants-use-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-gas-plants-use-a",
+        "text": "Dwutlenek węgla"
+      },
+      {
+        "id": "general_knowledge-easymedium-gas-plants-use-b",
+        "text": "Tlen"
+      },
+      {
+        "id": "general_knowledge-easymedium-gas-plants-use-c",
+        "text": "Hel"
+      },
+      {
+        "id": "general_knowledge-easymedium-gas-plants-use-d",
+        "text": "Azot"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-country-kangaroos",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Z którym krajem najbardziej kojarzą się kangury?",
+    "correctAnswerId": "general_knowledge-easymedium-country-kangaroos-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-country-kangaroos-a",
+        "text": "Australia"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-kangaroos-b",
+        "text": "Nowa Zelandia"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-kangaroos-c",
+        "text": "RPA"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-kangaroos-d",
+        "text": "Argentyna"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-chess-pieces-start",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Ile figur i pionów ma na początku jeden gracz w szachach?",
+    "correctAnswerId": "general_knowledge-easymedium-chess-pieces-start-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-chess-pieces-start-a",
+        "text": "16"
+      },
+      {
+        "id": "general_knowledge-easymedium-chess-pieces-start-b",
+        "text": "14"
+      },
+      {
+        "id": "general_knowledge-easymedium-chess-pieces-start-c",
+        "text": "18"
+      },
+      {
+        "id": "general_knowledge-easymedium-chess-pieces-start-d",
+        "text": "20"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-temperature-freezing",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "W jakiej temperaturze zamarza woda przy ciśnieniu atmosferycznym?",
+    "correctAnswerId": "general_knowledge-easymedium-temperature-freezing-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-temperature-freezing-a",
+        "text": "0°C"
+      },
+      {
+        "id": "general_knowledge-easymedium-temperature-freezing-b",
+        "text": "10°C"
+      },
+      {
+        "id": "general_knowledge-easymedium-temperature-freezing-c",
+        "text": "-10°C"
+      },
+      {
+        "id": "general_knowledge-easymedium-temperature-freezing-d",
+        "text": "4°C"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-sea-between-europe-africa",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się morze leżące między Europą a Afryką?",
+    "correctAnswerId": "general_knowledge-easymedium-sea-between-europe-africa-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-sea-between-europe-africa-a",
+        "text": "Morze Śródziemne"
+      },
+      {
+        "id": "general_knowledge-easymedium-sea-between-europe-africa-b",
+        "text": "Morze Czarne"
+      },
+      {
+        "id": "general_knowledge-easymedium-sea-between-europe-africa-c",
+        "text": "Morze Północne"
+      },
+      {
+        "id": "general_knowledge-easymedium-sea-between-europe-africa-d",
+        "text": "Morze Karaibskie"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-writer-harry-potter",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Kto jest autorką serii o Harrym Potterze?",
+    "correctAnswerId": "general_knowledge-easymedium-writer-harry-potter-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-writer-harry-potter-a",
+        "text": "J.K. Rowling"
+      },
+      {
+        "id": "general_knowledge-easymedium-writer-harry-potter-b",
+        "text": "Suzanne Collins"
+      },
+      {
+        "id": "general_knowledge-easymedium-writer-harry-potter-c",
+        "text": "Astrid Lindgren"
+      },
+      {
+        "id": "general_knowledge-easymedium-writer-harry-potter-d",
+        "text": "Jane Austen"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-country-sushi",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Z jakim krajem najbardziej kojarzy się sushi?",
+    "correctAnswerId": "general_knowledge-easymedium-country-sushi-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-country-sushi-a",
+        "text": "Japonia"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-sushi-b",
+        "text": "Chiny"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-sushi-c",
+        "text": "Tajlandia"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-sushi-d",
+        "text": "Korea Południowa"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-smallest-prime",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Jaka jest najmniejsza liczba pierwsza?",
+    "correctAnswerId": "general_knowledge-easymedium-smallest-prime-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-smallest-prime-a",
+        "text": "2"
+      },
+      {
+        "id": "general_knowledge-easymedium-smallest-prime-b",
+        "text": "1"
+      },
+      {
+        "id": "general_knowledge-easymedium-smallest-prime-c",
+        "text": "3"
+      },
+      {
+        "id": "general_knowledge-easymedium-smallest-prime-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-organ-balance-ear",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Który narząd odpowiada również za zmysł równowagi?",
+    "correctAnswerId": "general_knowledge-easymedium-organ-balance-ear-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-organ-balance-ear-a",
+        "text": "Ucho"
+      },
+      {
+        "id": "general_knowledge-easymedium-organ-balance-ear-b",
+        "text": "Oko"
+      },
+      {
+        "id": "general_knowledge-easymedium-organ-balance-ear-c",
+        "text": "Skóra"
+      },
+      {
+        "id": "general_knowledge-easymedium-organ-balance-ear-d",
+        "text": "Nos"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-author-little-prince",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Kto napisał „Małego Księcia”?",
+    "correctAnswerId": "general_knowledge-easymedium-author-little-prince-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-author-little-prince-a",
+        "text": "Antoine de Saint-Exupéry"
+      },
+      {
+        "id": "general_knowledge-easymedium-author-little-prince-b",
+        "text": "Victor Hugo"
+      },
+      {
+        "id": "general_knowledge-easymedium-author-little-prince-c",
+        "text": "Jules Verne"
+      },
+      {
+        "id": "general_knowledge-easymedium-author-little-prince-d",
+        "text": "Albert Camus"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-planet-rings-famous",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Która planeta słynie z wyraźnych pierścieni?",
+    "correctAnswerId": "general_knowledge-easymedium-planet-rings-famous-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-planet-rings-famous-a",
+        "text": "Saturn"
+      },
+      {
+        "id": "general_knowledge-easymedium-planet-rings-famous-b",
+        "text": "Neptun"
+      },
+      {
+        "id": "general_knowledge-easymedium-planet-rings-famous-c",
+        "text": "Mars"
+      },
+      {
+        "id": "general_knowledge-easymedium-planet-rings-famous-d",
+        "text": "Ziemia"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-country-maple-leaf",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Liść klonowy jest symbolem którego państwa?",
+    "correctAnswerId": "general_knowledge-easymedium-country-maple-leaf-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-country-maple-leaf-a",
+        "text": "Kanady"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-maple-leaf-b",
+        "text": "Szwecji"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-maple-leaf-c",
+        "text": "Norwegii"
+      },
+      {
+        "id": "general_knowledge-easymedium-country-maple-leaf-d",
+        "text": "Finlandii"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-currency-uk",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Jaka waluta obowiązuje w Wielkiej Brytanii?",
+    "correctAnswerId": "general_knowledge-easymedium-currency-uk-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-currency-uk-a",
+        "text": "Funt szterling"
+      },
+      {
+        "id": "general_knowledge-easymedium-currency-uk-b",
+        "text": "Euro"
+      },
+      {
+        "id": "general_knowledge-easymedium-currency-uk-c",
+        "text": "Korona"
+      },
+      {
+        "id": "general_knowledge-easymedium-currency-uk-d",
+        "text": "Frank"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-easymedium-sport-tour-de-france",
+    "categoryKey": "general_knowledge",
+    "difficulty": "EasyMedium",
+    "text": "Z jakim sportem związany jest Tour de France?",
+    "correctAnswerId": "general_knowledge-easymedium-sport-tour-de-france-a",
+    "answers": [
+      {
+        "id": "general_knowledge-easymedium-sport-tour-de-france-a",
+        "text": "Kolarstwo"
+      },
+      {
+        "id": "general_knowledge-easymedium-sport-tour-de-france-b",
+        "text": "Lekkoatletyka"
+      },
+      {
+        "id": "general_knowledge-easymedium-sport-tour-de-france-c",
+        "text": "Narciarstwo"
+      },
+      {
+        "id": "general_knowledge-easymedium-sport-tour-de-france-d",
+        "text": "Wioślarstwo"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-capital-australia",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Australii?",
+    "correctAnswerId": "general_knowledge-medium-capital-australia-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-capital-australia-a",
+        "text": "Canberra"
+      },
+      {
+        "id": "general_knowledge-medium-capital-australia-b",
+        "text": "Sydney"
+      },
+      {
+        "id": "general_knowledge-medium-capital-australia-c",
+        "text": "Melbourne"
+      },
+      {
+        "id": "general_knowledge-medium-capital-australia-d",
+        "text": "Perth"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-painter-starry-night",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto namalował „Gwiaździstą noc”?",
+    "correctAnswerId": "general_knowledge-medium-painter-starry-night-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-painter-starry-night-a",
+        "text": "Vincent van Gogh"
+      },
+      {
+        "id": "general_knowledge-medium-painter-starry-night-b",
+        "text": "Edvard Munch"
+      },
+      {
+        "id": "general_knowledge-medium-painter-starry-night-c",
+        "text": "Pablo Picasso"
+      },
+      {
+        "id": "general_knowledge-medium-painter-starry-night-d",
+        "text": "Salvador Dalí"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-gas-breathing",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Którego gazu człowiek potrzebuje do oddychania?",
+    "correctAnswerId": "general_knowledge-medium-gas-breathing-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-gas-breathing-a",
+        "text": "Tlenu"
+      },
+      {
+        "id": "general_knowledge-medium-gas-breathing-b",
+        "text": "Wodoru"
+      },
+      {
+        "id": "general_knowledge-medium-gas-breathing-c",
+        "text": "Helu"
+      },
+      {
+        "id": "general_knowledge-medium-gas-breathing-d",
+        "text": "Argonu"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-unit-electric-current",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaką jednostką mierzy się natężenie prądu elektrycznego?",
+    "correctAnswerId": "general_knowledge-medium-unit-electric-current-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-unit-electric-current-a",
+        "text": "Amper"
+      },
+      {
+        "id": "general_knowledge-medium-unit-electric-current-b",
+        "text": "Wolt"
+      },
+      {
+        "id": "general_knowledge-medium-unit-electric-current-c",
+        "text": "Wat"
+      },
+      {
+        "id": "general_knowledge-medium-unit-electric-current-d",
+        "text": "Om"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-largest-country-area",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Które państwo ma największą powierzchnię na świecie?",
+    "correctAnswerId": "general_knowledge-medium-largest-country-area-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-largest-country-area-a",
+        "text": "Rosja"
+      },
+      {
+        "id": "general_knowledge-medium-largest-country-area-b",
+        "text": "Kanada"
+      },
+      {
+        "id": "general_knowledge-medium-largest-country-area-c",
+        "text": "Chiny"
+      },
+      {
+        "id": "general_knowledge-medium-largest-country-area-d",
+        "text": "Stany Zjednoczone"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-author-1984",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto napisał powieść „Rok 1984”?",
+    "correctAnswerId": "general_knowledge-medium-author-1984-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-author-1984-a",
+        "text": "George Orwell"
+      },
+      {
+        "id": "general_knowledge-medium-author-1984-b",
+        "text": "Aldous Huxley"
+      },
+      {
+        "id": "general_knowledge-medium-author-1984-c",
+        "text": "Ernest Hemingway"
+      },
+      {
+        "id": "general_knowledge-medium-author-1984-d",
+        "text": "Fiodor Dostojewski"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-bones-spine",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się ciąg kości biegnący wzdłuż pleców człowieka?",
+    "correctAnswerId": "general_knowledge-medium-bones-spine-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-bones-spine-a",
+        "text": "Kręgosłup"
+      },
+      {
+        "id": "general_knowledge-medium-bones-spine-b",
+        "text": "Mostek"
+      },
+      {
+        "id": "general_knowledge-medium-bones-spine-c",
+        "text": "Obojczyk"
+      },
+      {
+        "id": "general_knowledge-medium-bones-spine-d",
+        "text": "Miednica"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-country-nile-most",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Przez które państwo przepływa większa część Nilu?",
+    "correctAnswerId": "general_knowledge-medium-country-nile-most-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-country-nile-most-a",
+        "text": "Egipt"
+      },
+      {
+        "id": "general_knowledge-medium-country-nile-most-b",
+        "text": "Maroko"
+      },
+      {
+        "id": "general_knowledge-medium-country-nile-most-c",
+        "text": "Algieria"
+      },
+      {
+        "id": "general_knowledge-medium-country-nile-most-d",
+        "text": "Namibia"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-planet-nearest-sun",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Która planeta krąży najbliżej Słońca?",
+    "correctAnswerId": "general_knowledge-medium-planet-nearest-sun-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-planet-nearest-sun-a",
+        "text": "Merkury"
+      },
+      {
+        "id": "general_knowledge-medium-planet-nearest-sun-b",
+        "text": "Wenus"
+      },
+      {
+        "id": "general_knowledge-medium-planet-nearest-sun-c",
+        "text": "Mars"
+      },
+      {
+        "id": "general_knowledge-medium-planet-nearest-sun-d",
+        "text": "Ziemia"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-music-clef-common",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaki klucz muzyczny jest najczęściej używany do zapisu wysokich dźwięków?",
+    "correctAnswerId": "general_knowledge-medium-music-clef-common-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-music-clef-common-a",
+        "text": "Klucz wiolinowy"
+      },
+      {
+        "id": "general_knowledge-medium-music-clef-common-b",
+        "text": "Klucz basowy"
+      },
+      {
+        "id": "general_knowledge-medium-music-clef-common-c",
+        "text": "Klucz tenorowy"
+      },
+      {
+        "id": "general_knowledge-medium-music-clef-common-d",
+        "text": "Klucz altowy"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-sport-wimbledon",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Z jakim sportem kojarzy się Wimbledon?",
+    "correctAnswerId": "general_knowledge-medium-sport-wimbledon-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-sport-wimbledon-a",
+        "text": "Tenis"
+      },
+      {
+        "id": "general_knowledge-medium-sport-wimbledon-b",
+        "text": "Golf"
+      },
+      {
+        "id": "general_knowledge-medium-sport-wimbledon-c",
+        "text": "Krykiet"
+      },
+      {
+        "id": "general_knowledge-medium-sport-wimbledon-d",
+        "text": "Badminton"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-painter-guernica",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto namalował „Guernicę”?",
+    "correctAnswerId": "general_knowledge-medium-painter-guernica-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-painter-guernica-a",
+        "text": "Pablo Picasso"
+      },
+      {
+        "id": "general_knowledge-medium-painter-guernica-b",
+        "text": "Joan Miró"
+      },
+      {
+        "id": "general_knowledge-medium-painter-guernica-c",
+        "text": "Claude Monet"
+      },
+      {
+        "id": "general_knowledge-medium-painter-guernica-d",
+        "text": "Leonardo da Vinci"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-language-switzerland-major",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Który z tych języków jest jednym z języków urzędowych Szwajcarii?",
+    "correctAnswerId": "general_knowledge-medium-language-switzerland-major-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-language-switzerland-major-a",
+        "text": "Niemiecki"
+      },
+      {
+        "id": "general_knowledge-medium-language-switzerland-major-b",
+        "text": "Polski"
+      },
+      {
+        "id": "general_knowledge-medium-language-switzerland-major-c",
+        "text": "Duński"
+      },
+      {
+        "id": "general_knowledge-medium-language-switzerland-major-d",
+        "text": "Węgierski"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-heart-chambers",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Ile jam ma serce człowieka?",
+    "correctAnswerId": "general_knowledge-medium-heart-chambers-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-heart-chambers-a",
+        "text": "4"
+      },
+      {
+        "id": "general_knowledge-medium-heart-chambers-b",
+        "text": "2"
+      },
+      {
+        "id": "general_knowledge-medium-heart-chambers-c",
+        "text": "3"
+      },
+      {
+        "id": "general_knowledge-medium-heart-chambers-d",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-first-man-moon",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto jako pierwszy stanął na Księżycu?",
+    "correctAnswerId": "general_knowledge-medium-first-man-moon-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-first-man-moon-a",
+        "text": "Neil Armstrong"
+      },
+      {
+        "id": "general_knowledge-medium-first-man-moon-b",
+        "text": "Yuri Gagarin"
+      },
+      {
+        "id": "general_knowledge-medium-first-man-moon-c",
+        "text": "Buzz Aldrin"
+      },
+      {
+        "id": "general_knowledge-medium-first-man-moon-d",
+        "text": "Michael Collins"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-river-through-paris",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Przez jakie miasto przepływa Sekwana?",
+    "correctAnswerId": "general_knowledge-medium-river-through-paris-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-river-through-paris-a",
+        "text": "Paryż"
+      },
+      {
+        "id": "general_knowledge-medium-river-through-paris-b",
+        "text": "Rzym"
+      },
+      {
+        "id": "general_knowledge-medium-river-through-paris-c",
+        "text": "Madryt"
+      },
+      {
+        "id": "general_knowledge-medium-river-through-paris-d",
+        "text": "Lizbona"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-novel-don-quixote",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto napisał „Don Kichota”?",
+    "correctAnswerId": "general_knowledge-medium-novel-don-quixote-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-novel-don-quixote-a",
+        "text": "Miguel de Cervantes"
+      },
+      {
+        "id": "general_knowledge-medium-novel-don-quixote-b",
+        "text": "Lope de Vega"
+      },
+      {
+        "id": "general_knowledge-medium-novel-don-quixote-c",
+        "text": "Federico García Lorca"
+      },
+      {
+        "id": "general_knowledge-medium-novel-don-quixote-d",
+        "text": "Gabriel García Márquez"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-smallest-continent",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Który kontynent jest najmniejszy pod względem powierzchni?",
+    "correctAnswerId": "general_knowledge-medium-smallest-continent-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-smallest-continent-a",
+        "text": "Australia"
+      },
+      {
+        "id": "general_knowledge-medium-smallest-continent-b",
+        "text": "Europa"
+      },
+      {
+        "id": "general_knowledge-medium-smallest-continent-c",
+        "text": "Antarktyda"
+      },
+      {
+        "id": "general_knowledge-medium-smallest-continent-d",
+        "text": "Ameryka Południowa"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-blood-vessels-heart",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jak nazywają się naczynia krwionośne doprowadzające krew do serca?",
+    "correctAnswerId": "general_knowledge-medium-blood-vessels-heart-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-blood-vessels-heart-a",
+        "text": "Żyły"
+      },
+      {
+        "id": "general_knowledge-medium-blood-vessels-heart-b",
+        "text": "Tętnice"
+      },
+      {
+        "id": "general_knowledge-medium-blood-vessels-heart-c",
+        "text": "Kapilary"
+      },
+      {
+        "id": "general_knowledge-medium-blood-vessels-heart-d",
+        "text": "Aorty"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-planet-day-night",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaki ruch Ziemi powoduje następstwo dnia i nocy?",
+    "correctAnswerId": "general_knowledge-medium-planet-day-night-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-planet-day-night-a",
+        "text": "Ruch obrotowy"
+      },
+      {
+        "id": "general_knowledge-medium-planet-day-night-b",
+        "text": "Ruch obiegowy"
+      },
+      {
+        "id": "general_knowledge-medium-planet-day-night-c",
+        "text": "Precesja"
+      },
+      {
+        "id": "general_knowledge-medium-planet-day-night-d",
+        "text": "Ruch falowy"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-symbol-na",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaki pierwiastek chemiczny ma symbol Na?",
+    "correctAnswerId": "general_knowledge-medium-symbol-na-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-symbol-na-a",
+        "text": "Sód"
+      },
+      {
+        "id": "general_knowledge-medium-symbol-na-b",
+        "text": "Azot"
+      },
+      {
+        "id": "general_knowledge-medium-symbol-na-c",
+        "text": "Nikiel"
+      },
+      {
+        "id": "general_knowledge-medium-symbol-na-d",
+        "text": "Neon"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-capital-brazil",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Brazylii?",
+    "correctAnswerId": "general_knowledge-medium-capital-brazil-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-capital-brazil-a",
+        "text": "Brasília"
+      },
+      {
+        "id": "general_knowledge-medium-capital-brazil-b",
+        "text": "Rio de Janeiro"
+      },
+      {
+        "id": "general_knowledge-medium-capital-brazil-c",
+        "text": "São Paulo"
+      },
+      {
+        "id": "general_knowledge-medium-capital-brazil-d",
+        "text": "Salvador"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-poet-divine-comedy",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto napisał „Boską komedię”?",
+    "correctAnswerId": "general_knowledge-medium-poet-divine-comedy-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-poet-divine-comedy-a",
+        "text": "Dante Alighieri"
+      },
+      {
+        "id": "general_knowledge-medium-poet-divine-comedy-b",
+        "text": "Francesco Petrarka"
+      },
+      {
+        "id": "general_knowledge-medium-poet-divine-comedy-c",
+        "text": "Giovanni Boccaccio"
+      },
+      {
+        "id": "general_knowledge-medium-poet-divine-comedy-d",
+        "text": "Homer"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-instrument-88-keys",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Który instrument ma standardowo 88 klawiszy?",
+    "correctAnswerId": "general_knowledge-medium-instrument-88-keys-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-instrument-88-keys-a",
+        "text": "Fortepian"
+      },
+      {
+        "id": "general_knowledge-medium-instrument-88-keys-b",
+        "text": "Akordeon"
+      },
+      {
+        "id": "general_knowledge-medium-instrument-88-keys-c",
+        "text": "Organy"
+      },
+      {
+        "id": "general_knowledge-medium-instrument-88-keys-d",
+        "text": "Czelesta"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-sport-marathon-distance",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Ile kilometrów ma maraton?",
+    "correctAnswerId": "general_knowledge-medium-sport-marathon-distance-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-sport-marathon-distance-a",
+        "text": "42,195 km"
+      },
+      {
+        "id": "general_knowledge-medium-sport-marathon-distance-b",
+        "text": "40 km"
+      },
+      {
+        "id": "general_knowledge-medium-sport-marathon-distance-c",
+        "text": "41 km"
+      },
+      {
+        "id": "general_knowledge-medium-sport-marathon-distance-d",
+        "text": "45 km"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-animal-largest-land",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jakie jest największe zwierzę lądowe?",
+    "correctAnswerId": "general_knowledge-medium-animal-largest-land-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-animal-largest-land-a",
+        "text": "Słoń afrykański"
+      },
+      {
+        "id": "general_knowledge-medium-animal-largest-land-b",
+        "text": "Hipopotam"
+      },
+      {
+        "id": "general_knowledge-medium-animal-largest-land-c",
+        "text": "Nosorożec biały"
+      },
+      {
+        "id": "general_knowledge-medium-animal-largest-land-d",
+        "text": "Żubr"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-country-taj-mahal",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "W którym kraju znajduje się Tadż Mahal?",
+    "correctAnswerId": "general_knowledge-medium-country-taj-mahal-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-country-taj-mahal-a",
+        "text": "Indie"
+      },
+      {
+        "id": "general_knowledge-medium-country-taj-mahal-b",
+        "text": "Pakistan"
+      },
+      {
+        "id": "general_knowledge-medium-country-taj-mahal-c",
+        "text": "Iran"
+      },
+      {
+        "id": "general_knowledge-medium-country-taj-mahal-d",
+        "text": "Nepal"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-writer-crime-and-punishment",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto napisał „Zbrodnię i karę”?",
+    "correctAnswerId": "general_knowledge-medium-writer-crime-and-punishment-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-writer-crime-and-punishment-a",
+        "text": "Fiodor Dostojewski"
+      },
+      {
+        "id": "general_knowledge-medium-writer-crime-and-punishment-b",
+        "text": "Lew Tołstoj"
+      },
+      {
+        "id": "general_knowledge-medium-writer-crime-and-punishment-c",
+        "text": "Anton Czechow"
+      },
+      {
+        "id": "general_knowledge-medium-writer-crime-and-punishment-d",
+        "text": "Nikołaj Gogol"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-mountain-highest-world",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jak nazywa się najwyższy szczyt świata?",
+    "correctAnswerId": "general_knowledge-medium-mountain-highest-world-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-mountain-highest-world-a",
+        "text": "Mount Everest"
+      },
+      {
+        "id": "general_knowledge-medium-mountain-highest-world-b",
+        "text": "K2"
+      },
+      {
+        "id": "general_knowledge-medium-mountain-highest-world-c",
+        "text": "Kanczendzonga"
+      },
+      {
+        "id": "general_knowledge-medium-mountain-highest-world-d",
+        "text": "Lhotse"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-organ-produces-insulin",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Który narząd produkuje insulinę?",
+    "correctAnswerId": "general_knowledge-medium-organ-produces-insulin-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-organ-produces-insulin-a",
+        "text": "Trzustka"
+      },
+      {
+        "id": "general_knowledge-medium-organ-produces-insulin-b",
+        "text": "Wątroba"
+      },
+      {
+        "id": "general_knowledge-medium-organ-produces-insulin-c",
+        "text": "Tarczyca"
+      },
+      {
+        "id": "general_knowledge-medium-organ-produces-insulin-d",
+        "text": "Śledziona"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-capital-turkey",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaka jest stolica Turcji?",
+    "correctAnswerId": "general_knowledge-medium-capital-turkey-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-capital-turkey-a",
+        "text": "Ankara"
+      },
+      {
+        "id": "general_knowledge-medium-capital-turkey-b",
+        "text": "Stambuł"
+      },
+      {
+        "id": "general_knowledge-medium-capital-turkey-c",
+        "text": "Izmir"
+      },
+      {
+        "id": "general_knowledge-medium-capital-turkey-d",
+        "text": "Antalya"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-planet-known-life",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Na której planecie potwierdzono istnienie życia?",
+    "correctAnswerId": "general_knowledge-medium-planet-known-life-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-planet-known-life-a",
+        "text": "Ziemia"
+      },
+      {
+        "id": "general_knowledge-medium-planet-known-life-b",
+        "text": "Mars"
+      },
+      {
+        "id": "general_knowledge-medium-planet-known-life-c",
+        "text": "Europa"
+      },
+      {
+        "id": "general_knowledge-medium-planet-known-life-d",
+        "text": "Wenus"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-writer-old-man-sea",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Kto napisał „Starego człowieka i morze”?",
+    "correctAnswerId": "general_knowledge-medium-writer-old-man-sea-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-writer-old-man-sea-a",
+        "text": "Ernest Hemingway"
+      },
+      {
+        "id": "general_knowledge-medium-writer-old-man-sea-b",
+        "text": "John Steinbeck"
+      },
+      {
+        "id": "general_knowledge-medium-writer-old-man-sea-c",
+        "text": "Mark Twain"
+      },
+      {
+        "id": "general_knowledge-medium-writer-old-man-sea-d",
+        "text": "William Faulkner"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-sport-yellow-card",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "W którym sporcie sędzia pokazuje żółtą kartkę za przewinienia?",
+    "correctAnswerId": "general_knowledge-medium-sport-yellow-card-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-sport-yellow-card-a",
+        "text": "Piłka nożna"
+      },
+      {
+        "id": "general_knowledge-medium-sport-yellow-card-b",
+        "text": "Tenis"
+      },
+      {
+        "id": "general_knowledge-medium-sport-yellow-card-c",
+        "text": "Baseball"
+      },
+      {
+        "id": "general_knowledge-medium-sport-yellow-card-d",
+        "text": "Hokej na lodzie"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-medium-ocean-between-america-europe",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Medium",
+    "text": "Jaki ocean oddziela Amerykę Północną od Europy?",
+    "correctAnswerId": "general_knowledge-medium-ocean-between-america-europe-a",
+    "answers": [
+      {
+        "id": "general_knowledge-medium-ocean-between-america-europe-a",
+        "text": "Ocean Atlantycki"
+      },
+      {
+        "id": "general_knowledge-medium-ocean-between-america-europe-b",
+        "text": "Ocean Spokojny"
+      },
+      {
+        "id": "general_knowledge-medium-ocean-between-america-europe-c",
+        "text": "Ocean Indyjski"
+      },
+      {
+        "id": "general_knowledge-medium-ocean-between-america-europe-d",
+        "text": "Ocean Arktyczny"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-capital-kazakhstan",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Kazachstanu?",
+    "correctAnswerId": "general_knowledge-mediumhard-capital-kazakhstan-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-capital-kazakhstan-a",
+        "text": "Astana"
+      },
+      {
+        "id": "general_knowledge-mediumhard-capital-kazakhstan-b",
+        "text": "Ałmaty"
+      },
+      {
+        "id": "general_knowledge-mediumhard-capital-kazakhstan-c",
+        "text": "Taszkent"
+      },
+      {
+        "id": "general_knowledge-mediumhard-capital-kazakhstan-d",
+        "text": "Biszkek"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-composer-four-seasons",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Kto skomponował „Cztery pory roku”?",
+    "correctAnswerId": "general_knowledge-mediumhard-composer-four-seasons-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-composer-four-seasons-a",
+        "text": "Antonio Vivaldi"
+      },
+      {
+        "id": "general_knowledge-mediumhard-composer-four-seasons-b",
+        "text": "Johann Sebastian Bach"
+      },
+      {
+        "id": "general_knowledge-mediumhard-composer-four-seasons-c",
+        "text": "Wolfgang Amadeus Mozart"
+      },
+      {
+        "id": "general_knowledge-mediumhard-composer-four-seasons-d",
+        "text": "Ludwig van Beethoven"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-element-fe",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jaki pierwiastek chemiczny ma symbol Fe?",
+    "correctAnswerId": "general_knowledge-mediumhard-element-fe-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-element-fe-a",
+        "text": "Żelazo"
+      },
+      {
+        "id": "general_knowledge-mediumhard-element-fe-b",
+        "text": "Fluor"
+      },
+      {
+        "id": "general_knowledge-mediumhard-element-fe-c",
+        "text": "Ferm"
+      },
+      {
+        "id": "general_knowledge-mediumhard-element-fe-d",
+        "text": "Magnez"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-river-through-budapest",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jaka rzeka przepływa przez Budapeszt?",
+    "correctAnswerId": "general_knowledge-mediumhard-river-through-budapest-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-river-through-budapest-a",
+        "text": "Dunaj"
+      },
+      {
+        "id": "general_knowledge-mediumhard-river-through-budapest-b",
+        "text": "Ren"
+      },
+      {
+        "id": "general_knowledge-mediumhard-river-through-budapest-c",
+        "text": "Łaba"
+      },
+      {
+        "id": "general_knowledge-mediumhard-river-through-budapest-d",
+        "text": "Wołga"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-novel-master-marg",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Kto jest autorem „Mistrza i Małgorzaty”?",
+    "correctAnswerId": "general_knowledge-mediumhard-novel-master-marg-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-novel-master-marg-a",
+        "text": "Michaił Bułhakow"
+      },
+      {
+        "id": "general_knowledge-mediumhard-novel-master-marg-b",
+        "text": "Boris Pasternak"
+      },
+      {
+        "id": "general_knowledge-mediumhard-novel-master-marg-c",
+        "text": "Iwan Turgieniew"
+      },
+      {
+        "id": "general_knowledge-mediumhard-novel-master-marg-d",
+        "text": "Aleksander Puszkin"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-planet-most-moons",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Która planeta w Układzie Słonecznym jest obecnie znana z bardzo dużej liczby księżyców i często wskazywana jako rekordzista?",
+    "correctAnswerId": "general_knowledge-mediumhard-planet-most-moons-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-planet-most-moons-a",
+        "text": "Saturn"
+      },
+      {
+        "id": "general_knowledge-mediumhard-planet-most-moons-b",
+        "text": "Jowisz"
+      },
+      {
+        "id": "general_knowledge-mediumhard-planet-most-moons-c",
+        "text": "Uran"
+      },
+      {
+        "id": "general_knowledge-mediumhard-planet-most-moons-d",
+        "text": "Neptun"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-sport-davis-cup",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Puchar Davisa dotyczy którego sportu?",
+    "correctAnswerId": "general_knowledge-mediumhard-sport-davis-cup-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-sport-davis-cup-a",
+        "text": "Tenisa"
+      },
+      {
+        "id": "general_knowledge-mediumhard-sport-davis-cup-b",
+        "text": "Koszykówki"
+      },
+      {
+        "id": "general_knowledge-mediumhard-sport-davis-cup-c",
+        "text": "Siatkówki"
+      },
+      {
+        "id": "general_knowledge-mediumhard-sport-davis-cup-d",
+        "text": "Piłki ręcznej"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-city-sagrada-familia",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "W jakim mieście znajduje się bazylika Sagrada Família?",
+    "correctAnswerId": "general_knowledge-mediumhard-city-sagrada-familia-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-city-sagrada-familia-a",
+        "text": "Barcelona"
+      },
+      {
+        "id": "general_knowledge-mediumhard-city-sagrada-familia-b",
+        "text": "Madryt"
+      },
+      {
+        "id": "general_knowledge-mediumhard-city-sagrada-familia-c",
+        "text": "Sewilla"
+      },
+      {
+        "id": "general_knowledge-mediumhard-city-sagrada-familia-d",
+        "text": "Walencja"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-organism-single-cell",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się organizm zbudowany z jednej komórki?",
+    "correctAnswerId": "general_knowledge-mediumhard-organism-single-cell-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-organism-single-cell-a",
+        "text": "Jednokomórkowy"
+      },
+      {
+        "id": "general_knowledge-mediumhard-organism-single-cell-b",
+        "text": "Wielokomórkowy"
+      },
+      {
+        "id": "general_knowledge-mediumhard-organism-single-cell-c",
+        "text": "Tkankowy"
+      },
+      {
+        "id": "general_knowledge-mediumhard-organism-single-cell-d",
+        "text": "Jądrowy"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-author-process",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Kto napisał „Proces”?",
+    "correctAnswerId": "general_knowledge-mediumhard-author-process-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-author-process-a",
+        "text": "Franz Kafka"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-process-b",
+        "text": "Thomas Mann"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-process-c",
+        "text": "Hermann Hesse"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-process-d",
+        "text": "Bertolt Brecht"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-country-fiords",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Z którym krajem najbardziej kojarzą się fiordy?",
+    "correctAnswerId": "general_knowledge-mediumhard-country-fiords-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-country-fiords-a",
+        "text": "Norwegia"
+      },
+      {
+        "id": "general_knowledge-mediumhard-country-fiords-b",
+        "text": "Dania"
+      },
+      {
+        "id": "general_knowledge-mediumhard-country-fiords-c",
+        "text": "Islandia"
+      },
+      {
+        "id": "general_knowledge-mediumhard-country-fiords-d",
+        "text": "Holandia"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-instrument-reeds",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Który instrument dęty drewniany wykorzystuje stroik pojedynczy?",
+    "correctAnswerId": "general_knowledge-mediumhard-instrument-reeds-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-instrument-reeds-a",
+        "text": "Klarnet"
+      },
+      {
+        "id": "general_knowledge-mediumhard-instrument-reeds-b",
+        "text": "Flet poprzeczny"
+      },
+      {
+        "id": "general_knowledge-mediumhard-instrument-reeds-c",
+        "text": "Trąbka"
+      },
+      {
+        "id": "general_knowledge-mediumhard-instrument-reeds-d",
+        "text": "Puzon"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-currency-japan",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jaka waluta obowiązuje w Japonii?",
+    "correctAnswerId": "general_knowledge-mediumhard-currency-japan-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-currency-japan-a",
+        "text": "Jen"
+      },
+      {
+        "id": "general_knowledge-mediumhard-currency-japan-b",
+        "text": "Juan"
+      },
+      {
+        "id": "general_knowledge-mediumhard-currency-japan-c",
+        "text": "Won"
+      },
+      {
+        "id": "general_knowledge-mediumhard-currency-japan-d",
+        "text": "Baht"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-part-cell-energy",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Która część komórki jest nazywana jej „elektrownią”?",
+    "correctAnswerId": "general_knowledge-mediumhard-part-cell-energy-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-part-cell-energy-a",
+        "text": "Mitochondrium"
+      },
+      {
+        "id": "general_knowledge-mediumhard-part-cell-energy-b",
+        "text": "Rybosom"
+      },
+      {
+        "id": "general_knowledge-mediumhard-part-cell-energy-c",
+        "text": "Jądro komórkowe"
+      },
+      {
+        "id": "general_knowledge-mediumhard-part-cell-energy-d",
+        "text": "Aparat Golgiego"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-mountain-matterhorn",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Na granicy jakich dwóch państw leży Matterhorn?",
+    "correctAnswerId": "general_knowledge-mediumhard-mountain-matterhorn-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-mountain-matterhorn-a",
+        "text": "Szwajcarii i Włoch"
+      },
+      {
+        "id": "general_knowledge-mediumhard-mountain-matterhorn-b",
+        "text": "Francji i Włoch"
+      },
+      {
+        "id": "general_knowledge-mediumhard-mountain-matterhorn-c",
+        "text": "Austrii i Włoch"
+      },
+      {
+        "id": "general_knowledge-mediumhard-mountain-matterhorn-d",
+        "text": "Szwajcarii i Austrii"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-artist-thinker",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Kto stworzył rzeźbę „Myśliciel”?",
+    "correctAnswerId": "general_knowledge-mediumhard-artist-thinker-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-artist-thinker-a",
+        "text": "Auguste Rodin"
+      },
+      {
+        "id": "general_knowledge-mediumhard-artist-thinker-b",
+        "text": "Michelangelo"
+      },
+      {
+        "id": "general_knowledge-mediumhard-artist-thinker-c",
+        "text": "Donatello"
+      },
+      {
+        "id": "general_knowledge-mediumhard-artist-thinker-d",
+        "text": "Gian Lorenzo Bernini"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-sport-td-touchdown",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "W którym sporcie zdobywa się przyłożenie, czyli touchdown?",
+    "correctAnswerId": "general_knowledge-mediumhard-sport-td-touchdown-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-sport-td-touchdown-a",
+        "text": "Futbol amerykański"
+      },
+      {
+        "id": "general_knowledge-mediumhard-sport-td-touchdown-b",
+        "text": "Rugby siedmioosobowe"
+      },
+      {
+        "id": "general_knowledge-mediumhard-sport-td-touchdown-c",
+        "text": "Baseball"
+      },
+      {
+        "id": "general_knowledge-mediumhard-sport-td-touchdown-d",
+        "text": "Lacrosse"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-lake-titicaca",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Na granicy jakich dwóch państw leży jezioro Titicaca?",
+    "correctAnswerId": "general_knowledge-mediumhard-lake-titicaca-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-lake-titicaca-a",
+        "text": "Peru i Boliwii"
+      },
+      {
+        "id": "general_knowledge-mediumhard-lake-titicaca-b",
+        "text": "Chile i Peru"
+      },
+      {
+        "id": "general_knowledge-mediumhard-lake-titicaca-c",
+        "text": "Argentyny i Boliwii"
+      },
+      {
+        "id": "general_knowledge-mediumhard-lake-titicaca-d",
+        "text": "Peru i Ekwadoru"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-author-ulysses",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Kto napisał „Ulissesa”?",
+    "correctAnswerId": "general_knowledge-mediumhard-author-ulysses-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-author-ulysses-a",
+        "text": "James Joyce"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-ulysses-b",
+        "text": "Samuel Beckett"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-ulysses-c",
+        "text": "Oscar Wilde"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-ulysses-d",
+        "text": "Jonathan Swift"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-gas-noble-lightest",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Który z tych gazów szlachetnych jest najlżejszy?",
+    "correctAnswerId": "general_knowledge-mediumhard-gas-noble-lightest-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-gas-noble-lightest-a",
+        "text": "Hel"
+      },
+      {
+        "id": "general_knowledge-mediumhard-gas-noble-lightest-b",
+        "text": "Argon"
+      },
+      {
+        "id": "general_knowledge-mediumhard-gas-noble-lightest-c",
+        "text": "Neon"
+      },
+      {
+        "id": "general_knowledge-mediumhard-gas-noble-lightest-d",
+        "text": "Ksenon"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-capital-myanmar",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jaka jest stolica Mjanmy?",
+    "correctAnswerId": "general_knowledge-mediumhard-capital-myanmar-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-capital-myanmar-a",
+        "text": "Naypyidaw"
+      },
+      {
+        "id": "general_knowledge-mediumhard-capital-myanmar-b",
+        "text": "Rangun"
+      },
+      {
+        "id": "general_knowledge-mediumhard-capital-myanmar-c",
+        "text": "Mandalaj"
+      },
+      {
+        "id": "general_knowledge-mediumhard-capital-myanmar-d",
+        "text": "Phuket"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-painting-memory",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Kto namalował „Trwałość pamięci”?",
+    "correctAnswerId": "general_knowledge-mediumhard-painting-memory-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-painting-memory-a",
+        "text": "Salvador Dalí"
+      },
+      {
+        "id": "general_knowledge-mediumhard-painting-memory-b",
+        "text": "René Magritte"
+      },
+      {
+        "id": "general_knowledge-mediumhard-painting-memory-c",
+        "text": "Joan Miró"
+      },
+      {
+        "id": "general_knowledge-mediumhard-painting-memory-d",
+        "text": "Edvard Munch"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-animal-largest-bird",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jaki jest największy żyjący ptak na świecie?",
+    "correctAnswerId": "general_knowledge-mediumhard-animal-largest-bird-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-animal-largest-bird-a",
+        "text": "Struś"
+      },
+      {
+        "id": "general_knowledge-mediumhard-animal-largest-bird-b",
+        "text": "Emu"
+      },
+      {
+        "id": "general_knowledge-mediumhard-animal-largest-bird-c",
+        "text": "Albatros wędrowny"
+      },
+      {
+        "id": "general_knowledge-mediumhard-animal-largest-bird-d",
+        "text": "Kondor andyjski"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-strait-asia-america",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywa się cieśnina oddzielająca Azję od Ameryki Północnej?",
+    "correctAnswerId": "general_knowledge-mediumhard-strait-asia-america-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-strait-asia-america-a",
+        "text": "Cieśnina Beringa"
+      },
+      {
+        "id": "general_knowledge-mediumhard-strait-asia-america-b",
+        "text": "Cieśnina Gibraltarska"
+      },
+      {
+        "id": "general_knowledge-mediumhard-strait-asia-america-c",
+        "text": "Cieśnina Magellana"
+      },
+      {
+        "id": "general_knowledge-mediumhard-strait-asia-america-d",
+        "text": "Bosfor"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-mediumhard-author-name-rose",
+    "categoryKey": "general_knowledge",
+    "difficulty": "MediumHard",
+    "text": "Kto napisał „Imię róży”?",
+    "correctAnswerId": "general_knowledge-mediumhard-author-name-rose-a",
+    "answers": [
+      {
+        "id": "general_knowledge-mediumhard-author-name-rose-a",
+        "text": "Umberto Eco"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-name-rose-b",
+        "text": "Italo Calvino"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-name-rose-c",
+        "text": "Alberto Moravia"
+      },
+      {
+        "id": "general_knowledge-mediumhard-author-name-rose-d",
+        "text": "Giovanni Verga"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-capital-sri-lanka-official",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Które miasto jest oficjalną stolicą Sri Lanki?",
+    "correctAnswerId": "general_knowledge-hard-capital-sri-lanka-official-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-capital-sri-lanka-official-a",
+        "text": "Sri Dźajawardanapura Kotte"
+      },
+      {
+        "id": "general_knowledge-hard-capital-sri-lanka-official-b",
+        "text": "Kolombo"
+      },
+      {
+        "id": "general_knowledge-hard-capital-sri-lanka-official-c",
+        "text": "Kandy"
+      },
+      {
+        "id": "general_knowledge-hard-capital-sri-lanka-official-d",
+        "text": "Galle"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-composer-new-world",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Kto skomponował IX Symfonię „Z Nowego Świata”?",
+    "correctAnswerId": "general_knowledge-hard-composer-new-world-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-composer-new-world-a",
+        "text": "Antonín Dvořák"
+      },
+      {
+        "id": "general_knowledge-hard-composer-new-world-b",
+        "text": "Bedřich Smetana"
+      },
+      {
+        "id": "general_knowledge-hard-composer-new-world-c",
+        "text": "Gustav Mahler"
+      },
+      {
+        "id": "general_knowledge-hard-composer-new-world-d",
+        "text": "Franz Liszt"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-element-w",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Jaki pierwiastek ma symbol W?",
+    "correctAnswerId": "general_knowledge-hard-element-w-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-element-w-a",
+        "text": "Wolfram"
+      },
+      {
+        "id": "general_knowledge-hard-element-w-b",
+        "text": "Wanad"
+      },
+      {
+        "id": "general_knowledge-hard-element-w-c",
+        "text": "Wapń"
+      },
+      {
+        "id": "general_knowledge-hard-element-w-d",
+        "text": "Bizmut"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-river-orinoco-country",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Przez które państwo przepływa większość rzeki Orinoko?",
+    "correctAnswerId": "general_knowledge-hard-river-orinoco-country-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-river-orinoco-country-a",
+        "text": "Wenezuelę"
+      },
+      {
+        "id": "general_knowledge-hard-river-orinoco-country-b",
+        "text": "Kolumbię"
+      },
+      {
+        "id": "general_knowledge-hard-river-orinoco-country-c",
+        "text": "Peru"
+      },
+      {
+        "id": "general_knowledge-hard-river-orinoco-country-d",
+        "text": "Boliwię"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-author-in-search",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Kto napisał cykl „W poszukiwaniu straconego czasu”?",
+    "correctAnswerId": "general_knowledge-hard-author-in-search-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-author-in-search-a",
+        "text": "Marcel Proust"
+      },
+      {
+        "id": "general_knowledge-hard-author-in-search-b",
+        "text": "Émile Zola"
+      },
+      {
+        "id": "general_knowledge-hard-author-in-search-c",
+        "text": "Honoré de Balzac"
+      },
+      {
+        "id": "general_knowledge-hard-author-in-search-d",
+        "text": "Gustave Flaubert"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-sport-ashes",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Rywalizacja o The Ashes dotyczy którego sportu?",
+    "correctAnswerId": "general_knowledge-hard-sport-ashes-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-sport-ashes-a",
+        "text": "Krykieta"
+      },
+      {
+        "id": "general_knowledge-hard-sport-ashes-b",
+        "text": "Golfa"
+      },
+      {
+        "id": "general_knowledge-hard-sport-ashes-c",
+        "text": "Rugby"
+      },
+      {
+        "id": "general_knowledge-hard-sport-ashes-d",
+        "text": "Tenisa"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-mountain-aoraki-country",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "W którym kraju znajduje się szczyt Aoraki / Mount Cook?",
+    "correctAnswerId": "general_knowledge-hard-mountain-aoraki-country-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-mountain-aoraki-country-a",
+        "text": "W Nowej Zelandii"
+      },
+      {
+        "id": "general_knowledge-hard-mountain-aoraki-country-b",
+        "text": "W Australii"
+      },
+      {
+        "id": "general_knowledge-hard-mountain-aoraki-country-c",
+        "text": "W Kanadzie"
+      },
+      {
+        "id": "general_knowledge-hard-mountain-aoraki-country-d",
+        "text": "W Chile"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-opera-magic-flute",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Kto skomponował operę „Czarodziejski flet”?",
+    "correctAnswerId": "general_knowledge-hard-opera-magic-flute-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-opera-magic-flute-a",
+        "text": "Wolfgang Amadeus Mozart"
+      },
+      {
+        "id": "general_knowledge-hard-opera-magic-flute-b",
+        "text": "Joseph Haydn"
+      },
+      {
+        "id": "general_knowledge-hard-opera-magic-flute-c",
+        "text": "Ludwig van Beethoven"
+      },
+      {
+        "id": "general_knowledge-hard-opera-magic-flute-d",
+        "text": "Christoph Willibald Gluck"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-cell-division-meiosis",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Jak nazywa się podział komórki prowadzący do powstania gamet?",
+    "correctAnswerId": "general_knowledge-hard-cell-division-meiosis-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-cell-division-meiosis-a",
+        "text": "Mejoza"
+      },
+      {
+        "id": "general_knowledge-hard-cell-division-meiosis-b",
+        "text": "Mitoza"
+      },
+      {
+        "id": "general_knowledge-hard-cell-division-meiosis-c",
+        "text": "Pączkowanie"
+      },
+      {
+        "id": "general_knowledge-hard-cell-division-meiosis-d",
+        "text": "Transkrypcja"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-author-sound-fury",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Kto napisał „Wściekłość i wrzask”?",
+    "correctAnswerId": "general_knowledge-hard-author-sound-fury-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-author-sound-fury-a",
+        "text": "William Faulkner"
+      },
+      {
+        "id": "general_knowledge-hard-author-sound-fury-b",
+        "text": "John Steinbeck"
+      },
+      {
+        "id": "general_knowledge-hard-author-sound-fury-c",
+        "text": "Tennessee Williams"
+      },
+      {
+        "id": "general_knowledge-hard-author-sound-fury-d",
+        "text": "Harper Lee"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-sea-borders-two-continents",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Jakie morze łączy Europę z Azją przez Bosfor i Dardanele?",
+    "correctAnswerId": "general_knowledge-hard-sea-borders-two-continents-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-sea-borders-two-continents-a",
+        "text": "Morze Marmara"
+      },
+      {
+        "id": "general_knowledge-hard-sea-borders-two-continents-b",
+        "text": "Morze Czarne"
+      },
+      {
+        "id": "general_knowledge-hard-sea-borders-two-continents-c",
+        "text": "Morze Egejskie"
+      },
+      {
+        "id": "general_knowledge-hard-sea-borders-two-continents-d",
+        "text": "Morze Adriatyckie"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-instrument-lowest-string",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Który standardowy instrument smyczkowy ma najniższe brzmienie?",
+    "correctAnswerId": "general_knowledge-hard-instrument-lowest-string-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-instrument-lowest-string-a",
+        "text": "Kontrabas"
+      },
+      {
+        "id": "general_knowledge-hard-instrument-lowest-string-b",
+        "text": "Altówka"
+      },
+      {
+        "id": "general_knowledge-hard-instrument-lowest-string-c",
+        "text": "Skrzypce"
+      },
+      {
+        "id": "general_knowledge-hard-instrument-lowest-string-d",
+        "text": "Wiolonczela"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-constant-gravity-unit",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "W jakiej jednostce w układzie SI mierzy się przyspieszenie?",
+    "correctAnswerId": "general_knowledge-hard-constant-gravity-unit-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-constant-gravity-unit-a",
+        "text": "m/s²"
+      },
+      {
+        "id": "general_knowledge-hard-constant-gravity-unit-b",
+        "text": "N"
+      },
+      {
+        "id": "general_knowledge-hard-constant-gravity-unit-c",
+        "text": "J"
+      },
+      {
+        "id": "general_knowledge-hard-constant-gravity-unit-d",
+        "text": "Pa"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-city-angkor",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "W pobliżu jakiego miasta znajdują się świątynie Angkor?",
+    "correctAnswerId": "general_knowledge-hard-city-angkor-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-city-angkor-a",
+        "text": "Siem Reap"
+      },
+      {
+        "id": "general_knowledge-hard-city-angkor-b",
+        "text": "Phnom Penh"
+      },
+      {
+        "id": "general_knowledge-hard-city-angkor-c",
+        "text": "Da Nang"
+      },
+      {
+        "id": "general_knowledge-hard-city-angkor-d",
+        "text": "Hue"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-author-odyssey",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Komu tradycyjnie przypisuje się autorstwo „Odysei”?",
+    "correctAnswerId": "general_knowledge-hard-author-odyssey-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-author-odyssey-a",
+        "text": "Homerowi"
+      },
+      {
+        "id": "general_knowledge-hard-author-odyssey-b",
+        "text": "Hezjodowi"
+      },
+      {
+        "id": "general_knowledge-hard-author-odyssey-c",
+        "text": "Wergiliuszowi"
+      },
+      {
+        "id": "general_knowledge-hard-author-odyssey-d",
+        "text": "Sofoklesowi"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-sport-snooker-points",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Ile punktów jest wart czarny bil w snookerze?",
+    "correctAnswerId": "general_knowledge-hard-sport-snooker-points-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-sport-snooker-points-a",
+        "text": "7"
+      },
+      {
+        "id": "general_knowledge-hard-sport-snooker-points-b",
+        "text": "5"
+      },
+      {
+        "id": "general_knowledge-hard-sport-snooker-points-c",
+        "text": "6"
+      },
+      {
+        "id": "general_knowledge-hard-sport-snooker-points-d",
+        "text": "8"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-desert-namib-country",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Na wybrzeżu którego państwa leży znaczna część pustyni Namib?",
+    "correctAnswerId": "general_knowledge-hard-desert-namib-country-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-desert-namib-country-a",
+        "text": "Namibii"
+      },
+      {
+        "id": "general_knowledge-hard-desert-namib-country-b",
+        "text": "Angoli"
+      },
+      {
+        "id": "general_knowledge-hard-desert-namib-country-c",
+        "text": "Botswany"
+      },
+      {
+        "id": "general_knowledge-hard-desert-namib-country-d",
+        "text": "RPA"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-painting-birth-of-venus",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Kto namalował „Narodziny Wenus”?",
+    "correctAnswerId": "general_knowledge-hard-painting-birth-of-venus-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-painting-birth-of-venus-a",
+        "text": "Sandro Botticelli"
+      },
+      {
+        "id": "general_knowledge-hard-painting-birth-of-venus-b",
+        "text": "Tycjan"
+      },
+      {
+        "id": "general_knowledge-hard-painting-birth-of-venus-c",
+        "text": "Rafael"
+      },
+      {
+        "id": "general_knowledge-hard-painting-birth-of-venus-d",
+        "text": "Caravaggio"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-cell-organelle-protein",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "W której strukturze komórkowej powstają białka?",
+    "correctAnswerId": "general_knowledge-hard-cell-organelle-protein-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-cell-organelle-protein-a",
+        "text": "W rybosomach"
+      },
+      {
+        "id": "general_knowledge-hard-cell-organelle-protein-b",
+        "text": "W lizosomach"
+      },
+      {
+        "id": "general_knowledge-hard-cell-organelle-protein-c",
+        "text": "W mitochondriach"
+      },
+      {
+        "id": "general_knowledge-hard-cell-organelle-protein-d",
+        "text": "W centriolach"
+      }
+    ]
+  },
+  {
+    "key": "general_knowledge-hard-capital-benin",
+    "categoryKey": "general_knowledge",
+    "difficulty": "Hard",
+    "text": "Jaka jest oficjalna stolica Beninu?",
+    "correctAnswerId": "general_knowledge-hard-capital-benin-a",
+    "answers": [
+      {
+        "id": "general_knowledge-hard-capital-benin-a",
+        "text": "Porto-Novo"
+      },
+      {
+        "id": "general_knowledge-hard-capital-benin-b",
+        "text": "Kotonu"
+      },
+      {
+        "id": "general_knowledge-hard-capital-benin-c",
+        "text": "Parakou"
+      },
+      {
+        "id": "general_knowledge-hard-capital-benin-d",
+        "text": "Abomej"
+      }
+    ]
+  }
+]

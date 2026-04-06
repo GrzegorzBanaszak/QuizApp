@@ -5,9 +5,12 @@ import { CharacterAvatarPicker } from "../components/CharacterAvatarPicker";
 import { CharacterCreationHero } from "../components/CharacterCreationHero";
 import { CharacterNameField } from "../components/CharacterNameField";
 import { CharacterSystemNotice } from "../components/CharacterSystemNotice";
-import { authAvatars } from "../data/authMockData";
-import { registerSocial } from "../services/authApi";
+import {
+  fetchCreateCharacterAvatars,
+  registerSocial,
+} from "../services/authApi";
 import { useAuthStore } from "../store/authStore";
+import type { AvatarCatalogItem } from "../../catalog/types";
 
 export const CreateCharacterPage = () => {
   const navigate = useNavigate();
@@ -21,8 +24,49 @@ export const CreateCharacterPage = () => {
   const error = useAuthStore((state) => state.error);
 
   const [name, setName] = useState("");
-  const [selectedAvatarId, setSelectedAvatarId] = useState<string | null>(null);
+  const [availableAvatars, setAvailableAvatars] = useState<AvatarCatalogItem[]>(
+    [],
+  );
+  const [selectedAvatarId, setSelectedAvatarId] = useState<number | null>(null);
+  const [isLoadingAvatars, setIsLoadingAvatars] = useState(true);
+  const [avatarLoadError, setAvatarLoadError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    let isCancelled = false;
+
+    const loadAvatars = async () => {
+      setIsLoadingAvatars(true);
+      setAvatarLoadError(null);
+
+      try {
+        const avatars = await fetchCreateCharacterAvatars();
+
+        if (!isCancelled) {
+          setAvailableAvatars(avatars);
+        }
+      } catch (loadError) {
+        if (!isCancelled) {
+          setAvailableAvatars([]);
+          setAvatarLoadError(
+            loadError instanceof Error
+              ? loadError.message
+              : "Nie udało się pobrać avatarów startowych.",
+          );
+        }
+      } finally {
+        if (!isCancelled) {
+          setIsLoadingAvatars(false);
+        }
+      }
+    };
+
+    void loadAvatars();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     if (!pendingSocialLogin) {
@@ -30,12 +74,25 @@ export const CreateCharacterPage = () => {
     }
 
     setName(pendingSocialLogin.profile.name);
-    setSelectedAvatarId(
-      authAvatars.find(
-        (avatar) => avatar.image === pendingSocialLogin.profile.avatarUrl,
-      )?.id ?? null,
-    );
   }, [pendingSocialLogin]);
+
+  useEffect(() => {
+    if (availableAvatars.length === 0) {
+      setSelectedAvatarId(null);
+      return;
+    }
+
+    setSelectedAvatarId((currentValue) => {
+      if (
+        currentValue !== null &&
+        availableAvatars.some((avatar) => avatar.id === currentValue)
+      ) {
+        return currentValue;
+      }
+
+      return availableAvatars[0]?.id ?? null;
+    });
+  }, [availableAvatars]);
 
   if (!isAuthInitialized) {
     return (
@@ -52,14 +109,14 @@ export const CreateCharacterPage = () => {
   }
 
   const selectedAvatar =
-    authAvatars.find((avatar) => avatar.id === selectedAvatarId) ?? null;
+    availableAvatars.find((avatar) => avatar.id === selectedAvatarId) ?? null;
 
   const activeAvatarUrl =
-    selectedAvatar?.image ?? pendingSocialLogin.profile.avatarUrl;
-  const activeAvatarBadge = selectedAvatar?.badge ?? "SOCIAL";
+    selectedAvatar?.imageUrl ?? pendingSocialLogin.profile.avatarUrl;
+  const activeAvatarBadge = selectedAvatar?.unlockType ?? "SOCIAL";
   const activeAvatarName = selectedAvatar?.name ?? pendingSocialLogin.profile.name;
   const avatarSourceLabel = selectedAvatar
-    ? `Preset ${selectedAvatar.id}`
+    ? selectedAvatar.name
     : "Avatar z konta społecznościowego";
   const submitLabel = "UTWÓRZ POSTAĆ";
   const loadingLabel = "TWORZENIE...";
@@ -74,8 +131,7 @@ export const CreateCharacterPage = () => {
         provider: pendingSocialLogin.provider,
         providerToken: pendingSocialLogin.providerToken,
         customUsername: name.trim(),
-        customAvatarUrl:
-          selectedAvatar?.image ?? pendingSocialLogin.profile.avatarUrl,
+        selectedAvatarId,
       });
 
       setSession({ profile: response.profile });
@@ -144,25 +200,35 @@ export const CreateCharacterPage = () => {
                     bolt
                   </span>
                   <span className="text-xs font-black uppercase tracking-[0.2em]">
-                    {authAvatars.length} presetów
+                    {availableAvatars.length} presetów
                   </span>
                 </div>
               </div>
 
               <CharacterNameField value={name} onChange={setName} />
 
-              <CharacterAvatarPicker
-                avatars={authAvatars}
-                selectedAvatarId={selectedAvatarId}
-                onSelectAvatar={setSelectedAvatarId}
-                onResetToSourceAvatar={() => setSelectedAvatarId(null)}
-                showResetToSourceAvatar={Boolean(selectedAvatarId)}
-              />
+              {isLoadingAvatars ? (
+                <div className="rounded-[1.5rem] border border-white/10 bg-[#171730]/60 px-4 py-6 text-sm text-[#aaa8c4]">
+                  Ładowanie dostępnych avatarów...
+                </div>
+              ) : (
+                <CharacterAvatarPicker
+                  avatars={availableAvatars}
+                  selectedAvatarId={selectedAvatarId}
+                  onSelectAvatar={(avatarId) =>
+                    setSelectedAvatarId(
+                      typeof avatarId === "number" ? avatarId : null,
+                    )
+                  }
+                  onResetToSourceAvatar={() => setSelectedAvatarId(null)}
+                  showResetToSourceAvatar={Boolean(selectedAvatarId)}
+                />
+              )}
 
               <CharacterActionBar
                 isSubmitting={isSubmitting}
                 isReady={isReady}
-                canSubmit={Boolean(pendingSocialLogin)}
+                canSubmit={Boolean(pendingSocialLogin) && availableAvatars.length > 0}
                 submitLabel={submitLabel}
                 loadingLabel={loadingLabel}
                 onSubmit={handleCreateProfile}
@@ -173,7 +239,7 @@ export const CreateCharacterPage = () => {
           <CharacterSystemNotice
             title="Tworzenie postaci"
             description="Dopiero po zapisaniu tego formularza konto społecznościowe zostanie zamienione na pełny profil użytkownika."
-            error={error}
+            error={error ?? avatarLoadError}
           />
         </main>
       </div>

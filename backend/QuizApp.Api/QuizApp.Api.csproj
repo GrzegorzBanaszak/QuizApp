@@ -36,7 +36,7 @@
     <None Update="SeedData\categories.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="SeedData\singleplayer-questions.json">
+    <None Update="SeedData\SingleplayerQuestions\*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="SeedData\achievements.json">

@@ -1,0 +1,3502 @@
+[
+  {
+    "key": "history-easy-pyramids-giza-civilization",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakiej starożytnej cywilizacji zbudowano piramidy w Gizie?",
+    "correctAnswerId": "history-easy-pyramids-giza-civilization-a",
+    "answers": [
+      {
+        "id": "history-easy-pyramids-giza-civilization-a",
+        "text": "Starożytny Egipt"
+      },
+      {
+        "id": "history-easy-pyramids-giza-civilization-b",
+        "text": "Starożytna Grecja"
+      },
+      {
+        "id": "history-easy-pyramids-giza-civilization-c",
+        "text": "Starożytny Rzym"
+      },
+      {
+        "id": "history-easy-pyramids-giza-civilization-d",
+        "text": "Mezopotamia"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-first-president-usa",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Kto był pierwszym prezydentem Stanów Zjednoczonych?",
+    "correctAnswerId": "history-easy-first-president-usa-a",
+    "answers": [
+      {
+        "id": "history-easy-first-president-usa-a",
+        "text": "George Washington"
+      },
+      {
+        "id": "history-easy-first-president-usa-b",
+        "text": "Thomas Jefferson"
+      },
+      {
+        "id": "history-easy-first-president-usa-c",
+        "text": "Abraham Lincoln"
+      },
+      {
+        "id": "history-easy-first-president-usa-d",
+        "text": "John Adams"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-colosseum-city",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W którym mieście znajduje się Koloseum?",
+    "correctAnswerId": "history-easy-colosseum-city-a",
+    "answers": [
+      {
+        "id": "history-easy-colosseum-city-a",
+        "text": "Rzym"
+      },
+      {
+        "id": "history-easy-colosseum-city-b",
+        "text": "Ateny"
+      },
+      {
+        "id": "history-easy-colosseum-city-c",
+        "text": "Paryż"
+      },
+      {
+        "id": "history-easy-colosseum-city-d",
+        "text": "Kair"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-moon-landing-year",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W którym roku człowiek po raz pierwszy wylądował na Księżycu?",
+    "correctAnswerId": "history-easy-moon-landing-year-a",
+    "answers": [
+      {
+        "id": "history-easy-moon-landing-year-a",
+        "text": "1969"
+      },
+      {
+        "id": "history-easy-moon-landing-year-b",
+        "text": "1959"
+      },
+      {
+        "id": "history-easy-moon-landing-year-c",
+        "text": "1979"
+      },
+      {
+        "id": "history-easy-moon-landing-year-d",
+        "text": "1989"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-berlin-wall-city",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Jakie miasto było podzielone słynnym murem w czasie zimnej wojny?",
+    "correctAnswerId": "history-easy-berlin-wall-city-a",
+    "answers": [
+      {
+        "id": "history-easy-berlin-wall-city-a",
+        "text": "Berlin"
+      },
+      {
+        "id": "history-easy-berlin-wall-city-b",
+        "text": "Wiedeń"
+      },
+      {
+        "id": "history-easy-berlin-wall-city-c",
+        "text": "Warszawa"
+      },
+      {
+        "id": "history-easy-berlin-wall-city-d",
+        "text": "Praga"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-titanic-sank-ocean",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Na którym oceanie zatonął Titanic?",
+    "correctAnswerId": "history-easy-titanic-sank-ocean-a",
+    "answers": [
+      {
+        "id": "history-easy-titanic-sank-ocean-a",
+        "text": "Atlantyckim"
+      },
+      {
+        "id": "history-easy-titanic-sank-ocean-b",
+        "text": "Spokojnym"
+      },
+      {
+        "id": "history-easy-titanic-sank-ocean-c",
+        "text": "Indyjskim"
+      },
+      {
+        "id": "history-easy-titanic-sank-ocean-d",
+        "text": "Arktycznym"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-ww2-end-year",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W którym roku zakończyła się II wojna światowa w Europie?",
+    "correctAnswerId": "history-easy-ww2-end-year-a",
+    "answers": [
+      {
+        "id": "history-easy-ww2-end-year-a",
+        "text": "1945"
+      },
+      {
+        "id": "history-easy-ww2-end-year-b",
+        "text": "1939"
+      },
+      {
+        "id": "history-easy-ww2-end-year-c",
+        "text": "1942"
+      },
+      {
+        "id": "history-easy-ww2-end-year-d",
+        "text": "1950"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-roman-empire-city",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Jakie miasto było stolicą Cesarstwa Rzymskiego?",
+    "correctAnswerId": "history-easy-roman-empire-city-a",
+    "answers": [
+      {
+        "id": "history-easy-roman-empire-city-a",
+        "text": "Rzym"
+      },
+      {
+        "id": "history-easy-roman-empire-city-b",
+        "text": "Mediolan"
+      },
+      {
+        "id": "history-easy-roman-empire-city-c",
+        "text": "Konstantynopol"
+      },
+      {
+        "id": "history-easy-roman-empire-city-d",
+        "text": "Neapol"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-egyptian-river",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Nad jaką rzeką rozwinęła się cywilizacja starożytnego Egiptu?",
+    "correctAnswerId": "history-easy-egyptian-river-a",
+    "answers": [
+      {
+        "id": "history-easy-egyptian-river-a",
+        "text": "Nil"
+      },
+      {
+        "id": "history-easy-egyptian-river-b",
+        "text": "Tyber"
+      },
+      {
+        "id": "history-easy-egyptian-river-c",
+        "text": "Eufrat"
+      },
+      {
+        "id": "history-easy-egyptian-river-d",
+        "text": "Dunaj"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-america-discovery",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Z kim najczęściej kojarzy się odkrycie Ameryki w 1492 roku?",
+    "correctAnswerId": "history-easy-america-discovery-a",
+    "answers": [
+      {
+        "id": "history-easy-america-discovery-a",
+        "text": "Krzysztof Kolumb"
+      },
+      {
+        "id": "history-easy-america-discovery-b",
+        "text": "Ferdynand Magellan"
+      },
+      {
+        "id": "history-easy-america-discovery-c",
+        "text": "Marco Polo"
+      },
+      {
+        "id": "history-easy-america-discovery-d",
+        "text": "Vasco da Gama"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-french-revolution-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakim kraju wybuchła rewolucja francuska?",
+    "correctAnswerId": "history-easy-french-revolution-country-a",
+    "answers": [
+      {
+        "id": "history-easy-french-revolution-country-a",
+        "text": "Francja"
+      },
+      {
+        "id": "history-easy-french-revolution-country-b",
+        "text": "Hiszpania"
+      },
+      {
+        "id": "history-easy-french-revolution-country-c",
+        "text": "Włochy"
+      },
+      {
+        "id": "history-easy-french-revolution-country-d",
+        "text": "Niemcy"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-poland-first-king",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Kto był pierwszym koronowanym królem Polski?",
+    "correctAnswerId": "history-easy-poland-first-king-a",
+    "answers": [
+      {
+        "id": "history-easy-poland-first-king-a",
+        "text": "Bolesław Chrobry"
+      },
+      {
+        "id": "history-easy-poland-first-king-b",
+        "text": "Mieszko I"
+      },
+      {
+        "id": "history-easy-poland-first-king-c",
+        "text": "Kazimierz Wielki"
+      },
+      {
+        "id": "history-easy-poland-first-king-d",
+        "text": "Władysław Jagiełło"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-grunwald-opponents",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Kto walczył przeciwko Polsce i Litwie w bitwie pod Grunwaldem?",
+    "correctAnswerId": "history-easy-grunwald-opponents-a",
+    "answers": [
+      {
+        "id": "history-easy-grunwald-opponents-a",
+        "text": "Krzyżacy"
+      },
+      {
+        "id": "history-easy-grunwald-opponents-b",
+        "text": "Mongołowie"
+      },
+      {
+        "id": "history-easy-grunwald-opponents-c",
+        "text": "Szwedzi"
+      },
+      {
+        "id": "history-easy-grunwald-opponents-d",
+        "text": "Turcy"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-usa-independence-day",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Z jakim dniem kojarzy się ogłoszenie niepodległości USA?",
+    "correctAnswerId": "history-easy-usa-independence-day-a",
+    "answers": [
+      {
+        "id": "history-easy-usa-independence-day-a",
+        "text": "4 lipca"
+      },
+      {
+        "id": "history-easy-usa-independence-day-b",
+        "text": "14 lipca"
+      },
+      {
+        "id": "history-easy-usa-independence-day-c",
+        "text": "1 maja"
+      },
+      {
+        "id": "history-easy-usa-independence-day-d",
+        "text": "11 listopada"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-renaissance-origin-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakim kraju narodził się renesans?",
+    "correctAnswerId": "history-easy-renaissance-origin-country-a",
+    "answers": [
+      {
+        "id": "history-easy-renaissance-origin-country-a",
+        "text": "Włochy"
+      },
+      {
+        "id": "history-easy-renaissance-origin-country-b",
+        "text": "Francja"
+      },
+      {
+        "id": "history-easy-renaissance-origin-country-c",
+        "text": "Anglia"
+      },
+      {
+        "id": "history-easy-renaissance-origin-country-d",
+        "text": "Hiszpania"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-napoleon-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Napoleon Bonaparte był przywódcą którego państwa?",
+    "correctAnswerId": "history-easy-napoleon-country-a",
+    "answers": [
+      {
+        "id": "history-easy-napoleon-country-a",
+        "text": "Francji"
+      },
+      {
+        "id": "history-easy-napoleon-country-b",
+        "text": "Niemiec"
+      },
+      {
+        "id": "history-easy-napoleon-country-c",
+        "text": "Hiszpanii"
+      },
+      {
+        "id": "history-easy-napoleon-country-d",
+        "text": "Rosji"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-first-world-war-start-year",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W którym roku wybuchła I wojna światowa?",
+    "correctAnswerId": "history-easy-first-world-war-start-year-a",
+    "answers": [
+      {
+        "id": "history-easy-first-world-war-start-year-a",
+        "text": "1914"
+      },
+      {
+        "id": "history-easy-first-world-war-start-year-b",
+        "text": "1918"
+      },
+      {
+        "id": "history-easy-first-world-war-start-year-c",
+        "text": "1939"
+      },
+      {
+        "id": "history-easy-first-world-war-start-year-d",
+        "text": "1905"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-mieszko-baptism-year",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W którym roku przyjęto chrzest Polski?",
+    "correctAnswerId": "history-easy-mieszko-baptism-year-a",
+    "answers": [
+      {
+        "id": "history-easy-mieszko-baptism-year-a",
+        "text": "966"
+      },
+      {
+        "id": "history-easy-mieszko-baptism-year-b",
+        "text": "1000"
+      },
+      {
+        "id": "history-easy-mieszko-baptism-year-c",
+        "text": "1025"
+      },
+      {
+        "id": "history-easy-mieszko-baptism-year-d",
+        "text": "1410"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-magna-carta-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakim kraju podpisano Wielką Kartę Swobód (Magna Carta)?",
+    "correctAnswerId": "history-easy-magna-carta-country-a",
+    "answers": [
+      {
+        "id": "history-easy-magna-carta-country-a",
+        "text": "Anglia"
+      },
+      {
+        "id": "history-easy-magna-carta-country-b",
+        "text": "Francja"
+      },
+      {
+        "id": "history-easy-magna-carta-country-c",
+        "text": "Szkocja"
+      },
+      {
+        "id": "history-easy-magna-carta-country-d",
+        "text": "Irlandia"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-caesar-title",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Juliusz Cezar był związany przede wszystkim z jakim państwem starożytnym?",
+    "correctAnswerId": "history-easy-caesar-title-a",
+    "answers": [
+      {
+        "id": "history-easy-caesar-title-a",
+        "text": "Rzymem"
+      },
+      {
+        "id": "history-easy-caesar-title-b",
+        "text": "Grecją"
+      },
+      {
+        "id": "history-easy-caesar-title-c",
+        "text": "Egiptem"
+      },
+      {
+        "id": "history-easy-caesar-title-d",
+        "text": "Persją"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-aztecs-continent",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Na którym kontynencie rozwinęła się cywilizacja Azteków?",
+    "correctAnswerId": "history-easy-aztecs-continent-a",
+    "answers": [
+      {
+        "id": "history-easy-aztecs-continent-a",
+        "text": "Ameryka Północna"
+      },
+      {
+        "id": "history-easy-aztecs-continent-b",
+        "text": "Europa"
+      },
+      {
+        "id": "history-easy-aztecs-continent-c",
+        "text": "Azja"
+      },
+      {
+        "id": "history-easy-aztecs-continent-d",
+        "text": "Afryka"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-china-wall-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakim kraju znajduje się Wielki Mur?",
+    "correctAnswerId": "history-easy-china-wall-country-a",
+    "answers": [
+      {
+        "id": "history-easy-china-wall-country-a",
+        "text": "Chiny"
+      },
+      {
+        "id": "history-easy-china-wall-country-b",
+        "text": "Japonia"
+      },
+      {
+        "id": "history-easy-china-wall-country-c",
+        "text": "Korea"
+      },
+      {
+        "id": "history-easy-china-wall-country-d",
+        "text": "Mongolia"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-lincoln-role",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Kim był Abraham Lincoln?",
+    "correctAnswerId": "history-easy-lincoln-role-a",
+    "answers": [
+      {
+        "id": "history-easy-lincoln-role-a",
+        "text": "Prezydentem USA"
+      },
+      {
+        "id": "history-easy-lincoln-role-b",
+        "text": "Królem Anglii"
+      },
+      {
+        "id": "history-easy-lincoln-role-c",
+        "text": "Carem Rosji"
+      },
+      {
+        "id": "history-easy-lincoln-role-d",
+        "text": "Papieżem"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-louis-xiv-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Ludwik XIV był królem którego państwa?",
+    "correctAnswerId": "history-easy-louis-xiv-country-a",
+    "answers": [
+      {
+        "id": "history-easy-louis-xiv-country-a",
+        "text": "Francji"
+      },
+      {
+        "id": "history-easy-louis-xiv-country-b",
+        "text": "Hiszpanii"
+      },
+      {
+        "id": "history-easy-louis-xiv-country-c",
+        "text": "Portugalii"
+      },
+      {
+        "id": "history-easy-louis-xiv-country-d",
+        "text": "Austrii"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-athens-civilization",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Ateny były ważnym miastem jakiej cywilizacji?",
+    "correctAnswerId": "history-easy-athens-civilization-a",
+    "answers": [
+      {
+        "id": "history-easy-athens-civilization-a",
+        "text": "Starożytnej Grecji"
+      },
+      {
+        "id": "history-easy-athens-civilization-b",
+        "text": "Starożytnego Egiptu"
+      },
+      {
+        "id": "history-easy-athens-civilization-c",
+        "text": "Starożytnego Rzymu"
+      },
+      {
+        "id": "history-easy-athens-civilization-d",
+        "text": "Fenicji"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-industrial-revolution-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakim kraju rozpoczęła się rewolucja przemysłowa?",
+    "correctAnswerId": "history-easy-industrial-revolution-country-a",
+    "answers": [
+      {
+        "id": "history-easy-industrial-revolution-country-a",
+        "text": "W Wielkiej Brytanii"
+      },
+      {
+        "id": "history-easy-industrial-revolution-country-b",
+        "text": "We Francji"
+      },
+      {
+        "id": "history-easy-industrial-revolution-country-c",
+        "text": "W Niemczech"
+      },
+      {
+        "id": "history-easy-industrial-revolution-country-d",
+        "text": "W USA"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-jagello-teutonic-battle",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W której bitwie zasłynął Władysław Jagiełło jako władca Polski?",
+    "correctAnswerId": "history-easy-jagello-teutonic-battle-a",
+    "answers": [
+      {
+        "id": "history-easy-jagello-teutonic-battle-a",
+        "text": "Pod Grunwaldem"
+      },
+      {
+        "id": "history-easy-jagello-teutonic-battle-b",
+        "text": "Pod Wiedniem"
+      },
+      {
+        "id": "history-easy-jagello-teutonic-battle-c",
+        "text": "Pod Cedynią"
+      },
+      {
+        "id": "history-easy-jagello-teutonic-battle-d",
+        "text": "Pod Legnicą"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-viking-region",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Z jakim regionem Europy kojarzeni są wikingowie?",
+    "correctAnswerId": "history-easy-viking-region-a",
+    "answers": [
+      {
+        "id": "history-easy-viking-region-a",
+        "text": "Skandynawią"
+      },
+      {
+        "id": "history-easy-viking-region-b",
+        "text": "Bałkanami"
+      },
+      {
+        "id": "history-easy-viking-region-c",
+        "text": "Półwyspem Iberyjskim"
+      },
+      {
+        "id": "history-easy-viking-region-d",
+        "text": "Wyspami Brytyjskimi"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-roman-numbers-system",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Z jakim starożytnym państwem kojarzy się system cyfr rzymskich?",
+    "correctAnswerId": "history-easy-roman-numbers-system-a",
+    "answers": [
+      {
+        "id": "history-easy-roman-numbers-system-a",
+        "text": "Rzymem"
+      },
+      {
+        "id": "history-easy-roman-numbers-system-b",
+        "text": "Egiptem"
+      },
+      {
+        "id": "history-easy-roman-numbers-system-c",
+        "text": "Persją"
+      },
+      {
+        "id": "history-easy-roman-numbers-system-d",
+        "text": "Babilonem"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-ussr-flag-color",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Jakiego koloru tło dominowało na fladze ZSRR?",
+    "correctAnswerId": "history-easy-ussr-flag-color-a",
+    "answers": [
+      {
+        "id": "history-easy-ussr-flag-color-a",
+        "text": "Czerwone"
+      },
+      {
+        "id": "history-easy-ussr-flag-color-b",
+        "text": "Niebieskie"
+      },
+      {
+        "id": "history-easy-ussr-flag-color-c",
+        "text": "Zielone"
+      },
+      {
+        "id": "history-easy-ussr-flag-color-d",
+        "text": "Białe"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-hiroshima-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakim kraju leży Hiroszima?",
+    "correctAnswerId": "history-easy-hiroshima-country-a",
+    "answers": [
+      {
+        "id": "history-easy-hiroshima-country-a",
+        "text": "Japonia"
+      },
+      {
+        "id": "history-easy-hiroshima-country-b",
+        "text": "Chiny"
+      },
+      {
+        "id": "history-easy-hiroshima-country-c",
+        "text": "Korea Południowa"
+      },
+      {
+        "id": "history-easy-hiroshima-country-d",
+        "text": "Wietnam"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-rome-fall-century",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W którym wieku upadło Cesarstwo Zachodniorzymskie?",
+    "correctAnswerId": "history-easy-rome-fall-century-a",
+    "answers": [
+      {
+        "id": "history-easy-rome-fall-century-a",
+        "text": "V wieku"
+      },
+      {
+        "id": "history-easy-rome-fall-century-b",
+        "text": "I wieku"
+      },
+      {
+        "id": "history-easy-rome-fall-century-c",
+        "text": "X wieku"
+      },
+      {
+        "id": "history-easy-rome-fall-century-d",
+        "text": "XV wieku"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-versailles-palace-country",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "W jakim kraju znajduje się pałac w Wersalu?",
+    "correctAnswerId": "history-easy-versailles-palace-country-a",
+    "answers": [
+      {
+        "id": "history-easy-versailles-palace-country-a",
+        "text": "Francja"
+      },
+      {
+        "id": "history-easy-versailles-palace-country-b",
+        "text": "Belgia"
+      },
+      {
+        "id": "history-easy-versailles-palace-country-c",
+        "text": "Austria"
+      },
+      {
+        "id": "history-easy-versailles-palace-country-d",
+        "text": "Włochy"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-gutenberg-invention",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Z jakim wynalazkiem kojarzony jest Jan Gutenberg?",
+    "correctAnswerId": "history-easy-gutenberg-invention-a",
+    "answers": [
+      {
+        "id": "history-easy-gutenberg-invention-a",
+        "text": "Drukiem"
+      },
+      {
+        "id": "history-easy-gutenberg-invention-b",
+        "text": "Kompasem"
+      },
+      {
+        "id": "history-easy-gutenberg-invention-c",
+        "text": "Teleskopem"
+      },
+      {
+        "id": "history-easy-gutenberg-invention-d",
+        "text": "Mikroskopem"
+      }
+    ]
+  },
+  {
+    "key": "history-easy-cold-war-rivals",
+    "categoryKey": "history",
+    "difficulty": "Easy",
+    "text": "Które dwa państwa były głównymi rywalami podczas zimnej wojny?",
+    "correctAnswerId": "history-easy-cold-war-rivals-a",
+    "answers": [
+      {
+        "id": "history-easy-cold-war-rivals-a",
+        "text": "USA i ZSRR"
+      },
+      {
+        "id": "history-easy-cold-war-rivals-b",
+        "text": "Francja i Anglia"
+      },
+      {
+        "id": "history-easy-cold-war-rivals-c",
+        "text": "Niemcy i Włochy"
+      },
+      {
+        "id": "history-easy-cold-war-rivals-d",
+        "text": "Hiszpania i Portugalia"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-pharaoh-title",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywano władców starożytnego Egiptu?",
+    "correctAnswerId": "history-easymedium-pharaoh-title-a",
+    "answers": [
+      {
+        "id": "history-easymedium-pharaoh-title-a",
+        "text": "Faraonami"
+      },
+      {
+        "id": "history-easymedium-pharaoh-title-b",
+        "text": "Cesarzami"
+      },
+      {
+        "id": "history-easymedium-pharaoh-title-c",
+        "text": "Chanami"
+      },
+      {
+        "id": "history-easymedium-pharaoh-title-d",
+        "text": "Sułtanami"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-sparta-region",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Sparta była ważnym polis w jakim kraju?",
+    "correctAnswerId": "history-easymedium-sparta-region-a",
+    "answers": [
+      {
+        "id": "history-easymedium-sparta-region-a",
+        "text": "Grecji"
+      },
+      {
+        "id": "history-easymedium-sparta-region-b",
+        "text": "Włoszech"
+      },
+      {
+        "id": "history-easymedium-sparta-region-c",
+        "text": "Egipcie"
+      },
+      {
+        "id": "history-easymedium-sparta-region-d",
+        "text": "Persji"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-fall-berlin-wall-year",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "W którym roku upadł mur berliński?",
+    "correctAnswerId": "history-easymedium-fall-berlin-wall-year-a",
+    "answers": [
+      {
+        "id": "history-easymedium-fall-berlin-wall-year-a",
+        "text": "1989"
+      },
+      {
+        "id": "history-easymedium-fall-berlin-wall-year-b",
+        "text": "1975"
+      },
+      {
+        "id": "history-easymedium-fall-berlin-wall-year-c",
+        "text": "1995"
+      },
+      {
+        "id": "history-easymedium-fall-berlin-wall-year-d",
+        "text": "1961"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-constantinople-modern-city",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jak obecnie nazywa się dawne Konstantynopol?",
+    "correctAnswerId": "history-easymedium-constantinople-modern-city-a",
+    "answers": [
+      {
+        "id": "history-easymedium-constantinople-modern-city-a",
+        "text": "Stambuł"
+      },
+      {
+        "id": "history-easymedium-constantinople-modern-city-b",
+        "text": "Ateny"
+      },
+      {
+        "id": "history-easymedium-constantinople-modern-city-c",
+        "text": "Sofia"
+      },
+      {
+        "id": "history-easymedium-constantinople-modern-city-d",
+        "text": "Izmir"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-normandy-landing-name",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywa się aliancka operacja desantowa w Normandii z 1944 roku?",
+    "correctAnswerId": "history-easymedium-normandy-landing-name-a",
+    "answers": [
+      {
+        "id": "history-easymedium-normandy-landing-name-a",
+        "text": "D-Day"
+      },
+      {
+        "id": "history-easymedium-normandy-landing-name-b",
+        "text": "Barbarossa"
+      },
+      {
+        "id": "history-easymedium-normandy-landing-name-c",
+        "text": "Market Garden"
+      },
+      {
+        "id": "history-easymedium-normandy-landing-name-d",
+        "text": "Torch"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-copernicus-theory",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Z jaką teorią kojarzony jest Mikołaj Kopernik?",
+    "correctAnswerId": "history-easymedium-copernicus-theory-a",
+    "answers": [
+      {
+        "id": "history-easymedium-copernicus-theory-a",
+        "text": "Heliocentryczną"
+      },
+      {
+        "id": "history-easymedium-copernicus-theory-b",
+        "text": "Geocentryczną"
+      },
+      {
+        "id": "history-easymedium-copernicus-theory-c",
+        "text": "Atomową"
+      },
+      {
+        "id": "history-easymedium-copernicus-theory-d",
+        "text": "Ewolucji"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-roman-road-latin",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jak po łacinie nazywano główną drogę łączącą Rzym z południem Italii, znaną jako Via Appia?",
+    "correctAnswerId": "history-easymedium-roman-road-latin-a",
+    "answers": [
+      {
+        "id": "history-easymedium-roman-road-latin-a",
+        "text": "Via Appia"
+      },
+      {
+        "id": "history-easymedium-roman-road-latin-b",
+        "text": "Via Roma"
+      },
+      {
+        "id": "history-easymedium-roman-road-latin-c",
+        "text": "Via Augusta"
+      },
+      {
+        "id": "history-easymedium-roman-road-latin-d",
+        "text": "Via Latina"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-american-civil-war-sides",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Kto walczył w wojnie secesyjnej w USA?",
+    "correctAnswerId": "history-easymedium-american-civil-war-sides-a",
+    "answers": [
+      {
+        "id": "history-easymedium-american-civil-war-sides-a",
+        "text": "Unia i Konfederacja"
+      },
+      {
+        "id": "history-easymedium-american-civil-war-sides-b",
+        "text": "USA i Kanada"
+      },
+      {
+        "id": "history-easymedium-american-civil-war-sides-c",
+        "text": "Północ i Meksyk"
+      },
+      {
+        "id": "history-easymedium-american-civil-war-sides-d",
+        "text": "Anglia i Francja"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-marathon-opponents",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Kogo pokonali Grecy w bitwie pod Maratonem?",
+    "correctAnswerId": "history-easymedium-marathon-opponents-a",
+    "answers": [
+      {
+        "id": "history-easymedium-marathon-opponents-a",
+        "text": "Persów"
+      },
+      {
+        "id": "history-easymedium-marathon-opponents-b",
+        "text": "Rzymian"
+      },
+      {
+        "id": "history-easymedium-marathon-opponents-c",
+        "text": "Egipcjan"
+      },
+      {
+        "id": "history-easymedium-marathon-opponents-d",
+        "text": "Macedończyków"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-czar-title-country",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Tytuł „car” był używany głównie przez władców którego państwa?",
+    "correctAnswerId": "history-easymedium-czar-title-country-a",
+    "answers": [
+      {
+        "id": "history-easymedium-czar-title-country-a",
+        "text": "Rosji"
+      },
+      {
+        "id": "history-easymedium-czar-title-country-b",
+        "text": "Francji"
+      },
+      {
+        "id": "history-easymedium-czar-title-country-c",
+        "text": "Chin"
+      },
+      {
+        "id": "history-easymedium-czar-title-country-d",
+        "text": "Turcji"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-bastille-country",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Zdobycie Bastylii miało miejsce w którym kraju?",
+    "correctAnswerId": "history-easymedium-bastille-country-a",
+    "answers": [
+      {
+        "id": "history-easymedium-bastille-country-a",
+        "text": "We Francji"
+      },
+      {
+        "id": "history-easymedium-bastille-country-b",
+        "text": "W Anglii"
+      },
+      {
+        "id": "history-easymedium-bastille-country-c",
+        "text": "W Austrii"
+      },
+      {
+        "id": "history-easymedium-bastille-country-d",
+        "text": "W Prusach"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-ottoman-capital",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Które miasto było stolicą Imperium Osmańskiego po 1453 roku?",
+    "correctAnswerId": "history-easymedium-ottoman-capital-a",
+    "answers": [
+      {
+        "id": "history-easymedium-ottoman-capital-a",
+        "text": "Konstantynopol"
+      },
+      {
+        "id": "history-easymedium-ottoman-capital-b",
+        "text": "Ankara"
+      },
+      {
+        "id": "history-easymedium-ottoman-capital-c",
+        "text": "Bursa"
+      },
+      {
+        "id": "history-easymedium-ottoman-capital-d",
+        "text": "Smyrna"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-vienna-relief-year",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "W którym roku miała miejsce odsiecz wiedeńska?",
+    "correctAnswerId": "history-easymedium-vienna-relief-year-a",
+    "answers": [
+      {
+        "id": "history-easymedium-vienna-relief-year-a",
+        "text": "1683"
+      },
+      {
+        "id": "history-easymedium-vienna-relief-year-b",
+        "text": "1410"
+      },
+      {
+        "id": "history-easymedium-vienna-relief-year-c",
+        "text": "1772"
+      },
+      {
+        "id": "history-easymedium-vienna-relief-year-d",
+        "text": "1812"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-jadwiga-title",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jaki tytuł nosiła Jadwiga Andegaweńska w Polsce?",
+    "correctAnswerId": "history-easymedium-jadwiga-title-a",
+    "answers": [
+      {
+        "id": "history-easymedium-jadwiga-title-a",
+        "text": "Król"
+      },
+      {
+        "id": "history-easymedium-jadwiga-title-b",
+        "text": "Księżna"
+      },
+      {
+        "id": "history-easymedium-jadwiga-title-c",
+        "text": "Cesarzowa"
+      },
+      {
+        "id": "history-easymedium-jadwiga-title-d",
+        "text": "Regentka"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-may-constitution-year",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "W którym roku uchwalono Konstytucję 3 maja?",
+    "correctAnswerId": "history-easymedium-may-constitution-year-a",
+    "answers": [
+      {
+        "id": "history-easymedium-may-constitution-year-a",
+        "text": "1791"
+      },
+      {
+        "id": "history-easymedium-may-constitution-year-b",
+        "text": "1776"
+      },
+      {
+        "id": "history-easymedium-may-constitution-year-c",
+        "text": "1815"
+      },
+      {
+        "id": "history-easymedium-may-constitution-year-d",
+        "text": "1918"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-columbus-route-goal",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Szukając drogi morskiej, Krzysztof Kolumb chciał dopłynąć przede wszystkim do…",
+    "correctAnswerId": "history-easymedium-columbus-route-goal-a",
+    "answers": [
+      {
+        "id": "history-easymedium-columbus-route-goal-a",
+        "text": "Indii"
+      },
+      {
+        "id": "history-easymedium-columbus-route-goal-b",
+        "text": "Australii"
+      },
+      {
+        "id": "history-easymedium-columbus-route-goal-c",
+        "text": "Antarktydy"
+      },
+      {
+        "id": "history-easymedium-columbus-route-goal-d",
+        "text": "Grenlandii"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-inca-region",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Na obszarze dzisiejszego którego kraju znajdowało się centrum państwa Inków?",
+    "correctAnswerId": "history-easymedium-inca-region-a",
+    "answers": [
+      {
+        "id": "history-easymedium-inca-region-a",
+        "text": "Peru"
+      },
+      {
+        "id": "history-easymedium-inca-region-b",
+        "text": "Brazylia"
+      },
+      {
+        "id": "history-easymedium-inca-region-c",
+        "text": "Argentyna"
+      },
+      {
+        "id": "history-easymedium-inca-region-d",
+        "text": "Meksyk"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-soviet-leader-ww2",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Kto stał na czele ZSRR podczas większej części II wojny światowej?",
+    "correctAnswerId": "history-easymedium-soviet-leader-ww2-a",
+    "answers": [
+      {
+        "id": "history-easymedium-soviet-leader-ww2-a",
+        "text": "Józef Stalin"
+      },
+      {
+        "id": "history-easymedium-soviet-leader-ww2-b",
+        "text": "Włodzimierz Lenin"
+      },
+      {
+        "id": "history-easymedium-soviet-leader-ww2-c",
+        "text": "Michał Gorbaczow"
+      },
+      {
+        "id": "history-easymedium-soviet-leader-ww2-d",
+        "text": "Nikita Chruszczow"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-rome-republic-before-empire",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jaki ustrój istniał w Rzymie przed cesarstwem?",
+    "correctAnswerId": "history-easymedium-rome-republic-before-empire-a",
+    "answers": [
+      {
+        "id": "history-easymedium-rome-republic-before-empire-a",
+        "text": "Republika"
+      },
+      {
+        "id": "history-easymedium-rome-republic-before-empire-b",
+        "text": "Monarchia absolutna"
+      },
+      {
+        "id": "history-easymedium-rome-republic-before-empire-c",
+        "text": "Teokracja"
+      },
+      {
+        "id": "history-easymedium-rome-republic-before-empire-d",
+        "text": "Federacja"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-leonardo-occupation",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Kim był Leonardo da Vinci?",
+    "correctAnswerId": "history-easymedium-leonardo-occupation-a",
+    "answers": [
+      {
+        "id": "history-easymedium-leonardo-occupation-a",
+        "text": "Artystą i wynalazcą"
+      },
+      {
+        "id": "history-easymedium-leonardo-occupation-b",
+        "text": "Dowódcą wojskowym"
+      },
+      {
+        "id": "history-easymedium-leonardo-occupation-c",
+        "text": "Papieżem"
+      },
+      {
+        "id": "history-easymedium-leonardo-occupation-d",
+        "text": "Królem"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-mongol-leader",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Kto stworzył wielkie imperium mongolskie?",
+    "correctAnswerId": "history-easymedium-mongol-leader-a",
+    "answers": [
+      {
+        "id": "history-easymedium-mongol-leader-a",
+        "text": "Czyngis-chan"
+      },
+      {
+        "id": "history-easymedium-mongol-leader-b",
+        "text": "Attyla"
+      },
+      {
+        "id": "history-easymedium-mongol-leader-c",
+        "text": "Temistokles"
+      },
+      {
+        "id": "history-easymedium-mongol-leader-d",
+        "text": "Tamerlan"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-iron-curtain-term",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jak nazywano polityczny podział Europy po II wojnie światowej?",
+    "correctAnswerId": "history-easymedium-iron-curtain-term-a",
+    "answers": [
+      {
+        "id": "history-easymedium-iron-curtain-term-a",
+        "text": "Żelazna kurtyna"
+      },
+      {
+        "id": "history-easymedium-iron-curtain-term-b",
+        "text": "Jedwabny szlak"
+      },
+      {
+        "id": "history-easymedium-iron-curtain-term-c",
+        "text": "Trójprzymierze"
+      },
+      {
+        "id": "history-easymedium-iron-curtain-term-d",
+        "text": "Święte Przymierze"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-punic-wars-opponent",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Z kim Rzym toczył wojny punickie?",
+    "correctAnswerId": "history-easymedium-punic-wars-opponent-a",
+    "answers": [
+      {
+        "id": "history-easymedium-punic-wars-opponent-a",
+        "text": "Z Kartaginą"
+      },
+      {
+        "id": "history-easymedium-punic-wars-opponent-b",
+        "text": "Z Egiptem"
+      },
+      {
+        "id": "history-easymedium-punic-wars-opponent-c",
+        "text": "Z Persją"
+      },
+      {
+        "id": "history-easymedium-punic-wars-opponent-d",
+        "text": "Z Macedonią"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-first-man-space",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Kto był pierwszym człowiekiem w kosmosie?",
+    "correctAnswerId": "history-easymedium-first-man-space-a",
+    "answers": [
+      {
+        "id": "history-easymedium-first-man-space-a",
+        "text": "Jurij Gagarin"
+      },
+      {
+        "id": "history-easymedium-first-man-space-b",
+        "text": "Neil Armstrong"
+      },
+      {
+        "id": "history-easymedium-first-man-space-c",
+        "text": "Alan Shepard"
+      },
+      {
+        "id": "history-easymedium-first-man-space-d",
+        "text": "John Glenn"
+      }
+    ]
+  },
+  {
+    "key": "history-easymedium-ww1-trigger-event",
+    "categoryKey": "history",
+    "difficulty": "EasyMedium",
+    "text": "Jakie wydarzenie uznaje się za bezpośrednią przyczynę wybuchu I wojny światowej?",
+    "correctAnswerId": "history-easymedium-ww1-trigger-event-a",
+    "answers": [
+      {
+        "id": "history-easymedium-ww1-trigger-event-a",
+        "text": "Zamach w Sarajewie"
+      },
+      {
+        "id": "history-easymedium-ww1-trigger-event-b",
+        "text": "Atak na Pearl Harbor"
+      },
+      {
+        "id": "history-easymedium-ww1-trigger-event-c",
+        "text": "Rewolucję październikową"
+      },
+      {
+        "id": "history-easymedium-ww1-trigger-event-d",
+        "text": "Kryzys kubański"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-renaissance-origin",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Renesans rozpoczął się na terenie dzisiejszego którego państwa?",
+    "correctAnswerId": "history-medium-renaissance-origin-a",
+    "answers": [
+      {
+        "id": "history-medium-renaissance-origin-a",
+        "text": "Włoch"
+      },
+      {
+        "id": "history-medium-renaissance-origin-b",
+        "text": "Francji"
+      },
+      {
+        "id": "history-medium-renaissance-origin-c",
+        "text": "Hiszpanii"
+      },
+      {
+        "id": "history-medium-renaissance-origin-d",
+        "text": "Niemiec"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-napoleon-first-exile",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Na którą wyspę zesłano Napoleona po raz pierwszy w 1814 roku?",
+    "correctAnswerId": "history-medium-napoleon-first-exile-a",
+    "answers": [
+      {
+        "id": "history-medium-napoleon-first-exile-a",
+        "text": "Elbę"
+      },
+      {
+        "id": "history-medium-napoleon-first-exile-b",
+        "text": "Korsykę"
+      },
+      {
+        "id": "history-medium-napoleon-first-exile-c",
+        "text": "Sycylię"
+      },
+      {
+        "id": "history-medium-napoleon-first-exile-d",
+        "text": "Maltę"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-magna-carta-date-century",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym wieku podpisano Magna Carta?",
+    "correctAnswerId": "history-medium-magna-carta-date-century-a",
+    "answers": [
+      {
+        "id": "history-medium-magna-carta-date-century-a",
+        "text": "XIII"
+      },
+      {
+        "id": "history-medium-magna-carta-date-century-b",
+        "text": "XI"
+      },
+      {
+        "id": "history-medium-magna-carta-date-century-c",
+        "text": "XV"
+      },
+      {
+        "id": "history-medium-magna-carta-date-century-d",
+        "text": "XVII"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-western-rome-last-emperor",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Jak nazywał się ostatni cesarz zachodniorzymski?",
+    "correctAnswerId": "history-medium-western-rome-last-emperor-a",
+    "answers": [
+      {
+        "id": "history-medium-western-rome-last-emperor-a",
+        "text": "Romulus Augustulus"
+      },
+      {
+        "id": "history-medium-western-rome-last-emperor-b",
+        "text": "Justynian"
+      },
+      {
+        "id": "history-medium-western-rome-last-emperor-c",
+        "text": "Neron"
+      },
+      {
+        "id": "history-medium-western-rome-last-emperor-d",
+        "text": "Trajan"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-byzantium-fall-year",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym roku upadł Konstantynopol?",
+    "correctAnswerId": "history-medium-byzantium-fall-year-a",
+    "answers": [
+      {
+        "id": "history-medium-byzantium-fall-year-a",
+        "text": "1453"
+      },
+      {
+        "id": "history-medium-byzantium-fall-year-b",
+        "text": "1492"
+      },
+      {
+        "id": "history-medium-byzantium-fall-year-c",
+        "text": "1410"
+      },
+      {
+        "id": "history-medium-byzantium-fall-year-d",
+        "text": "1521"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-hundred-years-war-countries",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Między jakimi państwami toczyła się wojna stuletnia?",
+    "correctAnswerId": "history-medium-hundred-years-war-countries-a",
+    "answers": [
+      {
+        "id": "history-medium-hundred-years-war-countries-a",
+        "text": "Anglią i Francją"
+      },
+      {
+        "id": "history-medium-hundred-years-war-countries-b",
+        "text": "Hiszpanią i Portugalią"
+      },
+      {
+        "id": "history-medium-hundred-years-war-countries-c",
+        "text": "Prusami i Austrią"
+      },
+      {
+        "id": "history-medium-hundred-years-war-countries-d",
+        "text": "Rosją i Szwecją"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-julius-caesar-death-place",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Gdzie został zamordowany Juliusz Cezar?",
+    "correctAnswerId": "history-medium-julius-caesar-death-place-a",
+    "answers": [
+      {
+        "id": "history-medium-julius-caesar-death-place-a",
+        "text": "W Rzymie"
+      },
+      {
+        "id": "history-medium-julius-caesar-death-place-b",
+        "text": "W Aleksandrii"
+      },
+      {
+        "id": "history-medium-julius-caesar-death-place-c",
+        "text": "W Atenach"
+      },
+      {
+        "id": "history-medium-julius-caesar-death-place-d",
+        "text": "W Kartaginie"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-reformation-figure",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Kto jest uznawany za symbolicznego inicjatora reformacji w 1517 roku?",
+    "correctAnswerId": "history-medium-reformation-figure-a",
+    "answers": [
+      {
+        "id": "history-medium-reformation-figure-a",
+        "text": "Marcin Luter"
+      },
+      {
+        "id": "history-medium-reformation-figure-b",
+        "text": "Jan Kalwin"
+      },
+      {
+        "id": "history-medium-reformation-figure-c",
+        "text": "Ulrich Zwingli"
+      },
+      {
+        "id": "history-medium-reformation-figure-d",
+        "text": "Erazm z Rotterdamu"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-usa-constitution-century",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym wieku uchwalono konstytucję Stanów Zjednoczonych?",
+    "correctAnswerId": "history-medium-usa-constitution-century-a",
+    "answers": [
+      {
+        "id": "history-medium-usa-constitution-century-a",
+        "text": "XVIII"
+      },
+      {
+        "id": "history-medium-usa-constitution-century-b",
+        "text": "XVII"
+      },
+      {
+        "id": "history-medium-usa-constitution-century-c",
+        "text": "XIX"
+      },
+      {
+        "id": "history-medium-usa-constitution-century-d",
+        "text": "XX"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-congress-vienna-purpose",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Jakim głównym celem kierował się kongres wiedeński?",
+    "correctAnswerId": "history-medium-congress-vienna-purpose-a",
+    "answers": [
+      {
+        "id": "history-medium-congress-vienna-purpose-a",
+        "text": "Przywróceniem równowagi w Europie po wojnach napoleońskich"
+      },
+      {
+        "id": "history-medium-congress-vienna-purpose-b",
+        "text": "Utworzeniem NATO"
+      },
+      {
+        "id": "history-medium-congress-vienna-purpose-c",
+        "text": "Likwidacją monarchii"
+      },
+      {
+        "id": "history-medium-congress-vienna-purpose-d",
+        "text": "Połączeniem Niemiec"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-janissaries-empire",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Janczarzy byli elitarną formacją wojskową którego imperium?",
+    "correctAnswerId": "history-medium-janissaries-empire-a",
+    "answers": [
+      {
+        "id": "history-medium-janissaries-empire-a",
+        "text": "Osmańskiego"
+      },
+      {
+        "id": "history-medium-janissaries-empire-b",
+        "text": "Rzymskiego"
+      },
+      {
+        "id": "history-medium-janissaries-empire-c",
+        "text": "Mongolskiego"
+      },
+      {
+        "id": "history-medium-janissaries-empire-d",
+        "text": "Brytyjskiego"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-frankish-ruler-crowned-800",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Który władca został koronowany na cesarza w 800 roku?",
+    "correctAnswerId": "history-medium-frankish-ruler-crowned-800-a",
+    "answers": [
+      {
+        "id": "history-medium-frankish-ruler-crowned-800-a",
+        "text": "Karol Wielki"
+      },
+      {
+        "id": "history-medium-frankish-ruler-crowned-800-b",
+        "text": "Otton I"
+      },
+      {
+        "id": "history-medium-frankish-ruler-crowned-800-c",
+        "text": "Pepin Krótki"
+      },
+      {
+        "id": "history-medium-frankish-ruler-crowned-800-d",
+        "text": "Ludwik Pobożny"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-romanov-dynasty-country",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Dynastia Romanowów rządziła którym krajem?",
+    "correctAnswerId": "history-medium-romanov-dynasty-country-a",
+    "answers": [
+      {
+        "id": "history-medium-romanov-dynasty-country-a",
+        "text": "Rosją"
+      },
+      {
+        "id": "history-medium-romanov-dynasty-country-b",
+        "text": "Francją"
+      },
+      {
+        "id": "history-medium-romanov-dynasty-country-c",
+        "text": "Hiszpanią"
+      },
+      {
+        "id": "history-medium-romanov-dynasty-country-d",
+        "text": "Węgrami"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-seven-years-war-century",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym wieku toczyła się wojna siedmioletnia?",
+    "correctAnswerId": "history-medium-seven-years-war-century-a",
+    "answers": [
+      {
+        "id": "history-medium-seven-years-war-century-a",
+        "text": "XVIII"
+      },
+      {
+        "id": "history-medium-seven-years-war-century-b",
+        "text": "XVI"
+      },
+      {
+        "id": "history-medium-seven-years-war-century-c",
+        "text": "XIX"
+      },
+      {
+        "id": "history-medium-seven-years-war-century-d",
+        "text": "XX"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-mayan-writing",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Jakim rodzajem pisma posługiwali się Majowie?",
+    "correctAnswerId": "history-medium-mayan-writing-a",
+    "answers": [
+      {
+        "id": "history-medium-mayan-writing-a",
+        "text": "Pismem hieroglificznym"
+      },
+      {
+        "id": "history-medium-mayan-writing-b",
+        "text": "Alfabetem łacińskim"
+      },
+      {
+        "id": "history-medium-mayan-writing-c",
+        "text": "Runami"
+      },
+      {
+        "id": "history-medium-mayan-writing-d",
+        "text": "Pismem klinowym"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-battle-hastings-year",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym roku rozegrała się bitwa pod Hastings?",
+    "correctAnswerId": "history-medium-battle-hastings-year-a",
+    "answers": [
+      {
+        "id": "history-medium-battle-hastings-year-a",
+        "text": "1066"
+      },
+      {
+        "id": "history-medium-battle-hastings-year-b",
+        "text": "1215"
+      },
+      {
+        "id": "history-medium-battle-hastings-year-c",
+        "text": "1415"
+      },
+      {
+        "id": "history-medium-battle-hastings-year-d",
+        "text": "1588"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-black-death-century",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym wieku Europa została spustoszona przez czarną śmierć?",
+    "correctAnswerId": "history-medium-black-death-century-a",
+    "answers": [
+      {
+        "id": "history-medium-black-death-century-a",
+        "text": "XIV"
+      },
+      {
+        "id": "history-medium-black-death-century-b",
+        "text": "XII"
+      },
+      {
+        "id": "history-medium-black-death-century-c",
+        "text": "XVI"
+      },
+      {
+        "id": "history-medium-black-death-century-d",
+        "text": "XVIII"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-poland-union-lublin-year",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym roku zawarto unię lubelską?",
+    "correctAnswerId": "history-medium-poland-union-lublin-year-a",
+    "answers": [
+      {
+        "id": "history-medium-poland-union-lublin-year-a",
+        "text": "1569"
+      },
+      {
+        "id": "history-medium-poland-union-lublin-year-b",
+        "text": "1410"
+      },
+      {
+        "id": "history-medium-poland-union-lublin-year-c",
+        "text": "1492"
+      },
+      {
+        "id": "history-medium-poland-union-lublin-year-d",
+        "text": "1655"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-partitions-count",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Ile było rozbiorów Polski?",
+    "correctAnswerId": "history-medium-partitions-count-a",
+    "answers": [
+      {
+        "id": "history-medium-partitions-count-a",
+        "text": "Trzy"
+      },
+      {
+        "id": "history-medium-partitions-count-b",
+        "text": "Dwa"
+      },
+      {
+        "id": "history-medium-partitions-count-c",
+        "text": "Cztery"
+      },
+      {
+        "id": "history-medium-partitions-count-d",
+        "text": "Pięć"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-ussr-collapse-year",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym roku rozpadł się Związek Radziecki?",
+    "correctAnswerId": "history-medium-ussr-collapse-year-a",
+    "answers": [
+      {
+        "id": "history-medium-ussr-collapse-year-a",
+        "text": "1991"
+      },
+      {
+        "id": "history-medium-ussr-collapse-year-b",
+        "text": "1985"
+      },
+      {
+        "id": "history-medium-ussr-collapse-year-c",
+        "text": "1979"
+      },
+      {
+        "id": "history-medium-ussr-collapse-year-d",
+        "text": "2001"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-meiji-country",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Reformy Meiji miały miejsce w którym kraju?",
+    "correctAnswerId": "history-medium-meiji-country-a",
+    "answers": [
+      {
+        "id": "history-medium-meiji-country-a",
+        "text": "Japonii"
+      },
+      {
+        "id": "history-medium-meiji-country-b",
+        "text": "Chinach"
+      },
+      {
+        "id": "history-medium-meiji-country-c",
+        "text": "Korei"
+      },
+      {
+        "id": "history-medium-meiji-country-d",
+        "text": "Indiach"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-carthage-location-continent",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Na którym kontynencie leżała Kartagina?",
+    "correctAnswerId": "history-medium-carthage-location-continent-a",
+    "answers": [
+      {
+        "id": "history-medium-carthage-location-continent-a",
+        "text": "Afryce"
+      },
+      {
+        "id": "history-medium-carthage-location-continent-b",
+        "text": "Europie"
+      },
+      {
+        "id": "history-medium-carthage-location-continent-c",
+        "text": "Azji"
+      },
+      {
+        "id": "history-medium-carthage-location-continent-d",
+        "text": "Ameryce"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-hannibal-crossed",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Jakie góry przekroczył Hannibal, atakując Italię?",
+    "correctAnswerId": "history-medium-hannibal-crossed-a",
+    "answers": [
+      {
+        "id": "history-medium-hannibal-crossed-a",
+        "text": "Alpy"
+      },
+      {
+        "id": "history-medium-hannibal-crossed-b",
+        "text": "Pireneje"
+      },
+      {
+        "id": "history-medium-hannibal-crossed-c",
+        "text": "Karpaty"
+      },
+      {
+        "id": "history-medium-hannibal-crossed-d",
+        "text": "Apeniny"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-english-defeat-armada",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Jak nazywała się słynna flota pokonana przez Anglię w 1588 roku?",
+    "correctAnswerId": "history-medium-english-defeat-armada-a",
+    "answers": [
+      {
+        "id": "history-medium-english-defeat-armada-a",
+        "text": "Wielka Armada"
+      },
+      {
+        "id": "history-medium-english-defeat-armada-b",
+        "text": "Święta Liga"
+      },
+      {
+        "id": "history-medium-english-defeat-armada-c",
+        "text": "Złota Flota"
+      },
+      {
+        "id": "history-medium-english-defeat-armada-d",
+        "text": "Biała Eskadra"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-who-painted-last-supper",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Kto namalował „Ostatnią Wieczerzę”?",
+    "correctAnswerId": "history-medium-who-painted-last-supper-a",
+    "answers": [
+      {
+        "id": "history-medium-who-painted-last-supper-a",
+        "text": "Leonardo da Vinci"
+      },
+      {
+        "id": "history-medium-who-painted-last-supper-b",
+        "text": "Michał Anioł"
+      },
+      {
+        "id": "history-medium-who-painted-last-supper-c",
+        "text": "Rafael"
+      },
+      {
+        "id": "history-medium-who-painted-last-supper-d",
+        "text": "Tycjan"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-tehran-conference-leaders",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Który z tych przywódców brał udział w konferencji teherańskiej?",
+    "correctAnswerId": "history-medium-tehran-conference-leaders-a",
+    "answers": [
+      {
+        "id": "history-medium-tehran-conference-leaders-a",
+        "text": "Winston Churchill"
+      },
+      {
+        "id": "history-medium-tehran-conference-leaders-b",
+        "text": "Benito Mussolini"
+      },
+      {
+        "id": "history-medium-tehran-conference-leaders-c",
+        "text": "Francisco Franco"
+      },
+      {
+        "id": "history-medium-tehran-conference-leaders-d",
+        "text": "Charles de Gaulle"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-prussian-state-rise-century",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym wieku Prusy stały się ważną potęgą europejską?",
+    "correctAnswerId": "history-medium-prussian-state-rise-century-a",
+    "answers": [
+      {
+        "id": "history-medium-prussian-state-rise-century-a",
+        "text": "XVIII"
+      },
+      {
+        "id": "history-medium-prussian-state-rise-century-b",
+        "text": "XIV"
+      },
+      {
+        "id": "history-medium-prussian-state-rise-century-c",
+        "text": "XVI"
+      },
+      {
+        "id": "history-medium-prussian-state-rise-century-d",
+        "text": "XX"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-silk-road-purpose",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Czemu służył Jedwabny Szlak?",
+    "correctAnswerId": "history-medium-silk-road-purpose-a",
+    "answers": [
+      {
+        "id": "history-medium-silk-road-purpose-a",
+        "text": "Handlowi między Wschodem a Zachodem"
+      },
+      {
+        "id": "history-medium-silk-road-purpose-b",
+        "text": "Migracji do Ameryki"
+      },
+      {
+        "id": "history-medium-silk-road-purpose-c",
+        "text": "Rozprzestrzenianiu feudalizmu"
+      },
+      {
+        "id": "history-medium-silk-road-purpose-d",
+        "text": "Podbojom morskim"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-ancient-athens-democracy",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Jak nazywał się ustrój rozwijany w starożytnych Atenach?",
+    "correctAnswerId": "history-medium-ancient-athens-democracy-a",
+    "answers": [
+      {
+        "id": "history-medium-ancient-athens-democracy-a",
+        "text": "Demokracja"
+      },
+      {
+        "id": "history-medium-ancient-athens-democracy-b",
+        "text": "Absolutyzm"
+      },
+      {
+        "id": "history-medium-ancient-athens-democracy-c",
+        "text": "Feudalizm"
+      },
+      {
+        "id": "history-medium-ancient-athens-democracy-d",
+        "text": "Autokracja"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-suez-canal-century",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W którym wieku otwarto Kanał Sueski?",
+    "correctAnswerId": "history-medium-suez-canal-century-a",
+    "answers": [
+      {
+        "id": "history-medium-suez-canal-century-a",
+        "text": "XIX"
+      },
+      {
+        "id": "history-medium-suez-canal-century-b",
+        "text": "XVII"
+      },
+      {
+        "id": "history-medium-suez-canal-century-c",
+        "text": "XVIII"
+      },
+      {
+        "id": "history-medium-suez-canal-century-d",
+        "text": "XXI"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-revolution-october-country",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "W jakim państwie doszło do rewolucji październikowej?",
+    "correctAnswerId": "history-medium-revolution-october-country-a",
+    "answers": [
+      {
+        "id": "history-medium-revolution-october-country-a",
+        "text": "W Rosji"
+      },
+      {
+        "id": "history-medium-revolution-october-country-b",
+        "text": "W Niemczech"
+      },
+      {
+        "id": "history-medium-revolution-october-country-c",
+        "text": "We Francji"
+      },
+      {
+        "id": "history-medium-revolution-october-country-d",
+        "text": "W Chinach"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-bismarck-country",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Otto von Bismarck był kanclerzem którego państwa?",
+    "correctAnswerId": "history-medium-bismarck-country-a",
+    "answers": [
+      {
+        "id": "history-medium-bismarck-country-a",
+        "text": "Niemiec"
+      },
+      {
+        "id": "history-medium-bismarck-country-b",
+        "text": "Austrii"
+      },
+      {
+        "id": "history-medium-bismarck-country-c",
+        "text": "Rosji"
+      },
+      {
+        "id": "history-medium-bismarck-country-d",
+        "text": "Francji"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-pearl-harbor-country",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Na flotę którego państwa przeprowadzono atak na Pearl Harbor?",
+    "correctAnswerId": "history-medium-pearl-harbor-country-a",
+    "answers": [
+      {
+        "id": "history-medium-pearl-harbor-country-a",
+        "text": "Stanów Zjednoczonych"
+      },
+      {
+        "id": "history-medium-pearl-harbor-country-b",
+        "text": "Wielkiej Brytanii"
+      },
+      {
+        "id": "history-medium-pearl-harbor-country-c",
+        "text": "Australii"
+      },
+      {
+        "id": "history-medium-pearl-harbor-country-d",
+        "text": "Kanady"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-holy-land-crusades",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Dokąd zmierzali uczestnicy pierwszych krucjat?",
+    "correctAnswerId": "history-medium-holy-land-crusades-a",
+    "answers": [
+      {
+        "id": "history-medium-holy-land-crusades-a",
+        "text": "Do Ziemi Świętej"
+      },
+      {
+        "id": "history-medium-holy-land-crusades-b",
+        "text": "Do Indii"
+      },
+      {
+        "id": "history-medium-holy-land-crusades-c",
+        "text": "Do Skandynawii"
+      },
+      {
+        "id": "history-medium-holy-land-crusades-d",
+        "text": "Do Afryki Północnej"
+      }
+    ]
+  },
+  {
+    "key": "history-medium-fall-bastille-date",
+    "categoryKey": "history",
+    "difficulty": "Medium",
+    "text": "Który dzień jest francuskim świętem narodowym, upamiętniającym zdobycie Bastylii?",
+    "correctAnswerId": "history-medium-fall-bastille-date-a",
+    "answers": [
+      {
+        "id": "history-medium-fall-bastille-date-a",
+        "text": "14 lipca"
+      },
+      {
+        "id": "history-medium-fall-bastille-date-b",
+        "text": "4 lipca"
+      },
+      {
+        "id": "history-medium-fall-bastille-date-c",
+        "text": "11 listopada"
+      },
+      {
+        "id": "history-medium-fall-bastille-date-d",
+        "text": "1 maja"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-westphalia-war",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Pokój westfalski zakończył którą wojnę?",
+    "correctAnswerId": "history-mediumhard-westphalia-war-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-westphalia-war-a",
+        "text": "Wojnę trzydziestoletnią"
+      },
+      {
+        "id": "history-mediumhard-westphalia-war-b",
+        "text": "Wojnę stuletnią"
+      },
+      {
+        "id": "history-mediumhard-westphalia-war-c",
+        "text": "Wojnę siedmioletnią"
+      },
+      {
+        "id": "history-mediumhard-westphalia-war-d",
+        "text": "Wojnę krymską"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-nicaea-council-century",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "W którym wieku odbył się sobór nicejski?",
+    "correctAnswerId": "history-mediumhard-nicaea-council-century-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-nicaea-council-century-a",
+        "text": "IV"
+      },
+      {
+        "id": "history-mediumhard-nicaea-council-century-b",
+        "text": "I"
+      },
+      {
+        "id": "history-mediumhard-nicaea-council-century-c",
+        "text": "VIII"
+      },
+      {
+        "id": "history-mediumhard-nicaea-council-century-d",
+        "text": "XII"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-ottoman-defeat-vienna",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Kto dowodził wojskami, które odegrały kluczową rolę w odsieczy wiedeńskiej?",
+    "correctAnswerId": "history-mediumhard-ottoman-defeat-vienna-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-ottoman-defeat-vienna-a",
+        "text": "Jan III Sobieski"
+      },
+      {
+        "id": "history-mediumhard-ottoman-defeat-vienna-b",
+        "text": "Stefan Batory"
+      },
+      {
+        "id": "history-mediumhard-ottoman-defeat-vienna-c",
+        "text": "Mieszko I"
+      },
+      {
+        "id": "history-mediumhard-ottoman-defeat-vienna-d",
+        "text": "Tadeusz Kościuszko"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-catherine-country",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Katarzyna Wielka była władczynią którego państwa?",
+    "correctAnswerId": "history-mediumhard-catherine-country-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-catherine-country-a",
+        "text": "Rosji"
+      },
+      {
+        "id": "history-mediumhard-catherine-country-b",
+        "text": "Prus"
+      },
+      {
+        "id": "history-mediumhard-catherine-country-c",
+        "text": "Francji"
+      },
+      {
+        "id": "history-mediumhard-catherine-country-d",
+        "text": "Szwecji"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-dynasty-tudors-country",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Dynastia Tudorów panowała w którym kraju?",
+    "correctAnswerId": "history-mediumhard-dynasty-tudors-country-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-dynasty-tudors-country-a",
+        "text": "Anglii"
+      },
+      {
+        "id": "history-mediumhard-dynasty-tudors-country-b",
+        "text": "Hiszpanii"
+      },
+      {
+        "id": "history-mediumhard-dynasty-tudors-country-c",
+        "text": "Rosji"
+      },
+      {
+        "id": "history-mediumhard-dynasty-tudors-country-d",
+        "text": "Portugalii"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-opium-wars-country",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Wojny opiumowe toczyły się głównie na terytorium którego państwa?",
+    "correctAnswerId": "history-mediumhard-opium-wars-country-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-opium-wars-country-a",
+        "text": "Chin"
+      },
+      {
+        "id": "history-mediumhard-opium-wars-country-b",
+        "text": "Indii"
+      },
+      {
+        "id": "history-mediumhard-opium-wars-country-c",
+        "text": "Japonii"
+      },
+      {
+        "id": "history-mediumhard-opium-wars-country-d",
+        "text": "Wietnamu"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-diocletian-reform-empire",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Dioklecjan reformował które cesarstwo?",
+    "correctAnswerId": "history-mediumhard-diocletian-reform-empire-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-diocletian-reform-empire-a",
+        "text": "Rzymskie"
+      },
+      {
+        "id": "history-mediumhard-diocletian-reform-empire-b",
+        "text": "Bizantyjskie"
+      },
+      {
+        "id": "history-mediumhard-diocletian-reform-empire-c",
+        "text": "Perskie"
+      },
+      {
+        "id": "history-mediumhard-diocletian-reform-empire-d",
+        "text": "Mongolskie"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-council-trent-response",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Sobór trydencki był odpowiedzią Kościoła katolickiego na…",
+    "correctAnswerId": "history-mediumhard-council-trent-response-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-council-trent-response-a",
+        "text": "Reformację"
+      },
+      {
+        "id": "history-mediumhard-council-trent-response-b",
+        "text": "Schizmę wschodnią"
+      },
+      {
+        "id": "history-mediumhard-council-trent-response-c",
+        "text": "Renesans"
+      },
+      {
+        "id": "history-mediumhard-council-trent-response-d",
+        "text": "Krucjaty"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-boston-tea-port",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "W jakim mieście doszło do „Boston Tea Party”?",
+    "correctAnswerId": "history-mediumhard-boston-tea-port-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-boston-tea-port-a",
+        "text": "Bostonie"
+      },
+      {
+        "id": "history-mediumhard-boston-tea-port-b",
+        "text": "Nowym Jorku"
+      },
+      {
+        "id": "history-mediumhard-boston-tea-port-c",
+        "text": "Filadelfii"
+      },
+      {
+        "id": "history-mediumhard-boston-tea-port-d",
+        "text": "Waszyngtonie"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-franco-prussian-result",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Jaki był ważny skutek wojny francusko-pruskiej z lat 1870–1871?",
+    "correctAnswerId": "history-mediumhard-franco-prussian-result-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-franco-prussian-result-a",
+        "text": "Zjednoczenie Niemiec"
+      },
+      {
+        "id": "history-mediumhard-franco-prussian-result-b",
+        "text": "Rozpad Austro-Węgier"
+      },
+      {
+        "id": "history-mediumhard-franco-prussian-result-c",
+        "text": "Powstanie NATO"
+      },
+      {
+        "id": "history-mediumhard-franco-prussian-result-d",
+        "text": "Upadek ZSRR"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-julius-crossed-river",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Jaką rzekę przekroczył Juliusz Cezar, rozpoczynając wojnę domową?",
+    "correctAnswerId": "history-mediumhard-julius-crossed-river-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-julius-crossed-river-a",
+        "text": "Rubikon"
+      },
+      {
+        "id": "history-mediumhard-julius-crossed-river-b",
+        "text": "Tyber"
+      },
+      {
+        "id": "history-mediumhard-julius-crossed-river-c",
+        "text": "Ren"
+      },
+      {
+        "id": "history-mediumhard-julius-crossed-river-d",
+        "text": "Dunaj"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-akbar-empire",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Akbar Wielki był władcą którego imperium?",
+    "correctAnswerId": "history-mediumhard-akbar-empire-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-akbar-empire-a",
+        "text": "Mogołów"
+      },
+      {
+        "id": "history-mediumhard-akbar-empire-b",
+        "text": "Osmańskiego"
+      },
+      {
+        "id": "history-mediumhard-akbar-empire-c",
+        "text": "Brytyjskiego"
+      },
+      {
+        "id": "history-mediumhard-akbar-empire-d",
+        "text": "Perskiego"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-charter-un-medieval",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywało się zgromadzenie szlachty i duchowieństwa we Francji przed rewolucją?",
+    "correctAnswerId": "history-mediumhard-charter-un-medieval-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-charter-un-medieval-a",
+        "text": "Stany Generalne"
+      },
+      {
+        "id": "history-mediumhard-charter-un-medieval-b",
+        "text": "Duma Państwowa"
+      },
+      {
+        "id": "history-mediumhard-charter-un-medieval-c",
+        "text": "Sejm Walny"
+      },
+      {
+        "id": "history-mediumhard-charter-un-medieval-d",
+        "text": "Parlament Długi"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-battle-lepanto-opponents",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Bitwa pod Lepanto była starciem floty chrześcijańskiej z…",
+    "correctAnswerId": "history-mediumhard-battle-lepanto-opponents-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-battle-lepanto-opponents-a",
+        "text": "Imperium Osmańskim"
+      },
+      {
+        "id": "history-mediumhard-battle-lepanto-opponents-b",
+        "text": "Anglią"
+      },
+      {
+        "id": "history-mediumhard-battle-lepanto-opponents-c",
+        "text": "Francją"
+      },
+      {
+        "id": "history-mediumhard-battle-lepanto-opponents-d",
+        "text": "Wenecją"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-cromwell-role",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Kim był Oliver Cromwell?",
+    "correctAnswerId": "history-mediumhard-cromwell-role-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-cromwell-role-a",
+        "text": "Przywódcą republikańskiej Anglii"
+      },
+      {
+        "id": "history-mediumhard-cromwell-role-b",
+        "text": "Królem Francji"
+      },
+      {
+        "id": "history-mediumhard-cromwell-role-c",
+        "text": "Carem Rosji"
+      },
+      {
+        "id": "history-mediumhard-cromwell-role-d",
+        "text": "Papieżem"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-safavid-state-region",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Dynastia Safawidów rządziła głównie na obszarze dzisiejszego…",
+    "correctAnswerId": "history-mediumhard-safavid-state-region-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-safavid-state-region-a",
+        "text": "Iranu"
+      },
+      {
+        "id": "history-mediumhard-safavid-state-region-b",
+        "text": "Iraku"
+      },
+      {
+        "id": "history-mediumhard-safavid-state-region-c",
+        "text": "Turcji"
+      },
+      {
+        "id": "history-mediumhard-safavid-state-region-d",
+        "text": "Syrii"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-magna-graecia-meaning",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Czym była Magna Graecia w starożytności?",
+    "correctAnswerId": "history-mediumhard-magna-graecia-meaning-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-magna-graecia-meaning-a",
+        "text": "Obszarem kolonii greckich w Italii"
+      },
+      {
+        "id": "history-mediumhard-magna-graecia-meaning-b",
+        "text": "Nazwą armii rzymskiej"
+      },
+      {
+        "id": "history-mediumhard-magna-graecia-meaning-c",
+        "text": "Stolicą Macedonii"
+      },
+      {
+        "id": "history-mediumhard-magna-graecia-meaning-d",
+        "text": "Świątynią w Atenach"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-holy-roman-notable",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Który władca był cesarzem Świętego Cesarstwa Rzymskiego?",
+    "correctAnswerId": "history-mediumhard-holy-roman-notable-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-holy-roman-notable-a",
+        "text": "Otton I"
+      },
+      {
+        "id": "history-mediumhard-holy-roman-notable-b",
+        "text": "Ludwik XVI"
+      },
+      {
+        "id": "history-mediumhard-holy-roman-notable-c",
+        "text": "Piotr I"
+      },
+      {
+        "id": "history-mediumhard-holy-roman-notable-d",
+        "text": "Edward III"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-manchu-dynasty",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Jak nazywała się ostatnia dynastia panująca w Chinach?",
+    "correctAnswerId": "history-mediumhard-manchu-dynasty-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-manchu-dynasty-a",
+        "text": "Qing"
+      },
+      {
+        "id": "history-mediumhard-manchu-dynasty-b",
+        "text": "Ming"
+      },
+      {
+        "id": "history-mediumhard-manchu-dynasty-c",
+        "text": "Han"
+      },
+      {
+        "id": "history-mediumhard-manchu-dynasty-d",
+        "text": "Tang"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-carthage-destruction-year-century",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "W którym wieku Rzym zniszczył Kartaginę podczas III wojny punickiej?",
+    "correctAnswerId": "history-mediumhard-carthage-destruction-year-century-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-carthage-destruction-year-century-a",
+        "text": "II p.n.e."
+      },
+      {
+        "id": "history-mediumhard-carthage-destruction-year-century-b",
+        "text": "I n.e."
+      },
+      {
+        "id": "history-mediumhard-carthage-destruction-year-century-c",
+        "text": "V p.n.e."
+      },
+      {
+        "id": "history-mediumhard-carthage-destruction-year-century-d",
+        "text": "III n.e."
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-versailles-ended-war",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Traktat wersalski z 1919 roku formalnie zakończył udział Niemiec w której wojnie?",
+    "correctAnswerId": "history-mediumhard-versailles-ended-war-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-versailles-ended-war-a",
+        "text": "I wojnie światowej"
+      },
+      {
+        "id": "history-mediumhard-versailles-ended-war-b",
+        "text": "II wojnie światowej"
+      },
+      {
+        "id": "history-mediumhard-versailles-ended-war-c",
+        "text": "Wojnie krymskiej"
+      },
+      {
+        "id": "history-mediumhard-versailles-ended-war-d",
+        "text": "Wojnie secesyjnej"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-kievan-rus-center",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Które miasto było centrum Rusi Kijowskiej?",
+    "correctAnswerId": "history-mediumhard-kievan-rus-center-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-kievan-rus-center-a",
+        "text": "Kijów"
+      },
+      {
+        "id": "history-mediumhard-kievan-rus-center-b",
+        "text": "Moskwa"
+      },
+      {
+        "id": "history-mediumhard-kievan-rus-center-c",
+        "text": "Nowogród"
+      },
+      {
+        "id": "history-mediumhard-kievan-rus-center-d",
+        "text": "Mińsk"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-justinian-code",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Z jakim dziełem prawnym kojarzony jest cesarz Justynian?",
+    "correctAnswerId": "history-mediumhard-justinian-code-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-justinian-code-a",
+        "text": "Kodeksem Justyniana"
+      },
+      {
+        "id": "history-mediumhard-justinian-code-b",
+        "text": "Kodeksem Napoleona"
+      },
+      {
+        "id": "history-mediumhard-justinian-code-c",
+        "text": "Prawem XII tablic"
+      },
+      {
+        "id": "history-mediumhard-justinian-code-d",
+        "text": "Magna Carta"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-bolivar-region",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Simon Bolivar odegrał kluczową rolę w walce o niepodległość państw…",
+    "correctAnswerId": "history-mediumhard-bolivar-region-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-bolivar-region-a",
+        "text": "Ameryki Południowej"
+      },
+      {
+        "id": "history-mediumhard-bolivar-region-b",
+        "text": "Afryki Północnej"
+      },
+      {
+        "id": "history-mediumhard-bolivar-region-c",
+        "text": "Europy Wschodniej"
+      },
+      {
+        "id": "history-mediumhard-bolivar-region-d",
+        "text": "Azji Południowej"
+      }
+    ]
+  },
+  {
+    "key": "history-mediumhard-yalta-leader-absent",
+    "categoryKey": "history",
+    "difficulty": "MediumHard",
+    "text": "Który z tych przywódców nie brał udziału w konferencji jałtańskiej?",
+    "correctAnswerId": "history-mediumhard-yalta-leader-absent-a",
+    "answers": [
+      {
+        "id": "history-mediumhard-yalta-leader-absent-a",
+        "text": "Charles de Gaulle"
+      },
+      {
+        "id": "history-mediumhard-yalta-leader-absent-b",
+        "text": "Franklin D. Roosevelt"
+      },
+      {
+        "id": "history-mediumhard-yalta-leader-absent-c",
+        "text": "Winston Churchill"
+      },
+      {
+        "id": "history-mediumhard-yalta-leader-absent-d",
+        "text": "Józef Stalin"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-fall-constantinople",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "W którym roku Konstantynopol został zdobyty przez Turków osmańskich?",
+    "correctAnswerId": "history-hard-fall-constantinople-a",
+    "answers": [
+      {
+        "id": "history-hard-fall-constantinople-a",
+        "text": "1453"
+      },
+      {
+        "id": "history-hard-fall-constantinople-b",
+        "text": "1492"
+      },
+      {
+        "id": "history-hard-fall-constantinople-c",
+        "text": "1410"
+      },
+      {
+        "id": "history-hard-fall-constantinople-d",
+        "text": "1520"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-treaty-westphalia",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Pokój westfalski z 1648 roku zakończył którą wojnę?",
+    "correctAnswerId": "history-hard-treaty-westphalia-a",
+    "answers": [
+      {
+        "id": "history-hard-treaty-westphalia-a",
+        "text": "Wojnę trzydziestoletnią"
+      },
+      {
+        "id": "history-hard-treaty-westphalia-b",
+        "text": "Wojnę stuletnią"
+      },
+      {
+        "id": "history-hard-treaty-westphalia-c",
+        "text": "Wojnę siedmioletnią"
+      },
+      {
+        "id": "history-hard-treaty-westphalia-d",
+        "text": "Wojnę krymską"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-roman-emperor-adrian-wall",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Który cesarz rzymski rozpoczął budowę muru w Brytanii nazwanego później jego imieniem?",
+    "correctAnswerId": "history-hard-roman-emperor-adrian-wall-a",
+    "answers": [
+      {
+        "id": "history-hard-roman-emperor-adrian-wall-a",
+        "text": "Hadrian"
+      },
+      {
+        "id": "history-hard-roman-emperor-adrian-wall-b",
+        "text": "August"
+      },
+      {
+        "id": "history-hard-roman-emperor-adrian-wall-c",
+        "text": "Trajan"
+      },
+      {
+        "id": "history-hard-roman-emperor-adrian-wall-d",
+        "text": "Tyberiusz"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-nika-revolt-city",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "W jakim mieście wybuchło powstanie Nika w 532 roku?",
+    "correctAnswerId": "history-hard-nika-revolt-city-a",
+    "answers": [
+      {
+        "id": "history-hard-nika-revolt-city-a",
+        "text": "Konstantynopolu"
+      },
+      {
+        "id": "history-hard-nika-revolt-city-b",
+        "text": "Rzymie"
+      },
+      {
+        "id": "history-hard-nika-revolt-city-c",
+        "text": "Antiochii"
+      },
+      {
+        "id": "history-hard-nika-revolt-city-d",
+        "text": "Aleksandrii"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-investiture-conflict",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Spór o inwestyturę dotyczył konfliktu między cesarstwem a…",
+    "correctAnswerId": "history-hard-investiture-conflict-a",
+    "answers": [
+      {
+        "id": "history-hard-investiture-conflict-a",
+        "text": "Papiestwem"
+      },
+      {
+        "id": "history-hard-investiture-conflict-b",
+        "text": "Francją"
+      },
+      {
+        "id": "history-hard-investiture-conflict-c",
+        "text": "Wenecją"
+      },
+      {
+        "id": "history-hard-investiture-conflict-d",
+        "text": "Krzyżakami"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-tamerlane-name",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Pod jakim imieniem znany jest Timur, twórca wielkiego imperium w Azji Środkowej?",
+    "correctAnswerId": "history-hard-tamerlane-name-a",
+    "answers": [
+      {
+        "id": "history-hard-tamerlane-name-a",
+        "text": "Tamerlan"
+      },
+      {
+        "id": "history-hard-tamerlane-name-b",
+        "text": "Attyla"
+      },
+      {
+        "id": "history-hard-tamerlane-name-c",
+        "text": "Kubilaj-chan"
+      },
+      {
+        "id": "history-hard-tamerlane-name-d",
+        "text": "Saladyn"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-cannae-opponent",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "W bitwie pod Kannami Hannibal pokonał wojska…",
+    "correctAnswerId": "history-hard-cannae-opponent-a",
+    "answers": [
+      {
+        "id": "history-hard-cannae-opponent-a",
+        "text": "Rzymu"
+      },
+      {
+        "id": "history-hard-cannae-opponent-b",
+        "text": "Sparty"
+      },
+      {
+        "id": "history-hard-cannae-opponent-c",
+        "text": "Egiptu"
+      },
+      {
+        "id": "history-hard-cannae-opponent-d",
+        "text": "Persji"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-english-war-roses-symbols",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Wojna Dwóch Róż toczyła się między rodami Lancasterów i…",
+    "correctAnswerId": "history-hard-english-war-roses-symbols-a",
+    "answers": [
+      {
+        "id": "history-hard-english-war-roses-symbols-a",
+        "text": "Yorków"
+      },
+      {
+        "id": "history-hard-english-war-roses-symbols-b",
+        "text": "Tudorów"
+      },
+      {
+        "id": "history-hard-english-war-roses-symbols-c",
+        "text": "Stuartów"
+      },
+      {
+        "id": "history-hard-english-war-roses-symbols-d",
+        "text": "Normanów"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-fourth-crusade-result",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Jaki był zaskakujący skutek IV krucjaty?",
+    "correctAnswerId": "history-hard-fourth-crusade-result-a",
+    "answers": [
+      {
+        "id": "history-hard-fourth-crusade-result-a",
+        "text": "Zdobycie Konstantynopola przez krzyżowców"
+      },
+      {
+        "id": "history-hard-fourth-crusade-result-b",
+        "text": "Odbicie Jerozolimy"
+      },
+      {
+        "id": "history-hard-fourth-crusade-result-c",
+        "text": "Podbój Egiptu"
+      },
+      {
+        "id": "history-hard-fourth-crusade-result-d",
+        "text": "Zjednoczenie Bizancjum z Rzymem"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-austerlitz-year",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "W którym roku rozegrała się bitwa pod Austerlitz?",
+    "correctAnswerId": "history-hard-austerlitz-year-a",
+    "answers": [
+      {
+        "id": "history-hard-austerlitz-year-a",
+        "text": "1805"
+      },
+      {
+        "id": "history-hard-austerlitz-year-b",
+        "text": "1799"
+      },
+      {
+        "id": "history-hard-austerlitz-year-c",
+        "text": "1812"
+      },
+      {
+        "id": "history-hard-austerlitz-year-d",
+        "text": "1815"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-decembrists-country",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Powstanie dekabrystów miało miejsce w którym państwie?",
+    "correctAnswerId": "history-hard-decembrists-country-a",
+    "answers": [
+      {
+        "id": "history-hard-decembrists-country-a",
+        "text": "Rosji"
+      },
+      {
+        "id": "history-hard-decembrists-country-b",
+        "text": "Prusach"
+      },
+      {
+        "id": "history-hard-decembrists-country-c",
+        "text": "Austrii"
+      },
+      {
+        "id": "history-hard-decembrists-country-d",
+        "text": "Francji"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-byzantine-iconoclasm",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Ikonoklazm był ważnym sporem religijnym w dziejach…",
+    "correctAnswerId": "history-hard-byzantine-iconoclasm-a",
+    "answers": [
+      {
+        "id": "history-hard-byzantine-iconoclasm-a",
+        "text": "Bizancjum"
+      },
+      {
+        "id": "history-hard-byzantine-iconoclasm-b",
+        "text": "Egiptu faraonów"
+      },
+      {
+        "id": "history-hard-byzantine-iconoclasm-c",
+        "text": "Rzeczypospolitej Obojga Narodów"
+      },
+      {
+        "id": "history-hard-byzantine-iconoclasm-d",
+        "text": "Cesarstwa Inków"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-zama-opponents",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Bitwa pod Zamą zakończyła którą wojnę punicką?",
+    "correctAnswerId": "history-hard-zama-opponents-a",
+    "answers": [
+      {
+        "id": "history-hard-zama-opponents-a",
+        "text": "Drugą"
+      },
+      {
+        "id": "history-hard-zama-opponents-b",
+        "text": "Pierwszą"
+      },
+      {
+        "id": "history-hard-zama-opponents-c",
+        "text": "Trzecią"
+      },
+      {
+        "id": "history-hard-zama-opponents-d",
+        "text": "Czwartą"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-novgorod-trade-league",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Nowogród był ważnym ośrodkiem handlowym związanym z którą organizacją?",
+    "correctAnswerId": "history-hard-novgorod-trade-league-a",
+    "answers": [
+      {
+        "id": "history-hard-novgorod-trade-league-a",
+        "text": "Hanzą"
+      },
+      {
+        "id": "history-hard-novgorod-trade-league-b",
+        "text": "Ligą Delijską"
+      },
+      {
+        "id": "history-hard-novgorod-trade-league-c",
+        "text": "Trójprzymierzem"
+      },
+      {
+        "id": "history-hard-novgorod-trade-league-d",
+        "text": "Ententą"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-thirty-years-war-defenestration",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Jakie wydarzenie z 1618 roku uznaje się za początek wojny trzydziestoletniej?",
+    "correctAnswerId": "history-hard-thirty-years-war-defenestration-a",
+    "answers": [
+      {
+        "id": "history-hard-thirty-years-war-defenestration-a",
+        "text": "Defenestrację praską"
+      },
+      {
+        "id": "history-hard-thirty-years-war-defenestration-b",
+        "text": "Bitwę pod Białą Górą"
+      },
+      {
+        "id": "history-hard-thirty-years-war-defenestration-c",
+        "text": "Pokój augsburski"
+      },
+      {
+        "id": "history-hard-thirty-years-war-defenestration-d",
+        "text": "Powstanie husytów"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-seljuk-battle-manzikert",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "W bitwie pod Manzikertem Bizancjum zostało pokonane przez…",
+    "correctAnswerId": "history-hard-seljuk-battle-manzikert-a",
+    "answers": [
+      {
+        "id": "history-hard-seljuk-battle-manzikert-a",
+        "text": "Turków seldżuckich"
+      },
+      {
+        "id": "history-hard-seljuk-battle-manzikert-b",
+        "text": "Arabów z Egiptu"
+      },
+      {
+        "id": "history-hard-seljuk-battle-manzikert-c",
+        "text": "Mongołów"
+      },
+      {
+        "id": "history-hard-seljuk-battle-manzikert-d",
+        "text": "Wenetów"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-peloponnesian-war-sides",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Wojna peloponeska toczyła się głównie między Atenami a…",
+    "correctAnswerId": "history-hard-peloponnesian-war-sides-a",
+    "answers": [
+      {
+        "id": "history-hard-peloponnesian-war-sides-a",
+        "text": "Spartą"
+      },
+      {
+        "id": "history-hard-peloponnesian-war-sides-b",
+        "text": "Koryntem"
+      },
+      {
+        "id": "history-hard-peloponnesian-war-sides-c",
+        "text": "Macedonią"
+      },
+      {
+        "id": "history-hard-peloponnesian-war-sides-d",
+        "text": "Persją"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-napoleonic-code-name",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Jak inaczej nazywa się Kodeks cywilny wprowadzony we Francji za Napoleona?",
+    "correctAnswerId": "history-hard-napoleonic-code-name-a",
+    "answers": [
+      {
+        "id": "history-hard-napoleonic-code-name-a",
+        "text": "Kodeks Napoleona"
+      },
+      {
+        "id": "history-hard-napoleonic-code-name-b",
+        "text": "Kodeks Justyniana"
+      },
+      {
+        "id": "history-hard-napoleonic-code-name-c",
+        "text": "Prawo salickie"
+      },
+      {
+        "id": "history-hard-napoleonic-code-name-d",
+        "text": "Dekret mediolański"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-taiping-rebellion-country",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Powstanie tajpingów wybuchło w XIX wieku w…",
+    "correctAnswerId": "history-hard-taiping-rebellion-country-a",
+    "answers": [
+      {
+        "id": "history-hard-taiping-rebellion-country-a",
+        "text": "Chinach"
+      },
+      {
+        "id": "history-hard-taiping-rebellion-country-b",
+        "text": "Japonii"
+      },
+      {
+        "id": "history-hard-taiping-rebellion-country-c",
+        "text": "Indiach"
+      },
+      {
+        "id": "history-hard-taiping-rebellion-country-d",
+        "text": "Korei"
+      }
+    ]
+  },
+  {
+    "key": "history-hard-congress-berlin-chancellor",
+    "categoryKey": "history",
+    "difficulty": "Hard",
+    "text": "Który kanclerz był gospodarzem kongresu berlińskiego w 1878 roku?",
+    "correctAnswerId": "history-hard-congress-berlin-chancellor-a",
+    "answers": [
+      {
+        "id": "history-hard-congress-berlin-chancellor-a",
+        "text": "Otto von Bismarck"
+      },
+      {
+        "id": "history-hard-congress-berlin-chancellor-b",
+        "text": "Klemens von Metternich"
+      },
+      {
+        "id": "history-hard-congress-berlin-chancellor-c",
+        "text": "Helmut Kohl"
+      },
+      {
+        "id": "history-hard-congress-berlin-chancellor-d",
+        "text": "Konrad Adenauer"
+      }
+    ]
+  }
+]

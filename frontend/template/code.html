@@ -1,206 +1,138 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="pl"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface-container-lowest": "#000000",
-              "on-primary-fixed": "#000000",
-              "surface-container-low": "#111128",
-              "on-background": "#e5e3ff",
-              "tertiary-dim": "#00deec",
-              "on-surface-variant": "#aaa8c4",
-              "on-tertiary": "#005d63",
-              "surface-container": "#171730",
-              "secondary-container": "#b90068",
-              "surface": "#0c0c21",
-              "on-error": "#490013",
-              "tertiary-fixed": "#00eefc",
-              "on-tertiary-fixed": "#003f43",
-              "outline": "#74738d",
-              "secondary": "#ff68a7",
-              "on-surface": "#e5e3ff",
-              "primary": "#e08dff",
-              "inverse-on-surface": "#53536b",
-              "surface-tint": "#e08dff",
-              "on-secondary": "#460024",
-              "outline-variant": "#46465e",
-              "on-error-container": "#ffb2b9",
-              "secondary-fixed-dim": "#ffacc8",
-              "tertiary": "#8ff5ff",
-              "surface-container-highest": "#232341",
-              "inverse-surface": "#fcf8ff",
-              "background": "#0c0c21",
-              "inverse-primary": "#9a00cf",
-              "error": "#ff6e84",
-              "on-tertiary-fixed-variant": "#005e64",
-              "primary-fixed-dim": "#d160ff",
-              "surface-variant": "#232341",
-              "error-container": "#a70138",
-              "on-secondary-container": "#fff5f6",
-              "on-primary": "#4f006c",
-              "primary-dim": "#bc00fb",
-              "on-primary-fixed-variant": "#4c0068",
-              "on-secondary-fixed": "#6b003a",
-              "tertiary-fixed-dim": "#00deec",
-              "secondary-fixed": "#ffc1d4",
-              "surface-container-high": "#1d1d39",
-              "on-tertiary-container": "#005359",
-              "on-primary-container": "#3d0055",
-              "surface-dim": "#0c0c21",
-              "tertiary-container": "#00eefc",
-              "surface-bright": "#29294a",
-              "on-secondary-fixed-variant": "#9f0059",
-              "primary-fixed": "#d978ff",
-              "secondary-dim": "#e10080",
-              "primary-container": "#d978ff",
-              "error-dim": "#d73357"
-            },
-            fontFamily: {
-              "headline": ["Spline Sans"],
-              "body": ["Be Vietnam Pro"],
-              "label": ["Be Vietnam Pro"]
-            },
-            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+<html class="dark" lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizVolt - Logowanie</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            background: "#0c0c21",
+            surface: "#111128",
+            surfaceHigh: "#171730",
+            surfaceHighest: "#232341",
+            outline: "#46465e",
+            primary: "#e08dff",
+            secondary: "#ff68a7",
+            tertiary: "#8ff5ff",
+            onSurface: "#e5e3ff",
+            onSurfaceVariant: "#aaa8c4",
+            onPrimary: "#4f006c"
           },
-        },
+          borderRadius: {
+            full: "9999px",
+            xl: "1.5rem",
+            "2xl": "2rem"
+          },
+          fontFamily: {
+            headline: ["Spline Sans", "sans-serif"],
+            body: ["Be Vietnam Pro", "sans-serif"]
+          }
+        }
       }
-    </script>
-<style>
-        .neon-glow-primary {
-            box-shadow: 0 0 15px rgba(224, 141, 255, 0.3);
-        }
-        .neon-border-focus:focus-within {
-            box-shadow: 0 0 0 2px #e08dff, 0 0 12px rgba(224, 141, 255, 0.6);
-        }
-        .glass-panel {
-            background: rgba(23, 23, 48, 0.6);
-            backdrop-filter: blur(20px);
-        }
-        .profile-glow {
-            box-shadow: 0 0 20px rgba(224, 141, 255, 0.5), inset 0 0 10px rgba(224, 141, 255, 0.2);
-        }
-    </style>
+    };
+  </script>
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(224, 141, 255, 0.14), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(255, 104, 167, 0.12), transparent 30%),
+        #0c0c21;
+      color: #e5e3ff;
+      font-family: "Be Vietnam Pro", sans-serif;
+    }
+    .glass-panel {
+      background: rgba(35, 35, 65, 0.42);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 24px 80px rgba(5, 8, 22, 0.45);
+    }
+    .material-symbols-outlined {
+      font-family: "Material Symbols Outlined", sans-serif;
+      font-style: normal;
+      line-height: 1;
+    }
+  </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
-<div class="relative flex min-h-screen w-full flex-col items-center justify-center overflow-x-hidden py-12 px-4">
-<!-- Decorative Light Leaks -->
-<div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
-<div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
-<!-- Main Creation Card -->
-<main class="layout-content-container flex flex-col max-w-[640px] w-full glass-panel rounded-xl border border-outline-variant/20 overflow-hidden neon-glow-primary">
-<!-- Header Section -->
-<div class="p-8 pb-4 text-center bg-surface-container-high/40 border-b border-outline-variant/10 flex flex-col items-center">
-<h1 class="text-primary font-headline text-4xl font-black leading-tight tracking-[-0.033em] mb-2">
-                STWÓRZ NOWĄ POSTAĆ
-            </h1>
-<p class="text-on-surface-variant text-base font-normal mb-6">Zdefiniuj swoją unikalną tożsamość w Neon Pulse</p>
-<!-- Social Profile Preview -->
-<div class="relative w-20 h-20 rounded-full p-[2px] bg-gradient-to-tr from-primary via-secondary to-primary profile-glow">
-<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-lowest">
-<img alt="User Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3_J_5RkI0eBvS_Zf_5yJpD-2_4_Z6-zS-r-2v-B_k_x_P_H_R-3-z_V-r-A-0=s80-c-mo"/>
-</div>
-<div class="absolute -bottom-1 -right-1 bg-surface-container-lowest rounded-full p-1 border border-outline-variant/30">
-<svg height="14" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
-<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
-<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
-<path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z" fill="#EA4335"></path>
-</svg>
-</div>
-</div>
-</div>
-<div class="p-8 flex flex-col gap-8">
-<!-- Username Section -->
-<div class="flex flex-col gap-3">
-<label class="text-on-surface text-sm font-bold uppercase tracking-widest px-1">Nazwa Użytkownika</label>
-<div class="flex w-full items-stretch rounded-xl bg-surface-container-lowest border border-primary/40 neon-border-focus transition-all duration-300">
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl bg-transparent text-on-surface focus:outline-0 focus:ring-0 border-none h-14 placeholder:text-on-surface-variant/50 p-[15px] text-lg font-medium leading-normal" placeholder="Wpisz swój pseudonim..." type="text"/>
-<div class="text-primary flex items-center justify-center pr-[15px] rounded-r-xl" data-icon="bolt" data-size="24px" data-weight="fill">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
-</div>
-</div>
-</div>
-<!-- Avatar Selection -->
-<div class="flex flex-col gap-4">
-<div class="flex justify-between items-center px-1">
-<label class="text-on-surface text-sm font-bold uppercase tracking-widest">Wybierz Awatar</label>
-<span class="text-tertiary text-xs font-medium bg-tertiary/10 px-2 py-1 rounded-md">8 DOSTĘPNYCH</span>
-</div>
-<div class="grid grid-cols-4 gap-4">
-<!-- Avatar Items -->
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="futuristic cybernetic male portrait with glowing blue eye implants and sleek chrome armor plating, neon background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlsX_cG8AQmNWtftVgk3yYYeOFA8dtoteya4rpzRzEoFIQNa1tZcmBW2JO5Py01A_1LTa8hbBVkg4G3PmMsNxKLI2ExlJnqPPfMrkXx19mli10P1mJG1I0xQLGpPK-aoh8OPrvAgXvmgxxpJGYj8-CPqQq1-p2ZgdUlUvBOAOduPRPifmXRMufknrZb0mMSgy1Tq4GnNvpQLFF8xjOqr3vzQmwrfOYqUZFEMz4gOnY8u3NPZF0lltGAIuagabEQSOhnlKzRBixEXNs");'></div>
-<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-</button>
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-primary neon-glow-primary bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center" data-alt="female cyborg with pink neon hair and intricate glowing facial circuitry, cinematic lighting, high-tech aesthetic" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4DdkjU6_jTY2cTITpr2i5ZM_LSm6C3nvTrr-IzKS_ws9DRUINagsJAUfOmF4_OMGYzKTU9XrKzg-WT8Ei7EBHF0Qp5cL9_-6QKbtJzsZ8mPJxvOMsk5AfsNmCzYtLsX1w6Nc5u9kibJmUzhGR8Y1PuuCjL6X5gPAaGIY-DdRuQqtCJSxq3_SihJDIdWDRK2AOuHwSS7AgmlvYPnE8fW9KXgLMyDu2UfRWu26fLwt620YhkQWPQ_gMRqHmzPgnwklYVxTmLmjYoScs");'></div>
-<div class="absolute inset-0 border-2 border-primary rounded-lg"></div>
-</button>
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="masked robotic entity with green glowing visor and dark tactical gear, rainy neon city atmosphere" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBP9emrz4riwekZHdQvXApTXbWNH6tOBPM_-A0rz1ff0sohmdhQSOSGCXJy9oxtX_0t0a4bpNEQLzJdMVsubAWKvzsTnh0kW3rdze0G0VTZXDjK1NbySvUQrQQlX69g3CaSQBQomXtfX4XBZR-I2eVTREUDIRijHLD8aAaMcmFs9gRWvkopx2cL5tD9pn91ki2fl74p8N9Y6DKag-YCYHZIoyKkFe2rSs-g-7l5fgEkfSbL7X6HZ0mAsRA_QioUmTDKPV91ysK0nz4k");'></div>
-</button>
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="androgynous pilot character with holographic HUD glasses and purple ambient light, sci-fi portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA91lDwnrq_HnH-c0TV8AzfK1trCTM8q4u-9w54YW9CpYoPrrL5fXMRfgA3psNdN5wq2R7bgIK-l5NOnMI3C6b7N6i_cwH34AuKRMyH6gGSWYG2J39oN5wSYGhfDydsxZGVcDMciD3ortji31cdY5HAr24LS-j5KIkVCGYiAyquvCwmVGCZCY2GmDYaAp4bu2ssYYZuiL8Aw7b7q-SslP7dyOmVrFSfadGd9C9RZDHXp4HT5yL85EtOZWL-sr_DE17D5yGQ7nWRHNl0");'></div>
-</button>
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="elderly technomancer with glowing white beard and mechanical arm, mystical cybernetic laboratory setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_ryq-ykhicIAFGPFMSjyYVoqARJkmeDElmy0gYYptJ31q1BgDdt9dXdwPVk3RTAPoKaCopyvKV2xvZNaRi_4FfXyyO8qpYorqPwiX0qKDz9rHw6SGLIdTmntY6EellipnJSS4jVvjDmScaGl8tKPQFLq2mFrs_K22y1TU1GUArUCTfMYoeMJC2ME338lGYW38ubHzDfa19HQcvU8TaIxqeBcMpoBbestlzWg8ZWyjvNL43kCAODasoTyRFccBa-dH7mENX9kT_nY8");'></div>
-</button>
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="urban rebel girl with vibrant orange neon jacket and high-tech headphones, graffiti-filled cyberpunk alleyway" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBk_7-LHcAi5LUjGYKrTpB3cDWxhEUQUvPO0DWGWjwi1sAiKH35G6F62HnWqohCP6N1N0CcNKcVWG62oUPB5du6fboAQvVKNJM97qx2G-ckFxY3w25RHz3ZNrxWgRG_D29r9DJ2ovnu2m2aSRpGwPnco5WwvMcIN_jhWl8BwwbRNJDTDsH6aKphNpe9BtPo6fvF4ImOlEFvD-xylxLD3oIazzZ9nb1r6MCK422M5K2cLq1hbj5PyFGpA6Mrd3HZXPpjjftLjB6o1z0e");'></div>
-</button>
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="sleek black android head with glowing red optical sensor, minimalist dark futuristic background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBePBX-LVGECzDQ2tRQseNQ6PlJRFQwCE4iebDBYzYYczqpxUHjOWkjfjD0VUMR4Sh91-s_Fxu-TPwUiFEHx01L3VtB7NXeTDBbcQn6HIPdka3skG7f9Bfq7a7n7oCbV1IU8-gXtVjmCNKZz16YZbPjZC_JrTDgmDEbFNCd5zaXg5ml87H9AP3rBL5DQ4p_2T-Gz6BNd11cPFkUB2UJqqiEJVqG9sMsZp0NFcNzbKMMh30LmuFKCICHsa6PG7PNSak25kJRIpJySzen");'></div>
-</button>
-<button class="group relative aspect-square rounded-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 bg-surface-container-highest">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="hacker character in a yellow techwear hoodie with matrix-style code reflecting off their glasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuByjsHvuyZWfgccLJVgQ0q8FZvx3x73AKU_luHwrzbx6E_buyKzw4079uXCgHpfHSc8Z2DK2NfK9GrgvkzRA1_xO2hBa4K1p9NeemxAqiGUWrmPU_HuDwSiDm9RA1JUHw8bCkEMBLgr8Tf_h0NMwUS4eAJ9kraeDFengzbQom5t6orrkQj6MZwV2zt2YSq0Khpk7bnHk_Hk9rIhK8L7ibnk5JBd5a-DeJK2v97C6nmC7A8cEGwkLOt3MoMqM_1p7sVqSO7t0bMINHrf");'></div>
-</button>
-</div>
-</div>
-<!-- Account Info -->
-<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low border border-outline-variant/10">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center">
-<svg height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
-<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
-<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
-<path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z" fill="#EA4335"></path>
-</svg>
-</div>
-<div>
-<p class="text-on-surface text-xs font-bold uppercase tracking-tight opacity-60">Typ konta</p>
-<p class="text-on-surface font-medium">Zalogowano przez Google</p>
-</div>
-</div>
-<button class="text-tertiary text-sm font-bold hover:underline">Zmień</button>
-</div>
-<!-- CTA Button -->
-<button class="w-full h-16 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed font-headline text-xl font-black uppercase tracking-widest shadow-[0_0_30px_rgba(224,141,255,0.4)] hover:shadow-[0_0_45px_rgba(224,141,255,0.6)] transition-all duration-300 active:scale-[0.98]">
-                STWÓRZ POSTAĆ
-            </button>
-</div>
-</main>
-<!-- Navigation Footer -->
-<footer class="mt-12 flex flex-col items-center gap-6">
-<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group">
-<div data-icon="arrow_back" data-size="20px">
-<span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
-</div>
-<span class="font-bold text-sm uppercase tracking-widest">Powrót do menu</span>
-</button>
-<div class="flex items-center gap-2">
-<div class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></div>
-<span class="text-tertiary text-[10px] font-bold uppercase tracking-[0.2em]">System Online</span>
-</div>
-</footer>
-</div>
-</body></html>
+<body class="antialiased">
+  <main class="relative min-h-screen overflow-hidden px-4 py-6 sm:px-6 lg:px-8 lg:py-10">
+    <div class="pointer-events-none fixed left-[-10%] top-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-primary/12 blur-[120px]"></div>
+    <div class="pointer-events-none fixed bottom-[-10%] right-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-secondary/12 blur-[120px]"></div>
+
+    <div class="relative z-10 mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-5xl flex-col justify-center gap-8">
+      <header class="text-center">
+        <div class="mb-4 inline-block">
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-3xl font-black italic tracking-tight text-transparent md:text-5xl">QuizVolt</span>
+        </div>
+        <h1 class="font-headline text-4xl font-black uppercase tracking-[-0.04em] text-[#f4d5ff] md:text-6xl">Logowanie</h1>
+        <p class="mx-auto mt-4 max-w-3xl text-base font-medium tracking-wide text-onSurfaceVariant md:text-lg">
+          Wybierz sposób logowania, aby zapisać postępy i odblokować katalogi gracza.
+        </p>
+      </header>
+
+      <section class="glass-panel mx-auto w-full max-w-4xl rounded-[2rem] border border-outline/40 px-5 py-6 md:px-8 md:py-10">
+        <div class="mb-6 text-center">
+          <p class="text-xs font-black uppercase tracking-[0.32em] text-tertiary">Wybierz sposób logowania</p>
+          <h2 class="mt-3 font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">Wejdź do QuizVolt</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-sm text-onSurfaceVariant">
+            Zaloguj się przez konto społecznościowe albo wejdź jako gość, żeby od razu zacząć grę.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <button class="group flex w-full items-center justify-between rounded-full border border-outline/40 bg-[#171730]/85 px-5 py-4 text-left transition-all hover:border-primary/40 hover:bg-[#232341]">
+            <div class="flex items-center gap-4">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#f4d5ff] text-[#4f006c] shadow-[0_0_20px_rgba(224,141,255,0.25)]">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.1-1.4 3.3-5.5 3.3-3.3 0-6-2.7-6-6s2.7-6 6-6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3 14.7 2 12 2 6.5 2 2 6.5 2 12s4.5 10 10 10c5.8 0 9.7-4.1 9.7-9.8 0-.7-.1-1.2-.2-1.7H12z"></path>
+                  <path fill="#FBBC05" d="M3.5 7.3 6.6 9.6C7.4 7.7 9.5 6 12 6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3 14.7 2 12 2 8.2 2 4.9 4 3.5 7.3z"></path>
+                  <path fill="#34A853" d="M12 22c2.6 0 4.8-.9 6.4-2.4l-3-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.7-5.6-4.1L3.3 16.3C4.8 19.6 8 22 12 22z"></path>
+                  <path fill="#4285F4" d="M21.7 12.2c0-.7-.1-1.2-.2-1.7H12v3.7h5.5c-.3 1.2-1 2.2-2.1 2.9l3 2.5c1.8-1.7 3.3-4.3 3.3-7.4z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-onSurface">Zaloguj przez Google</p>
+                <p class="text-xs text-onSurfaceVariant">Szybka synchronizacja postępów</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-onSurfaceVariant transition-transform group-hover:translate-x-1">chevron_right</span>
+          </button>
+
+          <button class="group flex w-full items-center justify-between rounded-full border border-outline/40 bg-[#171730]/85 px-5 py-4 text-left transition-all hover:border-tertiary/40 hover:bg-[#232341]">
+            <div class="flex items-center gap-4">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-[0_0_20px_rgba(24,119,242,0.25)]">
+                <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-onSurface">Zaloguj przez Facebook</p>
+                <p class="text-xs text-onSurfaceVariant">Dostęp do konta społecznościowego</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-onSurfaceVariant transition-transform group-hover:translate-x-1">chevron_right</span>
+          </button>
+
+          <div class="flex items-center gap-4 py-2">
+            <div class="h-px flex-1 bg-outline/40"></div>
+            <span class="text-[10px] font-black uppercase tracking-[0.32em] text-[#74738d]">Lub</span>
+            <div class="h-px flex-1 bg-outline/40"></div>
+          </div>
+
+          <button class="flex w-full items-center justify-center gap-3 rounded-full border-2 border-outline/30 bg-gradient-to-r from-primary to-secondary px-6 py-4 text-sm font-bold text-onPrimary transition-all hover:scale-[1.01]">
+            <span class="material-symbols-outlined text-2xl">person</span>
+            <span>Graj jako Gość</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

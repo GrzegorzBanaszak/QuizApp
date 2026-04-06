@@ -25,17 +25,41 @@ public sealed class SingleplayerQuestionSeedService
 
     public async Task SeedAsync(CancellationToken cancellationToken = default)
     {
-        var filePath = Path.Combine(_environment.ContentRootPath, _options.FilePath);
-        if (!File.Exists(filePath))
+        var directoryPath = Path.Combine(_environment.ContentRootPath, _options.DirectoryPath);
+        if (!Directory.Exists(directoryPath))
         {
-            _logger.LogWarning("Singleplayer question seed file was not found at {FilePath}.", filePath);
+            _logger.LogWarning("Singleplayer question seed directory was not found at {DirectoryPath}.", directoryPath);
             return;
         }
 
-        var items = await SeedJsonFileReader.ReadListAsync<SingleplayerQuestionSeedItem>(filePath, cancellationToken);
-        if (items is null || items.Count == 0)
+        var filePaths = Directory
+            .EnumerateFiles(directoryPath, "*.json", SearchOption.TopDirectoryOnly)
+            .OrderBy(filePath => filePath, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        if (filePaths.Count == 0)
         {
-            _logger.LogWarning("Singleplayer question seed file {FilePath} does not contain any questions.", filePath);
+            _logger.LogWarning("Singleplayer question seed directory {DirectoryPath} does not contain any JSON files.", directoryPath);
+            return;
+        }
+
+        var items = new List<SingleplayerQuestionSeedItem>();
+        foreach (var filePath in filePaths)
+        {
+            var fileItems = await SeedJsonFileReader.ReadListAsync<SingleplayerQuestionSeedItem>(filePath, cancellationToken);
+            if (fileItems is null || fileItems.Count == 0)
+            {
+                _logger.LogWarning("Singleplayer question seed file {FilePath} does not contain any questions.", filePath);
+                continue;
+            }
+
+            ValidateCategoryConsistency(filePath, fileItems);
+            items.AddRange(fileItems);
+        }
+
+        if (items.Count == 0)
+        {
+            _logger.LogWarning("Singleplayer question seed directory {DirectoryPath} does not contain any questions.", directoryPath);
             return;
         }
 
@@ -69,6 +93,25 @@ public sealed class SingleplayerQuestionSeedService
         }
 
         await _dbContext.SaveChangesAsync(cancellationToken);
+    }
+
+    private static void ValidateCategoryConsistency(string filePath, IReadOnlyList<SingleplayerQuestionSeedItem> items)
+    {
+        var categoryKeys = items
+            .Select(item => item.CategoryKey.Trim())
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        if (categoryKeys.Count != 1)
+        {
+            throw new InvalidOperationException($"Singleplayer question seed file {filePath} must contain questions for exactly one category.");
+        }
+
+        var fileCategoryKey = Path.GetFileNameWithoutExtension(filePath);
+        if (!string.Equals(fileCategoryKey, categoryKeys[0], StringComparison.OrdinalIgnoreCase))
+        {
+            throw new InvalidOperationException($"Singleplayer question seed file {filePath} must match category key {categoryKeys[0]}.");
+        }
     }
 
     private static void SyncAnswers(SingleplayerQuestion question, IReadOnlyList<SingleplayerAnswerSeedItem> items)

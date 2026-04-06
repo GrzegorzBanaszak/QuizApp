@@ -20,6 +20,13 @@ public sealed class AvatarController : ControllerBase
         _userService = userService;
     }
 
+    [AllowAnonymous]
+    [HttpGet("defaults")]
+    public async Task<ActionResult<IReadOnlyList<AvatarDto>>> GetDefaultAvatars(CancellationToken cancellationToken = default)
+    {
+        return Ok(await _avatarService.GetCreateCatalogAsync(cancellationToken));
+    }
+
     [HttpGet]
     public async Task<ActionResult<IReadOnlyList<AvatarDto>>> GetAvatars(
         [FromQuery] AvatarCatalogView view = AvatarCatalogView.Catalog,

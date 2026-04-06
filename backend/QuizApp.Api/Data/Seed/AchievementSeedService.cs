@@ -73,6 +73,7 @@ public sealed class AchievementSeedService
             definition.RequiredCategoryKey = TrimOrNull(item.RequiredCategoryKey);
             definition.RequiredCompletedCategoriesCount = item.RequiredCompletedCategoriesCount;
             definition.RewardType = item.RewardType;
+            definition.RewardExperience = item.RewardExperience;
             definition.RewardCoins = item.RewardCoins;
             definition.RewardAvatarKey = TrimOrNull(item.RewardAvatarKey);
         }
@@ -118,6 +119,11 @@ public sealed class AchievementSeedService
                 throw new InvalidOperationException($"Achievement {item.Code} requires a positive rewardCoins value.");
             case AchievementRewardType.Avatar when string.IsNullOrWhiteSpace(item.RewardAvatarKey):
                 throw new InvalidOperationException($"Achievement {item.Code} requires rewardAvatarKey for Avatar reward.");
+        }
+
+        if (item.RewardExperience is <= 0)
+        {
+            throw new InvalidOperationException($"Achievement {item.Code} must have a positive rewardExperience value when provided.");
         }
     }
 

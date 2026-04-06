@@ -1,17 +1,52 @@
 [
   {
     "key": "science",
-    "name": "Science",
-    "description": "Questions about physics, chemistry, biology and scientific discoveries."
+    "name": "Nauka",
+    "description": "Pytania dotyczące fizyki, chemii, biologii oraz odkryć naukowych."
   },
   {
     "key": "history",
-    "name": "History",
-    "description": "Questions about historical events, civilizations and important figures."
+    "name": "Historia",
+    "description": "Pytania o wydarzenia historyczne, cywilizacje oraz ważne postacie."
   },
   {
     "key": "geography",
-    "name": "Geography",
-    "description": "Questions about countries, capitals, maps and the natural world."
+    "name": "Geografia",
+    "description": "Pytania o kraje, stolice, mapy oraz środowisko naturalne."
+  },
+  {
+    "key": "technology",
+    "name": "Technologia",
+    "description": "Pytania o komputery, internet, programowanie i nowe technologie."
+  },
+  {
+    "key": "sports",
+    "name": "Sport",
+    "description": "Pytania o dyscypliny sportowe, zawodników i wydarzenia sportowe."
+  },
+  {
+    "key": "movies",
+    "name": "Filmy",
+    "description": "Pytania o kino, aktorów, reżyserów i znane produkcje filmowe."
+  },
+  {
+    "key": "music",
+    "name": "Muzyka",
+    "description": "Pytania o wykonawców, utwory, gatunki muzyczne i historię muzyki."
+  },
+  {
+    "key": "literature",
+    "name": "Literatura",
+    "description": "Pytania o książki, autorów oraz klasyczne i współczesne dzieła literackie."
+  },
+  {
+    "key": "gaming",
+    "name": "Gry",
+    "description": "Pytania o gry komputerowe, planszowe oraz branżę gamingową."
+  },
+  {
+    "key": "general_knowledge",
+    "name": "Wiedza ogólna",
+    "description": "Różnorodne pytania z wielu dziedzin sprawdzające ogólną wiedzę."
   }
 ]
