@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import { AuthLoginSection } from "../../auth/components/AuthLoginSection";
 import { useAuthStore } from "../../auth/store/authStore";
 
 const modeCards = [
@@ -77,9 +76,17 @@ export const HomePage = () => {
           </p>
         </header>
 
-        <div id="login" className="flex w-full justify-center">
-          <AuthLoginSection />
-        </div>
+        {!session ? (
+          <div className="mb-10 flex w-full justify-center">
+            <Link
+              to="/auth/login"
+              className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#e08dff] to-[#ff68a7] px-6 py-4 text-sm font-black uppercase tracking-[0.18em] text-[#4f006c] transition-transform hover:scale-105 active:scale-95"
+            >
+              <span className="material-symbols-outlined text-xl">login</span>
+              Zaloguj się
+            </Link>
+          </div>
+        ) : null}
 
         {session ? (
           <section className="mb-10 w-full">

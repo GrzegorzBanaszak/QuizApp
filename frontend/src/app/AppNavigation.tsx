@@ -47,35 +47,43 @@ export const AppNavigation = () => {
           </div>
 
           <div className="ml-auto flex items-center gap-2 sm:gap-3">
-            <Link
-              to="/avatars"
-              className={`flex h-11 items-center gap-2 rounded-full px-3 transition-colors ${
-                location.pathname === "/avatars"
-                  ? "bg-[#8ff5ff]/15 text-[#8ff5ff]"
-                  : "text-[#aaa8c4] hover:bg-white/5 hover:text-[#e5e3ff]"
-              }`}
-              aria-label="Awatary"
-            >
-              <span className="material-symbols-outlined text-xl">face</span>
-              <span className="hidden text-sm font-bold sm:inline">Awatary</span>
-            </Link>
+            {session ? (
+              <>
+                <Link
+                  to="/avatars"
+                  className={`flex h-11 items-center gap-2 rounded-full px-3 transition-colors ${
+                    location.pathname === "/avatars"
+                      ? "bg-[#8ff5ff]/15 text-[#8ff5ff]"
+                      : "text-[#aaa8c4] hover:bg-white/5 hover:text-[#e5e3ff]"
+                  }`}
+                  aria-label="Awatary"
+                >
+                  <span className="material-symbols-outlined text-xl">
+                    face
+                  </span>
+                  <span className="hidden text-sm font-bold sm:inline">
+                    Awatary
+                  </span>
+                </Link>
 
-            <Link
-              to="/achievements"
-              className={`flex h-11 items-center gap-2 rounded-full px-3 transition-colors ${
-                location.pathname === "/achievements"
-                  ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
-                  : "text-[#aaa8c4] hover:bg-white/5 hover:text-[#e5e3ff]"
-              }`}
-              aria-label="Osiagniecia"
-            >
-              <span className="material-symbols-outlined text-xl">
-                emoji_events
-              </span>
-              <span className="hidden text-sm font-bold sm:inline">
-                Osiagniecia
-              </span>
-            </Link>
+                <Link
+                  to="/achievements"
+                  className={`flex h-11 items-center gap-2 rounded-full px-3 transition-colors ${
+                    location.pathname === "/achievements"
+                      ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
+                      : "text-[#aaa8c4] hover:bg-white/5 hover:text-[#e5e3ff]"
+                  }`}
+                  aria-label="Osiagniecia"
+                >
+                  <span className="material-symbols-outlined text-xl">
+                    emoji_events
+                  </span>
+                  <span className="hidden text-sm font-bold sm:inline">
+                    Osiagniecia
+                  </span>
+                </Link>
+              </>
+            ) : null}
 
             {session ? (
               <Link
@@ -96,7 +104,7 @@ export const AppNavigation = () => {
               </Link>
             ) : (
               <Link
-                to="/#login"
+                to="/auth/login"
                 className="inline-flex h-11 items-center gap-2 rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-4 font-black tracking-[0.16em] text-[#4f006c] transition-transform hover:scale-105 active:scale-95"
               >
                 <span className="material-symbols-outlined text-xl">login</span>
@@ -140,31 +148,35 @@ export const AppNavigation = () => {
             );
           })}
 
-          <Link
-            to="/avatars"
-            className={`flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-[1rem] px-2 py-2 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors ${
-              location.pathname === "/avatars"
-                ? "bg-[#8ff5ff]/15 text-[#8ff5ff]"
-                : "text-[#aaa8c4] active:bg-white/5 active:text-[#e5e3ff]"
-            }`}
-            aria-label="Awatary"
-          >
-            <span className="material-symbols-outlined text-xl">face</span>
-          </Link>
+          {session ? (
+            <>
+              <Link
+                to="/avatars"
+                className={`flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-[1rem] px-2 py-2 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors ${
+                  location.pathname === "/avatars"
+                    ? "bg-[#8ff5ff]/15 text-[#8ff5ff]"
+                    : "text-[#aaa8c4] active:bg-white/5 active:text-[#e5e3ff]"
+                }`}
+                aria-label="Awatary"
+              >
+                <span className="material-symbols-outlined text-xl">face</span>
+              </Link>
 
-          <Link
-            to="/achievements"
-            className={`flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-[1rem] px-2 py-2 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors ${
-              location.pathname === "/achievements"
-                ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
-                : "text-[#aaa8c4] active:bg-white/5 active:text-[#e5e3ff]"
-            }`}
-            aria-label="Osiagniecia"
-          >
-            <span className="material-symbols-outlined text-xl">
-              emoji_events
-            </span>
-          </Link>
+              <Link
+                to="/achievements"
+                className={`flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-[1rem] px-2 py-2 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors ${
+                  location.pathname === "/achievements"
+                    ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
+                    : "text-[#aaa8c4] active:bg-white/5 active:text-[#e5e3ff]"
+                }`}
+                aria-label="Osiagniecia"
+              >
+                <span className="material-symbols-outlined text-xl">
+                  emoji_events
+                </span>
+              </Link>
+            </>
+          ) : null}
 
           {session ? (
             <Link
@@ -182,7 +194,7 @@ export const AppNavigation = () => {
             </Link>
           ) : (
             <Link
-              to="/#login"
+              to="/auth/login"
               className="flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-[1rem] px-2 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#4f006c] transition-colors"
               aria-label="Zaloguj"
             >

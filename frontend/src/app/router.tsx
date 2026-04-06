@@ -32,6 +32,12 @@ const CreateCharacterPage = lazy(() =>
   })),
 );
 
+const LoginPage = lazy(() =>
+  import("../features/auth/pages/LoginPage").then((module) => ({
+    default: module.LoginPage,
+  })),
+);
+
 const EditProfilePage = lazy(() =>
   import("../features/auth/pages/EditProfilePage").then((module) => ({
     default: module.EditProfilePage,
@@ -95,6 +101,10 @@ export const appRouter = createBrowserRouter([
       {
         path: "auth/create-character",
         element: <CreateCharacterPage />,
+      },
+      {
+        path: "auth/login",
+        element: <LoginPage />,
       },
       {
         path: "multiplayer",

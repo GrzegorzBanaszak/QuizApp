@@ -1,321 +1,138 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="pl"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>GALERIA AWATARÓW - QuizVolt</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "outline": "#74738d",
-                    "primary-fixed-dim": "#d160ff",
-                    "secondary-container": "#b90068",
-                    "inverse-on-surface": "#53536b",
-                    "tertiary-container": "#00eefc",
-                    "secondary-fixed": "#ffc1d4",
-                    "primary-fixed": "#d978ff",
-                    "on-primary-fixed": "#000000",
-                    "error-dim": "#d73357",
-                    "background": "#0c0c21",
-                    "secondary-dim": "#e10080",
-                    "surface-container-low": "#111128",
-                    "on-secondary-container": "#fff5f6",
-                    "on-primary": "#4f006c",
-                    "surface-dim": "#0c0c21",
-                    "on-surface": "#e5e3ff",
-                    "surface-container-lowest": "#000000",
-                    "on-primary-container": "#3d0055",
-                    "tertiary-fixed": "#00eefc",
-                    "on-background": "#e5e3ff",
-                    "inverse-primary": "#9a00cf",
-                    "on-tertiary-fixed-variant": "#005e64",
-                    "on-tertiary-fixed": "#003f43",
-                    "surface": "#0c0c21",
-                    "surface-container-highest": "#232341",
-                    "surface-bright": "#29294a",
-                    "tertiary-dim": "#00deec",
-                    "on-error-container": "#ffb2b9",
-                    "surface-variant": "#232341",
-                    "secondary": "#ff68a7",
-                    "on-surface-variant": "#aaa8c4",
-                    "on-primary-fixed-variant": "#4c0068",
-                    "surface-container-high": "#1d1d39",
-                    "on-error": "#490013",
-                    "error": "#ff6e84",
-                    "primary": "#e08dff",
-                    "tertiary-fixed-dim": "#00deec",
-                    "surface-tint": "#e08dff",
-                    "primary-container": "#d978ff",
-                    "secondary-fixed-dim": "#ffacc8",
-                    "inverse-surface": "#fcf8ff",
-                    "on-secondary-fixed-variant": "#9f0059",
-                    "tertiary": "#8ff5ff",
-                    "error-container": "#a70138",
-                    "on-tertiary-container": "#005359",
-                    "on-secondary-fixed": "#6b003a",
-                    "surface-container": "#171730",
-                    "primary-dim": "#bc00fb",
-                    "outline-variant": "#46465e",
-                    "on-tertiary": "#005d63",
-                    "on-secondary": "#460024"
-            },
-            "borderRadius": {
-                    "DEFAULT": "1rem",
-                    "lg": "2rem",
-                    "xl": "3rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Spline Sans"],
-                    "body": ["Be Vietnam Pro"],
-                    "label": ["Be Vietnam Pro"]
-            }
+<html class="dark" lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizVolt - Logowanie</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            background: "#0c0c21",
+            surface: "#111128",
+            surfaceHigh: "#171730",
+            surfaceHighest: "#232341",
+            outline: "#46465e",
+            primary: "#e08dff",
+            secondary: "#ff68a7",
+            tertiary: "#8ff5ff",
+            onSurface: "#e5e3ff",
+            onSurfaceVariant: "#aaa8c4",
+            onPrimary: "#4f006c"
           },
-        },
+          borderRadius: {
+            full: "9999px",
+            xl: "1.5rem",
+            "2xl": "2rem"
+          },
+          fontFamily: {
+            headline: ["Spline Sans", "sans-serif"],
+            body: ["Be Vietnam Pro", "sans-serif"]
+          }
+        }
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .neon-glow-primary {
-            box-shadow: 0 0 20px rgba(224, 141, 255, 0.25);
-        }
-        .neon-border-primary {
-            border: 1px solid rgba(224, 141, 255, 0.3);
-        }
-        .glass-panel {
-            background: rgba(23, 23, 48, 0.6);
-            backdrop-filter: blur(20px);
-        }
-    </style>
+    };
+  </script>
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(224, 141, 255, 0.14), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(255, 104, 167, 0.12), transparent 30%),
+        #0c0c21;
+      color: #e5e3ff;
+      font-family: "Be Vietnam Pro", sans-serif;
+    }
+    .glass-panel {
+      background: rgba(35, 35, 65, 0.42);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 24px 80px rgba(5, 8, 22, 0.45);
+    }
+    .material-symbols-outlined {
+      font-family: "Material Symbols Outlined", sans-serif;
+      font-style: normal;
+      line-height: 1;
+    }
+  </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-primary/30 min-h-screen pb-32">
-<!-- Hero Header Section -->
-<header class="relative pt-12 pb-20 px-6 overflow-hidden">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-[500px] bg-gradient-to-b from-primary/10 via-transparent to-transparent blur-[120px] pointer-events-none"></div>
-<div class="max-w-7xl mx-auto relative z-10 flex flex-col items-center">
-<h1 class="font-headline text-5xl md:text-7xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary mb-12 uppercase">
-                GALERIA AWATARÓW
-            </h1>
-<!-- Active Avatar Preview Card -->
-<div class="group relative">
-<div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
-<div class="glass-panel neon-border-primary rounded-xl p-8 flex flex-col md:flex-row items-center gap-10 md:pr-16 relative">
-<div class="relative">
-<div class="w-48 h-48 rounded-lg overflow-hidden border-4 border-primary/50 shadow-[0_0_30px_rgba(224,141,255,0.4)]">
-<img alt="Current Avatar" class="w-full h-full object-cover" data-alt="Futuristic cybernetic ninja avatar with neon purple visor and sleek black armor in a high-contrast cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPWaMMD7ma3vHbqIfYn5fr6D8VfAi_a9QqVze8kQUEdqMHZBAyTImlM680Kcc0dABA7mtbZsN53BNybTpAL768xKjUFve-IRK_Ox7n0it-vRgux4BYfsObZuzNaEiMJfBp4otvdBqESgjBgWSqiXlCbP2oQy9a6kmJL_Iw8PQLKeNK1VTDCzkLHTHf-sUQwx5ob3I90O_pcPhMmwD7RxaryYjGvSFEM9IBjkdMQEvhTG2J9ZQ4vPfsOjbib_WF2BGIoMUmeJk58r83"/>
-</div>
-<div class="absolute -bottom-3 -right-3 bg-tertiary text-on-tertiary font-headline font-black px-4 py-1 rounded-md rotate-3 shadow-lg">
-                            LVL 42
-                        </div>
-</div>
-<div class="text-center md:text-left">
-<span class="text-tertiary font-headline font-bold tracking-[0.2em] text-sm uppercase mb-2 block">Aktywny Profil</span>
-<h2 class="font-headline text-5xl font-black text-on-surface mb-2">NeonNinja</h2>
-<div class="flex items-center gap-2 justify-center md:justify-start">
-<div class="h-2 w-32 bg-surface-container-lowest rounded-full overflow-hidden">
-<div class="h-full bg-gradient-to-r from-primary to-secondary w-[85%]"></div>
-</div>
-<span class="text-xs text-on-surface-variant font-medium">850/1000 XP</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
-<main class="max-w-7xl mx-auto px-6 space-y-20">
-<!-- Unlocked Section -->
-<section>
-<div class="flex items-center gap-4 mb-8">
-<h3 class="font-headline text-2xl font-bold tracking-tight">ODBLOKOWANE</h3>
-<div class="h-[1px] flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
-<span class="text-on-surface-variant text-sm font-medium">8 / 20</span>
-</div>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
-<!-- Selected Avatar -->
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border-2 border-primary bg-surface-container shadow-[0_0_20px_rgba(224,141,255,0.3)] transition-transform duration-300 group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="Futuristic cybernetic ninja avatar with neon purple visor and sleek black armor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa0jM4w46wiVtB8VOzzl0kOiREfQYBcryShUKYbXL9s764JDLHGOqv43lMQM80Rv_mlzjwSQKMpGdWtVXXGRjeQSnew2QyiqIwxE2007Xw6swF0QE39fiGNUB3hNtynk4SliH5WvadVfQzMM5RndQxfsFDc5zkO-E17DtLKEvYKRevSwYLOeg5EzSsvDONtNRpLgaMmPgBFHcLtJOojrhGHZuhvRIWL5WcgKmuz-EAbGC0GNgamJl9aaVt-6MnGBu8acb5aH1W_HX0"/>
-</div>
-<div class="absolute top-2 left-2 bg-primary text-on-primary text-[10px] font-black px-2 py-0.5 rounded-sm tracking-tighter">
-                        WYBRANY
-                    </div>
-</div>
-<!-- Other Unlocked -->
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border border-outline-variant/30 bg-surface-container transition-all duration-300 group-hover:border-tertiary group-hover:neon-glow-primary group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="Stylized neon cyberpunk portrait of a woman with glowing blue hair and reflective chrome glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCSWTluNS5X-agDnXRvllkPAHNS3RI3MMnVWDyPXHmihyXwelg9omU1fwqh0LOSdt6HLbgHJ7Xs9Fyj9X4VK9DgQ9F36oZSCXDRjeFCNAm7P9KEAZysTbOxVg_YZzkoLGDn4yAIktBR1X3ZlWUIXJRvb6cjG_J7BLijBiutmGybNgb3U6bV3TOE9nTrAZ1uSKtpaS38pEGSNi-9C71ZCOJ0H16S8ji1d_liaEZeT9wiQYHRmCvWyo2PXAH6QhMzT4WMqDVR9MyrpX1"/>
-</div>
-</div>
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border border-outline-variant/30 bg-surface-container transition-all duration-300 group-hover:border-tertiary group-hover:neon-glow-primary group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="Abstract 3D digital art of a neon sphere with glowing filaments and geometric patterns in deep violet and cyan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO17_QUrt-or9MkldRfafsEVxnFCArdTA5ZvaDmCOQgb7LgEs5Uz6zi-RIOSqYPgqRiIJJRDzjzOulL7SvrrSD4jXAOK9rRAqei3seIjI4WEWu0ratXnBK5xcTRZhTXA5BmZya8c01UGAGDaZQnXbU63jWg0M9gNHdYXKuuF10xkbWo58G6xGhe5QYVgGKYaLHqSPcNgzsBkp7iX3kGLS78Acnr-s8JS3jU4M369AyutoPFkID-y7zZ6aB51rTVMO-0GDp3cR9jGbf"/>
-</div>
-</div>
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border border-outline-variant/30 bg-surface-container transition-all duration-300 group-hover:border-tertiary group-hover:neon-glow-primary group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="Retro vaporwave illustration of a sunset over a digital sea with grid lines and vibrant pink aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5BXDuPDxKFngZyjY9L4jMi7aQt0-g_pCxvYAeb6LtLXhKfEC4fuDUzqUle_vbwVJxvBFfRBr1SwbnDwk7HHVzm6LrBwmlznlMSq04EL4lsjVoPY_NpQPCxmW0SD1Fd0kFMXoIgxID9GxI7WI1eI3wqoEEx0959MhLzR9ODRZQuC2KrQZLllteSD-iEZh3jlmqiEJzBRvKhlEIDXCD10dLyQ_xxO0XrJs11XlVvuxfOLsvONbLCa8u1GFneKKP6bM4QbRoV7ZJH8l2"/>
-</div>
-</div>
-<!-- Row 2 -->
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border border-outline-variant/30 bg-surface-container transition-all duration-300 group-hover:border-tertiary group-hover:neon-glow-primary group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="Glitch art portrait of a digital entity with fragmented colors and neon streaks across a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRv8DaAib3CJ6y8UFQ3-vJKM7rmFSMcjmweuDzuu1jZs_FAp5DW4ynkUqJTdFOHAvwZqjT2OU0wknD0kTXCjydgkVP5i9a9UP6VU_aWFMloQ1vHYELoQ68gM5mXsIV3Vbaf4GYFEHwOSeJeeVITet8C2WaiJWJT6GQQM_3IfeW42gI3Dax_jjJpPKDiL5sd9NLOAFuZ8QcCXBn08-_fYaH_FtJ5WVl-AAA-Qt2V61Mnc6c1fCQGrCrUf3hgqtRYjUuCnGimiQCcnV"/>
-</div>
-</div>
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border border-outline-variant/30 bg-surface-container transition-all duration-300 group-hover:border-tertiary group-hover:neon-glow-primary group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="High-tech glowing circuit board patterns on a stylized robotic face with bright cyan LED eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-0OcA9VuzoFfvjw5Z3tVX_J9R4UdvfxFkoTlxvXsh0L4hkYPgfxVYNgbNlF1ODt-AMBHT-A-8KWX3g8xxRUOmPmUMot-5LZ7e8tiAzqeXVBwBG8Qo3pBIyugQUWVuAHuheidQq-nEYqodYCaz_zZuK0soQcLn6S5niPNBUnwvjMnbxaUxIqPyljPJrohKAcCx7elG1Xbm_nFyqimbfJLhkR5qRcdQcniid3yL29MmxYEJSihH8l5cr-4NTdG506ghqj44llGVBxu6"/>
-</div>
-</div>
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border border-outline-variant/30 bg-surface-container transition-all duration-300 group-hover:border-tertiary group-hover:neon-glow-primary group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="Minimalist geometric avatar of a futuristic cube with internal light sources and soft pink gradients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcwrONUKNposxtRZv2l67xhryeqLPq2htxjpIA13Wm3m1GcBcOgcclwuBoexSQUpsqcjgE97GnmZiLiV6EeOTaCganYsZzayP5ukelzHFSd-hgiK-mjj0JGjHVwEUpV4UKzOv_AyXg3kuZjlsKTT4r3_ufhdH7ITm4Fm750ki-CG1Lill4xtwb9tL6Aq2qoeF4taVC1-K5DkZJSUhhx2KeNxBdv5S9UZFUxqU8WAU80Unb4OVyEK29VeR3DeQhn8qRj6ucitqLcjYa"/>
-</div>
-</div>
-<div class="relative group cursor-pointer">
-<div class="aspect-square rounded-lg overflow-hidden border border-outline-variant/30 bg-surface-container transition-all duration-300 group-hover:border-tertiary group-hover:neon-glow-primary group-hover:scale-[1.02]">
-<img alt="Unlocked Avatar" class="w-full h-full object-cover" data-alt="Distant shot of a lone wanderer in a neon-drenched futuristic city at night with massive holographic advertisements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIlpPML6vWkQ7V-A7IxNRLPBS-pRsEmJinB7VViEKBAwr-ss9iWevME7q0FAzTrNM6jFkFr5P6iRQ0OlO3ScWg_NrMM_HYFjxy_4DI70ZAJ_RcVwI73xGwquGJ-04O6Kkr6lHgf_RVNa2nJDkKK9pZ3_DRNfn1-PS7BNFHMqjlgtnIMDed_15DZEunQopvc4IR4yJsxAEnxTZRzwAqUvRuOMSiEJ5thBcdbiG9HaB4-zc9bABh1x0SjFOthUdoOHjwiw08pBHKx9cZ"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Locked Section -->
-<section>
-<div class="flex items-center gap-4 mb-8">
-<h3 class="font-headline text-2xl font-bold tracking-tight">ZABLOKOWANE</h3>
-<div class="h-[1px] flex-1 bg-gradient-to-r from-outline-variant/30 to-transparent"></div>
-</div>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
-<!-- Locked Item 1 -->
-<div class="group relative aspect-square">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/20 overflow-hidden">
-<img alt="Locked Avatar" class="w-full h-full object-cover opacity-30" data-alt="Dark mysterious hacker silhouette in a room filled with glowing green code and multiple monitors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9WzgDbgJegylg_PR0yuzyJXI2k1IQJXNZuztly5J6fs1tkAKxuIDSiGHLZDEmnmc3f2BjlRpB2ppJGLRyJqXPYQOuvzrmPRXs2vASWJ_lrqfwQlXgDx-4o3Rm6gubj3m0dX_ywUiqt1iClV8VoPzDd2m62tshF-ef7d29XAAHLManoHelRhhaOfYNZHKuo1t_jr7khNIQC-oi9HVRO_02BIxXrHJW1-THTG96MyfrpfClLnvAtfAGwMAL3dYr1GhgG7eAW1WP5Co7"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline text-4xl group-hover:scale-110 transition-transform">lock</span>
-</div>
-</div>
-<!-- Hover Tooltip -->
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">Poziom 50</p>
-</div>
-</div>
-<!-- Locked Item 2 -->
-<div class="group relative aspect-square">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/20 overflow-hidden">
-<img alt="Locked Avatar" class="w-full h-full object-cover opacity-30" data-alt="Retro 80s gaming aesthetic with old consoles and glowing pixel art characters in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXPciyNUmthf5GzckP_6aeGZ_DodzEisKmi1ae0ptQeEvTC0tsWc8IqQdv-twPbqTKm2jZxgzXQeFBjokPdXZWljBXkAS6TchITNMX4K0f_wvXOxkFNAtbJ3f3DdmR8j8bNOvcpj1TekOJAXN88vWbfSaQtm8LRHfORflcWrJ6gmw6URWeMa3y2s6P_yhWLL6kuBzdkYx2wirGV6yB8ziVxP6opk2gtZM7Z7-R33GM2e_LUomq5WGjlga1TbmSJFGMTl16vlhMV9yy"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline text-4xl group-hover:scale-110 transition-transform">lock</span>
-</div>
-</div>
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">Ukończ Historię</p>
-</div>
-</div>
-<!-- Locked Item 3 -->
-<div class="group relative aspect-square">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/20 overflow-hidden">
-<img alt="Locked Avatar" class="w-full h-full object-cover opacity-30" data-alt="Stunning cosmic nebula in deep pink and purple with bright stars and distant galaxies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkrmD4l3kVIQR7J-WG4_Qo_AhbyF3hxopnPQW2HOe1Uvul-juIytDqzJKdpX_960Pyjbtfxhb5Go3qv9J1rpOLC8cf7ctOX1Gxpuqc9HHOD7cIwulsvqblGqnKOgrUBV_8-Udw-BfNHQWlL9nVEQ3wd7cruS88udZQmS840k0B7k0KKA5K-rBoGrPsF3AigEabYc5Nq0KZFY0EmigfwnMbgZrRu2C3zt4UTsbVQu0npf1fVxOmikaGu0CDRjXSu0_xkBQ20xOGsKbu"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline text-4xl group-hover:scale-110 transition-transform">lock</span>
-</div>
-</div>
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">TOP 10 Ranking</p>
-</div>
-</div>
-<!-- Locked Item 4 -->
-<div class="group relative aspect-square">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/20 overflow-hidden">
-<img alt="Locked Avatar" class="w-full h-full object-cover opacity-30" data-alt="Highly detailed abstract pattern of liquid metal flowing with iridescent neon reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ1aNQs47belQyw6SLktsTFLdjOJIEToQu1SkUjHwHTKGHhrWmCm3CirNaMw0U8RPkvUn9P-651Cp52xoEexsUl4VXNs0uQfU9JnpAACYHl-TW09DRXtbOfFmEY7BM2GgIBsiJgvdTwqigJEDc-pe2FUsk8ZdmRMPHiqhr7LCskftj9_We3dKn1jM_xHtkn_lYOfUoDH1jzipoDMChFiuLnzj9qZJvrRk4UmWVlPtEKOVBw7AD4BFHOjfzakEaHhoSHnvllabWnmn7"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline text-4xl group-hover:scale-110 transition-transform">lock</span>
-</div>
-</div>
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">Wygraj 100 Quizów</p>
-</div>
-</div>
-<!-- Repeated logic for remaining 8 placeholders to match request -->
-<div class="group relative aspect-square opacity-40">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">Sekretne Wyzwanie</p>
-</div>
-</div>
-<div class="group relative aspect-square opacity-40">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">Poziom 75</p>
-</div>
-</div>
-<div class="group relative aspect-square opacity-40">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">Ukończ Sezon 1</p>
-</div>
-</div>
-<div class="group relative aspect-square opacity-40">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-<div class="absolute inset-0 bg-surface-container-high/95 rounded-lg flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 backdrop-blur-md border border-tertiary/20">
-<span class="text-tertiary text-xs font-headline font-bold mb-1 uppercase">Wymaganie</span>
-<p class="text-on-surface font-medium leading-tight">Ekspert Kultury</p>
-</div>
-</div>
-<!-- 4 More to reach 12 -->
-<div class="group relative aspect-square opacity-40 hidden md:block">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-</div>
-<div class="group relative aspect-square opacity-40 hidden md:block">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-</div>
-<div class="group relative aspect-square opacity-40 hidden md:block">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-</div>
-<div class="group relative aspect-square opacity-40 hidden md:block">
-<div class="absolute inset-0 bg-surface-container-highest/80 grayscale rounded-lg border border-outline-variant/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-outline/50 text-4xl">lock</span>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Bottom Navigation -->
-<footer class="fixed bottom-0 left-0 w-full z-50 p-6 flex justify-center">
-<div class="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent pointer-events-none"></div>
-<button class="relative group bg-surface-bright border border-primary/20 px-12 py-4 rounded-full transition-all duration-300 hover:bg-primary/10 active:scale-95 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex items-center gap-3">
-<span class="material-symbols-outlined text-primary group-hover:-translate-x-1 transition-transform">arrow_back</span>
-<span class="font-headline font-black tracking-widest text-on-surface uppercase text-lg">POWRÓT</span>
-<div class="absolute inset-0 rounded-full bg-primary/5 blur-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
-</button>
-</footer>
-</body></html>
+<body class="antialiased">
+  <main class="relative min-h-screen overflow-hidden px-4 py-6 sm:px-6 lg:px-8 lg:py-10">
+    <div class="pointer-events-none fixed left-[-10%] top-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-primary/12 blur-[120px]"></div>
+    <div class="pointer-events-none fixed bottom-[-10%] right-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-secondary/12 blur-[120px]"></div>
+
+    <div class="relative z-10 mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-5xl flex-col justify-center gap-8">
+      <header class="text-center">
+        <div class="mb-4 inline-block">
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-3xl font-black italic tracking-tight text-transparent md:text-5xl">QuizVolt</span>
+        </div>
+        <h1 class="font-headline text-4xl font-black uppercase tracking-[-0.04em] text-[#f4d5ff] md:text-6xl">Logowanie</h1>
+        <p class="mx-auto mt-4 max-w-3xl text-base font-medium tracking-wide text-onSurfaceVariant md:text-lg">
+          Wybierz sposób logowania, aby zapisać postępy i odblokować katalogi gracza.
+        </p>
+      </header>
+
+      <section class="glass-panel mx-auto w-full max-w-4xl rounded-[2rem] border border-outline/40 px-5 py-6 md:px-8 md:py-10">
+        <div class="mb-6 text-center">
+          <p class="text-xs font-black uppercase tracking-[0.32em] text-tertiary">Wybierz sposób logowania</p>
+          <h2 class="mt-3 font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">Wejdź do QuizVolt</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-sm text-onSurfaceVariant">
+            Zaloguj się przez konto społecznościowe albo wejdź jako gość, żeby od razu zacząć grę.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <button class="group flex w-full items-center justify-between rounded-full border border-outline/40 bg-[#171730]/85 px-5 py-4 text-left transition-all hover:border-primary/40 hover:bg-[#232341]">
+            <div class="flex items-center gap-4">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#f4d5ff] text-[#4f006c] shadow-[0_0_20px_rgba(224,141,255,0.25)]">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.1-1.4 3.3-5.5 3.3-3.3 0-6-2.7-6-6s2.7-6 6-6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3 14.7 2 12 2 6.5 2 2 6.5 2 12s4.5 10 10 10c5.8 0 9.7-4.1 9.7-9.8 0-.7-.1-1.2-.2-1.7H12z"></path>
+                  <path fill="#FBBC05" d="M3.5 7.3 6.6 9.6C7.4 7.7 9.5 6 12 6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3 14.7 2 12 2 8.2 2 4.9 4 3.5 7.3z"></path>
+                  <path fill="#34A853" d="M12 22c2.6 0 4.8-.9 6.4-2.4l-3-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.7-5.6-4.1L3.3 16.3C4.8 19.6 8 22 12 22z"></path>
+                  <path fill="#4285F4" d="M21.7 12.2c0-.7-.1-1.2-.2-1.7H12v3.7h5.5c-.3 1.2-1 2.2-2.1 2.9l3 2.5c1.8-1.7 3.3-4.3 3.3-7.4z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-onSurface">Zaloguj przez Google</p>
+                <p class="text-xs text-onSurfaceVariant">Szybka synchronizacja postępów</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-onSurfaceVariant transition-transform group-hover:translate-x-1">chevron_right</span>
+          </button>
+
+          <button class="group flex w-full items-center justify-between rounded-full border border-outline/40 bg-[#171730]/85 px-5 py-4 text-left transition-all hover:border-tertiary/40 hover:bg-[#232341]">
+            <div class="flex items-center gap-4">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-[0_0_20px_rgba(24,119,242,0.25)]">
+                <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-onSurface">Zaloguj przez Facebook</p>
+                <p class="text-xs text-onSurfaceVariant">Dostęp do konta społecznościowego</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-onSurfaceVariant transition-transform group-hover:translate-x-1">chevron_right</span>
+          </button>
+
+          <div class="flex items-center gap-4 py-2">
+            <div class="h-px flex-1 bg-outline/40"></div>
+            <span class="text-[10px] font-black uppercase tracking-[0.32em] text-[#74738d]">Lub</span>
+            <div class="h-px flex-1 bg-outline/40"></div>
+          </div>
+
+          <button class="flex w-full items-center justify-center gap-3 rounded-full border-2 border-outline/30 bg-gradient-to-r from-primary to-secondary px-6 py-4 text-sm font-bold text-onPrimary transition-all hover:scale-[1.01]">
+            <span class="material-symbols-outlined text-2xl">person</span>
+            <span>Graj jako Gość</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
