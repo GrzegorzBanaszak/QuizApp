@@ -12,7 +12,7 @@ using QuizApp.Api.Data;
 namespace QuizApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260406083919_Init")]
+    [Migration("20260406110536_Init")]
     partial class Init
     {
         /// <inheritdoc />

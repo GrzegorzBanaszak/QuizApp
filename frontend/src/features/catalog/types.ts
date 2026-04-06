@@ -17,10 +17,16 @@ export interface AchievementCatalogItem {
   name: string;
   description: string;
   iconUrl: string;
+  isElite: boolean;
   triggerType: string;
   conditionDescription: string;
+  currentProgress: number;
+  requiredProgress: number;
+  progressPercent: number;
+  progressLabel: string;
   rewardType: string;
   rewardDescription: string;
+  rewardExperience?: number | null;
   rewardCoins?: number | null;
   rewardAvatarKey?: string | null;
   rewardAvatarImageUrl?: string | null;

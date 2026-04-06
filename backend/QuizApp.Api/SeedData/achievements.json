@@ -1,62 +1,67 @@
-﻿[
-    {
-        "code":  "level-3-cleared",
-        "name":  "Third Step",
-        "description":  "Complete level level-3.",
-        "iconUrl":  "/images/achievements/level-3-cleared.png",
-        "sortOrder":  10,
-        "triggerType":  "LevelCompletion",
-        "requiredLevelKey":  "level-3",
-        "rewardExperience":  120,
-        "rewardType":  "Avatar",
-        "rewardAvatarKey":  "level-neon-knight"
-    },
-    {
-        "code":  "level-7-cleared",
-        "name":  "Deep Run",
-        "description":  "Complete level level-7.",
-        "iconUrl":  "/images/achievements/level-7-cleared.png",
-        "sortOrder":  20,
-        "triggerType":  "LevelCompletion",
-        "requiredLevelKey":  "level-7",
-        "rewardExperience":  220,
-        "rewardType":  "Avatar",
-        "rewardAvatarKey":  "level-ember-mage"
-    },
-    {
-        "code":  "all-categories-cleared",
-        "name":  "World Tour",
-        "description":  "Complete all available categories.",
-        "iconUrl":  "/images/achievements/all-categories-cleared.png",
-        "sortOrder":  30,
-        "triggerType":  "CompletedCategoriesCount",
-        "requiredCompletedCategoriesCount":  3,
-        "rewardExperience":  800,
-        "rewardType":  "Avatar",
-        "rewardAvatarKey":  "achievement-void-mask"
-    },
-    {
-        "code":  "first-category-cleared",
-        "name":  "Category Champion",
-        "description":  "Complete your first category.",
-        "iconUrl":  "/images/achievements/first-category-cleared.png",
-        "sortOrder":  40,
-        "triggerType":  "CompletedCategoriesCount",
-        "requiredCompletedCategoriesCount":  1,
-        "rewardExperience":  200,
-        "rewardType":  "Avatar",
-        "rewardAvatarKey":  "achievement-storm-crown"
-    },
-    {
-        "code":  "two-categories-cleared",
-        "name":  "Double Crown",
-        "description":  "Complete two categories.",
-        "iconUrl":  "/images/achievements/two-categories-cleared.png",
-        "sortOrder":  50,
-        "triggerType":  "CompletedCategoriesCount",
-        "requiredCompletedCategoriesCount":  2,
-        "rewardExperience":  400,
-        "rewardType":  "Coins",
-        "rewardCoins":  150
-    }
+[
+  {
+    "code": "movies-level-1-complete",
+    "name": "Pierwszy seans",
+    "description": "Ukoncz 1 poziom w kategorii Filmy.",
+    "iconUrl": "/images/achievements/movies-level-1-complete.png",
+    "sortOrder": 10,
+    "isElite": false,
+    "triggerType": "LevelCompletion",
+    "requiredLevelKey": "level-51",
+    "rewardExperience": 100,
+    "rewardType": "Coins",
+    "rewardCoins": 25
+  },
+  {
+    "code": "movies-level-4-complete",
+    "name": "Na czerwonym dywanie",
+    "description": "Ukoncz 4 poziom w kategorii Filmy.",
+    "iconUrl": "/images/achievements/movies-level-4-complete.png",
+    "sortOrder": 20,
+    "isElite": false,
+    "triggerType": "LevelCompletion",
+    "requiredLevelKey": "level-54",
+    "rewardExperience": 175,
+    "rewardType": "Coins",
+    "rewardCoins": 25
+  },
+  {
+    "code": "movies-level-7-complete",
+    "name": "Kinoman",
+    "description": "Ukoncz 7 poziom w kategorii Filmy.",
+    "iconUrl": "/images/achievements/movies-level-7-complete.png",
+    "sortOrder": 30,
+    "isElite": false,
+    "triggerType": "LevelCompletion",
+    "requiredLevelKey": "level-57",
+    "rewardExperience": 250,
+    "rewardType": "Coins",
+    "rewardCoins": 50
+  },
+  {
+    "code": "movies-level-10-complete",
+    "name": "Mistrz srebrnego ekranu",
+    "description": "Ukoncz 10 poziom w kategorii Filmy.",
+    "iconUrl": "/images/achievements/movies-level-10-complete.png",
+    "sortOrder": 40,
+    "isElite": false,
+    "triggerType": "LevelCompletion",
+    "requiredLevelKey": "level-60",
+    "rewardExperience": 350,
+    "rewardType": "Coins",
+    "rewardCoins": 100
+  },
+  {
+    "code": "movies-category-complete-elite",
+    "name": "Elita kina",
+    "description": "Ukoncz cala kategorie Filmy i zdobadz elitarna nagrode.",
+    "iconUrl": "/images/achievements/movies-category-complete-elite.png",
+    "sortOrder": 50,
+    "isElite": true,
+    "triggerType": "CategoryCompletion",
+    "requiredCategoryKey": "movies",
+    "rewardExperience": 500,
+    "rewardType": "Avatar",
+    "rewardAvatarKey": "movies-elite-icon"
+  }
 ]

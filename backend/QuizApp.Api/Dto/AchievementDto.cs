@@ -6,8 +6,13 @@ public sealed class AchievementDto
     public string Name { get; init; } = string.Empty;
     public string Description { get; init; } = string.Empty;
     public string IconUrl { get; init; } = string.Empty;
+    public bool IsElite { get; init; }
     public string TriggerType { get; init; } = string.Empty;
     public string ConditionDescription { get; init; } = string.Empty;
+    public int CurrentProgress { get; init; }
+    public int RequiredProgress { get; init; }
+    public int ProgressPercent { get; init; }
+    public string ProgressLabel { get; init; } = string.Empty;
     public string RewardType { get; init; } = string.Empty;
     public string RewardDescription { get; init; } = string.Empty;
     public int? RewardExperience { get; init; }
