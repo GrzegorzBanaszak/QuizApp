@@ -7,8 +7,12 @@ export const GameplayView = () => {
   const currentQuestionIndex = useSingleplayerStore(
     (state) => state.currentQuestionIndex,
   );
-  const selectedAnswerId = useSingleplayerStore((state) => state.selectedAnswerId);
-  const selectedLevelName = useSingleplayerStore((state) => state.selectedLevelName);
+  const selectedAnswerId = useSingleplayerStore(
+    (state) => state.selectedAnswerId,
+  );
+  const selectedLevelName = useSingleplayerStore(
+    (state) => state.selectedLevelName,
+  );
   const isGameLoading = useSingleplayerStore((state) => state.isGameLoading);
   const isSubmittingResult = useSingleplayerStore(
     (state) => state.isSubmittingResult,
@@ -79,10 +83,10 @@ export const GameplayView = () => {
         <div className="glass-panel w-full max-w-2xl rounded-[2rem] px-10 py-12 text-center">
           <div className="mx-auto mb-6 h-16 w-16 animate-spin rounded-full border-2 border-[#e08dff]/30 border-t-[#e08dff]" />
           <h1 className="font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">
-            Synchronizacja pytań
+            Synchronizacja pytan
           </h1>
           <p className="mt-3 text-[#aaa8c4]">
-            Przygotowuję rundę dla poziomu {selectedLevelName ?? "singleplayer"}.
+            Przygotowuje runde dla poziomu {selectedLevelName ?? "singleplayer"}.
           </p>
         </div>
       </div>
@@ -94,10 +98,10 @@ export const GameplayView = () => {
       <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] px-6 text-[#e5e3ff]">
         <div className="glass-panel w-full max-w-2xl rounded-[2rem] px-10 py-12 text-center">
           <h1 className="font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">
-            Brak pytań do wyświetlenia
+            Brak pytan do wyswietlenia
           </h1>
           <p className="mt-3 text-[#aaa8c4]">
-            {gameError ?? "Ta sesja nie została poprawnie zainicjalizowana."}
+            {gameError ?? "Ta sesja nie zostala poprawnie zainicjalizowana."}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <button
@@ -107,14 +111,14 @@ export const GameplayView = () => {
               }}
               className="rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-8 py-4 font-bold text-[#4f006c]"
             >
-              Spróbuj ponownie
+              Sprobuj ponownie
             </button>
             <button
               type="button"
               onClick={surrender}
               className="rounded-full border border-white/10 px-8 py-4 font-bold text-[#e5e3ff]"
             >
-              Wróć do poziomów
+              Wroc do poziomow
             </button>
           </div>
         </div>
@@ -124,36 +128,28 @@ export const GameplayView = () => {
 
   return (
     <div className="flex min-h-screen flex-col bg-[#0c0c21] text-[#e5e3ff]">
-      <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-[#0c0c21]/80 px-6 py-4 shadow-[0_0_20px_rgba(224,141,255,0.1)] backdrop-blur-xl">
-        <div className="flex items-center gap-3">
-          <span className="material-symbols-outlined text-[#e08dff]">
-            motion_play
+      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#0c0c21]/92 backdrop-blur-xl">
+        <div className="mx-auto flex w-full max-w-5xl items-start justify-between gap-4 px-4 py-4 sm:px-6">
+          <span className="bg-gradient-to-r from-[#f4d5ff] via-[#e08dff] to-[#ff68a7] bg-clip-text font-headline text-2xl font-black tracking-tight text-transparent sm:text-3xl">
+            QuizVolt
           </span>
-          <span className="font-headline text-xl font-bold tracking-tight">
-            LIVE RUN
-          </span>
-        </div>
-        <div className="absolute left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#e08dff] to-[#ff68a7] bg-clip-text text-2xl font-black tracking-tight text-transparent">
-          QuizVolt
-        </div>
-        <div className="flex items-center gap-6">
-          <span className="font-headline hidden font-bold tracking-tight text-[#aaa8c4] md:block">
-            {`Pytanie ${currentQuestionIndex + 1} z ${totalQuestions}`}
-          </span>
-          <div className="rounded-full border border-[#e08dff]/20 bg-[#29294a] px-4 py-1.5">
-            <span className="font-headline font-bold tracking-tight text-[#e08dff]">
+
+          <div className="min-w-0 text-right">
+            <div className="truncate text-xs font-black uppercase tracking-[0.22em] text-[#e08dff] sm:text-sm">
               {selectedLevelName ?? "Singleplayer"}
-            </span>
+            </div>
+            <div className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#aaa8c4] sm:text-sm">
+              {`Pytanie ${currentQuestionIndex + 1} z ${totalQuestions}`}
+            </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-[#e08dff]/20 to-transparent" />
       </header>
 
-      <main className="relative mb-24 mt-16 flex flex-grow flex-col items-center justify-center overflow-hidden p-6">
+      <main className="relative flex flex-grow flex-col items-center overflow-hidden px-4 py-6 sm:px-6 sm:py-8">
         <div className="absolute left-[-8rem] top-1/4 h-96 w-96 rounded-full bg-[#e08dff]/5 blur-[120px]" />
         <div className="absolute bottom-1/4 right-[-8rem] h-96 w-96 rounded-full bg-[#ff68a7]/5 blur-[120px]" />
 
-        <div className="w-full max-w-4xl space-y-10">
+        <div className="w-full max-w-4xl space-y-6 sm:space-y-8 md:space-y-10">
           <div className="overflow-hidden rounded-full bg-white/5">
             <div
               className="h-2 rounded-full bg-gradient-to-r from-[#8ff5ff] via-[#e08dff] to-[#ff68a7] transition-all duration-500"
@@ -170,7 +166,7 @@ export const GameplayView = () => {
           ) : null}
 
           <div
-            className={`glass-panel group relative overflow-hidden rounded-[2rem] p-10 transition-all duration-500 md:p-16 ${
+            className={`glass-panel group relative overflow-hidden rounded-[2rem] p-6 transition-all duration-500 sm:p-8 md:p-12 ${
               isQuestionVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-4 opacity-0"
@@ -178,19 +174,12 @@ export const GameplayView = () => {
           >
             <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#e08dff]/10 blur-[80px]" />
             <div className="absolute left-0 top-0 h-full w-1.5 bg-gradient-to-b from-[#8ff5ff] via-[#e08dff] to-[#ff68a7]" />
-            <div className="absolute right-6 top-6 flex items-center gap-2 rounded-[1rem] border border-white/10 bg-[#232341] px-3 py-1">
-              <span className="material-symbols-outlined text-sm text-[#8ff5ff]">
-                auto_awesome
-              </span>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#aaa8c4]">
-                Treść aktywna
-              </span>
-            </div>
-            <h1 className="font-headline text-center text-3xl font-extrabold leading-tight tracking-tight text-[#e5e3ff] md:text-5xl">
+
+            <h1 className="font-headline text-center text-2xl font-extrabold leading-tight tracking-tight text-[#e5e3ff] sm:text-3xl md:text-5xl">
               {currentQuestion.text}
             </h1>
-            <p className="mt-6 text-center text-sm uppercase tracking-[0.24em] text-[#8ff5ff]/80">
-              Odpowiedzi pojawią się po 2 sekundach
+            <p className="mt-5 text-center text-xs uppercase tracking-[0.24em] text-[#8ff5ff]/80 sm:text-sm">
+              Odpowiedzi pojawia sie po 2 sekundach
             </p>
           </div>
 
@@ -204,7 +193,7 @@ export const GameplayView = () => {
                   type="button"
                   onClick={() => setSelectedAnswerId(answer.id)}
                   disabled={!areAnswersVisible || isAdvancing || isSubmittingResult}
-                  className={`group relative flex items-center gap-6 rounded-[2rem] border p-6 text-left transition-all duration-500 active:scale-95 ${
+                  className={`group relative flex items-center gap-4 rounded-[2rem] border p-5 text-left transition-all duration-500 active:scale-95 sm:gap-6 sm:p-6 ${
                     areAnswersVisible
                       ? "translate-y-0 opacity-100"
                       : "pointer-events-none translate-y-8 opacity-0"
@@ -216,7 +205,7 @@ export const GameplayView = () => {
                   style={{ transitionDelay: `${index * 90}ms` }}
                 >
                   <span
-                    className={`font-headline flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border text-xl font-black transition-colors ${
+                    className={`font-headline flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border text-lg font-black transition-colors sm:h-12 sm:w-12 sm:text-xl ${
                       isSelected
                         ? "border-[#e08dff] bg-[#e08dff] text-[#4f006c]"
                         : "border-[#e08dff]/30 bg-[#232341] text-[#e08dff] group-hover:bg-[#e08dff] group-hover:text-[#4f006c]"
@@ -224,8 +213,9 @@ export const GameplayView = () => {
                   >
                     {String.fromCharCode(65 + index)}
                   </span>
+
                   <span
-                    className={`text-lg font-medium md:text-xl ${
+                    className={`text-base font-medium sm:text-lg md:text-xl ${
                       isSelected ? "text-[#e5e3ff]" : "text-[#aaa8c4]"
                     }`}
                   >
@@ -236,43 +226,35 @@ export const GameplayView = () => {
             })}
           </div>
 
-          {selectedAnswerId && areAnswersVisible ? (
-            <div className="flex justify-center">
+          <div className="flex flex-col items-center gap-4 pt-2">
+            {selectedAnswerId && areAnswersVisible ? (
               <button
                 type="button"
                 onClick={() => {
                   void handleAdvance();
                 }}
                 disabled={isAdvancing || isSubmittingResult}
-                className="rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-10 py-4 font-headline text-sm font-black tracking-[0.2em] text-[#4f006c] shadow-[0_0_30px_rgba(224,141,255,0.35)] transition-all hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
+                className="w-full max-w-sm rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-8 py-4 font-headline text-sm font-black tracking-[0.2em] text-[#4f006c] shadow-[0_0_30px_rgba(224,141,255,0.35)] transition-all hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
               >
                 {isSubmittingResult
-                  ? "WYSYŁANIE WYNIKU..."
+                  ? "WYSLANIE WYNIKU..."
                   : isLastQuestion
-                    ? "ZAKOŃCZ RUN"
-                    : "NASTĘPNE PYTANIE"}
+                    ? "ZAKONCZ RUN"
+                    : "NASTEPNE PYTANIE"}
               </button>
-            </div>
-          ) : null}
+            ) : null}
+
+            <button
+              type="button"
+              onClick={surrender}
+              className="flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold uppercase tracking-[0.18em] text-[#aaa8c4] transition-all duration-200 hover:bg-[#ff68a7]/10 hover:text-[#ff68a7] active:scale-95"
+            >
+              <span className="material-symbols-outlined text-xl">logout</span>
+              Poddaj sie
+            </button>
+          </div>
         </div>
       </main>
-
-      <nav className="fixed bottom-0 left-0 z-50 flex w-full justify-center bg-transparent pb-10">
-        <button
-          type="button"
-          onClick={surrender}
-          className="flex items-center justify-center rounded-full px-8 py-3 text-[#aaa8c4] opacity-70 transition-all duration-200 hover:bg-[#ff68a7]/10 hover:text-[#ff68a7] hover:opacity-100 active:scale-95"
-        >
-          <div className="flex flex-col items-center">
-            <span className="material-symbols-outlined mb-1 text-2xl">
-              logout
-            </span>
-            <span className="font-headline text-xs font-medium uppercase tracking-widest">
-              Poddaj się
-            </span>
-          </div>
-        </button>
-      </nav>
     </div>
   );
 };
