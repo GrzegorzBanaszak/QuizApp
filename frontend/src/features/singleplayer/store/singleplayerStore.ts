@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { useAuthStore } from "../../auth/store/authStore";
 import { fetchSingleplayerGame, submitSingleplayerGame } from "../services/singleplayerApi";
 import type {
   SingleplayerAnswerSelection,
@@ -198,6 +199,12 @@ export const useSingleplayerStore = create<SingleplayerState>((set, get) => ({
         sessionId: gameSession.sessionId,
         playerAnswers: updatedSelections,
       });
+
+      try {
+        await useAuthStore.getState().refreshSession();
+      } catch {
+        // Result screen should still open even if profile refresh fails.
+      }
 
       const updatedCategories = categories.map((category) => {
         if (category.id !== selectedCategoryId) {

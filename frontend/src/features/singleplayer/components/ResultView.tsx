@@ -102,7 +102,7 @@ export const ResultView = () => {
                   {selectedLevelName ?? "Singleplayer Run"}
                 </h2>
                 <p className="mt-2 max-w-lg text-[#aaa8c4]">
-                  {`Skutecznosc ${accuracy}%. Backend policzyl ${resultSummary.correctAnswersCount} poprawnych odpowiedzi z ${resultSummary.totalQuestions}.`}
+                  {`Skutecznosc ${accuracy}%. W tej rundzie zdobyto ${resultSummary.awardedExperience} XP za ${resultSummary.correctAnswersCount} poprawnych odpowiedzi z ${resultSummary.totalQuestions}.`}
                 </p>
               </div>
             </div>
@@ -110,9 +110,9 @@ export const ResultView = () => {
 
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
             <ResultStatCard
-              label="Wynik koncowy"
-              value={String(resultSummary.totalScore)}
-              suffix="pkt"
+              label="Zdobyty EXP"
+              value={String(resultSummary.awardedExperience)}
+              suffix="XP"
               borderClassName="border-[#e08dff]"
             />
             <ResultStatCard
@@ -349,8 +349,8 @@ export const ResultView = () => {
                 value={String(resultSummary.correctAnswersCount)}
               />
               <SummaryRow
-                label="Punkty"
-                value={String(resultSummary.totalScore)}
+                label="Zdobyty EXP"
+                value={`${resultSummary.awardedExperience} XP`}
               />
               <SummaryRow label="Ocena" value={rank} />
             </dl>

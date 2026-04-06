@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { fetchCurrentUser } from "../services/authApi";
 import type { AuthSession, PendingSocialLogin } from "../types";
 
 interface AuthState {
@@ -15,6 +16,7 @@ interface AuthState {
   setFacebookLoginLoading: (value: boolean) => void;
   setAuthInitialized: (value: boolean) => void;
   setError: (value: string | null) => void;
+  refreshSession: () => Promise<void>;
   clearAuth: () => void;
 }
 
@@ -34,6 +36,10 @@ export const useAuthStore = create<AuthState>()(
         set({ isFacebookLoginLoading: value }),
       setAuthInitialized: (value) => set({ isAuthInitialized: value }),
       setError: (value) => set({ error: value }),
+      refreshSession: async () => {
+        const profile = await fetchCurrentUser();
+        set({ session: { profile } });
+      },
       clearAuth: () =>
         set({
           session: null,
