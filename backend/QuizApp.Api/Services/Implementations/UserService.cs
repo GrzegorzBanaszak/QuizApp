@@ -60,6 +60,12 @@ public sealed class UserService : IUserService
             throw new ArgumentException("Username is required.", nameof(request));
         }
 
+        var avatarUrl = request.AvatarUrl?.Trim() ?? string.Empty;
+        if (string.IsNullOrWhiteSpace(avatarUrl))
+        {
+            throw new ArgumentException("AvatarUrl is required.", nameof(request));
+        }
+
         var userId = await GetCurrentUserIdAsync(principal, cancellationToken);
         if (userId is null)
         {
@@ -86,19 +92,25 @@ public sealed class UserService : IUserService
         }
 
         user.Username = username;
+        user.AvatarUrl = avatarUrl;
+
+        var avatar = await _dbContext.Avatars
+            .SingleOrDefaultAsync(item => item.ImageUrl == avatarUrl, cancellationToken);
+
+        user.CurrentAvatarId = avatar?.Id;
         await _dbContext.SaveChangesAsync(cancellationToken);
 
-        return ToProfileDto(user);
+        return ToProfileDto(user, avatar);
     }
 
-    private static UserProfileDto ToProfileDto(User user)
+    private static UserProfileDto ToProfileDto(User user, Avatar? avatar = null)
     {
         return new UserProfileDto
         {
             Id = user.Id,
             Username = user.Username,
-            AvatarUrl = user.AvatarUrl,
-            CurrentAvatarId = user.CurrentAvatarId,
+            AvatarUrl = avatar?.ImageUrl ?? user.AvatarUrl,
+            CurrentAvatarId = avatar?.Id ?? user.CurrentAvatarId,
             TotalExperience = user.TotalExperience,
             Coins = user.Coins
         };

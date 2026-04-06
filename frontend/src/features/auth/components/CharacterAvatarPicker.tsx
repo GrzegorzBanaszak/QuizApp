@@ -3,8 +3,11 @@ interface CharacterAvatarPickerItem {
   name: string;
   image?: string;
   imageUrl?: string;
-  badge?: string;
   unlockType?: string;
+  unlockDescription?: string;
+  isUnlocked?: boolean;
+  isSelected?: boolean;
+  canPurchase?: boolean;
 }
 
 interface CharacterAvatarPickerProps {
@@ -39,18 +42,23 @@ export const CharacterAvatarPicker = ({
         ) : null}
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {avatars.map((avatar) => {
           const isActive = avatar.id === selectedAvatarId;
           const imageSrc = avatar.imageUrl ?? avatar.image ?? "";
-          const badgeLabel = avatar.unlockType ?? avatar.badge ?? "";
+          const isLocked = avatar.isUnlocked === false;
+          const badgeLabel = isActive
+            ? "WYBRANY"
+            : avatar.isUnlocked
+              ? avatar.unlockType ?? "DOSTĘPNY"
+              : avatar.unlockType ?? "ZABLOKOWANY";
 
           return (
             <button
               key={avatar.id}
               type="button"
               onClick={() => onSelectAvatar(avatar.id)}
-              className={`group relative aspect-square overflow-hidden rounded-[1.5rem] bg-[#232341] transition-all duration-300 ${
+              className={`group relative aspect-square overflow-hidden rounded-[1.75rem] bg-[#232341] text-left transition-all duration-300 ${
                 isActive
                   ? "ring-2 ring-[#e08dff] shadow-[0_0_24px_rgba(224,141,255,0.32)]"
                   : "ring-1 ring-white/10 hover:-translate-y-1 hover:ring-[#e08dff]/50"
@@ -59,17 +67,39 @@ export const CharacterAvatarPicker = ({
               <img
                 src={imageSrc}
                 alt={avatar.name}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className={`h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                  isLocked ? "opacity-40 grayscale" : ""
+                }`}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c21]/70 via-transparent to-transparent" />
-              <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between gap-2">
-                <span className="max-w-[70%] truncate text-left text-[11px] font-bold uppercase tracking-[0.2em] text-[#e5e3ff]">
-                  {avatar.name}
-                </span>
-                {badgeLabel ? (
-                  <span className="rounded-md bg-[#0c0c21]/80 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-[#8ff5ff]">
-                    {badgeLabel}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c21]/85 via-[#0c0c21]/20 to-transparent" />
+              {isLocked ? (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-4xl text-[#e5e3ff]/70">
+                    lock
                   </span>
+                </div>
+              ) : null}
+              <div className="absolute left-3 top-3">
+                <span
+                  className={`inline-flex rounded-md px-2 py-1 text-[9px] font-black uppercase tracking-[0.18em] ${
+                    isActive
+                      ? "bg-[#8ff5ff] text-[#003f43]"
+                      : isLocked
+                        ? "bg-[#ff68a7]/20 text-[#ffb2c7]"
+                        : "bg-[#0c0c21]/80 text-[#8ff5ff]"
+                  }`}
+                >
+                  {badgeLabel}
+                </span>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-3">
+                <p className="truncate text-[10px] font-black uppercase tracking-[0.2em] text-[#e5e3ff]">
+                  {avatar.name}
+                </p>
+                {avatar.unlockDescription ? (
+                  <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-[#aaa8c4]">
+                    {avatar.unlockDescription}
+                  </p>
                 ) : null}
               </div>
             </button>

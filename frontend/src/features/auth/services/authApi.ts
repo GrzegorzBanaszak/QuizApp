@@ -1,5 +1,4 @@
 import type {
-  AuthAvatarOption,
   AuthResponse,
   GoogleLoginRequest,
   GoogleVerifyResponse,
@@ -8,6 +7,7 @@ import type {
   SocialProfileResponse,
   UpdateUserProfileRequest,
 } from "../types";
+import type { AvatarCatalogItem } from "../../catalog/types";
 
 const AUTH_BASE = "/api/auth";
 
@@ -74,12 +74,12 @@ export async function registerSocial(
   return parseJsonResponse<AuthResponse>(response);
 }
 
-export async function fetchCreateCharacterAvatars(): Promise<AuthAvatarOption[]> {
+export async function fetchCreateCharacterAvatars(): Promise<AvatarCatalogItem[]> {
   const response = await fetch("/api/avatar/defaults", {
     credentials: "include",
   });
 
-  return parseJsonResponse<AuthAvatarOption[]>(response);
+  return parseJsonResponse<AvatarCatalogItem[]>(response);
 }
 
 export async function loginAsGuest(

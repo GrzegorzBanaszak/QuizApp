@@ -10,7 +10,7 @@ import {
   registerSocial,
 } from "../services/authApi";
 import { useAuthStore } from "../store/authStore";
-import type { AuthAvatarOption } from "../types";
+import type { AvatarCatalogItem } from "../../catalog/types";
 
 export const CreateCharacterPage = () => {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ export const CreateCharacterPage = () => {
   const error = useAuthStore((state) => state.error);
 
   const [name, setName] = useState("");
-  const [availableAvatars, setAvailableAvatars] = useState<AuthAvatarOption[]>(
+  const [availableAvatars, setAvailableAvatars] = useState<AvatarCatalogItem[]>(
     [],
   );
   const [selectedAvatarId, setSelectedAvatarId] = useState<number | null>(null);
