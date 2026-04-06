@@ -1,9 +1,20 @@
+export interface PlayerProgressDto {
+  level: number;
+  totalExperience: number;
+  experienceForCurrentLevel: number;
+  experienceForNextLevel: number;
+  currentLevelExperience: number;
+  experienceToNextLevel: number;
+}
+
 export interface UserProfileDto {
   id: string;
   username: string;
   avatarUrl: string;
+  authProvider?: "Guest" | "Google" | "Facebook";
   totalExperience: number;
   coins: number;
+  progress?: PlayerProgressDto;
 }
 
 export interface SocialProfileResponse {

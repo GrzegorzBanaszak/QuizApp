@@ -44,6 +44,12 @@ const EditProfilePage = lazy(() =>
   })),
 );
 
+const PlayerProfilePage = lazy(() =>
+  import("../features/auth/pages/PlayerProfilePage").then((module) => ({
+    default: module.PlayerProfilePage,
+  })),
+);
+
 const AvatarCatalogPage = lazy(() =>
   import("../features/catalog/pages/AvatarCatalogPage").then((module) => ({
     default: module.AvatarCatalogPage,
@@ -85,6 +91,10 @@ export const appRouter = createBrowserRouter([
       {
         path: "singleplayer",
         element: <SingleplayerPage />,
+      },
+      {
+        path: "profile",
+        element: <PlayerProfilePage />,
       },
       {
         path: "profile/edit",
