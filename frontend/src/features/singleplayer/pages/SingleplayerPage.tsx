@@ -24,12 +24,19 @@ export const SingleplayerPage = () => {
   const setCategoriesError = useSingleplayerStore(
     (state) => state.setCategoriesError,
   );
+  const goToHome = useSingleplayerStore((state) => state.goToHome);
 
   useEffect(() => {
     if (screen === "levelSelect" || screen === "result") {
       scrollToTop();
     }
   }, [screen]);
+
+  useEffect(() => {
+    return () => {
+      goToHome();
+    };
+  }, [goToHome]);
 
   useEffect(() => {
     if (!session) {
