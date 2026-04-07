@@ -16,7 +16,7 @@ export const ModeUnderConstruction = ({
   statusSecondary,
 }: ModeUnderConstructionProps) => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#0c0c21] px-4 py-6 text-[#e5e3ff] sm:px-6 lg:px-8 lg:py-10">
+    <div className="relative min-h-screen overflow-hidden bg-[#0c0c21] pt-4 pb-28 py-6 text-[#e5e3ff] sm:px-6 lg:px-8 lg:py-10">
       <div className="pointer-events-none fixed inset-0 -z-20 bg-[radial-gradient(circle_at_50%_50%,rgba(23,23,48,0.95)_0%,rgba(12,12,33,1)_100%)]" />
       <div className="pointer-events-none fixed inset-0 -z-20 opacity-[0.035] [background-image:radial-gradient(#e08dff_0.6px,transparent_0.6px)] [background-size:32px_32px]" />
       <div className="pointer-events-none fixed -left-24 -top-24 -z-10 h-96 w-96 rounded-full bg-[linear-gradient(135deg,#e08dff_0%,#ff68a7_100%)] opacity-15 blur-[120px]" />

@@ -86,7 +86,7 @@ export const AvatarCatalogPage = () => {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#0c0c21] px-4 py-6 text-[#e5e3ff] sm:px-6 lg:px-8 lg:py-10">
+    <div className="relative min-h-screen overflow-hidden bg-[#0c0c21] px-4 pb-28 pt-6 text-[#e5e3ff] sm:px-6 lg:px-8 lg:py-10">
       <div className="pointer-events-none fixed left-[-10%] top-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-[#e08dff]/12 blur-[120px]" />
       <div className="pointer-events-none fixed bottom-[-10%] right-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-[#ff68a7]/12 blur-[120px]" />
 

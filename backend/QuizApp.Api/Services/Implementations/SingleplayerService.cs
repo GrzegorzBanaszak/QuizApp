@@ -171,7 +171,7 @@ public sealed class SingleplayerService : ISingleplayerService
         return new SingleplayerGameDto(
             session.Id,
             level.Id,
-            _mapper.Map<List<SingleplayerQuestionDto>>(questions));
+            BuildGameQuestionDtos(questions));
     }
 
     public async Task<SingleplayerResultSummaryDto> SubmitGameAsync(Guid userId, int levelId, SingleplayerSubmitRequestDto request)
@@ -321,6 +321,19 @@ public sealed class SingleplayerService : ISingleplayerService
         return questions
             .OrderBy(_ => Random.Shared.Next())
             .Take(count)
+            .ToList();
+    }
+
+    private static List<SingleplayerQuestionDto> BuildGameQuestionDtos(IEnumerable<SingleplayerQuestion> questions)
+    {
+        return questions
+            .Select(question => new SingleplayerQuestionDto(
+                question.Id,
+                question.Text,
+                question.Answers
+                    .OrderBy(_ => Random.Shared.Next())
+                    .Select(answer => new SingleplayerAnswerDto(answer.Id, answer.Text))
+                    .ToList()))
             .ToList();
     }
 

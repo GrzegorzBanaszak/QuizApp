@@ -14,7 +14,9 @@ import type { AchievementCatalogItem } from "../types";
 export const AchievementCatalogPage = () => {
   const session = useAuthStore((state) => state.session);
   const isAuthInitialized = useAuthStore((state) => state.isAuthInitialized);
-  const [achievements, setAchievements] = useState<AchievementCatalogItem[]>([]);
+  const [achievements, setAchievements] = useState<AchievementCatalogItem[]>(
+    [],
+  );
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -74,7 +76,9 @@ export const AchievementCatalogPage = () => {
       return achievements;
     }
 
-    return achievements.filter((item) => item.code !== featuredAchievement.code);
+    return achievements.filter(
+      (item) => item.code !== featuredAchievement.code,
+    );
   }, [achievements, featuredAchievement]);
 
   if (!isAuthInitialized) {
@@ -92,7 +96,7 @@ export const AchievementCatalogPage = () => {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#0c0c21] px-4 py-6 text-[#e5e3ff] sm:px-6 lg:px-8 lg:py-10">
+    <div className="relative min-h-screen overflow-hidden bg-[#0c0c21] px-4 pb-28 pt-6 text-[#e5e3ff] sm:px-6 lg:px-8 lg:py-10">
       <div className="pointer-events-none fixed left-[-12%] top-[-8%] h-[44vw] w-[44vw] max-h-[30rem] max-w-[30rem] rounded-full bg-[#e08dff]/14 blur-[120px]" />
       <div className="pointer-events-none fixed right-[-12%] top-[18%] h-[26rem] w-[26rem] rounded-full bg-[#8ff5ff]/10 blur-[140px]" />
       <div className="pointer-events-none fixed bottom-[-16%] right-[-8%] h-[48vw] w-[48vw] max-h-[34rem] max-w-[34rem] rounded-full bg-[#ff68a7]/14 blur-[140px]" />
