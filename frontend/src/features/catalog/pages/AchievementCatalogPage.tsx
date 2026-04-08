@@ -3,13 +3,11 @@ import { Navigate } from "react-router";
 import { useAuthStore } from "../../auth/store/authStore";
 import { AchievementCard } from "../components/AchievementCard";
 import { AchievementCatalogHero } from "../components/AchievementCatalogHero";
-import { FeaturedAchievementCard } from "../components/FeaturedAchievementCard";
-import {
-  getAchievementCatalogStats,
-  getAchievementPriority,
-} from "../components/achievementCatalogUtils";
+import { getAchievementCatalogStats } from "../components/achievementCatalogUtils";
 import { fetchAchievementCatalog } from "../services/catalogApi";
 import type { AchievementCatalogItem } from "../types";
+
+type AchievementFilter = "all" | "unlocked" | "in-progress" | "locked" | "elite";
 
 export const AchievementCatalogPage = () => {
   const session = useAuthStore((state) => state.session);
@@ -17,6 +15,7 @@ export const AchievementCatalogPage = () => {
   const [achievements, setAchievements] = useState<AchievementCatalogItem[]>(
     [],
   );
+  const [activeFilter, setActiveFilter] = useState<AchievementFilter>("all");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -58,28 +57,42 @@ export const AchievementCatalogPage = () => {
     [achievements],
   );
 
-  const featuredAchievement = useMemo(() => {
-    if (achievements.length === 0) {
-      return null;
+  const filteredAchievements = useMemo(() => {
+    switch (activeFilter) {
+      case "unlocked":
+        return achievements.filter((achievement) => achievement.isUnlocked);
+      case "in-progress":
+        return achievements.filter(
+          (achievement) =>
+            !achievement.isUnlocked && achievement.currentProgress > 0,
+        );
+      case "locked":
+        return achievements.filter(
+          (achievement) =>
+            !achievement.isUnlocked && achievement.currentProgress <= 0,
+        );
+      case "elite":
+        return achievements.filter((achievement) => achievement.isElite);
+      default:
+        return achievements;
     }
+  }, [activeFilter, achievements]);
 
-    return [...achievements].sort((left, right) => {
-      const leftScore = getAchievementPriority(left);
-      const rightScore = getAchievementPriority(right);
-
-      return rightScore - leftScore;
-    })[0];
-  }, [achievements]);
-
-  const remainingAchievements = useMemo(() => {
-    if (!featuredAchievement) {
-      return achievements;
-    }
-
-    return achievements.filter(
-      (item) => item.code !== featuredAchievement.code,
-    );
-  }, [achievements, featuredAchievement]);
+  const filterOptions: Array<{
+    key: AchievementFilter;
+    label: string;
+    count: number;
+  }> = [
+    { key: "all", label: "Wszystkie", count: stats.total },
+    { key: "unlocked", label: "Zdobyte", count: stats.unlocked },
+    { key: "in-progress", label: "W toku", count: stats.inProgress },
+    {
+      key: "locked",
+      label: "Zablokowane",
+      count: stats.total - stats.unlocked - stats.inProgress,
+    },
+    { key: "elite", label: "Elitarne", count: stats.elite },
+  ];
 
   if (!isAuthInitialized) {
     return (
@@ -126,20 +139,69 @@ export const AchievementCatalogPage = () => {
             </p>
           </div>
         ) : (
-          <>
-            {featuredAchievement ? (
-              <FeaturedAchievementCard achievement={featuredAchievement} />
-            ) : null}
+          <div className="space-y-5">
+            <section className="glass-panel rounded-[2rem] p-5 ring-1 ring-white/10">
+              <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-[0.28em] text-[#8ff5ff]">
+                    Filtr osiagniec
+                  </p>
+                  <h2 className="mt-2 font-headline text-3xl font-black text-[#f4d5ff]">
+                    Jednolity widok kolekcji
+                  </h2>
+                  <p className="mt-2 max-w-2xl text-sm text-[#aaa8c4]">
+                    Przelaczaj widok miedzy stanami odblokowania i szybciej
+                    wylapuj osiagniecia elitarne.
+                  </p>
+                </div>
 
-            <section className="grid grid-cols-1 gap-5 lg:grid-cols-2 xl:grid-cols-3">
-              {remainingAchievements.map((achievement) => (
-                <AchievementCard
-                  key={achievement.code}
-                  achievement={achievement}
-                />
-              ))}
+                <div className="flex flex-wrap gap-2">
+                  {filterOptions.map((filterOption) => {
+                    const isActive = filterOption.key === activeFilter;
+
+                    return (
+                      <button
+                        key={filterOption.key}
+                        type="button"
+                        onClick={() => setActiveFilter(filterOption.key)}
+                        className={`inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-xs font-black uppercase tracking-[0.18em] transition-all ${
+                          isActive
+                            ? "bg-gradient-to-r from-[#e08dff] to-[#ff68a7] text-[#460024] shadow-[0_10px_28px_rgba(224,141,255,0.2)]"
+                            : "bg-white/5 text-[#aaa8c4] ring-1 ring-white/10 hover:bg-white/10 hover:text-[#f4d5ff]"
+                        }`}
+                      >
+                        <span>{filterOption.label}</span>
+                        <span
+                          className={`rounded-full px-2 py-1 text-[10px] ${
+                            isActive
+                              ? "bg-black/15 text-[#460024]"
+                              : "bg-black/20 text-[#8ff5ff]"
+                          }`}
+                        >
+                          {filterOption.count}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </section>
-          </>
+
+            {filteredAchievements.length === 0 ? (
+              <div className="glass-panel rounded-[2rem] px-6 py-12 text-center text-[#aaa8c4]">
+                Ten filtr nie zwrocil zadnych osiagniec.
+              </div>
+            ) : (
+              <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+                {filteredAchievements.map((achievement) => (
+                  <AchievementCard
+                    key={achievement.code}
+                    achievement={achievement}
+                  />
+                ))}
+              </section>
+            )}
+          </div>
         )}
       </main>
     </div>

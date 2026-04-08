@@ -15,56 +15,33 @@ export const AchievementVisual = ({
   featured?: boolean;
 }) => {
   const wrapperSize = featured
-    ? "h-28 w-28"
-    : status.key === "locked"
-      ? "h-20 w-20"
-      : "h-16 w-16 rounded-2xl";
-  const shellClassName = featured || status.key === "locked"
-    ? ""
-    : status.key === "unlocked"
-      ? "bg-gradient-to-br from-[#e08dff] to-[#ff68a7] shadow-[0_0_30px_rgba(224,141,255,0.28)]"
-      : status.key === "in-progress"
-        ? "bg-[#1d1d39]"
-        : "bg-[#090914]";
-  const iconClassName =
+    ? "h-24 w-24 rounded-[1.75rem]"
+    : "h-16 w-16 rounded-[1.25rem]";
+  const shellClassName =
     status.key === "unlocked"
-      ? "text-[#4f006c]"
+      ? "bg-[#d978ff]/20 text-[#e08dff] shadow-[0_0_20px_rgba(224,141,255,0.26)]"
       : status.key === "in-progress"
-        ? "text-[#ff68a7]"
-        : "text-[#74738d]";
+        ? "bg-[#8ff5ff]/14 text-[#8ff5ff] shadow-[0_0_20px_rgba(143,245,255,0.18)]"
+        : "bg-white/6 text-[#74738d] ring-1 ring-white/10";
   const fallbackIcon = getFallbackAchievementIcon(achievement);
 
   return (
     <div
-      className={`relative flex-shrink-0 overflow-hidden ${shellClassName} ${wrapperSize}`}
+      className={`relative flex flex-shrink-0 items-center justify-center overflow-hidden ${shellClassName} ${wrapperSize}`}
     >
-      {achievement.iconUrl ? (
-        <>
-          <img
-            src={achievement.iconUrl}
-            alt={achievement.name}
-            className="h-full w-full object-contain p-3"
-            loading="lazy"
-          />
-        </>
-      ) : (
-        <div
-          className={`flex h-full w-full items-center justify-center ${iconClassName}`}
-        >
-          <span
-            className={`material-symbols-outlined ${
-              featured ? "text-6xl" : status.key === "locked" ? "text-5xl" : "text-4xl"
-            }`}
-            style={
-              status.key === "unlocked"
-                ? { fontVariationSettings: "'FILL' 1" }
-                : undefined
-            }
-          >
-            {fallbackIcon}
-          </span>
-        </div>
-      )}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_58%)] opacity-80" />
+      <span
+        className={`material-symbols-outlined relative ${
+          featured ? "text-5xl" : "text-3xl"
+        }`}
+        style={
+          status.key === "unlocked"
+            ? { fontVariationSettings: "'FILL' 1" }
+            : undefined
+        }
+      >
+        {fallbackIcon}
+      </span>
     </div>
   );
 };

@@ -18,7 +18,9 @@ export const AchievementCard = ({
   const status = getAchievementStatus(achievement);
   const accent = getAchievementAccent(achievement, false);
   const wrapperClassName =
-    status.key === "unlocked"
+    achievement.isElite
+      ? "bg-[linear-gradient(135deg,rgba(255,207,125,0.95)_0%,rgba(143,245,255,0.7)_52%,rgba(224,141,255,0.9)_100%)] shadow-[0_24px_72px_rgba(5,8,22,0.28)]"
+      : status.key === "unlocked"
       ? "bg-[linear-gradient(135deg,rgba(224,141,255,0.18)_0%,rgba(255,104,167,0.16)_100%)]"
       : status.key === "in-progress"
         ? "bg-[#171730]"
@@ -48,12 +50,16 @@ export const AchievementCard = ({
         className={`relative flex h-full flex-col rounded-[calc(2rem-4px)] p-8 ${
           status.key === "locked"
             ? "bg-[#111128] grayscale"
-            : "bg-[#171730]"
+            : achievement.isElite
+              ? "bg-[linear-gradient(180deg,rgba(23,23,48,0.98)_0%,rgba(19,19,42,0.94)_100%)]"
+              : "bg-[#171730]"
         }`}
       >
         <div
           className={`pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
-            status.key === "unlocked"
+            achievement.isElite
+              ? "bg-[radial-gradient(circle_at_top_right,rgba(255,207,125,0.18),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(143,245,255,0.16),transparent_38%)]"
+              : status.key === "unlocked"
               ? "bg-gradient-to-br from-[#e08dff]/20 via-transparent to-[#ff68a7]/20"
               : status.key === "in-progress"
                 ? "bg-gradient-to-br from-[#8ff5ff]/8 via-transparent to-[#ff68a7]/10"
