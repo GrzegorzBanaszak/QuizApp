@@ -58,7 +58,7 @@ function formatProviderLabel(authProvider: string): string {
     return "Zalogowano przez Facebook";
   }
 
-  return "Tryb goscia";
+  return "Tryb gościa";
 }
 
 function formatCompactNumber(value: number): string {
@@ -101,7 +101,7 @@ export const PlayerProfilePage = () => {
           setError(
             loadError instanceof Error
               ? loadError.message
-              : "Nie udalo sie pobrac danych profilu gracza.",
+              : "Nie udało się pobrać danych profilu gracza.",
           );
         }
       })
@@ -120,7 +120,7 @@ export const PlayerProfilePage = () => {
     return (
       <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] text-[#e5e3ff]">
         <div className="glass-panel rounded-[2rem] px-8 py-6 text-center">
-          <p className="font-headline text-lg font-bold">Ladowanie profilu...</p>
+          <p className="font-headline text-lg font-bold">Ładowanie profilu...</p>
         </div>
       </div>
     );
@@ -150,7 +150,7 @@ export const PlayerProfilePage = () => {
       setError(
         logoutError instanceof Error
           ? logoutError.message
-          : "Nie udalo sie wylogowac.",
+          : "Nie udało się wylogować.",
       );
     } finally {
       setIsLogoutLoading(false);
@@ -175,7 +175,7 @@ export const PlayerProfilePage = () => {
               />
             </div>
             <div className="absolute bottom-1 right-1 rounded-full bg-[#8ff5ff] px-2 py-1 text-[10px] font-bold uppercase tracking-tight text-[#005d63] shadow-lg">
-              Level {level}
+              Poziom {level}
             </div>
           </div>
 
@@ -201,7 +201,7 @@ export const PlayerProfilePage = () => {
             <div className="mx-auto grid max-w-md grid-cols-2 gap-3 md:mx-0">
               <div className="glass-panel rounded-[1.5rem] px-4 py-4">
                 <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-[#aaa8c4]">
-                  Coins
+                  Monety
                 </p>
                 <p className="mt-2 text-2xl font-black text-[#8ff5ff]">
                   {formatCompactNumber(session.profile.coins)}
@@ -209,7 +209,7 @@ export const PlayerProfilePage = () => {
               </div>
               <div className="glass-panel rounded-[1.5rem] px-4 py-4">
                 <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-[#aaa8c4]">
-                  Experience
+                  Doświadczenie
                 </p>
                 <p className="mt-2 text-2xl font-black text-[#e08dff]">
                   {formatCompactNumber(session.profile.totalExperience)} XP
@@ -236,7 +236,7 @@ export const PlayerProfilePage = () => {
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff68a7] to-[#e08dff] px-5 py-3 text-xs font-black uppercase tracking-[0.18em] text-[#460024] transition-transform hover:scale-105 active:scale-95"
             >
               <span className="material-symbols-outlined text-[18px]">edit</span>
-              Edytuj postac
+              Edytuj profil
             </Link>
           </div>
 
@@ -249,7 +249,7 @@ export const PlayerProfilePage = () => {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#aaa8c4]">
-                  Osiagniecia
+                  Osiągnięcia
                 </p>
                 <p className="text-2xl font-black text-[#e5e3ff]">
                   {unlockedAchievements} / {stats.achievements.length}
@@ -274,7 +274,7 @@ export const PlayerProfilePage = () => {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#aaa8c4]">
-                  Kolekcja awatarow
+                  Kolekcja awatarów
                 </p>
                 <p className="text-2xl font-black text-[#e5e3ff]">
                   {unlockedAvatars} / {stats.avatars.length}
@@ -298,7 +298,7 @@ export const PlayerProfilePage = () => {
         <section className="space-y-6">
           <h2 className="flex items-center gap-2 font-headline text-xl font-bold uppercase tracking-wide text-[#8ff5ff]">
             <span className="material-symbols-outlined">trending_up</span>
-            Progres w kategoriach
+            Postęp w kategoriach
           </h2>
 
           <div className="relative overflow-hidden rounded-[2rem] bg-[#171730] p-8">
@@ -306,7 +306,7 @@ export const PlayerProfilePage = () => {
 
             {isLoading ? (
               <div className="relative z-10 rounded-[1.5rem] bg-[#111128] px-4 py-8 text-center text-sm text-[#aaa8c4]">
-                Ladowanie postepu kategorii...
+                Ładowanie postępu kategorii...
               </div>
             ) : stats.categories.length === 0 ? (
               <div className="relative z-10 rounded-[1.5rem] bg-[#111128] px-4 py-8 text-center text-sm text-[#aaa8c4]">
@@ -381,7 +381,7 @@ export const PlayerProfilePage = () => {
             className="inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-10 py-4 text-sm font-black uppercase tracking-[0.18em] text-[#4f006c] transition-all hover:scale-105 active:scale-95"
           >
             <span className="material-symbols-outlined">edit</span>
-            Edytuj postac
+            Edytuj profil
           </Link>
           <button
             type="button"
@@ -399,7 +399,7 @@ export const PlayerProfilePage = () => {
             className="inline-flex items-center justify-center gap-3 rounded-full bg-[#29294a] px-10 py-4 text-sm font-black uppercase tracking-[0.18em] text-[#e5e3ff] transition-all hover:scale-105 active:scale-95"
           >
             <span className="material-symbols-outlined">arrow_back</span>
-            Powrot do menu
+            Powrót do menu
           </Link>
         </div>
       </main>

@@ -17,18 +17,17 @@ export const AchievementCatalogHero = ({
     <div className="relative flex flex-col gap-8 xl:flex-row xl:items-end xl:justify-between">
       <div className="max-w-4xl">
         <p className="text-xs font-black uppercase tracking-[0.34em] text-[#8ff5ff]">
-          Postep kariery
+          Postęp kariery
         </p>
         <h1 className="mt-4 font-headline text-5xl font-black uppercase leading-none tracking-[-0.06em] text-[#f4d5ff] sm:text-6xl lg:text-8xl">
           Twoje{" "}
           <span className="bg-gradient-to-r from-[#e08dff] via-[#f1a3ff] to-[#ff68a7] bg-clip-text text-transparent">
-            osiagniecia
+            osiągnięcia
           </span>
         </h1>
         <p className="mt-5 max-w-3xl text-sm leading-7 text-[#aaa8c4] md:text-base">
-          Strona renderuje katalog z backendu `GET /api/achievements` i pokazuje
-          realny progres, stany odblokowania, nagrody oraz elitarne wyroznienia
-          przypisane do konta gracza.
+          Tutaj sprawdzisz postęp, stany odblokowania, nagrody oraz elitarne
+          wyróżnienia przypisane do Twojego konta.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -41,7 +40,7 @@ export const AchievementCatalogHero = ({
           <HeroMetric
             icon="stars"
             iconClassName="text-[#8ff5ff]"
-            label="XP z osiagniec"
+            label="XP z osiągnięć"
             value={formatAchievementNumber(stats.achievementExperience)}
           />
         </div>
@@ -66,7 +65,7 @@ export const AchievementCatalogHero = ({
               {profile.username}
             </h2>
             <p className="mt-1 text-sm text-[#aaa8c4]">
-              Osiagniecia zsynchronizowane z profilem i postepem solo.
+              Osiągnięcia zsynchronizowane z profilem i postępem w trybie solo.
             </p>
           </div>
         </div>
@@ -96,7 +95,7 @@ export const AchievementCatalogHero = ({
             to="/"
             className="inline-flex items-center gap-2 rounded-full bg-white/5 px-5 py-3 text-xs font-black uppercase tracking-[0.18em] text-[#8ff5ff] ring-1 ring-white/10 transition-colors hover:bg-white/10"
           >
-            Powrot
+            Powrót
           </Link>
         </div>
       </div>
@@ -106,7 +105,7 @@ export const AchievementCatalogHero = ({
       <StatTile label="Wszystkie" value={stats.total} tone="violet" />
       <StatTile label="W toku" value={stats.inProgress} tone="pink" />
       <StatTile label="Elitarne" value={stats.elite} tone="cyan" />
-      <StatTile label="Nagrody avatar" value={stats.rewardAvatars} tone="gold" />
+      <StatTile label="Nagrody: awatary" value={stats.rewardAvatars} tone="gold" />
     </div>
   </section>
 );

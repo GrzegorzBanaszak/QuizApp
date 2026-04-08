@@ -9,7 +9,7 @@ async function parseJsonResponse<T>(response: Response): Promise<T> {
       | { message?: string }
       | null;
 
-    throw new Error(body?.message ?? "Nie udalo sie pobrac danych katalogu.");
+    throw new Error(body?.message ?? "Nie udało się pobrać danych katalogu.");
   }
 
   return (await response.json()) as T;

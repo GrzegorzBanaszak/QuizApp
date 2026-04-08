@@ -27,7 +27,7 @@ export const FeaturedAchievementCard = ({
         : "bg-[linear-gradient(135deg,rgba(70,70,94,0.22)_0%,rgba(12,12,33,0.28)_100%)]";
   const hiddenDescription =
     status.key === "locked"
-      ? "Ukryte osiagniecie. Kontynuuj gre, aby dowiedziec sie wiecej."
+      ? "Ukryte osiągnięcie. Kontynuuj grę, aby dowiedzieć się więcej."
       : achievement.description;
 
   return (
@@ -111,8 +111,8 @@ export const FeaturedAchievementCard = ({
               {achievement.isUnlocked && achievement.awardedAt
                 ? `Zdobyte ${formatAchievementAwardedAt(achievement.awardedAt)}.`
                 : status.key === "in-progress"
-                  ? "Postep jest juz naliczany przez backend."
-                  : "Jeszcze zablokowane"}
+                  ? "Postęp nalicza się automatycznie."
+                  : "Nadal zablokowane"}
             </span>
             <span className="text-xs font-black uppercase tracking-[0.24em] text-[#8ff5ff]">
               {achievement.progressLabel}
@@ -136,7 +136,7 @@ export const FeaturedAchievementCard = ({
               Typ nagrody
             </p>
             <p className="mt-2 text-sm font-bold text-[#f4d5ff]">
-              {achievement.rewardType === "Avatar" ? "Avatar" : "XP / Monety"}
+              {achievement.rewardType === "Avatar" ? "Awatar" : "XP / Monety"}
             </p>
           </div>
         </div>

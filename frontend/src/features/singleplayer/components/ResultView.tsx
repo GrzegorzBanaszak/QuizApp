@@ -53,17 +53,17 @@ export const ResultView = () => {
       <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] px-6 text-[#e5e3ff]">
         <div className="glass-panel w-full max-w-2xl rounded-[2rem] px-10 py-12 text-center">
           <h1 className="font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">
-            Wynik nie jest jeszcze dostepny
+            Wynik nie jest jeszcze dostępny
           </h1>
           <p className="mt-3 text-[#aaa8c4]">
-            Nie udalo sie odczytac podsumowania rozgrywki.
+            Nie udało się odczytać podsumowania rozgrywki.
           </p>
           <button
             type="button"
             onClick={goToLevelSelect}
             className="mt-8 rounded-full border border-white/10 px-8 py-4 font-bold text-[#e5e3ff]"
           >
-            Wroc do poziomow
+            Wróć do poziomów
           </button>
         </div>
       </div>
@@ -99,10 +99,10 @@ export const ResultView = () => {
                   Wynik zapisany
                 </span>
                 <h2 className="font-headline text-4xl font-black tracking-tight text-[#e5e3ff] md:text-6xl">
-                  {selectedLevelName ?? "Singleplayer Run"}
+                  {selectedLevelName ?? "Rozgrywka solo"}
                 </h2>
                 <p className="mt-2 max-w-lg text-[#aaa8c4]">
-                  {`Skutecznosc ${accuracy}%. W tej rundzie zdobyto ${resultSummary.awardedExperience} XP za ${resultSummary.correctAnswersCount} poprawnych odpowiedzi z ${resultSummary.totalQuestions}.`}
+                  {`Skuteczność ${accuracy}%. W tej rundzie zdobyto ${resultSummary.awardedExperience} XP za ${resultSummary.correctAnswersCount} poprawnych odpowiedzi z ${resultSummary.totalQuestions}.`}
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export const ResultView = () => {
 
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
             <ResultStatCard
-              label="Zdobyty EXP"
+              label="Zdobyte XP"
               value={String(resultSummary.awardedExperience)}
               suffix="XP"
               borderClassName="border-[#e08dff]"
@@ -121,7 +121,7 @@ export const ResultView = () => {
               borderClassName="border-[#8ff5ff]"
             />
             <ResultStatCard
-              label="Skutecznosc"
+              label="Skuteczność"
               value={`${accuracy}%`}
               borderClassName="border-[#ffcf7d]"
             />
@@ -134,12 +134,11 @@ export const ResultView = () => {
                   Zdobyte nagrody
                 </h3>
                 <p className="mt-1 text-sm text-[#aaa8c4]">
-                  Ten blok korzysta z danych zwroconych przez backend po
-                  zakonczeniu rozgrywki.
+                  Tutaj zobaczysz wszystkie nagrody zdobyte w tej rundzie.
                 </p>
               </div>
               <div className="rounded-full bg-white/5 px-4 py-2 text-sm font-bold text-[#8ff5ff]">
-                {resultSummary.awardedCoins} coins
+                {resultSummary.awardedCoins} monet
               </div>
             </div>
 
@@ -174,7 +173,7 @@ export const ResultView = () => {
                             {reward.name}
                           </h4>
                           <span className="rounded-full bg-[#8ff5ff]/15 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#8ff5ff]">
-                            {reward.rewardType}
+                            {formatRewardTypeLabel(reward.rewardType)}
                           </span>
                         </div>
                         <p className="mt-2 text-sm text-[#aaa8c4]">
@@ -189,7 +188,7 @@ export const ResultView = () => {
                           <span className="material-symbols-outlined text-sm">
                             monetization_on
                           </span>
-                          {reward.rewardCoins} coins
+                          {reward.rewardCoins} monet
                         </span>
                       ) : null}
                       {reward.rewardAvatarKey ? (
@@ -206,7 +205,7 @@ export const ResultView = () => {
               </div>
             ) : (
               <div className="rounded-[1.5rem] bg-black/15 px-5 py-5 text-sm text-[#aaa8c4]">
-                W tej rozgrywce nie odblokowano nowych nagrod.
+                W tej rozgrywce nie odblokowano nowych nagród.
               </div>
             )}
 
@@ -218,14 +217,14 @@ export const ResultView = () => {
                 <span className="material-symbols-outlined text-sm">
                   emoji_events
                 </span>
-                Katalog achievementow
+                Katalog osiągnięć
               </Link>
               <Link
                 to="/avatars"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-6 py-3 font-black tracking-[0.18em] text-[#4f006c] transition-transform hover:scale-105 active:scale-95"
               >
                 <span className="material-symbols-outlined text-sm">face</span>
-                Katalog avatarow
+                Katalog awatarów
               </Link>
             </div>
           </div>
@@ -237,8 +236,7 @@ export const ResultView = () => {
                   Przebieg rundy
                 </h3>
                 <p className="mt-1 text-sm text-[#aaa8c4]">
-                  Poprawna odpowiedz dla kazdego pytania pochodzi bezposrednio
-                  z backendu.
+                  Sprawdź swoje odpowiedzi i porównaj je z poprawnymi.
                 </p>
               </div>
               <span className="material-symbols-outlined text-[#8ff5ff]">
@@ -272,7 +270,7 @@ export const ResultView = () => {
                           <span className="material-symbols-outlined text-sm">
                             {detail.isCorrect ? "check_circle" : "cancel"}
                           </span>
-                          {detail.isCorrect ? "Poprawnie" : "Blednie"}
+                          {detail.isCorrect ? "Poprawnie" : "Błędnie"}
                         </span>
                       </div>
                       <h4 className="font-headline text-xl font-bold text-[#f4d5ff]">
@@ -283,14 +281,14 @@ export const ResultView = () => {
 
                   <div className="mt-5 grid gap-3 md:grid-cols-2">
                     <AnswerInfoCard
-                      label="Twoja odpowiedz"
+                      label="Twoja odpowiedź"
                       value={detail.selectedAnswerText}
                       accentClassName={
                         detail.isCorrect ? "text-emerald-300" : "text-rose-300"
                       }
                     />
                     <AnswerInfoCard
-                      label="Poprawna odpowiedz"
+                      label="Poprawna odpowiedź"
                       value={detail.correctAnswerText}
                       accentClassName="text-[#8ff5ff]"
                     />
@@ -317,7 +315,7 @@ export const ResultView = () => {
               className="flex items-center justify-center gap-2 rounded-full border border-[#e08dff]/20 bg-[#29294a] px-8 py-4 font-bold text-[#e5e3ff] transition-all hover:bg-[#232341] active:scale-95"
             >
               <span className="material-symbols-outlined">map</span>
-              Powrot do wyboru poziomu
+              Powrót do wyboru poziomu
             </button>
           </div>
         </section>
@@ -327,10 +325,10 @@ export const ResultView = () => {
             <div className="mb-6 flex items-center justify-between">
               <div>
                 <h3 className="font-headline text-xl font-black uppercase tracking-tight">
-                  Podsumowanie API
+                  Podsumowanie rundy
                 </h3>
                 <p className="text-xs font-bold uppercase tracking-widest text-[#8ff5ff]">
-                  Dane sesji singleplayer
+                  Statystyki sesji
                 </p>
               </div>
               <span className="material-symbols-outlined text-[#8ff5ff]/50">
@@ -341,7 +339,7 @@ export const ResultView = () => {
             <dl className="space-y-4 text-sm text-[#aaa8c4]">
               <SummaryRow label="Poziom" value={selectedLevelName ?? "Nieznany"} />
               <SummaryRow
-                label="Liczba pytan"
+                label="Liczba pytań"
                 value={String(resultSummary.totalQuestions)}
               />
               <SummaryRow
@@ -448,4 +446,15 @@ function resolveRankAccent(accuracy: number): {
     textGradient: "from-[#ffd4d4] to-[#ff8d8d]",
     glowClassName: "bg-[#ff8d8d]/25",
   };
+}
+
+function formatRewardTypeLabel(rewardType: string): string {
+  switch (rewardType) {
+    case "Coins":
+      return "Monety";
+    case "Avatar":
+      return "Awatar";
+    default:
+      return rewardType;
+  }
 }

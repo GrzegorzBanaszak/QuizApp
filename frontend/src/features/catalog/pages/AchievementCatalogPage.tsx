@@ -37,7 +37,7 @@ export const AchievementCatalogPage = () => {
           setError(
             err instanceof Error
               ? err.message
-              : "Nie udalo sie pobrac katalogu osiagniec.",
+              : "Nie udało się pobrać katalogu osiągnięć.",
           );
         }
       })
@@ -98,7 +98,7 @@ export const AchievementCatalogPage = () => {
     return (
       <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] text-[#e5e3ff]">
         <div className="glass-panel rounded-[2rem] px-8 py-6 text-center">
-          <p className="font-headline text-lg font-bold">Ladowanie...</p>
+          <p className="font-headline text-lg font-bold">Ładowanie...</p>
         </div>
       </div>
     );
@@ -126,16 +126,15 @@ export const AchievementCatalogPage = () => {
 
         {isLoading ? (
           <div className="glass-panel rounded-[2rem] px-6 py-12 text-center text-[#aaa8c4]">
-            Ladowanie osiagniec...
+            Ładowanie osiągnięć...
           </div>
         ) : achievements.length === 0 ? (
           <div className="glass-panel rounded-[2rem] px-6 py-12 text-center">
             <p className="font-headline text-2xl font-black text-[#f4d5ff]">
-              Brak osiagniec do wyswietlenia
+              Brak osiągnięć do wyświetlenia
             </p>
             <p className="mx-auto mt-3 max-w-2xl text-sm text-[#aaa8c4]">
-              Backend nie zwrocil jeszcze zadnych definicji osiagniec dla tego
-              srodowiska.
+              W tym środowisku nie ma jeszcze dostępnych osiągnięć.
             </p>
           </div>
         ) : (
@@ -144,14 +143,14 @@ export const AchievementCatalogPage = () => {
               <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-[0.28em] text-[#8ff5ff]">
-                    Filtr osiagniec
+                    Filtr osiągnięć
                   </p>
                   <h2 className="mt-2 font-headline text-3xl font-black text-[#f4d5ff]">
                     Jednolity widok kolekcji
                   </h2>
                   <p className="mt-2 max-w-2xl text-sm text-[#aaa8c4]">
-                    Przelaczaj widok miedzy stanami odblokowania i szybciej
-                    wylapuj osiagniecia elitarne.
+                    Przełączaj widok między stanami odblokowania i szybciej
+                    wychwytuj osiągnięcia elitarne.
                   </p>
                 </div>
 
@@ -189,7 +188,7 @@ export const AchievementCatalogPage = () => {
 
             {filteredAchievements.length === 0 ? (
               <div className="glass-panel rounded-[2rem] px-6 py-12 text-center text-[#aaa8c4]">
-                Ten filtr nie zwrocil zadnych osiagniec.
+                Ten filtr nie zwrócił żadnych osiągnięć.
               </div>
             ) : (
               <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">

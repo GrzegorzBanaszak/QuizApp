@@ -66,7 +66,7 @@ export const ProgressBlock = ({
             : "text-[10px] tracking-[0.24em]"
         }`}
       >
-        Progress
+        Postęp
       </p>
       <span className={`text-xs font-black italic ${accent.labelClassName}`}>
         {achievement.progressLabel}
@@ -89,7 +89,7 @@ export const ProgressBlock = ({
       <span>{achievement.progressPercent}% wykonania</span>
       <span className={status.key === "locked" ? "text-[#74738d]" : undefined}>
         {status.key === "unlocked"
-          ? "Cel zakonczony"
+          ? "Cel ukończony"
           : status.key === "in-progress"
             ? "W toku"
             : "Zablokowane"}

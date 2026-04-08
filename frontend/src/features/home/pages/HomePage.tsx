@@ -5,7 +5,7 @@ const modeCards = [
   {
     title: "Graj Solo",
     description:
-      "Sprawdz swoja wiedze w starciu z AI. Dynamicznie generowane pytania dopasowane do Twoich zainteresowan i droga do globalnego Top 100.",
+      "Sprawdź swoją wiedzę w starciu z AI. Dynamiczne pytania dopasowane do Twoich zainteresowań i kolejne poziomy do odblokowania.",
     to: "/singleplayer",
     icon: "bolt",
     iconClassName: "text-[#e08dff]",
@@ -14,13 +14,13 @@ const modeCards = [
     buttonClassName:
       "bg-gradient-to-r from-[#e08dff] to-[#d978ff] text-[#4f006c]",
     highlightClassName: "text-[#8ff5ff]",
-    highlightLabel: "Top 100",
+    highlightLabel: "kolejne poziomy",
     badge: null,
   },
   {
     title: "Graj ze Znajomymi",
     description:
-      "Rywalizacja w czasie rzeczywistym. Wybieraj miedzy klasycznym quizem a intensywnymi turniejami eliminacyjnymi i sprawdz, kto naprawde prowadzi lobby.",
+      "Rywalizuj w czasie rzeczywistym. Wybieraj między klasycznym quizem a szybką rywalizacją na żywo i sprawdź, kto prowadzi w lobby.",
     to: "/multiplayer",
     icon: "group",
     iconClassName: "text-[#ff68a7]",
@@ -29,13 +29,13 @@ const modeCards = [
     buttonClassName:
       "border-2 border-[#ff68a7]/40 bg-[#29294a] text-[#ff68a7] hover:bg-[#ff68a7]/10",
     highlightClassName: "text-[#ff68a7]",
-    highlightLabel: "Klasycznym Quizem",
-    badge: "LIVE",
+    highlightLabel: "rywalizacją na żywo",
+    badge: "WKRÓTCE",
   },
   {
     title: "Tryb Imprezy",
     description:
-      "Zmien salon w studio telewizyjne. Telefon staje sie kontrolerem, a wspolny ekran glowna scena z mechanikami sabotażu i widowiskowa rywalizacja.",
+      "Zmień salon w studio teleturnieju. Telefon staje się kontrolerem, a wspólny ekran główną sceną szybkiej i widowiskowej rywalizacji.",
     to: "/party",
     icon: "tv",
     iconClassName: "text-[#8ff5ff]",
@@ -44,7 +44,7 @@ const modeCards = [
     buttonClassName:
       "bg-gradient-to-r from-[#8ff5ff] to-[#0d8f97] text-[#003f43]",
     highlightClassName: "text-[#8ff5ff]",
-    highlightLabel: "sabotażu",
+    highlightLabel: "widowiskowej rywalizacji",
     badge: null,
   },
 ];
@@ -67,12 +67,12 @@ export const HomePage = () => {
             </span>
           </div>
           <h1 className="neon-text-glow font-headline text-4xl font-black uppercase tracking-[-0.04em] text-[#f4d5ff] md:text-6xl">
-            Witaj w Swiecie QuizVolt
+            Witaj w świecie QuizVolt
           </h1>
           <p className="mx-auto mt-4 max-w-4xl text-base font-medium tracking-wide text-[#aaa8c4] md:text-lg">
             {session
-              ? "Masz aktywna sesje. Wybierz tryb gry albo sprawdz katalogi postepu."
-              : "Zaloguj sie, aby zapisac postepy lub graj od razu."}
+              ? "Masz aktywną sesję. Wybierz tryb gry albo sprawdź swoje postępy."
+              : "Zaloguj się, aby zapisywać postępy, albo graj od razu."}
           </p>
         </header>
 
@@ -96,11 +96,11 @@ export const HomePage = () => {
                   Kolekcja gracza
                 </p>
                 <h2 className="mt-2 font-headline text-2xl font-black tracking-tight text-[#f4d5ff]">
-                  Katalogi i postep
+                  Katalogi i postęp
                 </h2>
               </div>
               <span className="hidden text-sm text-[#aaa8c4] md:block">
-                Przegladaj to, co juz masz i to, co mozna jeszcze odblokowac.
+                Przeglądaj to, co już masz, i to, co możesz jeszcze odblokować.
               </span>
             </div>
 
@@ -114,15 +114,15 @@ export const HomePage = () => {
                     <span className="material-symbols-outlined">face</span>
                   </div>
                   <span className="text-xs font-black uppercase tracking-[0.24em] text-[#8ff5ff]">
-                    Protected
+                    Kolekcja
                   </span>
                 </div>
                 <h3 className="font-headline text-2xl font-black tracking-tight text-[#e5e3ff]">
-                  Wszystkie avatary
+                  Wszystkie awatary
                 </h3>
                 <p className="mt-2 max-w-xl text-sm text-[#aaa8c4]">
-                  Zobacz pelny katalog avatarow, w tym te odblokowane przez
-                  achievementy i te dostepne do zakupu.
+                  Zobacz pełny katalog awatarów, w tym nagrody za osiągnięcia
+                  i pozycje dostępne do zakupu.
                 </p>
               </Link>
 
@@ -137,15 +137,15 @@ export const HomePage = () => {
                     </span>
                   </div>
                   <span className="text-xs font-black uppercase tracking-[0.24em] text-[#ffcf7d]">
-                    Rewards
+                    Nagrody
                   </span>
                 </div>
                 <h3 className="font-headline text-2xl font-black tracking-tight text-[#e5e3ff]">
-                  Wszystkie achievementy
+                  Wszystkie osiągnięcia
                 </h3>
                 <p className="mt-2 max-w-xl text-sm text-[#aaa8c4]">
-                  Sprawdz warunki zdobycia i nagrody, ktore backend juz zwraca w
-                  katalogu.
+                  Sprawdź warunki zdobycia i nagrody przypisane do każdego
+                  osiągnięcia.
                 </p>
               </Link>
             </div>
@@ -208,7 +208,7 @@ export const HomePage = () => {
         <footer className="mt-16 flex flex-col items-center gap-4 opacity-40 md:mt-20">
           <div className="h-1 w-16 bg-gradient-to-r from-transparent via-[#46465e] to-transparent" />
           <p className="text-xs uppercase tracking-[0.3em] text-[#aaa8c4]">
-            System ID: 0X-VOLT-2024
+            QuizVolt
           </p>
         </footer>
       </div>

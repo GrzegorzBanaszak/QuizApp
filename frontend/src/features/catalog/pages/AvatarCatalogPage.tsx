@@ -32,7 +32,7 @@ export const AvatarCatalogPage = () => {
           setError(
             err instanceof Error
               ? err.message
-              : "Nie udało się pobrać katalogu avatarów.",
+              : "Nie udało się pobrać katalogu awatarów.",
           );
         }
       })
@@ -95,10 +95,10 @@ export const AvatarCatalogPage = () => {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
               <h1 className="mt-2 font-headline text-4xl font-black tracking-tight text-[#f4d5ff] md:text-5xl">
-                Katalog avatarów
+                Katalog awatarów
               </h1>
               <p className="mt-3 max-w-3xl text-sm text-[#aaa8c4] md:text-base">
-                Widok pokazuje tylko avatary i ich status.
+                Przeglądaj wszystkie awatary i ich status odblokowania.
               </p>
             </div>
 
@@ -136,7 +136,7 @@ export const AvatarCatalogPage = () => {
 
         {isLoading ? (
           <div className="glass-panel rounded-[2rem] px-6 py-10 text-center text-[#aaa8c4]">
-            Ładowanie katalogu avatarów...
+            Ładowanie katalogu awatarów...
           </div>
         ) : (
           <>
@@ -148,14 +148,14 @@ export const AvatarCatalogPage = () => {
               title="Odblokowane"
               count={unlockedAvatars.length}
               avatars={unlockedAvatars}
-              emptyLabel="Brak odblokowanych avatarów."
+              emptyLabel="Brak odblokowanych awatarów."
             />
 
             <AvatarCatalogSection
               title="Zablokowane"
               count={lockedAvatars.length}
               avatars={lockedAvatars}
-              emptyLabel="Brak zablokowanych avatarów."
+              emptyLabel="Brak zablokowanych awatarów."
               locked
             />
           </>

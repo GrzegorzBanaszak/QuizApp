@@ -5,8 +5,8 @@ export const PartyPage = () => {
     <ModeUnderConstruction
       title="Party"
       eyebrow="Tryb imprezowy"
-      description="Przygotowujemy osobną przestrzeń pod ekran hosta, urządzenia graczy i telewizyjną prezentację rozgrywki."
-      statusPrimary="Host: Budowa"
+      description="Przygotowujemy tryb imprezowy z widokiem dla prowadzącego, urządzeń graczy i wspólnego ekranu."
+      statusPrimary="Ekran główny: budowa"
       statusSecondary="Kontrolery: Integracja"
     />
   );

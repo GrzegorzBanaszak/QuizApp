@@ -41,7 +41,7 @@ export const SingleplayerHomeView = () => {
       <section className="mb-20">
         <div className="mb-10">
           <h1 className="bg-gradient-to-r from-[#e08dff] via-[#d978ff] to-[#ff68a7] bg-clip-text font-headline text-4xl font-black tracking-[-0.04em] text-transparent md:text-5xl">
-            SINGLEPLAYER LOBBY
+            TRYB SOLO
           </h1>
           <p className="mt-2 text-lg text-[#aaa8c4]">
             Witaj ponownie, {session.profile.username}. Wybierz wyzwanie na
@@ -74,7 +74,7 @@ export const SingleplayerHomeView = () => {
               <div className="flex items-center gap-1 text-[#8ff5ff]">
                 <span className="material-symbols-outlined text-sm">toll</span>
                 <span className="text-[10px] font-black uppercase tracking-widest">
-                  {session.profile.coins} coins
+                  {session.profile.coins} monet
                 </span>
               </div>
               <div className="flex items-center gap-1 text-[#ffcf7d]">
@@ -91,7 +91,7 @@ export const SingleplayerHomeView = () => {
       <section>
         <div className="mb-8 flex items-center justify-between">
           <h2 className="font-headline text-3xl font-bold tracking-tight">
-            Kategorie Quizu
+            Kategorie quizu
           </h2>
           <div className="hidden items-center gap-2 text-[#8ff5ff] md:flex">
             <span className="material-symbols-outlined text-base">stars</span>

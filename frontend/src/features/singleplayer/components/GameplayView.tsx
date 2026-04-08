@@ -83,10 +83,10 @@ export const GameplayView = () => {
         <div className="glass-panel w-full max-w-2xl rounded-[2rem] px-10 py-12 text-center">
           <div className="mx-auto mb-6 h-16 w-16 animate-spin rounded-full border-2 border-[#e08dff]/30 border-t-[#e08dff]" />
           <h1 className="font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">
-            Synchronizacja pytan
+            Synchronizacja pytań
           </h1>
           <p className="mt-3 text-[#aaa8c4]">
-            Przygotowuje runde dla poziomu {selectedLevelName ?? "singleplayer"}.
+            Przygotowujemy rundę dla poziomu {selectedLevelName ?? "tryb solo"}.
           </p>
         </div>
       </div>
@@ -98,10 +98,10 @@ export const GameplayView = () => {
       <div className="flex min-h-screen items-center justify-center bg-[#0c0c21] px-6 text-[#e5e3ff]">
         <div className="glass-panel w-full max-w-2xl rounded-[2rem] px-10 py-12 text-center">
           <h1 className="font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">
-            Brak pytan do wyswietlenia
+            Brak pytań do wyświetlenia
           </h1>
           <p className="mt-3 text-[#aaa8c4]">
-            {gameError ?? "Ta sesja nie zostala poprawnie zainicjalizowana."}
+            {gameError ?? "Ta sesja nie została poprawnie zainicjalizowana."}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <button
@@ -111,14 +111,14 @@ export const GameplayView = () => {
               }}
               className="rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-8 py-4 font-bold text-[#4f006c]"
             >
-              Sprobuj ponownie
+              Spróbuj ponownie
             </button>
             <button
               type="button"
               onClick={surrender}
               className="rounded-full border border-white/10 px-8 py-4 font-bold text-[#e5e3ff]"
             >
-              Wroc do poziomow
+              Wróć do poziomów
             </button>
           </div>
         </div>
@@ -179,7 +179,7 @@ export const GameplayView = () => {
               {currentQuestion.text}
             </h1>
             <p className="mt-5 text-center text-xs uppercase tracking-[0.24em] text-[#8ff5ff]/80 sm:text-sm">
-              Odpowiedzi pojawia sie po 2 sekundach
+              Odpowiedzi pojawią się po 2 sekundach
             </p>
           </div>
 
@@ -237,10 +237,10 @@ export const GameplayView = () => {
                 className="w-full max-w-sm rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-8 py-4 font-headline text-sm font-black tracking-[0.2em] text-[#4f006c] shadow-[0_0_30px_rgba(224,141,255,0.35)] transition-all hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
               >
                 {isSubmittingResult
-                  ? "WYSLANIE WYNIKU..."
+                  ? "WYSYŁANIE WYNIKU..."
                   : isLastQuestion
-                    ? "ZAKONCZ RUN"
-                    : "NASTEPNE PYTANIE"}
+                    ? "ZAKOŃCZ RUNDĘ"
+                    : "NASTĘPNE PYTANIE"}
               </button>
             ) : null}
 
@@ -250,7 +250,7 @@ export const GameplayView = () => {
               className="flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold uppercase tracking-[0.18em] text-[#aaa8c4] transition-all duration-200 hover:bg-[#ff68a7]/10 hover:text-[#ff68a7] active:scale-95"
             >
               <span className="material-symbols-outlined text-xl">logout</span>
-              Poddaj sie
+              Poddaj się
             </button>
           </div>
         </div>

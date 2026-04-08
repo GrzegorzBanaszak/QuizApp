@@ -60,7 +60,7 @@ export const LevelSelectView = () => {
         setCategoryLevelsError(
           error instanceof Error
             ? error.message
-            : "Nie udalo sie pobrac poziomow dla kategorii.",
+            : "Nie udało się pobrać poziomów dla kategorii.",
         );
       })
       .finally(() => {
@@ -111,8 +111,9 @@ export const LevelSelectView = () => {
       iconTone: difficultyAccent.iconTone,
       lockedMessage:
         state === "locked"
-          ? `Ukoncz poziom ${Math.max(1, order - 1)}, aby odblokowac`
+          ? `Ukończ poziom ${Math.max(1, order - 1)}, aby odblokować`
           : undefined,
+      difficultyLabel: formatDifficultyLabel(difficulty),
     };
   });
 
@@ -127,11 +128,11 @@ export const LevelSelectView = () => {
           <span className="material-symbols-outlined text-[28px]">
             arrow_back
           </span>
-          <span className="text-lg font-medium">Powrot do kategorii</span>
+          <span className="text-lg font-medium">Powrót do kategorii</span>
         </button>
         <div className="hidden md:block">
           <p className="text-sm uppercase tracking-widest text-[#8ff5ff]">
-            Singleplayer Mode
+            Tryb solo
           </p>
         </div>
       </header>
@@ -154,7 +155,7 @@ export const LevelSelectView = () => {
             {session.profile.username}
           </h1>
           <p className="text-lg text-[#aaa8c4]">
-            Twoj postep w kategorii:{" "}
+            Twój postęp w kategorii:{" "}
             <span className="font-bold text-[#8ff5ff]">{category.name}</span>
           </p>
         </div>
@@ -169,7 +170,7 @@ export const LevelSelectView = () => {
 
         {isCategoryLevelsLoading ? (
           <div className="glass-panel rounded-[2rem] px-6 py-10 text-center text-[#aaa8c4]">
-            Ladowanie poziomow kategorii...
+            Ładowanie poziomów kategorii...
           </div>
         ) : null}
 
@@ -177,7 +178,7 @@ export const LevelSelectView = () => {
         renderedLevels.length === 0 &&
         !categoryLevelsError ? (
           <div className="glass-panel rounded-[2rem] px-6 py-10 text-center text-[#aaa8c4]">
-            Ta kategoria nie ma jeszcze skonfigurowanych poziomow.
+            Ta kategoria nie ma jeszcze skonfigurowanych poziomów.
           </div>
         ) : null}
 
@@ -204,7 +205,7 @@ export const LevelSelectView = () => {
                           Zablokowany
                         </span>
                         <span className="rounded-full bg-white/5 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#74738d]">
-                          {`${level.questionCount} pytan`}
+                          {`${level.questionCount} pytań`}
                         </span>
                       </div>
 
@@ -217,7 +218,7 @@ export const LevelSelectView = () => {
                           lock
                         </span>
                         <span className="text-xs font-medium uppercase tracking-[0.2em] sm:text-sm">
-                          {level.difficulty}
+                          {level.difficultyLabel}
                         </span>
                       </div>
                     </div>
@@ -277,10 +278,10 @@ export const LevelSelectView = () => {
                             : "bg-[#8ff5ff]/12 text-[#8ff5ff]"
                         }`}
                       >
-                        {isAvailable ? "Do startu" : "Ukonczony"}
+                        {isAvailable ? "Do startu" : "Ukończony"}
                       </span>
                       <span className="rounded-full bg-white/5 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#aaa8c4]">
-                        {`${level.questionCount} pytan`}
+                        {`${level.questionCount} pytań`}
                       </span>
                     </div>
 
@@ -297,7 +298,7 @@ export const LevelSelectView = () => {
                         {isAvailable ? "stars" : "check_circle"}
                       </span>
                       <span className="text-xs font-medium uppercase tracking-[0.2em] sm:text-sm">
-                        {level.difficulty}
+                        {level.difficultyLabel}
                       </span>
                     </div>
 
@@ -331,12 +332,29 @@ export const LevelSelectView = () => {
           className="group flex items-center gap-4 rounded-full border border-white/10 px-10 py-4 font-bold text-[#aaa8c4] transition-all hover:border-[#ff68a7] hover:text-[#ff68a7]"
         >
           <span className="material-symbols-outlined">home</span>
-          Powrot do menu glownego
+          Powrót do menu głównego
         </button>
       </footer>
     </div>
   );
 };
+
+function formatDifficultyLabel(difficulty: string): string {
+  switch (difficulty.toLowerCase()) {
+    case "easy":
+      return "Łatwy";
+    case "easymedium":
+      return "Łatwy / średni";
+    case "medium":
+      return "Średni";
+    case "mediumhard":
+      return "Średni / trudny";
+    case "hard":
+      return "Trudny";
+    default:
+      return difficulty;
+  }
+}
 
 function resolveLevelDifficultyLabel(
   distributions: SingleplayerLevelDistribution[],

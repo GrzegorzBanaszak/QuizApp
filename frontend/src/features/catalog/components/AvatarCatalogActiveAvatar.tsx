@@ -26,7 +26,7 @@ export const AvatarCatalogActiveAvatar = ({
 
         <div className="min-w-0 flex-1">
           <p className="text-xs font-black uppercase tracking-[0.28em] text-[#8ff5ff]">
-            Aktywny avatar
+            Aktywny awatar
           </p>
           <h2 className="mt-2 font-headline text-3xl font-black tracking-tight text-[#f4d5ff] md:text-4xl">
             {avatar.name}

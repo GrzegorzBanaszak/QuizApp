@@ -27,10 +27,10 @@ export const AchievementCard = ({
         : "bg-[#111128] opacity-75";
   const hiddenDescription =
     status.key === "locked"
-      ? "Ukryte osiagniecie. Kontynuuj gre, aby dowiedziec sie wiecej."
+      ? "Ukryte osiągnięcie. Kontynuuj grę, aby dowiedzieć się więcej."
       : achievement.description;
   const rewardSummary = achievement.rewardAvatarKey
-    ? "Avatar"
+    ? "Awatar"
     : achievement.rewardExperience
       ? `+${achievement.rewardExperience} XP`
       : achievement.rewardCoins
@@ -39,8 +39,8 @@ export const AchievementCard = ({
   const footerLabel = achievement.isUnlocked && achievement.awardedAt
     ? formatAchievementAwardedAt(achievement.awardedAt)
     : status.key === "in-progress"
-      ? "Aktywny progres"
-      : "Jeszcze zablokowane";
+      ? "Aktywny postęp"
+      : "Nadal zablokowane";
 
   return (
     <article

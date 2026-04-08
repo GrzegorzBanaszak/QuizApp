@@ -3,7 +3,7 @@ import { useAuthStore } from "../features/auth/store/authStore";
 import { useSingleplayerStore } from "../features/singleplayer/store/singleplayerStore";
 
 const leftLinks = [
-  { label: "Strona glowna", to: "/" },
+  { label: "Strona główna", to: "/" },
   { label: "Solo", to: "/singleplayer" },
   { label: "Multiplayer", to: "/multiplayer" },
   { label: "Party", to: "/party" },
@@ -73,13 +73,13 @@ export const AppNavigation = () => {
                       ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
                       : "text-[#aaa8c4] hover:bg-white/5 hover:text-[#e5e3ff]"
                   }`}
-                  aria-label="Osiagniecia"
+                  aria-label="Osiągnięcia"
                 >
                   <span className="material-symbols-outlined text-xl">
                     emoji_events
                   </span>
                   <span className="hidden text-sm font-bold sm:inline">
-                    Osiagniecia
+                    Osiągnięcia
                   </span>
                 </Link>
               </>
@@ -169,7 +169,7 @@ export const AppNavigation = () => {
                     ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
                     : "text-[#aaa8c4] active:bg-white/5 active:text-[#e5e3ff]"
                 }`}
-                aria-label="Osiagniecia"
+                aria-label="Osiągnięcia"
               >
                 <span className="material-symbols-outlined text-xl">
                   emoji_events
