@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, Navigate } from "react-router";
+import { Link, Navigate, useNavigate } from "react-router";
 import { fetchAchievementCatalog, fetchAvatarCatalog } from "../../catalog/services/catalogApi";
 import type {
   AchievementCatalogItem,
@@ -8,6 +8,7 @@ import type {
 import { useAuthStore } from "../store/authStore";
 import { fetchSingleplayerCategories } from "../../singleplayer/services/singleplayerApi";
 import type { SingleplayerCategory } from "../../singleplayer/types/singleplayer";
+import { logout } from "../services/authApi";
 
 type ProfileStats = {
   achievements: AchievementCatalogItem[];
@@ -65,8 +66,10 @@ function formatCompactNumber(value: number): string {
 }
 
 export const PlayerProfilePage = () => {
+  const navigate = useNavigate();
   const session = useAuthStore((state) => state.session);
   const isAuthInitialized = useAuthStore((state) => state.isAuthInitialized);
+  const setSession = useAuthStore((state) => state.setSession);
   const [stats, setStats] = useState<ProfileStats>({
     achievements: [],
     avatars: [],
@@ -74,6 +77,7 @@ export const PlayerProfilePage = () => {
   });
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isLogoutLoading, setIsLogoutLoading] = useState(false);
 
   useEffect(() => {
     if (!session) {
@@ -133,6 +137,25 @@ export const PlayerProfilePage = () => {
   const authProvider = session.profile.authProvider ?? "Guest";
   const providerLabel = formatProviderLabel(authProvider);
   const level = session.profile.progress?.level ?? 1;
+
+  const handleLogout = async () => {
+    setIsLogoutLoading(true);
+    setError(null);
+
+    try {
+      await logout();
+      setSession(null);
+      navigate("/auth/login", { replace: true });
+    } catch (logoutError) {
+      setError(
+        logoutError instanceof Error
+          ? logoutError.message
+          : "Nie udalo sie wylogowac.",
+      );
+    } finally {
+      setIsLogoutLoading(false);
+    }
+  };
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0c0c21] px-4 py-6 text-[#e5e3ff] sm:px-6 lg:px-8 lg:py-10">
@@ -360,6 +383,17 @@ export const PlayerProfilePage = () => {
             <span className="material-symbols-outlined">edit</span>
             Edytuj postac
           </Link>
+          <button
+            type="button"
+            onClick={() => {
+              void handleLogout();
+            }}
+            disabled={isLogoutLoading}
+            className="inline-flex items-center justify-center gap-3 rounded-full bg-[#ff68a7]/15 px-10 py-4 text-sm font-black uppercase tracking-[0.18em] text-[#ff9cc2] transition-all hover:scale-105 hover:bg-[#ff68a7]/25 active:scale-95 disabled:cursor-wait disabled:opacity-60"
+          >
+            <span className="material-symbols-outlined">logout</span>
+            {isLogoutLoading ? "Wylogowywanie..." : "Wyloguj"}
+          </button>
           <Link
             to="/"
             className="inline-flex items-center justify-center gap-3 rounded-full bg-[#29294a] px-10 py-4 text-sm font-black uppercase tracking-[0.18em] text-[#e5e3ff] transition-all hover:scale-105 active:scale-95"

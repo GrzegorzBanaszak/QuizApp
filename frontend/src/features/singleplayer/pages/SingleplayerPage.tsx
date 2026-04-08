@@ -94,7 +94,7 @@ export const SingleplayerPage = () => {
   }
 
   if (!session) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/auth/login" replace />;
   }
 
   return (
