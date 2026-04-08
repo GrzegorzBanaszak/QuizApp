@@ -71,5 +71,86 @@
     "unlockType": "Achievement",
     "requiredAchievementCode": "movies-category-complete-elite",
     "price": 0
+  },
+  {
+    "key": "science-elite-icon",
+    "name": "Science Elite Icon",
+    "imageUrl": "/images/avatars/science-elite-icon.png",
+    "sortOrder": 135,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "science-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "history-elite-icon",
+    "name": "History Elite Icon",
+    "imageUrl": "/images/avatars/history-elite-icon.png",
+    "sortOrder": 145,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "history-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "geography-elite-icon",
+    "name": "Geography Elite Icon",
+    "imageUrl": "/images/avatars/geography-elite-icon.png",
+    "sortOrder": 155,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "geography-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "technology-elite-icon",
+    "name": "Technology Elite Icon",
+    "imageUrl": "/images/avatars/technology-elite-icon.png",
+    "sortOrder": 165,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "technology-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "sports-elite-icon",
+    "name": "Sports Elite Icon",
+    "imageUrl": "/images/avatars/sports-elite-icon.png",
+    "sortOrder": 175,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "sports-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "music-elite-icon",
+    "name": "Music Elite Icon",
+    "imageUrl": "/images/avatars/music-elite-icon.png",
+    "sortOrder": 185,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "music-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "literature-elite-icon",
+    "name": "Literature Elite Icon",
+    "imageUrl": "/images/avatars/literature-elite-icon.png",
+    "sortOrder": 195,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "literature-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "gaming-elite-icon",
+    "name": "Gaming Elite Icon",
+    "imageUrl": "/images/avatars/gaming-elite-icon.png",
+    "sortOrder": 205,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "gaming-category-complete-elite",
+    "price": 0
+  },
+  {
+    "key": "general_knowledge-elite-icon",
+    "name": "General Knowledge Elite Icon",
+    "imageUrl": "/images/avatars/general_knowledge-elite-icon.png",
+    "sortOrder": 215,
+    "unlockType": "Achievement",
+    "requiredAchievementCode": "general_knowledge-category-complete-elite",
+    "price": 0
   }
 ]
