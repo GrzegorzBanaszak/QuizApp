@@ -1,138 +1,229 @@
 <!DOCTYPE html>
-<html class="dark" lang="pl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QuizVolt - Logowanie</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            background: "#0c0c21",
-            surface: "#111128",
-            surfaceHigh: "#171730",
-            surfaceHighest: "#232341",
-            outline: "#46465e",
-            primary: "#e08dff",
-            secondary: "#ff68a7",
-            tertiary: "#8ff5ff",
-            onSurface: "#e5e3ff",
-            onSurfaceVariant: "#aaa8c4",
-            onPrimary: "#4f006c"
+
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>QuizVolt - Profil Gracza</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#000000",
+                    "surface-container-low": "#111128",
+                    "on-secondary-fixed": "#6b003a",
+                    "tertiary": "#8ff5ff",
+                    "on-surface": "#e5e3ff",
+                    "surface-tint": "#e08dff",
+                    "inverse-primary": "#9a00cf",
+                    "tertiary-fixed-dim": "#00deec",
+                    "error": "#ff6e84",
+                    "primary-dim": "#bc00fb",
+                    "error-dim": "#d73357",
+                    "on-tertiary": "#005d63",
+                    "on-primary-container": "#3d0055",
+                    "secondary-fixed-dim": "#ffacc8",
+                    "secondary-container": "#b90068",
+                    "on-tertiary-fixed": "#003f43",
+                    "tertiary-container": "#00eefc",
+                    "surface": "#0c0c21",
+                    "outline-variant": "#46465e",
+                    "background": "#0c0c21",
+                    "surface-dim": "#0c0c21",
+                    "surface-variant": "#232341",
+                    "on-primary": "#4f006c",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "secondary": "#ff68a7",
+                    "secondary-dim": "#e10080",
+                    "surface-bright": "#29294a",
+                    "on-background": "#e5e3ff",
+                    "surface-container-lowest": "#000000",
+                    "inverse-on-surface": "#53536b",
+                    "primary-container": "#d978ff",
+                    "on-secondary": "#460024",
+                    "tertiary-fixed": "#00eefc",
+                    "on-tertiary-fixed-variant": "#005e64",
+                    "surface-container-high": "#1d1d39",
+                    "primary-fixed-dim": "#d160ff",
+                    "surface-container-highest": "#232341",
+                    "error-container": "#a70138",
+                    "on-error-container": "#ffb2b9",
+                    "tertiary-dim": "#00deec",
+                    "primary-fixed": "#d978ff",
+                    "inverse-surface": "#fcf8ff",
+                    "on-secondary-container": "#fff5f6",
+                    "on-surface-variant": "#aaa8c4",
+                    "on-error": "#490013",
+                    "outline": "#74738d",
+                    "on-tertiary-container": "#005359",
+                    "surface-container": "#171730",
+                    "primary": "#e08dff",
+                    "on-secondary-fixed-variant": "#9f0059",
+                    "secondary-fixed": "#ffc1d4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Spline Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
           },
-          borderRadius: {
-            full: "9999px",
-            xl: "1.5rem",
-            "2xl": "2rem"
-          },
-          fontFamily: {
-            headline: ["Spline Sans", "sans-serif"],
-            body: ["Be Vietnam Pro", "sans-serif"]
-          }
-        }
+        },
       }
-    };
-  </script>
-  <style>
-    body {
-      margin: 0;
-      background:
-        radial-gradient(circle at top left, rgba(224, 141, 255, 0.14), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(255, 104, 167, 0.12), transparent 30%),
-        #0c0c21;
-      color: #e5e3ff;
-      font-family: "Be Vietnam Pro", sans-serif;
-    }
-    .glass-panel {
-      background: rgba(35, 35, 65, 0.42);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      box-shadow: 0 24px 80px rgba(5, 8, 22, 0.45);
-    }
-    .material-symbols-outlined {
-      font-family: "Material Symbols Outlined", sans-serif;
-      font-style: normal;
-      line-height: 1;
-    }
-  </style>
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(35, 35, 65, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(224, 141, 255, 0.1);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 20px rgba(224, 141, 255, 0.3);
+        }
+        .neon-glow-tertiary {
+            box-shadow: 0 0 20px rgba(143, 245, 255, 0.3);
+        }
+    </style>
 </head>
-<body class="antialiased">
-  <main class="relative min-h-screen overflow-hidden px-4 py-6 sm:px-6 lg:px-8 lg:py-10">
-    <div class="pointer-events-none fixed left-[-10%] top-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-primary/12 blur-[120px]"></div>
-    <div class="pointer-events-none fixed bottom-[-10%] right-[-10%] h-[40vw] w-[40vw] max-h-[28rem] max-w-[28rem] rounded-full bg-secondary/12 blur-[120px]"></div>
-
-    <div class="relative z-10 mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-5xl flex-col justify-center gap-8">
-      <header class="text-center">
-        <div class="mb-4 inline-block">
-          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-3xl font-black italic tracking-tight text-transparent md:text-5xl">QuizVolt</span>
-        </div>
-        <h1 class="font-headline text-4xl font-black uppercase tracking-[-0.04em] text-[#f4d5ff] md:text-6xl">Logowanie</h1>
-        <p class="mx-auto mt-4 max-w-3xl text-base font-medium tracking-wide text-onSurfaceVariant md:text-lg">
-          Wybierz sposób logowania, aby zapisać postępy i odblokować katalogi gracza.
-        </p>
-      </header>
-
-      <section class="glass-panel mx-auto w-full max-w-4xl rounded-[2rem] border border-outline/40 px-5 py-6 md:px-8 md:py-10">
-        <div class="mb-6 text-center">
-          <p class="text-xs font-black uppercase tracking-[0.32em] text-tertiary">Wybierz sposób logowania</p>
-          <h2 class="mt-3 font-headline text-3xl font-black tracking-tight text-[#f4d5ff]">Wejdź do QuizVolt</h2>
-          <p class="mx-auto mt-3 max-w-2xl text-sm text-onSurfaceVariant">
-            Zaloguj się przez konto społecznościowe albo wejdź jako gość, żeby od razu zacząć grę.
-          </p>
-        </div>
-
-        <div class="space-y-4">
-          <button class="group flex w-full items-center justify-between rounded-full border border-outline/40 bg-[#171730]/85 px-5 py-4 text-left transition-all hover:border-primary/40 hover:bg-[#232341]">
-            <div class="flex items-center gap-4">
-              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#f4d5ff] text-[#4f006c] shadow-[0_0_20px_rgba(224,141,255,0.25)]">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="#EA4335" d="M12 10.2v3.9h5.5c-.2 1.1-1.4 3.3-5.5 3.3-3.3 0-6-2.7-6-6s2.7-6 6-6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3 14.7 2 12 2 6.5 2 2 6.5 2 12s4.5 10 10 10c5.8 0 9.7-4.1 9.7-9.8 0-.7-.1-1.2-.2-1.7H12z"></path>
-                  <path fill="#FBBC05" d="M3.5 7.3 6.6 9.6C7.4 7.7 9.5 6 12 6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3 14.7 2 12 2 8.2 2 4.9 4 3.5 7.3z"></path>
-                  <path fill="#34A853" d="M12 22c2.6 0 4.8-.9 6.4-2.4l-3-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.7-5.6-4.1L3.3 16.3C4.8 19.6 8 22 12 22z"></path>
-                  <path fill="#4285F4" d="M21.7 12.2c0-.7-.1-1.2-.2-1.7H12v3.7h5.5c-.3 1.2-1 2.2-2.1 2.9l3 2.5c1.8-1.7 3.3-4.3 3.3-7.4z"></path>
-                </svg>
-              </div>
-              <div>
-                <p class="font-bold text-onSurface">Zaloguj przez Google</p>
-                <p class="text-xs text-onSurfaceVariant">Szybka synchronizacja postępów</p>
-              </div>
-            </div>
-            <span class="material-symbols-outlined text-onSurfaceVariant transition-transform group-hover:translate-x-1">chevron_right</span>
-          </button>
-
-          <button class="group flex w-full items-center justify-between rounded-full border border-outline/40 bg-[#171730]/85 px-5 py-4 text-left transition-all hover:border-tertiary/40 hover:bg-[#232341]">
-            <div class="flex items-center gap-4">
-              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-[0_0_20px_rgba(24,119,242,0.25)]">
-                <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
-                </svg>
-              </div>
-              <div>
-                <p class="font-bold text-onSurface">Zaloguj przez Facebook</p>
-                <p class="text-xs text-onSurfaceVariant">Dostęp do konta społecznościowego</p>
-              </div>
-            </div>
-            <span class="material-symbols-outlined text-onSurfaceVariant transition-transform group-hover:translate-x-1">chevron_right</span>
-          </button>
-
-          <div class="flex items-center gap-4 py-2">
-            <div class="h-px flex-1 bg-outline/40"></div>
-            <span class="text-[10px] font-black uppercase tracking-[0.32em] text-[#74738d]">Lub</span>
-            <div class="h-px flex-1 bg-outline/40"></div>
-          </div>
-
-          <button class="flex w-full items-center justify-center gap-3 rounded-full border-2 border-outline/30 bg-gradient-to-r from-primary to-secondary px-6 py-4 text-sm font-bold text-onPrimary transition-all hover:scale-[1.01]">
-            <span class="material-symbols-outlined text-2xl">person</span>
-            <span>Graj jako Gość</span>
-          </button>
-        </div>
-      </section>
-    </div>
-  </main>
-</body>
-</html>
+<body class="bg-surface text-on-surface font-body min-h-screen selection:bg-primary/30 flex flex-col justify-center">
+<main class="py-16 px-6 max-w-4xl mx-auto space-y-10 w-full">
+<!-- Profile Header Section -->
+<section class="flex flex-col md:flex-row items-center md:items-start gap-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary to-secondary rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+<div class="relative w-32 h-32 rounded-full border-2 border-primary/50 overflow-hidden bg-surface-container shadow-[0_0_30px_rgba(224,141,255,0.2)]">
+<img alt="Avatar NeonNinja" class="w-full h-full object-cover" data-alt="Futuristic digital avatar of a young person wearing techwear and neon glowing glasses, purple and blue cybernetic aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEdHeACyq9ilmLysFoWQRqxMQD6bWy8RlCSflsVrjfmW279YQ4H5hRA0LZY3OLkCXa5rooQRJFq5bqh0RMDHWG4Gi9TaHEAdjl3jqStEIwBvaiLOY4Ae4RnSq6MmqJVQMgWaWq0sSe11z8DJCPb97V6l_bqtzj-3Yuno3MQKydYGFjTYjTWx2KhBBB_WmjYW0dcvh4zzWqHZxt32Alv2HzyRhTS2OQYmpN3r9gdXRJnSOmelwmYwDb6uwBas7dfrTyDP-PRVGqsHoe"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-tertiary text-on-tertiary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-tighter shadow-lg">
+                    Level 42
+                </div>
+</div>
+<div class="flex-1 text-center md:text-left space-y-3">
+<div class="space-y-1">
+<h1 class="text-4xl md:text-5xl font-black font-headline tracking-tight text-on-surface">NeonNinja</h1>
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full border border-outline-variant/30">
+<img alt="Google Logo" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq4Xn9GwAXa1cjrMX7-cI6rBKCJomUnFWnnpUA4FMtav0V00XfX3mdC5H9373ZYq4w7R-WbqMEG2ltWhXmPQNbmTyOjDFBojTMK_iKL26e0jbF7fpaAtKX3koIuXnLEGrFB5yceoz8nQG5MCxwFxG_Qbrib3yr5euM3tZs3Y6nw8XeM0bhop0hVMG4Ee3kzXDPao6e4Yk83WW77adnS1J1MOQMUWaN3Pzi5zwoqaKaCMWtAEVggiZlTlTpW2REIsW11o5r3ygqW8tt"/>
+<span class="text-xs font-medium text-on-surface-variant">Zalogowano przez Google</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm max-w-md italic">
+                    "Wiedza to moja najpotężniejsza broń. Neon płynie w moich żyłach."
+                </p>
+</div>
+</section>
+<!-- Stats Grid -->
+<section class="space-y-6">
+<h2 class="text-xl font-bold font-headline text-primary tracking-wide uppercase flex items-center gap-2">
+<span class="material-symbols-outlined">query_stats</span>
+                Twoje Statystyki
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Achievement Card -->
+<div class="glass-panel rounded-lg p-6 flex items-center gap-5 hover:bg-surface-bright/40 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary neon-glow-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">military_tech</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest font-bold">Osiągnięcia</p>
+<p class="text-2xl font-black text-on-surface">12 / 48</p>
+<div class="w-32 h-1 bg-surface-container-lowest mt-2 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[25%]"></div>
+</div>
+</div>
+</div>
+<!-- Avatar Collection Card -->
+<div class="glass-panel rounded-lg p-6 flex items-center gap-5 hover:bg-surface-bright/40 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-tertiary/20 flex items-center justify-center text-tertiary neon-glow-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">face</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest font-bold">Kolekcja Awatarów</p>
+<p class="text-2xl font-black text-on-surface">5 / 24</p>
+<div class="w-32 h-1 bg-surface-container-lowest mt-2 rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-[20%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Progress Bars Section -->
+<section class="space-y-6">
+<h2 class="text-xl font-bold font-headline text-tertiary tracking-wide uppercase flex items-center gap-2">
+<span class="material-symbols-outlined">trending_up</span>
+                Progres w Kategoriach
+            </h2>
+<div class="surface-container rounded-lg p-8 space-y-8 relative overflow-hidden">
+<!-- Decor Background Accent -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] -mr-32 -mt-32"></div>
+<!-- Category Item: General Knowledge -->
+<div class="space-y-3 relative z-10">
+<div class="flex justify-between items-end">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">public</span>
+<span class="font-bold text-on-surface">Wiedza Ogólna</span>
+</div>
+<span class="text-primary font-black text-lg">80%</span>
+</div>
+<div class="h-3 w-full bg-surface-container-lowest rounded-full p-[2px]">
+<div class="h-full bg-gradient-to-r from-primary-dim to-primary rounded-full shadow-[0_0_12px_rgba(224,141,255,0.4)]" style="width: 80%"></div>
+</div>
+</div>
+<!-- Category Item: Science -->
+<div class="space-y-3 relative z-10">
+<div class="flex justify-between items-end">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">science</span>
+<span class="font-bold text-on-surface">Nauka</span>
+</div>
+<span class="text-tertiary font-black text-lg">45%</span>
+</div>
+<div class="h-3 w-full bg-surface-container-lowest rounded-full p-[2px]">
+<div class="h-full bg-gradient-to-r from-tertiary-dim to-tertiary rounded-full shadow-[0_0_12px_rgba(143,245,255,0.4)]" style="width: 45%"></div>
+</div>
+</div>
+<!-- Category Item: Pop Culture -->
+<div class="space-y-3 relative z-10">
+<div class="flex justify-between items-end">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">theater_comedy</span>
+<span class="font-bold text-on-surface">Popkultura</span>
+</div>
+<span class="text-secondary font-black text-lg">90%</span>
+</div>
+<div class="h-3 w-full bg-surface-container-lowest rounded-full p-[2px]">
+<div class="h-full bg-gradient-to-r from-secondary-dim to-secondary rounded-full shadow-[0_0_12px_rgba(255,104,167,0.4)]" style="width: 90%"></div>
+</div>
+</div>
+<!-- Category Item: History -->
+<div class="space-y-3 relative z-10">
+<div class="flex justify-between items-end">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">history_edu</span>
+<span class="font-bold text-on-surface">Historia</span>
+</div>
+<span class="text-on-surface-variant font-black text-lg">20%</span>
+</div>
+<div class="h-3 w-full bg-surface-container-lowest rounded-full p-[2px]">
+<div class="h-full bg-outline-variant rounded-full opacity-60" style="width: 20%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Back Button CTA -->
+<div class="flex justify-center pt-6">
+<button class="px-10 py-4 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-black uppercase tracking-widest text-sm hover:scale-105 active:scale-95 transition-all shadow-[0_10px_30px_rgba(224,141,255,0.3)] flex items-center gap-3">
+<span class="material-symbols-outlined">arrow_back</span>
+                POWRÓT DO MENU
+            </button>
+</div>
+</main>
+</body></html>

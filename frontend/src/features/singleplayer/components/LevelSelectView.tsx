@@ -113,6 +113,7 @@ export const LevelSelectView = () => {
         state === "locked"
           ? `Ukończ poziom ${Math.max(1, order - 1)}, aby odblokować`
           : undefined,
+      difficultyLabel: formatDifficultyLabel(difficulty),
     };
   });
 
@@ -131,12 +132,12 @@ export const LevelSelectView = () => {
         </button>
         <div className="hidden md:block">
           <p className="text-sm uppercase tracking-widest text-[#8ff5ff]">
-            Singleplayer Mode
+            Tryb solo
           </p>
         </div>
       </header>
 
-      <section className="mb-16 flex flex-col items-center gap-8 md:flex-row md:items-end">
+      <section className="mb-16 flex flex-col items-center justify-center gap-8 md:flex-row md:items-end md:justify-center">
         <div className="relative">
           <div className="h-32 w-32 rounded-full border-4 border-[#e08dff] p-1 shadow-[0_0_25px_rgba(224,141,255,0.3)]">
             <img
@@ -149,7 +150,7 @@ export const LevelSelectView = () => {
             {session.profile.totalExperience} XP
           </div>
         </div>
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-center">
           <h1 className="font-headline mb-2 text-5xl font-bold tracking-tight text-white md:text-6xl">
             {session.profile.username}
           </h1>
@@ -186,30 +187,46 @@ export const LevelSelectView = () => {
             return (
               <div
                 key={level.backendId}
-                className="relative flex items-center justify-between rounded-[2rem] bg-[#111128] p-6 opacity-60"
+                className="relative overflow-hidden rounded-[2rem] border border-white/8 bg-[#111128] p-5 opacity-70 sm:p-6"
               >
-                <div className="flex items-center gap-6">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-[1.5rem] border border-white/10 bg-black/30">
-                    <span className="material-symbols-outlined text-4xl text-[#aaa8c4]">
-                      lock
-                    </span>
-                  </div>
-                  <div>
-                    <h2 className="font-headline text-2xl font-bold text-[#aaa8c4]">
-                      {level.title}
-                    </h2>
-                    <div className="mt-1 flex items-center gap-2 text-[#74738d]">
-                      <span className="material-symbols-outlined text-sm">
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/12 to-transparent" />
+
+                <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+                  <div className="flex items-start gap-4 sm:gap-5">
+                    <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-[1.25rem] border border-white/10 bg-black/30 sm:h-20 sm:w-20 sm:rounded-[1.5rem]">
+                      <span className="material-symbols-outlined text-3xl text-[#aaa8c4] sm:text-4xl">
                         lock
                       </span>
-                      <span className="text-sm font-medium uppercase tracking-wide">
-                        {`${level.difficulty} • ${level.questionCount} pytań`}
-                      </span>
+                    </div>
+
+                    <div className="min-w-0">
+                      <div className="mb-3 flex flex-wrap items-center gap-2">
+                        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#aaa8c4]">
+                          Zablokowany
+                        </span>
+                        <span className="rounded-full bg-white/5 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#74738d]">
+                          {`${level.questionCount} pytań`}
+                        </span>
+                      </div>
+
+                      <h2 className="font-headline text-xl font-bold leading-tight text-[#aaa8c4] sm:text-2xl">
+                        {level.title}
+                      </h2>
+
+                      <div className="mt-2 flex items-center gap-2 text-[#74738d]">
+                        <span className="material-symbols-outlined text-sm">
+                          lock
+                        </span>
+                        <span className="text-xs font-medium uppercase tracking-[0.2em] sm:text-sm">
+                          {level.difficultyLabel}
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="pr-4 text-sm italic text-[#74738d]">
-                  {level.lockedMessage}
+
+                  <div className="rounded-[1.25rem] border border-white/8 bg-black/20 px-4 py-3 text-sm italic text-[#74738d] md:max-w-xs">
+                    {level.lockedMessage}
+                  </div>
                 </div>
               </div>
             );
@@ -222,61 +239,81 @@ export const LevelSelectView = () => {
               key={level.backendId}
               className={
                 isAvailable
-                  ? "group relative flex items-center justify-between rounded-[2rem] bg-gradient-to-r from-[#e08dff] to-[#ff68a7] p-[2px] shadow-[0_0_30px_rgba(224,141,255,0.2)]"
-                  : "group relative flex items-center justify-between rounded-[2rem] bg-[#171730] p-6 shadow-xl transition-all hover:bg-[#29294a]"
+                  ? "group relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#e08dff] via-[#d978ff] to-[#ff68a7] p-[2px] shadow-[0_0_30px_rgba(224,141,255,0.2)]"
+                  : "group relative overflow-hidden rounded-[2rem] border border-white/8 bg-[#171730] shadow-xl transition-all hover:bg-[#29294a]"
               }
             >
               <div
                 className={
                   isAvailable
-                    ? "flex w-full items-center justify-between rounded-[2rem] bg-[#1d1d39] p-6 transition-all group-hover:bg-[#29294a]"
-                    : "flex w-full items-center justify-between"
+                    ? "flex w-full flex-col gap-5 rounded-[calc(2rem-2px)] bg-[#1d1d39] p-5 transition-all group-hover:bg-[#29294a] sm:p-6 md:flex-row md:items-center md:justify-between"
+                    : "flex w-full flex-col gap-5 p-5 sm:p-6 md:flex-row md:items-center md:justify-between"
                 }
               >
-                <div className="flex items-center gap-6">
+                <div className="flex items-start gap-4 sm:gap-5">
                   <div
-                    className={`flex h-20 w-20 items-center justify-center rounded-[1.5rem] bg-[#232341] ${level.accentGlow}`}
+                    className={`flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-[1.25rem] bg-[#232341] sm:h-20 sm:w-20 sm:rounded-[1.5rem] ${level.accentGlow}`}
                   >
                     {isAvailable ? (
                       <span
-                        className={`material-symbols-outlined text-4xl ${level.iconTone}`}
+                        className={`material-symbols-outlined text-3xl sm:text-4xl ${level.iconTone}`}
                       >
                         bolt
                       </span>
                     ) : (
                       <span
-                        className={`font-headline text-5xl font-black ${level.accentTone}`}
+                        className={`font-headline text-4xl font-black sm:text-5xl ${level.accentTone}`}
                       >
                         {level.grade ?? level.order}
                       </span>
                     )}
                   </div>
-                  <div>
-                    <h2 className="font-headline text-2xl font-bold text-white">
+
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-3 flex flex-wrap items-center gap-2">
+                      <span
+                        className={`rounded-full px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] ${
+                          isAvailable
+                            ? "bg-[#e08dff]/18 text-[#f4d5ff]"
+                            : "bg-[#8ff5ff]/12 text-[#8ff5ff]"
+                        }`}
+                      >
+                        {isAvailable ? "Do startu" : "Ukończony"}
+                      </span>
+                      <span className="rounded-full bg-white/5 px-3 py-1 text-[10px] font-black uppercase tracking-[0.24em] text-[#aaa8c4]">
+                        {`${level.questionCount} pytań`}
+                      </span>
+                    </div>
+
+                    <h2 className="font-headline text-xl font-bold leading-tight text-white sm:text-2xl">
                       {level.title}
                     </h2>
+
                     <div
-                      className={`mt-1 flex items-center gap-2 ${
+                      className={`mt-2 flex flex-wrap items-center gap-2 ${
                         isAvailable ? level.iconTone : "text-[#8ff5ff]"
                       }`}
                     >
                       <span className="material-symbols-outlined text-sm">
                         {isAvailable ? "stars" : "check_circle"}
                       </span>
-                      <span className="text-sm font-medium uppercase tracking-wide">
-                        {`${level.difficulty} • ${level.questionCount} pytań`}
+                      <span className="text-xs font-medium uppercase tracking-[0.2em] sm:text-sm">
+                        {level.difficultyLabel}
                       </span>
                     </div>
+
+                    <div className="mt-4 h-px w-full max-w-xs bg-gradient-to-r from-white/15 to-transparent md:hidden" />
                   </div>
                 </div>
+
                 <button
                   type="button"
                   onClick={() =>
                     void startLevel(level.backendId, level.title)
                   }
-                  className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${
+                  className={`w-full rounded-full px-6 py-3 text-center text-sm font-bold transition-all md:w-auto md:min-w-[12rem] ${
                     isAvailable
-                      ? "bg-[#e08dff] px-8 py-3 text-lg text-[#4f006c] shadow-lg shadow-[#e08dff]/40 hover:scale-105"
+                      ? "bg-[#e08dff] text-base text-[#4f006c] shadow-lg shadow-[#e08dff]/40 hover:scale-[1.02]"
                       : "bg-[#232341] text-[#e5e3ff] hover:bg-[#e08dff] hover:text-[#4f006c]"
                   }`}
                 >
@@ -301,6 +338,23 @@ export const LevelSelectView = () => {
     </div>
   );
 };
+
+function formatDifficultyLabel(difficulty: string): string {
+  switch (difficulty.toLowerCase()) {
+    case "easy":
+      return "Łatwy";
+    case "easymedium":
+      return "Łatwy / średni";
+    case "medium":
+      return "Średni";
+    case "mediumhard":
+      return "Średni / trudny";
+    case "hard":
+      return "Trudny";
+    default:
+      return difficulty;
+  }
+}
 
 function resolveLevelDifficultyLabel(
   distributions: SingleplayerLevelDistribution[],

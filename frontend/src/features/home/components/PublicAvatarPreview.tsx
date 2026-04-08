@@ -28,7 +28,7 @@ export const PublicAvatarPreview = ({
           setError(
             err instanceof Error
               ? err.message
-              : "Nie udalo sie pobrac avatarow domyslnych.",
+              : "Nie udało się pobrać domyślnych awatarów.",
           );
         }
       })
@@ -49,14 +49,14 @@ export const PublicAvatarPreview = ({
         <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.28em] text-[#8ff5ff]">
-              Public preview
+              Podgląd publiczny
             </p>
             <h2 className="mt-2 font-headline text-2xl font-black tracking-tight text-[#f4d5ff] md:text-3xl">
-              Domyslne avatary do tworzenia postaci
+              Domyślne awatary do tworzenia postaci
             </h2>
             <p className="mt-2 max-w-3xl text-sm text-[#aaa8c4] md:text-base">
-              Publicznie pokazujemy tylko avatary startowe. Pelny katalog jest
-              dostepny po zalogowaniu.
+              Publicznie pokazujemy tylko awatary startowe. Pełny katalog jest
+              dostępny po zalogowaniu.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export const PublicAvatarPreview = ({
 
         {isLoading ? (
           <div className="rounded-[1.5rem] bg-black/15 px-6 py-8 text-center text-sm text-[#aaa8c4]">
-            Ladowanie avatarow...
+            Ładowanie awatarów...
           </div>
         ) : (
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-8">
@@ -96,7 +96,7 @@ export const PublicAvatarPreview = ({
                   />
                 </div>
                 <div className="text-[10px] font-black uppercase tracking-[0.22em] text-[#8ff5ff]">
-                  Default
+                  Startowy
                 </div>
                 <h3 className="mt-2 font-headline text-base font-bold text-[#e5e3ff]">
                   {avatar.name}

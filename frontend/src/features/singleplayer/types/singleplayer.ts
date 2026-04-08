@@ -84,7 +84,12 @@ export interface SingleplayerResultSummary {
   correctAnswersCount: number;
   totalQuestions: number;
   details: SingleplayerQuestionResultDetail[];
+  awardedExperience: number;
+  awardedLevelExperience: number;
+  awardedAchievementExperience: number;
   awardedCoins: number;
+  isFirstCompletion: boolean;
+  leveledUp: boolean;
   unlockedAchievements: SingleplayerAchievementAward[];
 }
 

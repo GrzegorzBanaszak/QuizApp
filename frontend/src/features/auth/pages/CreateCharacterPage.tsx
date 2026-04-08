@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router";
 import { CharacterActionBar } from "../components/CharacterActionBar";
-import { CharacterAvatarPicker } from "../components/CharacterAvatarPicker";
+import {
+  CharacterAvatarPicker,
+  formatAvatarUnlockTypeLabel,
+} from "../components/CharacterAvatarPicker";
 import { CharacterCreationHero } from "../components/CharacterCreationHero";
 import { CharacterNameField } from "../components/CharacterNameField";
 import { CharacterSystemNotice } from "../components/CharacterSystemNotice";
@@ -51,7 +54,7 @@ export const CreateCharacterPage = () => {
           setAvatarLoadError(
             loadError instanceof Error
               ? loadError.message
-              : "Nie udało się pobrać avatarów startowych.",
+              : "Nie udało się pobrać startowych awatarów.",
           );
         }
       } finally {
@@ -113,11 +116,13 @@ export const CreateCharacterPage = () => {
 
   const activeAvatarUrl =
     selectedAvatar?.imageUrl ?? pendingSocialLogin.profile.avatarUrl;
-  const activeAvatarBadge = selectedAvatar?.unlockType ?? "SOCIAL";
+  const activeAvatarBadge = formatAvatarUnlockTypeLabel(
+    selectedAvatar?.unlockType ?? "Social",
+  ).toUpperCase();
   const activeAvatarName = selectedAvatar?.name ?? pendingSocialLogin.profile.name;
   const avatarSourceLabel = selectedAvatar
     ? selectedAvatar.name
-    : "Avatar z konta społecznościowego";
+    : "Awatar z konta społecznościowego";
   const submitLabel = "UTWÓRZ POSTAĆ";
   const loadingLabel = "TWORZENIE...";
   const isReady = name.trim().length > 0;
@@ -157,7 +162,7 @@ export const CreateCharacterPage = () => {
         <CharacterCreationHero
           eyebrow="Pierwsze logowanie"
           title="Utwórz postać"
-          description="To jest pierwszy krok po logowaniu przez Google lub Facebook. Wybierz nazwę i avatar, a dopiero potem zapisz profil."
+          description="To jest pierwszy krok po logowaniu przez Google lub Facebook. Wybierz nazwę i awatar, a dopiero potem zapisz profil."
         />
 
         <main className="flex flex-col gap-6">
@@ -186,7 +191,7 @@ export const CreateCharacterPage = () => {
                       {name.trim() || "Bezimienny gracz"}
                     </h2>
                     <p className="mt-1 text-sm text-[#aaa8c4]">
-                      To jest avatar startowy. Możesz go zmienić przed utworzeniem
+                      To jest startowy awatar. Możesz go zmienić przed utworzeniem
                       postaci.
                     </p>
                     <div className="mt-3 inline-flex rounded-full bg-[#8ff5ff]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#8ff5ff]">
@@ -200,7 +205,7 @@ export const CreateCharacterPage = () => {
                     bolt
                   </span>
                   <span className="text-xs font-black uppercase tracking-[0.2em]">
-                    {availableAvatars.length} presetów
+                    {availableAvatars.length} wariantów
                   </span>
                 </div>
               </div>
@@ -209,7 +214,7 @@ export const CreateCharacterPage = () => {
 
               {isLoadingAvatars ? (
                 <div className="rounded-[1.5rem] border border-white/10 bg-[#171730]/60 px-4 py-6 text-sm text-[#aaa8c4]">
-                  Ładowanie dostępnych avatarów...
+                  Ładowanie dostępnych awatarów...
                 </div>
               ) : (
                 <CharacterAvatarPicker

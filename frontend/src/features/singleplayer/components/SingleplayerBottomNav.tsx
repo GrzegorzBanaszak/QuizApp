@@ -1,28 +1,33 @@
-import { Link } from "react-router";
+import { useSingleplayerStore } from "../store/singleplayerStore";
 
 interface SingleplayerBottomNavProps {
   label?: string;
 }
 
 export const SingleplayerBottomNav = ({
-  label = "Wróć do trybów",
+  label = "Wybierz poziom",
 }: SingleplayerBottomNavProps) => {
+  const goToLevelSelect = useSingleplayerStore(
+    (state) => state.goToLevelSelect,
+  );
+
   return (
-    <nav className="fixed bottom-0 left-0 z-50 flex w-full justify-center px-6 pb-8">
-      <div className="flex items-center gap-8 rounded-full bg-[#111128]/80 px-6 py-4 shadow-[0_-4px_40px_rgba(224,141,255,0.08)] ring-1 ring-white/10 backdrop-blur-xl">
-        <Link
-          to="/"
-          className="group flex items-center justify-center rounded-full bg-purple-900/30 px-8 py-3 text-purple-200 ring-1 ring-purple-500/20 transition-all duration-300 hover:bg-purple-800/20 hover:text-purple-100 active:scale-90"
+    <nav className="fixed bottom-16 left-0 z-50 flex w-full justify-center px-6 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:bottom-6">
+      <div className="flex items-center gap-6 rounded-full bg-[#0c0c21]/92 px-5 py-3 shadow-[0_-4px_28px_rgba(5,8,22,0.28)] ring-1 ring-white/8 backdrop-blur-md md:gap-8 md:px-6 md:py-4">
+        <button
+          type="button"
+          onClick={goToLevelSelect}
+          className="group flex min-h-[56px] items-center justify-center rounded-full bg-gradient-to-r from-[#e08dff] to-[#d978ff] px-8 py-4 text-[#4f006c] ring-1 ring-[#e08dff]/20 transition-all duration-300 hover:scale-105 active:scale-95 md:min-h-[72px] md:px-10 md:py-5"
         >
           <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-xl">arrow_back</span>
-            <span className="text-sm font-bold tracking-tight">Powrót</span>
+            <span className="material-symbols-outlined text-lg md:text-xl">
+              bolt
+            </span>
+            <span className="text-xs font-black tracking-tight sm:text-sm md:text-base">
+              {label}
+            </span>
           </div>
-        </Link>
-        <div className="h-6 w-px bg-white/10" />
-        <span className="hidden text-xs font-bold uppercase tracking-[0.2em] text-[#aaa8c4] sm:block">
-          {label}
-        </span>
+        </button>
       </div>
     </nav>
   );

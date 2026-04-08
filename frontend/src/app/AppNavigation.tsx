@@ -3,7 +3,7 @@ import { useAuthStore } from "../features/auth/store/authStore";
 import { useSingleplayerStore } from "../features/singleplayer/store/singleplayerStore";
 
 const leftLinks = [
-  { label: "Strona glowna", to: "/" },
+  { label: "Strona główna", to: "/" },
   { label: "Solo", to: "/singleplayer" },
   { label: "Multiplayer", to: "/multiplayer" },
   { label: "Party", to: "/party" },
@@ -73,13 +73,13 @@ export const AppNavigation = () => {
                       ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
                       : "text-[#aaa8c4] hover:bg-white/5 hover:text-[#e5e3ff]"
                   }`}
-                  aria-label="Osiagniecia"
+                  aria-label="Osiągnięcia"
                 >
                   <span className="material-symbols-outlined text-xl">
                     emoji_events
                   </span>
                   <span className="hidden text-sm font-bold sm:inline">
-                    Osiagniecia
+                    Osiągnięcia
                   </span>
                 </Link>
               </>
@@ -87,7 +87,7 @@ export const AppNavigation = () => {
 
             {session ? (
               <Link
-                to="/profile/edit"
+                to="/profile"
                 className="flex max-w-[14rem] items-center gap-2 rounded-full bg-[#29294a] px-3 py-1.5 text-[#e5e3ff] ring-1 ring-white/10 transition-colors hover:bg-[#323255]"
                 aria-label="Profil gracza"
               >
@@ -169,7 +169,7 @@ export const AppNavigation = () => {
                     ? "bg-[#ffcf7d]/15 text-[#ffcf7d]"
                     : "text-[#aaa8c4] active:bg-white/5 active:text-[#e5e3ff]"
                 }`}
-                aria-label="Osiagniecia"
+                aria-label="Osiągnięcia"
               >
                 <span className="material-symbols-outlined text-xl">
                   emoji_events
@@ -180,7 +180,7 @@ export const AppNavigation = () => {
 
           {session ? (
             <Link
-              to="/profile/edit"
+              to="/profile"
               className="flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-[1rem] px-2 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#e5e3ff] transition-colors active:bg-white/5"
               aria-label="Profil gracza"
             >

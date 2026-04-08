@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router";
 import { CharacterActionBar } from "../components/CharacterActionBar";
-import { CharacterAvatarPicker } from "../components/CharacterAvatarPicker";
+import {
+  CharacterAvatarPicker,
+  formatAvatarUnlockTypeLabel,
+} from "../components/CharacterAvatarPicker";
 import { CharacterCreationHero } from "../components/CharacterCreationHero";
 import { CharacterNameField } from "../components/CharacterNameField";
 import {
@@ -54,7 +57,7 @@ export const EditProfilePage = () => {
           setAvatarLoadError(
             loadError instanceof Error
               ? loadError.message
-              : "Nie udało się pobrać avatarów do edycji profilu.",
+              : "Nie udało się pobrać awatarów do edycji profilu.",
           );
         }
       } finally {
@@ -108,11 +111,13 @@ export const EditProfilePage = () => {
     availableAvatars.find((avatar) => avatar.id === selectedAvatarId) ?? null;
 
   const activeAvatarUrl = selectedAvatar?.imageUrl ?? session.profile.avatarUrl;
-  const activeAvatarBadge = selectedAvatar?.unlockType ?? "CURRENT";
+  const activeAvatarBadge = formatAvatarUnlockTypeLabel(
+    selectedAvatar?.unlockType ?? "Current",
+  ).toUpperCase();
   const activeAvatarName = selectedAvatar?.name ?? session.profile.username;
   const avatarSourceLabel = selectedAvatar
     ? selectedAvatar.name
-    : "Aktualny avatar";
+    : "Aktualny awatar";
   const submitLabel = "ZAPISZ ZMIANY";
   const loadingLabel = "ZAPISYWANIE...";
   const isReady = name.trim().length > 0;
@@ -150,8 +155,8 @@ export const EditProfilePage = () => {
       <div className="relative z-10 mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-4xl flex-col justify-center gap-8">
         <CharacterCreationHero
           eyebrow="Zalogowany profil"
-          title="Edytuj postać"
-          description="Zmień nazwę użytkownika albo wybierz jeden z dostępnych avatarów."
+          title="Edytuj profil"
+          description="Zmień nazwę użytkownika albo wybierz jeden z dostępnych awatarów."
         />
 
         <main className="flex flex-col gap-6">
@@ -180,7 +185,7 @@ export const EditProfilePage = () => {
                       {name.trim() || "Bezimienny gracz"}
                     </h2>
                     <p className="mt-1 text-sm text-[#aaa8c4]">
-                      To jest aktualny avatar.
+                      To jest Twój aktualny awatar.
                     </p>
                     <div className="mt-3 inline-flex rounded-full bg-[#8ff5ff]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#8ff5ff]">
                       {avatarSourceLabel}
@@ -193,7 +198,7 @@ export const EditProfilePage = () => {
 
               {isLoadingAvatars ? (
                 <div className="rounded-[1.5rem] bg-[#171730]/60 px-4 py-6 text-sm text-[#aaa8c4]">
-                  Ładowanie dostępnych avatarów...
+                  Ładowanie dostępnych awatarów...
                 </div>
               ) : (
                 <CharacterAvatarPicker

@@ -34,7 +34,7 @@
     {
         "key":  "level-3",
         "categoryKey":  "science",
-        "name":  "Ĺšwiat odkryÄ‡",
+        "name":  "Świat odkryć",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -88,7 +88,7 @@
     {
         "key":  "level-6",
         "categoryKey":  "science",
-        "name":  "Sekrety wszechĹ›wiata",
+        "name":  "Sekrety wszechświata",
         "order":  6,
         "questionDistributions":  [
                                       {
@@ -156,7 +156,7 @@
     {
         "key":  "level-10",
         "categoryKey":  "science",
-        "name":  "Elita odkrywcĂłw",
+        "name":  "Elita odkrywców",
         "order":  10,
         "questionDistributions":  [
                                       {
@@ -174,7 +174,7 @@
     {
         "key":  "level-11",
         "categoryKey":  "history",
-        "name":  "PoczÄ…tki historii",
+        "name":  "Początki historii",
         "order":  1,
         "questionDistributions":  [
                                       {
@@ -206,7 +206,7 @@
     {
         "key":  "level-13",
         "categoryKey":  "history",
-        "name":  "KrĂłlowie i imperia",
+        "name":  "Królowie i imperia",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -260,7 +260,7 @@
     {
         "key":  "level-16",
         "categoryKey":  "history",
-        "name":  "PrzeĹ‚omowe wydarzenia",
+        "name":  "Przełomowe wydarzenia",
         "order":  6,
         "questionDistributions":  [
                                       {
@@ -274,7 +274,7 @@
     {
         "key":  "level-17",
         "categoryKey":  "history",
-        "name":  "Historia Ĺ›wiata",
+        "name":  "Historia świata",
         "order":  7,
         "questionDistributions":  [
                                       {
@@ -292,7 +292,7 @@
     {
         "key":  "level-18",
         "categoryKey":  "history",
-        "name":  "Tajemnice przeszĹ‚oĹ›ci",
+        "name":  "Tajemnice przeszłości",
         "order":  8,
         "questionDistributions":  [
                                       {
@@ -310,7 +310,7 @@
     {
         "key":  "level-19",
         "categoryKey":  "history",
-        "name":  "Ekspert dziejĂłw",
+        "name":  "Ekspert dziejów",
         "order":  9,
         "questionDistributions":  [
                                       {
@@ -378,7 +378,7 @@
     {
         "key":  "level-23",
         "categoryKey":  "geography",
-        "name":  "Kraje Ĺ›wiata",
+        "name":  "Kraje świata",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -396,7 +396,7 @@
     {
         "key":  "level-24",
         "categoryKey":  "geography",
-        "name":  "LÄ…dy i oceany",
+        "name":  "Lądy i oceany",
         "order":  4,
         "questionDistributions":  [
                                       {
@@ -550,7 +550,7 @@
     {
         "key":  "level-33",
         "categoryKey":  "technology",
-        "name":  "Ĺšwiat komputerĂłw",
+        "name":  "Świat komputerów",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -586,7 +586,7 @@
     {
         "key":  "level-35",
         "categoryKey":  "technology",
-        "name":  "Nowoczesne rozwiÄ…zania",
+        "name":  "Nowoczesne rozwiązania",
         "order":  5,
         "questionDistributions":  [
                                       {
@@ -722,7 +722,7 @@
     {
         "key":  "level-43",
         "categoryKey":  "sports",
-        "name":  "Gwiazdy stadionĂłw",
+        "name":  "Gwiazdy stadionów",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -740,7 +740,7 @@
     {
         "key":  "level-44",
         "categoryKey":  "sports",
-        "name":  "Dyscypliny Ĺ›wiata",
+        "name":  "Dyscypliny świata",
         "order":  4,
         "questionDistributions":  [
                                       {
@@ -962,7 +962,7 @@
     {
         "key":  "level-57",
         "categoryKey":  "movies",
-        "name":  "ReĹĽyserzy i dzieĹ‚a",
+        "name":  "Reżyserzy i dzieła",
         "order":  7,
         "questionDistributions":  [
                                       {
@@ -1066,7 +1066,7 @@
     {
         "key":  "level-63",
         "categoryKey":  "music",
-        "name":  "DĹşwiÄ™ki Ĺ›wiata",
+        "name":  "Dźwięki świata",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -1220,7 +1220,7 @@
     {
         "key":  "level-72",
         "categoryKey":  "literature",
-        "name":  "Ĺšwiat ksiÄ…ĹĽek",
+        "name":  "Świat książek",
         "order":  2,
         "questionDistributions":  [
                                       {
@@ -1238,7 +1238,7 @@
     {
         "key":  "level-73",
         "categoryKey":  "literature",
-        "name":  "Autorzy i tytuĹ‚y",
+        "name":  "Autorzy i tytuły",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -1256,7 +1256,7 @@
     {
         "key":  "level-74",
         "categoryKey":  "literature",
-        "name":  "Klasyka piĂłra",
+        "name":  "Klasyka pióra",
         "order":  4,
         "questionDistributions":  [
                                       {
@@ -1292,7 +1292,7 @@
     {
         "key":  "level-76",
         "categoryKey":  "literature",
-        "name":  "Wielkie dzieĹ‚a",
+        "name":  "Wielkie dzieła",
         "order":  6,
         "questionDistributions":  [
                                       {
@@ -1410,7 +1410,7 @@
     {
         "key":  "level-83",
         "categoryKey":  "gaming",
-        "name":  "Ĺšwiat gamingu",
+        "name":  "Świat gamingu",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -1428,7 +1428,7 @@
     {
         "key":  "level-84",
         "categoryKey":  "gaming",
-        "name":  "Kultowe tytuĹ‚y",
+        "name":  "Kultowe tytuły",
         "order":  4,
         "questionDistributions":  [
                                       {
@@ -1446,7 +1446,7 @@
     {
         "key":  "level-85",
         "categoryKey":  "gaming",
-        "name":  "Bohaterowie i Ĺ›wiaty",
+        "name":  "Bohaterowie i światy",
         "order":  5,
         "questionDistributions":  [
                                       {
@@ -1550,7 +1550,7 @@
     {
         "key":  "level-91",
         "categoryKey":  "general_knowledge",
-        "name":  "Podstawy wiedzy ogĂłlnej",
+        "name":  "Podstawy wiedzy ogólnej",
         "order":  1,
         "questionDistributions":  [
                                       {
@@ -1564,7 +1564,7 @@
     {
         "key":  "level-92",
         "categoryKey":  "general_knowledge",
-        "name":  "Na dobry poczÄ…tek",
+        "name":  "Na dobry początek",
         "order":  2,
         "questionDistributions":  [
                                       {
@@ -1582,7 +1582,7 @@
     {
         "key":  "level-93",
         "categoryKey":  "general_knowledge",
-        "name":  "RĂłĹĽne dziedziny",
+        "name":  "Różne dziedziny",
         "order":  3,
         "questionDistributions":  [
                                       {
@@ -1600,7 +1600,7 @@
     {
         "key":  "level-94",
         "categoryKey":  "general_knowledge",
-        "name":  "Wszechstronny umysĹ‚",
+        "name":  "Wszechstronny umysł",
         "order":  4,
         "questionDistributions":  [
                                       {
@@ -1686,7 +1686,7 @@
     {
         "key":  "level-99",
         "categoryKey":  "general_knowledge",
-        "name":  "Ekspert wiedzy ogĂłlnej",
+        "name":  "Ekspert wiedzy ogólnej",
         "order":  9,
         "questionDistributions":  [
                                       {

@@ -9,18 +9,34 @@ import { SingleplayerBottomNav } from "../components/SingleplayerBottomNav";
 import { SingleplayerHomeView } from "../components/SingleplayerHomeView";
 import { fetchSingleplayerCategories } from "../services/singleplayerApi";
 import { useSingleplayerStore } from "../store/singleplayerStore";
+import { scrollToTop } from "../utils/scrollToTop";
 
 export const SingleplayerPage = () => {
   const session = useAuthStore((state) => state.session);
   const isAuthInitialized = useAuthStore((state) => state.isAuthInitialized);
   const screen = useSingleplayerStore((state) => state.screen);
-  const hydrateCategories = useSingleplayerStore((state) => state.hydrateCategories);
+  const hydrateCategories = useSingleplayerStore(
+    (state) => state.hydrateCategories,
+  );
   const setCategoriesLoading = useSingleplayerStore(
     (state) => state.setCategoriesLoading,
   );
   const setCategoriesError = useSingleplayerStore(
     (state) => state.setCategoriesError,
   );
+  const goToHome = useSingleplayerStore((state) => state.goToHome);
+
+  useEffect(() => {
+    if (screen === "levelSelect" || screen === "result") {
+      scrollToTop();
+    }
+  }, [screen]);
+
+  useEffect(() => {
+    return () => {
+      goToHome();
+    };
+  }, [goToHome]);
 
   useEffect(() => {
     if (!session) {
@@ -63,12 +79,7 @@ export const SingleplayerPage = () => {
     return () => {
       isCancelled = true;
     };
-  }, [
-    hydrateCategories,
-    session,
-    setCategoriesError,
-    setCategoriesLoading,
-  ]);
+  }, [hydrateCategories, session, setCategoriesError, setCategoriesLoading]);
 
   if (!isAuthInitialized) {
     return (
@@ -83,11 +94,11 @@ export const SingleplayerPage = () => {
   }
 
   if (!session) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/auth/login" replace />;
   }
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-[#0c0c21] text-[#e5e3ff]">
+    <div className="relative min-h-screen overflow-x-hidden bg-[#0c0c21] text-[#e5e3ff] pb-12 xl:pb-0">
       <SingleplayerBackground />
 
       {screen === "home" ? (

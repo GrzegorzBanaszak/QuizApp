@@ -199,7 +199,7 @@ export const AuthLoginSection = () => {
                 </h2>
                 <div className="mt-2 flex flex-wrap gap-3 text-sm text-[#aaa8c4]">
                   <span>{session.profile.totalExperience} XP</span>
-                  <span>{session.profile.coins} coins</span>
+                  <span>{session.profile.coins} monet</span>
                 </div>
               </div>
             </div>
@@ -285,7 +285,7 @@ export const AuthLoginSection = () => {
               </div>
               <div>
                 <p className="font-bold text-[#e5e3ff]">Zaloguj przez Facebook</p>
-                <p className="text-xs text-[#aaa8c4]">Dostęp do konta społecznościowego</p>
+                <p className="text-xs text-[#aaa8c4]">Połącz konto i zachowaj postępy</p>
               </div>
             </div>
             <span className="material-symbols-outlined text-[#aaa8c4] transition-transform group-hover:translate-x-1">
@@ -317,7 +317,7 @@ export const AuthLoginSection = () => {
         ) : null}
 
         <p className="mt-6 text-center text-[11px] uppercase tracking-[0.28em] text-[#aaa8c4] md:text-xs">
-          Synchronizuj swoje wyniki na wszystkich urządzeniach
+          Zapisuj wyniki na wszystkich urządzeniach
         </p>
       </div>
     </section>

@@ -18,6 +18,21 @@ interface CharacterAvatarPickerProps {
   showResetToSourceAvatar: boolean;
 }
 
+export function formatAvatarUnlockTypeLabel(unlockType?: string | null): string {
+  switch (unlockType) {
+    case "Default":
+      return "Startowy";
+    case "Achievement":
+      return "Osiągnięcie";
+    case "Social":
+      return "Społecznościowy";
+    case "Current":
+      return "Aktualny";
+    default:
+      return unlockType ?? "Dostępny";
+  }
+}
+
 export const CharacterAvatarPicker = ({
   avatars,
   selectedAvatarId,
@@ -37,7 +52,7 @@ export const CharacterAvatarPicker = ({
             onClick={onResetToSourceAvatar}
             className="w-fit rounded-full border border-white/10 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#aaa8c4] transition-colors hover:bg-white/5 hover:text-[#e5e3ff]"
           >
-            Przywróć aktualny avatar
+            Przywróć aktualny awatar
           </button>
         ) : null}
       </div>
@@ -50,8 +65,10 @@ export const CharacterAvatarPicker = ({
           const badgeLabel = isActive
             ? "WYBRANY"
             : avatar.isUnlocked
-              ? avatar.unlockType ?? "DOSTĘPNY"
-              : avatar.unlockType ?? "ZABLOKOWANY";
+              ? formatAvatarUnlockTypeLabel(avatar.unlockType).toUpperCase()
+              : formatAvatarUnlockTypeLabel(
+                  avatar.unlockType ?? "Zablokowany",
+                ).toUpperCase();
 
           return (
             <button
