@@ -20,7 +20,7 @@ public sealed class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbConte
             ?? throw new InvalidOperationException("Missing ConnectionStrings:DefaultConnection configuration value.");
 
         var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-        optionsBuilder.UseSqlServer(connectionString);
+        optionsBuilder.UseNpgsql(connectionString);
 
         return new AppDbContext(optionsBuilder.Options);
     }

@@ -1,12 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace QuizApp.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class InitPostgres : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,21 +16,21 @@ namespace QuizApp.Api.Migrations
                 name: "AchievementDefinitions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Code = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    IconUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    SortOrder = table.Column<int>(type: "int", nullable: false),
-                    TriggerType = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
-                    RequiredLevelKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    RequiredCategoryKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    RequiredCompletedCategoriesCount = table.Column<int>(type: "int", nullable: true),
-                    RewardType = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
-                    RewardExperience = table.Column<int>(type: "int", nullable: true),
-                    RewardCoins = table.Column<int>(type: "int", nullable: true),
-                    RewardAvatarKey = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Code = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Name = table.Column<string>(type: "character varying(150)", maxLength: 150, nullable: false),
+                    Description = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
+                    IconUrl = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
+                    SortOrder = table.Column<int>(type: "integer", nullable: false),
+                    TriggerType = table.Column<string>(type: "character varying(40)", maxLength: 40, nullable: false),
+                    RequiredLevelKey = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true),
+                    RequiredCategoryKey = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true),
+                    RequiredCompletedCategoriesCount = table.Column<int>(type: "integer", nullable: true),
+                    RewardType = table.Column<string>(type: "character varying(40)", maxLength: 40, nullable: false),
+                    RewardExperience = table.Column<int>(type: "integer", nullable: true),
+                    RewardCoins = table.Column<int>(type: "integer", nullable: true),
+                    RewardAvatarKey = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -40,15 +41,15 @@ namespace QuizApp.Api.Migrations
                 name: "Avatars",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Key = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    SortOrder = table.Column<int>(type: "int", nullable: false),
-                    UnlockType = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
-                    RequiredAchievementCode = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Price = table.Column<int>(type: "int", nullable: false, defaultValue: 0)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Key = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Name = table.Column<string>(type: "character varying(150)", maxLength: 150, nullable: false),
+                    ImageUrl = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
+                    SortOrder = table.Column<int>(type: "integer", nullable: false),
+                    UnlockType = table.Column<string>(type: "character varying(40)", maxLength: 40, nullable: false),
+                    RequiredAchievementCode = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true),
+                    Price = table.Column<int>(type: "integer", nullable: false, defaultValue: 0)
                 },
                 constraints: table =>
                 {
@@ -59,11 +60,11 @@ namespace QuizApp.Api.Migrations
                 name: "Categories",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Key = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Key = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Name = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
+                    Description = table.Column<string>(type: "character varying(1000)", maxLength: 1000, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -74,17 +75,17 @@ namespace QuizApp.Api.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Username = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    AvatarUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    CurrentAvatarId = table.Column<int>(type: "int", nullable: true),
-                    Role = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    GoogleId = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    FacebookId = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    TotalExperience = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    Coins = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
-                    LastLoginAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()")
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Username = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    AvatarUrl = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
+                    CurrentAvatarId = table.Column<int>(type: "integer", nullable: true),
+                    Role = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: false),
+                    GoogleId = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: true),
+                    FacebookId = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: true),
+                    TotalExperience = table.Column<int>(type: "integer", nullable: false, defaultValue: 0),
+                    Coins = table.Column<int>(type: "integer", nullable: false, defaultValue: 0),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "timezone('utc', now())"),
+                    LastLoginAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "timezone('utc', now())")
                 },
                 constraints: table =>
                 {
@@ -101,14 +102,14 @@ namespace QuizApp.Api.Migrations
                 name: "Levels",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Key = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Order = table.Column<int>(type: "int", nullable: false),
-                    FirstCompletionExperience = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    ReplayExperience = table.Column<int>(type: "int", nullable: false, defaultValue: 0)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Key = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    CategoryId = table.Column<int>(type: "integer", nullable: false),
+                    Name = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
+                    Order = table.Column<int>(type: "integer", nullable: false),
+                    FirstCompletionExperience = table.Column<int>(type: "integer", nullable: false, defaultValue: 0),
+                    ReplayExperience = table.Column<int>(type: "integer", nullable: false, defaultValue: 0)
                 },
                 constraints: table =>
                 {
@@ -125,13 +126,13 @@ namespace QuizApp.Api.Migrations
                 name: "SingleplayerQuestions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Key = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
-                    Difficulty = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    Text = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
-                    CorrectAnswerId = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Key = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    CategoryId = table.Column<int>(type: "integer", nullable: false),
+                    Difficulty = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
+                    Text = table.Column<string>(type: "character varying(1000)", maxLength: 1000, nullable: false),
+                    CorrectAnswerId = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -148,11 +149,11 @@ namespace QuizApp.Api.Migrations
                 name: "UserAchievements",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Code = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    AwardedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()")
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    Code = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    AwardedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "timezone('utc', now())")
                 },
                 constraints: table =>
                 {
@@ -169,9 +170,9 @@ namespace QuizApp.Api.Migrations
                 name: "UserOwnedAvatars",
                 columns: table => new
                 {
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    AvatarId = table.Column<int>(type: "int", nullable: false),
-                    UnlockedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()")
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    AvatarId = table.Column<int>(type: "integer", nullable: false),
+                    UnlockedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "timezone('utc', now())")
                 },
                 constraints: table =>
                 {
@@ -194,11 +195,11 @@ namespace QuizApp.Api.Migrations
                 name: "LevelQuestionDistributions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    LevelId = table.Column<int>(type: "int", nullable: false),
-                    Difficulty = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    Count = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    LevelId = table.Column<int>(type: "integer", nullable: false),
+                    Difficulty = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
+                    Count = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -215,10 +216,10 @@ namespace QuizApp.Api.Migrations
                 name: "SingleplayerGameSessions",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    LevelId = table.Column<int>(type: "int", nullable: false),
-                    StartedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()")
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    LevelId = table.Column<int>(type: "integer", nullable: false),
+                    StartedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "timezone('utc', now())")
                 },
                 constraints: table =>
                 {
@@ -241,9 +242,9 @@ namespace QuizApp.Api.Migrations
                 name: "SingleplayerAnswers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    QuestionId = table.Column<int>(type: "int", nullable: false),
-                    Text = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false)
+                    Id = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    QuestionId = table.Column<int>(type: "integer", nullable: false),
+                    Text = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -260,23 +261,23 @@ namespace QuizApp.Api.Migrations
                 name: "SingleplayerGameSessionQuestions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    GameSessionId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    QuestionId = table.Column<int>(type: "int", nullable: false),
-                    QuestionOrder = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    GameSessionId = table.Column<Guid>(type: "uuid", nullable: false),
+                    QuestionId = table.Column<int>(type: "integer", nullable: false),
+                    QuestionOrder = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_SingleplayerGameSessionQuestions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SingleplayerGameSessionQuestions_SingleplayerGameSessions_GameSessionId",
+                        name: "FK_SingleplayerGameSessionQuestions_SingleplayerGameSessions_G~",
                         column: x => x.GameSessionId,
                         principalTable: "SingleplayerGameSessions",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SingleplayerGameSessionQuestions_SingleplayerQuestions_QuestionId",
+                        name: "FK_SingleplayerGameSessionQuestions_SingleplayerQuestions_Ques~",
                         column: x => x.QuestionId,
                         principalTable: "SingleplayerQuestions",
                         principalColumn: "Id",
@@ -287,15 +288,15 @@ namespace QuizApp.Api.Migrations
                 name: "SingleplayerResults",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    GameSessionId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    LevelId = table.Column<int>(type: "int", nullable: false),
-                    Score = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    CorrectAnswers = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    TotalQuestions = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    PlayedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()")
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    GameSessionId = table.Column<Guid>(type: "uuid", nullable: false),
+                    LevelId = table.Column<int>(type: "integer", nullable: false),
+                    Score = table.Column<int>(type: "integer", nullable: false, defaultValue: 0),
+                    CorrectAnswers = table.Column<int>(type: "integer", nullable: false, defaultValue: 0),
+                    TotalQuestions = table.Column<int>(type: "integer", nullable: false, defaultValue: 0),
+                    PlayedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "timezone('utc', now())")
                 },
                 constraints: table =>
                 {
@@ -427,14 +428,14 @@ namespace QuizApp.Api.Migrations
                 table: "Users",
                 column: "FacebookId",
                 unique: true,
-                filter: "[FacebookId] IS NOT NULL");
+                filter: "\"FacebookId\" IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_GoogleId",
                 table: "Users",
                 column: "GoogleId",
                 unique: true,
-                filter: "[GoogleId] IS NOT NULL");
+                filter: "\"GoogleId\" IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Username",

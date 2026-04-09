@@ -14,7 +14,7 @@ public sealed class SingleplayerGameSessionConfiguration : IEntityTypeConfigurat
 
         entity.Property(s => s.StartedAt)
             .IsRequired()
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("timezone('utc', now())");
 
         entity.HasOne(s => s.User)
             .WithMany()

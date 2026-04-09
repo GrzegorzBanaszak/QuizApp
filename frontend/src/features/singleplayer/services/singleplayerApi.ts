@@ -1,10 +1,33 @@
 import type {
   SingleplayerAnswerSelection,
+  SingleplayerAchievementAward,
   SingleplayerCategory,
   SingleplayerCategoryLevelDetails,
   SingleplayerGameSession,
   SingleplayerResultSummary,
 } from "../types/singleplayer";
+import { buildApiUrl, resolveBackendAssetUrl } from "../../../shared/api";
+
+function normalizeAchievementAward(
+  award: SingleplayerAchievementAward,
+): SingleplayerAchievementAward {
+  return {
+    ...award,
+    iconUrl: resolveBackendAssetUrl(award.iconUrl),
+    rewardAvatarImageUrl: resolveBackendAssetUrl(award.rewardAvatarImageUrl),
+  };
+}
+
+function normalizeResultSummary(
+  result: SingleplayerResultSummary,
+): SingleplayerResultSummary {
+  return {
+    ...result,
+    unlockedAchievements: result.unlockedAchievements.map(
+      normalizeAchievementAward,
+    ),
+  };
+}
 
 async function parseJsonResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
@@ -23,7 +46,7 @@ async function parseJsonResponse<T>(response: Response): Promise<T> {
 export async function fetchSingleplayerCategories(): Promise<
   SingleplayerCategory[]
 > {
-  const response = await fetch("/api/singleplayer/categories", {
+  const response = await fetch(buildApiUrl("/api/singleplayer/categories"), {
     credentials: "include",
   });
 
@@ -34,7 +57,7 @@ export async function fetchSingleplayerCategoryLevels(
   categoryId: number,
 ): Promise<SingleplayerCategoryLevelDetails[]> {
   const response = await fetch(
-    `/api/singleplayer/categories/${categoryId}/levels`,
+    buildApiUrl(`/api/singleplayer/categories/${categoryId}/levels`),
     {
       credentials: "include",
     },
@@ -46,9 +69,12 @@ export async function fetchSingleplayerCategoryLevels(
 export async function fetchSingleplayerGame(
   levelId: number,
 ): Promise<SingleplayerGameSession> {
-  const response = await fetch(`/api/singleplayer/levels/${levelId}/questions`, {
-    credentials: "include",
-  });
+  const response = await fetch(
+    buildApiUrl(`/api/singleplayer/levels/${levelId}/questions`),
+    {
+      credentials: "include",
+    },
+  );
 
   return parseJsonResponse<SingleplayerGameSession>(response);
 }
@@ -60,14 +86,19 @@ export async function submitSingleplayerGame(
     playerAnswers: SingleplayerAnswerSelection[];
   },
 ): Promise<SingleplayerResultSummary> {
-  const response = await fetch(`/api/singleplayer/levels/${levelId}/submit`, {
-    method: "POST",
-    credentials: "include",
-    headers: {
-      "Content-Type": "application/json",
+  const response = await fetch(
+    buildApiUrl(`/api/singleplayer/levels/${levelId}/submit`),
+    {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(request),
     },
-    body: JSON.stringify(request),
-  });
+  );
 
-  return parseJsonResponse<SingleplayerResultSummary>(response);
+  return normalizeResultSummary(
+    await parseJsonResponse<SingleplayerResultSummary>(response),
+  );
 }

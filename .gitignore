@@ -41,8 +41,8 @@ backend/.vscode/*
 backend/**/appsettings.Development.json
 backend/**/appsettings.Production.json
 
-# Statyczne pliki backendu
-backend/**/wwwroot/
+# Assety lokalne
+assets/
 
 # =========================
 # INFRASTRUKTURA (Terraform)

@@ -26,7 +26,7 @@ public sealed class SingleplayerResultConfiguration : IEntityTypeConfiguration<S
 
         entity.Property(r => r.PlayedAt)
             .IsRequired()
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("timezone('utc', now())");
 
         entity.HasOne(r => r.User)
             .WithMany()

@@ -4,6 +4,7 @@ using QuizApp.Api.Services.Abstractions;
 using QuizApp.Api.Services.Implementations;
 using QuizApp.Api.Profiles;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -16,12 +17,9 @@ var builder = WebApplication.CreateBuilder(args);
 var allowedOrigins = new[]
 {
     "http://localhost:5173",
-    "http://quiz.lan",
     "http://192.168.1.245:5173",
-    "http://gbanaszak.pl",
-    "https://gbanaszak.pl",
-    "http://www.gbanaszak.pl",
-    "https://www.gbanaszak.pl"
+    "https://app.quiz-volt.pl",
+    "http://app.quiz-volt.pl"
 };
 
 builder.Services.AddControllers();
@@ -68,7 +66,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
     ?? throw new InvalidOperationException("Missing ConnectionStrings:DefaultConnection configuration value.");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseNpgsql(connectionString));
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("Missing Jwt:Key configuration value.");
 
@@ -155,6 +153,9 @@ var app = builder.Build();
 
 await using (var scope = app.Services.CreateAsyncScope())
 {
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    await ApplyDatabaseMigrationsAsync(dbContext, app.Logger);
+
     var categorySeedService = scope.ServiceProvider.GetRequiredService<CategorySeedService>();
     var levelSeedService = scope.ServiceProvider.GetRequiredService<LevelSeedService>();
     var singleplayerQuestionSeedService = scope.ServiceProvider.GetRequiredService<SingleplayerQuestionSeedService>();
@@ -179,6 +180,23 @@ app.UseHttpsRedirection();
 
 app.UseCors("AllowFrontend");
 
+var avatarImagesPhysicalPath = builder.Configuration["AvatarImages:PhysicalPath"];
+if (!string.IsNullOrWhiteSpace(avatarImagesPhysicalPath))
+{
+    var resolvedAvatarImagesPhysicalPath = Path.IsPathRooted(avatarImagesPhysicalPath)
+        ? avatarImagesPhysicalPath
+        : Path.GetFullPath(Path.Combine(builder.Environment.ContentRootPath, avatarImagesPhysicalPath));
+
+    if (Directory.Exists(resolvedAvatarImagesPhysicalPath))
+    {
+        app.UseStaticFiles(new StaticFileOptions
+        {
+            FileProvider = new PhysicalFileProvider(resolvedAvatarImagesPhysicalPath),
+            RequestPath = "/images/avatars"
+        });
+    }
+}
+
 app.UseStaticFiles();
 
 app.UseAuthentication();
@@ -190,3 +208,31 @@ app.MapGet("/health", () => true);
 
 
 app.Run();
+
+static async Task ApplyDatabaseMigrationsAsync(AppDbContext dbContext, ILogger logger, CancellationToken cancellationToken = default)
+{
+    const int maxAttempts = 10;
+    var delay = TimeSpan.FromSeconds(5);
+
+    for (var attempt = 1; attempt <= maxAttempts; attempt++)
+    {
+        try
+        {
+            await dbContext.Database.MigrateAsync(cancellationToken);
+            return;
+        }
+        catch (Exception ex) when (attempt < maxAttempts)
+        {
+            logger.LogWarning(
+                ex,
+                "Database migration attempt {Attempt}/{MaxAttempts} failed. Retrying in {DelaySeconds} seconds.",
+                attempt,
+                maxAttempts,
+                delay.TotalSeconds);
+
+            await Task.Delay(delay, cancellationToken);
+        }
+    }
+
+    await dbContext.Database.MigrateAsync(cancellationToken);
+}

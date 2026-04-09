@@ -1,113 +1,102 @@
-# 🎮 QuizApp Multiplayer
+# QuizVolt
 
-QuizApp to multiplayerowa aplikacja do quizow w czasie rzeczywistym. Gracze moga tworzyc lub dolaczac do pokoi, wybierac avatary, glosowac na temat rundy i odpowiadac na pytania generowane przez AI.
+QuizVolt to aplikacja quizowa rozwijana jako zestaw trzech warstw:
 
-## ✨ Co jest w projekcie
+- `frontend/` - główna aplikacja gracza w React i Vite
+- `backend/` - API w .NET 9 z logiką postępu, katalogami i singleplayerem
+- `landing/` - osobny serwis marketingowy w Next.js
 
-- 🏠 lobby z lista dostepnych pokoi
-- 🔑 tworzenie i dolaczanie do pokoju po kodzie
-- 🧑‍🚀 wybor avatara i nazwy gracza
-- ✅ status gotowosci graczy i start gry przez hosta
-- 🗳️ glosowanie na temat rundy
-- 🤖 generowanie pytan przez Gemini
-- ⏱️ pytania na czas z punktacja zalezna od szybkosci odpowiedzi
-- 📊 podsumowanie rundy i koncowa tabela wynikow
-- 🎉 ekran koncowy z rankingiem i konfetti
+Adres aplikacji: [app.quiz-volt.pl](https://app.quiz-volt.pl)
 
-## 🛠️ Stack
+Obecny stan projektu skupia się na rozgrywce singleplayer oraz systemie profilu gracza. Tryby `multiplayer` i `party` są już widoczne w interfejsie, ale nadal pełnią rolę ekranów zapowiadających kolejne etapy prac.
 
-- Frontend: React 19, Vite, TypeScript, Zustand, React Router, SignalR, Framer Motion, Tailwind CSS 4
-- Backend: .NET 9 Web API, SignalR
-- AI: Gemini API przez `GeminiAiService`
-- Testy frontendowe: Vitest
-- Testy backendowe: xUnit
-- Infrastruktura: Docker i Terraform
+## Zakres funkcjonalny
 
-## 📁 Struktura repozytorium
+### Dostępne teraz
 
-- `backend/` - API w .NET, hub SignalR, modele i serwisy
-- `frontend/` - aplikacja kliencka w React/Vite
-- `infrastructure/` - konfiguracja Terraform dla kontenerow Docker
+- logowanie jako gość oraz przez Google i Facebook
+- profil gracza z edycją nazwy, avatara, monet i doświadczenia
+- singleplayer oparty o kategorie, poziomy i pytania zdefiniowane w danych seedujących
+- zapisywanie wyników, naliczanie XP i awansów poziomów
+- system osiągnięć z postępem, nagrodami i automatyczną ewaluacją po ukończeniu gry
+- katalog avatarów z podziałem na domyślne, kupowane za monety i odblokowywane osiągnięciami
+- katalog osiągnięć z filtrowaniem i podglądem warunków odblokowania
+- automatyczne migracje bazy i seedowanie danych przy starcie API
 
-## 🧭 Jak to dziala
+### W przygotowaniu
 
-1. Gracz wchodzi do menu i tworzy pokoj albo dolacza do istniejacego kodem.
-2. Host ustawia liczbe tematow rundy, a gracze oznaczaja sie jako gotowi.
-3. Po starcie gry pokoj przechodzi do glosowania na temat.
-4. Po wygranym glosowaniu backend pobiera 6 pytan z Gemini.
-5. Pytania sa wysylane po kolei przez SignalR, a punkty sa przyznawane za poprawna i szybka odpowiedz.
-6. Po zakonczeniu puli pytan pokazywane jest podsumowanie rundy.
-7. Po rozegraniu wszystkich tematow aplikacja pokazuje finalny ranking.
+- tryb `multiplayer` z pokojami i synchronizacją graczy w czasie rzeczywistym
+- tryb `party` z osobnym widokiem wspólnego ekranu i urządzeń graczy
 
-## ⚙️ Backend
+## Architektura
 
-- 📡 Hub SignalR jest pod `POST/WS` na `/gameHub`
-- ❤️ Endpoint zdrowia jest dostepny pod `/health`
-- 🖼️ Statyczne avatary sa serwowane z `backend/QuizApp.Api/wwwroot/avatars`
-- 🧠 Stan gry jest aktualnie trzymany w pamieci przez `GameManager`
-- 🔌 W projekcie jest dodana integracja z `Microsoft.AspNetCore.SignalR.StackExchangeRedis`, ale obecna konfiguracja `Program.cs` nie podpina Redis jako backplane
-- 🛟 AI ma fallback, wiec przy braku odpowiedzi z Gemini backend moze zwrocic awaryjne pytania
+### Frontend
 
-## 🎨 Frontend
+Główna aplikacja gracza jest zbudowana w `React 19`, `TypeScript`, `Vite`, `React Router` i `Zustand`. Interfejs obejmuje:
 
-- Domyslny adres huba to `http://localhost:5211/gameHub`
-- Mozna go nadpisac przez `VITE_SIGNALR_URL`
-- Widoki w aplikacji:
-  - `Menu`
-  - `Lobby`
-  - `Voting`
-  - `Game`
-  - `RoundSummary`
-  - `GameOver`
+- ekran główny z wyborem trybu
+- logowanie i tworzenie postaci
+- profil gracza oraz edycję profilu
+- katalog avatarów
+- katalog osiągnięć
+- pełny przepływ singleplayer: wybór kategorii, wybór poziomu, rozgrywka i ekran wyniku
 
-## 🚀 Uruchomienie lokalne
+W kodzie nadal znajduje się zależność `@microsoft/signalr`, ale bieżąca wersja produktu nie używa jeszcze aktywnej rozgrywki realtime w warstwie UI.
 
-### 🧩 Backend
+### Backend
 
-```powershell
-dotnet run --project backend/QuizApp.Api
-```
+API jest zbudowane w `ASP.NET Core 9`, korzysta z `Entity Framework Core`, `PostgreSQL`, `AutoMapper` i uwierzytelniania JWT w cookie lub nagłówku `Bearer`.
 
-Domyslny profil HTTP nasluchuje na `http://localhost:5211`, a HTTPS na `https://localhost:7183`.
+Najważniejsze obszary backendu:
 
-### 🌐 Frontend
+- `AuthController` - logowanie gościa i weryfikacja dostawców społecznościowych
+- `UserController` - odczyt i edycja profilu aktualnego użytkownika
+- `SingleplayerController` - kategorie, poziomy, sesje gry i wysyłka wyników
+- `AchievementsController` - katalog osiągnięć wraz z postępem gracza
+- `AvatarController` - katalog avatarów, wybór aktywnego avatara i zakup
 
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+API automatycznie:
 
-Frontend domyslnie startuje na `http://localhost:5173`.
+- uruchamia migracje bazy danych
+- seeduje kategorie, poziomy, pytania singleplayer, osiągnięcia i avatary
+- wystawia endpoint zdrowia pod `/health`
+- serwuje statyczne assety avatarów pod `/images/avatars`, jeśli wskazano ścieżkę fizyczną
 
-## 🤖 Konfiguracja AI
+### Landing
 
-W pliku `backend/QuizApp.Api/appsettings.json` lub przez user secrets ustaw:
+`landing/` to oddzielna aplikacja w `Next.js 16`, przygotowana jako publiczna warstwa prezentacyjna dla produktu. Repo zawiera osobne strony opisujące landing główny oraz podstrony dla trybów `singleplayer`, `multiplayer` i `party`.
 
-```json
-{
-  "Gemini": {
-    "ApiKey": "twoj-klucz",
-    "Model": "gemini-2.5-flash"
-  }
-}
-```
+## Dane i domena
 
-## 🏗️ Infrastruktura
+Model domenowy obecnie obejmuje przede wszystkim:
 
-Folder `infrastructure/` zawiera konfiguracje Terraform dla kontenerow Docker. W obecnym stanie obejmuje m.in. Redis, Nginx Proxy Manager i Pi-hole oraz placeholdery dla kontenerow aplikacji.
+- użytkowników z providerem logowania, monetami, XP i wybranym avatarem
+- katalog avatarów z typami odblokowania: domyślne, zakup i osiągnięcie
+- katalog osiągnięć z warunkami opartymi o ukończenie poziomów i kategorii
+- kategorie singleplayer, poziomy i rozkład trudności pytań
+- sesje gry singleplayer oraz historię wyników
 
-## 🧪 Testy
+Dane startowe znajdują się w `backend/QuizApp.Api/SeedData/` i są ładowane do bazy przy starcie aplikacji.
 
-- Backend: `dotnet test backend/QuizApp.sln`
-- Frontend: `cd frontend && npm test`
+## Struktura repozytorium
 
-## 🖼️ Avatary
+- `backend/QuizApp.Api/` - główne API, modele, kontrolery, serwisy, migracje i dane seedujące
+- `backend/QuizApp.Tests/` - testy backendowe dla logiki progresji i odblokowania avatarów
+- `frontend/` - aplikacja użytkownika
+- `landing/` - strona marketingowa
+- `infrastructure/local/` - lokalna infrastruktura Docker/Terraform w starszym wariancie roboczym
+- `infrastructure/azure/` - aktualna infrastruktura Terraform dla wdrożenia z PostgreSQL, reverse proxy i uploadem assetów avatarów
+- `assets/avatars/` - pliki avatarów wykorzystywane przy wdrożeniu
 
-- wrzucaj pliki do `backend/QuizApp.Api/wwwroot/avatars`
-- frontend pobiera je pod adresem `http(s)://<adres-backendu>/avatars/nazwa-pliku.png`
+## Stack
 
-## Do zrobienia
+- frontend aplikacji: React 19, Vite, TypeScript, Zustand, React Router, Framer Motion
+- landing: Next.js 16, React 19, TypeScript
+- backend: ASP.NET Core 9, Entity Framework Core, PostgreSQL, AutoMapper
+- uwierzytelnianie: JWT, Google OAuth, Facebook auth
+- testy: Vitest po stronie frontendu, xUnit po stronie backendu
+- infrastruktura: Docker i Terraform
 
-- Integracja z redis
-- Strona głowna przedstawiająca zasady gry i rozgrywkę
+## Status projektu
+
+Repozytorium nie jest już zgodne ze starszym opisem aplikacji multiplayer opartej głównie o SignalR i generowanie pytań przez AI. Aktualny rdzeń produktu to konto gracza, kolekcje i singleplayer z trwałym postępem, a funkcje wieloosobowe są na razie przygotowane na poziomie nawigacji, projektu interfejsu i infrastruktury pod dalszy rozwój.

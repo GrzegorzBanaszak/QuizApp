@@ -45,14 +45,14 @@ public sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .HasDefaultValue(0);
 
         entity.Property(u => u.CreatedAt)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("timezone('utc', now())");
 
         entity.Property(u => u.LastLoginAt)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("timezone('utc', now())");
 
         entity.HasIndex(u => u.Username).IsUnique();
-        entity.HasIndex(u => u.GoogleId).IsUnique().HasFilter("[GoogleId] IS NOT NULL");
-        entity.HasIndex(u => u.FacebookId).IsUnique().HasFilter("[FacebookId] IS NOT NULL");
+        entity.HasIndex(u => u.GoogleId).IsUnique().HasFilter("\"GoogleId\" IS NOT NULL");
+        entity.HasIndex(u => u.FacebookId).IsUnique().HasFilter("\"FacebookId\" IS NOT NULL");
 
         entity.HasOne(u => u.CurrentAvatar)
             .WithMany(avatar => avatar.SelectedByUsers)

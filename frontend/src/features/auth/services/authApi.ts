@@ -8,8 +8,36 @@ import type {
   UpdateUserProfileRequest,
 } from "../types";
 import type { AvatarCatalogItem } from "../../catalog/types";
+import { buildApiUrl, resolveBackendAssetUrl } from "../../../shared/api";
 
-const AUTH_BASE = "/api/auth";
+const AUTH_BASE = buildApiUrl("/api/auth");
+
+function normalizeProfile<T extends { avatarUrl: string }>(profile: T): T {
+  return {
+    ...profile,
+    avatarUrl: resolveBackendAssetUrl(profile.avatarUrl),
+  };
+}
+
+function normalizeAuthResponse(response: AuthResponse): AuthResponse {
+  return {
+    ...response,
+    profile: normalizeProfile(response.profile),
+  };
+}
+
+function normalizeSocialProfileResponse(
+  response: SocialProfileResponse,
+): SocialProfileResponse {
+  return normalizeProfile(response);
+}
+
+function normalizeAvatarCatalogItem(item: AvatarCatalogItem): AvatarCatalogItem {
+  return {
+    ...item,
+    imageUrl: resolveBackendAssetUrl(item.imageUrl),
+  };
+}
 
 async function parseJsonResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
@@ -35,7 +63,10 @@ export async function verifyGoogleCode(
     body: JSON.stringify(request),
   });
 
-  return parseJsonResponse<GoogleVerifyResponse>(response);
+  const payload = await parseJsonResponse<GoogleVerifyResponse>(response);
+  return isAuthResponse(payload)
+    ? normalizeAuthResponse(payload)
+    : normalizeSocialProfileResponse(payload);
 }
 
 export async function verifyGoogleToken(
@@ -56,7 +87,10 @@ export async function verifyFacebookToken(
     body: JSON.stringify({ token }),
   });
 
-  return parseJsonResponse<GoogleVerifyResponse>(response);
+  const payload = await parseJsonResponse<GoogleVerifyResponse>(response);
+  return isAuthResponse(payload)
+    ? normalizeAuthResponse(payload)
+    : normalizeSocialProfileResponse(payload);
 }
 
 export async function registerSocial(
@@ -71,15 +105,17 @@ export async function registerSocial(
     body: JSON.stringify(request),
   });
 
-  return parseJsonResponse<AuthResponse>(response);
+  return normalizeAuthResponse(await parseJsonResponse<AuthResponse>(response));
 }
 
 export async function fetchCreateCharacterAvatars(): Promise<AvatarCatalogItem[]> {
-  const response = await fetch("/api/avatar/defaults", {
+  const response = await fetch(buildApiUrl("/api/avatar/defaults"), {
     credentials: "include",
   });
 
-  return parseJsonResponse<AvatarCatalogItem[]>(response);
+  return (await parseJsonResponse<AvatarCatalogItem[]>(response)).map(
+    normalizeAvatarCatalogItem,
+  );
 }
 
 export async function loginAsGuest(
@@ -97,7 +133,7 @@ export async function loginAsGuest(
     body: JSON.stringify(request),
   });
 
-  return parseJsonResponse<AuthResponse>(response);
+  return normalizeAuthResponse(await parseJsonResponse<AuthResponse>(response));
 }
 
 export async function logout(): Promise<void> {
@@ -112,17 +148,19 @@ export async function logout(): Promise<void> {
 }
 
 export async function fetchCurrentUser(): Promise<AuthResponse["profile"]> {
-  const response = await fetch("/api/user/me", {
+  const response = await fetch(buildApiUrl("/api/user/me"), {
     credentials: "include",
   });
 
-  return parseJsonResponse<AuthResponse["profile"]>(response);
+  return normalizeProfile(
+    await parseJsonResponse<AuthResponse["profile"]>(response),
+  );
 }
 
 export async function updateCurrentUserProfile(
   request: UpdateUserProfileRequest,
 ): Promise<AuthResponse["profile"]> {
-  const response = await fetch("/api/user/me", {
+  const response = await fetch(buildApiUrl("/api/user/me"), {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -131,7 +169,9 @@ export async function updateCurrentUserProfile(
     body: JSON.stringify(request),
   });
 
-  return parseJsonResponse<AuthResponse["profile"]>(response);
+  return normalizeProfile(
+    await parseJsonResponse<AuthResponse["profile"]>(response),
+  );
 }
 
 export const isAuthResponse = (

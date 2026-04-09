@@ -18,6 +18,7 @@ appsettings.Development.json
 .gitignore
 Dockerfile
 .dockerignore
+QuizApp.Api/wwwroot/images/avatars/
 
 # Inne
 node_modules/

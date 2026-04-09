@@ -13,7 +13,7 @@ public sealed class UserOwnedAvatarConfiguration : IEntityTypeConfiguration<User
         entity.HasKey(item => new { item.UserId, item.AvatarId });
 
         entity.Property(item => item.UnlockedAt)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("timezone('utc', now())");
 
         entity.HasOne(item => item.User)
             .WithMany(user => user.OwnedAvatars)

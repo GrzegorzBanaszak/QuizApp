@@ -17,7 +17,7 @@ public sealed class UserAchievementConfiguration : IEntityTypeConfiguration<User
             .HasMaxLength(100);
 
         entity.Property(item => item.AwardedAt)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("timezone('utc', now())");
 
         entity.HasIndex(item => new { item.UserId, item.Code }).IsUnique();
 

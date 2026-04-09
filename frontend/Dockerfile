@@ -3,8 +3,8 @@ FROM node:24-alpine AS build
 WORKDIR /app
 
 # Vite wstrzykuje VITE_* do bundle podczas builda, wiec backend musi byc znany tutaj.
-ARG VITE_SIGNALR_URL=https://api.gbanaszak.pl/gameHub
-ENV VITE_SIGNALR_URL=${VITE_SIGNALR_URL}
+ARG VITE_BACKEND_URL=https://api.quiz-volt.pl
+ENV VITE_BACKEND_URL=${VITE_BACKEND_URL}
 
 # Kopiujemy package.json i instalujemy zaleznosci
 COPY package*.json ./
